@@ -1,0 +1,10 @@
+<App>
+	<Router ux:Name="router" />
+	<Navigator DefaultPath="ScreenPage">
+		<ScreenPage ux:Template="ScreenPage" router="router" Color="#FFF" />
+		<HomePage ux:Template="HomePage" router="router" />
+		<CounterPage ux:Template="CounterPage" router="router"/>
+		<ARscreen ux:Template="ARscreen" router="router" />
+		<RespberryPi ux:Template="RespberryPi" router="router" />		
+	</Navigator>
+</App>

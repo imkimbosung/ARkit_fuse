@@ -1,0 +1,22 @@
+{
+  "RootNamespace":"",
+  "Packages": [
+    "Fuse",
+    "FuseJS",
+    "Fuse.Maps",
+    "Uno.Net.Sockets",
+  ],
+  "Projects": [
+    "iOS/Fuse.AR_example.unoproj",
+  ],
+  "Includes": [
+    "*",
+    "Pages/*",
+    "Images/*",
+    "iOS/*",
+    "iOS/*.png:Bundle",
+    "Modules/socket.io.2.0.js:Bundle",
+
+  ]
+}
+

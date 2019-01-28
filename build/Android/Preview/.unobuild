@@ -1,0 +1,4 @@
+$: -1815136110
+BuildCommand: "bash build.sh"
+RunCommand: "bash run.sh"
+Product: AR_example.apk

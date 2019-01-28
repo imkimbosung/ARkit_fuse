@@ -1,0 +1,20 @@
+<Page ux:Class="CounterPage">
+<Router ux:Dependency="router" />
+	<JavaScript File="CounterPage.js" />	
+
+	<Image File="../Images/back.png" Clicked="{back}" Alignment="TopLeft" Layer="Layout" Height="40" Width="30" Padding="0, 0, 0, 0" Margin="20, 20, 0, 0" />
+
+	<StackPanel>
+		<TextInput Value="{received}" Alignment="Center" Y="250" />
+	</StackPanel>
+
+
+	<Panel ux:Class="countButton" HitTestMode="LocalBounds" Margin="4" Color="#25a" Alignment="BottomCenter" Height="50">
+    	<string ux:Property="Text" />
+    	<Text Value="{ReadProperty Text}" Color="#fff" Alignment="Center" Margin="30,15" />
+	</Panel>
+
+
+	<countButton Text="Click count" Clicked="{counter}" />
+
+</Page>

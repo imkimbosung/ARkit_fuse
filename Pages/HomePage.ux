@@ -1,0 +1,64 @@
+<Page ux:Class="HomePage">
+<Router ux:Dependency="router" />
+	<JavaScript File="HomePage.js" />	
+
+	<Panel>
+		<Text ux:Name="ARscreen" Alignment="HorizontalCenter" Value="AR Start" Color="#090" FontSize="16" Y="170" />
+	
+		<Rectangle ux:Name="ARrect" CornerRadius="30" Width="146" Height="56" Y="150" Margin="0, 0, 0, 0">
+			<SolidColor ux:Name="ARrectColor" Color="#fff" />
+			<Stroke ux:Name="ARrectStroke" Width="4" Alignment="Center">
+				<SolidColor ux:Name="ARrectStrokeColor" Color="#090" />
+			</Stroke>
+		</Rectangle>
+
+    	<WhilePressed>
+			<Scale Target="ARscreen" Factor="0.9" Duration="0.05" />
+		</WhilePressed>
+
+		<Clicked>
+			<Callback Handler="{ARscreen}" />
+		</Clicked>
+	</Panel>
+
+	<Panel>
+		<Text ux:Name="RespberryPi" Alignment="HorizontalCenter" Value="Sensor" Color="#090" FontSize="16" Y="340" />
+
+		<Rectangle ux:Name="Pirect" CornerRadius="30" Width="146" Height="56" Y="320">
+			<SolidColor ux:Name="PirectColor" Color="#fff" />
+			<Stroke ux:Name="PirectStroke" Width="4" Alignment="Center">
+				<SolidColor ux:Name="PirectStrokeColor" Color="#090" />
+			</Stroke>
+		</Rectangle>
+
+    	<WhilePressed>
+			<Scale Target="RespberryPi" Factor="0.9" Duration="0.05" />
+		</WhilePressed>
+
+		<Clicked>
+			<Callback Handler="{RespberryPi}" />
+		</Clicked>
+	</Panel>
+
+	<Panel>
+		<Text ux:Name="Counter" Alignment="HorizontalCenter" Value="Counter" Color="#090" FontSize="16" Y="510" />
+
+		<Rectangle ux:Name="CTrect" CornerRadius="30" Width="146" Height="56" Y="490">
+			<SolidColor ux:Name="CTrectColor" Color="#fff" />
+			<Stroke ux:Name="CTrectStroke" Width="4" Alignment="Center">
+				<SolidColor ux:Name="CTrectStrokeColor" Color="#090" />
+			</Stroke>
+		</Rectangle>
+
+    	<WhilePressed>
+			<Scale Target="Counter" Factor="0.9" Duration="0.05" />
+		</WhilePressed>
+
+		<Clicked>
+			<Callback Handler="{CounterPage}" />
+		</Clicked>
+	</Panel>
+	
+
+	
+</Page>

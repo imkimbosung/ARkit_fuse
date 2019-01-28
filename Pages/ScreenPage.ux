@@ -1,0 +1,6 @@
+<Page ux:Class="ScreenPage" Background="#DCE1E3">
+<Router ux:Dependency="router" />
+	<JavaScript File="ScreenPage.js" />
+	
+	<Image File="../Images/logo3.png" Clicked="{main}" Alignment="HorizontalCenter" Layer="Layout" Padding="0, 0, 0, 0" />
+</Page>
