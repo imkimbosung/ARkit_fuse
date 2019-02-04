@@ -28,8 +28,8 @@ namespace g{
 namespace Fuse{
 namespace Platform{
 
-// /usr/local/share/uno/Packages/Fuse.Platform/1.9.0/AppAlerts.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Platform/1.10.0-rc1/AppAlerts.uno
+// --------------------------------------------------------------------
 
 // internal static class AppEvents :13
 // {
@@ -110,8 +110,8 @@ void AppEvents::remove_LowMemoryWarning(uDelegate* value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Platform/1.9.0/Lifecycle.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Platform/1.10.0-rc1/Lifecycle.uno
+// --------------------------------------------------------------------
 
 // public enum ApplicationState :5
 uEnumType* ApplicationState_typeof()
@@ -129,8 +129,8 @@ uEnumType* ApplicationState_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Platform/1.9.0/InterApp.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Platform/1.10.0-rc1/InterApp.uno
+// -------------------------------------------------------------------
 
 // public static class InterApp :9
 // {
@@ -214,8 +214,8 @@ void InterApp::remove_ReceivedURI(uDelegate* value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Platform/1.9.0/Lifecycle.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Platform/1.10.0-rc1/Lifecycle.uno
+// --------------------------------------------------------------------
 
 // public static class Lifecycle :22
 // {
@@ -566,8 +566,8 @@ void Lifecycle::remove_Terminating(uDelegate* value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Platform/1.9.0/iOS/SystemUI.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Platform/1.10.0-rc1/iOS/SystemUI.uno
+// -----------------------------------------------------------------------
 
 // public enum StatusBarAnimation :14
 uEnumType* StatusBarAnimation_typeof()
@@ -583,8 +583,8 @@ uEnumType* StatusBarAnimation_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Platform/1.9.0/iOS/SystemUI.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Platform/1.10.0-rc1/iOS/SystemUI.uno
+// -----------------------------------------------------------------------
 
 // public enum StatusBarStyle :8
 uEnumType* StatusBarStyle_typeof()
@@ -599,8 +599,8 @@ uEnumType* StatusBarStyle_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Platform/1.9.0/SystemUI.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Platform/1.10.0-rc1/SystemUI.uno
+// -------------------------------------------------------------------
 
 // internal enum SystemUIResizeReason :8
 uEnumType* SystemUIResizeReason_typeof()
@@ -616,8 +616,8 @@ uEnumType* SystemUIResizeReason_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Platform/1.9.0/SystemUI.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Platform/1.10.0-rc1/SystemUI.uno
+// -------------------------------------------------------------------
 
 // internal enum SysUIState :15
 uEnumType* SysUIState_typeof()

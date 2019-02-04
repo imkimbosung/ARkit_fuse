@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Uno.Net.Http/1.9.0/HttpMessageHandlerRequest.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Uno.Net.Http/1.10.0-rc1/HttpMessageHandlerRequest.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace Uno{
 namespace Net{
 namespace Http{
 
-// private sealed class HttpMessageHandlerRequest.DispatchClosure<TArg1> :161
+// private sealed class HttpMessageHandlerRequest.DispatchClosure<TArg1> :158
 // {
 uType* HttpMessageHandlerRequest__DispatchClosure1_typeof();
 void HttpMessageHandlerRequest__DispatchClosure1__ctor__fn(HttpMessageHandlerRequest__DispatchClosure1* __this, int32_t* state, uDelegate* action, ::g::Uno::Net::Http::HttpMessageHandlerRequest* arg0, void* arg1);

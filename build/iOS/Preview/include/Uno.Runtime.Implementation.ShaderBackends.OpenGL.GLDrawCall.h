@@ -1,8 +1,8 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Runtime/Implementation/ShaderBackends/OpenGL/GLDrawCall.uno.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Runtime/Implementation/ShaderBackends/OpenGL/GLDrawCall.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.ValueType.h>
 namespace g{namespace Uno{namespace Collections{struct List;}}}
 namespace g{namespace Uno{namespace Graphics{struct IndexBuffer;}}}
 namespace g{namespace Uno{namespace Graphics{struct SamplerState;}}}
@@ -29,7 +29,7 @@ namespace OpenGL{
 // public extern struct GLDrawCall :8
 // {
 uStructType* GLDrawCall_typeof();
-void GLDrawCall__ctor__fn(GLDrawCall* __this, ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram* program);
+void GLDrawCall__ctor_1_fn(GLDrawCall* __this, ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram* program);
 void GLDrawCall__Attrib_fn(GLDrawCall* __this, int32_t* index, int32_t* componentCount, int32_t* componentType, bool* normalized, ::g::Uno::Graphics::VertexBuffer* buf, int32_t* stride, int32_t* offset);
 void GLDrawCall__Attrib1_fn(GLDrawCall* __this, int32_t* index, int32_t* type, ::g::Uno::Graphics::VertexBuffer* buf, int32_t* stride, int32_t* offset);
 void GLDrawCall__get_BaseVertex_fn(GLDrawCall* __this, int32_t* __retval);
@@ -127,7 +127,7 @@ struct GLDrawCall
     bool _WriteGreen;
     bool _WriteRed;
 
-    void ctor_(::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram* program);
+    void ctor_1(::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram* program);
     void Attrib(int32_t index, int32_t componentCount, int32_t componentType, bool normalized, ::g::Uno::Graphics::VertexBuffer* buf, int32_t stride, int32_t offset);
     void Attrib1(int32_t index, int32_t type, ::g::Uno::Graphics::VertexBuffer* buf, int32_t stride, int32_t offset);
     int32_t BaseVertex();

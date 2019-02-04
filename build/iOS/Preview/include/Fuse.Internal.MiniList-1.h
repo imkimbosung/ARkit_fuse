@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Internal/MiniList.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Internal/MiniList.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -6,6 +6,7 @@
 #include <Uno.Collections.IEnumerable-1.h>
 #include <Uno.Collections.IList-1.h>
 #include <Uno.Object.h>
+#include <Uno.ValueType.h>
 namespace g{namespace Fuse{namespace Internal{struct MiniList;}}}
 namespace g{namespace Fuse{namespace Internal{struct MiniList__Enumerator;}}}
 namespace g{namespace Fuse{namespace Internal{struct ObjectList;}}}

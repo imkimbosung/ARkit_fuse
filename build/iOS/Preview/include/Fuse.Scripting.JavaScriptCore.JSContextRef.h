@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/JavaScriptCore/JavaScriptCore.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/JavaScriptCore/JavaScriptCore.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -6,14 +6,14 @@
 #include <JavaScriptCore/JSObjectRef.h>
 #include <JavaScriptCore/JSStringRef.h>
 #include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <Uno.ValueType.h>
 
 namespace g{
 namespace Fuse{
 namespace Scripting{
 namespace JavaScriptCore{
 
-// internal extern struct JSContextRef :357
+// internal extern struct JSContextRef :349
 // {
 struct JSContextRef_type : uStructType
 {
@@ -29,8 +29,6 @@ void JSContextRef__get_GlobalObject_fn(::JSContextRef* __this, ::JSObjectRef* __
 
 struct JSContextRef
 {
-    void* _dummy;
-
     static void Dispose(::JSContextRef __this);
     static ::JSValueRef EvaluateScript(::JSContextRef __this, ::JSStringRef script, ::JSObjectRef thisObject, ::JSStringRef sourceURL, int32_t startingLineNumber, ::JSValueRef* exception);
     static ::JSValueRef EvaluateScript1(::JSContextRef __this, uString* script, ::JSObjectRef thisObject, uString* sourceURL, int32_t startingLineNumber, uDelegate* onException);

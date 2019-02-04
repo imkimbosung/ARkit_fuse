@@ -19,8 +19,8 @@ namespace Net{
 namespace Http{
 namespace Implementation{
 
-// /usr/local/share/uno/Packages/Uno.Net.Http/1.9.0/Implementation/IHttpRequest.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.10.0-rc1/Implementation/IHttpRequest.uno
+// -------------------------------------------------------------------------------------
 
 // public abstract interface IHttpRequest :7
 // {
@@ -47,8 +47,8 @@ uInterfaceType* IHttpRequest_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Net.Http/1.9.0/Implementation/iOS/iOSHttpRequest.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.10.0-rc1/Implementation/iOS/iOSHttpRequest.uno
+// -------------------------------------------------------------------------------------------
 
 // internal sealed extern class iOSHttpRequest :11
 // {
@@ -273,8 +273,8 @@ iOSHttpRequest* iOSHttpRequest::New1(::g::Uno::Net::Http::HttpMessageHandlerRequ
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Net.Http/1.9.0/Implementation/iOS/iOSHttpRequest.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.10.0-rc1/Implementation/iOS/iOSHttpRequest.uno
+// -------------------------------------------------------------------------------------------
 
 // internal extern struct iOSHttpRequestHandle :6
 // {
@@ -288,6 +288,7 @@ uStructType* iOSHttpRequestHandle_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.Alignment = alignof(::Uno::Net::Http::iOS::HttpRequest*);
     options.ValueSize = sizeof(::Uno::Net::Http::iOS::HttpRequest*);
     options.TypeSize = sizeof(uStructType);
@@ -297,8 +298,8 @@ uStructType* iOSHttpRequestHandle_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Net.Http/1.9.0/Implementation/iOS/iOSHttpSharedCache.uno
-// ------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.10.0-rc1/Implementation/iOS/iOSHttpSharedCache.uno
+// -----------------------------------------------------------------------------------------------
 
 // internal static extern class iOSHttpSharedCache :6
 // {

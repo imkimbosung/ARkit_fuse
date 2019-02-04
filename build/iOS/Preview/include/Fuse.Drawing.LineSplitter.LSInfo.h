@@ -1,8 +1,8 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Drawing.Surface/1.9.0/LineSplitter.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Drawing.Surface/1.10.0-rc1/LineSplitter.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.ValueType.h>
 namespace g{namespace Fuse{namespace Drawing{struct LineSplitter__LSInfo;}}}
 
 namespace g{

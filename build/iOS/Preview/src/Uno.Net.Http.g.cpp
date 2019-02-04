@@ -49,10 +49,10 @@ namespace Uno{
 namespace Net{
 namespace Http{
 
-// /usr/local/share/uno/Packages/Uno.Net.Http/1.9.0/HttpMessageHandlerRequest.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.10.0-rc1/HttpMessageHandlerRequest.uno
+// -----------------------------------------------------------------------------------
 
-// private sealed class HttpMessageHandlerRequest.DispatchClosure :138
+// private sealed class HttpMessageHandlerRequest.DispatchClosure :135
 // {
 static void HttpMessageHandlerRequest__DispatchClosure_build(uType* type)
 {
@@ -76,25 +76,25 @@ uType* HttpMessageHandlerRequest__DispatchClosure_typeof()
     return type;
 }
 
-// public DispatchClosure(Uno.Net.Http.HttpRequestState state, Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> action, Uno.Net.Http.HttpMessageHandlerRequest arg) :144
+// public DispatchClosure(Uno.Net.Http.HttpRequestState state, Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> action, Uno.Net.Http.HttpMessageHandlerRequest arg) :141
 void HttpMessageHandlerRequest__DispatchClosure__ctor__fn(HttpMessageHandlerRequest__DispatchClosure* __this, int32_t* state, uDelegate* action, ::g::Uno::Net::Http::HttpMessageHandlerRequest* arg)
 {
     __this->ctor_(*state, action, arg);
 }
 
-// public DispatchClosure New(Uno.Net.Http.HttpRequestState state, Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> action, Uno.Net.Http.HttpMessageHandlerRequest arg) :144
+// public DispatchClosure New(Uno.Net.Http.HttpRequestState state, Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> action, Uno.Net.Http.HttpMessageHandlerRequest arg) :141
 void HttpMessageHandlerRequest__DispatchClosure__New1_fn(int32_t* state, uDelegate* action, ::g::Uno::Net::Http::HttpMessageHandlerRequest* arg, HttpMessageHandlerRequest__DispatchClosure** __retval)
 {
     *__retval = HttpMessageHandlerRequest__DispatchClosure::New1(*state, action, arg);
 }
 
-// public void Run() :151
+// public void Run() :148
 void HttpMessageHandlerRequest__DispatchClosure__Run_fn(HttpMessageHandlerRequest__DispatchClosure* __this)
 {
     __this->Run();
 }
 
-// public DispatchClosure(Uno.Net.Http.HttpRequestState state, Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> action, Uno.Net.Http.HttpMessageHandlerRequest arg) [instance] :144
+// public DispatchClosure(Uno.Net.Http.HttpRequestState state, Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> action, Uno.Net.Http.HttpMessageHandlerRequest arg) [instance] :141
 void HttpMessageHandlerRequest__DispatchClosure::ctor_(int32_t state, uDelegate* action, ::g::Uno::Net::Http::HttpMessageHandlerRequest* arg)
 {
     _action = action;
@@ -102,7 +102,7 @@ void HttpMessageHandlerRequest__DispatchClosure::ctor_(int32_t state, uDelegate*
     _state = state;
 }
 
-// public void Run() [instance] :151
+// public void Run() [instance] :148
 void HttpMessageHandlerRequest__DispatchClosure::Run()
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest.DispatchClosure", "Run()");
@@ -115,7 +115,7 @@ void HttpMessageHandlerRequest__DispatchClosure::Run()
     uPtr(_arg)->CompleteRequest();
 }
 
-// public DispatchClosure New(Uno.Net.Http.HttpRequestState state, Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> action, Uno.Net.Http.HttpMessageHandlerRequest arg) [static] :144
+// public DispatchClosure New(Uno.Net.Http.HttpRequestState state, Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> action, Uno.Net.Http.HttpMessageHandlerRequest arg) [static] :141
 HttpMessageHandlerRequest__DispatchClosure* HttpMessageHandlerRequest__DispatchClosure::New1(int32_t state, uDelegate* action, ::g::Uno::Net::Http::HttpMessageHandlerRequest* arg)
 {
     HttpMessageHandlerRequest__DispatchClosure* obj1 = (HttpMessageHandlerRequest__DispatchClosure*)uNew(HttpMessageHandlerRequest__DispatchClosure_typeof());
@@ -124,10 +124,10 @@ HttpMessageHandlerRequest__DispatchClosure* HttpMessageHandlerRequest__DispatchC
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Net.Http/1.9.0/HttpMessageHandlerRequest.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.10.0-rc1/HttpMessageHandlerRequest.uno
+// -----------------------------------------------------------------------------------
 
-// private sealed class HttpMessageHandlerRequest.DispatchClosure<TArg1> :161
+// private sealed class HttpMessageHandlerRequest.DispatchClosure<TArg1> :158
 // {
 static void HttpMessageHandlerRequest__DispatchClosure1_build(uType* type)
 {
@@ -153,7 +153,7 @@ uType* HttpMessageHandlerRequest__DispatchClosure1_typeof()
     return type;
 }
 
-// public DispatchClosure(Uno.Net.Http.HttpRequestState state, Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest, TArg1> action, Uno.Net.Http.HttpMessageHandlerRequest arg0, TArg1 arg1) :168
+// public DispatchClosure(Uno.Net.Http.HttpRequestState state, Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest, TArg1> action, Uno.Net.Http.HttpMessageHandlerRequest arg0, TArg1 arg1) :165
 void HttpMessageHandlerRequest__DispatchClosure1__ctor__fn(HttpMessageHandlerRequest__DispatchClosure1* __this, int32_t* state, uDelegate* action, ::g::Uno::Net::Http::HttpMessageHandlerRequest* arg0, void* arg1)
 {
     int32_t state_ = *state;
@@ -163,7 +163,7 @@ void HttpMessageHandlerRequest__DispatchClosure1__ctor__fn(HttpMessageHandlerReq
     __this->_state = state_;
 }
 
-// public DispatchClosure New(Uno.Net.Http.HttpRequestState state, Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest, TArg1> action, Uno.Net.Http.HttpMessageHandlerRequest arg0, TArg1 arg1) :168
+// public DispatchClosure New(Uno.Net.Http.HttpRequestState state, Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest, TArg1> action, Uno.Net.Http.HttpMessageHandlerRequest arg0, TArg1 arg1) :165
 void HttpMessageHandlerRequest__DispatchClosure1__New1_fn(uType* __type, int32_t* state, uDelegate* action, ::g::Uno::Net::Http::HttpMessageHandlerRequest* arg0, void* arg1, HttpMessageHandlerRequest__DispatchClosure1** __retval)
 {
     int32_t state_ = *state;
@@ -172,13 +172,13 @@ void HttpMessageHandlerRequest__DispatchClosure1__New1_fn(uType* __type, int32_t
     return *__retval = obj1, void();
 }
 
-// public void Run() :176
+// public void Run() :173
 void HttpMessageHandlerRequest__DispatchClosure1__Run_fn(HttpMessageHandlerRequest__DispatchClosure1* __this)
 {
     __this->Run();
 }
 
-// public void Run() [instance] :176
+// public void Run() [instance] :173
 void HttpMessageHandlerRequest__DispatchClosure1::Run()
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest.DispatchClosure`1", "Run()");
@@ -192,8 +192,8 @@ void HttpMessageHandlerRequest__DispatchClosure1::Run()
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Net.Http/1.9.0/HttpDefaultDispatcher.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.10.0-rc1/HttpDefaultDispatcher.uno
+// -------------------------------------------------------------------------------
 
 // internal sealed class HttpDefaultDispatcher :6
 // {
@@ -258,8 +258,8 @@ HttpDefaultDispatcher* HttpDefaultDispatcher::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Net.Http/1.9.0/HttpMessageCache.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.10.0-rc1/HttpMessageCache.uno
+// --------------------------------------------------------------------------
 
 // public static class HttpMessageCache :3
 // {
@@ -273,7 +273,7 @@ static void HttpMessageCache__cctor__fn(uType* __type)
 static void HttpMessageCache_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("Uno.Net.Http.HttpMessageCache: Changes to IsCacheEnabled are ignored after initialization.");
-    ::STRINGS[1] = uString::Const("/usr/local/share/uno/Packages/Uno.Net.Http/1.9.0/HttpMessageCache.uno");
+    ::STRINGS[1] = uString::Const("/usr/local/share/uno/Packages/Uno.Net.Http/1.10.0-rc1/HttpMessageCache.uno");
     ::STRINGS[2] = uString::Const("Uno.Net.Http.HttpMessageCache: Changes to MaxCacheSizeInBytes are ignored after initialization.");
     ::TYPES[0] = ::g::Uno::Platform::ApplicationStateTransitionHandler_typeof();
     type->SetDependencies(
@@ -407,8 +407,8 @@ void HttpMessageCache::MaxCacheSizeInBytes(int64_t value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Net.Http/1.9.0/HttpMessageHandler.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.10.0-rc1/HttpMessageHandler.uno
+// ----------------------------------------------------------------------------
 
 // public sealed class HttpMessageHandler :8
 // {
@@ -625,12 +625,12 @@ HttpMessageHandler* HttpMessageHandler::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Net.Http/1.9.0/HttpMessageHandlerRequest.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.10.0-rc1/HttpMessageHandlerRequest.uno
+// -----------------------------------------------------------------------------------
 
 // public sealed class HttpMessageHandlerRequest :8
 // {
-// ~HttpMessageHandlerRequest() :65
+// ~HttpMessageHandlerRequest() :62
 static void HttpMessageHandlerRequest__Finalize_fn(HttpMessageHandlerRequest* __this)
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "Finalize()");
@@ -716,127 +716,127 @@ void HttpMessageHandlerRequest__ctor__fn(HttpMessageHandlerRequest* __this, ::g:
     __this->ctor_(handler, method, url, dispatcher);
 }
 
-// public void Abort() :373
+// public void Abort() :368
 void HttpMessageHandlerRequest__Abort_fn(HttpMessageHandlerRequest* __this)
 {
     __this->Abort();
 }
 
-// public generated void add_Aborted(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) :131
+// public generated void add_Aborted(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) :128
 void HttpMessageHandlerRequest__add_Aborted_fn(HttpMessageHandlerRequest* __this, uDelegate* value)
 {
     __this->add_Aborted(value);
 }
 
-// public generated void remove_Aborted(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) :131
+// public generated void remove_Aborted(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) :128
 void HttpMessageHandlerRequest__remove_Aborted_fn(HttpMessageHandlerRequest* __this, uDelegate* value)
 {
     __this->remove_Aborted(value);
 }
 
-// private void CheckDisposed() :73
+// private void CheckDisposed() :70
 void HttpMessageHandlerRequest__CheckDisposed_fn(HttpMessageHandlerRequest* __this)
 {
     __this->CheckDisposed();
 }
 
-// internal void CompleteRequest() :90
+// internal void CompleteRequest() :87
 void HttpMessageHandlerRequest__CompleteRequest_fn(HttpMessageHandlerRequest* __this)
 {
     __this->CompleteRequest();
 }
 
-// public void Dispose() :79
+// public void Dispose() :76
 void HttpMessageHandlerRequest__Dispose_fn(HttpMessageHandlerRequest* __this)
 {
     __this->Dispose();
 }
 
-// public generated void add_Done(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) :134
+// public generated void add_Done(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) :131
 void HttpMessageHandlerRequest__add_Done_fn(HttpMessageHandlerRequest* __this, uDelegate* value)
 {
     __this->add_Done(value);
 }
 
-// public generated void remove_Done(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) :134
+// public generated void remove_Done(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) :131
 void HttpMessageHandlerRequest__remove_Done_fn(HttpMessageHandlerRequest* __this, uDelegate* value)
 {
     __this->remove_Done(value);
 }
 
-// public void EnableCache(bool enableCache) :264
+// public void EnableCache(bool enableCache) :261
 void HttpMessageHandlerRequest__EnableCache_fn(HttpMessageHandlerRequest* __this, bool* enableCache)
 {
     __this->EnableCache(*enableCache);
 }
 
-// public generated void add_Error(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest, string> value) :132
+// public generated void add_Error(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest, string> value) :129
 void HttpMessageHandlerRequest__add_Error_fn(HttpMessageHandlerRequest* __this, uDelegate* value)
 {
     __this->add_Error(value);
 }
 
-// public generated void remove_Error(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest, string> value) :132
+// public generated void remove_Error(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest, string> value) :129
 void HttpMessageHandlerRequest__remove_Error_fn(HttpMessageHandlerRequest* __this, uDelegate* value)
 {
     __this->remove_Error(value);
 }
 
-// public byte[] GetResponseContentByteArray() :435
+// public byte[] GetResponseContentByteArray() :429
 void HttpMessageHandlerRequest__GetResponseContentByteArray_fn(HttpMessageHandlerRequest* __this, uArray** __retval)
 {
     *__retval = __this->GetResponseContentByteArray();
 }
 
-// public string GetResponseContentString() :421
+// public string GetResponseContentString() :415
 void HttpMessageHandlerRequest__GetResponseContentString_fn(HttpMessageHandlerRequest* __this, uString** __retval)
 {
     *__retval = __this->GetResponseContentString();
 }
 
-// public string GetResponseHeader(string name) :398
+// public string GetResponseHeader(string name) :393
 void HttpMessageHandlerRequest__GetResponseHeader_fn(HttpMessageHandlerRequest* __this, uString* name, uString** __retval)
 {
     *__retval = __this->GetResponseHeader(name);
 }
 
-// public string GetResponseHeaders() :409
+// public string GetResponseHeaders() :404
 void HttpMessageHandlerRequest__GetResponseHeaders_fn(HttpMessageHandlerRequest* __this, uString** __retval)
 {
     *__retval = __this->GetResponseHeaders();
 }
 
-// public int GetResponseStatus() :387
+// public int GetResponseStatus() :382
 void HttpMessageHandlerRequest__GetResponseStatus_fn(HttpMessageHandlerRequest* __this, int32_t* __retval)
 {
     *__retval = __this->GetResponseStatus();
 }
 
-// public Uno.Net.Http.HttpResponseType get_HttpResponseType() :101
+// public Uno.Net.Http.HttpResponseType get_HttpResponseType() :98
 void HttpMessageHandlerRequest__get_HttpResponseType_fn(HttpMessageHandlerRequest* __this, int32_t* __retval)
 {
     *__retval = __this->HttpResponseType();
 }
 
-// public void set_HttpResponseType(Uno.Net.Http.HttpResponseType value) :102
+// public void set_HttpResponseType(Uno.Net.Http.HttpResponseType value) :99
 void HttpMessageHandlerRequest__set_HttpResponseType_fn(HttpMessageHandlerRequest* __this, int32_t* value)
 {
     __this->HttpResponseType(*value);
 }
 
-// private bool IsComplete() :215
+// private bool IsComplete() :212
 void HttpMessageHandlerRequest__IsComplete_fn(HttpMessageHandlerRequest* __this, bool* __retval)
 {
     *__retval = __this->IsComplete();
 }
 
-// private static bool IsHeaderValid(string name, string value) :450
+// private static bool IsHeaderValid(string name, string value) :444
 void HttpMessageHandlerRequest__IsHeaderValid_fn(uString* name, uString* value, bool* __retval)
 {
     *__retval = HttpMessageHandlerRequest::IsHeaderValid(name, value);
 }
 
-// public string get_Method() :96
+// public string get_Method() :93
 void HttpMessageHandlerRequest__get_Method_fn(HttpMessageHandlerRequest* __this, uString** __retval)
 {
     *__retval = __this->Method();
@@ -848,115 +848,115 @@ void HttpMessageHandlerRequest__New1_fn(::g::Uno::Net::Http::HttpMessageHandler*
     *__retval = HttpMessageHandlerRequest::New1(handler, method, url, dispatcher);
 }
 
-// internal void OnAborted() :220
+// internal void OnAborted() :217
 void HttpMessageHandlerRequest__OnAborted_fn(HttpMessageHandlerRequest* __this)
 {
     __this->OnAborted();
 }
 
-// internal void OnDone() :241
+// internal void OnDone() :238
 void HttpMessageHandlerRequest__OnDone_fn(HttpMessageHandlerRequest* __this)
 {
     __this->OnDone();
 }
 
-// internal void OnError(string platformspesificErrorMessage) :227
+// internal void OnError(string platformspesificErrorMessage) :224
 void HttpMessageHandlerRequest__OnError_fn(HttpMessageHandlerRequest* __this, uString* platformspesificErrorMessage)
 {
     __this->OnError(platformspesificErrorMessage);
 }
 
-// internal void OnStateChanged() :118
+// internal void OnStateChanged() :115
 void HttpMessageHandlerRequest__OnStateChanged_fn(HttpMessageHandlerRequest* __this)
 {
     __this->OnStateChanged();
 }
 
-// internal void OnTimeout() :234
+// internal void OnTimeout() :231
 void HttpMessageHandlerRequest__OnTimeout_fn(HttpMessageHandlerRequest* __this)
 {
     __this->OnTimeout();
 }
 
-// public generated void add_Progress(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest, int, int, bool> value) :136
+// public generated void add_Progress(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest, int, int, bool> value) :133
 void HttpMessageHandlerRequest__add_Progress_fn(HttpMessageHandlerRequest* __this, uDelegate* value)
 {
     __this->add_Progress(value);
 }
 
-// public generated void remove_Progress(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest, int, int, bool> value) :136
+// public generated void remove_Progress(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest, int, int, bool> value) :133
 void HttpMessageHandlerRequest__remove_Progress_fn(HttpMessageHandlerRequest* __this, uDelegate* value)
 {
     __this->remove_Progress(value);
 }
 
-// public void SendAsync() :360
+// public void SendAsync() :355
 void HttpMessageHandlerRequest__SendAsync_fn(HttpMessageHandlerRequest* __this)
 {
     __this->SendAsync();
 }
 
-// public void SendAsync(byte[] data) :314
+// public void SendAsync(byte[] data) :309
 void HttpMessageHandlerRequest__SendAsync1_fn(HttpMessageHandlerRequest* __this, uArray* data)
 {
     __this->SendAsync1(data);
 }
 
-// public void SendAsync(string data) :342
+// public void SendAsync(string data) :337
 void HttpMessageHandlerRequest__SendAsync2_fn(HttpMessageHandlerRequest* __this, uString* data)
 {
     __this->SendAsync2(data);
 }
 
-// public void SetHeader(string name, string value) :276
+// public void SetHeader(string name, string value) :273
 void HttpMessageHandlerRequest__SetHeader_fn(HttpMessageHandlerRequest* __this, uString* name, uString* value)
 {
     __this->SetHeader(name, value);
 }
 
-// public void SetResponseType(Uno.Net.Http.HttpResponseType responseType) :299
+// public void SetResponseType(Uno.Net.Http.HttpResponseType responseType) :296
 void HttpMessageHandlerRequest__SetResponseType_fn(HttpMessageHandlerRequest* __this, int32_t* responseType)
 {
     __this->SetResponseType(*responseType);
 }
 
-// public void SetTimeout(int timeoutInMilliseconds) :289
+// public void SetTimeout(int timeoutInMilliseconds) :286
 void HttpMessageHandlerRequest__SetTimeout_fn(HttpMessageHandlerRequest* __this, int32_t* timeoutInMilliseconds)
 {
     __this->SetTimeout(*timeoutInMilliseconds);
 }
 
-// public Uno.Net.Http.HttpRequestState get_State() :107
+// public Uno.Net.Http.HttpRequestState get_State() :104
 void HttpMessageHandlerRequest__get_State_fn(HttpMessageHandlerRequest* __this, int32_t* __retval)
 {
     *__retval = __this->State();
 }
 
-// private void set_State(Uno.Net.Http.HttpRequestState value) :108
+// private void set_State(Uno.Net.Http.HttpRequestState value) :105
 void HttpMessageHandlerRequest__set_State_fn(HttpMessageHandlerRequest* __this, int32_t* value)
 {
     __this->State(*value);
 }
 
-// public generated void add_StateChanged(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) :135
+// public generated void add_StateChanged(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) :132
 void HttpMessageHandlerRequest__add_StateChanged_fn(HttpMessageHandlerRequest* __this, uDelegate* value)
 {
     __this->add_StateChanged(value);
 }
 
-// public generated void remove_StateChanged(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) :135
+// public generated void remove_StateChanged(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) :132
 void HttpMessageHandlerRequest__remove_StateChanged_fn(HttpMessageHandlerRequest* __this, uDelegate* value)
 {
     __this->remove_StateChanged(value);
 }
 
-// public generated void add_Timeout(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) :133
+// public generated void add_Timeout(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) :130
 void HttpMessageHandlerRequest__add_Timeout_fn(HttpMessageHandlerRequest* __this, uDelegate* value)
 {
     __this->add_Timeout(value);
 }
 
-// public generated void remove_Timeout(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) :133
+// public generated void remove_Timeout(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) :130
 void HttpMessageHandlerRequest__remove_Timeout_fn(HttpMessageHandlerRequest* __this, uDelegate* value)
 {
     __this->remove_Timeout(value);
@@ -988,7 +988,7 @@ void HttpMessageHandlerRequest::ctor_(::g::Uno::Net::Http::HttpMessageHandler* h
     State(1);
 }
 
-// public void Abort() [instance] :373
+// public void Abort() [instance] :368
 void HttpMessageHandlerRequest::Abort()
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "Abort()");
@@ -1001,21 +1001,21 @@ void HttpMessageHandlerRequest::Abort()
     OnAborted();
 }
 
-// public generated void add_Aborted(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) [instance] :131
+// public generated void add_Aborted(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) [instance] :128
 void HttpMessageHandlerRequest::add_Aborted(uDelegate* value)
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "add_Aborted(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest>)");
     Aborted1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(Aborted1, value), ::g::Uno::Action1_typeof()->MakeType(__type, NULL));
 }
 
-// public generated void remove_Aborted(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) [instance] :131
+// public generated void remove_Aborted(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) [instance] :128
 void HttpMessageHandlerRequest::remove_Aborted(uDelegate* value)
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "remove_Aborted(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest>)");
     Aborted1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(Aborted1, value), ::g::Uno::Action1_typeof()->MakeType(__type, NULL));
 }
 
-// private void CheckDisposed() [instance] :73
+// private void CheckDisposed() [instance] :70
 void HttpMessageHandlerRequest::CheckDisposed()
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "CheckDisposed()");
@@ -1024,7 +1024,7 @@ void HttpMessageHandlerRequest::CheckDisposed()
         U_THROW(::g::Uno::ObjectDisposedException::New4(uString::Const("HttpMessageHandlerRequest")));
 }
 
-// internal void CompleteRequest() [instance] :90
+// internal void CompleteRequest() [instance] :87
 void HttpMessageHandlerRequest::CompleteRequest()
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "CompleteRequest()");
@@ -1032,7 +1032,7 @@ void HttpMessageHandlerRequest::CompleteRequest()
     _httpMessageHandler = NULL;
 }
 
-// public void Dispose() [instance] :79
+// public void Dispose() [instance] :76
 void HttpMessageHandlerRequest::Dispose()
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "Dispose()");
@@ -1042,21 +1042,21 @@ void HttpMessageHandlerRequest::Dispose()
     ::g::Uno::GC::SuppressFinalize(this);
 }
 
-// public generated void add_Done(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) [instance] :134
+// public generated void add_Done(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) [instance] :131
 void HttpMessageHandlerRequest::add_Done(uDelegate* value)
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "add_Done(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest>)");
     Done1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(Done1, value), ::g::Uno::Action1_typeof()->MakeType(__type, NULL));
 }
 
-// public generated void remove_Done(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) [instance] :134
+// public generated void remove_Done(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) [instance] :131
 void HttpMessageHandlerRequest::remove_Done(uDelegate* value)
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "remove_Done(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest>)");
     Done1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(Done1, value), ::g::Uno::Action1_typeof()->MakeType(__type, NULL));
 }
 
-// public void EnableCache(bool enableCache) [instance] :264
+// public void EnableCache(bool enableCache) [instance] :261
 void HttpMessageHandlerRequest::EnableCache(bool enableCache)
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "EnableCache(bool)");
@@ -1068,21 +1068,21 @@ void HttpMessageHandlerRequest::EnableCache(bool enableCache)
     ::g::Uno::Net::Http::Implementation::IHttpRequest::EnableCache(uInterface(uPtr(_httpRequest), ::g::Uno::Net::Http::Implementation::IHttpRequest_typeof()), enableCache);
 }
 
-// public generated void add_Error(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest, string> value) [instance] :132
+// public generated void add_Error(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest, string> value) [instance] :129
 void HttpMessageHandlerRequest::add_Error(uDelegate* value)
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "add_Error(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest, string>)");
     Error1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(Error1, value), ::g::Uno::Action2_typeof()->MakeType(__type, ::g::Uno::String_typeof(), NULL));
 }
 
-// public generated void remove_Error(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest, string> value) [instance] :132
+// public generated void remove_Error(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest, string> value) [instance] :129
 void HttpMessageHandlerRequest::remove_Error(uDelegate* value)
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "remove_Error(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest, string>)");
     Error1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(Error1, value), ::g::Uno::Action2_typeof()->MakeType(__type, ::g::Uno::String_typeof(), NULL));
 }
 
-// public byte[] GetResponseContentByteArray() [instance] :435
+// public byte[] GetResponseContentByteArray() [instance] :429
 uArray* HttpMessageHandlerRequest::GetResponseContentByteArray()
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "GetResponseContentByteArray()");
@@ -1099,7 +1099,7 @@ uArray* HttpMessageHandlerRequest::GetResponseContentByteArray()
     return (ind2 != NULL) ? ind2 : uArray::New(::g::Uno::Byte_typeof()->Array(), 0);
 }
 
-// public string GetResponseContentString() [instance] :421
+// public string GetResponseContentString() [instance] :415
 uString* HttpMessageHandlerRequest::GetResponseContentString()
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "GetResponseContentString()");
@@ -1116,7 +1116,7 @@ uString* HttpMessageHandlerRequest::GetResponseContentString()
     return (ind1 != NULL) ? ind1 : uString::Const("");
 }
 
-// public string GetResponseHeader(string name) [instance] :398
+// public string GetResponseHeader(string name) [instance] :393
 uString* HttpMessageHandlerRequest::GetResponseHeader(uString* name)
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "GetResponseHeader(string)");
@@ -1128,7 +1128,7 @@ uString* HttpMessageHandlerRequest::GetResponseHeader(uString* name)
     return ::g::Uno::Net::Http::Implementation::IHttpRequest::GetResponseHeader(uInterface(uPtr(_httpRequest), ::g::Uno::Net::Http::Implementation::IHttpRequest_typeof()), name);
 }
 
-// public string GetResponseHeaders() [instance] :409
+// public string GetResponseHeaders() [instance] :404
 uString* HttpMessageHandlerRequest::GetResponseHeaders()
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "GetResponseHeaders()");
@@ -1140,7 +1140,7 @@ uString* HttpMessageHandlerRequest::GetResponseHeaders()
     return ::g::Uno::Net::Http::Implementation::IHttpRequest::GetResponseHeaders(uInterface(uPtr(_httpRequest), ::g::Uno::Net::Http::Implementation::IHttpRequest_typeof()));
 }
 
-// public int GetResponseStatus() [instance] :387
+// public int GetResponseStatus() [instance] :382
 int32_t HttpMessageHandlerRequest::GetResponseStatus()
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "GetResponseStatus()");
@@ -1152,32 +1152,32 @@ int32_t HttpMessageHandlerRequest::GetResponseStatus()
     return ::g::Uno::Net::Http::Implementation::IHttpRequest::GetResponseStatus(uInterface(uPtr(_httpRequest), ::g::Uno::Net::Http::Implementation::IHttpRequest_typeof()));
 }
 
-// public Uno.Net.Http.HttpResponseType get_HttpResponseType() [instance] :101
+// public Uno.Net.Http.HttpResponseType get_HttpResponseType() [instance] :98
 int32_t HttpMessageHandlerRequest::HttpResponseType()
 {
     return _responseType;
 }
 
-// public void set_HttpResponseType(Uno.Net.Http.HttpResponseType value) [instance] :102
+// public void set_HttpResponseType(Uno.Net.Http.HttpResponseType value) [instance] :99
 void HttpMessageHandlerRequest::HttpResponseType(int32_t value)
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "set_HttpResponseType(Uno.Net.Http.HttpResponseType)");
     SetResponseType(value);
 }
 
-// private bool IsComplete() [instance] :215
+// private bool IsComplete() [instance] :212
 bool HttpMessageHandlerRequest::IsComplete()
 {
     return State() >= 5;
 }
 
-// public string get_Method() [instance] :96
+// public string get_Method() [instance] :93
 uString* HttpMessageHandlerRequest::Method()
 {
     return _method;
 }
 
-// internal void OnAborted() [instance] :220
+// internal void OnAborted() [instance] :217
 void HttpMessageHandlerRequest::OnAborted()
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "OnAborted()");
@@ -1187,7 +1187,7 @@ void HttpMessageHandlerRequest::OnAborted()
         ::g::Uno::Threading::IDispatcher::Invoke(uInterface(uPtr(_dispatcher), ::g::Uno::Threading::IDispatcher_typeof()), uDelegate::New(::g::Uno::Action_typeof(), (void*)HttpMessageHandlerRequest__DispatchClosure__Run_fn, HttpMessageHandlerRequest__DispatchClosure::New1(6, handler, this)));
 }
 
-// internal void OnDone() [instance] :241
+// internal void OnDone() [instance] :238
 void HttpMessageHandlerRequest::OnDone()
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "OnDone()");
@@ -1197,7 +1197,7 @@ void HttpMessageHandlerRequest::OnDone()
         ::g::Uno::Threading::IDispatcher::Invoke(uInterface(uPtr(_dispatcher), ::g::Uno::Threading::IDispatcher_typeof()), uDelegate::New(::g::Uno::Action_typeof(), (void*)HttpMessageHandlerRequest__DispatchClosure__Run_fn, HttpMessageHandlerRequest__DispatchClosure::New1(5, handler, this)));
 }
 
-// internal void OnError(string platformspesificErrorMessage) [instance] :227
+// internal void OnError(string platformspesificErrorMessage) [instance] :224
 void HttpMessageHandlerRequest::OnError(uString* platformspesificErrorMessage)
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "OnError(string)");
@@ -1208,7 +1208,7 @@ void HttpMessageHandlerRequest::OnError(uString* platformspesificErrorMessage)
         ::g::Uno::Threading::IDispatcher::Invoke(uInterface(uPtr(_dispatcher), ::g::Uno::Threading::IDispatcher_typeof()), uDelegate::New(::g::Uno::Action_typeof(), (void*)HttpMessageHandlerRequest__DispatchClosure1__Run_fn, (HttpMessageHandlerRequest__DispatchClosure1__New1_fn(HttpMessageHandlerRequest__DispatchClosure1_typeof()->MakeType(::g::Uno::String_typeof(), NULL), uCRef<int32_t>(7), handler, this, platformspesificErrorMessage, &ret4), ret4)));
 }
 
-// internal void OnStateChanged() [instance] :118
+// internal void OnStateChanged() [instance] :115
 void HttpMessageHandlerRequest::OnStateChanged()
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "OnStateChanged()");
@@ -1222,7 +1222,7 @@ void HttpMessageHandlerRequest::OnStateChanged()
         uPtr(handler)->InvokeVoid(this);
 }
 
-// internal void OnTimeout() [instance] :234
+// internal void OnTimeout() [instance] :231
 void HttpMessageHandlerRequest::OnTimeout()
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "OnTimeout()");
@@ -1232,21 +1232,21 @@ void HttpMessageHandlerRequest::OnTimeout()
         ::g::Uno::Threading::IDispatcher::Invoke(uInterface(uPtr(_dispatcher), ::g::Uno::Threading::IDispatcher_typeof()), uDelegate::New(::g::Uno::Action_typeof(), (void*)HttpMessageHandlerRequest__DispatchClosure__Run_fn, HttpMessageHandlerRequest__DispatchClosure::New1(8, handler, this)));
 }
 
-// public generated void add_Progress(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest, int, int, bool> value) [instance] :136
+// public generated void add_Progress(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest, int, int, bool> value) [instance] :133
 void HttpMessageHandlerRequest::add_Progress(uDelegate* value)
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "add_Progress(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest, int, int, bool>)");
     Progress1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(Progress1, value), ::g::Uno::Action4_typeof()->MakeType(__type, ::g::Uno::Int_typeof(), ::g::Uno::Int_typeof(), ::g::Uno::Bool_typeof(), NULL));
 }
 
-// public generated void remove_Progress(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest, int, int, bool> value) [instance] :136
+// public generated void remove_Progress(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest, int, int, bool> value) [instance] :133
 void HttpMessageHandlerRequest::remove_Progress(uDelegate* value)
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "remove_Progress(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest, int, int, bool>)");
     Progress1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(Progress1, value), ::g::Uno::Action4_typeof()->MakeType(__type, ::g::Uno::Int_typeof(), ::g::Uno::Int_typeof(), ::g::Uno::Bool_typeof(), NULL));
 }
 
-// public void SendAsync() [instance] :360
+// public void SendAsync() [instance] :355
 void HttpMessageHandlerRequest::SendAsync()
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "SendAsync()");
@@ -1260,7 +1260,7 @@ void HttpMessageHandlerRequest::SendAsync()
     OnStateChanged();
 }
 
-// public void SendAsync(byte[] data) [instance] :314
+// public void SendAsync(byte[] data) [instance] :309
 void HttpMessageHandlerRequest::SendAsync1(uArray* data)
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "SendAsync(byte[])");
@@ -1282,7 +1282,7 @@ void HttpMessageHandlerRequest::SendAsync1(uArray* data)
     OnStateChanged();
 }
 
-// public void SendAsync(string data) [instance] :342
+// public void SendAsync(string data) [instance] :337
 void HttpMessageHandlerRequest::SendAsync2(uString* data)
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "SendAsync(string)");
@@ -1301,7 +1301,7 @@ void HttpMessageHandlerRequest::SendAsync2(uString* data)
     OnStateChanged();
 }
 
-// public void SetHeader(string name, string value) [instance] :276
+// public void SetHeader(string name, string value) [instance] :273
 void HttpMessageHandlerRequest::SetHeader(uString* name, uString* value)
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "SetHeader(string,string)");
@@ -1316,7 +1316,7 @@ void HttpMessageHandlerRequest::SetHeader(uString* name, uString* value)
     ::g::Uno::Net::Http::Implementation::IHttpRequest::SetHeader(uInterface(uPtr(_httpRequest), ::g::Uno::Net::Http::Implementation::IHttpRequest_typeof()), name, value);
 }
 
-// public void SetResponseType(Uno.Net.Http.HttpResponseType responseType) [instance] :299
+// public void SetResponseType(Uno.Net.Http.HttpResponseType responseType) [instance] :296
 void HttpMessageHandlerRequest::SetResponseType(int32_t responseType)
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "SetResponseType(Uno.Net.Http.HttpResponseType)");
@@ -1328,7 +1328,7 @@ void HttpMessageHandlerRequest::SetResponseType(int32_t responseType)
     _responseType = responseType;
 }
 
-// public void SetTimeout(int timeoutInMilliseconds) [instance] :289
+// public void SetTimeout(int timeoutInMilliseconds) [instance] :286
 void HttpMessageHandlerRequest::SetTimeout(int32_t timeoutInMilliseconds)
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "SetTimeout(int)");
@@ -1340,13 +1340,13 @@ void HttpMessageHandlerRequest::SetTimeout(int32_t timeoutInMilliseconds)
     ::g::Uno::Net::Http::Implementation::IHttpRequest::SetTimeout(uInterface(uPtr(_httpRequest), ::g::Uno::Net::Http::Implementation::IHttpRequest_typeof()), timeoutInMilliseconds);
 }
 
-// public Uno.Net.Http.HttpRequestState get_State() [instance] :107
+// public Uno.Net.Http.HttpRequestState get_State() [instance] :104
 int32_t HttpMessageHandlerRequest::State()
 {
     return _state;
 }
 
-// private void set_State(Uno.Net.Http.HttpRequestState value) [instance] :108
+// private void set_State(Uno.Net.Http.HttpRequestState value) [instance] :105
 void HttpMessageHandlerRequest::State(int32_t value)
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "set_State(Uno.Net.Http.HttpRequestState)");
@@ -1358,35 +1358,35 @@ void HttpMessageHandlerRequest::State(int32_t value)
     OnStateChanged();
 }
 
-// public generated void add_StateChanged(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) [instance] :135
+// public generated void add_StateChanged(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) [instance] :132
 void HttpMessageHandlerRequest::add_StateChanged(uDelegate* value)
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "add_StateChanged(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest>)");
     StateChanged1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(StateChanged1, value), ::g::Uno::Action1_typeof()->MakeType(__type, NULL));
 }
 
-// public generated void remove_StateChanged(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) [instance] :135
+// public generated void remove_StateChanged(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) [instance] :132
 void HttpMessageHandlerRequest::remove_StateChanged(uDelegate* value)
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "remove_StateChanged(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest>)");
     StateChanged1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(StateChanged1, value), ::g::Uno::Action1_typeof()->MakeType(__type, NULL));
 }
 
-// public generated void add_Timeout(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) [instance] :133
+// public generated void add_Timeout(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) [instance] :130
 void HttpMessageHandlerRequest::add_Timeout(uDelegate* value)
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "add_Timeout(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest>)");
     Timeout1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(Timeout1, value), ::g::Uno::Action1_typeof()->MakeType(__type, NULL));
 }
 
-// public generated void remove_Timeout(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) [instance] :133
+// public generated void remove_Timeout(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest> value) [instance] :130
 void HttpMessageHandlerRequest::remove_Timeout(uDelegate* value)
 {
     uStackFrame __("Uno.Net.Http.HttpMessageHandlerRequest", "remove_Timeout(Uno.Action<Uno.Net.Http.HttpMessageHandlerRequest>)");
     Timeout1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(Timeout1, value), ::g::Uno::Action1_typeof()->MakeType(__type, NULL));
 }
 
-// private static bool IsHeaderValid(string name, string value) [static] :450
+// private static bool IsHeaderValid(string name, string value) [static] :444
 bool HttpMessageHandlerRequest::IsHeaderValid(uString* name, uString* value)
 {
     return true;
@@ -1401,8 +1401,8 @@ HttpMessageHandlerRequest* HttpMessageHandlerRequest::New1(::g::Uno::Net::Http::
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Net.Http/1.9.0/HttpRequestState.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.10.0-rc1/HttpRequestState.uno
+// --------------------------------------------------------------------------
 
 // public enum HttpRequestState :3
 uEnumType* HttpRequestState_typeof()
@@ -1425,8 +1425,8 @@ uEnumType* HttpRequestState_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Uno.Net.Http/1.9.0/HttpResponseType.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.10.0-rc1/HttpResponseType.uno
+// --------------------------------------------------------------------------
 
 // public enum HttpResponseType :3
 uEnumType* HttpResponseType_typeof()
@@ -1442,8 +1442,8 @@ uEnumType* HttpResponseType_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Uno.Net.Http/1.9.0/HttpStatusReasonPhrase.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.10.0-rc1/HttpStatusReasonPhrase.uno
+// --------------------------------------------------------------------------------
 
 // public static class HttpStatusReasonPhrase :5
 // {
@@ -1579,10 +1579,10 @@ uString* HttpStatusReasonPhrase::GetFromStatusCode(int32_t statusCode)
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Net.Http/1.9.0/HttpMessageHandlerRequest.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.10.0-rc1/HttpMessageHandlerRequest.uno
+// -----------------------------------------------------------------------------------
 
-// public sealed class InvalidResponseTypeException :496
+// public sealed class InvalidResponseTypeException :453
 // {
 static void InvalidResponseTypeException_build(uType* type)
 {
@@ -1608,25 +1608,25 @@ static void InvalidResponseTypeException_build(uType* type)
     return type;
 }
 
-// public InvalidResponseTypeException() :498
+// public InvalidResponseTypeException() :455
 void InvalidResponseTypeException__ctor_3_fn(InvalidResponseTypeException* __this)
 {
     __this->ctor_3();
 }
 
-// public InvalidResponseTypeException New() :498
+// public InvalidResponseTypeException New() :455
 void InvalidResponseTypeException__New4_fn(InvalidResponseTypeException** __retval)
 {
     *__retval = InvalidResponseTypeException::New4();
 }
 
-// public InvalidResponseTypeException() [instance] :498
+// public InvalidResponseTypeException() [instance] :455
 void InvalidResponseTypeException::ctor_3()
 {
     ctor_1(::STRINGS[43/*"Response ty...*/]);
 }
 
-// public InvalidResponseTypeException New() [static] :498
+// public InvalidResponseTypeException New() [static] :455
 InvalidResponseTypeException* InvalidResponseTypeException::New4()
 {
     InvalidResponseTypeException* obj1 = (InvalidResponseTypeException*)uNew(InvalidResponseTypeException_typeof());
@@ -1635,10 +1635,10 @@ InvalidResponseTypeException* InvalidResponseTypeException::New4()
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Net.Http/1.9.0/HttpMessageHandlerRequest.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.10.0-rc1/HttpMessageHandlerRequest.uno
+// -----------------------------------------------------------------------------------
 
-// public sealed class InvalidStateException :502
+// public sealed class InvalidStateException :459
 // {
 static void InvalidStateException_build(uType* type)
 {
@@ -1665,43 +1665,43 @@ static void InvalidStateException_build(uType* type)
     return type;
 }
 
-// public InvalidStateException() :504
+// public InvalidStateException() :461
 void InvalidStateException__ctor_3_fn(InvalidStateException* __this)
 {
     __this->ctor_3();
 }
 
-// public InvalidStateException(string message) :507
+// public InvalidStateException(string message) :464
 void InvalidStateException__ctor_4_fn(InvalidStateException* __this, uString* message)
 {
     __this->ctor_4(message);
 }
 
-// public InvalidStateException New() :504
+// public InvalidStateException New() :461
 void InvalidStateException__New4_fn(InvalidStateException** __retval)
 {
     *__retval = InvalidStateException::New4();
 }
 
-// public InvalidStateException New(string message) :507
+// public InvalidStateException New(string message) :464
 void InvalidStateException__New5_fn(uString* message, InvalidStateException** __retval)
 {
     *__retval = InvalidStateException::New5(message);
 }
 
-// public InvalidStateException() [instance] :504
+// public InvalidStateException() [instance] :461
 void InvalidStateException::ctor_3()
 {
     ctor_1(::STRINGS[44/*"The object ...*/]);
 }
 
-// public InvalidStateException(string message) [instance] :507
+// public InvalidStateException(string message) [instance] :464
 void InvalidStateException::ctor_4(uString* message)
 {
     ctor_1(message);
 }
 
-// public InvalidStateException New() [static] :504
+// public InvalidStateException New() [static] :461
 InvalidStateException* InvalidStateException::New4()
 {
     InvalidStateException* obj1 = (InvalidStateException*)uNew(InvalidStateException_typeof());
@@ -1709,7 +1709,7 @@ InvalidStateException* InvalidStateException::New4()
     return obj1;
 }
 
-// public InvalidStateException New(string message) [static] :507
+// public InvalidStateException New(string message) [static] :464
 InvalidStateException* InvalidStateException::New5(uString* message)
 {
     InvalidStateException* obj2 = (InvalidStateException*)uNew(InvalidStateException_typeof());
@@ -1718,8 +1718,8 @@ InvalidStateException* InvalidStateException::New5(uString* message)
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Net.Http/1.9.0/HttpMessageHandler.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Http/1.10.0-rc1/HttpMessageHandler.uno
+// ----------------------------------------------------------------------------
 
 // internal static class HttpMessageHandler.StaticData :10
 // {

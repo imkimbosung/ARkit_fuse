@@ -1,13 +1,13 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Int.uno.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Int.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.ValueType.h>
 
 namespace g{
 namespace Uno{
 
-// public intrinsic struct Int :11
+// public intrinsic struct Int :9
 // {
 uStructType* Int_typeof();
 void Int__Equals_fn(int32_t* __this, uType* __type, uObject* o, bool* __retval);

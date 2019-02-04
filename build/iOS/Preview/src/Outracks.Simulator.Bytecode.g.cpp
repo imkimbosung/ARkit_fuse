@@ -3578,7 +3578,6 @@ void ProjectDependency__Read_fn(::g::System::IO::BinaryReader* reader, ProjectDe
 // public override sealed string ToString() :63
 void ProjectDependency__ToString_fn(ProjectDependency* __this, uString** __retval)
 {
-    uStackFrame __("Outracks.Simulator.Bytecode.ProjectDependency", "ToString()");
     return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[22/*"{ Path: "*/], __this->Path), ::STRINGS[23/*", Descripto...*/]), __this->Descriptor), ::STRINGS[24/*" }"*/]), void();
 }
 
@@ -4728,7 +4727,7 @@ Statement* Statement::Nop()
 {
     Statement_typeof()->Init();
     ::g::Outracks::Optional1<uStrong<uString*> > ret4;
-    return ::g::Outracks::Simulator::Bytecode::NoOperation::New1((::g::Outracks::Optional1__op_Implicit2_fn(::TYPES[90/*Outracks.Optional<string>*/], ::STRINGS[27/*"NOP"*/], &ret4), ret4));
+    return ::g::Outracks::Simulator::Bytecode::NoOperation::New1((::g::Outracks::Optional1__op_Implicit1_fn(::TYPES[90/*Outracks.Optional<string>*/], ::STRINGS[27/*"NOP"*/], &ret4), ret4));
 }
 
 // public static operator +(Outracks.Simulator.Bytecode.Statement left, Outracks.Simulator.Bytecode.Statement right) [static] :67
@@ -5048,7 +5047,6 @@ void StringLiteral__ReadString_fn(::g::System::IO::BinaryReader* reader, uString
 // public override sealed string ToString() :85
 void StringLiteral__ToString_fn(StringLiteral* __this, uString** __retval)
 {
-    uStackFrame __("Outracks.Simulator.Bytecode.StringLiteral", "ToString()");
     return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[28/*"\""*/], __this->StringValue), ::STRINGS[28/*"\""*/]), void();
 }
 
@@ -5756,7 +5754,7 @@ void TypeNameParser::ParsePossibleDot()
 
     if ((_idx < uPtr(_tokens)->Count()) && !::g::Outracks::Simulator::Bytecode::TypeNameTokenizer::IsSpecialChar(uPtr(Cur())->Item(0)))
     {
-        ::g::Outracks::Simulator::Bytecode::TypeName* tmp = ParseTypeName((::g::Outracks::Optional1__op_Implicit2_fn(::TYPES[105/*Outracks.Optional<Outracks.Simulator.Bytecode.TypeName>*/], typeName, &ret3), ret3));
+        ::g::Outracks::Simulator::Bytecode::TypeName* tmp = ParseTypeName((::g::Outracks::Optional1__op_Implicit1_fn(::TYPES[105/*Outracks.Optional<Outracks.Simulator.Bytecode.TypeName>*/], typeName, &ret3), ret3));
         return tmp;
     }
 

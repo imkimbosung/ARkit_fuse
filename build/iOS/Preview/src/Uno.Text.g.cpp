@@ -27,8 +27,8 @@ namespace g{
 namespace Uno{
 namespace Text{
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Text/Ascii.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Text/Ascii.uno
+// --------------------------------------------------------------------------
 
 // public static class Ascii :5
 // {
@@ -97,8 +97,8 @@ uString* Ascii::GetString(uArray* value)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Text/Base64.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Text/Base64.uno
+// ---------------------------------------------------------------------------
 
 // public static class Base64 :8
 // {
@@ -130,7 +130,7 @@ void Base64__GetBytes_fn(uString* value, uArray** __retval)
     *__retval = Base64::GetBytes(value);
 }
 
-// public static string GetString(byte[] value) :74
+// public static string GetString(byte[] value) :66
 void Base64__GetString_fn(uArray* value, uString** __retval)
 {
     *__retval = Base64::GetString(value);
@@ -188,7 +188,7 @@ uArray* Base64::GetBytes(uString* value)
     return (uArray*)ret->ToArray();
 }
 
-// public static string GetString(byte[] value) [static] :74
+// public static string GetString(byte[] value) [static] :66
 uString* Base64::GetString(uArray* value)
 {
     static const char* base64_chars =
@@ -253,8 +253,8 @@ uString* Base64::GetString(uArray* value)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Text/Utf8.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Text/Utf8.uno
+// -------------------------------------------------------------------------
 
 // public abstract class Decoder :7
 // {
@@ -289,8 +289,8 @@ void Decoder::ctor_()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Text/Utf8.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Text/Utf8.uno
+// -------------------------------------------------------------------------
 
 // public abstract class Encoding :258
 // {
@@ -346,8 +346,8 @@ Encoding* Encoding::UTF8()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Text/StringBuilder.uno
-// -----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Text/StringBuilder.uno
+// ----------------------------------------------------------------------------------
 
 // public sealed class StringBuilder :7
 // {
@@ -524,8 +524,8 @@ StringBuilder* StringBuilder::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Text/Utf8.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Text/Utf8.uno
+// -------------------------------------------------------------------------
 
 // public static class Utf8 :292
 // {
@@ -554,7 +554,7 @@ void Utf8__GetBytes_fn(uString* value, uArray** __retval)
     *__retval = Utf8::GetBytes(value);
 }
 
-// public static string GetString(byte[] value) :316
+// public static string GetString(byte[] value) :307
 void Utf8__GetString_fn(uArray* value, uString** __retval)
 {
     *__retval = Utf8::GetString(value);
@@ -567,7 +567,7 @@ uArray* Utf8::GetBytes(uString* value)
     return uArray::New(::g::Uno::Byte_typeof()->Array(), (int32_t) cstr.Length, cstr.Ptr);
 }
 
-// public static string GetString(byte[] value) [static] :316
+// public static string GetString(byte[] value) [static] :307
 uString* Utf8::GetString(uArray* value)
 {
     const char* utf8 = (const char*)uPtr(value)->Ptr();
@@ -575,8 +575,8 @@ uString* Utf8::GetString(uArray* value)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Text/Utf8.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Text/Utf8.uno
+// -------------------------------------------------------------------------
 
 // internal sealed class UTF8Decoder :14
 // {
@@ -867,8 +867,8 @@ UTF8Decoder* UTF8Decoder::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Text/Utf8.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Text/Utf8.uno
+// -------------------------------------------------------------------------
 
 // public sealed class UTF8Encoding :284
 // {

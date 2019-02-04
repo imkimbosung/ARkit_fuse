@@ -2710,7 +2710,7 @@ uObject* ScopeClosure::Execute1(::g::Outracks::Simulator::Bytecode::Lambda* lamb
     uStackFrame __("Outracks.Simulator.Runtime.ScopeClosure", "Execute(Outracks.Simulator.Bytecode.Lambda,object[])");
     ::g::Outracks::Optional1<uStrong< ::g::Outracks::Simulator::Runtime::Environment*> > ret11;
     ::g::Outracks::Simulator::Bytecode::BindVariable* ret12;
-    ::g::Outracks::Simulator::Runtime::Environment* bodyEnv = ::g::Outracks::Simulator::Runtime::Environment::New1((::g::Outracks::Optional1__op_Implicit2_fn(::TYPES[9/*Outracks.Optional<Outracks.Simulator.Runtime.Environment>*/], _scope, &ret11), ret11));
+    ::g::Outracks::Simulator::Runtime::Environment* bodyEnv = ::g::Outracks::Simulator::Runtime::Environment::New1((::g::Outracks::Optional1__op_Implicit1_fn(::TYPES[9/*Outracks.Optional<Outracks.Simulator.Runtime.Environment>*/], _scope, &ret11), ret11));
     ScopeClosure* bodyClosure = ScopeClosure::New1(bodyEnv, _reflection);
     bodyEnv->Bind1(uPtr(uPtr(lambda)->Signature)->Parameters, arguments);
     uObject* enum1 = (uObject*)uPtr(uPtr(lambda)->LocalVariables)->GetEnumerator();

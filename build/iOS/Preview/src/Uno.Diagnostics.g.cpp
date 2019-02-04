@@ -38,10 +38,10 @@ namespace g{
 namespace Uno{
 namespace Diagnostics{
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Diagnostics/AllocateEvent.uno
-// ------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Diagnostics/AllocateEvent.uno
+// -----------------------------------------------------------------------------------------
 
-// public sealed class AllocateEvent :3
+// public sealed class AllocateEvent :4
 // {
 static void AllocateEvent_build(uType* type)
 {
@@ -64,15 +64,15 @@ static void AllocateEvent_build(uType* type)
     return type;
 }
 
-// public override sealed Uno.Diagnostics.EventType get_Type() :9
+// public override sealed Uno.Diagnostics.EventType get_Type() :10
 void AllocateEvent__get_Type_fn(AllocateEvent* __this, int32_t* __retval)
 {
     return *__retval = 2, void();
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Diagnostics/Profile.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Diagnostics/Profile.uno
+// -----------------------------------------------------------------------------------
 
 // public sealed class AlwaysProfileAttribute :10
 // {
@@ -124,8 +124,8 @@ AlwaysProfileAttribute* AlwaysProfileAttribute::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Diagnostics/Debug.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Diagnostics/Debug.uno
+// ---------------------------------------------------------------------------------
 
 // public delegate void AssertionHandler(bool value, string expression, string filename, int line, object[] operands) :21
 uDelegateType* AssertionHandler_typeof()
@@ -143,8 +143,8 @@ uDelegateType* AssertionHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Diagnostics/Clock.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Diagnostics/Clock.uno
+// ---------------------------------------------------------------------------------
 
 // public static class Clock :9
 // {
@@ -174,13 +174,13 @@ void Clock__GetSeconds_fn(double* __retval)
     *__retval = Clock::GetSeconds();
 }
 
-// public static long GetTicks() :60
+// public static long GetTicks() :56
 void Clock__GetTicks_fn(int64_t* __retval)
 {
     *__retval = Clock::GetTicks();
 }
 
-// public static int GetTimezoneOffset(int year, int month, int day) :77
+// public static int GetTimezoneOffset(int year, int month, int day) :69
 void Clock__GetTimezoneOffset_fn(int32_t* year, int32_t* month, int32_t* day, int32_t* __retval)
 {
     *__retval = Clock::GetTimezoneOffset(*year, *month, *day);
@@ -201,14 +201,14 @@ double Clock::GetSeconds()
     return (double)mach_absolute_time() * multiplier;
 }
 
-// public static long GetTicks() [static] :60
+// public static long GetTicks() [static] :56
 int64_t Clock::GetTicks()
 {
     auto start = std::chrono::system_clock::now();
     return std::chrono::duration_cast<std::chrono::duration<int64_t, std::ratio<1, 10000000>>>(start.time_since_epoch()).count();
 }
 
-// public static int GetTimezoneOffset(int year, int month, int day) [static] :77
+// public static int GetTimezoneOffset(int year, int month, int day) [static] :69
 int32_t Clock::GetTimezoneOffset(int32_t year, int32_t month, int32_t day)
 {
     struct tm stm;
@@ -240,8 +240,8 @@ int32_t Clock::GetTimezoneOffset(int32_t year, int32_t month, int32_t day)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Diagnostics/Debug.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Diagnostics/Debug.uno
+// ---------------------------------------------------------------------------------
 
 // public static class Debug :27
 // {
@@ -262,9 +262,8 @@ static void Debug_build(uType* type)
         ::g::Uno::Diagnostics::AssertionHandler_typeof(), (uintptr_t)&Debug::_assertionHandler_, uFieldFlagsStatic,
         ::g::Uno::Diagnostics::LogHandler_typeof(), (uintptr_t)&Debug::_logHandler_, uFieldFlagsStatic,
         ::g::Uno::String_typeof(), (uintptr_t)&Debug::_indentStr_, uFieldFlagsStatic);
-    type->Reflection.SetFunctions(5,
+    type->Reflection.SetFunctions(4,
         new uFunction("Assert", NULL, (void*)Debug__Assert_fn, 0, true, uVoid_typeof(), 5, ::g::Uno::Bool_typeof(), ::g::Uno::String_typeof(), ::g::Uno::String_typeof(), ::g::Uno::Int_typeof(), uObject_typeof()->Array()),
-        new uFunction("Log", NULL, (void*)Debug__Log1_fn, 0, true, uVoid_typeof(), 4, uObject_typeof(), ::g::Uno::Diagnostics::DebugMessageType_typeof(), ::g::Uno::String_typeof(), ::g::Uno::Int_typeof()),
         new uFunction("Log", NULL, (void*)Debug__Log2_fn, 0, true, uVoid_typeof(), 2, ::g::Uno::String_typeof(), ::g::Uno::Diagnostics::DebugMessageType_typeof()),
         new uFunction("Log", NULL, (void*)Debug__Log3_fn, 0, true, uVoid_typeof(), 4, ::g::Uno::String_typeof(), ::g::Uno::Diagnostics::DebugMessageType_typeof(), ::g::Uno::String_typeof(), ::g::Uno::Int_typeof()),
         new uFunction("SetLogHandler", NULL, (void*)Debug__SetLogHandler_fn, 0, true, uVoid_typeof(), 1, ::g::Uno::Diagnostics::LogHandler_typeof()));
@@ -294,12 +293,6 @@ void Debug__Assert_fn(bool* value, uString* expression, uString* filename, int32
 void Debug__EmitLog_fn(uString* message, int32_t* type)
 {
     Debug::EmitLog(message, *type);
-}
-
-// public static void Log(object message, Uno.Diagnostics.DebugMessageType type, string filename, int line) :63
-void Debug__Log1_fn(uObject* message, int32_t* type, uString* filename, int32_t* line)
-{
-    Debug::Log1(message, *type, filename, *line);
 }
 
 // public static void Log(string message, [Uno.Diagnostics.DebugMessageType type]) :68
@@ -350,14 +343,6 @@ void Debug::EmitLog(uString* message, int32_t type)
     uLog(type, "%s", cstr.Ptr);
 }
 
-// public static void Log(object message, Uno.Diagnostics.DebugMessageType type, string filename, int line) [static] :63
-void Debug::Log1(uObject* message, int32_t type, uString* filename, int32_t line)
-{
-    uStackFrame __("Uno.Diagnostics.Debug", "Log(object,Uno.Diagnostics.DebugMessageType,string,int)");
-    Debug_typeof()->Init();
-    Debug::EmitLog(::g::Uno::Object::ToString(uPtr((message != NULL) ? message : (uString*)::g::Uno::String::Empty())), type);
-}
-
 // public static void Log(string message, [Uno.Diagnostics.DebugMessageType type]) [static] :68
 void Debug::Log2(uString* message, int32_t type)
 {
@@ -382,8 +367,8 @@ void Debug::SetLogHandler(uDelegate* handler)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Diagnostics/Debug.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Diagnostics/Debug.uno
+// ---------------------------------------------------------------------------------
 
 // public enum DebugMessageType :8
 uEnumType* DebugMessageType_typeof()
@@ -402,10 +387,10 @@ uEnumType* DebugMessageType_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Diagnostics/EnterEvent.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Diagnostics/EnterEvent.uno
+// --------------------------------------------------------------------------------------
 
-// public sealed class EnterEvent :3
+// public sealed class EnterEvent :4
 // {
 static void EnterEvent_build(uType* type)
 {
@@ -428,15 +413,15 @@ static void EnterEvent_build(uType* type)
     return type;
 }
 
-// public override sealed Uno.Diagnostics.EventType get_Type() :6
+// public override sealed Uno.Diagnostics.EventType get_Type() :7
 void EnterEvent__get_Type_fn(EnterEvent* __this, int32_t* __retval)
 {
     return *__retval = 0, void();
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Diagnostics/EventType.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Diagnostics/EventType.uno
+// -------------------------------------------------------------------------------------
 
 // public enum EventType :3
 uEnumType* EventType_typeof()
@@ -453,10 +438,10 @@ uEnumType* EventType_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Diagnostics/ExitEvent.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Diagnostics/ExitEvent.uno
+// -------------------------------------------------------------------------------------
 
-// public sealed class ExitEvent :3
+// public sealed class ExitEvent :4
 // {
 static void ExitEvent_build(uType* type)
 {
@@ -482,31 +467,31 @@ static void ExitEvent_build(uType* type)
     return type;
 }
 
-// public generated ExitEvent() :3
+// public generated ExitEvent() :4
 void ExitEvent__ctor_1_fn(ExitEvent* __this)
 {
     __this->ctor_1();
 }
 
-// public generated ExitEvent New() :3
+// public generated ExitEvent New() :4
 void ExitEvent__New1_fn(ExitEvent** __retval)
 {
     *__retval = ExitEvent::New1();
 }
 
-// public override sealed Uno.Diagnostics.EventType get_Type() :5
+// public override sealed Uno.Diagnostics.EventType get_Type() :6
 void ExitEvent__get_Type_fn(ExitEvent* __this, int32_t* __retval)
 {
     return *__retval = 1, void();
 }
 
-// public generated ExitEvent() [instance] :3
+// public generated ExitEvent() [instance] :4
 void ExitEvent::ctor_1()
 {
     ctor_();
 }
 
-// public generated ExitEvent New() [static] :3
+// public generated ExitEvent New() [static] :4
 ExitEvent* ExitEvent::New1()
 {
     ExitEvent* obj1 = (ExitEvent*)uNew(ExitEvent_typeof());
@@ -515,10 +500,10 @@ ExitEvent* ExitEvent::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Diagnostics/FreeEvent.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Diagnostics/FreeEvent.uno
+// -------------------------------------------------------------------------------------
 
-// public sealed class FreeEvent :3
+// public sealed class FreeEvent :4
 // {
 static void FreeEvent_build(uType* type)
 {
@@ -541,15 +526,15 @@ static void FreeEvent_build(uType* type)
     return type;
 }
 
-// public override sealed Uno.Diagnostics.EventType get_Type() :8
+// public override sealed Uno.Diagnostics.EventType get_Type() :9
 void FreeEvent__get_Type_fn(FreeEvent* __this, int32_t* __retval)
 {
     return *__retval = 3, void();
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Diagnostics/IdMap.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Diagnostics/IdMap.uno
+// ---------------------------------------------------------------------------------
 
 // public sealed class IdMap<T> :6
 // {
@@ -617,8 +602,8 @@ IdMap* IdMap::New1(uType* __type, bool twoWay)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Diagnostics/Debug.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Diagnostics/Debug.uno
+// ---------------------------------------------------------------------------------
 
 // public delegate void LogHandler(string message, Uno.Diagnostics.DebugMessageType type) :24
 uDelegateType* LogHandler_typeof()
@@ -633,8 +618,8 @@ uDelegateType* LogHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Diagnostics/Profile.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Diagnostics/Profile.uno
+// -----------------------------------------------------------------------------------
 
 // public sealed class NeverProfileAttribute :12
 // {
@@ -686,8 +671,8 @@ NeverProfileAttribute* NeverProfileAttribute::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Diagnostics/Profile.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Diagnostics/Profile.uno
+// -----------------------------------------------------------------------------------
 
 // public static class Profile :15
 // {
@@ -715,8 +700,8 @@ uClassType* Profile_typeof()
 double Profile::StartTimeStamp_;
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Diagnostics/ProfileData.uno
-// ----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Diagnostics/ProfileData.uno
+// ---------------------------------------------------------------------------------------
 
 // public sealed class ProfileData :6
 // {
@@ -781,8 +766,8 @@ ProfileData* ProfileData::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Diagnostics/ProfileEvent.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Diagnostics/ProfileEvent.uno
+// ----------------------------------------------------------------------------------------
 
 // public abstract class ProfileEvent :4
 // {

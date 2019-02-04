@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Drawing/1.9.0/Internal/BufferCollections.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Drawing/1.10.0-rc1/Internal/BufferCollections.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -22,6 +22,7 @@ void TypedBuffer__CheckGrow_fn(TypedBuffer* __this);
 void TypedBuffer__Clear_fn(TypedBuffer* __this);
 void TypedBuffer__Count_fn(TypedBuffer* __this, int32_t* __retval);
 void TypedBuffer__GetBuffer_fn(TypedBuffer* __this, ::g::Uno::Buffer** __retval);
+void TypedBuffer__GetBytes_fn(TypedBuffer* __this, uArray** __retval);
 void TypedBuffer__GetDeviceIndex_fn(TypedBuffer* __this, ::g::Uno::Graphics::IndexBuffer** __retval);
 void TypedBuffer__GetDeviceVertex_fn(TypedBuffer* __this, ::g::Uno::Graphics::VertexBuffer** __retval);
 void TypedBuffer__Init_fn(TypedBuffer* __this, int32_t* initSize);
@@ -33,7 +34,7 @@ void TypedBuffer__UpdateDevice_fn(TypedBuffer* __this);
 
 struct TypedBuffer : uObject
 {
-    uStrong< ::g::Uno::Buffer*> back;
+    uStrong<uArray*> back;
     int32_t typeSize;
     int32_t capacity;
     int32_t size;
@@ -46,6 +47,7 @@ struct TypedBuffer : uObject
     void Clear();
     int32_t Count();
     ::g::Uno::Buffer* GetBuffer();
+    uArray* GetBytes();
     ::g::Uno::Graphics::IndexBuffer* GetDeviceIndex();
     ::g::Uno::Graphics::VertexBuffer* GetDeviceVertex();
     void Init(int32_t initSize);

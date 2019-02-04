@@ -3,6 +3,7 @@
 
 #include <Uno.Bool.h>
 #include <Uno.Delegate.h>
+#include <Uno.Object.h>
 #include <Uno.Reflection.CppField.h>
 #include <Uno.Reflection.CppFunction.h>
 #include <Uno.Reflection.CppReflection.h>
@@ -15,8 +16,8 @@ namespace g{
 namespace Uno{
 namespace Reflection{
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Reflection/CppReflection.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Reflection/CppReflection.uno
+// ----------------------------------------------------------------------------------------
 
 // public extern struct CppField :32
 // {
@@ -50,6 +51,7 @@ CppField_type* CppField_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.InterfaceCount = 1;
     options.Alignment = alignof(uField*);
     options.ValueSize = sizeof(uField*);
@@ -122,8 +124,8 @@ uField* CppField::Null()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Reflection/CppReflection.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Reflection/CppReflection.uno
+// ----------------------------------------------------------------------------------------
 
 // public extern struct CppFunction :78
 // {
@@ -163,6 +165,7 @@ CppFunction_type* CppFunction_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.InterfaceCount = 1;
     options.Alignment = alignof(uFunction*);
     options.ValueSize = sizeof(uFunction*);
@@ -236,8 +239,8 @@ uFunction* CppFunction::Null()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Reflection/CppReflection.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Reflection/CppReflection.uno
+// ----------------------------------------------------------------------------------------
 
 // public sealed extern class CppReflection :133
 // {
@@ -380,8 +383,8 @@ CppReflection* CppReflection::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Reflection/CppReflection.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Reflection/CppReflection.uno
+// ----------------------------------------------------------------------------------------
 
 // public abstract interface IField :5
 // {
@@ -398,8 +401,8 @@ uInterfaceType* IField_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Reflection/CppReflection.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Reflection/CppReflection.uno
+// ----------------------------------------------------------------------------------------
 
 // public abstract interface IFunction :16
 // {

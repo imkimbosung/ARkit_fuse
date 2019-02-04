@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Uno.Net.Sockets/1.9.0/Dns.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Uno.Net.Sockets/1.10.0-rc1/Dns.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

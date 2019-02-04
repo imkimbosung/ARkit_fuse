@@ -51,6 +51,7 @@
 #include <Uno.Bool.h>
 #include <Uno.Buffer.h>
 #include <Uno.Byte.h>
+#include <Uno.ByteArrayExtensions.h>
 #include <Uno.Char.h>
 #include <Uno.Collections.EnumerableExtensions.h>
 #include <Uno.Collections.IEnumerable-1.h>
@@ -102,8 +103,8 @@ namespace g{
 namespace Fuse{
 namespace Text{
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Renderer.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Renderer.uno
+// ---------------------------------------------------------------
 
 // internal struct Batch :66
 // {
@@ -129,6 +130,7 @@ Batch_type* Batch_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 3;
     options.InterfaceCount = 1;
     options.Alignment = alignof(Batch);
@@ -141,9 +143,9 @@ Batch_type* Batch_typeof()
 }
 
 // public Batch(int textureIndex, Uno.Graphics.VertexBuffer vbo, int quadCount) :72
-void Batch__ctor__fn(Batch* __this, int32_t* textureIndex, ::g::Uno::Graphics::VertexBuffer* vbo, int32_t* quadCount)
+void Batch__ctor_1_fn(Batch* __this, int32_t* textureIndex, ::g::Uno::Graphics::VertexBuffer* vbo, int32_t* quadCount)
 {
-    __this->ctor_(*textureIndex, vbo, *quadCount);
+    __this->ctor_1(*textureIndex, vbo, *quadCount);
 }
 
 // public void Dispose() :80
@@ -159,7 +161,7 @@ void Batch__New1_fn(int32_t* textureIndex, ::g::Uno::Graphics::VertexBuffer* vbo
 }
 
 // public Batch(int textureIndex, Uno.Graphics.VertexBuffer vbo, int quadCount) [instance] :72
-void Batch::ctor_(int32_t textureIndex, ::g::Uno::Graphics::VertexBuffer* vbo, int32_t quadCount)
+void Batch::ctor_1(int32_t textureIndex, ::g::Uno::Graphics::VertexBuffer* vbo, int32_t quadCount)
 {
     uStackFrame __("Fuse.Text.Batch", ".ctor(int,Uno.Graphics.VertexBuffer,int)");
     TextureIndex = textureIndex;
@@ -179,13 +181,13 @@ void Batch::Dispose()
 Batch Batch__New1(int32_t textureIndex, ::g::Uno::Graphics::VertexBuffer* vbo, int32_t quadCount)
 {
     Batch obj1;
-    obj1.ctor_(textureIndex, vbo, quadCount);
+    obj1.ctor_1(textureIndex, vbo, quadCount);
     return obj1;
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Substring.uno
-// -----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Substring.uno
+// ----------------------------------------------------------------
 
 // private sealed class Substring.CharEnumerator :118
 // {
@@ -297,8 +299,8 @@ Substring__CharEnumerator* Substring__CharEnumerator::New1(::g::Fuse::Text::Subs
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Implementation/SinglyLinkedList.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Implementation/SinglyLinkedList.uno
+// --------------------------------------------------------------------------------------
 
 // private sealed class SinglyLinkedList<T>.Enumerator :33
 // {
@@ -420,15 +422,15 @@ SinglyLinkedList__Enumerator* SinglyLinkedList__Enumerator::New1(uType* __type, 
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Fallback.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Fallback.uno
+// ---------------------------------------------------------------
 
 // public sealed class FallingBackFont :39
 // {
 static void FallingBackFont_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("fonts.Length > 0");
-    ::STRINGS[1] = uString::Const("/usr/local/share/uno/Packages/Fuse.Text/1.9.0/Fallback.uno");
+    ::STRINGS[1] = uString::Const("/usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Fallback.uno");
     ::STRINGS[2] = uString::Const("fontIndex == 0");
     ::TYPES[1] = uObject_typeof()->Array();
     ::TYPES[2] = ::g::Fuse::Internal::CacheItem_typeof()->MakeType(::g::Uno::Int_typeof(), ::g::Fuse::Text::Font_typeof(), NULL);
@@ -662,15 +664,15 @@ FallingBackFont* FallingBackFont::New1(uArray* fonts)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Fallback.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Fallback.uno
+// ---------------------------------------------------------------
 
 // public sealed class FallingBackFontFace :7
 // {
 static void FallingBackFontFace_build(uType* type)
 {
     ::STRINGS[3] = uString::Const("fontFaces.Length > 0");
-    ::STRINGS[1] = uString::Const("/usr/local/share/uno/Packages/Fuse.Text/1.9.0/Fallback.uno");
+    ::STRINGS[1] = uString::Const("/usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Fallback.uno");
     ::TYPES[1] = uObject_typeof()->Array();
     ::TYPES[4] = ::g::Fuse::Internal::CacheItem_typeof()->MakeType(::g::Fuse::Internal::FontFaceDescriptor_typeof(), ::g::Fuse::Text::FontFace_typeof(), NULL);
     ::TYPES[5] = ::g::Fuse::Internal::CacheItem_typeof()->MakeType(::g::Uno::Int_typeof(), ::g::Fuse::Text::Font_typeof(), NULL)->Array();
@@ -772,8 +774,8 @@ FallingBackFontFace* FallingBackFontFace::New1(uArray* fontFaces)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/FontFace.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/FontFace.uno
+// ---------------------------------------------------------------
 
 // public abstract class Font :114
 // {
@@ -788,7 +790,7 @@ static void Font_build(uType* type)
     ::STRINGS[4] = uString::Const("...");
     ::STRINGS[5] = uString::Const("Error loading glyph: ");
     ::STRINGS[6] = uString::Const(" ");
-    ::STRINGS[7] = uString::Const("/usr/local/share/uno/Packages/Fuse.Text/1.9.0/FontFace.uno");
+    ::STRINGS[7] = uString::Const("/usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/FontFace.uno");
     ::STRINGS[8] = uString::Const("GetCachedGlyphTexture");
     ::TYPES[6] = ::g::Fuse::Text::GlyphTexture_typeof()->Array();
     ::TYPES[7] = ::g::Uno::Exception_typeof();
@@ -991,8 +993,8 @@ uArray* Font::ShapedTruncation()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/FontFace.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/FontFace.uno
+// ---------------------------------------------------------------
 
 // public abstract class FontFace :52
 // {
@@ -1115,8 +1117,8 @@ FontFace* FontFace::Load2(uString* fileName, int32_t index, uDelegate* stylePred
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/FontFace.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/FontFace.uno
+// ---------------------------------------------------------------
 
 // public struct Glyph :10
 // {
@@ -1136,6 +1138,7 @@ uStructType* Glyph_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 2;
     options.Alignment = alignof(Glyph);
     options.ValueSize = sizeof(Glyph);
@@ -1146,9 +1149,9 @@ uStructType* Glyph_typeof()
 }
 
 // internal Glyph(int fontIndex, uint index) :15
-void Glyph__ctor__fn(Glyph* __this, int32_t* fontIndex, uint32_t* index)
+void Glyph__ctor_1_fn(Glyph* __this, int32_t* fontIndex, uint32_t* index)
 {
-    __this->ctor_(*fontIndex, *index);
+    __this->ctor_1(*fontIndex, *index);
 }
 
 // internal Glyph New(int fontIndex, uint index) :15
@@ -1158,7 +1161,7 @@ void Glyph__New1_fn(int32_t* fontIndex, uint32_t* index, Glyph* __retval)
 }
 
 // internal Glyph(int fontIndex, uint index) [instance] :15
-void Glyph::ctor_(int32_t fontIndex, uint32_t index)
+void Glyph::ctor_1(int32_t fontIndex, uint32_t index)
 {
     FontIndex = fontIndex;
     Index = index;
@@ -1168,20 +1171,20 @@ void Glyph::ctor_(int32_t fontIndex, uint32_t index)
 Glyph Glyph__New1(int32_t fontIndex, uint32_t index)
 {
     Glyph obj1;
-    obj1.ctor_(fontIndex, index);
+    obj1.ctor_1(fontIndex, index);
     return obj1;
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/GlyphAtlas.uno
-// ------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/GlyphAtlas.uno
+// -----------------------------------------------------------------
 
 // public sealed class GlyphAtlas :8
 // {
 static void GlyphAtlas_build(uType* type)
 {
     ::STRINGS[9] = uString::Const("(format == Uno.Graphics.Format.L8) || (format == Uno.Graphics.Format.RGBA8888)");
-    ::STRINGS[10] = uString::Const("/usr/local/share/uno/Packages/Fuse.Text/1.9.0/GlyphAtlas.uno");
+    ::STRINGS[10] = uString::Const("/usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/GlyphAtlas.uno");
     ::TYPES[12] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Uno::Graphics::Texture2D_typeof(), NULL);
     ::TYPES[1] = uObject_typeof()->Array();
     ::TYPES[13] = ::g::Uno::Collections::List__Enumerator_typeof()->MakeType(::g::Uno::Graphics::Texture2D_typeof(), NULL);
@@ -1325,8 +1328,8 @@ GlyphAtlas* GlyphAtlas::New1(::g::Uno::Int2 size)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Renderer.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Renderer.uno
+// ---------------------------------------------------------------
 
 // public struct GlyphTexture :9
 // {
@@ -1350,6 +1353,7 @@ uStructType* GlyphTexture_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 4;
     options.Alignment = alignof(GlyphTexture);
     options.ValueSize = sizeof(GlyphTexture);
@@ -1360,9 +1364,9 @@ uStructType* GlyphTexture_typeof()
 }
 
 // internal GlyphTexture(Fuse.Text.SubTexture subTexture, float2 offset, float scale) :15
-void GlyphTexture__ctor__fn(GlyphTexture* __this, ::g::Fuse::Text::SubTexture* subTexture, ::g::Uno::Float2* offset, float* scale)
+void GlyphTexture__ctor_1_fn(GlyphTexture* __this, ::g::Fuse::Text::SubTexture* subTexture, ::g::Uno::Float2* offset, float* scale)
 {
-    __this->ctor_(*subTexture, *offset, *scale);
+    __this->ctor_1(*subTexture, *offset, *scale);
 }
 
 // internal bool get_IsValid() :24
@@ -1392,7 +1396,7 @@ void GlyphTexture__set_SubTexture_fn(GlyphTexture* __this, ::g::Fuse::Text::SubT
 GlyphTexture GlyphTexture::Invalid_;
 
 // internal GlyphTexture(Fuse.Text.SubTexture subTexture, float2 offset, float scale) [instance] :15
-void GlyphTexture::ctor_(::g::Fuse::Text::SubTexture subTexture, ::g::Uno::Float2 offset, float scale)
+void GlyphTexture::ctor_1(::g::Fuse::Text::SubTexture subTexture, ::g::Uno::Float2 offset, float scale)
 {
     SubTexture(subTexture);
     Offset = offset;
@@ -1421,13 +1425,13 @@ void GlyphTexture::SubTexture(::g::Fuse::Text::SubTexture value)
 GlyphTexture GlyphTexture__New1(::g::Fuse::Text::SubTexture subTexture, ::g::Uno::Float2 offset, float scale)
 {
     GlyphTexture obj1;
-    obj1.ctor_(subTexture, offset, scale);
+    obj1.ctor_1(subTexture, offset, scale);
     return obj1;
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/LazyFontFace.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/LazyFontFace.uno
+// -------------------------------------------------------------------
 
 // public sealed class LazyFont :52
 // {
@@ -1637,8 +1641,8 @@ LazyFont* LazyFont::New1(::g::Fuse::Text::LazyFontFace* fontFace, int32_t pixelS
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/LazyFontFace.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/LazyFontFace.uno
+// -------------------------------------------------------------------
 
 // public sealed class LazyFontFace :6
 // {
@@ -1788,8 +1792,8 @@ LazyFontFace* LazyFontFace::New1(::g::Fuse::Internal::FontFaceDescriptor* descri
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/LineBreaks.uno
-// ------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/LineBreaks.uno
+// -----------------------------------------------------------------
 
 // internal static class LineBreaks :5
 // {
@@ -1823,8 +1827,8 @@ void LineBreaks__Get_fn(::g::Fuse::Text::Substring* text, ::g::Fuse::Text::Imple
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Substring.uno
-// -----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Substring.uno
+// ----------------------------------------------------------------
 
 // private sealed class Substring.LineEnumerable :162
 // {
@@ -1892,8 +1896,8 @@ Substring__LineEnumerable* Substring__LineEnumerable::New1(::g::Fuse::Text::Subs
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Substring.uno
-// -----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Substring.uno
+// ----------------------------------------------------------------
 
 // private sealed class Substring.LineEnumerator :177
 // {
@@ -2047,8 +2051,8 @@ Substring__LineEnumerator* Substring__LineEnumerator::New1(::g::Fuse::Text::Subs
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Measure.uno
-// ---------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Measure.uno
+// --------------------------------------------------------------
 
 // public static class Measure :7
 // {
@@ -2169,8 +2173,8 @@ void Measure__Lines_fn(::g::Fuse::Text::Font* font, float* lineSpacing, ::g::Uno
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/ShapedRun.uno
-// -----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/ShapedRun.uno
+// ----------------------------------------------------------------
 
 // private sealed class ShapedRun.PGEnumerator :123
 // {
@@ -2282,8 +2286,8 @@ ShapedRun__PGEnumerator* ShapedRun__PGEnumerator::New1(::g::Fuse::Text::ShapedRu
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/FontFace.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/FontFace.uno
+// ---------------------------------------------------------------
 
 // public struct PositionedGlyph :22
 // {
@@ -2308,6 +2312,7 @@ uStructType* PositionedGlyph_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 4;
     options.Alignment = alignof(PositionedGlyph);
     options.ValueSize = sizeof(PositionedGlyph);
@@ -2318,9 +2323,9 @@ uStructType* PositionedGlyph_typeof()
 }
 
 // internal PositionedGlyph(Fuse.Text.Glyph glyph, float2 advance, float2 offset, int cluster) :29
-void PositionedGlyph__ctor__fn(PositionedGlyph* __this, ::g::Fuse::Text::Glyph* glyph, ::g::Uno::Float2* advance, ::g::Uno::Float2* offset, int32_t* cluster)
+void PositionedGlyph__ctor_1_fn(PositionedGlyph* __this, ::g::Fuse::Text::Glyph* glyph, ::g::Uno::Float2* advance, ::g::Uno::Float2* offset, int32_t* cluster)
 {
-    __this->ctor_(*glyph, *advance, *offset, *cluster);
+    __this->ctor_1(*glyph, *advance, *offset, *cluster);
 }
 
 // public generated float2 get_Advance() :25
@@ -2354,7 +2359,7 @@ void PositionedGlyph__New1_fn(::g::Fuse::Text::Glyph* glyph, ::g::Uno::Float2* a
 }
 
 // internal PositionedGlyph(Fuse.Text.Glyph glyph, float2 advance, float2 offset, int cluster) [instance] :29
-void PositionedGlyph::ctor_(::g::Fuse::Text::Glyph glyph, ::g::Uno::Float2 advance, ::g::Uno::Float2 offset, int32_t cluster)
+void PositionedGlyph::ctor_1(::g::Fuse::Text::Glyph glyph, ::g::Uno::Float2 advance, ::g::Uno::Float2 offset, int32_t cluster)
 {
     Glyph(glyph);
     Advance(advance);
@@ -2390,13 +2395,13 @@ void PositionedGlyph::Glyph(::g::Fuse::Text::Glyph value)
 PositionedGlyph PositionedGlyph__New1(::g::Fuse::Text::Glyph glyph, ::g::Uno::Float2 advance, ::g::Uno::Float2 offset, int32_t cluster)
 {
     PositionedGlyph obj1;
-    obj1.ctor_(glyph, advance, offset, cluster);
+    obj1.ctor_1(glyph, advance, offset, cluster);
     return obj1;
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Renderer.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Renderer.uno
+// ---------------------------------------------------------------
 
 // internal sealed class PositionedRun :27
 // {
@@ -2477,8 +2482,8 @@ PositionedRun* PositionedRun::Translate(PositionedRun* positionedRun, ::g::Uno::
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Renderer.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Renderer.uno
+// ---------------------------------------------------------------
 
 // internal struct Quad :50
 // {
@@ -2497,6 +2502,7 @@ uStructType* Quad_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 4;
     options.Alignment = alignof(Quad);
     options.ValueSize = sizeof(Quad);
@@ -2507,9 +2513,9 @@ uStructType* Quad_typeof()
 }
 
 // public Quad(float2 position, Uno.Recti texCoords, float scale) :57
-void Quad__ctor__fn(Quad* __this, ::g::Uno::Float2* position, ::g::Uno::Recti* texCoords, float* scale)
+void Quad__ctor_1_fn(Quad* __this, ::g::Uno::Float2* position, ::g::Uno::Recti* texCoords, float* scale)
 {
-    __this->ctor_(*position, *texCoords, *scale);
+    __this->ctor_1(*position, *texCoords, *scale);
 }
 
 // public Quad New(float2 position, Uno.Recti texCoords, float scale) :57
@@ -2519,26 +2525,26 @@ void Quad__New1_fn(::g::Uno::Float2* position, ::g::Uno::Recti* texCoords, float
 }
 
 // public Quad(float2 position, Uno.Recti texCoords, float scale) [instance] :57
-void Quad::ctor_(::g::Uno::Float2 position, ::g::Uno::Recti texCoords, float scale)
+void Quad::ctor_1(::g::Uno::Float2 position, ::g::Uno::Recti texCoords, float scale)
 {
     ::g::Uno::Recti ind1;
     Position = position;
     TexCoords = texCoords;
     Scale = scale;
-    Rect = ::g::Uno::Rect__New2(Position, ::g::Uno::Float2__op_Multiply1(::g::Uno::Float2__op_Implicit2((ind1 = TexCoords, (&ind1))->Size()), Scale));
+    Rect = ::g::Uno::Rect__New2(Position, ::g::Uno::Float2__op_Multiply1(::g::Uno::Float2__op_Implicit1((ind1 = TexCoords, (&ind1))->Size()), Scale));
 }
 
 // public Quad New(float2 position, Uno.Recti texCoords, float scale) [static] :57
 Quad Quad__New1(::g::Uno::Float2 position, ::g::Uno::Recti texCoords, float scale)
 {
     Quad obj2;
-    obj2.ctor_(position, texCoords, scale);
+    obj2.ctor_1(position, texCoords, scale);
     return obj2;
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/FontFace.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/FontFace.uno
+// ---------------------------------------------------------------
 
 // public struct RenderedGlyph :38
 // {
@@ -2560,6 +2566,7 @@ uStructType* RenderedGlyph_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 3;
     options.Alignment = alignof(RenderedGlyph);
     options.ValueSize = sizeof(RenderedGlyph);
@@ -2570,9 +2577,9 @@ uStructType* RenderedGlyph_typeof()
 }
 
 // internal RenderedGlyph(Uno.Content.Images.Bitmap bitmap, float2 offset, float scale) :44
-void RenderedGlyph__ctor__fn(RenderedGlyph* __this, ::g::Uno::Content::Images::Bitmap* bitmap, ::g::Uno::Float2* offset, float* scale)
+void RenderedGlyph__ctor_1_fn(RenderedGlyph* __this, ::g::Uno::Content::Images::Bitmap* bitmap, ::g::Uno::Float2* offset, float* scale)
 {
-    __this->ctor_(bitmap, *offset, *scale);
+    __this->ctor_1(bitmap, *offset, *scale);
 }
 
 // internal RenderedGlyph New(Uno.Content.Images.Bitmap bitmap, float2 offset, float scale) :44
@@ -2582,7 +2589,7 @@ void RenderedGlyph__New1_fn(::g::Uno::Content::Images::Bitmap* bitmap, ::g::Uno:
 }
 
 // internal RenderedGlyph(Uno.Content.Images.Bitmap bitmap, float2 offset, float scale) [instance] :44
-void RenderedGlyph::ctor_(::g::Uno::Content::Images::Bitmap* bitmap, ::g::Uno::Float2 offset, float scale)
+void RenderedGlyph::ctor_1(::g::Uno::Content::Images::Bitmap* bitmap, ::g::Uno::Float2 offset, float scale)
 {
     Bitmap = bitmap;
     Offset = offset;
@@ -2593,13 +2600,13 @@ void RenderedGlyph::ctor_(::g::Uno::Content::Images::Bitmap* bitmap, ::g::Uno::F
 RenderedGlyph RenderedGlyph__New1(::g::Uno::Content::Images::Bitmap* bitmap, ::g::Uno::Float2 offset, float scale)
 {
     RenderedGlyph obj1;
-    obj1.ctor_(bitmap, offset, scale);
+    obj1.ctor_1(bitmap, offset, scale);
     return obj1;
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Renderer.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Renderer.uno
+// ---------------------------------------------------------------
 
 // public sealed class Renderer :86
 // {
@@ -2659,14 +2666,14 @@ void Renderer__ctor__fn(Renderer* __this, ::g::Fuse::Text::Font* font, ::g::Uno:
     __this->ctor_(font, positionedRuns, *approximateGlyphCount);
 }
 
-// private static Uno.Buffer CreateIndexBufferData(int length) :302
-void Renderer__CreateIndexBufferData_fn(int32_t* length, ::g::Uno::Buffer** __retval)
+// private static byte[] CreateIndexBufferData(int length) :302
+void Renderer__CreateIndexBufferData_fn(int32_t* length, uArray** __retval)
 {
     *__retval = Renderer::CreateIndexBufferData(*length);
 }
 
-// private static Uno.Buffer CreateVertexBufferData(Uno.Collections.List<Fuse.Text.Quad> quads, int2 texSize) :320
-void Renderer__CreateVertexBufferData_fn(::g::Uno::Collections::List* quads, ::g::Uno::Int2* texSize, ::g::Uno::Buffer** __retval)
+// private static byte[] CreateVertexBufferData(Uno.Collections.List<Fuse.Text.Quad> quads, int2 texSize) :320
+void Renderer__CreateVertexBufferData_fn(::g::Uno::Collections::List* quads, ::g::Uno::Int2* texSize, uArray** __retval)
 {
     *__retval = Renderer::CreateVertexBufferData(quads, *texSize);
 }
@@ -2890,8 +2897,8 @@ void Renderer::Draw(::g::Uno::Float4 color, ::g::Uno::Float4x4 pixelToClipSpaceM
 
         if (quadCount > 0)
         {
-            ::g::Uno::Graphics::VertexBuffer* vertexBuffer = ::g::Uno::Graphics::VertexBuffer::New4(2);
-            vertexBuffer->Update(uPtr(Renderer::CreateVertexBufferData(quads, uPtr((::g::Uno::Collections::List__get_Item_fn(uPtr(textures), uCRef<int32_t>(i), &ret13), ret13))->Size()))->GetBytes());
+            ::g::Uno::Graphics::VertexBuffer* vertexBuffer = ::g::Uno::Graphics::VertexBuffer::New8(2);
+            vertexBuffer->Update(Renderer::CreateVertexBufferData(quads, uPtr((::g::Uno::Collections::List__get_Item_fn(uPtr(textures), uCRef<int32_t>(i), &ret13), ret13))->Size()));
             ::g::Uno::Collections::List__Add_fn(uPtr(_batches), uCRef(::g::Fuse::Text::Batch__New1(i, vertexBuffer, quadCount)));
         }
     }
@@ -2921,31 +2928,31 @@ void Renderer::init_DrawCalls()
     _draw_5eb093de = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New1(::g::FuseText_bundle::Renderer0b7f7722());
 }
 
-// private static Uno.Buffer CreateIndexBufferData(int length) [static] :302
-::g::Uno::Buffer* Renderer::CreateIndexBufferData(int32_t length)
+// private static byte[] CreateIndexBufferData(int length) [static] :302
+uArray* Renderer::CreateIndexBufferData(int32_t length)
 {
     uStackFrame __("Fuse.Text.Renderer", "CreateIndexBufferData(int)");
     Renderer_typeof()->Init();
     int32_t stride = 12;
-    ::g::Uno::Buffer* buffer = ::g::Uno::Buffer::New4(stride * length);
+    uArray* buffer = uArray::New(::g::Uno::Byte_typeof()->Array(), stride * length);
 
     for (int32_t i = 0; i < length; ++i)
     {
         int32_t bufferPos = i * stride;
         int32_t index = i * 4;
-        uPtr(buffer)->Set23(bufferPos, (uint16_t)index, true);
-        buffer->Set23(bufferPos + 2, (uint16_t)(index + 1), true);
-        buffer->Set23(bufferPos + 4, (uint16_t)(index + 2), true);
-        buffer->Set23(bufferPos + 6, (uint16_t)(index + 2), true);
-        buffer->Set23(bufferPos + 8, (uint16_t)(index + 3), true);
-        buffer->Set23(bufferPos + 10, (uint16_t)index, true);
+        ::g::Uno::ByteArrayExtensions::Set23(buffer, bufferPos, (uint16_t)index, true);
+        ::g::Uno::ByteArrayExtensions::Set23(buffer, bufferPos + 2, (uint16_t)(index + 1), true);
+        ::g::Uno::ByteArrayExtensions::Set23(buffer, bufferPos + 4, (uint16_t)(index + 2), true);
+        ::g::Uno::ByteArrayExtensions::Set23(buffer, bufferPos + 6, (uint16_t)(index + 2), true);
+        ::g::Uno::ByteArrayExtensions::Set23(buffer, bufferPos + 8, (uint16_t)(index + 3), true);
+        ::g::Uno::ByteArrayExtensions::Set23(buffer, bufferPos + 10, (uint16_t)index, true);
     }
 
     return buffer;
 }
 
-// private static Uno.Buffer CreateVertexBufferData(Uno.Collections.List<Fuse.Text.Quad> quads, int2 texSize) [static] :320
-::g::Uno::Buffer* Renderer::CreateVertexBufferData(::g::Uno::Collections::List* quads, ::g::Uno::Int2 texSize)
+// private static byte[] CreateVertexBufferData(Uno.Collections.List<Fuse.Text.Quad> quads, int2 texSize) [static] :320
+uArray* Renderer::CreateVertexBufferData(::g::Uno::Collections::List* quads, ::g::Uno::Int2 texSize)
 {
     uStackFrame __("Fuse.Text.Renderer", "CreateVertexBufferData(Uno.Collections.List<Fuse.Text.Quad>,int2)");
     Renderer_typeof()->Init();
@@ -2966,8 +2973,8 @@ void Renderer::init_DrawCalls()
         float rectTop = rect.Top;
         float rectRight = rect.Right;
         float rectBottom = rect.Bottom;
-        ::g::Uno::Int2 texCoord = ::g::Uno::Int2__op_Division1(::g::Uno::Int2__op_Multiply1((ind5 = quad.TexCoords, (&ind5))->Position(), ::g::Uno::Int2__op_Implicit4(::g::Uno::UShort2__New2(65535, 65535))), texSize);
-        ::g::Uno::Int2 texCoordSize = ::g::Uno::Int2__op_Division1(::g::Uno::Int2__op_Multiply1((ind6 = quad.TexCoords, (&ind6))->Size(), ::g::Uno::Int2__op_Implicit4(::g::Uno::UShort2__New2(65535, 65535))), texSize);
+        ::g::Uno::Int2 texCoord = ::g::Uno::Int2__op_Division1(::g::Uno::Int2__op_Multiply1((ind5 = quad.TexCoords, (&ind5))->Position(), ::g::Uno::Int2__op_Implicit3(::g::Uno::UShort2__New2(65535, 65535))), texSize);
+        ::g::Uno::Int2 texCoordSize = ::g::Uno::Int2__op_Division1(::g::Uno::Int2__op_Multiply1((ind6 = quad.TexCoords, (&ind6))->Size(), ::g::Uno::Int2__op_Implicit3(::g::Uno::UShort2__New2(65535, 65535))), texSize);
         uint16_t texLeft = (uint16_t)texCoord.X;
         uint16_t texTop = (uint16_t)texCoord.Y;
         uint16_t texRight = (uint16_t)(texCoord.X + texCoordSize.X);
@@ -3007,7 +3014,7 @@ void Renderer::init_DrawCalls()
         bufferPos = bufferPos + 2;
     }
 
-    return ::g::Uno::Buffer::New1(buffer);
+    return buffer;
 }
 
 // public Renderer New(Fuse.Text.Font font, Uno.Collections.List<Uno.Collections.List<Fuse.Text.PositionedRun>> positionedRuns, int approximateGlyphCount) [static] :114
@@ -3174,8 +3181,8 @@ void Renderer::RecreateGlyphAtlas(int32_t version)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Shape.uno
-// -------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Shape.uno
+// ------------------------------------------------------------
 
 // public static class Shape :7
 // {
@@ -3373,8 +3380,8 @@ void Shape__ShapeLines_fn(::g::Fuse::Text::Font* font, ::g::Uno::Collections::Li
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/ShapedRun.uno
-// -----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/ShapedRun.uno
+// ----------------------------------------------------------------
 
 // public sealed class ShapedRun :7
 // {
@@ -3633,8 +3640,8 @@ ShapedRun* ShapedRun::New2(::g::Fuse::Text::Bidirectional::Run run, uArray* pare
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Renderer.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Renderer.uno
+// ---------------------------------------------------------------
 
 // internal static class Renderer.SharedIndexBuffer :268
 // {
@@ -3693,7 +3700,7 @@ void Renderer__SharedIndexBuffer::EnsureSize(int32_t length)
     if (length > Renderer__SharedIndexBuffer::_length_)
     {
         Renderer__SharedIndexBuffer::_length_ = ::g::Uno::Math::Max8(length, Renderer__SharedIndexBuffer::_length_ * 2);
-        uPtr(Renderer__SharedIndexBuffer::IndexBuffer_)->Update(uPtr(::g::Fuse::Text::Renderer::CreateIndexBufferData(Renderer__SharedIndexBuffer::_length_))->GetBytes());
+        uPtr(Renderer__SharedIndexBuffer::IndexBuffer_)->Update(::g::Fuse::Text::Renderer::CreateIndexBufferData(Renderer__SharedIndexBuffer::_length_));
     }
 }
 
@@ -3721,8 +3728,8 @@ void Renderer__SharedIndexBuffer::Retain()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Implementation/SinglyLinkedList.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Implementation/SinglyLinkedList.uno
+// --------------------------------------------------------------------------------------
 
 // internal sealed class SinglyLinkedList<T> :5
 // {
@@ -3854,8 +3861,8 @@ SinglyLinkedList* SinglyLinkedList::FromEnumerable(uType* __type, uObject* xs)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Substring.uno
-// -----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Substring.uno
+// ----------------------------------------------------------------
 
 // public sealed class Substring :8
 // {
@@ -4192,8 +4199,8 @@ Substring* Substring::New3(uString* parent, int32_t start, int32_t length)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Substring.uno
-// -----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Substring.uno
+// ----------------------------------------------------------------
 
 // internal static class SubstringExtensions :253
 // {
@@ -4202,7 +4209,7 @@ static void SubstringExtensions_build(uType* type)
     ::STRINGS[12] = uString::Const("i");
     ::STRINGS[13] = uString::Const("s");
     ::STRINGS[14] = uString::Const("!Fuse.Text.SubstringExtensions.IsTrailingSurrogate(s[start])");
-    ::STRINGS[15] = uString::Const("/usr/local/share/uno/Packages/Fuse.Text/1.9.0/Substring.uno");
+    ::STRINGS[15] = uString::Const("/usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Substring.uno");
     ::STRINGS[16] = uString::Const("end < s.Length");
     ::STRINGS[17] = uString::Const("");
     ::TYPES[1] = uObject_typeof()->Array();
@@ -4497,8 +4504,8 @@ uObject* SubstringExtensions::TrimmedLines(::g::Fuse::Text::Substring* str)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/TextureAtlas.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/TextureAtlas.uno
+// -------------------------------------------------------------------
 
 // public struct SubTexture :9
 // {
@@ -4520,6 +4527,7 @@ uStructType* SubTexture_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 2;
     options.Alignment = alignof(SubTexture);
     options.ValueSize = sizeof(SubTexture);
@@ -4530,9 +4538,9 @@ uStructType* SubTexture_typeof()
 }
 
 // public SubTexture(int textureIndex, Uno.Recti rect) :15
-void SubTexture__ctor__fn(SubTexture* __this, int32_t* textureIndex, ::g::Uno::Recti* rect)
+void SubTexture__ctor_1_fn(SubTexture* __this, int32_t* textureIndex, ::g::Uno::Recti* rect)
 {
-    __this->ctor_(*textureIndex, *rect);
+    __this->ctor_1(*textureIndex, *rect);
 }
 
 // public SubTexture New(int textureIndex, Uno.Recti rect) :15
@@ -4542,7 +4550,7 @@ void SubTexture__New1_fn(int32_t* textureIndex, ::g::Uno::Recti* rect, SubTextur
 }
 
 // public SubTexture(int textureIndex, Uno.Recti rect) [instance] :15
-void SubTexture::ctor_(int32_t textureIndex, ::g::Uno::Recti rect)
+void SubTexture::ctor_1(int32_t textureIndex, ::g::Uno::Recti rect)
 {
     TextureIndex = textureIndex;
     Rect = rect;
@@ -4552,13 +4560,13 @@ void SubTexture::ctor_(int32_t textureIndex, ::g::Uno::Recti rect)
 SubTexture SubTexture__New1(int32_t textureIndex, ::g::Uno::Recti rect)
 {
     SubTexture obj1;
-    obj1.ctor_(textureIndex, rect);
+    obj1.ctor_1(textureIndex, rect);
     return obj1;
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/FontFace.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/FontFace.uno
+// ---------------------------------------------------------------
 
 // public enum TextDirection :108
 uEnumType* TextDirection_typeof()
@@ -4573,15 +4581,15 @@ uEnumType* TextDirection_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/TextureAtlas.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/TextureAtlas.uno
+// -------------------------------------------------------------------
 
 // public sealed class TextureAtlas :22
 // {
 static void TextureAtlas_build(uType* type)
 {
     ::STRINGS[18] = uString::Const("bitmap.Format == this._format");
-    ::STRINGS[19] = uString::Const("/usr/local/share/uno/Packages/Fuse.Text/1.9.0/TextureAtlas.uno");
+    ::STRINGS[19] = uString::Const("/usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/TextureAtlas.uno");
     ::STRINGS[20] = uString::Const("Bitmap too large for the texture atlas size");
     ::STRINGS[21] = uString::Const("(&new Uno.Recti(new int2(0), dst.Size)).Contains(new Uno.Recti(dstPos, src.Size))");
     ::STRINGS[22] = uString::Const("src.Format == dst.Format");
@@ -4750,8 +4758,8 @@ TextureAtlas* TextureAtlas::New1(::g::Uno::Int2 minimumTextureSize, int32_t form
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Truncate.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Truncate.uno
+// ---------------------------------------------------------------
 
 // public static class Truncate :7
 // {
@@ -4932,8 +4940,8 @@ void Truncate__TruncatedLine_fn(::g::Fuse::Text::Font* font, ::g::Uno::Collectio
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Wrap.uno
-// ------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Wrap.uno
+// -----------------------------------------------------------
 
 // public static class Wrap :8
 // {

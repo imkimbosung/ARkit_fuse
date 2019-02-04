@@ -1,9 +1,9 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Text/1.9.0/FontFace.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/FontFace.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Uno.Float2.h>
-#include <Uno.Object.h>
+#include <Uno.ValueType.h>
 namespace g{namespace Fuse{namespace Text{struct RenderedGlyph;}}}
 namespace g{namespace Uno{namespace Content{namespace Images{struct Bitmap;}}}}
 
@@ -14,7 +14,7 @@ namespace Text{
 // public struct RenderedGlyph :38
 // {
 uStructType* RenderedGlyph_typeof();
-void RenderedGlyph__ctor__fn(RenderedGlyph* __this, ::g::Uno::Content::Images::Bitmap* bitmap, ::g::Uno::Float2* offset, float* scale);
+void RenderedGlyph__ctor_1_fn(RenderedGlyph* __this, ::g::Uno::Content::Images::Bitmap* bitmap, ::g::Uno::Float2* offset, float* scale);
 void RenderedGlyph__New1_fn(::g::Uno::Content::Images::Bitmap* bitmap, ::g::Uno::Float2* offset, float* scale, RenderedGlyph* __retval);
 
 struct RenderedGlyph
@@ -23,7 +23,7 @@ struct RenderedGlyph
     ::g::Uno::Float2 Offset;
     float Scale;
 
-    void ctor_(::g::Uno::Content::Images::Bitmap* bitmap, ::g::Uno::Float2 offset, float scale);
+    void ctor_1(::g::Uno::Content::Images::Bitmap* bitmap, ::g::Uno::Float2 offset, float scale);
 };
 
 RenderedGlyph RenderedGlyph__New1(::g::Uno::Content::Images::Bitmap* bitmap, ::g::Uno::Float2 offset, float scale);

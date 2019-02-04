@@ -1,9 +1,9 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Time/LocalDateTime.uno.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Time/LocalDateTime.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
 #include <Uno.Time.Instant.h>
+#include <Uno.ValueType.h>
 namespace g{namespace Uno{namespace Time{struct CalendarSystem;}}}
 namespace g{namespace Uno{namespace Time{struct LocalDateTime;}}}
 
@@ -14,13 +14,13 @@ namespace Time{
 // public struct LocalDateTime :6
 // {
 uStructType* LocalDateTime_typeof();
-void LocalDateTime__ctor_1_fn(LocalDateTime* __this, int32_t* year, int32_t* month, int32_t* day, int32_t* hour, int32_t* minute, int32_t* second);
-void LocalDateTime__ctor_2_fn(LocalDateTime* __this, int32_t* year, int32_t* month, int32_t* day, int32_t* hour, int32_t* minute, int32_t* second, int32_t* millisecond);
-void LocalDateTime__ctor_4_fn(LocalDateTime* __this, int32_t* year, int32_t* month, int32_t* day, int32_t* hour, int32_t* minute, int32_t* second, int32_t* millisecond, int32_t* tickWithinMillisecond, ::g::Uno::Time::CalendarSystem* calendar);
-void LocalDateTime__ctor_6_fn(LocalDateTime* __this, int32_t* year, int32_t* month, int32_t* day, int32_t* hour, int32_t* minute, int32_t* second, ::g::Uno::Time::CalendarSystem* calendar);
-void LocalDateTime__ctor_7_fn(LocalDateTime* __this, int32_t* year, int32_t* month, int32_t* day, int32_t* hour, int32_t* minute, ::g::Uno::Time::CalendarSystem* calendar);
-void LocalDateTime__ctor_8_fn(LocalDateTime* __this, ::g::Uno::Time::Instant* instant);
-void LocalDateTime__ctor_9_fn(LocalDateTime* __this, ::g::Uno::Time::Instant* instant, ::g::Uno::Time::CalendarSystem* calendar);
+void LocalDateTime__ctor_2_fn(LocalDateTime* __this, int32_t* year, int32_t* month, int32_t* day, int32_t* hour, int32_t* minute, int32_t* second);
+void LocalDateTime__ctor_3_fn(LocalDateTime* __this, int32_t* year, int32_t* month, int32_t* day, int32_t* hour, int32_t* minute, int32_t* second, int32_t* millisecond);
+void LocalDateTime__ctor_5_fn(LocalDateTime* __this, int32_t* year, int32_t* month, int32_t* day, int32_t* hour, int32_t* minute, int32_t* second, int32_t* millisecond, int32_t* tickWithinMillisecond, ::g::Uno::Time::CalendarSystem* calendar);
+void LocalDateTime__ctor_7_fn(LocalDateTime* __this, int32_t* year, int32_t* month, int32_t* day, int32_t* hour, int32_t* minute, int32_t* second, ::g::Uno::Time::CalendarSystem* calendar);
+void LocalDateTime__ctor_8_fn(LocalDateTime* __this, int32_t* year, int32_t* month, int32_t* day, int32_t* hour, int32_t* minute, ::g::Uno::Time::CalendarSystem* calendar);
+void LocalDateTime__ctor_9_fn(LocalDateTime* __this, ::g::Uno::Time::Instant* instant);
+void LocalDateTime__ctor_10_fn(LocalDateTime* __this, ::g::Uno::Time::Instant* instant, ::g::Uno::Time::CalendarSystem* calendar);
 void LocalDateTime__get_Calendar_fn(LocalDateTime* __this, ::g::Uno::Time::CalendarSystem** __retval);
 void LocalDateTime__get_Day_fn(LocalDateTime* __this, int32_t* __retval);
 void LocalDateTime__Equals_fn(LocalDateTime* __this, uType* __type, uObject* obj, bool* __retval);
@@ -46,13 +46,13 @@ struct LocalDateTime
     uStrong< ::g::Uno::Time::CalendarSystem*> _calendar;
     ::g::Uno::Time::Instant _instant;
 
-    void ctor_1(int32_t year, int32_t month, int32_t day, int32_t hour, int32_t minute, int32_t second);
-    void ctor_2(int32_t year, int32_t month, int32_t day, int32_t hour, int32_t minute, int32_t second, int32_t millisecond);
-    void ctor_4(int32_t year, int32_t month, int32_t day, int32_t hour, int32_t minute, int32_t second, int32_t millisecond, int32_t tickWithinMillisecond, ::g::Uno::Time::CalendarSystem* calendar);
-    void ctor_6(int32_t year, int32_t month, int32_t day, int32_t hour, int32_t minute, int32_t second, ::g::Uno::Time::CalendarSystem* calendar);
-    void ctor_7(int32_t year, int32_t month, int32_t day, int32_t hour, int32_t minute, ::g::Uno::Time::CalendarSystem* calendar);
-    void ctor_8(::g::Uno::Time::Instant instant);
-    void ctor_9(::g::Uno::Time::Instant instant, ::g::Uno::Time::CalendarSystem* calendar);
+    void ctor_2(int32_t year, int32_t month, int32_t day, int32_t hour, int32_t minute, int32_t second);
+    void ctor_3(int32_t year, int32_t month, int32_t day, int32_t hour, int32_t minute, int32_t second, int32_t millisecond);
+    void ctor_5(int32_t year, int32_t month, int32_t day, int32_t hour, int32_t minute, int32_t second, int32_t millisecond, int32_t tickWithinMillisecond, ::g::Uno::Time::CalendarSystem* calendar);
+    void ctor_7(int32_t year, int32_t month, int32_t day, int32_t hour, int32_t minute, int32_t second, ::g::Uno::Time::CalendarSystem* calendar);
+    void ctor_8(int32_t year, int32_t month, int32_t day, int32_t hour, int32_t minute, ::g::Uno::Time::CalendarSystem* calendar);
+    void ctor_9(::g::Uno::Time::Instant instant);
+    void ctor_10(::g::Uno::Time::Instant instant, ::g::Uno::Time::CalendarSystem* calendar);
     ::g::Uno::Time::CalendarSystem* Calendar();
     int32_t Day();
     bool Equals(uType* __type, uObject* obj) { bool __retval; return LocalDateTime__Equals_fn(this, __type, obj, &__retval), __retval; }

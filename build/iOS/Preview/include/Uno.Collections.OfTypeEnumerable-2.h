@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Uno.Collections/1.9.0/Extensions/OfType.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Uno.Collections/1.10.0-rc1/Extensions/OfType.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

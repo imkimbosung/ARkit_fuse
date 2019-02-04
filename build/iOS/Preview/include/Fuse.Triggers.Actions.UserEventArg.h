@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.UserEvents/1.9.0/RaiseUserEvent.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.UserEvents/1.10.0-rc1/RaiseUserEvent.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

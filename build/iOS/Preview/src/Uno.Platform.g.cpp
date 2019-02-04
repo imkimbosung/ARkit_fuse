@@ -48,8 +48,8 @@ namespace g{
 namespace Uno{
 namespace Platform{
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Platform/CoreApp.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Platform/CoreApp.uno
+// --------------------------------------------------------------------------------
 
 // public enum ApplicationState :11
 uEnumType* ApplicationState_typeof()
@@ -67,8 +67,8 @@ uEnumType* ApplicationState_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Platform/CoreApp.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Platform/CoreApp.uno
+// --------------------------------------------------------------------------------
 
 // public delegate void ApplicationStateTransitionHandler(Uno.Platform.ApplicationState newState) :21
 uDelegateType* ApplicationStateTransitionHandler_typeof()
@@ -82,8 +82,8 @@ uDelegateType* ApplicationStateTransitionHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Platform/ClosingEventArgs.uno
-// ------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Platform/ClosingEventArgs.uno
+// -----------------------------------------------------------------------------------------
 
 // public sealed class ClosingEventArgs :6
 // {
@@ -164,8 +164,8 @@ ClosingEventArgs* ClosingEventArgs::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Platform/CoreApp.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Platform/CoreApp.uno
+// --------------------------------------------------------------------------------
 
 // public abstract class CoreApp :26
 // {
@@ -178,7 +178,7 @@ static void CoreApp__cctor__fn(uType* __type)
 static void CoreApp_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("Uno.Platform.CoreApp.State == Uno.Platform.ApplicationState.Foreground");
-    ::STRINGS[1] = uString::Const("/usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Platform/CoreApp.uno");
+    ::STRINGS[1] = uString::Const("/usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Platform/CoreApp.uno");
     ::STRINGS[2] = uString::Const("Uno.Platform.CoreApp.State == Uno.Platform.ApplicationState.Background");
     ::STRINGS[3] = uString::Const("EnterForeground() called on terminating application");
     ::STRINGS[4] = uString::Const("EnterForeground() called on uninitialized application");
@@ -917,8 +917,8 @@ void CoreApp::remove_Terminating(uDelegate* value)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Platform/Displays.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Platform/Displays.uno
+// ---------------------------------------------------------------------------------
 
 // public abstract class Display :54
 // {
@@ -1105,8 +1105,8 @@ void Display::TicksPerSecond(uint32_t value)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Platform/Displays.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Platform/Displays.uno
+// ---------------------------------------------------------------------------------
 
 // public static class Displays :10
 // {
@@ -1256,8 +1256,8 @@ void Displays::All(::g::Uno::Collections::List* value)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Platform/Enums.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Platform/Enums.uno
+// ------------------------------------------------------------------------------
 
 // public enum EventModifiers :148
 uEnumType* EventModifiers_typeof()
@@ -1279,8 +1279,8 @@ uEnumType* EventModifiers_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Platform/Enums.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Platform/Enums.uno
+// ------------------------------------------------------------------------------
 
 // public enum Key :6
 uEnumType* Key_typeof()
@@ -1375,8 +1375,8 @@ uEnumType* Key_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Platform/KeyEventArgs.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Platform/KeyEventArgs.uno
+// -------------------------------------------------------------------------------------
 
 // public sealed class KeyEventArgs :6
 // {
@@ -1532,8 +1532,8 @@ void KeyEventArgs::Modifiers(int32_t value)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Platform/OSFrame.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Platform/OSFrame.uno
+// --------------------------------------------------------------------------------
 
 // public class OSFrame :7
 // {
@@ -1616,8 +1616,8 @@ OSFrame* OSFrame::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Platform/Enums.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Platform/Enums.uno
+// ------------------------------------------------------------------------------
 
 // public enum PointerCursor :108
 uEnumType* PointerCursor_typeof()
@@ -1647,8 +1647,8 @@ uEnumType* PointerCursor_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Platform/Enums.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Platform/Enums.uno
+// ------------------------------------------------------------------------------
 
 // public enum PointerType :130
 uEnumType* PointerType_typeof()
@@ -1663,8 +1663,8 @@ uEnumType* PointerType_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Platform/TextInputEventArgs.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Platform/TextInputEventArgs.uno
+// -------------------------------------------------------------------------------------------
 
 // public sealed class TextInputEventArgs :6
 // {
@@ -1743,8 +1743,8 @@ void TextInputEventArgs::Text(uString* value)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Platform/TimerEventArgs.uno
-// ----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Platform/TimerEventArgs.uno
+// ---------------------------------------------------------------------------------------
 
 // public sealed class TimerEventArgs :6
 // {
@@ -1878,8 +1878,8 @@ TimerEventArgs* TimerEventArgs::New2(double lastTickTimestamp, double tickDurati
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Platform/PointerEventArgs.uno
-// ------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Platform/PointerEventArgs.uno
+// -----------------------------------------------------------------------------------------
 
 // public enum WheelDeltaMode :6
 uEnumType* WheelDeltaMode_typeof()
@@ -1895,8 +1895,8 @@ uEnumType* WheelDeltaMode_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Platform/Window.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Platform/Window.uno
+// -------------------------------------------------------------------------------
 
 // public sealed extern class Window :7
 // {

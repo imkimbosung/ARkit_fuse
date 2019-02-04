@@ -4,7 +4,7 @@
 #pragma once
 #include <Outracks.Simulator.CharacterNumber.h>
 #include <Outracks.Simulator.LineNumber.h>
-#include <Uno.Object.h>
+#include <Uno.ValueType.h>
 namespace g{namespace Outracks{namespace Simulator{struct TextPosition;}}}
 namespace g{namespace System{namespace IO{struct BinaryReader;}}}
 namespace g{namespace System{namespace IO{struct BinaryWriter;}}}
@@ -16,7 +16,7 @@ namespace Simulator{
 // public struct TextPosition :6
 // {
 uStructType* TextPosition_typeof();
-void TextPosition__ctor__fn(TextPosition* __this, ::g::Outracks::Simulator::LineNumber* line, ::g::Outracks::Simulator::CharacterNumber* character);
+void TextPosition__ctor_1_fn(TextPosition* __this, ::g::Outracks::Simulator::LineNumber* line, ::g::Outracks::Simulator::CharacterNumber* character);
 void TextPosition__Equals_fn(TextPosition* __this, uType* __type, uObject* obj, bool* __retval);
 void TextPosition__Equals2_fn(TextPosition* __this, TextPosition* other, bool* __retval);
 void TextPosition__GetHashCode_fn(TextPosition* __this, uType* __type, int32_t* __retval);
@@ -36,7 +36,7 @@ struct TextPosition
     ::g::Outracks::Simulator::LineNumber Line;
     ::g::Outracks::Simulator::CharacterNumber Character;
 
-    void ctor_(::g::Outracks::Simulator::LineNumber line, ::g::Outracks::Simulator::CharacterNumber character);
+    void ctor_1(::g::Outracks::Simulator::LineNumber line, ::g::Outracks::Simulator::CharacterNumber character);
     bool Equals(uType* __type, uObject* obj) { bool __retval; return TextPosition__Equals_fn(this, __type, obj, &__retval), __retval; }
     bool Equals2(TextPosition other);
     int32_t GetHashCode(uType* __type) { int32_t __retval; return TextPosition__GetHashCode_fn(this, __type, &__retval), __retval; }

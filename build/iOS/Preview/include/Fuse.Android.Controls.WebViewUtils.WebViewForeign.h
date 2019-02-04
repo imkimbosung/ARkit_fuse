@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.9.0/Android/WebViewForeign.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.10.0-rc1/Android/WebViewForeign.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

@@ -14,8 +14,8 @@ namespace g{
 namespace Uno{
 namespace Compiler{
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Compiler/CallerFilePathAttribute.uno
-// -------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Compiler/CallerFilePathAttribute.uno
+// ------------------------------------------------------------------------------------------------
 
 // public sealed class CallerFilePathAttribute :7
 // {
@@ -67,8 +67,8 @@ CallerFilePathAttribute* CallerFilePathAttribute::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Compiler/CallerLineNumberAttribute.uno
-// ---------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Compiler/CallerLineNumberAttribute.uno
+// --------------------------------------------------------------------------------------------------
 
 // public sealed class CallerLineNumberAttribute :7
 // {
@@ -120,8 +120,8 @@ CallerLineNumberAttribute* CallerLineNumberAttribute::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Compiler/CallerMemberNameAttribute.uno
-// ---------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Compiler/CallerMemberNameAttribute.uno
+// --------------------------------------------------------------------------------------------------
 
 // public sealed class CallerMemberNameAttribute :7
 // {
@@ -173,8 +173,8 @@ CallerMemberNameAttribute* CallerMemberNameAttribute::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Compiler/CallerMemberNameAttribute.uno
-// ---------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Compiler/CallerMemberNameAttribute.uno
+// --------------------------------------------------------------------------------------------------
 
 // public sealed class CallerPackageNameAttribute :12
 // {
@@ -226,8 +226,8 @@ CallerPackageNameAttribute* CallerPackageNameAttribute::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Compiler/HideFromCodeCompleterAttribute.uno
-// --------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Compiler/HideFromCodeCompleterAttribute.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public sealed class HideFromCodeCompleterAttribute :3
 // {
@@ -279,8 +279,8 @@ HideFromCodeCompleterAttribute* HideFromCodeCompleterAttribute::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Compiler/IgnoreMainClassAttribute.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Compiler/IgnoreMainClassAttribute.uno
+// -------------------------------------------------------------------------------------------------
 
 // public sealed class IgnoreMainClassAttribute :4
 // {
@@ -332,8 +332,8 @@ IgnoreMainClassAttribute* IgnoreMainClassAttribute::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Compiler/MainClassAttribute.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Compiler/MainClassAttribute.uno
+// -------------------------------------------------------------------------------------------
 
 // public sealed class MainClassAttribute :4
 // {
@@ -385,8 +385,8 @@ MainClassAttribute* MainClassAttribute::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Compiler/UxGeneratedAttribute.uno
-// ----------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Compiler/UxGeneratedAttribute.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed class UxGeneratedAttribute :4
 // {

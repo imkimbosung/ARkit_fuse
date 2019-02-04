@@ -124,7 +124,7 @@ void BinaryMessage__TryParse_fn(uType* __type, uObject* message, uString* type, 
                                     {
                                         ::g::Outracks::IBinaryMessage::WriteDataTo(uInterface(uPtr(message), ::g::Outracks::IBinaryMessage_typeof()), bufferWriter);
                                         uPtr(buffer)->Seek(0LL, 0);
-                                        __uno_retval = (::g::Outracks::Optional1__op_Implicit2_fn(__types[0], (uPtr(action)->Invoke(&ret5, 1, bufferReader), ret5), &ret4), ret4);
+                                        __uno_retval = (::g::Outracks::Optional1__op_Implicit1_fn(__types[0], (uPtr(action)->Invoke(&ret5, 1, bufferReader), ret5), &ret4), ret4);
                                         ::g::Uno::IDisposable::Dispose(uInterface(uPtr((uObject*)buffer), ::g::Uno::IDisposable_typeof()));
                                         ::g::Uno::IDisposable::Dispose(uInterface(uPtr((uObject*)bufferWriter), ::g::Uno::IDisposable_typeof()));
                                         ::g::Uno::IDisposable::Dispose(uInterface(uPtr((uObject*)bufferReader), ::g::Uno::IDisposable_typeof()));
@@ -507,7 +507,7 @@ void NullToNone__ToOptional_fn(uType* __type, uObject* value, uTRef __retval)
     };
     uT ret1(__types[0], U_ALLOCA(__types[0]->ValueSize));
     uT ret2(__types[0], U_ALLOCA(__types[0]->ValueSize));
-    return __retval.Store(__types[0], (value != NULL) ? (::g::Outracks::Optional__Some_fn(__types[1], value, &ret1), (void*)ret1) : (::g::Outracks::Optional1__op_Implicit1_fn(__types[0], ::g::Outracks::Optional::None(), &ret2), (void*)ret2)), void();
+    return __retval.Store(__types[0], (value != NULL) ? (::g::Outracks::Optional__Some_fn(__types[1], value, &ret1), (void*)ret1) : (::g::Outracks::Optional1__op_Implicit_fn(__types[0], ::g::Outracks::Optional::None(), &ret2), (void*)ret2)), void();
 }
 // }
 
@@ -713,6 +713,7 @@ Optional1_type* Optional1_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 2;
     options.GenericCount = 1;
     options.InterfaceCount = 1;
@@ -728,7 +729,7 @@ Optional1_type* Optional1_typeof()
 }
 
 // internal Optional(bool hasValue, [T value]) :65
-void Optional1__ctor__fn(uTRef __this, uType* __type, bool* hasValue, void* value)
+void Optional1__ctor_1_fn(uTRef __this, uType* __type, bool* hasValue, void* value)
 {
     bool hasValue_ = *hasValue;
     __type->Field(__this, 0/*_hasValue*/).Value<bool>() = hasValue_;
@@ -801,19 +802,19 @@ void Optional1__New1_fn(uType* __type, bool* hasValue, void* value, uTRef __retv
 {
     uT obj1(__type, U_ALLOCA(__type->ValueSize));
     bool hasValue_ = *hasValue;
-    Optional1__ctor__fn(&obj1, __type, uCRef(hasValue_), value);
+    Optional1__ctor_1_fn(&obj1, __type, uCRef(hasValue_), value);
     return __retval.Store(obj1), void();
 }
 
 // public static implicit operator Outracks.Optional<T>(Outracks.None value) :87
-void Optional1__op_Implicit1_fn(uType* __type, ::g::Outracks::None* value, uTRef __retval)
+void Optional1__op_Implicit_fn(uType* __type, ::g::Outracks::None* value, uTRef __retval)
 {
     uT ret9(__type, U_ALLOCA(__type->ValueSize));
     return __retval.Store((Optional1__New1_fn(__type, uCRef(false), uT(__type->T(0), U_ALLOCA(__type->T(0)->ValueSize)), &ret9), ret9)), void();
 }
 
 // public static implicit operator Outracks.Optional<T>(T value) :82
-void Optional1__op_Implicit2_fn(uType* __type, void* value, uTRef __retval)
+void Optional1__op_Implicit1_fn(uType* __type, void* value, uTRef __retval)
 {
     uT ret10(__type, U_ALLOCA(__type->ValueSize));
     return __retval.Store((Optional1__New1_fn(__type, uCRef(true), value, &ret10), ret10)), void();

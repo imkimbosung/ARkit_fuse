@@ -38,8 +38,8 @@ namespace g{
 namespace Fuse{
 namespace ImageTools{
 
-// /usr/local/share/uno/Packages/Fuse.ImageTools/1.9.0/PromiseCallbacks.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.ImageTools/1.10.0-rc1/PromiseCallbacks.uno
+// -----------------------------------------------------------------------------
 
 // internal sealed class BoolPromiseCallback :27
 // {
@@ -116,8 +116,8 @@ BoolPromiseCallback* BoolPromiseCallback::New1(::g::Uno::Threading::Promise* p)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.ImageTools/1.9.0/Image.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.ImageTools/1.10.0-rc1/Image.uno
+// ------------------------------------------------------------------
 
 // public sealed class Image :8
 // {
@@ -473,8 +473,8 @@ Image* Image::New2(uString* path)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.ImageTools/1.9.0/PromiseCallbacks.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.ImageTools/1.10.0-rc1/PromiseCallbacks.uno
+// -----------------------------------------------------------------------------
 
 // internal sealed class ImagePromiseCallback :8
 // {
@@ -551,8 +551,8 @@ ImagePromiseCallback* ImagePromiseCallback::New1(::g::Uno::Threading::Promise* p
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.ImageTools/1.9.0/ImageTools.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.ImageTools/1.10.0-rc1/ImageTools.uno
+// -----------------------------------------------------------------------
 
 // public sealed class ImageTools :49
 // {
@@ -942,8 +942,8 @@ ImageTools* ImageTools::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.ImageTools/1.9.0/PromiseCallbacks.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.ImageTools/1.10.0-rc1/PromiseCallbacks.uno
+// -----------------------------------------------------------------------------
 
 // internal sealed class PromiseCallback<T> :46
 // {
@@ -1015,8 +1015,8 @@ PromiseCallback* PromiseCallback::New1(uType* __type, ::g::Uno::Threading::Promi
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.ImageTools/1.9.0/ImageTools.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.ImageTools/1.10.0-rc1/ImageTools.uno
+// -----------------------------------------------------------------------
 
 // public enum ResizeMode :10
 uEnumType* ResizeMode_typeof()

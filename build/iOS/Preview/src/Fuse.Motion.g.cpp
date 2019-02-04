@@ -56,8 +56,8 @@ namespace g{
 namespace Fuse{
 namespace Motion{
 
-// /usr/local/share/uno/Packages/Fuse.Motion/1.9.0/DelayFunction.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Motion/1.10.0-rc1/DelayFunction.uno
+// ----------------------------------------------------------------------
 
 // public sealed class DelayFunction :9
 // {
@@ -132,8 +132,8 @@ DelayFunction* DelayFunction::New1(::g::Fuse::Reactive::Expression* value, ::g::
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Motion/1.9.0/DestinationMotion.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Motion/1.10.0-rc1/DestinationMotion.uno
+// --------------------------------------------------------------------------
 
 // public sealed class DestinationMotion<T> :186
 // {
@@ -208,15 +208,15 @@ DestinationMotion* DestinationMotion::New2(uType* __type)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Motion/1.9.0/DestinationMotion.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Motion/1.10.0-rc1/DestinationMotion.uno
+// --------------------------------------------------------------------------
 
 // public class DestinationMotionConfig :15
 // {
 static void DestinationMotionConfig_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("Invalidate simulation type: ");
-    ::STRINGS[1] = uString::Const("/usr/local/share/uno/Packages/Fuse.Motion/1.9.0/DestinationMotion.uno");
+    ::STRINGS[1] = uString::Const("/usr/local/share/uno/Packages/Fuse.Motion/1.10.0-rc1/DestinationMotion.uno");
     ::STRINGS[2] = uString::Const("Create");
     ::TYPES[1] = ::g::Fuse::Motion::Simulation::EasingMotion_typeof();
     ::TYPES[2] = ::g::Fuse::Motion::Simulation::ElasticForce_typeof();
@@ -542,8 +542,8 @@ DestinationMotionConfig* DestinationMotionConfig::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Motion/1.9.0/MotionConfig.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Motion/1.10.0-rc1/MotionConfig.uno
+// ---------------------------------------------------------------------
 
 // public class MotionConfig :16
 // {
@@ -1043,8 +1043,8 @@ MotionConfig* MotionConfig::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Motion/1.9.0/Enums.uno
-// ---------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Motion/1.10.0-rc1/Enums.uno
+// --------------------------------------------------------------
 
 // public enum MotionDestinationType :23
 uEnumType* MotionDestinationType_typeof()
@@ -1060,8 +1060,8 @@ uEnumType* MotionDestinationType_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Motion/1.9.0/Enums.uno
-// ---------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Motion/1.10.0-rc1/Enums.uno
+// --------------------------------------------------------------
 
 // public enum MotionUnit :36
 uEnumType* MotionUnit_typeof()
@@ -1078,8 +1078,8 @@ uEnumType* MotionUnit_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Motion/1.9.0/MotionConfig.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Motion/1.10.0-rc1/MotionConfig.uno
+// ---------------------------------------------------------------------
 
 // public sealed class NavigationMotion :192
 // {
@@ -1142,8 +1142,8 @@ NavigationMotion* NavigationMotion::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Motion/1.9.0/Enums.uno
-// ---------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Motion/1.10.0-rc1/Enums.uno
+// --------------------------------------------------------------
 
 // public enum OverflowType :10
 uEnumType* OverflowType_typeof()
@@ -1159,8 +1159,8 @@ uEnumType* OverflowType_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Motion/1.9.0/MotionConfig.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Motion/1.10.0-rc1/MotionConfig.uno
+// ---------------------------------------------------------------------
 
 // public sealed class ScrollViewMotion :211
 // {
@@ -1220,8 +1220,8 @@ ScrollViewMotion* ScrollViewMotion::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Motion/1.9.0/DelayFunction.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Motion/1.10.0-rc1/DelayFunction.uno
+// ----------------------------------------------------------------------
 
 // private sealed class DelayFunction.SetClosure :46
 // {
@@ -1287,8 +1287,8 @@ DelayFunction__SetClosure* DelayFunction__SetClosure::New1(::g::Fuse::Motion::De
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Motion/1.9.0/SpringFunction.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Motion/1.10.0-rc1/SpringFunction.uno
+// -----------------------------------------------------------------------
 
 // public sealed class SpringFunction :8
 // {
@@ -1384,8 +1384,8 @@ SpringFunction* SpringFunction::New1(::g::Fuse::Reactive::Expression* value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Motion/1.9.0/DelayFunction.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Motion/1.10.0-rc1/DelayFunction.uno
+// ----------------------------------------------------------------------
 
 // private sealed class DelayFunction.Subscription :27
 // {
@@ -1470,8 +1470,8 @@ DelayFunction__Subscription* DelayFunction__Subscription::New1(::g::Fuse::Motion
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Motion/1.9.0/SpringFunction.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Motion/1.10.0-rc1/SpringFunction.uno
+// -----------------------------------------------------------------------
 
 // private sealed class SpringFunction.Subscription :24
 // {

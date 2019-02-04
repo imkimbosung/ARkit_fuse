@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/.uno/package.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/.uno/package.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

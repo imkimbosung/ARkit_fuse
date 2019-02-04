@@ -1,17 +1,17 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/JavaScriptCore/JavaScriptCore.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/JavaScriptCore/JavaScriptCore.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <JavaScriptCore/JSStringRef.h>
 #include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <Uno.ValueType.h>
 
 namespace g{
 namespace Fuse{
 namespace Scripting{
 namespace JavaScriptCore{
 
-// internal extern struct JSStringRef :150
+// internal extern struct JSStringRef :148
 // {
 struct JSStringRef_type : uStructType
 {
@@ -25,8 +25,6 @@ void JSStringRef__ToString_fn(::JSStringRef* __this, uType* __type, uString** __
 
 struct JSStringRef
 {
-    void* _dummy;
-
     static void Dispose(::JSStringRef __this);
     static uString* ToString(::JSStringRef __this, uType* __type) { uString* __retval; return JSStringRef__ToString_fn(&__this, __type, &__retval), __retval; }
     static ::JSStringRef Create(uString* str);

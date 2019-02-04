@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Resources/HttpImageSource.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Resources/HttpImageSource.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -15,7 +15,6 @@ namespace Resources{
 // {
 uType* HttpImageSourceImpl__BackgroundLoad_typeof();
 void HttpImageSourceImpl__BackgroundLoad__ctor__fn(HttpImageSourceImpl__BackgroundLoad* __this, uArray* data, uString* contentType, uDelegate* done, uDelegate* fail);
-void HttpImageSourceImpl__BackgroundLoad__GWDoneCallback_fn(HttpImageSourceImpl__BackgroundLoad* __this, ::g::Uno::Graphics::Texture2D* tex);
 void HttpImageSourceImpl__BackgroundLoad__New1_fn(uArray* data, uString* contentType, uDelegate* done, uDelegate* fail, HttpImageSourceImpl__BackgroundLoad** __retval);
 void HttpImageSourceImpl__BackgroundLoad__Run_fn(HttpImageSourceImpl__BackgroundLoad* __this);
 void HttpImageSourceImpl__BackgroundLoad__UIDoneCallback_fn(HttpImageSourceImpl__BackgroundLoad* __this);
@@ -31,7 +30,6 @@ struct HttpImageSourceImpl__BackgroundLoad : uObject
     uStrong< ::g::Uno::Graphics::Texture2D*> _tex;
 
     void ctor_(uArray* data, uString* contentType, uDelegate* done, uDelegate* fail);
-    void GWDoneCallback(::g::Uno::Graphics::Texture2D* tex);
     void Run();
     void UIDoneCallback();
     void UIFailCallback();

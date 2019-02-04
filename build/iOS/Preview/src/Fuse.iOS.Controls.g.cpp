@@ -38,8 +38,8 @@ namespace Fuse{
 namespace iOS{
 namespace Controls{
 
-// /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.9.0/iOS/WebView.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.10.0-rc1/iOS/WebView.uno
+// ------------------------------------------------------------------------------
 
 // public sealed extern class WebView :155
 // {
@@ -62,7 +62,7 @@ static void WebView_build(uType* type)
     ::STRINGS[0] = uString::Const("");
     ::STRINGS[1] = uString::Const("about:blank");
     ::STRINGS[2] = uString::Const("low mem in WebView");
-    ::STRINGS[3] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.WebView/1.9.0/iOS/WebView.uno");
+    ::STRINGS[3] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.WebView/1.10.0-rc1/iOS/WebView.uno");
     ::TYPES[0] = ::g::Uno::Action_typeof();
     ::TYPES[1] = ::g::Uno::Action1_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
     ::TYPES[2] = ::g::Uno::Func_typeof()->MakeType(::g::Uno::Bool_typeof(), NULL);
@@ -683,8 +683,6 @@ bool WebView::Loading()
 // public void LoadUrl(string url) [instance] :235
 void WebView::LoadUrl(uString* url)
 {
-    uStackFrame __("Fuse.iOS.Controls.WebView", "LoadUrl(string)");
-
     if (::g::Uno::String::op_Equality(url, NULL) || ::g::Uno::String::op_Equality(url, ::STRINGS[0/*""*/]))
         url = ::STRINGS[1/*"about:blank"*/];
 
@@ -861,7 +859,6 @@ uString* WebView::Url()
 // public void set_Url(string value) [instance] :232
 void WebView::Url(uString* value)
 {
-    uStackFrame __("Fuse.iOS.Controls.WebView", "set_Url(string)");
     LoadUrl(value);
 }
 

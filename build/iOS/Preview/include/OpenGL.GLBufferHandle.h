@@ -1,13 +1,13 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/OpenGL/GLBufferHandle.uno.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/OpenGL/GLBufferHandle.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.ValueType.h>
 
 namespace g{
 namespace OpenGL{
 
-// public extern struct GLBufferHandle :11
+// public extern struct GLBufferHandle :10
 // {
 uStructType* GLBufferHandle_typeof();
 void GLBufferHandle__Equals_fn(uint32_t* __this, uType* __type, uObject* obj, bool* __retval);

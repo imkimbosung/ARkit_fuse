@@ -1,8 +1,8 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/DateTime.uno.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/DateTime.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.ValueType.h>
 namespace g{namespace Uno{namespace Time{struct Duration;}}}
 namespace g{namespace Uno{namespace Time{struct Instant;}}}
 namespace g{namespace Uno{namespace Time{struct ZonedDateTime;}}}
@@ -14,8 +14,8 @@ namespace Uno{
 // public struct DateTime :13
 // {
 uStructType* DateTime_typeof();
-void DateTime__ctor__fn(DateTime* __this, int64_t* ticks, int32_t* kind);
-void DateTime__ctor_1_fn(DateTime* __this, ::g::Uno::Time::ZonedDateTime* time);
+void DateTime__ctor_1_fn(DateTime* __this, int64_t* ticks, int32_t* kind);
+void DateTime__ctor_2_fn(DateTime* __this, ::g::Uno::Time::ZonedDateTime* time);
 void DateTime__get_Day_fn(DateTime* __this, int32_t* __retval);
 void DateTime__get_DotNetTimeBase_fn(::g::Uno::Time::Instant* __retval);
 void DateTime__get_DotNetTimeOffset_fn(::g::Uno::Time::Duration* __retval);
@@ -42,8 +42,8 @@ struct DateTime
     int32_t _kind;
     uStrong< ::g::Uno::Time::ZonedDateTime*> _time;
 
-    void ctor_(int64_t ticks, int32_t kind);
-    void ctor_1(::g::Uno::Time::ZonedDateTime* time);
+    void ctor_1(int64_t ticks, int32_t kind);
+    void ctor_2(::g::Uno::Time::ZonedDateTime* time);
     int32_t Day();
     bool Equals(uType* __type, uObject* obj) { bool __retval; return DateTime__Equals_fn(this, __type, obj, &__retval), __retval; }
     int32_t GetHashCode(uType* __type) { int32_t __retval; return DateTime__GetHashCode_fn(this, __type, &__retval), __retval; }

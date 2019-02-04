@@ -16,8 +16,6 @@
 #include <Fuse.IRenderViewport.h>
 #include <Fuse.Visual.h>
 #include <Uno.Bool.h>
-#include <Uno.Buffer.h>
-#include <Uno.Byte.h>
 #include <Uno.Float.h>
 #include <Uno.Float2.h>
 #include <Uno.Float3.h>
@@ -32,7 +30,6 @@
 #include <Uno.Graphics.VertexBuffer.h>
 #include <Uno.Int.h>
 #include <Uno.Matrix.h>
-#include <Uno.Runtime.Implementation.Internal.BufferConverters.h>
 #include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLProgram.h>
 #include <Uno.Vector.h>
 static uType* TYPES[7];
@@ -42,8 +39,8 @@ namespace Fuse{
 namespace Internal{
 namespace Drawing{
 
-// /usr/local/share/uno/Packages/Fuse.Controls/1.9.0/Control.Background.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls/1.10.0-rc1/Control.Background.uno
+// -----------------------------------------------------------------------------
 
 // internal sealed class SolidRectangle :136
 // {
@@ -126,7 +123,6 @@ uSStrong<SolidRectangle*> SolidRectangle::Impl_;
 // public generated SolidRectangle() [instance] :136
 void SolidRectangle::ctor_()
 {
-    uStackFrame __("Fuse.Internal.Drawing.SolidRectangle", ".ctor()");
     init_DrawCalls();
 }
 
@@ -251,14 +247,14 @@ void SolidRectangle::init_DrawCalls()
 {
     uStackFrame __("Fuse.Internal.Drawing.SolidRectangle", "init_DrawCalls()");
     uArray* Vertices_77a0ae88_7_1_0 = uArray::Init< ::g::Uno::Float2>(::TYPES[6/*float2[]*/], 6, ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(0.0f, 1.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(1.0f, 0.0f));
-    DrawElement_VertexData_77a0ae88_7_2_1 = ::g::Uno::Graphics::VertexBuffer::New1(uPtr(::g::Uno::Runtime::Implementation::Internal::BufferConverters::ToBuffer3(Vertices_77a0ae88_7_1_0))->GetBytes(), 0);
+    DrawElement_VertexData_77a0ae88_7_2_1 = ::g::Uno::Graphics::VertexBuffer::New3(Vertices_77a0ae88_7_1_0, 0);
     DrawElement_LocalTransform_77a0ae88_4_9_2 = ::g::Uno::Matrix::Translation(-::g::Uno::Float2__New1(0.0f).X, -::g::Uno::Float2__New1(0.0f).Y, 0.0f);
     DrawElement_LocalTransform_77a0ae88_4_9_3 = ::g::Uno::Matrix::RotationZ(0.0f);
     DrawElement_LocalTransform_77a0ae88_4_9_4 = ::g::Uno::Matrix::Translation(::g::Uno::Float2__New1(0.0f).X, ::g::Uno::Float2__New1(0.0f).Y, 0.0f);
-    DrawElement_VertexData_c5598fc3_7_2_1 = ::g::Uno::Graphics::VertexBuffer::New1(uPtr(::g::Uno::Runtime::Implementation::Internal::BufferConverters::ToBuffer3(Vertices_77a0ae88_7_1_0))->GetBytes(), 0);
-    DrawElement_VertexData_66ccbe7e_7_2_1 = ::g::Uno::Graphics::VertexBuffer::New1(uPtr(::g::Uno::Runtime::Implementation::Internal::BufferConverters::ToBuffer3(Vertices_77a0ae88_7_1_0))->GetBytes(), 0);
-    DrawElement_VertexData_b4859fb9_7_2_1 = ::g::Uno::Graphics::VertexBuffer::New1(uPtr(::g::Uno::Runtime::Implementation::Internal::BufferConverters::ToBuffer3(Vertices_77a0ae88_7_1_0))->GetBytes(), 0);
-    DrawElement_VertexData_55f8ce74_7_2_1 = ::g::Uno::Graphics::VertexBuffer::New1(uPtr(::g::Uno::Runtime::Implementation::Internal::BufferConverters::ToBuffer3(Vertices_77a0ae88_7_1_0))->GetBytes(), 0);
+    DrawElement_VertexData_c5598fc3_7_2_1 = ::g::Uno::Graphics::VertexBuffer::New3(Vertices_77a0ae88_7_1_0, 0);
+    DrawElement_VertexData_66ccbe7e_7_2_1 = ::g::Uno::Graphics::VertexBuffer::New3(Vertices_77a0ae88_7_1_0, 0);
+    DrawElement_VertexData_b4859fb9_7_2_1 = ::g::Uno::Graphics::VertexBuffer::New3(Vertices_77a0ae88_7_1_0, 0);
+    DrawElement_VertexData_55f8ce74_7_2_1 = ::g::Uno::Graphics::VertexBuffer::New3(Vertices_77a0ae88_7_1_0, 0);
     _draw_77a0ae88 = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New1(::g::FuseControls_bundle::SolidRectangle2f148815());
     _draw_c5598fc3 = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New1(::g::FuseControls_bundle::SolidRectangled1bbfcb0());
     _draw_66ccbe7e = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New1(::g::FuseControls_bundle::SolidRectangle7463714b());

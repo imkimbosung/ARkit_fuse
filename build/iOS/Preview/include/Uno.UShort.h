@@ -1,13 +1,13 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/UShort.uno.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/UShort.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.ValueType.h>
 
 namespace g{
 namespace Uno{
 
-// public intrinsic struct UShort :10
+// public intrinsic struct UShort :8
 // {
 uStructType* UShort_typeof();
 void UShort__Equals_fn(uint16_t* __this, uType* __type, uObject* o, bool* __retval);

@@ -162,8 +162,8 @@ namespace g{
 namespace Fuse{
 namespace Scripting{
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/JSCallback.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/JSCallback.uno
+// ----------------------------------------------------------------------
 
 // private sealed class JSCallback.ActionClosure :37
 // {
@@ -228,8 +228,8 @@ JSCallback__ActionClosure* JSCallback__ActionClosure::New1(uDelegate* action)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/NativeEventEmitterModule.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/NativeEventEmitterModule.uno
+// ------------------------------------------------------------------------------------
 
 // private sealed class NativeEventEmitterModule.ActionClosure :127
 // {
@@ -295,8 +295,8 @@ NativeEventEmitterModule__ActionClosure* NativeEventEmitterModule__ActionClosure
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/JSCallback.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/JSCallback.uno
+// ----------------------------------------------------------------------
 
 // private sealed class JSCallback.ActionClosure<T> :53
 // {
@@ -380,8 +380,8 @@ JSCallback__ActionClosure1* JSCallback__ActionClosure1::New1(uType* __type, uDel
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/JSCallback.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/JSCallback.uno
+// ----------------------------------------------------------------------
 
 // private sealed class JSCallback.ActionClosure<T1, T2> :74
 // {
@@ -469,8 +469,8 @@ JSCallback__ActionClosure2* JSCallback__ActionClosure2::New1(uType* __type, uDel
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/AppInitialized.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/AppInitialized.uno
+// --------------------------------------------------------------------------
 
 // internal static class AppInitialized :15
 // {
@@ -528,8 +528,8 @@ void AppInitialized::Reset()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/ScriptClass.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/ScriptClass.uno
+// -----------------------------------------------------------------------
 
 // private sealed class ScriptMethod<T>.ArgumentMirrorClosure<T> :203
 // {
@@ -610,8 +610,8 @@ ScriptMethod1__ArgumentMirrorClosure* ScriptMethod1__ArgumentMirrorClosure::New1
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/Types.uno
-// ------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/Types.uno
+// -----------------------------------------------------------------
 
 // public abstract class Array :9
 // {
@@ -669,8 +669,8 @@ void Array::ctor_()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/IScriptEvent.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/IScriptEvent.uno
+// ------------------------------------------------------------------------
 
 // public sealed class BoolChangedArgs :64
 // {
@@ -738,8 +738,8 @@ BoolChangedArgs* BoolChangedArgs::New3(bool value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/Types.uno
-// ------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/Types.uno
+// -----------------------------------------------------------------
 
 // public delegate object Callback(Fuse.Scripting.Context context, object[] args) :145
 uDelegateType* Callback_typeof()
@@ -754,8 +754,8 @@ uDelegateType* Callback_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/FunctionMirror.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/FunctionMirror.uno
+// -------------------------------------------------------------------------------------
 
 // private sealed class FunctionMirror.CallClosure :24
 // {
@@ -830,7 +830,7 @@ void FunctionMirror__CallClosure::Call(::g::Fuse::Scripting::Context* context)
     if (::g::Fuse::Reactive::IEventRecord::Data(uInterface(uPtr(_e), ::TYPES[3/*Fuse.Reactive.IEventRecord*/])) != NULL)
         uPtr(obj)->Item(::STRINGS[4/*"data"*/], uPtr(context)->Unwrap(::g::Fuse::Reactive::IEventRecord::Data(uInterface(uPtr(_e), ::TYPES[3/*Fuse.Reactive.IEventRecord*/]))));
 
-    if (::g::Uno::String::op_Inequality(::g::Uno::UX::Selector__op_Implicit2(::g::Fuse::Reactive::IEventRecord::Sender(uInterface(uPtr(_e), ::TYPES[3/*Fuse.Reactive.IEventRecord*/]))), NULL))
+    if (::g::Uno::String::op_Inequality(::g::Uno::UX::Selector__op_Implicit1(::g::Fuse::Reactive::IEventRecord::Sender(uInterface(uPtr(_e), ::TYPES[3/*Fuse.Reactive.IEventRecord*/]))), NULL))
         uPtr(obj)->Item(::STRINGS[5/*"sender"*/], uBox(::g::Uno::UX::Selector_typeof(), ::g::Fuse::Reactive::IEventRecord::Sender(uInterface(uPtr(_e), ::TYPES[3/*Fuse.Reactive.IEventRecord*/]))));
 
     if (::g::Fuse::Reactive::IEventRecord::Args(uInterface(uPtr(_e), ::TYPES[3/*Fuse.Reactive.IEventRecord*/])) != NULL)
@@ -892,8 +892,8 @@ FunctionMirror__CallClosure* FunctionMirror__CallClosure::New1(::g::Fuse::Script
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/ScriptClass.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/ScriptClass.uno
+// -----------------------------------------------------------------------
 
 // private sealed class ScriptMethod<T>.CallClosure :261
 // {
@@ -955,8 +955,8 @@ void ScriptMethod1__CallClosure::Run()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/NativeEvent.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/NativeEvent.uno
+// -----------------------------------------------------------------------
 
 // private sealed class NativeEvent.CallDiscardingResultClosure :30
 // {
@@ -1022,8 +1022,8 @@ NativeEvent__CallDiscardingResultClosure* NativeEvent__CallDiscardingResultClosu
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/ScriptClass.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/ScriptClass.uno
+// -----------------------------------------------------------------------
 
 // private sealed class ScriptMethod<T>.LegacyMethodClosure<T>.CallWithArgumentsClosure :156
 // {
@@ -1082,8 +1082,8 @@ void ScriptMethod1__LegacyMethodClosure__CallWithArgumentsClosure::Run()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/ScriptClass.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/ScriptClass.uno
+// -----------------------------------------------------------------------
 
 // private sealed class ScriptMethod<T>.ArgumentMirrorClosure<T>.CallWithArgumentsClosure :221
 // {
@@ -1140,8 +1140,8 @@ void ScriptMethod1__ArgumentMirrorClosure__CallWithArgumentsClosure::Run()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/AppInitialized.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/AppInitialized.uno
+// --------------------------------------------------------------------------
 
 // private sealed class AppInitialized.Closure :36
 // {
@@ -1223,8 +1223,8 @@ AppInitialized__Closure* AppInitialized__Closure::New1(uObject* worker, uDelegat
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/FileModule.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/FileModule.uno
+// ----------------------------------------------------------------------
 
 // public sealed class CodeModule :8
 // {
@@ -1285,8 +1285,8 @@ CodeModule* CodeModule::New2(::g::Uno::IO::Bundle* bundle, uString* fileName, uS
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/Context.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/Context.uno
+// -------------------------------------------------------------------
 
 // public abstract class Context :23
 // {
@@ -1357,13 +1357,13 @@ Context_type* Context_typeof()
     return type;
 }
 
-// protected Context() :67
+// protected Context() :50
 void Context__ctor__fn(Context* __this)
 {
     __this->ctor_();
 }
 
-// public Fuse.Scripting.Function CallbackToFunction(Fuse.Scripting.Callback c) :90
+// public Fuse.Scripting.Function CallbackToFunction(Fuse.Scripting.Callback c) :73
 void Context__CallbackToFunction_fn(Context* __this, uDelegate* c, ::g::Fuse::Scripting::Function** __retval)
 {
     *__retval = __this->CallbackToFunction(c);
@@ -1375,55 +1375,55 @@ void Context__DeleteGlobalModuleResult_fn(Context* __this, ::g::Fuse::Scripting:
     __this->DeleteGlobalModuleResult(mr);
 }
 
-// public void Invoke(Uno.Action action) :83
+// public void Invoke(Uno.Action action) :66
 void Context__Invoke_fn(Context* __this, uDelegate* action)
 {
     __this->Invoke(action);
 }
 
-// public void Invoke(Uno.Action<Fuse.Scripting.Context> action) :77
+// public void Invoke(Uno.Action<Fuse.Scripting.Context> action) :60
 void Context__Invoke1_fn(Context* __this, uDelegate* action)
 {
     __this->Invoke1(action);
 }
 
-// public Fuse.Scripting.Array NewArray(object[] values) :137
+// public Fuse.Scripting.Array NewArray(object[] values) :120
 void Context__NewArray_fn(Context* __this, uArray* values, ::g::Fuse::Scripting::Array** __retval)
 {
     *__retval = __this->NewArray(values);
 }
 
-// public Fuse.Scripting.Object NewError(object[] args) :146
+// public Fuse.Scripting.Object NewError(object[] args) :129
 void Context__NewError_fn(Context* __this, uArray* args, ::g::Fuse::Scripting::Object** __retval)
 {
     *__retval = __this->NewError(args);
 }
 
-// public Fuse.Scripting.Object NewObject() :130
+// public Fuse.Scripting.Object NewObject() :113
 void Context__NewObject_fn(Context* __this, ::g::Fuse::Scripting::Object** __retval)
 {
     *__retval = __this->NewObject();
 }
 
-// public Fuse.Scripting.Object ObjectCreate(object[] args) :111
+// public Fuse.Scripting.Object ObjectCreate(object[] args) :94
 void Context__ObjectCreate_fn(Context* __this, uArray* args, ::g::Fuse::Scripting::Object** __retval)
 {
     *__retval = __this->ObjectCreate(args);
 }
 
-// public void ObjectDefineProperty(Fuse.Scripting.Object obj, string name, Fuse.Scripting.Callback getProperty, [Fuse.Scripting.Callback setProperty], [bool enumerable], [bool configurable]) :98
+// public void ObjectDefineProperty(Fuse.Scripting.Object obj, string name, Fuse.Scripting.Callback getProperty, [Fuse.Scripting.Callback setProperty], [bool enumerable], [bool configurable]) :81
 void Context__ObjectDefineProperty_fn(Context* __this, ::g::Fuse::Scripting::Object* obj, uString* name, uDelegate* getProperty, uDelegate* setProperty, bool* enumerable, bool* configurable)
 {
     __this->ObjectDefineProperty(obj, name, getProperty, setProperty, *enumerable, *configurable);
 }
 
-// public void ObjectDefineProperty(Fuse.Scripting.Object obj, string name, object value, [bool enumerable], [bool configurable]) :105
+// public void ObjectDefineProperty(Fuse.Scripting.Object obj, string name, object value, [bool enumerable], [bool configurable]) :88
 void Context__ObjectDefineProperty1_fn(Context* __this, ::g::Fuse::Scripting::Object* obj, uString* name, uObject* value, bool* enumerable, bool* configurable)
 {
     __this->ObjectDefineProperty1(obj, name, value, *enumerable, *configurable);
 }
 
-// public object ParseJson(string json) :121
+// public object ParseJson(string json) :104
 void Context__ParseJson_fn(Context* __this, uString* json, uObject** __retval)
 {
     *__retval = __this->ParseJson(json);
@@ -1441,14 +1441,14 @@ void Context__TryGetGlobalModuleResult_fn(Context* __this, uString* id, ::g::Fus
     *__retval = __this->TryGetGlobalModuleResult(id);
 }
 
-// protected Context() [instance] :67
+// protected Context() [instance] :50
 void Context::ctor_()
 {
     uStackFrame __("Fuse.Scripting.Context", ".ctor()");
     _moduleResults = (uObject*)((::g::Uno::Threading::ConcurrentDictionary*)::g::Uno::Threading::ConcurrentDictionary::New1(::TYPES[13/*Uno.Threading.ConcurrentDictionary<string, Fuse.Scripting.ModuleResult>*/]));
 }
 
-// public Fuse.Scripting.Function CallbackToFunction(Fuse.Scripting.Callback c) [instance] :90
+// public Fuse.Scripting.Function CallbackToFunction(Fuse.Scripting.Callback c) [instance] :73
 ::g::Fuse::Scripting::Function* Context::CallbackToFunction(uDelegate* c)
 {
     uStackFrame __("Fuse.Scripting.Context", "CallbackToFunction(Fuse.Scripting.Callback)");
@@ -1473,21 +1473,21 @@ void Context::DeleteGlobalModuleResult(::g::Fuse::Scripting::ModuleResult* mr)
         ::g::Uno::Collections::IDictionary::Remove_ex(uInterface(uPtr(_moduleResults), ::TYPES[15/*Uno.Collections.IDictionary<string, Fuse.Scripting.ModuleResult>*/]), uPtr(mr)->Id, &ret2);
 }
 
-// public void Invoke(Uno.Action action) [instance] :83
+// public void Invoke(Uno.Action action) [instance] :66
 void Context::Invoke(uDelegate* action)
 {
     uStackFrame __("Fuse.Scripting.Context", "Invoke(Uno.Action)");
     ::g::Fuse::Scripting::IThreadWorker::Invoke(uInterface(uPtr(ThreadWorker()), ::TYPES[11/*Fuse.Scripting.IThreadWorker*/]), action);
 }
 
-// public void Invoke(Uno.Action<Fuse.Scripting.Context> action) [instance] :77
+// public void Invoke(Uno.Action<Fuse.Scripting.Context> action) [instance] :60
 void Context::Invoke1(uDelegate* action)
 {
     uStackFrame __("Fuse.Scripting.Context", "Invoke(Uno.Action<Fuse.Scripting.Context>)");
     ::g::Fuse::Scripting::IThreadWorker::Invoke1(uInterface(uPtr(ThreadWorker()), ::TYPES[11/*Fuse.Scripting.IThreadWorker*/]), action);
 }
 
-// public Fuse.Scripting.Array NewArray(object[] values) [instance] :137
+// public Fuse.Scripting.Array NewArray(object[] values) [instance] :120
 ::g::Fuse::Scripting::Array* Context::NewArray(uArray* values)
 {
     uStackFrame __("Fuse.Scripting.Context", "NewArray(object[])");
@@ -1503,7 +1503,7 @@ void Context::Invoke1(uDelegate* action)
     return a;
 }
 
-// public Fuse.Scripting.Object NewError(object[] args) [instance] :146
+// public Fuse.Scripting.Object NewError(object[] args) [instance] :129
 ::g::Fuse::Scripting::Object* Context::NewError(uArray* args)
 {
     uStackFrame __("Fuse.Scripting.Context", "NewError(object[])");
@@ -1511,7 +1511,7 @@ void Context::Invoke1(uDelegate* action)
     return uPtr(_newError)->Construct(this, args);
 }
 
-// public Fuse.Scripting.Object NewObject() [instance] :130
+// public Fuse.Scripting.Object NewObject() [instance] :113
 ::g::Fuse::Scripting::Object* Context::NewObject()
 {
     uStackFrame __("Fuse.Scripting.Context", "NewObject()");
@@ -1522,7 +1522,7 @@ void Context::Invoke1(uDelegate* action)
     return uCast< ::g::Fuse::Scripting::Object*>(uPtr(_newObject)->Call(this, uArray::New(::TYPES[10/*object[]*/], 0)), ::TYPES[17/*Fuse.Scripting.Object*/]);
 }
 
-// public Fuse.Scripting.Object ObjectCreate(object[] args) [instance] :111
+// public Fuse.Scripting.Object ObjectCreate(object[] args) [instance] :94
 ::g::Fuse::Scripting::Object* Context::ObjectCreate(uArray* args)
 {
     uStackFrame __("Fuse.Scripting.Context", "ObjectCreate(object[])");
@@ -1534,7 +1534,7 @@ void Context::Invoke1(uDelegate* action)
     return NULL;
 }
 
-// public void ObjectDefineProperty(Fuse.Scripting.Object obj, string name, Fuse.Scripting.Callback getProperty, [Fuse.Scripting.Callback setProperty], [bool enumerable], [bool configurable]) [instance] :98
+// public void ObjectDefineProperty(Fuse.Scripting.Object obj, string name, Fuse.Scripting.Callback getProperty, [Fuse.Scripting.Callback setProperty], [bool enumerable], [bool configurable]) [instance] :81
 void Context::ObjectDefineProperty(::g::Fuse::Scripting::Object* obj, uString* name, uDelegate* getProperty, uDelegate* setProperty, bool enumerable, bool configurable)
 {
     uStackFrame __("Fuse.Scripting.Context", "ObjectDefineProperty(Fuse.Scripting.Object,string,Fuse.Scripting.Callback,[Fuse.Scripting.Callback],[bool],[bool])");
@@ -1542,7 +1542,7 @@ void Context::ObjectDefineProperty(::g::Fuse::Scripting::Object* obj, uString* n
     uPtr(func)->Call(this, uArray::Init<uObject*>(::TYPES[10/*object[]*/], 6, obj, name, getProperty, setProperty, uBox(::g::Uno::Bool_typeof(), enumerable), uBox(::g::Uno::Bool_typeof(), configurable)));
 }
 
-// public void ObjectDefineProperty(Fuse.Scripting.Object obj, string name, object value, [bool enumerable], [bool configurable]) [instance] :105
+// public void ObjectDefineProperty(Fuse.Scripting.Object obj, string name, object value, [bool enumerable], [bool configurable]) [instance] :88
 void Context::ObjectDefineProperty1(::g::Fuse::Scripting::Object* obj, uString* name, uObject* value, bool enumerable, bool configurable)
 {
     uStackFrame __("Fuse.Scripting.Context", "ObjectDefineProperty(Fuse.Scripting.Object,string,object,[bool],[bool])");
@@ -1550,7 +1550,7 @@ void Context::ObjectDefineProperty1(::g::Fuse::Scripting::Object* obj, uString* 
     uPtr(func)->Call(this, uArray::Init<uObject*>(::TYPES[10/*object[]*/], 5, obj, name, value, uBox(::g::Uno::Bool_typeof(), enumerable), uBox(::g::Uno::Bool_typeof(), configurable)));
 }
 
-// public object ParseJson(string json) [instance] :121
+// public object ParseJson(string json) [instance] :104
 uObject* Context::ParseJson(uString* json)
 {
     uStackFrame __("Fuse.Scripting.Context", "ParseJson(string)");
@@ -1589,8 +1589,8 @@ void Context::RegisterGlobalModuleResult(::g::Fuse::Scripting::ModuleResult* res
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/NativePromise.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/NativePromise.uno
+// -------------------------------------------------------------------------
 
 // private sealed class NativePromise<T, TJSResult>.ContextClosure :71
 // {
@@ -1670,8 +1670,8 @@ NativePromise__ContextClosure* NativePromise__ContextClosure::New1(uType* __type
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/ScriptModule.Evaluate.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/ScriptModule.Evaluate.uno
+// ---------------------------------------------------------------------------------
 
 // internal struct Dependency :16
 // {
@@ -1688,6 +1688,7 @@ uStructType* Dependency_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 2;
     options.Alignment = alignof(Dependency);
     options.ValueSize = sizeof(Dependency);
@@ -1698,8 +1699,8 @@ uStructType* Dependency_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/ScriptModule.Evaluate.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/ScriptModule.Evaluate.uno
+// ---------------------------------------------------------------------------------
 
 // internal enum DependencyType :10
 uEnumType* DependencyType_typeof()
@@ -1714,8 +1715,8 @@ uEnumType* DependencyType_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/DiagnosticSubject.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/DiagnosticSubject.uno
+// ----------------------------------------------------------------------------------------
 
 // internal class DiagnosticSubject :6
 // {
@@ -1800,8 +1801,8 @@ DiagnosticSubject* DiagnosticSubject::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/IScriptEvent.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/IScriptEvent.uno
+// ------------------------------------------------------------------------
 
 // public sealed class DoubleChangedArgs :52
 // {
@@ -1869,8 +1870,8 @@ DoubleChangedArgs* DoubleChangedArgs::New3(double value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/NativeEventEmitterModule.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/NativeEventEmitterModule.uno
+// ------------------------------------------------------------------------------------
 
 // private sealed class NativeEventEmitterModule.EmitClosure :181
 // {
@@ -1935,8 +1936,8 @@ NativeEventEmitterModule__EmitClosure* NativeEventEmitterModule__EmitClosure::Ne
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/Types.uno
-// ------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/Types.uno
+// -----------------------------------------------------------------
 
 // public sealed class Error :99
 // {
@@ -1989,8 +1990,8 @@ Error* Error::New4(uString* message)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/EventEmitterModule.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/EventEmitterModule.uno
+// ------------------------------------------------------------------------------
 
 // internal static class EventEmitterModule :7
 // {
@@ -2037,7 +2038,7 @@ uSStrong< ::g::Fuse::Scripting::Function*> EventEmitterModule::_instance_;
     if (EventEmitterModule::_instance_ == NULL)
     {
         ::g::Uno::IO::BundleFile* fileSource = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[20/*"Fuse.Script...*/]))->GetFile(::STRINGS[21/*"FuseJS/Even...*/]);
-        uObject* exports = ::g::Fuse::Scripting::FileModule::New2(::g::Uno::UX::FileSource::op_Implicit1(fileSource))->EvaluateExports(c, ::STRINGS[22/*"FuseJS/Even...*/]);
+        uObject* exports = ::g::Fuse::Scripting::FileModule::New2(::g::Uno::UX::FileSource::op_Implicit(fileSource))->EvaluateExports(c, ::STRINGS[22/*"FuseJS/Even...*/]);
         EventEmitterModule::_instance_ = uAs< ::g::Fuse::Scripting::Function*>(exports, ::TYPES[14/*Fuse.Scripting.Function*/]);
 
         if (EventEmitterModule::_instance_ == NULL)
@@ -2048,8 +2049,8 @@ uSStrong< ::g::Fuse::Scripting::Function*> EventEmitterModule::_instance_;
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/ScriptClass.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/ScriptClass.uno
+// -----------------------------------------------------------------------
 
 // public enum ExecutionThread :8
 uEnumType* ExecutionThread_typeof()
@@ -2065,8 +2066,8 @@ uEnumType* ExecutionThread_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/Types.uno
-// ------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/Types.uno
+// -----------------------------------------------------------------
 
 // public sealed class External :120
 // {
@@ -2138,8 +2139,8 @@ External* External::New1(uObject* o)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/NativePromise.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/NativePromise.uno
+// -------------------------------------------------------------------------
 
 // internal sealed class FactoryClosure<T> :10
 // {
@@ -2227,8 +2228,8 @@ FactoryClosure* FactoryClosure::New1(uType* __type, uDelegate* factory, uArray* 
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/FileModule.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/FileModule.uno
+// ----------------------------------------------------------------------
 
 // public class FileModule :19
 // {
@@ -2286,8 +2287,8 @@ FileModule* FileModule::New2(::g::Uno::UX::FileSource* fs)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/JSCallback.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/JSCallback.uno
+// ----------------------------------------------------------------------
 
 // private sealed class JSCallback.FuncClosure<TResult> :96
 // {
@@ -2353,8 +2354,8 @@ JSCallback__FuncClosure* JSCallback__FuncClosure::New1(uType* __type, uDelegate*
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/JSCallback.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/JSCallback.uno
+// ----------------------------------------------------------------------
 
 // private sealed class JSCallback.FuncClosure<TArg, TResult> :111
 // {
@@ -2444,8 +2445,8 @@ JSCallback__FuncClosure1* JSCallback__FuncClosure1::New1(uType* __type, uDelegat
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/JSCallback.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/JSCallback.uno
+// ----------------------------------------------------------------------
 
 // private sealed class JSCallback.FuncClosure<TArg, TArg1, TResult> :132
 // {
@@ -2532,8 +2533,8 @@ JSCallback__FuncClosure2* JSCallback__FuncClosure2::New1(uType* __type, uDelegat
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/Types.uno
-// ------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/Types.uno
+// -----------------------------------------------------------------
 
 // public abstract class Function :65
 // {
@@ -2602,8 +2603,8 @@ void Function::CallDiscardingResult(::g::Fuse::Scripting::Context* context, uArr
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/FunctionMirror.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/FunctionMirror.uno
+// -------------------------------------------------------------------------------------
 
 // internal sealed class FunctionMirror :10
 // {
@@ -2708,8 +2709,8 @@ FunctionMirror* FunctionMirror::New2(::g::Fuse::Scripting::Function* func)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/ScriptClass.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/ScriptClass.uno
+// -----------------------------------------------------------------------
 
 // private sealed class ScriptPromise<TSelf, TResult, TJSResult>.FutureClosure :347
 // {
@@ -2786,8 +2787,8 @@ void ScriptPromise__FutureClosure::Run()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/NativePromise.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/NativePromise.uno
+// -------------------------------------------------------------------------
 
 // public delegate Uno.Threading.Future<T> FutureFactory<T>(object[] args) :7
 uDelegateType* FutureFactory_typeof()
@@ -2801,8 +2802,8 @@ uDelegateType* FutureFactory_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/ScriptClass.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/ScriptClass.uno
+// -----------------------------------------------------------------------
 
 // public delegate Uno.Threading.Future<TResult> ScriptPromise<TSelf, TResult, TJSResult>.FutureFactory<TSelf, TResult>(Fuse.Scripting.Context context, TSelf self, object[] args) :296
 uDelegateType* ScriptPromise__FutureFactory_typeof()
@@ -2818,8 +2819,8 @@ uDelegateType* ScriptPromise__FutureFactory_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/IScriptEvent.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/IScriptEvent.uno
+// ------------------------------------------------------------------------
 
 // public abstract interface IEventSerializer :5
 // {
@@ -2839,8 +2840,8 @@ uInterfaceType* IEventSerializer_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/Context.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/Context.uno
+// -------------------------------------------------------------------
 
 // internal abstract interface IFunctionMirror :18
 // {
@@ -2854,8 +2855,8 @@ uInterfaceType* IFunctionMirror_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/ScriptModule.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/ScriptModule.uno
+// ------------------------------------------------------------------------
 
 // public abstract interface IModuleProvider :10
 // {
@@ -2871,8 +2872,8 @@ uInterfaceType* IModuleProvider_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/ValueMirror.uno
-// -----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/ValueMirror.uno
+// ----------------------------------------------------------------------------------
 
 // internal abstract interface IRaw :8
 // {
@@ -2886,8 +2887,8 @@ uInterfaceType* IRaw_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/IScriptEvent.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/IScriptEvent.uno
+// ------------------------------------------------------------------------
 
 // public abstract interface IScriptEvent :27
 // {
@@ -2903,8 +2904,8 @@ uInterfaceType* IScriptEvent_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/IScriptEvent.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/IScriptEvent.uno
+// ------------------------------------------------------------------------
 
 // public abstract interface IScriptObject :15
 // {
@@ -2922,8 +2923,8 @@ uInterfaceType* IScriptObject_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/Context.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/Context.uno
+// -------------------------------------------------------------------
 
 // public abstract interface IThreadWorker :10
 // {
@@ -2940,8 +2941,8 @@ uInterfaceType* IThreadWorker_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/JSCallback.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/JSCallback.uno
+// ----------------------------------------------------------------------
 
 // public static class JSCallback :5
 // {
@@ -3095,8 +3096,8 @@ uDelegate* JSCallback::FromFunc2(uType* __type, uDelegate* func)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/JSObjectUtils.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/JSObjectUtils.uno
+// -------------------------------------------------------------------------
 
 // public static class JSObjectUtils :3
 // {
@@ -3217,8 +3218,8 @@ void JSObjectUtils::Freeze(::g::Fuse::Scripting::Object* ob, ::g::Fuse::Scriptin
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/ScriptClass.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/ScriptClass.uno
+// -----------------------------------------------------------------------
 
 // private sealed class ScriptMethod<T>.LegacyMethodClosure<T> :137
 // {
@@ -3295,8 +3296,8 @@ ScriptMethod1__LegacyMethodClosure* ScriptMethod1__LegacyMethodClosure::New1(uTy
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/ValueMirror.uno
-// -----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/ValueMirror.uno
+// ----------------------------------------------------------------------------------
 
 // internal abstract class ListMirror :38
 // {
@@ -3339,8 +3340,8 @@ void ListMirror::ctor_2(uObject* raw)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/Module.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/Module.uno
+// ------------------------------------------------------------------
 
 // public abstract class Module :7
 // {
@@ -3546,8 +3547,8 @@ void Module::MarkEvaluated()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/ModuleResult.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/ModuleResult.uno
+// ------------------------------------------------------------------------
 
 // public sealed class ModuleResult :10
 // {
@@ -3856,8 +3857,8 @@ ModuleResult* ModuleResult::New1(::g::Fuse::Scripting::Context* context, uString
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/NativeFunction.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/NativeFunction.uno
+// --------------------------------------------------------------------------
 
 // public delegate object NativeCallback(Fuse.Scripting.Context c, object[] args) :6
 uDelegateType* NativeCallback_typeof()
@@ -3872,8 +3873,8 @@ uDelegateType* NativeCallback_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/NativeEvent.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/NativeEvent.uno
+// -----------------------------------------------------------------------
 
 // public sealed class NativeEvent :7
 // {
@@ -4017,8 +4018,8 @@ NativeEvent* NativeEvent::New4(uString* name, bool queueEventsBeforeHandlerIsSet
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/NativeEventEmitterModule.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/NativeEventEmitterModule.uno
+// ------------------------------------------------------------------------------------
 
 // public class NativeEventEmitterModule :9
 // {
@@ -4362,8 +4363,8 @@ NativeEventEmitterModule* NativeEventEmitterModule::New2(bool queueEventsBeforeI
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/NativeFunction.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/NativeFunction.uno
+// --------------------------------------------------------------------------
 
 // public sealed class NativeFunction :8
 // {
@@ -4425,8 +4426,8 @@ NativeFunction* NativeFunction::New1(uString* name, uDelegate* callback)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/NativeFunction.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/NativeFunction.uno
+// --------------------------------------------------------------------------
 
 // private sealed class NativeFunction.NativeFunctionClosure :22
 // {
@@ -4492,8 +4493,8 @@ NativeFunction__NativeFunctionClosure* NativeFunction__NativeFunctionClosure::Ne
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/NativeMember.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/NativeMember.uno
+// ------------------------------------------------------------------------
 
 // public abstract class NativeMember :6
 // {
@@ -4648,8 +4649,8 @@ void NativeMember::ThreadWorker(uObject* value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/NativeModule.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/NativeModule.uno
+// ------------------------------------------------------------------------
 
 // public class NativeModule :6
 // {
@@ -4833,8 +4834,8 @@ NativeModule* NativeModule::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/NativePromise.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/NativePromise.uno
+// -------------------------------------------------------------------------
 
 // public sealed class NativePromise<T, TJSResult> :40
 // {
@@ -4961,8 +4962,8 @@ NativePromise* NativePromise::New2(uType* __type, uString* name, uDelegate* func
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/NativeProperty.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/NativeProperty.uno
+// --------------------------------------------------------------------------
 
 // public class NativeProperty<T, TJSValue> :8
 // {
@@ -5149,8 +5150,8 @@ NativeProperty* NativeProperty::New2(uType* __type, uString* name, uDelegate* ge
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/JSCallback.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/JSCallback.uno
+// ----------------------------------------------------------------------
 
 // public static class JSCallback.NumberConverter :163
 // {
@@ -5372,8 +5373,8 @@ uObject* JSCallback__NumberConverter::Convert5(uType* targetType, uObject* value
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/Types.uno
-// ------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/Types.uno
+// -----------------------------------------------------------------
 
 // public abstract class Object :32
 // {
@@ -5436,8 +5437,8 @@ void Object::ctor_()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/NativeEventEmitterModule.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/NativeEventEmitterModule.uno
+// ------------------------------------------------------------------------------------
 
 // private sealed class NativeEventEmitterModule.OnClosure :228
 // {
@@ -5505,8 +5506,8 @@ NativeEventEmitterModule__OnClosure* NativeEventEmitterModule__OnClosure::New1(u
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/NativePromise.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/NativePromise.uno
+// -------------------------------------------------------------------------
 
 // private sealed class NativePromise<T, TJSResult>.PromiseClosure :89
 // {
@@ -5656,8 +5657,8 @@ NativePromise__PromiseClosure* NativePromise__PromiseClosure::New1(uType* __type
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/ScriptClass.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/ScriptClass.uno
+// -----------------------------------------------------------------------
 
 // private sealed class ScriptPromise<TSelf, TResult, TJSResult>.PromiseClosure :382
 // {
@@ -5827,8 +5828,8 @@ ScriptPromise__PromiseClosure* ScriptPromise__PromiseClosure::New1(uType* __type
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/ScriptModule.Require.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/ScriptModule.Require.uno
+// --------------------------------------------------------------------------------
 
 // private sealed class ScriptModule.RequireContext :14
 // {
@@ -5843,7 +5844,7 @@ static void ScriptModule__RequireContext_build(uType* type)
     ::STRINGS[42] = uString::Const("require(): module not found: ");
     ::STRINGS[43] = uString::Const("JavaScript error in ");
     ::STRINGS[44] = uString::Const(" was fixed!");
-    ::STRINGS[45] = uString::Const("/usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/ScriptModule.Require.uno");
+    ::STRINGS[45] = uString::Const("/usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/ScriptModule.Require.uno");
     ::STRINGS[46] = uString::Const("Require");
     ::STRINGS[47] = uString::Const(" line ");
     ::STRINGS[48] = uString::Const(". ");
@@ -5995,8 +5996,8 @@ ScriptModule__RequireContext* ScriptModule__RequireContext::New1(::g::Fuse::Scri
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/ScriptClass.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/ScriptClass.uno
+// -----------------------------------------------------------------------
 
 // public delegate TJSResult ScriptPromise<TSelf, TResult, TJSResult>.ResultConverter<TResult, TJSResult>(Fuse.Scripting.Context context, TResult result) :297
 uDelegateType* ScriptPromise__ResultConverter_typeof()
@@ -6011,8 +6012,8 @@ uDelegateType* ScriptPromise__ResultConverter_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/NativePromise.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/NativePromise.uno
+// -------------------------------------------------------------------------
 
 // public delegate TJSResult ResultConverter<T, TJSResult>(Fuse.Scripting.Context context, T result) :8
 uDelegateType* ResultConverter_typeof()
@@ -6027,8 +6028,8 @@ uDelegateType* ResultConverter_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/NativePromise.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/NativePromise.uno
+// -------------------------------------------------------------------------
 
 // public delegate T ResultFactory<T>(object[] args) :6
 uDelegateType* ResultFactory_typeof()
@@ -6042,8 +6043,8 @@ uDelegateType* ResultFactory_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/ScriptClass.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/ScriptClass.uno
+// -----------------------------------------------------------------------
 
 // public sealed class ScriptClass :448
 // {
@@ -6193,8 +6194,8 @@ void ScriptClass::Register(uType* unoType, uArray* members)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/IScriptEvent.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/IScriptEvent.uno
+// ------------------------------------------------------------------------
 
 // public sealed class ScriptEventArgs :32
 // {
@@ -6288,8 +6289,8 @@ ScriptEventArgs* ScriptEventArgs::Empty1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/ScriptException.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/ScriptException.uno
+// ---------------------------------------------------------------------------
 
 // public sealed class ScriptException :5
 // {
@@ -6531,8 +6532,8 @@ ScriptException* ScriptException::New4(uString* name, uString* message, uString*
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/ScriptClass.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/ScriptClass.uno
+// -----------------------------------------------------------------------
 
 // public abstract class ScriptMember :15
 // {
@@ -6580,8 +6581,8 @@ void ScriptMember::ctor_(uString* name)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/ScriptClass.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/ScriptClass.uno
+// -----------------------------------------------------------------------
 
 // public abstract class ScriptMethod :65
 // {
@@ -6621,8 +6622,8 @@ void ScriptMethod::ctor_1(uString* name)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/ScriptClass.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/ScriptClass.uno
+// -----------------------------------------------------------------------
 
 // public sealed class ScriptMethod<T> :95
 // {
@@ -6712,7 +6713,7 @@ void ScriptMethod1__Call_fn(ScriptMethod1* __this, ::g::Fuse::Scripting::Context
         if (uPtr(args)->Length() != 0)
         {
             uString* name = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::Type::FullName(uPtr(::g::Uno::Object::GetType(uPtr(obj)))), uString::Const(".")), __this->Name);
-            ::g::Fuse::Diagnostics::UserError(::g::Uno::String::Format(uString::Const("{0} takes no arguments, but {1} was provided"), uArray::Init<uObject*>(::TYPES[10/*object[]*/], 2, name, uBox<int32_t>(::TYPES[31/*int*/], uPtr(args)->Length()))), obj, uString::Const("/usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/ScriptClass.uno"), 248, uString::Const("Call"), NULL);
+            ::g::Fuse::Diagnostics::UserError(::g::Uno::String::Format(uString::Const("{0} takes no arguments, but {1} was provided"), uArray::Init<uObject*>(::TYPES[10/*object[]*/], 2, name, uBox<int32_t>(::TYPES[31/*int*/], uPtr(args)->Length()))), obj, uString::Const("/usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/ScriptClass.uno"), 248, uString::Const("Call"), NULL);
             return *__retval = NULL, void();
         }
 
@@ -6863,8 +6864,8 @@ ScriptMethod1* ScriptMethod1::New5(uType* __type, uString* name, uDelegate* meth
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/ScriptClass.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/ScriptClass.uno
+// -----------------------------------------------------------------------
 
 // public sealed class ScriptMethodInline :74
 // {
@@ -6959,8 +6960,8 @@ ScriptMethodInline* ScriptMethodInline::New2(uString* name, uString* code)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/ScriptModule.Evaluate.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/ScriptModule.Evaluate.uno
+// ---------------------------------------------------------------------------------
 
 // public partial class ScriptModule :22
 // {
@@ -7542,7 +7543,6 @@ uString* ScriptModule::ComputePath1(uString* sourcePath, uString* moduleId)
 // private static bool IsPathEqual(string src, string path) [static] :180
 bool ScriptModule::IsPathEqual(uString* src, uString* path)
 {
-    uStackFrame __("Fuse.Scripting.ScriptModule", "IsPathEqual(string,string)");
     ScriptModule_typeof()->Init();
 
     if (::g::Uno::String::op_Equality(src, path))
@@ -7566,8 +7566,8 @@ ScriptModule* ScriptModule::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/ScriptClass.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/ScriptClass.uno
+// -----------------------------------------------------------------------
 
 // public sealed class ScriptPromise<TSelf, TResult, TJSResult> :294
 // {
@@ -7691,8 +7691,8 @@ ScriptPromise* ScriptPromise::New1(uType* __type, uString* name, int32_t thread,
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/ScriptClass.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/ScriptClass.uno
+// -----------------------------------------------------------------------
 
 // public abstract class ScriptProperty :41
 // {
@@ -7737,8 +7737,8 @@ void ScriptProperty::ctor_1(uString* name, uString* modifier)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/ScriptClass.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/ScriptClass.uno
+// -----------------------------------------------------------------------
 
 // public sealed class ScriptProperty<TOwner, TValue> :51
 // {
@@ -7808,8 +7808,8 @@ ScriptProperty1* ScriptProperty1::New1(uType* __type, uString* name, uDelegate* 
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/ScriptClass.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/ScriptClass.uno
+// -----------------------------------------------------------------------
 
 // public sealed class ScriptReadonlyProperty :31
 // {
@@ -7867,8 +7867,8 @@ ScriptReadonlyProperty* ScriptReadonlyProperty::New1(uString* name, uObject* val
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/IScriptEvent.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/IScriptEvent.uno
+// ------------------------------------------------------------------------
 
 // public sealed class StringChangedArgs :42
 // {
@@ -7936,8 +7936,8 @@ StringChangedArgs* StringChangedArgs::New3(uString* newValue)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/SubscriptionSubject.uno
-// -------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/SubscriptionSubject.uno
+// ------------------------------------------------------------------------------------------
 
 // protected internal abstract class SubscriptionSubject.Subscription :14
 // {
@@ -8041,8 +8041,8 @@ SubscriptionSubject__Subscription* SubscriptionSubject__Subscription::Next()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/SubscriptionSubject.uno
-// -------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/SubscriptionSubject.uno
+// ------------------------------------------------------------------------------------------
 
 // internal abstract class SubscriptionSubject :8
 // {
@@ -8090,8 +8090,8 @@ SubscriptionSubject__Subscription* SubscriptionSubject::Subscribers()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/Types.uno
-// ------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/Types.uno
+// -----------------------------------------------------------------
 
 // public static class Value :104
 // {
@@ -8144,8 +8144,8 @@ double Value::ToNumber(uObject* obj)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting/1.9.0/NativeProperty.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting/1.10.0-rc1/NativeProperty.uno
+// --------------------------------------------------------------------------
 
 // public delegate TJSValue ValueConverter<T, TJSValue>(Fuse.Scripting.Context context, T originalValue) :6
 uDelegateType* ValueConverter_typeof()
@@ -8160,8 +8160,8 @@ uDelegateType* ValueConverter_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/ValueMirror.uno
-// -----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/ValueMirror.uno
+// ----------------------------------------------------------------------------------
 
 // internal abstract class ValueMirror :18
 // {

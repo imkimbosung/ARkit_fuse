@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Collections/Dictionary.uno.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Collections/Dictionary.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -6,13 +6,14 @@
 #include <Uno.Collections.IEnumerator1-1.h>
 #include <Uno.IDisposable.h>
 #include <Uno.Object.h>
+#include <Uno.ValueType.h>
 namespace g{namespace Uno{namespace Collections{struct Dictionary;}}}
 
 namespace g{
 namespace Uno{
 namespace Collections{
 
-// public struct Dictionary<TKey, TValue>.ValueCollection.Enumerator :170
+// public struct Dictionary<TKey, TValue>.ValueCollection.Enumerator :169
 // {
 struct Dictionary__ValueCollection__Enumerator_type : uStructType
 {
@@ -22,7 +23,7 @@ struct Dictionary__ValueCollection__Enumerator_type : uStructType
 };
 
 Dictionary__ValueCollection__Enumerator_type* Dictionary__ValueCollection__Enumerator_typeof();
-void Dictionary__ValueCollection__Enumerator__ctor__fn(uTRef __this, uType* __type, ::g::Uno::Collections::Dictionary* source);
+void Dictionary__ValueCollection__Enumerator__ctor_1_fn(uTRef __this, uType* __type, ::g::Uno::Collections::Dictionary* source);
 void Dictionary__ValueCollection__Enumerator__get_Current_fn(uTRef __this, uType* __type, uTRef __retval);
 void Dictionary__ValueCollection__Enumerator__Dispose_fn(uTRef __this, uType* __type);
 void Dictionary__ValueCollection__Enumerator__MoveNext_fn(uTRef __this, uType* __type, bool* __retval);
@@ -37,7 +38,7 @@ struct Dictionary__ValueCollection__Enumerator
     int32_t _iterator;
     int32_t _version;
 
-    void ctor_(uType* __type, ::g::Uno::Collections::Dictionary* source) { Dictionary__ValueCollection__Enumerator__ctor__fn(this, __type, source); }
+    void ctor_1(uType* __type, ::g::Uno::Collections::Dictionary* source) { Dictionary__ValueCollection__Enumerator__ctor_1_fn(this, __type, source); }
     TValue Current(uType* __type) { TValue __retval; return Dictionary__ValueCollection__Enumerator__get_Current_fn(this, __type, &__retval), __retval; }
     void Dispose(uType* __type) { Dictionary__ValueCollection__Enumerator__Dispose_fn(this, __type); }
     bool MoveNext(uType* __type) { bool __retval; return Dictionary__ValueCollection__Enumerator__MoveNext_fn(this, __type, &__retval), __retval; }

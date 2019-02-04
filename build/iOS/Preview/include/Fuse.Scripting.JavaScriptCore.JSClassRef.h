@@ -1,17 +1,17 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/JavaScriptCore/JavaScriptCore.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/JavaScriptCore/JavaScriptCore.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <JavaScriptCore/JSObjectRef.h>
 #include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <Uno.ValueType.h>
 
 namespace g{
 namespace Fuse{
 namespace Scripting{
 namespace JavaScriptCore{
 
-// internal extern struct JSClassRef :419
+// internal extern struct JSClassRef :409
 // {
 struct JSClassRef_type : uStructType
 {
@@ -25,8 +25,6 @@ void JSClassRef__Dispose_fn(::JSClassRef* __this);
 
 struct JSClassRef
 {
-    void* _dummy;
-
     static void Dispose(::JSClassRef __this);
     static ::JSClassRef CreateUnoCallback();
     static ::JSClassRef CreateUnoFinalizer();

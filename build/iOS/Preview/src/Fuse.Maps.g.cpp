@@ -22,8 +22,8 @@ namespace g{
 namespace Fuse{
 namespace Maps{
 
-// /usr/local/share/uno/Packages/Fuse.Maps/1.9.0/MarkerIconCache.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Maps/1.10.0-rc1/MarkerIconCache.uno
+// ----------------------------------------------------------------------
 
 // internal sealed class MarkerIconCache :7
 // {
@@ -132,8 +132,8 @@ MarkerIconCache* MarkerIconCache::New1(uDelegate* changeHandler)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Maps/1.9.0/MarkerIconCache.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Maps/1.10.0-rc1/MarkerIconCache.uno
+// ----------------------------------------------------------------------
 
 // internal sealed class MarkerSource :41
 // {

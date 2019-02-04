@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Node.Rooting.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Node.Rooting.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

@@ -8,8 +8,6 @@
 #include <Fuse.Nodes.DrawRect.h>
 #include <Fuse.Nodes.DrawRectVisualizer.h>
 #include <Uno.Bool.h>
-#include <Uno.Buffer.h>
-#include <Uno.Byte.h>
 #include <Uno.Collections.List-1.Enumerator.h>
 #include <Uno.Collections.List-1.h>
 #include <Uno.Float.h>
@@ -18,7 +16,6 @@
 #include <Uno.Float4x4.h>
 #include <Uno.Graphics.BlendOperand.h>
 #include <Uno.Graphics.BufferUsage.h>
-#include <Uno.Graphics.DeviceBuffer.h>
 #include <Uno.Graphics.PolygonFace.h>
 #include <Uno.Graphics.RenderTarget.h>
 #include <Uno.Graphics.VertexAttributeType.h>
@@ -26,7 +23,6 @@
 #include <Uno.Int.h>
 #include <Uno.Rect.h>
 #include <Uno.Recti.h>
-#include <Uno.Runtime.Implementation.Internal.BufferConverters.h>
 #include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLProgram.h>
 #include <Uno.Vector.h>
 static uType* TYPES[5];
@@ -35,8 +31,8 @@ namespace g{
 namespace Fuse{
 namespace Nodes{
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/DrawRectVisualizer.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/DrawRectVisualizer.uno
+// --------------------------------------------------------------------------
 
 // internal struct DrawRect :33
 // {
@@ -56,6 +52,7 @@ uStructType* DrawRect_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 5;
     options.Alignment = alignof(DrawRect);
     options.ValueSize = sizeof(DrawRect);
@@ -66,15 +63,15 @@ uStructType* DrawRect_typeof()
 }
 
 // public DrawRect(float4 a, float4 b, float4 c, float4 d, Uno.Recti scissor) :42
-void DrawRect__ctor__fn(DrawRect* __this, ::g::Uno::Float4* a, ::g::Uno::Float4* b, ::g::Uno::Float4* c, ::g::Uno::Float4* d, ::g::Uno::Recti* scissor)
+void DrawRect__ctor_1_fn(DrawRect* __this, ::g::Uno::Float4* a, ::g::Uno::Float4* b, ::g::Uno::Float4* c, ::g::Uno::Float4* d, ::g::Uno::Recti* scissor)
 {
-    __this->ctor_(*a, *b, *c, *d, *scissor);
+    __this->ctor_1(*a, *b, *c, *d, *scissor);
 }
 
 // public DrawRect(float4[] verts, Uno.Recti scissor) :52
-void DrawRect__ctor_1_fn(DrawRect* __this, uArray* verts, ::g::Uno::Recti* scissor)
+void DrawRect__ctor_2_fn(DrawRect* __this, uArray* verts, ::g::Uno::Recti* scissor)
 {
-    __this->ctor_1(verts, *scissor);
+    __this->ctor_2(verts, *scissor);
 }
 
 // public DrawRect New(float4 a, float4 b, float4 c, float4 d, Uno.Recti scissor) :42
@@ -90,7 +87,7 @@ void DrawRect__New2_fn(uArray* verts, ::g::Uno::Recti* scissor, DrawRect* __retv
 }
 
 // public DrawRect(float4 a, float4 b, float4 c, float4 d, Uno.Recti scissor) [instance] :42
-void DrawRect::ctor_(::g::Uno::Float4 a, ::g::Uno::Float4 b, ::g::Uno::Float4 c, ::g::Uno::Float4 d, ::g::Uno::Recti scissor)
+void DrawRect::ctor_1(::g::Uno::Float4 a, ::g::Uno::Float4 b, ::g::Uno::Float4 c, ::g::Uno::Float4 d, ::g::Uno::Recti scissor)
 {
     A = a;
     B = b;
@@ -100,7 +97,7 @@ void DrawRect::ctor_(::g::Uno::Float4 a, ::g::Uno::Float4 b, ::g::Uno::Float4 c,
 }
 
 // public DrawRect(float4[] verts, Uno.Recti scissor) [instance] :52
-void DrawRect::ctor_1(uArray* verts, ::g::Uno::Recti scissor)
+void DrawRect::ctor_2(uArray* verts, ::g::Uno::Recti scissor)
 {
     uStackFrame __("Fuse.Nodes.DrawRect", ".ctor(float4[],Uno.Recti)");
     A = uPtr(verts)->Item< ::g::Uno::Float4>(0);
@@ -114,7 +111,7 @@ void DrawRect::ctor_1(uArray* verts, ::g::Uno::Recti scissor)
 DrawRect DrawRect__New1(::g::Uno::Float4 a, ::g::Uno::Float4 b, ::g::Uno::Float4 c, ::g::Uno::Float4 d, ::g::Uno::Recti scissor)
 {
     DrawRect obj1;
-    obj1.ctor_(a, b, c, d, scissor);
+    obj1.ctor_1(a, b, c, d, scissor);
     return obj1;
 }
 
@@ -122,13 +119,13 @@ DrawRect DrawRect__New1(::g::Uno::Float4 a, ::g::Uno::Float4 b, ::g::Uno::Float4
 DrawRect DrawRect__New2(uArray* verts, ::g::Uno::Recti scissor)
 {
     DrawRect obj2;
-    obj2.ctor_1(verts, scissor);
+    obj2.ctor_2(verts, scissor);
     return obj2;
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/DrawRectVisualizer.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/DrawRectVisualizer.uno
+// --------------------------------------------------------------------------
 
 // internal sealed class DrawRectVisualizer :63
 // {
@@ -240,7 +237,6 @@ uSStrong<DrawRectVisualizer*> DrawRectVisualizer::_instance_;
 // public generated DrawRectVisualizer() [instance] :63
 void DrawRectVisualizer::ctor_()
 {
-    uStackFrame __("Fuse.Nodes.DrawRectVisualizer", ".ctor()");
     _drawRects = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[0/*Uno.Collections.List<Fuse.Nodes.DrawRect>*/]));
     init_DrawCalls();
 }
@@ -265,7 +261,7 @@ void DrawRectVisualizer::EndFrameAndVisualizeImpl(::g::Fuse::DrawContext* dc)
                 {
                     ::g::Fuse::Nodes::DrawRect r = enum1.Current(::TYPES[3/*Uno.Collections.List<Fuse.Nodes.DrawRect>.Enumerator*/]);
                     uPtr(dc)->PushScissor(r.Scissor);
-                    uPtr(EndFrameAndVisualizeImpl_p_c7ca0230_1_3_1)->Update(uPtr(::g::Uno::Runtime::Implementation::Internal::BufferConverters::ToBuffer5(uArray::Init< ::g::Uno::Float4>(::TYPES[2/*float4[]*/], 6, r.A, r.B, r.C, r.C, r.D, r.A)))->GetBytes());
+                    uPtr(EndFrameAndVisualizeImpl_p_c7ca0230_1_3_1)->Update6(uArray::Init< ::g::Uno::Float4>(::TYPES[2/*float4[]*/], 6, r.A, r.B, r.C, r.C, r.D, r.A));
                     _draw_c7ca0230.BlendEnabled(true);
                     _draw_c7ca0230.DepthTestEnabled(false);
                     _draw_c7ca0230.CullFace(0);
@@ -303,8 +299,8 @@ void DrawRectVisualizer::EndFrameAndVisualizeImpl(::g::Fuse::DrawContext* dc)
 void DrawRectVisualizer::init_DrawCalls()
 {
     uStackFrame __("Fuse.Nodes.DrawRectVisualizer", "init_DrawCalls()");
-    EndFrameAndVisualizeImpl_p_c7ca0230_1_3_1 = ::g::Uno::Graphics::VertexBuffer::New4(1);
-    EndFrameAndVisualizeImpl_edgeCoord_c7ca0230_1_5_4 = ::g::Uno::Graphics::VertexBuffer::New1(uPtr(::g::Uno::Runtime::Implementation::Internal::BufferConverters::ToBuffer3(uArray::Init< ::g::Uno::Float2>(::TYPES[1/*float2[]*/], 6, ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(1.0f, 0.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(0.0f, 1.0f), ::g::Uno::Float2__New2(0.0f, 0.0f))))->GetBytes(), 0);
+    EndFrameAndVisualizeImpl_p_c7ca0230_1_3_1 = ::g::Uno::Graphics::VertexBuffer::New8(1);
+    EndFrameAndVisualizeImpl_edgeCoord_c7ca0230_1_5_4 = ::g::Uno::Graphics::VertexBuffer::New3(uArray::Init< ::g::Uno::Float2>(::TYPES[1/*float2[]*/], 6, ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(1.0f, 0.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(0.0f, 1.0f), ::g::Uno::Float2__New2(0.0f, 0.0f)), 0);
     _draw_c7ca0230 = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New1(::g::FuseNodes_bundle::DrawRectVisualizer5cbb2c45());
 }
 

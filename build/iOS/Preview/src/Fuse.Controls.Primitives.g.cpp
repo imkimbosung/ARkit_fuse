@@ -25,8 +25,8 @@ namespace Fuse{
 namespace Controls{
 namespace Primitives{
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/ShadowElement.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/ShadowElement.uno
+// -----------------------------------------------------------------------------------
 
 // internal sealed class ShadowElement :11
 // {

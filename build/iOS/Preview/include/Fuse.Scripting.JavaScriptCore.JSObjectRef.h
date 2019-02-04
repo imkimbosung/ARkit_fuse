@@ -1,18 +1,18 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/JavaScriptCore/JavaScriptCore.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/JavaScriptCore/JavaScriptCore.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <JavaScriptCore/JSContextRef.h>
 #include <JavaScriptCore/JSObjectRef.h>
 #include <JavaScriptCore/JSStringRef.h>
-#include <Uno.Object.h>
+#include <Uno.ValueType.h>
 
 namespace g{
 namespace Fuse{
 namespace Scripting{
 namespace JavaScriptCore{
 
-// internal extern struct JSObjectRef :176
+// internal extern struct JSObjectRef :172
 // {
 uStructType* JSObjectRef_typeof();
 void JSObjectRef__CallAsConstructor_fn(::JSObjectRef* __this, ::JSContextRef* ctx, uArray* arguments, uDelegate* onException, ::JSObjectRef* __retval);
@@ -38,8 +38,6 @@ void JSObjectRef__SetPrototype_fn(::JSObjectRef* __this, ::JSContextRef* ctx, ::
 
 struct JSObjectRef
 {
-    void* _dummy;
-
     static ::JSObjectRef CallAsConstructor(::JSObjectRef __this, ::JSContextRef ctx, uArray* arguments, uDelegate* onException);
     static ::JSValueRef CallAsFunction(::JSObjectRef __this, ::JSContextRef ctx, ::JSObjectRef thisObject, uArray* arguments, uDelegate* onException);
     static ::JSPropertyNameArrayRef CopyPropertyNames(::JSObjectRef __this, ::JSContextRef ctx);

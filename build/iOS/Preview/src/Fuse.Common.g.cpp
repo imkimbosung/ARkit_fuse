@@ -4,8 +4,6 @@
 #include <_root.FuseCommon_bundle.h>
 #include <Fuse.Common.Blitter.h>
 #include <Uno.Bool.h>
-#include <Uno.Buffer.h>
-#include <Uno.Byte.h>
 #include <Uno.Float.h>
 #include <Uno.Float3.h>
 #include <Uno.Float3x3.h>
@@ -21,7 +19,6 @@
 #include <Uno.Int.h>
 #include <Uno.Matrix.h>
 #include <Uno.Rect.h>
-#include <Uno.Runtime.Implementation.Internal.BufferConverters.h>
 #include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLProgram.h>
 static uType* TYPES[1];
 
@@ -29,8 +26,8 @@ namespace g{
 namespace Fuse{
 namespace Common{
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Blitter.uno
-// -----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Blitter.uno
+// ----------------------------------------------------------------
 
 // internal sealed class Blitter :6
 // {
@@ -112,7 +109,6 @@ uSStrong<Blitter*> Blitter::Singleton_;
 // public generated Blitter() [instance] :6
 void Blitter::ctor_()
 {
-    uStackFrame __("Fuse.Common.Blitter", ".ctor()");
     init_DrawCalls();
 }
 
@@ -205,9 +201,9 @@ void Blitter::init_DrawCalls()
 {
     uStackFrame __("Fuse.Common.Blitter", "init_DrawCalls()");
     uArray* verts_254ef0e5_1_7_0 = uArray::Init< ::g::Uno::Float2>(::TYPES[0/*float2[]*/], 6, ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(1.0f, 0.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(0.0f, 1.0f));
-    Blit_v_254ef0e5_1_8_1 = ::g::Uno::Graphics::VertexBuffer::New1(uPtr(::g::Uno::Runtime::Implementation::Internal::BufferConverters::ToBuffer3(verts_254ef0e5_1_7_0))->GetBytes(), 0);
+    Blit_v_254ef0e5_1_8_1 = ::g::Uno::Graphics::VertexBuffer::New3(verts_254ef0e5_1_7_0, 0);
     Blit_verts_254ef0e5_1_7_5 = verts_254ef0e5_1_7_0;
-    Fill_v_181ef612_1_8_1 = ::g::Uno::Graphics::VertexBuffer::New1(uPtr(::g::Uno::Runtime::Implementation::Internal::BufferConverters::ToBuffer3(verts_254ef0e5_1_7_0))->GetBytes(), 0);
+    Fill_v_181ef612_1_8_1 = ::g::Uno::Graphics::VertexBuffer::New3(verts_254ef0e5_1_7_0, 0);
     _draw_254ef0e5 = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New1(::g::FuseCommon_bundle::Blitter8f469d0c());
     _draw_181ef612 = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New1(::g::FuseCommon_bundle::Blitter23d242c5());
 }

@@ -63,8 +63,8 @@ namespace Fuse{
 namespace Controls{
 namespace Native{
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Interfaces.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Interfaces.uno
+// ----------------------------------------------------------------------------
 
 // public abstract interface ICircleView :109
 // {
@@ -83,8 +83,8 @@ uInterfaceType* ICircleView_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Interfaces.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Interfaces.uno
+// ----------------------------------------------------------------------------
 
 // public abstract interface IGraphicsView :13
 // {
@@ -101,8 +101,8 @@ uInterfaceType* IGraphicsView_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Interfaces.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Interfaces.uno
+// ----------------------------------------------------------------------------
 
 // public abstract interface IImageView :92
 // {
@@ -120,8 +120,8 @@ uInterfaceType* IImageView_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Interfaces.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Interfaces.uno
+// ----------------------------------------------------------------------------
 
 // public abstract interface ILabelView :19
 // {
@@ -137,8 +137,8 @@ uInterfaceType* ILabelView_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Interfaces.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Interfaces.uno
+// ----------------------------------------------------------------------------
 
 // public abstract interface ILeafView :11
 // {
@@ -152,8 +152,8 @@ uInterfaceType* ILeafView_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/ImageLoader.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/ImageLoader.uno
+// -----------------------------------------------------------------------------
 
 // internal sealed extern class ImageHandle :15
 // {
@@ -281,8 +281,8 @@ ImageHandle* ImageHandle::New1(uString* name, uObject* handle)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Interfaces.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Interfaces.uno
+// ----------------------------------------------------------------------------
 
 // public abstract interface INativeViewRenderer :130
 // {
@@ -299,8 +299,8 @@ uInterfaceType* INativeViewRenderer_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/ViewHandle.iOS.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/ViewHandle.iOS.uno
+// ----------------------------------------------------------------------
 
 // public enum ViewHandle.InputMode :16
 uEnumType* ViewHandle__InputMode_typeof()
@@ -315,8 +315,8 @@ uEnumType* ViewHandle__InputMode_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/ViewHandle.iOS.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/ViewHandle.iOS.uno
+// ----------------------------------------------------------------------
 
 // public enum ViewHandle.Invalidation :22
 uEnumType* ViewHandle__Invalidation_typeof()
@@ -331,8 +331,8 @@ uEnumType* ViewHandle__Invalidation_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Interfaces.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Interfaces.uno
+// ----------------------------------------------------------------------------
 
 // public abstract interface IOffscreenRenderer :153
 // {
@@ -349,8 +349,8 @@ uInterfaceType* IOffscreenRenderer_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Interfaces.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Interfaces.uno
+// ----------------------------------------------------------------------------
 
 // public abstract interface IOffscreenRendererHost :148
 // {
@@ -366,8 +366,8 @@ uInterfaceType* IOffscreenRendererHost_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Interfaces.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Interfaces.uno
+// ----------------------------------------------------------------------------
 
 // public abstract interface IRangeView :55
 // {
@@ -383,8 +383,8 @@ uInterfaceType* IRangeView_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Interfaces.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Interfaces.uno
+// ----------------------------------------------------------------------------
 
 // public abstract interface IRangeViewHost :60
 // {
@@ -401,8 +401,8 @@ uInterfaceType* IRangeViewHost_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Interfaces.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Interfaces.uno
+// ----------------------------------------------------------------------------
 
 // public abstract interface IRectangleView :104
 // {
@@ -418,8 +418,8 @@ uInterfaceType* IRectangleView_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Interfaces.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Interfaces.uno
+// ----------------------------------------------------------------------------
 
 // public abstract interface IScrollView :117
 // {
@@ -436,8 +436,8 @@ uInterfaceType* IScrollView_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Interfaces.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Interfaces.uno
+// ----------------------------------------------------------------------------
 
 // public abstract interface IScrollViewHost :123
 // {
@@ -455,8 +455,8 @@ uInterfaceType* IScrollViewHost_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Interfaces.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Interfaces.uno
+// ----------------------------------------------------------------------------
 
 // public abstract interface IShapeView :99
 // {
@@ -472,8 +472,8 @@ uInterfaceType* IShapeView_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Interfaces.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Interfaces.uno
+// ----------------------------------------------------------------------------
 
 // public abstract interface ITextEdit :66
 // {
@@ -501,8 +501,8 @@ uInterfaceType* ITextEdit_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Interfaces.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Interfaces.uno
+// ----------------------------------------------------------------------------
 
 // public abstract interface ITextEditHost :37
 // {
@@ -521,8 +521,8 @@ uInterfaceType* ITextEditHost_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Interfaces.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Interfaces.uno
+// ----------------------------------------------------------------------------
 
 // public abstract interface ITextView :24
 // {
@@ -546,8 +546,8 @@ uInterfaceType* ITextView_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Interfaces.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Interfaces.uno
+// ----------------------------------------------------------------------------
 
 // public abstract interface IToggleView :45
 // {
@@ -563,8 +563,8 @@ uInterfaceType* IToggleView_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Interfaces.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Interfaces.uno
+// ----------------------------------------------------------------------------
 
 // public abstract interface IToggleViewHost :50
 // {
@@ -580,8 +580,8 @@ uInterfaceType* IToggleViewHost_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Interfaces.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Interfaces.uno
+// ----------------------------------------------------------------------------
 
 // public abstract interface IView :9
 // {
@@ -595,8 +595,8 @@ uInterfaceType* IView_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Interfaces.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Interfaces.uno
+// ----------------------------------------------------------------------------
 
 // public abstract interface IViewGroup :83
 // {
@@ -616,8 +616,8 @@ uInterfaceType* IViewGroup_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/NativeRenderer.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/NativeRenderer.uno
+// --------------------------------------------------------------------------------
 
 // public abstract extern interface IViewHandleRenderer :10
 // {
@@ -634,8 +634,8 @@ uInterfaceType* IViewHandleRenderer_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Interfaces.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Interfaces.uno
+// ----------------------------------------------------------------------------
 
 // public abstract interface IViewHost :136
 // {
@@ -652,8 +652,8 @@ uInterfaceType* IViewHost_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/NativeRootViewport.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/NativeRootViewport.uno
+// ------------------------------------------------------------------------------------
 
 // internal sealed extern class NativeRootViewport :6
 // {
@@ -802,8 +802,8 @@ NativeRootViewport* NativeRootViewport::New5(::g::Fuse::Controls::Native::ViewHa
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Interfaces.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Interfaces.uno
+// ----------------------------------------------------------------------------
 
 // public enum OffscreenRendering :142
 uEnumType* OffscreenRendering_typeof()
@@ -818,8 +818,8 @@ uEnumType* OffscreenRendering_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Interfaces.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Interfaces.uno
+// ----------------------------------------------------------------------------
 
 // internal static extern class ViewExtensions :160
 // {

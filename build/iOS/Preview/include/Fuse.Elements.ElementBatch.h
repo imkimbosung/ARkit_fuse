@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Caching/ElementBatch.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Caching/ElementBatch.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -17,7 +17,6 @@ namespace g{namespace Fuse{struct DrawContext;}}
 namespace g{namespace Fuse{struct VisualBounds;}}
 namespace g{namespace Uno{namespace Collections{struct List;}}}
 namespace g{namespace Uno{namespace Graphics{struct IndexBuffer;}}}
-namespace g{namespace Uno{struct Buffer;}}
 namespace g{namespace Uno{struct Float4x4;}}
 namespace g{namespace Uno{struct Rect;}}
 namespace g{namespace Uno{struct Recti;}}
@@ -69,7 +68,7 @@ struct ElementBatch : uObject
     int32_t _prevElementCount;
     uStrong< ::g::Fuse::VisualBounds*> _renderBounds;
     uStrong< ::g::Uno::Collections::List*> _elements;
-    uStrong< ::g::Uno::Buffer*> _tempBuffer;
+    uStrong<uArray*> _tempBuffer;
     ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall _draw_f8c70145;
 
     void ctor_(::g::Fuse::Elements::ElementBatcher* elementBatcher, ::g::Fuse::Elements::ElementAtlas* elementAtlas);

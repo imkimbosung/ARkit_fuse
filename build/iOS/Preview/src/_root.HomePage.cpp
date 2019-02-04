@@ -55,12 +55,12 @@ namespace g{
 static void HomePage__cctor_4_fn(uType* __type)
 {
     HomePage::__g_static_nametable1_ = uArray::Init<uString*>(::TYPES[0/*string[]*/], 19, ::STRINGS[0/*"router"*/], ::STRINGS[1/*"ARscreen"*/], ::STRINGS[2/*"ARrect"*/], ::STRINGS[3/*"ARrectColor"*/], ::STRINGS[4/*"ARrectStroke"*/], ::STRINGS[5/*"ARrectStrok...*/], ::STRINGS[6/*"temp_eb3"*/], ::STRINGS[7/*"RespberryPi"*/], ::STRINGS[8/*"Pirect"*/], ::STRINGS[9/*"PirectColor"*/], ::STRINGS[10/*"PirectStroke"*/], ::STRINGS[11/*"PirectStrok...*/], ::STRINGS[12/*"temp_eb4"*/], ::STRINGS[13/*"Counter"*/], ::STRINGS[14/*"CTrect"*/], ::STRINGS[15/*"CTrectColor"*/], ::STRINGS[16/*"CTrectStroke"*/], ::STRINGS[17/*"CTrectStrok...*/], ::STRINGS[18/*"temp_eb5"*/]);
-    HomePage::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[1/*"ARscreen"*/]);
-    HomePage::__selector1_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[2/*"ARrect"*/]);
-    HomePage::__selector2_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[7/*"RespberryPi"*/]);
-    HomePage::__selector3_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[8/*"Pirect"*/]);
-    HomePage::__selector4_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[13/*"Counter"*/]);
-    HomePage::__selector5_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[14/*"CTrect"*/]);
+    HomePage::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[1/*"ARscreen"*/]);
+    HomePage::__selector1_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[2/*"ARrect"*/]);
+    HomePage::__selector2_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[7/*"RespberryPi"*/]);
+    HomePage::__selector3_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[8/*"Pirect"*/]);
+    HomePage::__selector4_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[13/*"Counter"*/]);
+    HomePage::__selector5_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[14/*"CTrect"*/]);
 }
 
 static void HomePage_build(uType* type)

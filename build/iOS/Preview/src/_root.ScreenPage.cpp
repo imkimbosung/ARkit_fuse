@@ -37,13 +37,13 @@ namespace g{
 // static ScreenPage() :11
 static void ScreenPage__cctor_4_fn(uType* __type)
 {
-    ScreenPage::__g_static_nametable1_ = uArray::Init<uString*>(::TYPES[0/*string[]*/], 2, ::STRINGS[0/*"router"*/], ::STRINGS[1/*"temp_eb8"*/]);
+    ScreenPage::__g_static_nametable1_ = uArray::Init<uString*>(::TYPES[0/*string[]*/], 2, ::STRINGS[0/*"router"*/], ::STRINGS[1/*"temp_eb9"*/]);
 }
 
 static void ScreenPage_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("router");
-    ::STRINGS[1] = uString::Const("temp_eb8");
+    ::STRINGS[1] = uString::Const("temp_eb9");
     ::STRINGS[2] = uString::Const("main");
     ::STRINGS[3] = uString::Const("Pages/ScreenPage.ux");
     ::TYPES[0] = ::g::Uno::String_typeof()->Array();
@@ -75,7 +75,7 @@ static void ScreenPage_build(uType* type)
         ::g::Fuse::Drawing::ISurfaceDrawable_typeof(), offsetof(::g::Fuse::Controls::Panel_type, interface18));
     type->SetFields(126,
         ::g::Fuse::Navigation::Router_typeof(), offsetof(ScreenPage, router), 0,
-        ::g::Fuse::Reactive::EventBinding_typeof(), offsetof(ScreenPage, temp_eb8), 0,
+        ::g::Fuse::Reactive::EventBinding_typeof(), offsetof(ScreenPage, temp_eb9), 0,
         ::g::Uno::UX::NameTable_typeof(), offsetof(ScreenPage, __g_nametable1), 0,
         ::TYPES[0/*string[]*/], (uintptr_t)&ScreenPage::__g_static_nametable1_, uFieldFlagsStatic);
     type->Reflection.SetFunctions(1,
@@ -178,7 +178,7 @@ void ScreenPage::InitializeUX()
     ::g::Fuse::Reactive::Data* temp = ::g::Fuse::Reactive::Data::New1(::STRINGS[2/*"main"*/]);
     ::g::Fuse::Reactive::JavaScript* temp1 = ::g::Fuse::Reactive::JavaScript::New2(__g_nametable1);
     ::g::Fuse::Controls::Image* temp2 = ::g::Fuse::Controls::Image::New3();
-    temp_eb8 = ::g::Fuse::Reactive::EventBinding::New1((uObject*)temp);
+    temp_eb9 = ::g::Fuse::Reactive::EventBinding::New1((uObject*)temp);
     ::g::Fuse::Drawing::StaticSolidColor* temp3 = ::g::Fuse::Drawing::StaticSolidColor::New2(::g::Uno::Float4__New2(0.8627451f, 0.8823529f, 0.8901961f, 1.0f));
     SourceLineNumber(1);
     SourceFileName(::STRINGS[3/*"Pages/Scree...*/]);
@@ -192,14 +192,14 @@ void ScreenPage::InitializeUX()
     temp2->Layer(2);
     temp2->SourceLineNumber(5);
     temp2->SourceFileName(::STRINGS[3/*"Pages/Scree...*/]);
-    ::g::Fuse::Gestures::Clicked::AddHandler(temp2, uDelegate::New(::TYPES[1/*Fuse.Gestures.ClickedHandler*/], (void*)::g::Fuse::Reactive::EventBinding__OnEvent_fn, uPtr(temp_eb8)));
+    ::g::Fuse::Gestures::Clicked::AddHandler(temp2, uDelegate::New(::TYPES[1/*Fuse.Gestures.ClickedHandler*/], (void*)::g::Fuse::Reactive::EventBinding__OnEvent_fn, uPtr(temp_eb9)));
     temp2->File(::g::Uno::UX::BundleFileSource::New1(::g::AR_example_bundle::logo3b7e0030c()));
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp2->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp_eb8);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp2->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp_eb9);
     temp->SourceLineNumber(5);
     temp->SourceFileName(::STRINGS[3/*"Pages/Scree...*/]);
     uPtr(__g_nametable1)->This(this);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__g_nametable1)->Objects()), ::TYPES[3/*Uno.Collections.ICollection<object>*/]), router);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__g_nametable1)->Objects()), ::TYPES[3/*Uno.Collections.ICollection<object>*/]), temp_eb8);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__g_nametable1)->Objects()), ::TYPES[3/*Uno.Collections.ICollection<object>*/]), temp_eb9);
     Background(temp3);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Node>*/]), temp1);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[4/*Uno.Collections.ICollection<Fuse.Node>*/]), temp2);

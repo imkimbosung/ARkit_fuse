@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.TimePicker/1.9.0/Android/TimePicker.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.TimePicker/1.10.0-rc1/Android/TimePicker.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

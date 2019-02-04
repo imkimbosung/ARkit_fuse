@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Backends/CPlusPlus/Uno/Support.cpp.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Backends/CPlusPlus/Uno/Support.cpp.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Uno/Support.h>
@@ -21,6 +21,12 @@
 void uLogApple(const char* prefix, const char* format, va_list args);
 #else
 #include <cstdio>
+#endif
+
+#ifdef WIN32
+#include <Uno/WinAPIHelper.h>
+#else
+#include <pthread.h>
 #endif
 
 static std::recursive_mutex _Critical;
@@ -86,9 +92,52 @@ void uLog(int level, const char* format, ...)
 
 void uFatal(const char* src, const char* msg)
 {
-    uLog(uLogLevelFatal, "Runtime Error: %s: %s", src ? src : "(unknown)", msg ? msg : "(no message)");
+    uLog(uLogLevelFatal, "Runtime Error in %s: %s",
+        src && strlen(src) ? src : "(unknown)",
+        msg && strlen(msg) ? msg : "(no message)");
     Xli::MessageBox::Show(NULL, "The application has crashed.", "Fatal Error", Xli::DialogButtonsOK, Xli::DialogHintsError);
     abort();
+}
+
+uThreadLocal* uCreateThreadLocal(void (*destructor)(void*))
+{
+#ifdef WIN32
+    // TODO: Handle destructor...
+    return (uThreadLocal*)(intptr_t)::TlsAlloc();
+#else
+    pthread_key_t handle;
+    if (pthread_key_create(&handle, destructor))
+        U_THROW_IOE("pthread_key_create() failed");
+
+    return (uThreadLocal*)(intptr_t)handle;
+#endif
+}
+
+void uDeleteThreadLocal(uThreadLocal* handle)
+{
+#ifdef WIN32
+    ::TlsFree((DWORD)(intptr_t)handle);
+#else
+    pthread_key_delete((pthread_key_t)(intptr_t)handle);
+#endif
+}
+
+void uSetThreadLocal(uThreadLocal* handle, void* data)
+{
+#ifdef WIN32
+    ::TlsSetValue((DWORD)(intptr_t)handle, data);
+#else
+    pthread_setspecific((pthread_key_t)(intptr_t)handle, data);
+#endif
+}
+
+void* uGetThreadLocal(uThreadLocal* handle)
+{
+#ifdef WIN32
+    return ::TlsGetValue((DWORD)(intptr_t)handle);
+#else
+    return pthread_getspecific((pthread_key_t)(intptr_t)handle);
+#endif
 }
 
 bool uEnterCriticalIfNull(void* addr)
@@ -161,9 +210,9 @@ uBase::Vector2 uFloat2ToXliVector2(const ::g::Uno::Float2& vec)
 uImage::Texture* uLoadXliTexture(const uBase::String& filename, uArray* data)
 {
     uBase::String fnUpper = filename.ToUpper();
-    uBase::Auto<uImage::ImageReader> ir;
     uBase::BufferPtr buffer(data->Ptr(), data->Length(), false);
     uBase::BufferStream stream(&buffer, true, false);
+    uBase::Auto<uImage::ImageReader> ir;
 
     if (fnUpper.EndsWith(".PNG"))
         ir = uImage::Png::CreateReader(&stream);

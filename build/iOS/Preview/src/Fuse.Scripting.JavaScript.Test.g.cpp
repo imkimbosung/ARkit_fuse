@@ -27,8 +27,8 @@ namespace Scripting{
 namespace JavaScript{
 namespace Test{
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/JSTest.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/JSTest.uno
+// -----------------------------------------------------------------------------
 
 // public sealed class JSTest :16
 // {

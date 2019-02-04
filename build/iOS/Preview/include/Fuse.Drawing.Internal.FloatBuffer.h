@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Drawing/1.9.0/Internal/BufferCollections.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Drawing/1.10.0-rc1/Internal/BufferCollections.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace Fuse{
 namespace Drawing{
 namespace Internal{
 
-// public sealed class FloatBuffer :131
+// public sealed class FloatBuffer :135
 // {
 uType* FloatBuffer_typeof();
 void FloatBuffer__ctor_2_fn(FloatBuffer* __this);

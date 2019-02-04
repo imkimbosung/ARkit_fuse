@@ -31,8 +31,8 @@ namespace Controls{
 namespace VideoImpl{
 namespace iOS{
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.9.0/iOS/VideoImpl.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.10.0-rc1/iOS/VideoImpl.uno
+// ------------------------------------------------------------------------------
 
 // internal sealed extern class VideoPlayer :11
 // {
@@ -369,8 +369,8 @@ VideoPlayer* VideoPlayer::New1(uString* uri, uDelegate* onLoaded, uDelegate* onL
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.9.0/iOS/VideoPlayer.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.10.0-rc1/iOS/VideoPlayer.uno
+// --------------------------------------------------------------------------------
 
 // private sealed class VideoLoader.VideoPromise :16
 // {

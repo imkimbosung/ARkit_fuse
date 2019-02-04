@@ -1,8 +1,8 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Time/Offset.uno.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Time/Offset.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.ValueType.h>
 namespace g{namespace Uno{namespace Time{struct Offset;}}}
 
 namespace g{
@@ -12,7 +12,7 @@ namespace Time{
 // public struct Offset :5
 // {
 uStructType* Offset_typeof();
-void Offset__ctor__fn(Offset* __this, int32_t* milliseconds);
+void Offset__ctor_1_fn(Offset* __this, int32_t* milliseconds);
 void Offset__Equals_fn(Offset* __this, uType* __type, uObject* obj, bool* __retval);
 void Offset__Equals2_fn(Offset* __this, Offset* other, bool* __retval);
 void Offset__FromHours_fn(int32_t* hours, Offset* __retval);
@@ -36,7 +36,7 @@ struct Offset
     static Offset& MaxValue() { return Offset_typeof()->Init(), MaxValue_; }
     int32_t _milliseconds;
 
-    void ctor_(int32_t milliseconds);
+    void ctor_1(int32_t milliseconds);
     bool Equals(uType* __type, uObject* obj) { bool __retval; return Offset__Equals_fn(this, __type, obj, &__retval), __retval; }
     bool Equals2(Offset other);
     int32_t GetHashCode(uType* __type) { int32_t __retval; return Offset__GetHashCode_fn(this, __type, &__retval), __retval; }

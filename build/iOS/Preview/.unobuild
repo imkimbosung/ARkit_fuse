@@ -1,4 +1,4 @@
-$: 1117680792
+$: -1275182000
 BuildCommand: "bash build.sh"
 RunCommand: "bash run.sh"
 Product: build/Release-iphoneos/AR_example.app/AR_example

@@ -28,8 +28,6 @@ struct AR_example_bundle : uObject
     static uSStrong< ::g::Uno::IO::BundleFile*>& RespberryPi391ee3a9() { return AR_example_bundle_typeof()->Init(), RespberryPi391ee3a9_; }
     static uSStrong< ::g::Uno::IO::BundleFile*> ScreenPagec881ae49_;
     static uSStrong< ::g::Uno::IO::BundleFile*>& ScreenPagec881ae49() { return AR_example_bundle_typeof()->Init(), ScreenPagec881ae49_; }
-    static uSStrong< ::g::Uno::IO::BundleFile*> tron_grid738bfc87_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& tron_grid738bfc87() { return AR_example_bundle_typeof()->Init(), tron_grid738bfc87_; }
 };
 // }
 

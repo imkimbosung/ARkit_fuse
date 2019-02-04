@@ -311,6 +311,7 @@ uStructType* CharacterNumber_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 1;
     options.Alignment = alignof(CharacterNumber);
     options.ValueSize = sizeof(CharacterNumber);
@@ -324,9 +325,9 @@ uStructType* CharacterNumber_typeof()
 }
 
 // public CharacterNumber(int character) :15
-void CharacterNumber__ctor__fn(CharacterNumber* __this, int32_t* character)
+void CharacterNumber__ctor_1_fn(CharacterNumber* __this, int32_t* character)
 {
-    __this->ctor_(*character);
+    __this->ctor_1(*character);
 }
 
 // public override sealed bool Equals(object obj) :36
@@ -377,9 +378,9 @@ void CharacterNumber__op_GreaterThanOrEqual_fn(CharacterNumber* left, CharacterN
 }
 
 // public static implicit operator int(Outracks.Simulator.CharacterNumber line) :21
-void CharacterNumber__op_Implicit1_fn(CharacterNumber* line, int32_t* __retval)
+void CharacterNumber__op_Implicit_fn(CharacterNumber* line, int32_t* __retval)
 {
-    *__retval = CharacterNumber__op_Implicit1(*line);
+    *__retval = CharacterNumber__op_Implicit(*line);
 }
 
 // public static operator !=(Outracks.Simulator.CharacterNumber left, Outracks.Simulator.CharacterNumber right) :52
@@ -404,11 +405,11 @@ void CharacterNumber__op_LessThanOrEqual_fn(CharacterNumber* left, CharacterNumb
 void CharacterNumber__ToString_fn(CharacterNumber* __this, uType* __type, uString** __retval)
 {
     uStackFrame __("Outracks.Simulator.CharacterNumber", "ToString()");
-    return *__retval = ::g::Uno::Int::ToString(CharacterNumber__op_Implicit1(*__this), ::TYPES[0/*int*/]), void();
+    return *__retval = ::g::Uno::Int::ToString(CharacterNumber__op_Implicit(*__this), ::TYPES[0/*int*/]), void();
 }
 
 // public CharacterNumber(int character) [instance] :15
-void CharacterNumber::ctor_(int32_t character)
+void CharacterNumber::ctor_1(int32_t character)
 {
     uStackFrame __("Outracks.Simulator.CharacterNumber", ".ctor(int)");
 
@@ -428,7 +429,7 @@ bool CharacterNumber::Equals2(CharacterNumber other)
 CharacterNumber CharacterNumber__New1(int32_t character)
 {
     CharacterNumber obj1;
-    obj1.ctor_(character);
+    obj1.ctor_1(character);
     return obj1;
 }
 
@@ -451,7 +452,7 @@ bool CharacterNumber__op_GreaterThanOrEqual(CharacterNumber left, CharacterNumbe
 }
 
 // public static implicit operator int(Outracks.Simulator.CharacterNumber line) [static] :21
-int32_t CharacterNumber__op_Implicit1(CharacterNumber line)
+int32_t CharacterNumber__op_Implicit(CharacterNumber line)
 {
     return line._characterMinusOne + 1;
 }
@@ -1001,7 +1002,7 @@ DesignerNotRunning* DesignerNotRunning::New4()
 // static DeveloperMenu() :7
 static void DeveloperMenu__cctor_4_fn(uType* __type)
 {
-    DeveloperMenu::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[3/*"Opacity"*/]);
+    DeveloperMenu::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[3/*"Opacity"*/]);
 }
 
 static void DeveloperMenu_build(uType* type)
@@ -2262,7 +2263,6 @@ uString* IndentString::Indent(uString* str)
 // private static string PrefixWithTab(string s) [static] :15
 uString* IndentString::PrefixWithTab(uString* s)
 {
-    uStackFrame __("Outracks.Simulator.IndentString", "PrefixWithTab(string)");
     return ::g::Uno::String::op_Addition2(::STRINGS[20/*"\t"*/], s);
 }
 // }
@@ -2309,6 +2309,7 @@ uStructType* LineNumber_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 1;
     options.Alignment = alignof(LineNumber);
     options.ValueSize = sizeof(LineNumber);
@@ -2322,9 +2323,9 @@ uStructType* LineNumber_typeof()
 }
 
 // public LineNumber(int line) :12
-void LineNumber__ctor__fn(LineNumber* __this, int32_t* line)
+void LineNumber__ctor_1_fn(LineNumber* __this, int32_t* line)
 {
-    __this->ctor_(*line);
+    __this->ctor_1(*line);
 }
 
 // public override sealed bool Equals(object obj) :33
@@ -2375,9 +2376,9 @@ void LineNumber__op_GreaterThanOrEqual_fn(LineNumber* left, LineNumber* right, b
 }
 
 // public static implicit operator int(Outracks.Simulator.LineNumber line) :18
-void LineNumber__op_Implicit1_fn(LineNumber* line, int32_t* __retval)
+void LineNumber__op_Implicit_fn(LineNumber* line, int32_t* __retval)
 {
-    *__retval = LineNumber__op_Implicit1(*line);
+    *__retval = LineNumber__op_Implicit(*line);
 }
 
 // public static operator !=(Outracks.Simulator.LineNumber left, Outracks.Simulator.LineNumber right) :49
@@ -2402,11 +2403,11 @@ void LineNumber__op_LessThanOrEqual_fn(LineNumber* left, LineNumber* right, bool
 void LineNumber__ToString_fn(LineNumber* __this, uType* __type, uString** __retval)
 {
     uStackFrame __("Outracks.Simulator.LineNumber", "ToString()");
-    return *__retval = ::g::Uno::Int::ToString(LineNumber__op_Implicit1(*__this), ::TYPES[0/*int*/]), void();
+    return *__retval = ::g::Uno::Int::ToString(LineNumber__op_Implicit(*__this), ::TYPES[0/*int*/]), void();
 }
 
 // public LineNumber(int line) [instance] :12
-void LineNumber::ctor_(int32_t line)
+void LineNumber::ctor_1(int32_t line)
 {
     uStackFrame __("Outracks.Simulator.LineNumber", ".ctor(int)");
 
@@ -2426,7 +2427,7 @@ bool LineNumber::Equals2(LineNumber other)
 LineNumber LineNumber__New1(int32_t line)
 {
     LineNumber obj1;
-    obj1.ctor_(line);
+    obj1.ctor_1(line);
     return obj1;
 }
 
@@ -2449,7 +2450,7 @@ bool LineNumber__op_GreaterThanOrEqual(LineNumber left, LineNumber right)
 }
 
 // public static implicit operator int(Outracks.Simulator.LineNumber line) [static] :18
-int32_t LineNumber__op_Implicit1(LineNumber line)
+int32_t LineNumber__op_Implicit(LineNumber line)
 {
     return line._lineMinusOne + 1;
 }
@@ -3335,7 +3336,8 @@ static void SimulatorClient_build(uType* type)
     ::TYPES[56] = ::g::Uno::Threading::ThreadStart_typeof();
     ::TYPES[15] = ::g::Uno::Exception_typeof();
     type->SetDependencies(
-        ::g::Uno::Diagnostics::Debug_typeof());
+        ::g::Uno::Diagnostics::Debug_typeof(),
+        ::g::Uno::Threading::Thread_typeof());
     type->SetInterfaces(
         ::g::Outracks::Simulator::ISimulatorClient_typeof(), offsetof(SimulatorClient_type, interface0),
         ::g::Uno::IDisposable_typeof(), offsetof(SimulatorClient_type, interface1));
@@ -3365,7 +3367,7 @@ SimulatorClient_type* SimulatorClient_typeof()
     uTypeOptions options;
     options.FieldCount = 9;
     options.InterfaceCount = 2;
-    options.DependencyCount = 1;
+    options.DependencyCount = 2;
     options.ObjectSize = sizeof(SimulatorClient);
     options.TypeSize = sizeof(SimulatorClient_type);
     type = (SimulatorClient_type*)uClassType::New("Outracks.Simulator.SimulatorClient", options);
@@ -4384,9 +4386,9 @@ void TextOffset__op_GreaterThanOrEqual_fn(TextOffset* a, TextOffset* b, bool* __
 }
 
 // public static implicit operator int(Outracks.Simulator.TextOffset d) :14
-void TextOffset__op_Implicit1_fn(TextOffset* d, int32_t* __retval)
+void TextOffset__op_Implicit_fn(TextOffset* d, int32_t* __retval)
 {
-    *__retval = TextOffset::op_Implicit1(d);
+    *__retval = TextOffset::op_Implicit(d);
 }
 
 // public static operator !=(Outracks.Simulator.TextOffset a, Outracks.Simulator.TextOffset b) :54
@@ -4461,7 +4463,7 @@ bool TextOffset::op_GreaterThanOrEqual(TextOffset* a, TextOffset* b)
 }
 
 // public static implicit operator int(Outracks.Simulator.TextOffset d) [static] :14
-int32_t TextOffset::op_Implicit1(TextOffset* d)
+int32_t TextOffset::op_Implicit(TextOffset* d)
 {
     uStackFrame __("Outracks.Simulator.TextOffset", "op_Implicit(Outracks.Simulator.TextOffset)~int");
     return uPtr(d)->_offset;
@@ -4539,7 +4541,7 @@ void TextOffsetConversion__ToPosition_fn(::g::Outracks::Simulator::TextOffset* o
 ::g::Outracks::Simulator::TextPosition TextOffsetConversion::OffsetBy(::g::Outracks::Simulator::TextPosition pos, int32_t characters, uString* code)
 {
     uStackFrame __("Outracks.Simulator.TextOffsetConversion", "OffsetBy(Outracks.Simulator.TextPosition,int,string)");
-    return TextOffsetConversion::ToPosition(::g::Outracks::Simulator::TextOffset::New1(::g::Outracks::Simulator::TextOffset::op_Implicit1(TextOffsetConversion::ToOffset(pos, code)) + characters), code);
+    return TextOffsetConversion::ToPosition(::g::Outracks::Simulator::TextOffset::New1(::g::Outracks::Simulator::TextOffset::op_Implicit(TextOffsetConversion::ToOffset(pos, code)) + characters), code);
 }
 
 // public static Outracks.Simulator.TextOffset ToOffset(Outracks.Simulator.TextPosition pos, string data) [static] :14
@@ -4552,20 +4554,20 @@ void TextOffsetConversion__ToPosition_fn(::g::Outracks::Simulator::TextOffset* o
 
     uArray* lines = ::g::Uno::String::Split(uPtr(data), uArray::Init<int32_t>(::TYPES[40/*char[]*/], 1, 10));
 
-    if ((::g::Outracks::Simulator::LineNumber__op_Implicit1(pos.Line) < 1) || (::g::Outracks::Simulator::LineNumber__op_Implicit1(pos.Line) > uPtr(lines)->Length()))
+    if ((::g::Outracks::Simulator::LineNumber__op_Implicit(pos.Line) < 1) || (::g::Outracks::Simulator::LineNumber__op_Implicit(pos.Line) > uPtr(lines)->Length()))
         U_THROW(::g::Uno::IndexOutOfRangeException::New4());
 
     int32_t sizeOfDataBefore = 0;
 
-    for (int32_t i = 0; i < (::g::Outracks::Simulator::LineNumber__op_Implicit1(pos.Line) - 1); ++i)
+    for (int32_t i = 0; i < (::g::Outracks::Simulator::LineNumber__op_Implicit(pos.Line) - 1); ++i)
         sizeOfDataBefore = sizeOfDataBefore + (uPtr(::g::Uno::String::Replace1(uPtr(uPtr(lines)->Strong<uString*>(i)), ::STRINGS[32/*"\r"*/], ::STRINGS[29/*""*/]))->Length() + 1);
 
-    uString* line = ::g::Uno::String::Replace1(uPtr(uPtr(lines)->Strong<uString*>(::g::Outracks::Simulator::LineNumber__op_Implicit1(pos.Line) - 1)), ::STRINGS[32/*"\r"*/], ::STRINGS[29/*""*/]);
+    uString* line = ::g::Uno::String::Replace1(uPtr(uPtr(lines)->Strong<uString*>(::g::Outracks::Simulator::LineNumber__op_Implicit(pos.Line) - 1)), ::STRINGS[32/*"\r"*/], ::STRINGS[29/*""*/]);
 
-    if ((::g::Outracks::Simulator::CharacterNumber__op_Implicit1(pos.Character) < 1) || ((::g::Outracks::Simulator::CharacterNumber__op_Implicit1(pos.Character) - 1) > uPtr(line)->Length()))
+    if ((::g::Outracks::Simulator::CharacterNumber__op_Implicit(pos.Character) < 1) || ((::g::Outracks::Simulator::CharacterNumber__op_Implicit(pos.Character) - 1) > uPtr(line)->Length()))
         U_THROW(::g::Uno::IndexOutOfRangeException::New4());
 
-    return ::g::Outracks::Simulator::TextOffset::New1((sizeOfDataBefore + ::g::Outracks::Simulator::CharacterNumber__op_Implicit1(pos.Character)) - 1);
+    return ::g::Outracks::Simulator::TextOffset::New1((sizeOfDataBefore + ::g::Outracks::Simulator::CharacterNumber__op_Implicit(pos.Character)) - 1);
 }
 
 // public static Outracks.Simulator.TextPosition ToPosition(Outracks.Simulator.TextOffset offset, string data) [static] :37
@@ -4582,14 +4584,14 @@ void TextOffsetConversion__ToPosition_fn(::g::Outracks::Simulator::TextOffset* o
 
     for (int32_t i = 0; i < uPtr(lines)->Length(); ++i)
     {
-        if (::g::Outracks::Simulator::TextOffset::op_Implicit1(offset) < ((pos + uPtr(uPtr(lines)->Strong<uString*>(i))->Length()) + 1))
+        if (::g::Outracks::Simulator::TextOffset::op_Implicit(offset) < ((pos + uPtr(uPtr(lines)->Strong<uString*>(i))->Length()) + 1))
             break;
 
         ++numLinesBeforeOffset;
         pos = pos + (uPtr(uPtr(lines)->Strong<uString*>(i))->Length() + 1);
     }
 
-    int32_t character = ::g::Outracks::Simulator::TextOffset::op_Implicit1(offset) - pos;
+    int32_t character = ::g::Outracks::Simulator::TextOffset::op_Implicit(offset) - pos;
     return ::g::Outracks::Simulator::TextPosition__New1(::g::Outracks::Simulator::LineNumber__New1(numLinesBeforeOffset + 1), ::g::Outracks::Simulator::CharacterNumber__New1(character + 1));
 }
 // }
@@ -4623,6 +4625,7 @@ uStructType* TextPosition_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 2;
     options.Alignment = alignof(TextPosition);
     options.ValueSize = sizeof(TextPosition);
@@ -4636,9 +4639,9 @@ uStructType* TextPosition_typeof()
 }
 
 // public TextPosition(Outracks.Simulator.LineNumber line, Outracks.Simulator.CharacterNumber character) :11
-void TextPosition__ctor__fn(TextPosition* __this, ::g::Outracks::Simulator::LineNumber* line, ::g::Outracks::Simulator::CharacterNumber* character)
+void TextPosition__ctor_1_fn(TextPosition* __this, ::g::Outracks::Simulator::LineNumber* line, ::g::Outracks::Simulator::CharacterNumber* character)
 {
-    __this->ctor_(*line, *character);
+    __this->ctor_1(*line, *character);
 }
 
 // public override sealed bool Equals(object obj) :27
@@ -4725,7 +4728,7 @@ void TextPosition__Write_fn(::g::System::IO::BinaryWriter* writer, TextPosition*
 }
 
 // public TextPosition(Outracks.Simulator.LineNumber line, Outracks.Simulator.CharacterNumber character) [instance] :11
-void TextPosition::ctor_(::g::Outracks::Simulator::LineNumber line, ::g::Outracks::Simulator::CharacterNumber character)
+void TextPosition::ctor_1(::g::Outracks::Simulator::LineNumber line, ::g::Outracks::Simulator::CharacterNumber character)
 {
     Line = line;
     Character = character;
@@ -4741,7 +4744,7 @@ bool TextPosition::Equals2(TextPosition other)
 TextPosition TextPosition__New1(::g::Outracks::Simulator::LineNumber line, ::g::Outracks::Simulator::CharacterNumber character)
 {
     TextPosition obj3;
-    obj3.ctor_(line, character);
+    obj3.ctor_1(line, character);
     return obj3;
 }
 
@@ -4800,8 +4803,8 @@ TextPosition TextPosition__Read(::g::System::IO::BinaryReader* reader)
 void TextPosition__Write(::g::System::IO::BinaryWriter* writer, TextPosition value)
 {
     uStackFrame __("Outracks.Simulator.TextPosition", "Write(System.IO.BinaryWriter,Outracks.Simulator.TextPosition)");
-    uPtr(writer)->Write5(::g::Outracks::Simulator::LineNumber__op_Implicit1(value.Line));
-    writer->Write5(::g::Outracks::Simulator::CharacterNumber__op_Implicit1(value.Character));
+    uPtr(writer)->Write5(::g::Outracks::Simulator::LineNumber__op_Implicit(value.Line));
+    writer->Write5(::g::Outracks::Simulator::CharacterNumber__op_Implicit(value.Character));
 }
 // }
 
@@ -4890,6 +4893,8 @@ static void WaitForFirstResult_build(uType* type)
 {
     ::TYPES[36] = ::g::Uno::Collections::EnumerableExtensions_typeof();
     ::TYPES[71] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Uno::Exception_typeof(), NULL);
+    type->SetDependencies(
+        ::g::Uno::Threading::Thread_typeof());
     type->SetPrecalc(
         ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(10/*ToList<Outracks.Simulator.Task<T>>*/, ::g::Outracks::Simulator::Task_typeof()->MakeType(type->T(0), NULL), NULL));
     type->SetFields(0,
@@ -4905,6 +4910,7 @@ uType* WaitForFirstResult_typeof()
     uTypeOptions options;
     options.FieldCount = 2;
     options.GenericCount = 1;
+    options.DependencyCount = 1;
     options.PrecalcCount = 1;
     options.ObjectSize = sizeof(WaitForFirstResult);
     options.TypeSize = sizeof(uType);

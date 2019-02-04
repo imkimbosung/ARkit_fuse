@@ -253,7 +253,7 @@ namespace Fuse.AR.iOS
 			[dg clearNodes];
 		@}
 
-		public bool ShowPlane { get; set; }
+		//++ public bool ShowPlane { get; set; }
 
 		public bool ShowStatistics
 		 { 
@@ -263,7 +263,7 @@ namespace Fuse.AR.iOS
 
 		public bool Debug { get; set; }
 		
-		public FileSource PlaneFile { get; set; }
+		//++  public FileSource PlaneFile { get; set; }
 		//public string File { get; set; }
 
 /*
@@ -273,6 +273,7 @@ namespace Fuse.AR.iOS
 			set{ _arView.SetStringValue("File", value); }
 		}
 */
+/* ++ 
 		[Foreign(Language.ObjC)]
 		//public void ApplyTo(bool ShowPlane, bool ShowsStatistics, bool Debug, string File)
 		//extern (iOS) static void ApplyTo(bool ShowPlane, bool ShowsStatistics, bool Debug, FileSource PlaneFile)
@@ -296,7 +297,7 @@ namespace Fuse.AR.iOS
 
 			ApplyTo(ShowPlane, ShowsStatistics, Debug, PlaneFile.ReadAllBytes());
 		}
-
+++ */
 		//public ObservableList<ARNodes> ARNodes {
 		public ObservableList<ARNodes> ARNodes {
 			get
@@ -304,13 +305,14 @@ namespace Fuse.AR.iOS
 				return _arViewHost.ARNodes;
 			}
 		}
+		/* ++
 		public ObservableList<Abox> Aboxs {
 			get
 			{
 				return _arViewHost.Aboxs;
 			}
 		}
-
+		++ */
 
 /*
 		[Foreign(Language.ObjC)]
@@ -329,21 +331,6 @@ namespace Fuse.AR.iOS
 */
 
 		[Foreign(Language.ObjC)]
-		int CreateBox(int uid, float width, float height, float length, float x, float y, float z)
-		@{
-			ARDelegate* dg = (ARDelegate*)@{ARView:Of(_this)._arViewDelegate:Get()};
-			return [dg createBox:width height:height length:length x:x y:y z:z nodeID:uid];
-		@}
-
-/*
-		[Foreign(Language.ObjC)]
-		int CreateSphere(int uid, float radius, float x, float y, float z)
-		@{
-			ARDelegate* dg = (ARDelegate*)@{ARView:Of(_this)._arViewDelegate:Get()};
-			return [dg createSphere:radius x:x y:y z:z nodeID:uid];
-		@}
-*/
-		[Foreign(Language.ObjC)]
 		void RemoveNodes(int identifier)
 		@{
 			ARDelegate* dg = (ARDelegate*)@{ARView:Of(_this)._arViewDelegate:Get()};
@@ -356,10 +343,10 @@ namespace Fuse.AR.iOS
 			ClearNodes();
 			debug_log "update Nodes";
 			//debug_log ARNodes;
-			debug_log Aboxs;
-			foreach(Abox a in Aboxs){
-				CreateBox(a.uid, a.width, a.height, a.length, a.x, a.y, a.z);
-			}
+		//	debug_log Aboxs;
+		//	foreach(Abox a in Aboxs){
+		//		CreateBox(a.uid, a.width, a.height, a.length, a.x, a.y, a.z);
+		//	}
 				//debug_log a;
 				//debug_log "forEach";
 				//debug_log a.type;

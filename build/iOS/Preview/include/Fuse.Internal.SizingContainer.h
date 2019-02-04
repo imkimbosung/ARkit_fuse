@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Internal/SizingContainer.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Internal/SizingContainer.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

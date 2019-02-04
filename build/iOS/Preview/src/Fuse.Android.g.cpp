@@ -18,8 +18,8 @@ namespace g{
 namespace Fuse{
 namespace Android{
 
-// /usr/local/share/uno/Packages/Fuse.Android/1.9.0/.uno/ux15/Fuse.Android.RootGraphicsView.g.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Android/1.10.0-rc1/.uno/ux15/Fuse.Android.RootGraphicsView.g.uno
+// ---------------------------------------------------------------------------------------------------
 
 // public partial sealed class RootGraphicsView :4
 // {
@@ -187,8 +187,8 @@ RootGraphicsView* RootGraphicsView::New4()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Android/1.9.0/StatusBarConfig.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Android/1.10.0-rc1/StatusBarConfig.uno
+// -------------------------------------------------------------------------
 
 // public sealed class StatusBarConfig :82
 // {
@@ -330,8 +330,8 @@ StatusBarConfig* StatusBarConfig::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Android/1.9.0/.uno/ux15/Fuse.Android.RootGraphicsView.g.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Android/1.10.0-rc1/.uno/ux15/Fuse.Android.RootGraphicsView.g.uno
+// ---------------------------------------------------------------------------------------------------
 
 // public partial sealed class RootGraphicsView.Template :7
 // {

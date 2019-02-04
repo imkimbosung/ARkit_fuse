@@ -2,19 +2,11 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <_root.AR_example_bundle.h>
-#include <_root.AR_example_FuseControlsTextControl_Value_Property.h>
 #include <_root.AR_example_FuseControlsTextInputControl_Value_Property.h>
 #include <_root.RespberryPi.h>
-#include <Fuse.Controls.Button.h>
-#include <Fuse.Controls.ButtonBase.h>
-#include <Fuse.Controls.DockPanel.h>
+#include <_root.sensorButton.h>
 #include <Fuse.Controls.Image.h>
-#include <Fuse.Controls.Panel.h>
-#include <Fuse.Controls.Rectangle.h>
-#include <Fuse.Controls.Shape.h>
 #include <Fuse.Controls.StackPanel.h>
-#include <Fuse.Controls.Text.h>
-#include <Fuse.Controls.TextControl.h>
 #include <Fuse.Controls.TextInput.h>
 #include <Fuse.Controls.TextInputControl.h>
 #include <Fuse.Elements.Alignment.h>
@@ -22,7 +14,6 @@
 #include <Fuse.Gestures.Clicked.h>
 #include <Fuse.Gestures.ClickedHandler.h>
 #include <Fuse.Layer.h>
-#include <Fuse.Layouts.Dock.h>
 #include <Fuse.Navigation.Router.h>
 #include <Fuse.Reactive.BindingMode.h>
 #include <Fuse.Reactive.Data.h>
@@ -45,18 +36,18 @@
 #include <Uno.UX.Selector.h>
 #include <Uno.UX.Size.h>
 #include <Uno.UX.Unit.h>
-static uString* STRINGS[11];
+static uString* STRINGS[10];
 static uType* TYPES[5];
 
 namespace g{
 
 // public partial sealed class RespberryPi :2
 // {
-// static RespberryPi() :15
+// static RespberryPi() :16
 static void RespberryPi__cctor_4_fn(uType* __type)
 {
-    RespberryPi::__g_static_nametable1_ = uArray::Init<uString*>(::TYPES[0/*string[]*/], 3, ::STRINGS[0/*"router"*/], ::STRINGS[1/*"temp_eb6"*/], ::STRINGS[2/*"temp_eb7"*/]);
-    RespberryPi::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[3/*"Value"*/]);
+    RespberryPi::__g_static_nametable1_ = uArray::Init<uString*>(::TYPES[0/*string[]*/], 4, ::STRINGS[0/*"router"*/], ::STRINGS[1/*"temp_eb6"*/], ::STRINGS[2/*"temp_eb7"*/], ::STRINGS[3/*"temp_eb8"*/]);
+    RespberryPi::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[4/*"Value"*/]);
 }
 
 static void RespberryPi_build(uType* type)
@@ -64,14 +55,13 @@ static void RespberryPi_build(uType* type)
     ::STRINGS[0] = uString::Const("router");
     ::STRINGS[1] = uString::Const("temp_eb6");
     ::STRINGS[2] = uString::Const("temp_eb7");
-    ::STRINGS[3] = uString::Const("Value");
-    ::STRINGS[4] = uString::Const("back");
-    ::STRINGS[5] = uString::Const("displayText");
-    ::STRINGS[6] = uString::Const("sendText");
-    ::STRINGS[7] = uString::Const("emitData");
+    ::STRINGS[3] = uString::Const("temp_eb8");
+    ::STRINGS[4] = uString::Const("Value");
+    ::STRINGS[5] = uString::Const("back");
+    ::STRINGS[6] = uString::Const("received");
+    ::STRINGS[7] = uString::Const("sensorData");
     ::STRINGS[8] = uString::Const("Pages/RespberryPi.ux");
-    ::STRINGS[9] = uString::Const("Enter some text");
-    ::STRINGS[10] = uString::Const("Send some data");
+    ::STRINGS[9] = uString::Const("Click");
     ::TYPES[0] = ::g::Uno::String_typeof()->Array();
     ::TYPES[1] = ::g::Fuse::Gestures::ClickedHandler_typeof();
     ::TYPES[2] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL);
@@ -102,9 +92,9 @@ static void RespberryPi_build(uType* type)
     type->SetFields(126,
         ::g::Fuse::Navigation::Router_typeof(), offsetof(RespberryPi, router), 0,
         ::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::String_typeof(), NULL), offsetof(RespberryPi, temp_Value_inst), 0,
-        ::g::Uno::UX::Property1_typeof()->MakeType(::g::Uno::String_typeof(), NULL), offsetof(RespberryPi, temp1_Value_inst), 0,
         ::g::Fuse::Reactive::EventBinding_typeof(), offsetof(RespberryPi, temp_eb6), 0,
         ::g::Fuse::Reactive::EventBinding_typeof(), offsetof(RespberryPi, temp_eb7), 0,
+        ::g::Fuse::Reactive::EventBinding_typeof(), offsetof(RespberryPi, temp_eb8), 0,
         ::g::Uno::UX::NameTable_typeof(), offsetof(RespberryPi, __g_nametable1), 0,
         ::TYPES[0/*string[]*/], (uintptr_t)&RespberryPi::__g_static_nametable1_, uFieldFlagsStatic,
         ::g::Uno::UX::Selector_typeof(), (uintptr_t)&RespberryPi::__selector0_, uFieldFlagsStatic);
@@ -171,19 +161,19 @@ static void RespberryPi_build(uType* type)
     return type;
 }
 
-// public RespberryPi(Fuse.Navigation.Router router) :19
+// public RespberryPi(Fuse.Navigation.Router router) :20
 void RespberryPi__ctor_8_fn(RespberryPi* __this, ::g::Fuse::Navigation::Router* router1)
 {
     __this->ctor_8(router1);
 }
 
-// private void InitializeUX() :25
+// private void InitializeUX() :26
 void RespberryPi__InitializeUX_fn(RespberryPi* __this)
 {
     __this->InitializeUX();
 }
 
-// public RespberryPi New(Fuse.Navigation.Router router) :19
+// public RespberryPi New(Fuse.Navigation.Router router) :20
 void RespberryPi__New5_fn(::g::Fuse::Navigation::Router* router1, RespberryPi** __retval)
 {
     *__retval = RespberryPi::New5(router1);
@@ -192,7 +182,7 @@ void RespberryPi__New5_fn(::g::Fuse::Navigation::Router* router1, RespberryPi** 
 uSStrong<uArray*> RespberryPi::__g_static_nametable1_;
 ::g::Uno::UX::Selector RespberryPi::__selector0_;
 
-// public RespberryPi(Fuse.Navigation.Router router) [instance] :19
+// public RespberryPi(Fuse.Navigation.Router router) [instance] :20
 void RespberryPi::ctor_8(::g::Fuse::Navigation::Router* router1)
 {
     uStackFrame __("RespberryPi", ".ctor(Fuse.Navigation.Router)");
@@ -201,118 +191,89 @@ void RespberryPi::ctor_8(::g::Fuse::Navigation::Router* router1)
     InitializeUX();
 }
 
-// private void InitializeUX() [instance] :25
+// private void InitializeUX() [instance] :26
 void RespberryPi::InitializeUX()
 {
     uStackFrame __("RespberryPi", "InitializeUX()");
     __g_nametable1 = ::g::Uno::UX::NameTable::New1(NULL, RespberryPi::__g_static_nametable1_);
-    ::g::Fuse::Reactive::Data* temp2 = ::g::Fuse::Reactive::Data::New1(::STRINGS[4/*"back"*/]);
-    ::g::Fuse::Controls::Text* temp = ::g::Fuse::Controls::Text::New3();
-    temp_Value_inst = ::g::AR_example_FuseControlsTextControl_Value_Property::New1(temp, RespberryPi::__selector0_);
-    ::g::Fuse::Reactive::Data* temp3 = ::g::Fuse::Reactive::Data::New1(::STRINGS[5/*"displayText"*/]);
-    ::g::Fuse::Controls::TextInput* temp1 = ::g::Fuse::Controls::TextInput::New3();
-    temp1_Value_inst = ::g::AR_example_FuseControlsTextInputControl_Value_Property::New1(temp1, RespberryPi::__selector0_);
-    ::g::Fuse::Reactive::Data* temp4 = ::g::Fuse::Reactive::Data::New1(::STRINGS[6/*"sendText"*/]);
-    ::g::Fuse::Reactive::Data* temp5 = ::g::Fuse::Reactive::Data::New1(::STRINGS[7/*"emitData"*/]);
-    ::g::Fuse::Reactive::JavaScript* temp6 = ::g::Fuse::Reactive::JavaScript::New2(__g_nametable1);
+    ::g::Fuse::Reactive::Data* temp1 = ::g::Fuse::Reactive::Data::New1(::STRINGS[5/*"back"*/]);
+    ::g::Fuse::Reactive::Data* temp2 = ::g::Fuse::Reactive::Data::New1(::STRINGS[5/*"back"*/]);
+    ::g::Fuse::Controls::TextInput* temp = ::g::Fuse::Controls::TextInput::New3();
+    temp_Value_inst = ::g::AR_example_FuseControlsTextInputControl_Value_Property::New1(temp, RespberryPi::__selector0_);
+    ::g::Fuse::Reactive::Data* temp3 = ::g::Fuse::Reactive::Data::New1(::STRINGS[6/*"received"*/]);
+    ::g::Fuse::Reactive::Data* temp4 = ::g::Fuse::Reactive::Data::New1(::STRINGS[7/*"sensorData"*/]);
+    ::g::Fuse::Reactive::JavaScript* temp5 = ::g::Fuse::Reactive::JavaScript::New2(__g_nametable1);
+    ::g::Fuse::Controls::Image* temp6 = ::g::Fuse::Controls::Image::New3();
+    temp_eb6 = ::g::Fuse::Reactive::EventBinding::New1((uObject*)temp1);
     ::g::Fuse::Controls::Image* temp7 = ::g::Fuse::Controls::Image::New3();
-    temp_eb6 = ::g::Fuse::Reactive::EventBinding::New1((uObject*)temp2);
-    ::g::Fuse::Controls::DockPanel* temp8 = ::g::Fuse::Controls::DockPanel::New4();
-    ::g::Fuse::Controls::StackPanel* temp9 = ::g::Fuse::Controls::StackPanel::New4();
-    ::g::Fuse::Reactive::DataBinding* temp10 = ::g::Fuse::Reactive::DataBinding::New1(temp_Value_inst, (uObject*)temp3, 3);
-    ::g::Fuse::Controls::StackPanel* temp11 = ::g::Fuse::Controls::StackPanel::New4();
-    ::g::Fuse::Reactive::DataBinding* temp12 = ::g::Fuse::Reactive::DataBinding::New1(temp1_Value_inst, (uObject*)temp4, 3);
-    ::g::Fuse::Controls::Rectangle* temp13 = ::g::Fuse::Controls::Rectangle::New3();
-    ::g::Fuse::Controls::Button* temp14 = ::g::Fuse::Controls::Button::New5();
-    temp_eb7 = ::g::Fuse::Reactive::EventBinding::New1((uObject*)temp5);
+    temp_eb7 = ::g::Fuse::Reactive::EventBinding::New1((uObject*)temp2);
+    ::g::Fuse::Controls::StackPanel* temp8 = ::g::Fuse::Controls::StackPanel::New4();
+    ::g::Fuse::Reactive::DataBinding* temp9 = ::g::Fuse::Reactive::DataBinding::New1(temp_Value_inst, (uObject*)temp3, 3);
+    ::g::sensorButton* temp10 = ::g::sensorButton::New4();
+    temp_eb8 = ::g::Fuse::Reactive::EventBinding::New1((uObject*)temp4);
     SourceLineNumber(1);
     SourceFileName(::STRINGS[8/*"Pages/Respb...*/]);
-    temp6->LineNumber(3);
-    temp6->FileName(::STRINGS[8/*"Pages/Respb...*/]);
-    temp6->SourceLineNumber(3);
+    temp5->LineNumber(3);
+    temp5->FileName(::STRINGS[8/*"Pages/Respb...*/]);
+    temp5->SourceLineNumber(3);
+    temp5->SourceFileName(::STRINGS[8/*"Pages/Respb...*/]);
+    temp5->File(::g::Uno::UX::BundleFileSource::New1(::g::AR_example_bundle::RespberryPi391ee3a9()));
+    temp6->Width(::g::Uno::UX::Size__New1(30.0f, 1));
+    temp6->Height(::g::Uno::UX::Size__New1(40.0f, 1));
+    temp6->Alignment(5);
+    temp6->Margin(::g::Uno::Float4__New2(20.0f, 20.0f, 0.0f, 0.0f));
+    temp6->Padding(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 0.0f));
+    temp6->Layer(2);
+    temp6->SourceLineNumber(5);
     temp6->SourceFileName(::STRINGS[8/*"Pages/Respb...*/]);
-    temp6->File(::g::Uno::UX::BundleFileSource::New1(::g::AR_example_bundle::RespberryPi391ee3a9()));
+    ::g::Fuse::Gestures::Clicked::AddHandler(temp6, uDelegate::New(::TYPES[1/*Fuse.Gestures.ClickedHandler*/], (void*)::g::Fuse::Reactive::EventBinding__OnEvent_fn, uPtr(temp_eb6)));
+    temp6->File(::g::Uno::UX::BundleFileSource::New1(::g::AR_example_bundle::back19b58a4d()));
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp6->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp_eb6);
+    temp1->SourceLineNumber(5);
+    temp1->SourceFileName(::STRINGS[8/*"Pages/Respb...*/]);
     temp7->Width(::g::Uno::UX::Size__New1(30.0f, 1));
     temp7->Height(::g::Uno::UX::Size__New1(40.0f, 1));
     temp7->Alignment(5);
     temp7->Margin(::g::Uno::Float4__New2(20.0f, 20.0f, 0.0f, 0.0f));
     temp7->Padding(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 0.0f));
     temp7->Layer(2);
-    temp7->SourceLineNumber(5);
+    temp7->SourceLineNumber(21);
     temp7->SourceFileName(::STRINGS[8/*"Pages/Respb...*/]);
-    ::g::Fuse::Gestures::Clicked::AddHandler(temp7, uDelegate::New(::TYPES[1/*Fuse.Gestures.ClickedHandler*/], (void*)::g::Fuse::Reactive::EventBinding__OnEvent_fn, uPtr(temp_eb6)));
+    ::g::Fuse::Gestures::Clicked::AddHandler(temp7, uDelegate::New(::TYPES[1/*Fuse.Gestures.ClickedHandler*/], (void*)::g::Fuse::Reactive::EventBinding__OnEvent_fn, uPtr(temp_eb7)));
     temp7->File(::g::Uno::UX::BundleFileSource::New1(::g::AR_example_bundle::back19b58a4d()));
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp7->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp_eb6);
-    temp2->SourceLineNumber(5);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp7->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp_eb7);
+    temp2->SourceLineNumber(21);
     temp2->SourceFileName(::STRINGS[8/*"Pages/Respb...*/]);
-    temp8->SourceLineNumber(6);
+    temp8->SourceLineNumber(23);
     temp8->SourceFileName(::STRINGS[8/*"Pages/Respb...*/]);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp8->Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp9);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp8->Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp11);
-    temp9->Width(::g::Uno::UX::Size__New1(100.0f, 4));
-    temp9->Height(::g::Uno::UX::Size__New1(56.0f, 1));
-    temp9->Alignment(4);
-    temp9->Margin(::g::Uno::Float4__New2(10.0f, 10.0f, 10.0f, 10.0f));
-    temp9->SourceLineNumber(8);
-    temp9->SourceFileName(::STRINGS[8/*"Pages/Respb...*/]);
-    ::g::Fuse::Controls::DockPanel::SetDock(temp9, 2);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp9->Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp);
-    temp->FontSize(18.0f);
-    temp->Color(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 1.0f));
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp8->Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp);
     temp->Alignment(10);
-    temp->SourceLineNumber(9);
+    temp->Y(::g::Uno::UX::Size__New1(250.0f, 1));
+    temp->SourceLineNumber(24);
     temp->SourceFileName(::STRINGS[8/*"Pages/Respb...*/]);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp10);
-    temp3->SourceLineNumber(9);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp9);
+    temp3->SourceLineNumber(24);
     temp3->SourceFileName(::STRINGS[8/*"Pages/Respb...*/]);
-    temp11->Width(::g::Uno::UX::Size__New1(100.0f, 4));
-    temp11->Height(::g::Uno::UX::Size__New1(56.0f, 1));
-    temp11->Alignment(4);
-    temp11->Margin(::g::Uno::Float4__New2(10.0f, 10.0f, 10.0f, 10.0f));
-    temp11->SourceLineNumber(12);
-    temp11->SourceFileName(::STRINGS[8/*"Pages/Respb...*/]);
-    ::g::Fuse::Controls::DockPanel::SetDock(temp11, 2);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp11->Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp1);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp11->Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp13);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp11->Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp14);
-    temp1->PlaceholderText(::STRINGS[9/*"Enter some ...*/]);
-    temp1->PlaceholderColor(::g::Uno::Float4__New2(0.8f, 0.8f, 0.8f, 1.0f));
-    temp1->TextColor(::g::Uno::Float4__New2(0.0f, 0.0f, 0.0f, 1.0f));
-    temp1->CaretColor(::g::Uno::Float4__New2(1.0f, 1.0f, 1.0f, 1.0f));
-    temp1->Margin(::g::Uno::Float4__New2(10.0f, 0.0f, 10.0f, 0.0f));
-    temp1->Padding(::g::Uno::Float4__New2(5.0f, 0.0f, 0.0f, 0.0f));
-    temp1->SourceLineNumber(13);
-    temp1->SourceFileName(::STRINGS[8/*"Pages/Respb...*/]);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp1->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp12);
-    temp4->SourceLineNumber(13);
+    temp10->Text(::STRINGS[9/*"Click"*/]);
+    temp10->SourceLineNumber(34);
+    temp10->SourceFileName(::STRINGS[8/*"Pages/Respb...*/]);
+    ::g::Fuse::Gestures::Clicked::AddHandler(temp10, uDelegate::New(::TYPES[1/*Fuse.Gestures.ClickedHandler*/], (void*)::g::Fuse::Reactive::EventBinding__OnEvent_fn, uPtr(temp_eb8)));
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp10->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp_eb8);
+    temp4->SourceLineNumber(34);
     temp4->SourceFileName(::STRINGS[8/*"Pages/Respb...*/]);
-    temp13->Color(::g::Uno::Float4__New2(1.0f, 1.0f, 1.0f, 1.0f));
-    temp13->Height(::g::Uno::UX::Size__New1(1.0f, 1));
-    temp13->Alignment(12);
-    temp13->Margin(::g::Uno::Float4__New2(10.0f, 10.0f, 10.0f, 10.0f));
-    temp13->SourceLineNumber(14);
-    temp13->SourceFileName(::STRINGS[8/*"Pages/Respb...*/]);
-    temp14->Text(::STRINGS[10/*"Send some d...*/]);
-    temp14->Color(::g::Uno::Float4__New2(0.2666667f, 0.3803922f, 0.4705882f, 1.0f));
-    temp14->Width(::g::Uno::UX::Size__New1(200.0f, 1));
-    temp14->Height(::g::Uno::UX::Size__New1(30.0f, 1));
-    temp14->Opacity(1.0f);
-    temp14->SourceLineNumber(15);
-    temp14->SourceFileName(::STRINGS[8/*"Pages/Respb...*/]);
-    ::g::Fuse::Gestures::Clicked::AddHandler(temp14, uDelegate::New(::TYPES[1/*Fuse.Gestures.ClickedHandler*/], (void*)::g::Fuse::Reactive::EventBinding__OnEvent_fn, uPtr(temp_eb7)));
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp14->Bindings()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp_eb7);
-    temp5->SourceLineNumber(15);
-    temp5->SourceFileName(::STRINGS[8/*"Pages/Respb...*/]);
     uPtr(__g_nametable1)->This(this);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__g_nametable1)->Objects()), ::TYPES[4/*Uno.Collections.ICollection<object>*/]), router);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__g_nametable1)->Objects()), ::TYPES[4/*Uno.Collections.ICollection<object>*/]), temp_eb6);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__g_nametable1)->Objects()), ::TYPES[4/*Uno.Collections.ICollection<object>*/]), temp_eb7);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__g_nametable1)->Objects()), ::TYPES[4/*Uno.Collections.ICollection<object>*/]), temp_eb8);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp5);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp6);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp7);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp8);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Node>*/]), temp10);
 }
 
-// public RespberryPi New(Fuse.Navigation.Router router) [static] :19
+// public RespberryPi New(Fuse.Navigation.Router router) [static] :20
 RespberryPi* RespberryPi::New5(::g::Fuse::Navigation::Router* router1)
 {
     RespberryPi* obj1 = (RespberryPi*)uNew(RespberryPi_typeof());

@@ -37,8 +37,8 @@ namespace g{
 namespace Fuse{
 namespace Storage{
 
-// /usr/local/share/uno/Packages/Fuse.Storage/1.9.0/ApplicationDir.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Storage/1.10.0-rc1/ApplicationDir.uno
+// ------------------------------------------------------------------------
 
 // internal static class ApplicationDir :7
 // {
@@ -247,8 +247,8 @@ bool ApplicationDir::Write(uString* filename, uString* value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Storage/1.9.0/ApplicationDir.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Storage/1.10.0-rc1/ApplicationDir.uno
+// ------------------------------------------------------------------------
 
 // private sealed class ApplicationDir.ReadClosure :108
 // {
@@ -312,8 +312,8 @@ ApplicationDir__ReadClosure* ApplicationDir__ReadClosure::New1(uString* filename
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Storage/1.9.0/StorageModule.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Storage/1.10.0-rc1/StorageModule.uno
+// -----------------------------------------------------------------------
 
 // public sealed class StorageModule :18
 // {
@@ -508,8 +508,8 @@ uObject* StorageModule::Write(::g::Fuse::Scripting::Context* c, uArray* args)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Storage/1.9.0/ApplicationDir.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Storage/1.10.0-rc1/ApplicationDir.uno
+// ------------------------------------------------------------------------
 
 // private sealed class ApplicationDir.WriteClosure :91
 // {

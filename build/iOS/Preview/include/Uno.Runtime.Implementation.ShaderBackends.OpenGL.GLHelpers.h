@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Runtime/Implementation/ShaderBackends/OpenGL/GLHelpers.uno.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Runtime/Implementation/ShaderBackends/OpenGL/GLHelpers.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -15,7 +15,7 @@ namespace Implementation{
 namespace ShaderBackends{
 namespace OpenGL{
 
-// public static extern class GLHelpers :8
+// public static extern class GLHelpers :9
 // {
 uClassType* GLHelpers_typeof();
 void GLHelpers__CheckError_fn();

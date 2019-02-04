@@ -1,8 +1,8 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Float3.uno.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Float3.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.ValueType.h>
 namespace g{namespace Uno{struct Float2;}}
 namespace g{namespace Uno{struct Float3;}}
 
@@ -12,9 +12,9 @@ namespace Uno{
 // public intrinsic struct Float3 :7
 // {
 uStructType* Float3_typeof();
-void Float3__ctor__fn(Float3* __this, float* xyz);
-void Float3__ctor_1_fn(Float3* __this, float* x, float* y, float* z);
-void Float3__ctor_3_fn(Float3* __this, ::g::Uno::Float2* xy, float* z);
+void Float3__ctor_1_fn(Float3* __this, float* xyz);
+void Float3__ctor_2_fn(Float3* __this, float* x, float* y, float* z);
+void Float3__ctor_4_fn(Float3* __this, ::g::Uno::Float2* xy, float* z);
 void Float3__Equals_fn(Float3* __this, uType* __type, uObject* o, bool* __retval);
 void Float3__GetHashCode_fn(Float3* __this, uType* __type, int32_t* __retval);
 void Float3__New1_fn(float* xyz, Float3* __retval);
@@ -38,9 +38,9 @@ struct Float3
     float Y;
     float Z;
 
-    void ctor_(float xyz);
-    void ctor_1(float x, float y, float z);
-    void ctor_3(::g::Uno::Float2 xy, float z);
+    void ctor_1(float xyz);
+    void ctor_2(float x, float y, float z);
+    void ctor_4(::g::Uno::Float2 xy, float z);
     bool Equals(uType* __type, uObject* o) { bool __retval; return Float3__Equals_fn(this, __type, o, &__retval), __retval; }
     int32_t GetHashCode(uType* __type) { int32_t __retval; return Float3__GetHashCode_fn(this, __type, &__retval), __retval; }
     uString* ToString(uType* __type) { uString* __retval; return Float3__ToString_fn(this, __type, &__retval), __retval; }

@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Uno.Threading/1.9.0/Thread.uno.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Threading/Thread.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{
 namespace Uno{
 namespace Threading{
 
-// public sealed class ThreadStateException :11
+// public sealed class ThreadStateException :27
 // {
 ::g::Uno::Exception_type* ThreadStateException_typeof();
 void ThreadStateException__ctor_3_fn(ThreadStateException* __this, uString* message);

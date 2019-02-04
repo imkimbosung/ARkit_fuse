@@ -33,8 +33,8 @@ namespace g{
 namespace Fuse{
 namespace Models{
 
-// /usr/local/share/uno/Packages/Fuse.Models/1.9.0/ModelJavaScript.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Models/1.10.0-rc1/ModelJavaScript.uno
+// ------------------------------------------------------------------------
 
 // private sealed class ModelJavaScript.ModelData :15
 // {
@@ -88,8 +88,8 @@ ModelJavaScript__ModelData* ModelJavaScript__ModelData::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Models/1.9.0/ModelJavaScript.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Models/1.10.0-rc1/ModelJavaScript.uno
+// ------------------------------------------------------------------------
 
 // public sealed class ModelJavaScript :13
 // {
@@ -520,8 +520,8 @@ uArray* ModelJavaScript::UnpackArgs(uObject* argsExpr)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Models/1.9.0/ZoneJS.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Models/1.10.0-rc1/ZoneJS.uno
+// ---------------------------------------------------------------
 
 // internal sealed class ZoneJS :7
 // {
@@ -610,7 +610,7 @@ void ZoneJS::Initialize()
 ::g::Fuse::Scripting::Module* ZoneJS::LoadModule()
 {
     uStackFrame __("Fuse.Models.ZoneJS", "LoadModule()");
-    return ::g::Fuse::Scripting::FileModule::New2(::g::Uno::UX::FileSource::op_Implicit1(::g::FuseModels_bundle::zonec51ed9d2()));
+    return ::g::Fuse::Scripting::FileModule::New2(::g::Uno::UX::FileSource::op_Implicit(::g::FuseModels_bundle::zone4d1cbb1d()));
 }
 
 // internal ZoneJS New() [static] :11

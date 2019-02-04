@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Layouts/DefaultLayout.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Layouts/DefaultLayout.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

@@ -1,8 +1,8 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Time/Duration.uno.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Time/Duration.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.ValueType.h>
 namespace g{namespace Uno{namespace Time{struct Duration;}}}
 
 namespace g{
@@ -12,7 +12,7 @@ namespace Time{
 // public struct Duration :3
 // {
 uStructType* Duration_typeof();
-void Duration__ctor__fn(Duration* __this, int64_t* ticks1);
+void Duration__ctor_1_fn(Duration* __this, int64_t* ticks1);
 void Duration__Equals_fn(Duration* __this, uType* __type, uObject* obj, bool* __retval);
 void Duration__Equals2_fn(Duration* __this, Duration* other, bool* __retval);
 void Duration__GetHashCode_fn(Duration* __this, uType* __type, int32_t* __retval);
@@ -39,7 +39,7 @@ struct Duration
     static Duration& OneMillisecond() { return Duration_typeof()->Init(), OneMillisecond_; }
     int64_t ticks;
 
-    void ctor_(int64_t ticks1);
+    void ctor_1(int64_t ticks1);
     bool Equals(uType* __type, uObject* obj) { bool __retval; return Duration__Equals_fn(this, __type, obj, &__retval), __retval; }
     bool Equals2(Duration other);
     int32_t GetHashCode(uType* __type) { int32_t __retval; return Duration__GetHashCode_fn(this, __type, &__retval), __retval; }

@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Compiler/ExportTargetInterop/DontCopyStructAttribute.uno.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Compiler/ExportTargetInterop/DontCopyStructAttribute.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -10,7 +10,7 @@ namespace Uno{
 namespace Compiler{
 namespace ExportTargetInterop{
 
-// public sealed class DontCopyStructAttribute :4
+// public sealed class DontCopyStructAttribute :5
 // {
 uType* DontCopyStructAttribute_typeof();
 void DontCopyStructAttribute__ctor_1_fn(DontCopyStructAttribute* __this);

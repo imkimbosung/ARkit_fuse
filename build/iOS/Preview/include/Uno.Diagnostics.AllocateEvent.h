@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Diagnostics/AllocateEvent.uno.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Diagnostics/AllocateEvent.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{
 namespace Uno{
 namespace Diagnostics{
 
-// public sealed class AllocateEvent :3
+// public sealed class AllocateEvent :4
 // {
 ::g::Uno::Diagnostics::ProfileEvent_type* AllocateEvent_typeof();
 void AllocateEvent__get_Type_fn(AllocateEvent* __this, int32_t* __retval);

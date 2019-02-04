@@ -1,9 +1,9 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Internal/Cache.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Internal/Cache.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <Uno.ValueType.h>
 namespace g{namespace Fuse{namespace Internal{struct CacheItem;}}}
 namespace g{namespace Fuse{namespace Internal{struct CacheRef;}}}
 
@@ -19,7 +19,7 @@ struct CacheItem_type : uStructType
 };
 
 CacheItem_type* CacheItem_typeof();
-void CacheItem__ctor__fn(CacheItem* __this, uType* __type, ::g::Fuse::Internal::CacheRef* cacheRef);
+void CacheItem__ctor_1_fn(CacheItem* __this, uType* __type, ::g::Fuse::Internal::CacheRef* cacheRef);
 void CacheItem__Dispose_fn(CacheItem* __this, uType* __type);
 void CacheItem__Equals_fn(CacheItem* __this, uType* __type, uObject* o, bool* __retval);
 void CacheItem__GetHashCode_fn(CacheItem* __this, uType* __type, int32_t* __retval);
@@ -33,7 +33,7 @@ struct CacheItem
 {
     uStrong< ::g::Fuse::Internal::CacheRef*> _cacheRef;
 
-    void ctor_(uType* __type, ::g::Fuse::Internal::CacheRef* cacheRef);
+    void ctor_1(uType* __type, ::g::Fuse::Internal::CacheRef* cacheRef);
     void Dispose(uType* __type);
     bool Equals(uType* __type, uObject* o) { bool __retval; return CacheItem__Equals_fn(this, __type, o, &__retval), __retval; }
     int32_t GetHashCode(uType* __type) { int32_t __retval; return CacheItem__GetHashCode_fn(this, __type, &__retval), __retval; }

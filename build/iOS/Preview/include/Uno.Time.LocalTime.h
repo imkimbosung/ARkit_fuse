@@ -1,8 +1,8 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Time/LocalTime.uno.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Time/LocalTime.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.ValueType.h>
 namespace g{namespace Uno{namespace Time{struct LocalTime;}}}
 
 namespace g{
@@ -12,8 +12,8 @@ namespace Time{
 // public struct LocalTime :6
 // {
 uStructType* LocalTime_typeof();
-void LocalTime__ctor_1_fn(LocalTime* __this, int32_t* hour, int32_t* minute, int32_t* second);
-void LocalTime__ctor_2_fn(LocalTime* __this, int32_t* hour, int32_t* minute, int32_t* second, int32_t* millisecond);
+void LocalTime__ctor_2_fn(LocalTime* __this, int32_t* hour, int32_t* minute, int32_t* second);
+void LocalTime__ctor_3_fn(LocalTime* __this, int32_t* hour, int32_t* minute, int32_t* second, int32_t* millisecond);
 void LocalTime__Equals_fn(LocalTime* __this, uType* __type, uObject* obj, bool* __retval);
 void LocalTime__GetHashCode_fn(LocalTime* __this, uType* __type, int32_t* __retval);
 void LocalTime__get_Hour_fn(LocalTime* __this, int32_t* __retval);
@@ -33,8 +33,8 @@ struct LocalTime
     static LocalTime& Noon() { return LocalTime_typeof()->Init(), Noon_; }
     int64_t _ticks;
 
-    void ctor_1(int32_t hour, int32_t minute, int32_t second);
-    void ctor_2(int32_t hour, int32_t minute, int32_t second, int32_t millisecond);
+    void ctor_2(int32_t hour, int32_t minute, int32_t second);
+    void ctor_3(int32_t hour, int32_t minute, int32_t second, int32_t millisecond);
     bool Equals(uType* __type, uObject* obj) { bool __retval; return LocalTime__Equals_fn(this, __type, obj, &__retval), __retval; }
     int32_t GetHashCode(uType* __type) { int32_t __retval; return LocalTime__GetHashCode_fn(this, __type, &__retval), __retval; }
     int32_t Hour();

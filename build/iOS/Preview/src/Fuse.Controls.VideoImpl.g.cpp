@@ -40,7 +40,6 @@
 #include <Uno.Action.h>
 #include <Uno.Action1-1.h>
 #include <Uno.Bool.h>
-#include <Uno.Buffer.h>
 #include <Uno.Byte.h>
 #include <Uno.Char.h>
 #include <Uno.Collections.Dictionary-2.Enumerator.h>
@@ -77,7 +76,6 @@
 #include <Uno.Math.h>
 #include <Uno.Matrix.h>
 #include <Uno.Object.h>
-#include <Uno.Runtime.Implementation.Internal.BufferConverters.h>
 #include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLProgram.h>
 #include <Uno.String.h>
 #include <Uno.Threading.Future.h>
@@ -94,8 +92,8 @@ namespace Fuse{
 namespace Controls{
 namespace VideoImpl{
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.9.0/IVideoPlayer.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.10.0-rc1/IVideoPlayer.uno
+// -----------------------------------------------------------------------------
 
 // internal sealed class EmptyVideo :30
 // {
@@ -249,8 +247,8 @@ EmptyVideo* EmptyVideo::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.9.0/VideoContainer.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.10.0-rc1/VideoContainer.uno
+// -------------------------------------------------------------------------------
 
 // internal sealed class GraphicsVideoService :93
 // {
@@ -657,8 +655,8 @@ GraphicsVideoService* GraphicsVideoService::New1(uObject* callbacks)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.9.0/VideoContainer.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.10.0-rc1/VideoContainer.uno
+// -------------------------------------------------------------------------------
 
 // internal abstract interface IVideoCallbacks :42
 // {
@@ -672,8 +670,8 @@ uInterfaceType* IVideoCallbacks_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.9.0/IVideoPlayer.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.10.0-rc1/IVideoPlayer.uno
+// -----------------------------------------------------------------------------
 
 // internal abstract interface IVideoPlayer :11
 // {
@@ -687,8 +685,8 @@ uInterfaceType* IVideoPlayer_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.9.0/VideoContainer.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.10.0-rc1/VideoContainer.uno
+// -------------------------------------------------------------------------------
 
 // internal abstract interface IVideoService :16
 // {
@@ -702,8 +700,8 @@ uInterfaceType* IVideoService_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.9.0/VideoContainer.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.10.0-rc1/VideoContainer.uno
+// -------------------------------------------------------------------------------
 
 // internal sealed class LoadingClosure :51
 // {
@@ -806,8 +804,8 @@ LoadingClosure* LoadingClosure::New1(::g::Uno::Threading::Future1* loadedFuture,
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.9.0/VideoVisual.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.10.0-rc1/VideoVisual.uno
+// ----------------------------------------------------------------------------
 
 // private enum VideoVisual.PlaybackTarget :58
 uEnumType* VideoVisual__PlaybackTarget_typeof()
@@ -824,8 +822,8 @@ uEnumType* VideoVisual__PlaybackTarget_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.9.0/VideoVisual.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.10.0-rc1/VideoVisual.uno
+// ----------------------------------------------------------------------------
 
 // internal sealed class Scale9Rectangle :405
 // {
@@ -897,7 +895,6 @@ uSStrong<Scale9Rectangle*> Scale9Rectangle::Impl_;
 // public generated Scale9Rectangle() [instance] :405
 void Scale9Rectangle::ctor_()
 {
-    uStackFrame __("Fuse.Controls.VideoImpl.Scale9Rectangle", ".ctor()");
     init_DrawCalls();
 }
 
@@ -936,9 +933,9 @@ void Scale9Rectangle::init_DrawCalls()
 {
     uStackFrame __("Fuse.Controls.VideoImpl.Scale9Rectangle", "init_DrawCalls()");
     uArray* indices_e60caa7b_1_2_1 = uArray::Init<int32_t>(::TYPES[9/*ushort[]*/], 54, 0, 4, 5, 0, 5, 1, 1, 5, 6, 1, 6, 2, 2, 6, 7, 2, 7, 3, 4, 8, 9, 4, 9, 5, 5, 9, 10, 5, 10, 6, 6, 10, 11, 6, 11, 7, 8, 12, 13, 8, 13, 9, 9, 13, 14, 9, 14, 10, 10, 14, 15, 10, 15, 11);
-    Draw_xv_e60caa7b_1_3_2 = ::g::Uno::Graphics::IndexBuffer::New1(uPtr(::g::Uno::Runtime::Implementation::Internal::BufferConverters::ToBuffer9(indices_e60caa7b_1_2_1))->GetBytes(), 0);
-    Draw_xv_e60caa7b_1_3_3 = ::g::Uno::Graphics::VertexBuffer::New1(uPtr(::g::Uno::Runtime::Implementation::Internal::BufferConverters::ToBuffer4(uArray::Init< ::g::Uno::Float3>(::TYPES[10/*float3[]*/], 16, ::g::Uno::Float3__New2(0.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(1.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 1.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 0.0f, 1.0f), ::g::Uno::Float3__New2(0.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(1.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 1.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 0.0f, 1.0f), ::g::Uno::Float3__New2(0.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(1.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 1.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 0.0f, 1.0f), ::g::Uno::Float3__New2(0.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(1.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 1.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 0.0f, 1.0f))))->GetBytes(), 0);
-    Draw_yv_e60caa7b_1_4_6 = ::g::Uno::Graphics::VertexBuffer::New1(uPtr(::g::Uno::Runtime::Implementation::Internal::BufferConverters::ToBuffer4(uArray::Init< ::g::Uno::Float3>(::TYPES[10/*float3[]*/], 16, ::g::Uno::Float3__New2(0.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(1.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(1.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(1.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(1.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 1.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 1.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 1.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 1.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 0.0f, 1.0f), ::g::Uno::Float3__New2(0.0f, 0.0f, 1.0f), ::g::Uno::Float3__New2(0.0f, 0.0f, 1.0f), ::g::Uno::Float3__New2(0.0f, 0.0f, 1.0f))))->GetBytes(), 0);
+    Draw_xv_e60caa7b_1_3_2 = ::g::Uno::Graphics::IndexBuffer::New5(indices_e60caa7b_1_2_1, 0);
+    Draw_xv_e60caa7b_1_3_3 = ::g::Uno::Graphics::VertexBuffer::New4(uArray::Init< ::g::Uno::Float3>(::TYPES[10/*float3[]*/], 16, ::g::Uno::Float3__New2(0.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(1.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 1.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 0.0f, 1.0f), ::g::Uno::Float3__New2(0.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(1.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 1.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 0.0f, 1.0f), ::g::Uno::Float3__New2(0.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(1.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 1.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 0.0f, 1.0f), ::g::Uno::Float3__New2(0.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(1.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 1.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 0.0f, 1.0f)), 0);
+    Draw_yv_e60caa7b_1_4_6 = ::g::Uno::Graphics::VertexBuffer::New4(uArray::Init< ::g::Uno::Float3>(::TYPES[10/*float3[]*/], 16, ::g::Uno::Float3__New2(0.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(1.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(1.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(1.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(1.0f, 0.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 1.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 1.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 1.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 1.0f, 0.0f), ::g::Uno::Float3__New2(0.0f, 0.0f, 1.0f), ::g::Uno::Float3__New2(0.0f, 0.0f, 1.0f), ::g::Uno::Float3__New2(0.0f, 0.0f, 1.0f), ::g::Uno::Float3__New2(0.0f, 0.0f, 1.0f)), 0);
     Draw_indices_e60caa7b_1_2_12 = indices_e60caa7b_1_2_1;
     _draw_e60caa7b = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New1(::g::FuseControlsVideo_bundle::Scale9Rectangleda875692());
 }
@@ -952,8 +949,8 @@ Scale9Rectangle* Scale9Rectangle::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.9.0/VideoDiskCache.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.10.0-rc1/VideoDiskCache.uno
+// -------------------------------------------------------------------------------
 
 // internal static class VideoDiskCache :11
 // {
@@ -970,7 +967,7 @@ static void VideoDiskCache_build(uType* type)
     ::STRINGS[0] = uString::Const("/tempVideo");
     ::STRINGS[1] = uString::Const(".");
     ::STRINGS[2] = uString::Const("Deleting temporary file: ");
-    ::STRINGS[3] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Video/1.9.0/VideoDiskCache.uno");
+    ::STRINGS[3] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Video/1.10.0-rc1/VideoDiskCache.uno");
     ::TYPES[11] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Uno::String_typeof(), ::g::Uno::String_typeof(), NULL);
     ::TYPES[12] = ::g::Uno::Action1_typeof()->MakeType(::g::Fuse::Platform::ApplicationState_typeof(), NULL);
     ::TYPES[13] = ::g::Uno::Char_typeof()->Array();
@@ -1093,8 +1090,8 @@ void VideoDiskCache::OnTerminating(int32_t newState)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.9.0/VideoVisual.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.10.0-rc1/VideoVisual.uno
+// ----------------------------------------------------------------------------
 
 // internal sealed class VideoDrawElement :361
 // {
@@ -1178,7 +1175,6 @@ uSStrong<uArray*> VideoDrawElement::Transforms_;
 // public generated VideoDrawElement() [instance] :361
 void VideoDrawElement::ctor_()
 {
-    uStackFrame __("Fuse.Controls.VideoImpl.VideoDrawElement", ".ctor()");
     init_DrawCalls();
 }
 
@@ -1209,7 +1205,7 @@ void VideoDrawElement::Draw(::g::Fuse::DrawContext* dc, ::g::Fuse::Visual* eleme
 void VideoDrawElement::init_DrawCalls()
 {
     uStackFrame __("Fuse.Controls.VideoImpl.VideoDrawElement", "init_DrawCalls()");
-    Draw_VertexData_46004d37_6_2_1 = ::g::Uno::Graphics::VertexBuffer::New1(uPtr(::g::Uno::Runtime::Implementation::Internal::BufferConverters::ToBuffer3(uArray::Init< ::g::Uno::Float2>(::TYPES[18/*float2[]*/], 6, ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(0.0f, 1.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(1.0f, 0.0f))))->GetBytes(), 0);
+    Draw_VertexData_46004d37_6_2_1 = ::g::Uno::Graphics::VertexBuffer::New3(uArray::Init< ::g::Uno::Float2>(::TYPES[18/*float2[]*/], 6, ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(0.0f, 1.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(1.0f, 0.0f)), 0);
     Draw_LocalTransform_46004d37_3_9_2 = ::g::Uno::Matrix::Translation(-::g::Uno::Float2__New1(0.0f).X, -::g::Uno::Float2__New1(0.0f).Y, 0.0f);
     Draw_LocalTransform_46004d37_3_9_3 = ::g::Uno::Matrix::RotationZ(0.0f);
     _draw_46004d37 = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New1(::g::FuseControlsVideo_bundle::VideoDrawElement5c829975());
@@ -1224,8 +1220,8 @@ VideoDrawElement* VideoDrawElement::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.9.0/VideoLoader.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.10.0-rc1/VideoLoader.uno
+// ----------------------------------------------------------------------------
 
 // internal static class VideoLoader :12
 // {
@@ -1275,8 +1271,8 @@ void VideoLoader__Load1_fn(::g::Uno::UX::FileSource* file, ::g::Uno::Threading::
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.9.0/VideoVisual.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Video/1.10.0-rc1/VideoVisual.uno
+// ----------------------------------------------------------------------------
 
 // internal sealed extern class VideoVisual :52
 // {
@@ -1457,7 +1453,7 @@ void VideoVisual__Draw_fn(VideoVisual* __this, ::g::Fuse::DrawContext* dc)
 
     if (uPtr((::g::Fuse::Controls::Graphics::ControlVisual__get_Control_fn(__this, &ret13), ret13))->StretchMode() == 4)
     {
-        ::g::Fuse::Diagnostics::Deprecated(uString::Const("StretchMode.Scale9 is deprecated for video-visual"), __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Video/1.9.0/VideoVisual.uno"), 336, uString::Const("Draw"));
+        ::g::Fuse::Diagnostics::Deprecated(uString::Const("StretchMode.Scale9 is deprecated for video-visual"), __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Video/1.10.0-rc1/VideoVisual.uno"), 336, uString::Const("Draw"));
         uPtr(::g::Fuse::Controls::VideoImpl::Scale9Rectangle::Impl())->Draw(dc, __this, __this->ActualSize(), __this->GetSize(), texture, uPtr((::g::Fuse::Controls::Graphics::ControlVisual__get_Control_fn(__this, &ret14), ret14))->Scale9Margin());
     }
     else
@@ -1483,7 +1479,7 @@ void VideoVisual__FuseControlsVideoImplIVideoCallbacksOnError_fn(VideoVisual* __
     ::g::Fuse::Controls::Video* ret16;
     __this->ResetTriggers();
     ::g::Fuse::Triggers::BusyTask::SetBusy((::g::Fuse::Controls::Graphics::ControlVisual__get_Control_fn(__this, &ret16), ret16), &__this->_busyTask, 16, uPtr(e)->Message());
-    ::g::Fuse::Diagnostics::UnknownException(uString::Const("Video error"), e, __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Video/1.9.0/VideoVisual.uno"), 116, uString::Const("Fuse.Controls.VideoImpl.IVideoCallbacks.OnError"));
+    ::g::Fuse::Diagnostics::UnknownException(uString::Const("Video error"), e, __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Video/1.10.0-rc1/VideoVisual.uno"), 116, uString::Const("Fuse.Controls.VideoImpl.IVideoCallbacks.OnError"));
 }
 
 // private void Fuse.Controls.VideoImpl.IVideoCallbacks.OnFrameAvailable() :102
@@ -1620,7 +1616,7 @@ void VideoVisual__FuseTriggersIPlaybackPause_fn(VideoVisual* __this)
 // private void Fuse.Triggers.IPlayback.PlayTo(double progress) :184
 void VideoVisual__FuseTriggersIPlaybackPlayTo_fn(VideoVisual* __this, double* progress)
 {
-    ::g::Fuse::Diagnostics::Unsupported(uString::Const("IPlayback.PlayTo(double) not supported in Fuse.Controls.Video"), __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Video/1.9.0/VideoVisual.uno"), 186, uString::Const("Fuse.Triggers.IPlayback.PlayTo"));
+    ::g::Fuse::Diagnostics::Unsupported(uString::Const("IPlayback.PlayTo(double) not supported in Fuse.Controls.Video"), __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Video/1.10.0-rc1/VideoVisual.uno"), 186, uString::Const("Fuse.Triggers.IPlayback.PlayTo"));
 }
 
 // private double Fuse.Triggers.IPlayback.get_Progress() :221
@@ -1803,7 +1799,7 @@ void VideoVisual::ctor_5()
 ::g::Uno::Float2 VideoVisual::GetSize()
 {
     uStackFrame __("Fuse.Controls.VideoImpl.VideoVisual", "GetSize()");
-    return ::g::Uno::Float2__op_Implicit2(::g::Fuse::Controls::VideoImpl::IVideoService::Size(uInterface(uPtr(_videoService), ::g::Fuse::Controls::VideoImpl::IVideoService_typeof())));
+    return ::g::Uno::Float2__op_Implicit1(::g::Fuse::Controls::VideoImpl::IVideoService::Size(uInterface(uPtr(_videoService), ::g::Fuse::Controls::VideoImpl::IVideoService_typeof())));
 }
 
 // private void OnParamChanged(object sender, Uno.EventArgs args) [instance] :261

@@ -257,15 +257,15 @@ static int _idPool = 0;
 }
 
 //-(SCNNode*)addNewBox:(float)width 
--(int)createBox:(float)width height:(float)height length:(float)length x:(float)x y:(float)y z:(float)z nodeID:(int)uid
-{
-  SCNBox *box = [SCNBox boxWithWidth:width height:height length:length chamferRadius:0];
-  SCNNode *boxNode = [SCNNode nodeWithGeometry:box];
-  boxNode.position = SCNVector3Make(x,y,z);
-  NSLog(@"%s", "ADDNODE");
+// -(int)createBox:(float)width height:(float)height length:(float)length x:(float)x y:(float)y z:(float)z nodeID:(int)uid
+// {
+//   SCNBox *box = [SCNBox boxWithWidth:width height:height length:length chamferRadius:0];
+//   SCNNode *boxNode = [SCNNode nodeWithGeometry:box];
+//   boxNode.position = SCNVector3Make(x,y,z);
+//   NSLog(@"%s", "ADDNODE");
 
-  return [self addGeometryNodes:boxNode];
-}
+//   return [self addGeometryNodes:boxNode];
+// }
 
 
 //-(SCNNode*)addNewSphere:
@@ -310,7 +310,7 @@ static int _idPool = 0;
   // We need to find all of the geometry affected by the explosion, ideally we would have some
   // spatial data structure like an octree to efficiently find all geometry close to the explosion
   // but since we don't have many items, we can just loop through all of the current geoemtry
-  for(SCNNode *cubeNode in _boxes) {
+   for(SCNNode *cubeNode in _boxes) {
     // The distance between the explosion and the geometry
     SCNVector3 distance = SCNVector3Make(
                                           cubeNode.worldPosition.x - position.x,
@@ -613,20 +613,20 @@ static int _idPool = 0;
  
 
 
-  /*
+  
     
-    글짜 출력 테스트
+    //글짜 출력 테스트
 
-      UILabel *yourLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, 300, 20)];
+      // UILabel *yourLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, 300, 20)];
 
-      [yourLabel setTextColor:[UIColor blackColor]];
-      [yourLabel setBackgroundColor:[UIColor clearColor]];
-      [yourLabel setFont:[UIFont fontWithName: @"Trebuchet MS" size: 14.0f]]; 
-      [avc addSubview:yourLabel];
-      NSString *someString = @"Sample String, Yarp!";
-      yourLabel.text = someString;
+      // [yourLabel setTextColor:[UIColor blackColor]];
+      // [yourLabel setBackgroundColor:[UIColor clearColor]];
+      // [yourLabel setFont:[UIFont fontWithName: @"Trebuchet MS" size: 14.0f]]; 
+      // [avc addSubview:yourLabel];
+      // NSString *someString = @"Sample String, Yarp!";
+      // yourLabel.text = someString;
 
-        */  
+          
     
 }
 

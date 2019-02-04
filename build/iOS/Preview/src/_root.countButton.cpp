@@ -39,7 +39,7 @@ namespace g{
 // static countButton() :20
 static void countButton__cctor_4_fn(uType* __type)
 {
-    countButton::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[0/*"Value"*/]);
+    countButton::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[0/*"Value"*/]);
 }
 
 static void countButton_build(uType* type)
@@ -225,7 +225,7 @@ void countButton::SetText(uString* value, uObject* origin)
     if (::g::Uno::String::op_Inequality(value, _field_Text))
     {
         _field_Text = value;
-        OnPropertyChanged1(::g::Uno::UX::Selector__op_Implicit1(::STRINGS[2/*"Text"*/]), origin);
+        OnPropertyChanged1(::g::Uno::UX::Selector__op_Implicit(::STRINGS[2/*"Text"*/]), origin);
     }
 }
 

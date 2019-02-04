@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Diagnostics/ExitEvent.uno.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Diagnostics/ExitEvent.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{
 namespace Uno{
 namespace Diagnostics{
 
-// public sealed class ExitEvent :3
+// public sealed class ExitEvent :4
 // {
 ::g::Uno::Diagnostics::ProfileEvent_type* ExitEvent_typeof();
 void ExitEvent__ctor_1_fn(ExitEvent* __this);

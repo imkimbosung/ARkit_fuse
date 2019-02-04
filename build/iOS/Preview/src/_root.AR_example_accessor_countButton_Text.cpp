@@ -21,7 +21,7 @@ namespace g{
 static void AR_example_accessor_countButton_Text__cctor__fn(uType* __type)
 {
     AR_example_accessor_countButton_Text::Singleton_ = AR_example_accessor_countButton_Text::New1();
-    AR_example_accessor_countButton_Text::_name_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[0/*"Text"*/]);
+    AR_example_accessor_countButton_Text::_name_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[0/*"Text"*/]);
 }
 
 static void AR_example_accessor_countButton_Text_build(uType* type)

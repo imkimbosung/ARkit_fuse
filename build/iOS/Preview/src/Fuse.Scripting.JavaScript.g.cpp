@@ -159,8 +159,8 @@ namespace Fuse{
 namespace Scripting{
 namespace JavaScript{
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/Observable.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/Observable.uno
+// ---------------------------------------------------------------------------------
 
 // private sealed class Observable.Add :547
 // {
@@ -230,8 +230,8 @@ Observable__Add* Observable__Add::New1(::g::Fuse::Scripting::JavaScript::Observa
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/TreeObservable/TreeObservable.uno
-// -----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/TreeObservable/TreeObservable.uno
+// ----------------------------------------------------------------------------------------------------
 
 // private sealed class TreeObservable.AddOperation :212
 // {
@@ -302,8 +302,8 @@ TreeObservable__AddOperation* TreeObservable__AddOperation::New1(::g::Fuse::Scri
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/ArrayMirror.uno
-// -----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/ArrayMirror.uno
+// ----------------------------------------------------------------------------------
 
 // internal class ArrayMirror :6
 // {
@@ -463,8 +463,8 @@ ArrayMirror* ArrayMirror::New2(::g::Fuse::Scripting::Context* context, uObject* 
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/TreeObservable/TreeArray.uno
-// ------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/TreeObservable/TreeArray.uno
+// -----------------------------------------------------------------------------------------------
 
 // internal sealed class TreeArray.ArraySubscription :18
 // {
@@ -652,8 +652,8 @@ TreeArray__ArraySubscription* TreeArray__ArraySubscription::New1(::g::Fuse::Scri
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/ClassInstance.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/ClassInstance.uno
+// ------------------------------------------------------------------------------------
 
 // internal sealed class ClassInstance :10
 // {
@@ -874,8 +874,8 @@ ClassInstance* ClassInstance::New1(::g::Fuse::Scripting::JavaScript::ThreadWorke
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/Observable.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/Observable.uno
+// ---------------------------------------------------------------------------------
 
 // private sealed class Observable.Clear :442
 // {
@@ -946,8 +946,8 @@ Observable__Clear* Observable__Clear::New1(::g::Fuse::Scripting::JavaScript::Obs
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/Observable.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/Observable.uno
+// ---------------------------------------------------------------------------------
 
 // private sealed class Observable.Subscription.ClearExclusiveOperation :185
 // {
@@ -1015,8 +1015,8 @@ Observable__Subscription__ClearExclusiveOperation* Observable__Subscription__Cle
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/ThreadWorker.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/ThreadWorker.uno
+// -----------------------------------------------------------------------------------
 
 // private sealed class ThreadWorker.ContextIgnoringAction :185
 // {
@@ -1080,8 +1080,8 @@ ThreadWorker__ContextIgnoringAction* ThreadWorker__ContextIgnoringAction::New1(u
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/DateTimeConverterHelpers.uno
-// ------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/DateTimeConverterHelpers.uno
+// -----------------------------------------------------------------------------------------------
 
 // internal static class DateTimeConverterHelpers :11
 // {
@@ -1136,8 +1136,8 @@ uObject* DateTimeConverterHelpers::ConvertDateTimeToJSDate(::g::Fuse::Scripting:
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/ThreadWorker.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/ThreadWorker.uno
+// -----------------------------------------------------------------------------------
 
 // private sealed class ThreadWorker.ExceptionClosure :133
 // {
@@ -1201,8 +1201,8 @@ ThreadWorker__ExceptionClosure* ThreadWorker__ExceptionClosure::New1(::g::Uno::E
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/Observable.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/Observable.uno
+// ---------------------------------------------------------------------------------
 
 // private sealed class Observable.Failed :464
 // {
@@ -1273,8 +1273,8 @@ Observable__Failed* Observable__Failed::New1(::g::Fuse::Scripting::JavaScript::O
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/ThreadWorker.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/ThreadWorker.uno
+// -----------------------------------------------------------------------------------
 
 // public sealed class ThreadWorker.Fence :168
 // {
@@ -1355,8 +1355,8 @@ ThreadWorker__Fence* ThreadWorker__Fence::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/ThreadWorker.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/ThreadWorker.uno
+// -----------------------------------------------------------------------------------
 
 // internal abstract interface IMirror :10
 // {
@@ -1370,8 +1370,8 @@ uInterfaceType* IMirror_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/Observable.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/Observable.uno
+// ---------------------------------------------------------------------------------
 
 // private sealed class Observable.InsertAll :646
 // {
@@ -1455,8 +1455,8 @@ Observable__InsertAll* Observable__InsertAll::New1(::g::Fuse::Scripting::JavaScr
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/Observable.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/Observable.uno
+// ---------------------------------------------------------------------------------
 
 // private sealed class Observable.InsertAt :618
 // {
@@ -1536,8 +1536,8 @@ Observable__InsertAt* Observable__InsertAt::New1(::g::Fuse::Scripting::JavaScrip
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/TreeObservable/TreeObservable.uno
-// -----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/TreeObservable/TreeObservable.uno
+// ----------------------------------------------------------------------------------------------------
 
 // private sealed class TreeObservable.InsertAtOperation :226
 // {
@@ -1613,8 +1613,8 @@ TreeObservable__InsertAtOperation* TreeObservable__InsertAtOperation::New1(::g::
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/Context.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/Context.uno
+// ------------------------------------------------------------------------------
 
 // public abstract class JSContext :10
 // {
@@ -1693,7 +1693,7 @@ void JSContext__FuseScriptingJavaScriptIMirrorReflect_fn(JSContext* __this, ::g:
     uStackFrame __("Fuse.Scripting.JavaScript.JSContext", "Fuse.Scripting.JavaScript.IMirror.Reflect(Fuse.Scripting.Context,object)");
 
     if (context != __this)
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("IMirror.Reflect with inconsistent context"), __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/Context.uno"), 94, uString::Const("Fuse.Scripting.JavaScript.IMirror.Reflect"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("IMirror.Reflect with inconsistent context"), __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/Context.uno"), 94, uString::Const("Fuse.Scripting.JavaScript.IMirror.Reflect"));
 
     return *__retval = __this->Reflect(obj), void();
 }
@@ -1822,7 +1822,7 @@ uObject* JSContext::CreateMirror(uObject* obj)
 
     if (_reflectionDepth > 50)
     {
-        ::g::Fuse::Diagnostics::UserWarning(uString::Const("JavaScript data model contains circular references or is too deep. Some data may not display correctly."), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/Context.uno"), 103, uString::Const("CreateMirror"));
+        ::g::Fuse::Diagnostics::UserWarning(uString::Const("JavaScript data model contains circular references or is too deep. Some data may not display correctly."), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/Context.uno"), 103, uString::Const("CreateMirror"));
         return NULL;
     }
 
@@ -1995,8 +1995,8 @@ JSContext* JSContext::Create()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/TreeObservable/TreeObject.uno
-// -------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/TreeObservable/TreeObject.uno
+// ------------------------------------------------------------------------------------------------
 
 // private sealed class TreeObject.PropertySubscription.JSThreadSet :27
 // {
@@ -2072,8 +2072,8 @@ TreeObject__PropertySubscription__JSThreadSet* TreeObject__PropertySubscription_
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/ObservableProperty.uno
-// ------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/ObservableProperty.uno
+// -----------------------------------------------------------------------------------------
 
 // internal sealed class LazyObservableProperty :7
 // {
@@ -2154,8 +2154,8 @@ LazyObservableProperty* LazyObservableProperty::New2(::g::Fuse::Scripting::JavaS
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/Context.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/Context.uno
+// ------------------------------------------------------------------------------
 
 // private sealed class JSContext.MethodClosure :305
 // {
@@ -2262,8 +2262,8 @@ JSContext__MethodClosure* JSContext__MethodClosure::New1(::g::Fuse::Scripting::C
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/ModuleInstance.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/ModuleInstance.uno
+// -------------------------------------------------------------------------------------
 
 // internal sealed class ModuleInstance :7
 // {
@@ -2537,8 +2537,8 @@ ModuleInstance* ModuleInstance::New2(uObject* worker, ::g::Fuse::Reactive::JavaS
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/Observable.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/Observable.uno
+// ---------------------------------------------------------------------------------
 
 // private sealed class Observable.NewAll :516
 // {
@@ -2621,8 +2621,8 @@ Observable__NewAll* Observable__NewAll::New1(::g::Fuse::Scripting::JavaScript::O
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/Observable.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/Observable.uno
+// ---------------------------------------------------------------------------------
 
 // private sealed class Observable.NewAt :486
 // {
@@ -2703,8 +2703,8 @@ Observable__NewAt* Observable__NewAt::New1(::g::Fuse::Scripting::JavaScript::Obs
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/ObjectMirror.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/ObjectMirror.uno
+// -----------------------------------------------------------------------------------
 
 // internal class ObjectMirror :6
 // {
@@ -2902,8 +2902,8 @@ ObjectMirror* ObjectMirror::New2(::g::Fuse::Scripting::Object* obj)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/Observable.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/Observable.uno
+// ---------------------------------------------------------------------------------
 
 // internal sealed class Observable :6
 // {
@@ -3214,8 +3214,8 @@ Observable* Observable::New1(::g::Fuse::Scripting::Context* context, ::g::Fuse::
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/ObservableProperty.uno
-// ------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/ObservableProperty.uno
+// -----------------------------------------------------------------------------------------
 
 // internal class ObservableProperty :26
 // {
@@ -3440,7 +3440,7 @@ uObject* ObservableProperty::DefaultValueCallback(::g::Fuse::Scripting::Context*
 uString* ObservableProperty::Name()
 {
     uStackFrame __("Fuse.Scripting.JavaScript.ObservableProperty", "get_Name()");
-    return ::g::Uno::UX::Selector__op_Implicit2(uPtr(_property)->Name());
+    return ::g::Uno::UX::Selector__op_Implicit1(uPtr(_property)->Name());
 }
 
 // private void PushValue(Fuse.Scripting.Context context, object val) [instance] :237
@@ -3511,8 +3511,8 @@ ObservableProperty* ObservableProperty::New1(::g::Fuse::Scripting::JavaScript::T
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/TreeObservable/TreeObservable.uno
-// -----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/TreeObservable/TreeObservable.uno
+// ----------------------------------------------------------------------------------------------------
 
 // private abstract class TreeObservable.Operation :115
 // {
@@ -3613,8 +3613,8 @@ void TreeObservable__Operation::Perform2(uObject* dc, int32_t pos)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/Observable.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/Observable.uno
+// ---------------------------------------------------------------------------------
 
 // public abstract class Observable.Operation :364
 // {
@@ -3717,8 +3717,8 @@ void Observable__Operation::Perform()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/TreeObservable/TreeObservable.uno
-// -----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/TreeObservable/TreeObservable.uno
+// ----------------------------------------------------------------------------------------------------
 
 // private sealed class TreeObservable.Operation.PerformClosure :140
 // {
@@ -3784,8 +3784,8 @@ TreeObservable__Operation__PerformClosure* TreeObservable__Operation__PerformClo
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/Context.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/Context.uno
+// ------------------------------------------------------------------------------
 
 // private sealed class JSContext.PropertyClosure :266
 // {
@@ -3877,8 +3877,8 @@ JSContext__PropertyClosure* JSContext__PropertyClosure::New1(::g::Fuse::Scriptin
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/TreeObservable/TreeObject.uno
-// -------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/TreeObservable/TreeObject.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal sealed class TreeObject.PropertySubscription :18
 // {
@@ -3968,8 +3968,8 @@ TreeObject__PropertySubscription* TreeObject__PropertySubscription::New1(::g::Fu
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/ObservableProperty.uno
-// ------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/ObservableProperty.uno
+// -----------------------------------------------------------------------------------------
 
 // private sealed class ObservableProperty.PushCapture :220
 // {
@@ -4035,8 +4035,8 @@ ObservableProperty__PushCapture* ObservableProperty__PushCapture::New1(uDelegate
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/Context.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/Context.uno
+// ------------------------------------------------------------------------------
 
 // private sealed class JSContext.ReadonlyPropertyClosure :244
 // {
@@ -4099,8 +4099,8 @@ JSContext__ReadonlyPropertyClosure* JSContext__ReadonlyPropertyClosure::New1(::g
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/Observable.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/Observable.uno
+// ---------------------------------------------------------------------------------
 
 // private sealed class Observable.RemoveAt :568
 // {
@@ -4171,8 +4171,8 @@ Observable__RemoveAt* Observable__RemoveAt::New1(::g::Fuse::Scripting::JavaScrip
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/TreeObservable/TreeObservable.uno
-// -----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/TreeObservable/TreeObservable.uno
+// ----------------------------------------------------------------------------------------------------
 
 // private sealed class TreeObservable.RemoveAtOperation :243
 // {
@@ -4248,8 +4248,8 @@ TreeObservable__RemoveAtOperation* TreeObservable__RemoveAtOperation::New1(::g::
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/Observable.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/Observable.uno
+// ---------------------------------------------------------------------------------
 
 // private sealed class Observable.RemoveRange :590
 // {
@@ -4326,8 +4326,8 @@ Observable__RemoveRange* Observable__RemoveRange::New1(::g::Fuse::Scripting::Jav
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/Observable.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/Observable.uno
+// ---------------------------------------------------------------------------------
 
 // private sealed class Observable.Subscription.ReplaceAllExclusiveOperation :140
 // {
@@ -4403,8 +4403,8 @@ Observable__Subscription__ReplaceAllExclusiveOperation* Observable__Subscription
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/TreeObservable/TreeArray.uno
-// ------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/TreeObservable/TreeArray.uno
+// -----------------------------------------------------------------------------------------------
 
 // private sealed class TreeArray.ArraySubscription.ReplaceAllOperation :63
 // {
@@ -4482,8 +4482,8 @@ TreeArray__ArraySubscription__ReplaceAllOperation* TreeArray__ArraySubscription_
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/ObservableProperty.uno
-// ------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/ObservableProperty.uno
+// -----------------------------------------------------------------------------------------
 
 // internal sealed class ObservableProperty.ResolveDefaultValueClosure :72
 // {
@@ -4608,8 +4608,8 @@ ObservableProperty__ResolveDefaultValueClosure* ObservableProperty__ResolveDefau
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/RootableScriptModule.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/RootableScriptModule.uno
+// -------------------------------------------------------------------------------------------
 
 // internal sealed class RootableScriptModule :18
 // {
@@ -4792,8 +4792,8 @@ RootableScriptModule* RootableScriptModule::New2(::g::Fuse::Scripting::JavaScrip
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/RootableScriptModule.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/RootableScriptModule.uno
+// -------------------------------------------------------------------------------------------
 
 // public enum ScriptModuleNames :10
 uEnumType* ScriptModuleNames_typeof()
@@ -4808,8 +4808,8 @@ uEnumType* ScriptModuleNames_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/Observable.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/Observable.uno
+// ---------------------------------------------------------------------------------
 
 // private sealed class Observable.Set :411
 // {
@@ -4891,8 +4891,8 @@ Observable__Set* Observable__Set::New1(::g::Fuse::Scripting::JavaScript::Observa
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/TreeObservable/TreeObject.uno
-// -------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/TreeObservable/TreeObject.uno
+// ------------------------------------------------------------------------------------------------
 
 // private sealed class TreeObject.SetClosure :81
 // {
@@ -5003,8 +5003,8 @@ TreeObject__SetClosure* TreeObject__SetClosure::New1(::g::Fuse::Scripting::JavaS
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/Observable.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/Observable.uno
+// ---------------------------------------------------------------------------------
 
 // private sealed class Observable.Subscription.SetExclusiveOperation :79
 // {
@@ -5096,8 +5096,8 @@ Observable__Subscription__SetExclusiveOperation* Observable__Subscription__SetEx
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/TreeObservable/TreeObservable.uno
-// -----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/TreeObservable/TreeObservable.uno
+// ----------------------------------------------------------------------------------------------------
 
 // private sealed class TreeObservable.SetOperation :195
 // {
@@ -5178,8 +5178,8 @@ TreeObservable__SetOperation* TreeObservable__SetOperation::New1(::g::Fuse::Scri
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/TreeObservable/TreeArray.uno
-// ------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/TreeObservable/TreeArray.uno
+// -----------------------------------------------------------------------------------------------
 
 // private sealed class TreeArray.ArraySubscription.SimpleArray :142
 // {
@@ -5261,8 +5261,8 @@ TreeArray__ArraySubscription__SimpleArray* TreeArray__ArraySubscription__SimpleA
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/Observable.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/Observable.uno
+// ---------------------------------------------------------------------------------
 
 // public sealed class Observable.Subscription :51
 // {
@@ -5361,7 +5361,7 @@ void Observable__Subscription__FuseReactiveISubscriptionSetExclusive_fn(Observab
 
     if (uPtr(__this->_om)->Object() == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("Unexpected null object"), __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/Observable.uno"), 132, uString::Const("Fuse.Reactive.ISubscription.SetExclusive"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("Unexpected null object"), __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/Observable.uno"), 132, uString::Const("Fuse.Reactive.ISubscription.SetExclusive"));
         return;
     }
 
@@ -5461,7 +5461,7 @@ void Observable__Subscription::SetExclusive(::g::Fuse::Scripting::Context* conte
 
     if (uPtr(_om)->Object() == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("Unexpected null object"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/Observable.uno"), 118, uString::Const("SetExclusive"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("Unexpected null object"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/Observable.uno"), 118, uString::Const("SetExclusive"));
         return;
     }
 
@@ -5484,8 +5484,8 @@ Observable__Subscription* Observable__Subscription::New2(::g::Fuse::Scripting::J
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/ThreadWorker.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/ThreadWorker.uno
+// -----------------------------------------------------------------------------------
 
 // internal sealed class ThreadWorker :15
 // {
@@ -5494,6 +5494,7 @@ static void ThreadWorker_build(uType* type)
     type->SetDependencies(
         ::g::Fuse::Scripting::JavaScript::JSContext_typeof(),
         ::g::Fuse::Platform::Lifecycle_typeof(),
+        ::g::Uno::Threading::Thread_typeof(),
         ::g::Fuse::UpdateManager_typeof());
     type->SetInterfaces(
         ::g::Uno::IDisposable_typeof(), offsetof(ThreadWorker_type, interface0),
@@ -5513,7 +5514,7 @@ ThreadWorker_type* ThreadWorker_typeof()
     uTypeOptions options;
     options.FieldCount = 4;
     options.InterfaceCount = 2;
-    options.DependencyCount = 3;
+    options.DependencyCount = 4;
     options.ObjectSize = sizeof(ThreadWorker);
     options.TypeSize = sizeof(ThreadWorker_type);
     type = (ThreadWorker_type*)uClassType::New("Fuse.Scripting.JavaScript.ThreadWorker", options);
@@ -5696,7 +5697,7 @@ void ThreadWorker::Run()
     catch (const uThrowable& __t)
     {
         ::g::Uno::Exception* e = __t.Exception;
-        ::g::Fuse::Diagnostics::UnknownException(uString::Const("ThreadWorked failed"), e, this, uString::Const("/usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/ThreadWorker.uno"), 64, uString::Const("Run"));
+        ::g::Fuse::Diagnostics::UnknownException(uString::Const("ThreadWorked failed"), e, this, uString::Const("/usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/ThreadWorker.uno"), 64, uString::Const("Run"));
         DispatchException(e);
     }
 }
@@ -5784,8 +5785,8 @@ ThreadWorker* ThreadWorker::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/TreeObservable/TreeArray.uno
-// ------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/TreeObservable/TreeArray.uno
+// -----------------------------------------------------------------------------------------------
 
 // internal sealed class TreeArray :9
 // {
@@ -5955,8 +5956,8 @@ TreeArray* TreeArray::New3(::g::Fuse::Scripting::Array* arr)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/TreeObservable/TreeObject.uno
-// -------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/TreeObservable/TreeObject.uno
+// ------------------------------------------------------------------------------------------------
 
 // internal class TreeObject :8
 // {
@@ -6095,8 +6096,8 @@ TreeObject* TreeObject::New3(::g::Fuse::Scripting::Object* obj)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/TreeObservable/TreeObservable.uno
-// -----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/TreeObservable/TreeObservable.uno
+// ----------------------------------------------------------------------------------------------------
 
 // internal sealed class TreeObservable :8
 // {
@@ -6337,8 +6338,8 @@ TreeObservable* TreeObservable::New4(::g::Fuse::Scripting::Context* context, ::g
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/TypeWrapper.uno
-// -----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/TypeWrapper.uno
+// ----------------------------------------------------------------------------------
 
 // internal static class TypeWrapper :11
 // {
@@ -6574,8 +6575,8 @@ uObject* TypeWrapper::WrapScriptClass(::g::Fuse::Scripting::JavaScript::JSContex
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/TreeObservable/TreeObservable.uno
-// -----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/TreeObservable/TreeObservable.uno
+// ----------------------------------------------------------------------------------------------------
 
 // private abstract class TreeObservable.ValueOperation :185
 // {

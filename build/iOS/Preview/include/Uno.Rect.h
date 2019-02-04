@@ -1,8 +1,8 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Rect.uno.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Rect.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.ValueType.h>
 namespace g{namespace Uno{struct Float2;}}
 namespace g{namespace Uno{struct Float4x4;}}
 namespace g{namespace Uno{struct Rect;}}
@@ -14,8 +14,8 @@ namespace Uno{
 // public struct Rect :6
 // {
 uStructType* Rect_typeof();
-void Rect__ctor__fn(Rect* __this, float* left, float* top, float* right, float* bottom);
-void Rect__ctor_1_fn(Rect* __this, ::g::Uno::Float2* pos, ::g::Uno::Float2* size);
+void Rect__ctor_1_fn(Rect* __this, float* left, float* top, float* right, float* bottom);
+void Rect__ctor_2_fn(Rect* __this, ::g::Uno::Float2* pos, ::g::Uno::Float2* size);
 void Rect__ContainingPoints_fn(::g::Uno::Float2* point0, ::g::Uno::Float2* point1, Rect* __retval);
 void Rect__ContainingPoints1_fn(::g::Uno::Float2* point0, ::g::Uno::Float2* point1, ::g::Uno::Float2* point2, ::g::Uno::Float2* point3, Rect* __retval);
 void Rect__get_Height_fn(Rect* __this, float* __retval);
@@ -32,7 +32,7 @@ void Rect__get_Minimum_fn(Rect* __this, ::g::Uno::Float2* __retval);
 void Rect__set_Minimum_fn(Rect* __this, ::g::Uno::Float2* value);
 void Rect__New1_fn(float* left, float* top, float* right, float* bottom, Rect* __retval);
 void Rect__New2_fn(::g::Uno::Float2* pos, ::g::Uno::Float2* size, Rect* __retval);
-void Rect__op_Implicit1_fn(::g::Uno::Recti* r, Rect* __retval);
+void Rect__op_Implicit_fn(::g::Uno::Recti* r, Rect* __retval);
 void Rect__get_Position_fn(Rect* __this, ::g::Uno::Float2* __retval);
 void Rect__set_Position_fn(Rect* __this, ::g::Uno::Float2* value);
 void Rect__get_RightBottom_fn(Rect* __this, ::g::Uno::Float2* __retval);
@@ -54,8 +54,8 @@ struct Rect
     float Right;
     float Bottom;
 
-    void ctor_(float left, float top, float right, float bottom);
-    void ctor_1(::g::Uno::Float2 pos, ::g::Uno::Float2 size);
+    void ctor_1(float left, float top, float right, float bottom);
+    void ctor_2(::g::Uno::Float2 pos, ::g::Uno::Float2 size);
     float Height();
     void Height(float value);
     bool Intersects(Rect r);
@@ -83,7 +83,7 @@ Rect Rect__Inflate1(Rect r, ::g::Uno::Float2 size);
 Rect Rect__Intersect(Rect a, Rect b);
 Rect Rect__New1(float left, float top, float right, float bottom);
 Rect Rect__New2(::g::Uno::Float2 pos, ::g::Uno::Float2 size);
-Rect Rect__op_Implicit1(::g::Uno::Recti r);
+Rect Rect__op_Implicit(::g::Uno::Recti r);
 Rect Rect__Scale(Rect r, float scale);
 Rect Rect__Scale1(Rect r, ::g::Uno::Float2 scale);
 Rect Rect__Transform(Rect r, ::g::Uno::Float4x4 matrix);

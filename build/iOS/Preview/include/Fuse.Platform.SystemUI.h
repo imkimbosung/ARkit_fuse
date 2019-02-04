@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Platform/1.9.0/iOS/SystemUI.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Platform/1.10.0-rc1/iOS/SystemUI.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -20,8 +20,8 @@ uClassType* SystemUI_typeof();
 void SystemUI___statusBarDidChangeFrame_fn(CGRect* _endFrame);
 void SystemUI___statusBarWillChangeFrame_fn(CGRect* _endFrame, double* animationDuration);
 void SystemUI__get_DeviceMargins_fn(::g::Uno::Float4* __retval);
-void SystemUI__DisableKeyboardResizeNotifications_fn();
-void SystemUI__EnableKeyboardResizeNotifications_fn();
+void SystemUI__DisableKeyboardResizeNotifications_fn(::g::ObjC::Object* keyboardContext);
+void SystemUI__EnableKeyboardResizeNotifications_fn(::g::ObjC::Object* keyboardContext);
 void SystemUI__EnterFullscreen_fn();
 void SystemUI__get_Frame_fn(::g::Uno::Rect* __retval);
 void SystemUI__set_Frame_fn(::g::Uno::Rect* value);
@@ -36,6 +36,7 @@ void SystemUI__get_IsTopFrameVisible_fn(bool* __retval);
 void SystemUI__set_IsTopFrameVisible_fn(bool* value);
 void SystemUI__add_MarginsChanged_fn(uDelegate* value);
 void SystemUI__remove_MarginsChanged_fn(uDelegate* value);
+void SystemUI__NewKeyboardContext_fn(::g::ObjC::Object** __retval);
 void SystemUI__OnCreate_fn();
 void SystemUI__OnDestroy_fn();
 void SystemUI__OnFrameChanged_fn(uObject* s, uObject* a);
@@ -56,6 +57,8 @@ struct SystemUI : uObject
 {
     static ::g::Uno::Rect _bottomFrame_;
     static ::g::Uno::Rect& _bottomFrame() { return SystemUI_typeof()->Init(), _bottomFrame_; }
+    static uSStrong< ::g::ObjC::Object*> _keyboardContext_;
+    static uSStrong< ::g::ObjC::Object*>& _keyboardContext() { return SystemUI_typeof()->Init(), _keyboardContext_; }
     static bool _isTopFrameVisible_;
     static bool& _isTopFrameVisible() { return SystemUI_typeof()->Init(), _isTopFrameVisible_; }
     static int32_t _style_;
@@ -71,13 +74,14 @@ struct SystemUI : uObject
 
     static void _statusBarDidChangeFrame(CGRect _endFrame);
     static void _statusBarWillChangeFrame(CGRect _endFrame, double animationDuration);
-    static void DisableKeyboardResizeNotifications();
-    static void EnableKeyboardResizeNotifications();
+    static void DisableKeyboardResizeNotifications(::g::ObjC::Object* keyboardContext);
+    static void EnableKeyboardResizeNotifications(::g::ObjC::Object* keyboardContext);
     static void EnterFullscreen();
     static void GetOSVersion(int32_t* major, int32_t* minor, int32_t* revision);
     static void GetSafeArea(float* l, float* t, float* r, float* b);
     static ::g::Uno::Float4 GetSafeFrame();
     static ::g::Uno::Rect GetStatusBarFrame();
+    static ::g::ObjC::Object* NewKeyboardContext();
     static void OnCreate();
     static void OnDestroy();
     static void OnFrameChanged(uObject* s, uObject* a);

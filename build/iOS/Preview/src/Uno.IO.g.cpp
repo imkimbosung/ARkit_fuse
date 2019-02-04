@@ -13,6 +13,7 @@
 #include <Uno.Array.h>
 #include <Uno.Bool.h>
 #include <Uno.Byte.h>
+#include <Uno.ByteArrayExtensions.h>
 #include <Uno.Char.h>
 #include <Uno.Collections.Dictionary-2.h>
 #include <Uno.Collections.IEnumerable-1.h>
@@ -64,7 +65,6 @@
 #include <Uno.NotImplementedException.h>
 #include <Uno.NotSupportedException.h>
 #include <Uno.ObjectDisposedException.h>
-#include <Uno.Runtime.Implementation.BufferImpl.h>
 #include <Uno.String.h>
 #include <Uno.Text.Decoder.h>
 #include <Uno.Text.Encoding.h>
@@ -83,10 +83,10 @@ namespace g{
 namespace Uno{
 namespace IO{
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/IO/BinaryReader.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/IO/BinaryReader.uno
+// -------------------------------------------------------------------------------
 
-// public sealed class BinaryReader :7
+// public sealed class BinaryReader :6
 // {
 static void BinaryReader_build(uType* type)
 {
@@ -130,91 +130,91 @@ BinaryReader_type* BinaryReader_typeof()
     return type;
 }
 
-// public BinaryReader(Uno.IO.Stream stream) :14
+// public BinaryReader(Uno.IO.Stream stream) :13
 void BinaryReader__ctor__fn(BinaryReader* __this, ::g::Uno::IO::Stream* stream)
 {
     __this->ctor_(stream);
 }
 
-// public void Dispose() :32
+// public void Dispose() :31
 void BinaryReader__Dispose_fn(BinaryReader* __this)
 {
     __this->Dispose();
 }
 
-// private void FillBuffer(int byteCount) :37
+// private void FillBuffer(int byteCount) :36
 void BinaryReader__FillBuffer_fn(BinaryReader* __this, int32_t* byteCount)
 {
     __this->FillBuffer(*byteCount);
 }
 
-// public generated bool get_LittleEndian() :28
+// public generated bool get_LittleEndian() :27
 void BinaryReader__get_LittleEndian_fn(BinaryReader* __this, bool* __retval)
 {
     *__retval = __this->LittleEndian();
 }
 
-// public generated void set_LittleEndian(bool value) :29
+// public generated void set_LittleEndian(bool value) :28
 void BinaryReader__set_LittleEndian_fn(BinaryReader* __this, bool* value)
 {
     __this->LittleEndian(*value);
 }
 
-// public BinaryReader New(Uno.IO.Stream stream) :14
+// public BinaryReader New(Uno.IO.Stream stream) :13
 void BinaryReader__New1_fn(::g::Uno::IO::Stream* stream, BinaryReader** __retval)
 {
     *__retval = BinaryReader::New1(stream);
 }
 
-// protected internal int Read7BitEncodedInt() :332
+// protected internal int Read7BitEncodedInt() :331
 void BinaryReader__Read7BitEncodedInt_fn(BinaryReader* __this, int32_t* __retval)
 {
     *__retval = __this->Read7BitEncodedInt();
 }
 
-// public bool ReadBoolean() :90
+// public bool ReadBoolean() :89
 void BinaryReader__ReadBoolean_fn(BinaryReader* __this, bool* __retval)
 {
     *__retval = __this->ReadBoolean();
 }
 
-// public byte ReadByte() :102
+// public byte ReadByte() :101
 void BinaryReader__ReadByte_fn(BinaryReader* __this, uint8_t* __retval)
 {
     *__retval = __this->ReadByte();
 }
 
-// public byte[] ReadBytes(int byteCount) :56
+// public byte[] ReadBytes(int byteCount) :55
 void BinaryReader__ReadBytes_fn(BinaryReader* __this, int32_t* byteCount, uArray** __retval)
 {
     *__retval = __this->ReadBytes(*byteCount);
 }
 
-// public char ReadChar() :108
+// public char ReadChar() :107
 void BinaryReader__ReadChar_fn(BinaryReader* __this, char16_t* __retval)
 {
     *__retval = __this->ReadChar();
 }
 
-// public double ReadDouble() :163
+// public double ReadDouble() :162
 void BinaryReader__ReadDouble_fn(BinaryReader* __this, double* __retval)
 {
     *__retval = __this->ReadDouble();
 }
 
-// public int ReadInt() :133
+// public int ReadInt() :132
 void BinaryReader__ReadInt_fn(BinaryReader* __this, int32_t* __retval)
 {
     *__retval = __this->ReadInt();
 }
 
-// public string ReadString() :350
+// public string ReadString() :349
 void BinaryReader__ReadString_fn(BinaryReader* __this, uString** __retval)
 {
     *__retval = __this->ReadString();
 }
 
-// public BinaryReader(Uno.IO.Stream stream) [instance] :14
+// public BinaryReader(Uno.IO.Stream stream) [instance] :13
 void BinaryReader::ctor_(::g::Uno::IO::Stream* stream)
 {
     _stream = stream;
@@ -222,14 +222,14 @@ void BinaryReader::ctor_(::g::Uno::IO::Stream* stream)
     LittleEndian(true);
 }
 
-// public void Dispose() [instance] :32
+// public void Dispose() [instance] :31
 void BinaryReader::Dispose()
 {
     uStackFrame __("Uno.IO.BinaryReader", "Dispose()");
     uPtr(_stream)->Dispose();
 }
 
-// private void FillBuffer(int byteCount) [instance] :37
+// private void FillBuffer(int byteCount) [instance] :36
 void BinaryReader::FillBuffer(int32_t byteCount)
 {
     uStackFrame __("Uno.IO.BinaryReader", "FillBuffer(int)");
@@ -251,19 +251,19 @@ void BinaryReader::FillBuffer(int32_t byteCount)
     while (offset < byteCount);
 }
 
-// public generated bool get_LittleEndian() [instance] :28
+// public generated bool get_LittleEndian() [instance] :27
 bool BinaryReader::LittleEndian()
 {
     return _LittleEndian;
 }
 
-// public generated void set_LittleEndian(bool value) [instance] :29
+// public generated void set_LittleEndian(bool value) [instance] :28
 void BinaryReader::LittleEndian(bool value)
 {
     _LittleEndian = value;
 }
 
-// protected internal int Read7BitEncodedInt() [instance] :332
+// protected internal int Read7BitEncodedInt() [instance] :331
 int32_t BinaryReader::Read7BitEncodedInt()
 {
     uStackFrame __("Uno.IO.BinaryReader", "Read7BitEncodedInt()");
@@ -283,7 +283,7 @@ int32_t BinaryReader::Read7BitEncodedInt()
     U_THROW(::g::Uno::FormatException::New4(::STRINGS[1/*"Invalid 7 b...*/]));
 }
 
-// public bool ReadBoolean() [instance] :90
+// public bool ReadBoolean() [instance] :89
 bool BinaryReader::ReadBoolean()
 {
     uStackFrame __("Uno.IO.BinaryReader", "ReadBoolean()");
@@ -291,7 +291,7 @@ bool BinaryReader::ReadBoolean()
     return uPtr(_buffer)->Item<uint8_t>(0) != 0;
 }
 
-// public byte ReadByte() [instance] :102
+// public byte ReadByte() [instance] :101
 uint8_t BinaryReader::ReadByte()
 {
     uStackFrame __("Uno.IO.BinaryReader", "ReadByte()");
@@ -299,7 +299,7 @@ uint8_t BinaryReader::ReadByte()
     return uPtr(_buffer)->Item<uint8_t>(0);
 }
 
-// public byte[] ReadBytes(int byteCount) [instance] :56
+// public byte[] ReadBytes(int byteCount) [instance] :55
 uArray* BinaryReader::ReadBytes(int32_t byteCount)
 {
     uStackFrame __("Uno.IO.BinaryReader", "ReadBytes(int)");
@@ -331,7 +331,7 @@ uArray* BinaryReader::ReadBytes(int32_t byteCount)
     return result;
 }
 
-// public char ReadChar() [instance] :108
+// public char ReadChar() [instance] :107
 char16_t BinaryReader::ReadChar()
 {
     uStackFrame __("Uno.IO.BinaryReader", "ReadChar()");
@@ -349,30 +349,30 @@ char16_t BinaryReader::ReadChar()
     return uPtr(::g::Uno::Text::Utf8::GetString((uArray*)buffer->ToArray()))->Item(0);
 }
 
-// public double ReadDouble() [instance] :163
+// public double ReadDouble() [instance] :162
 double BinaryReader::ReadDouble()
 {
     uStackFrame __("Uno.IO.BinaryReader", "ReadDouble()");
     FillBuffer(8);
-    return ::g::Uno::Runtime::Implementation::BufferImpl::GetDouble(_buffer, 0, LittleEndian());
+    return ::g::Uno::ByteArrayExtensions::GetDouble(_buffer, 0, LittleEndian());
 }
 
-// public int ReadInt() [instance] :133
+// public int ReadInt() [instance] :132
 int32_t BinaryReader::ReadInt()
 {
     uStackFrame __("Uno.IO.BinaryReader", "ReadInt()");
     FillBuffer(4);
-    return ::g::Uno::Runtime::Implementation::BufferImpl::GetInt(_buffer, 0, LittleEndian());
+    return ::g::Uno::ByteArrayExtensions::GetInt(_buffer, 0, LittleEndian());
 }
 
-// public string ReadString() [instance] :350
+// public string ReadString() [instance] :349
 uString* BinaryReader::ReadString()
 {
     uStackFrame __("Uno.IO.BinaryReader", "ReadString()");
     return ::g::Uno::Text::Utf8::GetString(ReadBytes(Read7BitEncodedInt()));
 }
 
-// public BinaryReader New(Uno.IO.Stream stream) [static] :14
+// public BinaryReader New(Uno.IO.Stream stream) [static] :13
 BinaryReader* BinaryReader::New1(::g::Uno::IO::Stream* stream)
 {
     BinaryReader* obj1 = (BinaryReader*)uNew(BinaryReader_typeof());
@@ -381,10 +381,10 @@ BinaryReader* BinaryReader::New1(::g::Uno::IO::Stream* stream)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/IO/BinaryWriter.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/IO/BinaryWriter.uno
+// -------------------------------------------------------------------------------
 
-// public sealed class BinaryWriter :6
+// public sealed class BinaryWriter :5
 // {
 static void BinaryWriter_build(uType* type)
 {
@@ -426,85 +426,85 @@ BinaryWriter_type* BinaryWriter_typeof()
     return type;
 }
 
-// public BinaryWriter(Uno.IO.Stream stream) :13
+// public BinaryWriter(Uno.IO.Stream stream) :12
 void BinaryWriter__ctor__fn(BinaryWriter* __this, ::g::Uno::IO::Stream* stream)
 {
     __this->ctor_(stream);
 }
 
-// public void Dispose() :31
+// public void Dispose() :30
 void BinaryWriter__Dispose_fn(BinaryWriter* __this)
 {
     __this->Dispose();
 }
 
-// public generated bool get_LittleEndian() :27
+// public generated bool get_LittleEndian() :26
 void BinaryWriter__get_LittleEndian_fn(BinaryWriter* __this, bool* __retval)
 {
     *__retval = __this->LittleEndian();
 }
 
-// public generated void set_LittleEndian(bool value) :28
+// public generated void set_LittleEndian(bool value) :27
 void BinaryWriter__set_LittleEndian_fn(BinaryWriter* __this, bool* value)
 {
     __this->LittleEndian(*value);
 }
 
-// public BinaryWriter New(Uno.IO.Stream stream) :13
+// public BinaryWriter New(Uno.IO.Stream stream) :12
 void BinaryWriter__New1_fn(::g::Uno::IO::Stream* stream, BinaryWriter** __retval)
 {
     *__retval = BinaryWriter::New1(stream);
 }
 
-// public void Write(bool value) :36
+// public void Write(bool value) :35
 void BinaryWriter__Write_fn(BinaryWriter* __this, bool* value)
 {
     __this->Write(*value);
 }
 
-// public void Write(byte value) :53
+// public void Write(byte value) :52
 void BinaryWriter__Write1_fn(BinaryWriter* __this, uint8_t* value)
 {
     __this->Write1(*value);
 }
 
-// public void Write(byte[] value) :42
+// public void Write(byte[] value) :41
 void BinaryWriter__Write2_fn(BinaryWriter* __this, uArray* value)
 {
     __this->Write2(value);
 }
 
-// public void Write(char value) :59
+// public void Write(char value) :58
 void BinaryWriter__Write5_fn(BinaryWriter* __this, char16_t* value)
 {
     __this->Write5(*value);
 }
 
-// public void Write(double value) :106
+// public void Write(double value) :105
 void BinaryWriter__Write6_fn(BinaryWriter* __this, double* value)
 {
     __this->Write6(*value);
 }
 
-// public void Write(int value) :76
+// public void Write(int value) :75
 void BinaryWriter__Write13_fn(BinaryWriter* __this, int32_t* value)
 {
     __this->Write13(*value);
 }
 
-// public void Write(string value) :233
+// public void Write(string value) :232
 void BinaryWriter__Write24_fn(BinaryWriter* __this, uString* value)
 {
     __this->Write24(value);
 }
 
-// protected internal void Write7BitEncodedInt(int value) :222
+// protected internal void Write7BitEncodedInt(int value) :221
 void BinaryWriter__Write7BitEncodedInt_fn(BinaryWriter* __this, int32_t* value)
 {
     __this->Write7BitEncodedInt(*value);
 }
 
-// public BinaryWriter(Uno.IO.Stream stream) [instance] :13
+// public BinaryWriter(Uno.IO.Stream stream) [instance] :12
 void BinaryWriter::ctor_(::g::Uno::IO::Stream* stream)
 {
     _stream = stream;
@@ -512,26 +512,26 @@ void BinaryWriter::ctor_(::g::Uno::IO::Stream* stream)
     LittleEndian(true);
 }
 
-// public void Dispose() [instance] :31
+// public void Dispose() [instance] :30
 void BinaryWriter::Dispose()
 {
     uStackFrame __("Uno.IO.BinaryWriter", "Dispose()");
     uPtr(_stream)->Dispose();
 }
 
-// public generated bool get_LittleEndian() [instance] :27
+// public generated bool get_LittleEndian() [instance] :26
 bool BinaryWriter::LittleEndian()
 {
     return _LittleEndian;
 }
 
-// public generated void set_LittleEndian(bool value) [instance] :28
+// public generated void set_LittleEndian(bool value) [instance] :27
 void BinaryWriter::LittleEndian(bool value)
 {
     _LittleEndian = value;
 }
 
-// public void Write(bool value) [instance] :36
+// public void Write(bool value) [instance] :35
 void BinaryWriter::Write(bool value)
 {
     uStackFrame __("Uno.IO.BinaryWriter", "Write(bool)");
@@ -539,7 +539,7 @@ void BinaryWriter::Write(bool value)
     uPtr(_stream)->Write(_buffer, 0, 1);
 }
 
-// public void Write(byte value) [instance] :53
+// public void Write(byte value) [instance] :52
 void BinaryWriter::Write1(uint8_t value)
 {
     uStackFrame __("Uno.IO.BinaryWriter", "Write(byte)");
@@ -547,37 +547,37 @@ void BinaryWriter::Write1(uint8_t value)
     uPtr(_stream)->Write(_buffer, 0, 1);
 }
 
-// public void Write(byte[] value) [instance] :42
+// public void Write(byte[] value) [instance] :41
 void BinaryWriter::Write2(uArray* value)
 {
     uStackFrame __("Uno.IO.BinaryWriter", "Write(byte[])");
     uPtr(_stream)->Write(value, 0, uPtr(value)->Length());
 }
 
-// public void Write(char value) [instance] :59
+// public void Write(char value) [instance] :58
 void BinaryWriter::Write5(char16_t value)
 {
     uStackFrame __("Uno.IO.BinaryWriter", "Write(char)");
     Write2(::g::Uno::Text::Utf8::GetBytes(::g::Uno::Char::ToString(value, ::TYPES[2/*char*/])));
 }
 
-// public void Write(double value) [instance] :106
+// public void Write(double value) [instance] :105
 void BinaryWriter::Write6(double value)
 {
     uStackFrame __("Uno.IO.BinaryWriter", "Write(double)");
-    ::g::Uno::Runtime::Implementation::BufferImpl::SetDouble(_buffer, 0, value, LittleEndian());
+    ::g::Uno::ByteArrayExtensions::Set3(_buffer, 0, value, LittleEndian());
     uPtr(_stream)->Write(_buffer, 0, 8);
 }
 
-// public void Write(int value) [instance] :76
+// public void Write(int value) [instance] :75
 void BinaryWriter::Write13(int32_t value)
 {
     uStackFrame __("Uno.IO.BinaryWriter", "Write(int)");
-    ::g::Uno::Runtime::Implementation::BufferImpl::SetInt(_buffer, 0, value, LittleEndian());
+    ::g::Uno::ByteArrayExtensions::Set10(_buffer, 0, value, LittleEndian());
     uPtr(_stream)->Write(_buffer, 0, 4);
 }
 
-// public void Write(string value) [instance] :233
+// public void Write(string value) [instance] :232
 void BinaryWriter::Write24(uString* value)
 {
     uStackFrame __("Uno.IO.BinaryWriter", "Write(string)");
@@ -586,7 +586,7 @@ void BinaryWriter::Write24(uString* value)
     Write2(bytes);
 }
 
-// protected internal void Write7BitEncodedInt(int value) [instance] :222
+// protected internal void Write7BitEncodedInt(int value) [instance] :221
 void BinaryWriter::Write7BitEncodedInt(int32_t value)
 {
     uStackFrame __("Uno.IO.BinaryWriter", "Write7BitEncodedInt(int)");
@@ -601,7 +601,7 @@ void BinaryWriter::Write7BitEncodedInt(int32_t value)
     Write1((uint8_t)v);
 }
 
-// public BinaryWriter New(Uno.IO.Stream stream) [static] :13
+// public BinaryWriter New(Uno.IO.Stream stream) [static] :12
 BinaryWriter* BinaryWriter::New1(::g::Uno::IO::Stream* stream)
 {
     BinaryWriter* obj1 = (BinaryWriter*)uNew(BinaryWriter_typeof());
@@ -610,12 +610,12 @@ BinaryWriter* BinaryWriter::New1(::g::Uno::IO::Stream* stream)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/IO/Bundle.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/IO/Bundle.uno
+// -------------------------------------------------------------------------
 
-// public sealed class Bundle :202
+// public sealed class Bundle :195
 // {
-// static Bundle() :228
+// static Bundle() :221
 static void Bundle__cctor__fn(uType* __type)
 {
     uArray* array1;
@@ -681,61 +681,61 @@ uType* Bundle_typeof()
     return type;
 }
 
-// private Bundle(string packageName) :271
+// private Bundle(string packageName) :264
 void Bundle__ctor__fn(Bundle* __this, uString* packageName)
 {
     __this->ctor_(packageName);
 }
 
-// public static Uno.Collections.IEnumerable<Uno.IO.BundleFile> get_AllFiles() :259
+// public static Uno.Collections.IEnumerable<Uno.IO.BundleFile> get_AllFiles() :252
 void Bundle__get_AllFiles_fn(uObject** __retval)
 {
     *__retval = Bundle::AllFiles();
 }
 
-// public generated void add_Created(Uno.Action<Uno.IO.BundleFile> value) :205
+// public generated void add_Created(Uno.Action<Uno.IO.BundleFile> value) :198
 void Bundle__add_Created_fn(Bundle* __this, uDelegate* value)
 {
     __this->add_Created(value);
 }
 
-// public generated void remove_Created(Uno.Action<Uno.IO.BundleFile> value) :205
+// public generated void remove_Created(Uno.Action<Uno.IO.BundleFile> value) :198
 void Bundle__remove_Created_fn(Bundle* __this, uDelegate* value)
 {
     __this->remove_Created(value);
 }
 
-// public extern Uno.IO.BundleFile CreateFile(string path, byte[] bytes) :209
+// public extern Uno.IO.BundleFile CreateFile(string path, byte[] bytes) :202
 void Bundle__CreateFile_fn(Bundle* __this, uString* path, uArray* bytes, ::g::Uno::IO::BundleFile** __retval)
 {
     *__retval = __this->CreateFile(path, bytes);
 }
 
-// public Uno.Collections.IEnumerable<Uno.IO.BundleFile> get_Files() :283
+// public Uno.Collections.IEnumerable<Uno.IO.BundleFile> get_Files() :276
 void Bundle__get_Files_fn(Bundle* __this, uObject** __retval)
 {
     *__retval = __this->Files();
 }
 
-// public static Uno.IO.Bundle Get([string package]) :251
+// public static Uno.IO.Bundle Get([string package]) :244
 void Bundle__Get_fn(uString* package, Bundle** __retval)
 {
     *__retval = Bundle::Get(package);
 }
 
-// public Uno.IO.BundleFile GetFile(string filename) :286
+// public Uno.IO.BundleFile GetFile(string filename) :279
 void Bundle__GetFile_fn(Bundle* __this, uString* filename, ::g::Uno::IO::BundleFile** __retval)
 {
     *__retval = __this->GetFile(filename);
 }
 
-// private Bundle New(string packageName) :271
+// private Bundle New(string packageName) :264
 void Bundle__New1_fn(uString* packageName, Bundle** __retval)
 {
     *__retval = Bundle::New1(packageName);
 }
 
-// public override sealed string ToString() :295
+// public override sealed string ToString() :288
 void Bundle__ToString_fn(Bundle* __this, uString** __retval)
 {
     return *__retval = __this->_packageName, void();
@@ -744,28 +744,28 @@ void Bundle__ToString_fn(Bundle* __this, uString** __retval)
 uSStrong< ::g::Uno::Collections::Dictionary*> Bundle::_bundles_;
 uSStrong< ::g::Uno::Collections::List*> Bundle::_allFiles_;
 
-// private Bundle(string packageName) [instance] :271
+// private Bundle(string packageName) [instance] :264
 void Bundle::ctor_(uString* packageName)
 {
     _files = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[4/*Uno.Collections.List<Uno.IO.BundleFile>*/]));
     _packageName = packageName;
 }
 
-// public generated void add_Created(Uno.Action<Uno.IO.BundleFile> value) [instance] :205
+// public generated void add_Created(Uno.Action<Uno.IO.BundleFile> value) [instance] :198
 void Bundle::add_Created(uDelegate* value)
 {
     uStackFrame __("Uno.IO.Bundle", "add_Created(Uno.Action<Uno.IO.BundleFile>)");
     Created1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(Created1, value), ::TYPES[7/*Uno.Action<Uno.IO.BundleFile>*/]);
 }
 
-// public generated void remove_Created(Uno.Action<Uno.IO.BundleFile> value) [instance] :205
+// public generated void remove_Created(Uno.Action<Uno.IO.BundleFile> value) [instance] :198
 void Bundle::remove_Created(uDelegate* value)
 {
     uStackFrame __("Uno.IO.Bundle", "remove_Created(Uno.Action<Uno.IO.BundleFile>)");
     Created1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(Created1, value), ::TYPES[7/*Uno.Action<Uno.IO.BundleFile>*/]);
 }
 
-// public extern Uno.IO.BundleFile CreateFile(string path, byte[] bytes) [instance] :209
+// public extern Uno.IO.BundleFile CreateFile(string path, byte[] bytes) [instance] :202
 ::g::Uno::IO::BundleFile* Bundle::CreateFile(uString* path, uArray* bytes)
 {
     uStackFrame __("Uno.IO.Bundle", "CreateFile(string,byte[])");
@@ -828,14 +828,14 @@ void Bundle::remove_Created(uDelegate* value)
     return file;
 }
 
-// public Uno.Collections.IEnumerable<Uno.IO.BundleFile> get_Files() [instance] :283
+// public Uno.Collections.IEnumerable<Uno.IO.BundleFile> get_Files() [instance] :276
 uObject* Bundle::Files()
 {
     uStackFrame __("Uno.IO.Bundle", "get_Files()");
     return (uObject*)_files;
 }
 
-// public Uno.IO.BundleFile GetFile(string filename) [instance] :286
+// public Uno.IO.BundleFile GetFile(string filename) [instance] :279
 ::g::Uno::IO::BundleFile* Bundle::GetFile(uString* filename)
 {
     uStackFrame __("Uno.IO.Bundle", "GetFile(string)");
@@ -878,7 +878,7 @@ uObject* Bundle::Files()
     U_THROW(::g::Uno::IO::FileNotFoundException::New5(::g::Uno::String::op_Addition2(::STRINGS[3/*"BundleFile ...*/], filename), filename));
 }
 
-// public static Uno.IO.Bundle Get([string package]) [static] :251
+// public static Uno.IO.Bundle Get([string package]) [static] :244
 Bundle* Bundle::Get(uString* package)
 {
     uStackFrame __("Uno.IO.Bundle", "Get([string])");
@@ -887,7 +887,7 @@ Bundle* Bundle::Get(uString* package)
     return (::g::Uno::Collections::Dictionary__get_Item_fn(uPtr(Bundle::_bundles_), package, &ret6), ret6);
 }
 
-// private Bundle New(string packageName) [static] :271
+// private Bundle New(string packageName) [static] :264
 Bundle* Bundle::New1(uString* packageName)
 {
     Bundle* obj5 = (Bundle*)uNew(Bundle_typeof());
@@ -895,7 +895,7 @@ Bundle* Bundle::New1(uString* packageName)
     return obj5;
 }
 
-// public static Uno.Collections.IEnumerable<Uno.IO.BundleFile> get_AllFiles() [static] :259
+// public static Uno.Collections.IEnumerable<Uno.IO.BundleFile> get_AllFiles() [static] :252
 uObject* Bundle::AllFiles()
 {
     uStackFrame __("Uno.IO.Bundle", "get_AllFiles()");
@@ -904,8 +904,8 @@ uObject* Bundle::AllFiles()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/IO/Bundle.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/IO/Bundle.uno
+// -------------------------------------------------------------------------
 
 // public sealed class BundleFile :26
 // {
@@ -1049,7 +1049,7 @@ void BundleFile__ReadAllBytes_fn(BundleFile* __this, uArray** __retval)
     *__retval = __this->ReadAllBytes();
 }
 
-// public string ReadAllText() :170
+// public string ReadAllText() :163
 void BundleFile__ReadAllText_fn(BundleFile* __this, uString** __retval)
 {
     *__retval = __this->ReadAllText();
@@ -1067,13 +1067,13 @@ void BundleFile__set_SourcePath_fn(BundleFile* __this, uString* value)
     __this->SourcePath(value);
 }
 
-// public override sealed string ToString() :196
+// public override sealed string ToString() :189
 void BundleFile__ToString_fn(BundleFile* __this, uString** __retval)
 {
     return *__retval = __this->SourcePath(), void();
 }
 
-// public extern void Update(byte[] bytes) :183
+// public extern void Update(byte[] bytes) :176
 void BundleFile__Update_fn(BundleFile* __this, uArray* bytes)
 {
     __this->Update(bytes);
@@ -1195,7 +1195,7 @@ uArray* BundleFile::ReadAllBytes()
     }
 }
 
-// public string ReadAllText() [instance] :170
+// public string ReadAllText() [instance] :163
 uString* BundleFile::ReadAllText()
 {
     uStackFrame __("Uno.IO.BundleFile", "ReadAllText()");
@@ -1218,7 +1218,7 @@ void BundleFile::SourcePath(uString* value)
     _SourcePath = value;
 }
 
-// public extern void Update(byte[] bytes) [instance] :183
+// public extern void Update(byte[] bytes) [instance] :176
 void BundleFile::Update(uArray* bytes)
 {
     uStackFrame __("Uno.IO.BundleFile", "Update(byte[])");
@@ -1262,8 +1262,8 @@ BundleFile* BundleFile::New1(::g::Uno::IO::Bundle* bundle, uString* sourcePath, 
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/IO/DirectoryInfo.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/IO/DirectoryInfo.uno
+// --------------------------------------------------------------------------------
 
 // public sealed class DirectoryInfo :5
 // {
@@ -1331,8 +1331,8 @@ DirectoryInfo* DirectoryInfo::New1(uString* originalPath)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/IO/IOException.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/IO/IOException.uno
+// ------------------------------------------------------------------------------
 
 // public sealed class EndOfStreamException :15
 // {
@@ -1387,8 +1387,8 @@ EndOfStreamException* EndOfStreamException::New5()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/IO/Directory.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/IO/Directory.uno
+// ----------------------------------------------------------------------------
 
 // private sealed class Directory.Enumerable :407
 // {
@@ -1458,8 +1458,8 @@ Directory__Enumerable* Directory__Enumerable::New1(uString* dirName, int32_t mod
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/IO/Directory.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/IO/Directory.uno
+// ----------------------------------------------------------------------------
 
 // private sealed class Directory.Enumerator :425
 // {
@@ -1625,8 +1625,8 @@ Directory__Enumerator* Directory__Enumerator::New1(uString* dirName, int32_t mod
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/IO/Directory.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/IO/Directory.uno
+// ----------------------------------------------------------------------------
 
 // private enum Directory.EnumeratorMode :563
 uEnumType* Directory__EnumeratorMode_typeof()
@@ -1642,8 +1642,8 @@ uEnumType* Directory__EnumeratorMode_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/IO/File.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/IO/File.uno
+// -----------------------------------------------------------------------
 
 // public static class File :14
 // {
@@ -2029,8 +2029,8 @@ void File::WriteAllText(uString* filename, uString* text)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/IO/FileAttributes.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/IO/FileAttributes.uno
+// ---------------------------------------------------------------------------------
 
 // public enum FileAttributes :3
 uEnumType* FileAttributes_typeof()
@@ -2046,8 +2046,8 @@ uEnumType* FileAttributes_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/IO/FileInfo.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/IO/FileInfo.uno
+// ---------------------------------------------------------------------------
 
 // public sealed class FileInfo :5
 // {
@@ -2129,8 +2129,8 @@ FileInfo* FileInfo::New1(uString* originalPath)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/IO/FileMode.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/IO/FileMode.uno
+// ---------------------------------------------------------------------------
 
 // public enum FileMode :6
 uEnumType* FileMode_typeof()
@@ -2149,8 +2149,8 @@ uEnumType* FileMode_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/IO/IOException.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/IO/IOException.uno
+// ------------------------------------------------------------------------------
 
 // public sealed class FileNotFoundException :24
 // {
@@ -2230,8 +2230,8 @@ FileNotFoundException* FileNotFoundException::New5(uString* message, uString* fi
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/IO/FileStream.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/IO/FileStream.uno
+// -----------------------------------------------------------------------------
 
 // internal extern struct FILEPtr :9
 // {
@@ -2247,6 +2247,7 @@ uStructType* FILEPtr_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.Alignment = alignof(FILE*);
     options.ValueSize = sizeof(FILE*);
     options.TypeSize = sizeof(uStructType);
@@ -2289,8 +2290,8 @@ void FILEPtr::Throw(uString* filename)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/IO/FileStatus.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/IO/FileStatus.uno
+// -----------------------------------------------------------------------------
 
 // internal sealed class FileStatus :6
 // {
@@ -2456,8 +2457,8 @@ FileStatus* FileStatus::New2(int64_t length, int32_t attributes, ::g::Uno::Time:
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/IO/FileStatusHelpers.Unix.uno
-// ------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/IO/FileStatusHelpers.Unix.uno
+// -----------------------------------------------------------------------------------------
 
 // internal static extern class FileStatusHelpers :10
 // {
@@ -2539,8 +2540,8 @@ void FileStatusHelpers__UnixTimeToZoned_fn(int64_t* sec, ::g::Uno::Time::ZonedDa
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/IO/FileStream.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/IO/FileStream.uno
+// -----------------------------------------------------------------------------
 
 // public sealed class FileStream :40
 // {
@@ -2864,8 +2865,8 @@ FileStream* FileStream::New2(FILE* fp, bool canRead, bool canWrite)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/IO/FileSystemInfo.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/IO/FileSystemInfo.uno
+// ---------------------------------------------------------------------------------
 
 // public abstract class FileSystemInfo :7
 // {
@@ -3022,8 +3023,8 @@ void FileSystemInfo::Refresh()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/IO/IOException.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/IO/IOException.uno
+// ------------------------------------------------------------------------------
 
 // public class IOException :6
 // {
@@ -3076,8 +3077,8 @@ IOException* IOException::New4(uString* message)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/IO/MemoryStream.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/IO/MemoryStream.uno
+// -------------------------------------------------------------------------------
 
 // public sealed class MemoryStream :7
 // {
@@ -3418,8 +3419,8 @@ MemoryStream* MemoryStream::New3(uArray* buffer, bool writable)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/IO/SeekOrigin.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/IO/SeekOrigin.uno
+// -----------------------------------------------------------------------------
 
 // public enum SeekOrigin :6
 uEnumType* SeekOrigin_typeof()
@@ -3435,8 +3436,8 @@ uEnumType* SeekOrigin_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/IO/Stream.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/IO/Stream.uno
+// -------------------------------------------------------------------------
 
 // public abstract class Stream :7
 // {
@@ -3585,8 +3586,8 @@ void Stream::WriteTimeout(int32_t value)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/IO/StreamReader.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/IO/StreamReader.uno
+// -------------------------------------------------------------------------------
 
 // public sealed class StreamReader :7
 // {
@@ -3773,8 +3774,8 @@ StreamReader* StreamReader::New1(::g::Uno::IO::Stream* stream)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/IO/StreamWriter.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/IO/StreamWriter.uno
+// -------------------------------------------------------------------------------
 
 // public sealed class StreamWriter :8
 // {
@@ -3949,8 +3950,8 @@ StreamWriter* StreamWriter::New1(::g::Uno::IO::Stream* stream)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/IO/StringReader.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/IO/StringReader.uno
+// -------------------------------------------------------------------------------
 
 // public sealed class StringReader :6
 // {
@@ -4051,8 +4052,8 @@ StringReader* StringReader::New1(uString* text)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/IO/StringWriter.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/IO/StringWriter.uno
+// -------------------------------------------------------------------------------
 
 // public sealed class StringWriter :7
 // {
@@ -4231,8 +4232,8 @@ StringWriter* StringWriter::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/IO/TextReader.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/IO/TextReader.uno
+// -----------------------------------------------------------------------------
 
 // public abstract class TextReader :8
 // {
@@ -4341,8 +4342,8 @@ uString* TextReader::ReadLine()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/IO/TextWriter.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/IO/TextWriter.uno
+// -----------------------------------------------------------------------------
 
 // public abstract class TextWriter :7
 // {
@@ -4856,8 +4857,8 @@ void TextWriter::WriteLine13(uint64_t value)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/IO/Directory.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/IO/Directory.uno
+// ----------------------------------------------------------------------------
 
 // public enum UserDirectory :7
 uEnumType* UserDirectory_typeof()

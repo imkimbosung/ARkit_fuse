@@ -639,7 +639,6 @@ void ChangeIp__OnOk_fn(ChangeIp* __this, uString* input, ::g::Outracks::Simulato
 // public ChangeIp([string body]) [instance] :483
 void ChangeIp::ctor_2(uString* body)
 {
-    uStackFrame __("Outracks.Simulator.Client.ChangeIp", ".ctor([string])");
     ctor_1(::STRINGS[3/*"Connect to IP"*/], ::g::Uno::String::op_Addition2(body, ::STRINGS[4/*"\nE.g. '192...*/]));
 }
 
@@ -1813,7 +1812,6 @@ void DesignerNotRunning__New2_fn(DesignerNotRunning** __retval)
 // public DesignerNotRunning() [instance] :471
 void DesignerNotRunning::ctor_2()
 {
-    uStackFrame __("Outracks.Simulator.Client.DesignerNotRunning", ".ctor()");
     ctor_1(::STRINGS[16/*"Fuse not ru...*/], ::STRINGS[17/*"Please chec...*/], ::STRINGS[9/*""*/], uArray::Init< ::g::Outracks::Simulator::Client::DialogButton*>(::TYPES[37/*Outracks.Simulator.Client.DialogButton[]*/], 2, (::g::Outracks::Simulator::Client::DialogButton*)::g::Outracks::Simulator::Client::DialogButton::New1(::STRINGS[10/*"Change IP"*/], ::g::Outracks::Simulator::Client::ChangeIp::New1(::STRINGS[9/*""*/])), (::g::Outracks::Simulator::Client::DialogButton*)::g::Outracks::Simulator::Client::DialogButton::New1(::STRINGS[18/*"Try again"*/], ::g::Outracks::Simulator::Client::ConnectingToProxy::New1())));
 }
 

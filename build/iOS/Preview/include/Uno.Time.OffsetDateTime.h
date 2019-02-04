@@ -1,10 +1,10 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Time/OffsetDateTime.uno.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Time/OffsetDateTime.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
 #include <Uno.Time.LocalDateTime.h>
 #include <Uno.Time.Offset.h>
+#include <Uno.ValueType.h>
 namespace g{namespace Uno{namespace Time{struct OffsetDateTime;}}}
 
 namespace g{
@@ -14,7 +14,7 @@ namespace Time{
 // public struct OffsetDateTime :6
 // {
 uStructType* OffsetDateTime_typeof();
-void OffsetDateTime__ctor__fn(OffsetDateTime* __this, ::g::Uno::Time::LocalDateTime* localDateTime, ::g::Uno::Time::Offset* offset);
+void OffsetDateTime__ctor_1_fn(OffsetDateTime* __this, ::g::Uno::Time::LocalDateTime* localDateTime, ::g::Uno::Time::Offset* offset);
 void OffsetDateTime__get_Day_fn(OffsetDateTime* __this, int32_t* __retval);
 void OffsetDateTime__Equals_fn(OffsetDateTime* __this, uType* __type, uObject* obj, bool* __retval);
 void OffsetDateTime__Equals2_fn(OffsetDateTime* __this, OffsetDateTime* other, bool* __retval);
@@ -35,7 +35,7 @@ struct OffsetDateTime
     ::g::Uno::Time::LocalDateTime _localDateTime;
     ::g::Uno::Time::Offset _offset;
 
-    void ctor_(::g::Uno::Time::LocalDateTime localDateTime, ::g::Uno::Time::Offset offset);
+    void ctor_1(::g::Uno::Time::LocalDateTime localDateTime, ::g::Uno::Time::Offset offset);
     int32_t Day();
     bool Equals(uType* __type, uObject* obj) { bool __retval; return OffsetDateTime__Equals_fn(this, __type, obj, &__retval), __retval; }
     bool Equals2(OffsetDateTime other);

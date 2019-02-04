@@ -20,7 +20,7 @@ void TextOffset__New1_fn(int32_t* offset, TextOffset** __retval);
 void TextOffset__op_Equality_fn(TextOffset* a, TextOffset* b, bool* __retval);
 void TextOffset__op_GreaterThan_fn(TextOffset* a, TextOffset* b, bool* __retval);
 void TextOffset__op_GreaterThanOrEqual_fn(TextOffset* a, TextOffset* b, bool* __retval);
-void TextOffset__op_Implicit1_fn(TextOffset* d, int32_t* __retval);
+void TextOffset__op_Implicit_fn(TextOffset* d, int32_t* __retval);
 void TextOffset__op_Inequality_fn(TextOffset* a, TextOffset* b, bool* __retval);
 void TextOffset__op_LessThan_fn(TextOffset* a, TextOffset* b, bool* __retval);
 void TextOffset__op_LessThanOrEqual_fn(TextOffset* a, TextOffset* b, bool* __retval);
@@ -36,7 +36,7 @@ struct TextOffset : uObject
     static bool op_Equality(TextOffset* a, TextOffset* b);
     static bool op_GreaterThan(TextOffset* a, TextOffset* b);
     static bool op_GreaterThanOrEqual(TextOffset* a, TextOffset* b);
-    static int32_t op_Implicit1(TextOffset* d);
+    static int32_t op_Implicit(TextOffset* d);
     static bool op_Inequality(TextOffset* a, TextOffset* b);
     static bool op_LessThan(TextOffset* a, TextOffset* b);
     static bool op_LessThanOrEqual(TextOffset* a, TextOffset* b);

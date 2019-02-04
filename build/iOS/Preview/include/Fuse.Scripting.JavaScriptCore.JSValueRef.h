@@ -1,11 +1,11 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/JavaScriptCore/JavaScriptCore.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/JavaScriptCore/JavaScriptCore.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <JavaScriptCore/JSContextRef.h>
 #include <JavaScriptCore/JSObjectRef.h>
 #include <JavaScriptCore/JSStringRef.h>
-#include <Uno.Object.h>
+#include <Uno.ValueType.h>
 namespace g{namespace Fuse{namespace Scripting{struct Context;}}}
 
 namespace g{
@@ -38,8 +38,6 @@ void JSValueRef__Unprotect_fn(::JSValueRef* __this, ::JSContextRef* ctx);
 
 struct JSValueRef
 {
-    void* _dummy;
-
     static void DeferedUnprotect(::JSValueRef __this);
     static void DeferedUnprotectInner(::JSValueRef __this, ::g::Fuse::Scripting::Context* ctx);
     static ::JSObjectRef GetJSObjectRef(::JSValueRef __this, ::JSContextRef ctx);

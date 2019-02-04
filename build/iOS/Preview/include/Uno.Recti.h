@@ -1,8 +1,8 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Rect.uno.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Rect.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.ValueType.h>
 namespace g{namespace Uno{struct Int2;}}
 namespace g{namespace Uno{struct Recti;}}
 
@@ -12,8 +12,8 @@ namespace Uno{
 // public struct Recti :269
 // {
 uStructType* Recti_typeof();
-void Recti__ctor__fn(Recti* __this, int32_t* left, int32_t* top, int32_t* right, int32_t* bottom);
-void Recti__ctor_1_fn(Recti* __this, ::g::Uno::Int2* pos, ::g::Uno::Int2* size);
+void Recti__ctor_1_fn(Recti* __this, int32_t* left, int32_t* top, int32_t* right, int32_t* bottom);
+void Recti__ctor_2_fn(Recti* __this, ::g::Uno::Int2* pos, ::g::Uno::Int2* size);
 void Recti__get_Area_fn(Recti* __this, int32_t* __retval);
 void Recti__Contains1_fn(Recti* __this, Recti* r, bool* __retval);
 void Recti__Equals2_fn(Recti* rect1, Recti* rect2, bool* __retval);
@@ -39,8 +39,8 @@ struct Recti
     int32_t Right;
     int32_t Bottom;
 
-    void ctor_(int32_t left, int32_t top, int32_t right, int32_t bottom);
-    void ctor_1(::g::Uno::Int2 pos, ::g::Uno::Int2 size);
+    void ctor_1(int32_t left, int32_t top, int32_t right, int32_t bottom);
+    void ctor_2(::g::Uno::Int2 pos, ::g::Uno::Int2 size);
     int32_t Area();
     bool Contains1(Recti r);
     ::g::Uno::Int2 Maximum();

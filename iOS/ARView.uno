@@ -30,17 +30,17 @@ namespace Fuse.Controls
 	{
 		//ObservableList<ARNodes> ARNodes { get; }
 		ObservableList<ARNodes> ARNodes { get; }
-		ObservableList<Abox> Aboxs { get; }
+		//++ ObservableList<Abox> Aboxs { get; }
 
-		bool ShowPlane { get; set; }
+		//++ bool ShowPlane { get; set; }
 		bool ShowStatistics { get; set; }
 		bool Debug { get; set; }
-		FileSource PlaneFile { get; set; }
+		//++ FileSource PlaneFile { get; set; }
 		//string File { get; set; }
-		//void ApplyTo(bool showPlane, bool showStatistics, bool debug, string file);
-		void ApplyTo(bool showPlane, bool showStatistics, bool debug, byte[] PlaneFile);
-		//void SetAR(bool showPlane, bool showStatistics, bool debug, string file);
-		void SetAR(bool showPlane, bool showStatistics, bool debug, FileSource PlaneFile);
+		
+		//++ void ApplyTo(bool showPlane, bool showStatistics, bool debug, byte[] PlaneFile);
+		
+		//++ void SetAR(bool showPlane, bool showStatistics, bool debug, FileSource PlaneFile);
 		Action OnReady { get; set; }
 		void UpdateNodes();
 	}
@@ -50,34 +50,33 @@ namespace Fuse.Controls
 	/****  AR configure                          ****/
 	internal class ARConfig
 	{
-		public bool ShowPlane { get; set; }
+		//++ public bool ShowPlane { get; set; }
 		public bool ShowStatistics { get; set; }
 		public bool Debug { get; set; }
-		public FileSource PlaneFile { get; set; }
+		//++ public FileSource PlaneFile { get; set; }
 		//public string File { get; set; }
 
 		public ARConfig(){
-			ShowPlane = false;
+			//++ ShowPlane = false;
 			ShowStatistics = true;
 			Debug = false;
-			//File = "file";
-			//PlaneFile="";
+			
 		}
 
 		public void CopyFrom(IARView av)
 		{
-			ShowPlane = av.ShowPlane;
+			//++ ShowPlane = av.ShowPlane;
 			ShowStatistics = av.ShowStatistics;
 			Debug = av.Debug;
-			PlaneFile = av.PlaneFile;
+			//++ PlaneFile = av.PlaneFile;
 			//File = av.File;
 		}
 
 		public void Apply(IARView av){
-			av.ShowPlane = ShowPlane;
+			//++ av.ShowPlane = ShowPlane;
 			av.ShowStatistics = ShowStatistics;
 			av.Debug = Debug;
-			av.PlaneFile = PlaneFile;
+			//++ av.PlaneFile = PlaneFile;
 			//av.File = File;
 		}
 
@@ -147,7 +146,8 @@ namespace Fuse.Controls
 			}
 		}
 
-		internal ObservableList<Abox> _aboxs;
+		//++ internal ObservableList<Abox> _aboxs;
+		/* ++
 		public ObservableList<Abox> Aboxs
 		{
 			get
@@ -156,7 +156,7 @@ namespace Fuse.Controls
 				return _aboxs;
 			}
 		}
-
+		++ */
 		internal ObservableList<ARNodes> _arnodes;
 		public ObservableList<ARNodes> ARNodes
 		{
@@ -177,7 +177,7 @@ namespace Fuse.Controls
 		{
 			ARNodes.Remove(a);
 		}
-
+		/* ++
 		void OnAboxsAdded(Abox abox)
 		{
 			UpdateNodesNextFrame();
@@ -187,7 +187,7 @@ namespace Fuse.Controls
 		{
 			UpdateNodesNextFrame();
 		}
-
+		++ */
 		void OnNodesAdded(ARNodes marker)
 		{
 			UpdateNodesNextFrame();
@@ -231,7 +231,7 @@ namespace Fuse.Controls
 		//public void SetAR(bool showPlane, bool showStatistics, bool debug, string file)
 		public void SetAR(bool showPlane, bool showStatistics, bool debug)
 		{
-			ShowPlane = showPlane;
+			//++ ShowPlane = showPlane;
 			ShowStatistics = showStatistics;
 			Debug = debug;
 			//File = file;
@@ -245,13 +245,13 @@ namespace Fuse.Controls
 			}
 		}
 
-		public bool ShowPlane {
+		/* ++public bool ShowPlane {
 			get { return _arConfig.ShowPlane; }
 			set {
 				_arConfig.ShowPlane = value;
 				
 			}
-		}
+		} ++ */
 
 		public bool ShowStatistics {
 			get { return _arConfig.ShowStatistics; }
@@ -267,6 +267,7 @@ namespace Fuse.Controls
 			}
 		}
 
+		/* ++
 	    public FileSource PlaneFile
 	    {
 	        get { return _arConfig.PlaneFile; }
@@ -275,7 +276,7 @@ namespace Fuse.Controls
 	            //if(_arConfig.PlaneFile!=null) _arConfig.OnImageFileSet();
 	        }
 	    }
-
+		++ */
 
 
 /*
@@ -300,7 +301,7 @@ namespace Fuse.Controls
 			_willUpdateARNextFrame = false;
 			if(ARIsReady){
 				 //ObjC.Object planePtr = FileSourceToUIImageIOS(PlaneFile.ReadAllBytes());
-				ARViewClient.ApplyTo(ShowPlane, ShowStatistics, Debug, PlaneFile.ReadAllBytes());
+				//++ ARViewClient.ApplyTo(ShowPlane, ShowStatistics, Debug, PlaneFile.ReadAllBytes());
 
 			}
 				//ARViewClient.ApplyTo(ShowPlane, ShowStatistics, Debug, File);
@@ -309,7 +310,7 @@ namespace Fuse.Controls
 
 
 
-
+/*++
 		Selector _showPlaneName = "Plane";
 
 		[UXOriginSetter("SetPlane")]
@@ -326,7 +327,7 @@ namespace Fuse.Controls
 			OnPropertyChanged(_showPlaneName, origin);
 		}
 
-
+++ */
 		Selector _showStatisticsName = "Statistics";
 
 		[UXOriginSetter("SetStatistics")]

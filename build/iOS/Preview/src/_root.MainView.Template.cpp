@@ -23,7 +23,7 @@ namespace g{
 // static Template() :14
 static void MainView__Template__cctor__fn(uType* __type)
 {
-    MainView__Template::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[0/*"ScreenPage"*/]);
+    MainView__Template::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[0/*"ScreenPage"*/]);
 }
 
 static void MainView__Template_build(uType* type)

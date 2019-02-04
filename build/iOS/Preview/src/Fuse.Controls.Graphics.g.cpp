@@ -22,8 +22,8 @@ namespace Fuse{
 namespace Controls{
 namespace Graphics{
 
-// /usr/local/share/uno/Packages/Fuse.Controls/1.9.0/Graphics/ControlVisual.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls/1.10.0-rc1/Graphics/ControlVisual.uno
+// ---------------------------------------------------------------------------------
 
 // public abstract class ControlVisual<T> :4
 // {
@@ -167,8 +167,8 @@ void ControlVisual::ctor_4()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls/1.9.0/Graphics/Visual.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls/1.10.0-rc1/Graphics/Visual.uno
+// --------------------------------------------------------------------------
 
 // public abstract class Visual :5
 // {

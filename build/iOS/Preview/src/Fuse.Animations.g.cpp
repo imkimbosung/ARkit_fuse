@@ -200,8 +200,8 @@ namespace g{
 namespace Fuse{
 namespace Animations{
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/TriggerAnimation.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/TriggerAnimation.uno
+// -----------------------------------------------------------------------------
 
 // public enum AnimationVariant :8
 uEnumType* AnimationVariant_typeof()
@@ -216,8 +216,8 @@ uEnumType* AnimationVariant_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Animator.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Animator.uno
+// ---------------------------------------------------------------------
 
 // public abstract class Animator :68
 // {
@@ -330,8 +330,8 @@ void Animator::MixOp(int32_t value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Animator.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Animator.uno
+// ---------------------------------------------------------------------
 
 // internal abstract class AnimatorState :122
 // {
@@ -386,8 +386,8 @@ void AnimatorState::ctor_(::g::Fuse::Animations::CreateStateParams* p, ::g::Fuse
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Animator.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Animator.uno
+// ---------------------------------------------------------------------
 
 // internal enum AnimatorVariant :6
 uEnumType* AnimatorVariant_typeof()
@@ -403,8 +403,8 @@ uEnumType* AnimatorVariant_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Attract.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Attract.uno
+// --------------------------------------------------------------------
 
 // public sealed class Attract :41
 // {
@@ -479,8 +479,8 @@ Attract* Attract::New1(::g::Fuse::Reactive::Expression* value, ::g::Fuse::Animat
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Attractor.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Attractor.uno
+// ----------------------------------------------------------------------
 
 // public sealed class Attractor<T> :26
 // {
@@ -488,7 +488,7 @@ static void Attractor_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("target");
     ::STRINGS[1] = uString::Const("Motion should not be changed post-rooting");
-    ::STRINGS[2] = uString::Const("/usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Attractor.uno");
+    ::STRINGS[2] = uString::Const("/usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Attractor.uno");
     ::STRINGS[3] = uString::Const("set_Motion");
     ::TYPES[0] = ::g::Fuse::Motion::DestinationMotion_typeof();
     ::TYPES[1] = ::g::Fuse::Motion::Simulation::Simulation_typeof();
@@ -1051,8 +1051,8 @@ Attractor* Attractor::New3(uType* __type, ::g::Uno::UX::Property1* target)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Attract.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Attract.uno
+// --------------------------------------------------------------------
 
 // public sealed class AttractorConfig :19
 // {
@@ -1106,8 +1106,8 @@ AttractorConfig* AttractorConfig::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/AverageMixer.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/AverageMixer.uno
+// -------------------------------------------------------------------------
 
 // internal sealed class AverageMasterProperty<T> :17
 // {
@@ -1229,8 +1229,8 @@ AverageMasterProperty* AverageMasterProperty::New1(uType* __type, ::g::Uno::UX::
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/AverageMixer.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/AverageMixer.uno
+// -------------------------------------------------------------------------
 
 // internal sealed class AverageMasterTransform :57
 // {
@@ -1315,8 +1315,8 @@ AverageMasterTransform* AverageMasterTransform::New1(::g::Fuse::Visual* node, ::
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/AverageMixer.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/AverageMixer.uno
+// -------------------------------------------------------------------------
 
 // internal sealed class AverageMixer :7
 // {
@@ -1396,8 +1396,8 @@ AverageMixer* AverageMixer::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Easing.BackInImpl :320
 // {
@@ -1456,8 +1456,8 @@ Easing__BackInImpl* Easing__BackInImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Easing.BackInOutImpl :339
 // {
@@ -1522,8 +1522,8 @@ Easing__BackInOutImpl* Easing__BackInOutImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Easing.BackOutImpl :329
 // {
@@ -1583,8 +1583,8 @@ Easing__BackOutImpl* Easing__BackOutImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Easing.BounceInImpl :354
 // {
@@ -1646,8 +1646,8 @@ Easing__BounceInImpl* Easing__BounceInImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Easing.BounceInOutImpl :388
 // {
@@ -1713,8 +1713,8 @@ Easing__BounceInOutImpl* Easing__BounceInOutImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Easing.BounceOutImpl :362
 // {
@@ -1789,8 +1789,8 @@ Easing__BounceOutImpl* Easing__BounceOutImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Change.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Change.uno
+// -------------------------------------------------------------------
 
 // public sealed class Change<T> :35
 // {
@@ -2191,8 +2191,8 @@ Change* Change::New2(uType* __type, ::g::Uno::UX::Property1* target)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Easing.CircularInImpl :246
 // {
@@ -2253,8 +2253,8 @@ Easing__CircularInImpl* Easing__CircularInImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Easing.CircularInOutImpl :263
 // {
@@ -2321,8 +2321,8 @@ Easing__CircularInOutImpl* Easing__CircularInOutImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Easing.CircularOutImpl :254
 // {
@@ -2384,15 +2384,15 @@ Easing__CircularOutImpl* Easing__CircularOutImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Change.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Change.uno
+// -------------------------------------------------------------------
 
 // internal sealed class ContinuousTrackChangeState<T> :210
 // {
 static void ContinuousTrackChangeState_build(uType* type)
 {
     ::STRINGS[5] = uString::Const("Invalid Seek");
-    ::STRINGS[6] = uString::Const("/usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Change.uno");
+    ::STRINGS[6] = uString::Const("/usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Change.uno");
     ::TYPES[12] = ::g::Fuse::Animations::IMixer_typeof();
     ::TYPES[13] = ::g::Fuse::Animations::IMixerHandle_typeof();
     type->SetDependencies(
@@ -2493,8 +2493,8 @@ ContinuousTrackChangeState* ContinuousTrackChangeState::New1(uType* __type, ::g:
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/TrackAnimator.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/TrackAnimator.uno
+// --------------------------------------------------------------------------
 
 // internal abstract interface ContinuousTrackProvider :16
 // {
@@ -2508,8 +2508,8 @@ uInterfaceType* ContinuousTrackProvider_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Change.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Change.uno
+// -------------------------------------------------------------------
 
 // internal abstract class Converter<T> :242
 // {
@@ -2543,8 +2543,8 @@ void Converter::ctor_()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Change.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Change.uno
+// -------------------------------------------------------------------
 
 // internal sealed class ConverterDouble :291
 // {
@@ -2623,8 +2623,8 @@ ConverterDouble* ConverterDouble::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Change.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Change.uno
+// -------------------------------------------------------------------
 
 // internal sealed class ConverterFloat :248
 // {
@@ -2703,8 +2703,8 @@ ConverterFloat* ConverterFloat::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Change.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Change.uno
+// -------------------------------------------------------------------
 
 // internal sealed class ConverterFloat2 :270
 // {
@@ -2783,8 +2783,8 @@ ConverterFloat2* ConverterFloat2::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Change.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Change.uno
+// -------------------------------------------------------------------
 
 // internal sealed class ConverterFloat3 :277
 // {
@@ -2863,8 +2863,8 @@ ConverterFloat3* ConverterFloat3::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Change.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Change.uno
+// -------------------------------------------------------------------
 
 // internal sealed class ConverterFloat4 :284
 // {
@@ -2943,8 +2943,8 @@ ConverterFloat4* ConverterFloat4::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Change.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Change.uno
+// -------------------------------------------------------------------
 
 // internal sealed class ConverterSize :255
 // {
@@ -3003,7 +3003,7 @@ void ConverterSize__New1_fn(ConverterSize** __retval)
 void ConverterSize__Out_fn(ConverterSize* __this, ::g::Uno::Float4* value, ::g::Uno::UX::Size* __retval)
 {
     ::g::Uno::Float4 value_ = *value;
-    return *__retval = ::g::Uno::UX::Size__op_Implicit1(value_.X), void();
+    return *__retval = ::g::Uno::UX::Size__op_Implicit(value_.X), void();
 }
 
 uSStrong<ConverterSize*> ConverterSize::Singleton_;
@@ -3023,8 +3023,8 @@ ConverterSize* ConverterSize::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Change.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Change.uno
+// -------------------------------------------------------------------
 
 // internal sealed class ConverterSize2 :262
 // {
@@ -3083,7 +3083,7 @@ void ConverterSize2__New1_fn(ConverterSize2** __retval)
 void ConverterSize2__Out_fn(ConverterSize2* __this, ::g::Uno::Float4* value, ::g::Uno::UX::Size2* __retval)
 {
     ::g::Uno::Float4 value_ = *value;
-    return *__retval = ::g::Uno::UX::Size2__op_Implicit2(::g::Uno::Float2__New2(value_.X, value_.Y)), void();
+    return *__retval = ::g::Uno::UX::Size2__op_Implicit1(::g::Uno::Float2__New2(value_.X, value_.Y)), void();
 }
 
 uSStrong<ConverterSize2*> ConverterSize2::Singleton_;
@@ -3103,8 +3103,8 @@ ConverterSize2* ConverterSize2::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Animator.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Animator.uno
+// ---------------------------------------------------------------------
 
 // internal sealed class CreateStateParams :101
 // {
@@ -3157,8 +3157,8 @@ CreateStateParams* CreateStateParams::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // public sealed class CubicBezierEasing :449
 // {
@@ -3383,8 +3383,8 @@ CubicBezierEasing* CubicBezierEasing::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Easing.CubicInImpl :99
 // {
@@ -3442,8 +3442,8 @@ Easing__CubicInImpl* Easing__CubicInImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Easing.CubicInOutImpl :116
 // {
@@ -3507,8 +3507,8 @@ Easing__CubicInOutImpl* Easing__CubicInOutImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Easing.CubicOutImpl :107
 // {
@@ -3567,8 +3567,8 @@ Easing__CubicOutImpl* Easing__CubicOutImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Cycle.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Cycle.uno
+// ------------------------------------------------------------------
 
 // public sealed class Cycle<T> :60
 // {
@@ -4026,8 +4026,8 @@ Cycle* Cycle::New2(uType* __type, ::g::Uno::UX::Property1* Target1)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Cycle.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Cycle.uno
+// ------------------------------------------------------------------
 
 // public enum CycleRestore :20
 uEnumType* CycleRestore_typeof()
@@ -4042,15 +4042,15 @@ uEnumType* CycleRestore_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Cycle.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Cycle.uno
+// ------------------------------------------------------------------
 
 // internal sealed class CycleState<T> :241
 // {
 static void CycleState_build(uType* type)
 {
     ::STRINGS[8] = uString::Const("invalid seek");
-    ::STRINGS[9] = uString::Const("/usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Cycle.uno");
+    ::STRINGS[9] = uString::Const("/usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Cycle.uno");
     ::STRINGS[10] = uString::Const("Seek");
     ::TYPES[12] = ::g::Fuse::Animations::IMixer_typeof();
     ::TYPES[5] = ::g::Fuse::Internal::BlenderMap_typeof();
@@ -4189,8 +4189,8 @@ CycleState* CycleState::New1(uType* __type, ::g::Fuse::Animations::Cycle* animat
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Cycle.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Cycle.uno
+// ------------------------------------------------------------------
 
 // public enum CycleWaveform :7
 uEnumType* CycleWaveform_typeof()
@@ -4207,8 +4207,8 @@ uEnumType* CycleWaveform_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Motion/1.9.0/DestinationBehavior.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Motion/1.10.0-rc1/DestinationBehavior.uno
+// ----------------------------------------------------------------------------
 
 // internal sealed class DestinationBehavior<T> :13
 // {
@@ -4374,8 +4374,8 @@ DestinationBehavior* DestinationBehavior::New1(uType* __type)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/DiscreteKeyframeTrack.uno
-// -----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/DiscreteKeyframeTrack.uno
+// ----------------------------------------------------------------------------------
 
 // internal sealed class DiscreteKeyframeTrack :7
 // {
@@ -4561,8 +4561,8 @@ DiscreteKeyframeTrack* DiscreteKeyframeTrack::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/DiscreteMixer.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/DiscreteMixer.uno
+// --------------------------------------------------------------------------
 
 // internal sealed class DiscreteMasterProperty<T> :18
 // {
@@ -4647,8 +4647,8 @@ DiscreteMasterProperty* DiscreteMasterProperty::New1(uType* __type, ::g::Uno::UX
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/DiscreteMixer.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/DiscreteMixer.uno
+// --------------------------------------------------------------------------
 
 // internal sealed class DiscreteMasterTransform :41
 // {
@@ -4729,8 +4729,8 @@ DiscreteMasterTransform* DiscreteMasterTransform::New1(::g::Fuse::Visual* node, 
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/DiscreteMixer.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/DiscreteMixer.uno
+// --------------------------------------------------------------------------
 
 // internal sealed class DiscreteMixer :8
 // {
@@ -4810,8 +4810,8 @@ DiscreteMixer* DiscreteMixer::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/DiscreteSingleTrack.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/DiscreteSingleTrack.uno
+// --------------------------------------------------------------------------------
 
 // internal sealed class DiscreteSingleTrack :5
 // {
@@ -4929,15 +4929,15 @@ DiscreteSingleTrack* DiscreteSingleTrack::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Change.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Change.uno
+// -------------------------------------------------------------------
 
 // internal sealed class DiscreteTrackChangeState<T> :177
 // {
 static void DiscreteTrackChangeState_build(uType* type)
 {
     ::STRINGS[5] = uString::Const("Invalid Seek");
-    ::STRINGS[6] = uString::Const("/usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Change.uno");
+    ::STRINGS[6] = uString::Const("/usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Change.uno");
     ::TYPES[12] = ::g::Fuse::Animations::IMixer_typeof();
     ::TYPES[13] = ::g::Fuse::Animations::IMixerHandle_typeof();
     type->SetDependencies(
@@ -5037,8 +5037,8 @@ DiscreteTrackChangeState* DiscreteTrackChangeState::New1(uType* __type, ::g::Fus
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/TrackAnimator.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/TrackAnimator.uno
+// --------------------------------------------------------------------------
 
 // internal abstract interface DiscreteTrackProvider :24
 // {
@@ -5052,8 +5052,8 @@ uInterfaceType* DiscreteTrackProvider_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // public abstract class Easing :13
 // {
@@ -5222,8 +5222,8 @@ void Easing::ctor_()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // public delegate float EasingFunction(float f) :495
 uDelegateType* EasingFunction_typeof()
@@ -5237,8 +5237,8 @@ uDelegateType* EasingFunction_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // public static class EasingFunctions :503
 // {
@@ -5902,8 +5902,8 @@ float EasingFunctions::SinusoidalOut(float k)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/EasingTrack.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/EasingTrack.uno
+// ------------------------------------------------------------------------
 
 // internal sealed class EasingTrack :5
 // {
@@ -6023,8 +6023,8 @@ EasingTrack* EasingTrack::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Easing.ElasticInImpl :275
 // {
@@ -6093,8 +6093,8 @@ Easing__ElasticInImpl* Easing__ElasticInImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Easing.ElasticInOutImpl :303
 // {
@@ -6167,8 +6167,8 @@ Easing__ElasticInOutImpl* Easing__ElasticInOutImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Easing.ElasticOutImpl :289
 // {
@@ -6236,8 +6236,8 @@ Easing__ElasticOutImpl* Easing__ElasticOutImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Easing.ExponentialInImpl :212
 // {
@@ -6298,8 +6298,8 @@ Easing__ExponentialInImpl* Easing__ExponentialInImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Easing.ExponentialInOutImpl :228
 // {
@@ -6372,8 +6372,8 @@ Easing__ExponentialInOutImpl* Easing__ExponentialInOutImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Easing.ExponentialOutImpl :220
 // {
@@ -6434,8 +6434,8 @@ Easing__ExponentialOutImpl* Easing__ExponentialOutImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Mixer.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Mixer.uno
+// ------------------------------------------------------------------
 
 // internal sealed class FastMatrixTransform :292
 // {
@@ -6559,8 +6559,8 @@ FastMatrixTransform* FastMatrixTransform::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Mixer.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Mixer.uno
+// ------------------------------------------------------------------
 
 // protected struct MasterBase<T>.GFWResult :178
 // {
@@ -6577,6 +6577,7 @@ uStructType* MasterBase__GFWResult_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 2;
     options.GenericCount = 1;
     options.Alignment = alignof(MasterBase__GFWResult);
@@ -6588,8 +6589,8 @@ uStructType* MasterBase__GFWResult_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/TriggerAnimation.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/TriggerAnimation.uno
+// -----------------------------------------------------------------------------
 
 // internal abstract interface IBasePlayerFeedback :219
 // {
@@ -6603,8 +6604,8 @@ uInterfaceType* IBasePlayerFeedback_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Mixer.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Mixer.uno
+// ------------------------------------------------------------------
 
 // public abstract interface IMixer :22
 // {
@@ -6622,8 +6623,8 @@ uInterfaceType* IMixer_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Mixer.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Mixer.uno
+// ------------------------------------------------------------------
 
 // public abstract interface IMixerHandle<T> :28
 // {
@@ -6641,8 +6642,8 @@ uInterfaceType* IMixerHandle_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Mixer.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Mixer.uno
+// ------------------------------------------------------------------
 
 // internal abstract interface IMixerMaster :43
 // {
@@ -6656,8 +6657,8 @@ uInterfaceType* IMixerMaster_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/TriggerAnimation.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/TriggerAnimation.uno
+// -----------------------------------------------------------------------------
 
 // internal abstract interface IPlayerFeedback :225
 // {
@@ -6671,8 +6672,8 @@ uInterfaceType* IPlayerFeedback_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Resize.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Resize.uno
+// -------------------------------------------------------------------
 
 // public abstract interface IResize :5
 // {
@@ -6688,8 +6689,8 @@ uInterfaceType* IResize_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Resize.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Resize.uno
+// -------------------------------------------------------------------
 
 // public abstract interface IResizeMode :10
 // {
@@ -6705,8 +6706,8 @@ uInterfaceType* IResizeMode_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/TrackAnimator.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/TrackAnimator.uno
+// --------------------------------------------------------------------------
 
 // public abstract interface ITrackProvider :7
 // {
@@ -6720,8 +6721,8 @@ uInterfaceType* ITrackProvider_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/TriggerAnimation.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/TriggerAnimation.uno
+// -----------------------------------------------------------------------------
 
 // internal abstract interface IUnwrappedPlayerFeedback :230
 // {
@@ -6735,8 +6736,8 @@ uInterfaceType* IUnwrappedPlayerFeedback_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Keyframe.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Keyframe.uno
+// ---------------------------------------------------------------------
 
 // public sealed class Keyframe :41
 // {
@@ -7282,8 +7283,8 @@ Keyframe* Keyframe::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/SplineTrack.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/SplineTrack.uno
+// ------------------------------------------------------------------------
 
 // public enum KeyframeInterpolation :13
 uEnumType* KeyframeInterpolation_typeof()
@@ -7300,8 +7301,8 @@ uEnumType* KeyframeInterpolation_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/TrackAnimator.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/TrackAnimator.uno
+// --------------------------------------------------------------------------
 
 // internal abstract interface KeyframeTrack :32
 // {
@@ -7315,8 +7316,8 @@ uInterfaceType* KeyframeTrack_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Easing.LinearImpl :60
 // {
@@ -7374,8 +7375,8 @@ Easing__LinearImpl* Easing__LinearImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Mixer.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Mixer.uno
+// ------------------------------------------------------------------
 
 // internal abstract class MasterBase<T> :95
 // {
@@ -7573,8 +7574,8 @@ void MasterBase::Unregister(::g::Fuse::Animations::MixerHandle* handle)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Mixer.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Mixer.uno
+// ------------------------------------------------------------------
 
 // internal abstract class MasterProperty<T> :211
 // {
@@ -7583,7 +7584,7 @@ static void MasterProperty_build(uType* type)
     ::STRINGS[11] = uString::Const("The property ");
     ::STRINGS[12] = uString::Const(" of ");
     ::STRINGS[13] = uString::Const(" cannot be reliably animated because it does not provide an origin-setter. Animating this property may lead to visual glitches or inconsistencies.");
-    ::STRINGS[14] = uString::Const("/usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Mixer.uno");
+    ::STRINGS[14] = uString::Const("/usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Mixer.uno");
     ::STRINGS[15] = uString::Const("GiveOriginSetterWarning");
     type->SetBase(::g::Fuse::Animations::MasterBase_typeof()->MakeType(type->T(0), NULL));
     type->SetInterfaces(
@@ -7729,13 +7730,13 @@ void MasterProperty::GiveOriginSetterWarning()
     if (!_warningGiven)
     {
         _warningGiven = true;
-        ::g::Fuse::Diagnostics::UserWarning(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[11/*"The property "*/], ::g::Uno::UX::Selector__op_Implicit2(uPtr(Property)->Name())), ::STRINGS[12/*" of "*/]), uPtr(Property)->Object()), ::STRINGS[13/*" cannot be ...*/]), this, ::STRINGS[14/*"/usr/local/...*/], 275, ::STRINGS[15/*"GiveOriginS...*/]);
+        ::g::Fuse::Diagnostics::UserWarning(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[11/*"The property "*/], ::g::Uno::UX::Selector__op_Implicit1(uPtr(Property)->Name())), ::STRINGS[12/*" of "*/]), uPtr(Property)->Object()), ::STRINGS[13/*" cannot be ...*/]), this, ::STRINGS[14/*"/usr/local/...*/], 275, ::STRINGS[15/*"GiveOriginS...*/]);
     }
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Mixer.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Mixer.uno
+// ------------------------------------------------------------------
 
 // internal abstract interface MasterPropertyGet :207
 // {
@@ -7749,8 +7750,8 @@ uInterfaceType* MasterPropertyGet_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Mixer.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Mixer.uno
+// ------------------------------------------------------------------
 
 // internal abstract class MasterTransform :329
 // {
@@ -7831,8 +7832,8 @@ void MasterTransform::ctor_1(::g::Fuse::Visual* node, ::g::Fuse::Animations::Mix
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Mixer.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Mixer.uno
+// ------------------------------------------------------------------
 
 // internal sealed class Mixer :35
 // {
@@ -7921,8 +7922,8 @@ uObject* Mixer::DefaultDiscrete()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Mixer.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Mixer.uno
+// ------------------------------------------------------------------
 
 // internal abstract class MixerBase :45
 // {
@@ -8056,15 +8057,15 @@ void MixerBase::Unused(uObject* mb)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Mixer.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Mixer.uno
+// ------------------------------------------------------------------
 
 // internal sealed class MixerHandle<T> :360
 // {
 static void MixerHandle_build(uType* type)
 {
     ::STRINGS[16] = uString::Const("invalid MixerHandle.Set post-Unregister");
-    ::STRINGS[14] = uString::Const("/usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Mixer.uno");
+    ::STRINGS[14] = uString::Const("/usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Mixer.uno");
     ::STRINGS[17] = uString::Const("Invalid MixerHandle.RestValue post-Unregister");
     type->SetDependencies(
         ::g::Uno::Diagnostics::Debug_typeof());
@@ -8235,8 +8236,8 @@ MixerHandle* MixerHandle::New1(uType* __type, ::g::Fuse::Animations::MasterBase*
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Mixer.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Mixer.uno
+// ------------------------------------------------------------------
 
 // public enum MixOp :12
 uEnumType* MixOp_typeof()
@@ -8252,8 +8253,8 @@ uEnumType* MixOp_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/TransformAnimator.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/TransformAnimator.uno
+// ------------------------------------------------------------------------------
 
 // public sealed class Move :214
 // {
@@ -8352,8 +8353,8 @@ Move* Move::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Nothing.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Nothing.uno
+// --------------------------------------------------------------------
 
 // public sealed class Nothing :10
 // {
@@ -8415,8 +8416,8 @@ Nothing* Nothing::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Nothing.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Nothing.uno
+// --------------------------------------------------------------------
 
 // internal sealed class NothingAnimatorState :18
 // {
@@ -8468,8 +8469,8 @@ NothingAnimatorState* NothingAnimatorState::New1(::g::Fuse::Animations::Nothing*
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/OpenAnimator.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/OpenAnimator.uno
+// -------------------------------------------------------------------------
 
 // public abstract class OpenAnimator :14
 // {
@@ -8589,8 +8590,8 @@ void OpenAnimator::ResetDuration()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/OpenAnimator.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/OpenAnimator.uno
+// -------------------------------------------------------------------------
 
 // internal abstract class OpenAnimatorState :57
 // {
@@ -8675,8 +8676,8 @@ void OpenAnimatorState::ctor_1(::g::Fuse::Animations::OpenAnimator* animator, ::
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Player.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Player.uno
+// -------------------------------------------------------------------
 
 // internal sealed class Player :174
 // {
@@ -9257,8 +9258,8 @@ Player* Player::New1(::g::Fuse::Visual* elm, ::g::Fuse::Animations::TriggerAnima
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/TriggerAnimation.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/TriggerAnimation.uno
+// -----------------------------------------------------------------------------
 
 // internal enum PlayerFeedbackFlags :212
 uEnumType* PlayerFeedbackFlags_typeof()
@@ -9274,8 +9275,8 @@ uEnumType* PlayerFeedbackFlags_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Player.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Player.uno
+// -------------------------------------------------------------------
 
 // internal sealed class PlayerPart :14
 // {
@@ -9537,8 +9538,8 @@ PlayerPart* PlayerPart::New1(double currentProgress)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/TriggerAnimation.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/TriggerAnimation.uno
+// -----------------------------------------------------------------------------
 
 // public enum PlayMode :14
 uEnumType* PlayMode_typeof()
@@ -9553,8 +9554,8 @@ uEnumType* PlayMode_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Easing.QuadraticInImpl :68
 // {
@@ -9612,8 +9613,8 @@ Easing__QuadraticInImpl* Easing__QuadraticInImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Easing.QuadraticInOutImpl :84
 // {
@@ -9677,8 +9678,8 @@ Easing__QuadraticInOutImpl* Easing__QuadraticInOutImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Easing.QuadraticOutImpl :76
 // {
@@ -9736,8 +9737,8 @@ Easing__QuadraticOutImpl* Easing__QuadraticOutImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Easing.QuarticInImpl :129
 // {
@@ -9795,8 +9796,8 @@ Easing__QuarticInImpl* Easing__QuarticInImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Easing.QuarticInOutImpl :146
 // {
@@ -9860,8 +9861,8 @@ Easing__QuarticInOutImpl* Easing__QuarticInOutImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Easing.QuarticOutImpl :137
 // {
@@ -9920,8 +9921,8 @@ Easing__QuarticOutImpl* Easing__QuarticOutImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Easing.QuinticInImpl :158
 // {
@@ -9979,8 +9980,8 @@ Easing__QuinticInImpl* Easing__QuinticInImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Easing.QuinticInOutImpl :175
 // {
@@ -10044,8 +10045,8 @@ Easing__QuinticInOutImpl* Easing__QuinticInOutImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Easing.QuinticOutImpl :166
 // {
@@ -10104,8 +10105,8 @@ Easing__QuinticOutImpl* Easing__QuinticOutImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/RangeAdapter.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/RangeAdapter.uno
+// -------------------------------------------------------------------------
 
 // public sealed class RangeAdapter<T> :36
 // {
@@ -10384,15 +10385,15 @@ RangeAdapter* RangeAdapter::New2(uType* __type, ::g::Uno::UX::Property1* source)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/RangeAdapter.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/RangeAdapter.uno
+// -------------------------------------------------------------------------
 
 // internal static class RangeAdapterHelpers :6
 // {
 // static generated RangeAdapterHelpers() :6
 static void RangeAdapterHelpers__cctor__fn(uType* __type)
 {
-    RangeAdapterHelpers::_valueName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[18/*"Value"*/]);
+    RangeAdapterHelpers::_valueName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[18/*"Value"*/]);
 }
 
 static void RangeAdapterHelpers_build(uType* type)
@@ -10419,8 +10420,8 @@ uClassType* RangeAdapterHelpers_typeof()
 ::g::Uno::UX::Selector RangeAdapterHelpers::_valueName_;
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Resize.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Resize.uno
+// -------------------------------------------------------------------
 
 // public sealed class Resize :32
 // {
@@ -10644,15 +10645,15 @@ Resize* Resize::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Resize.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Resize.uno
+// -------------------------------------------------------------------
 
 // internal sealed class ResizeAnimatorState :84
 // {
 static void ResizeAnimatorState_build(uType* type)
 {
     ::STRINGS[19] = uString::Const("Resize started without a Target node");
-    ::STRINGS[20] = uString::Const("/usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Resize.uno");
+    ::STRINGS[20] = uString::Const("/usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Resize.uno");
     ::STRINGS[21] = uString::Const(".ctor");
     ::STRINGS[22] = uString::Const("Resize started without as RelativeTo");
     ::TYPES[63] = ::g::Fuse::Animations::IResize_typeof();
@@ -10813,8 +10814,8 @@ ResizeAnimatorState* ResizeAnimatorState::New1(::g::Fuse::Animations::Resize* r,
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/TransformAnimator.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/TransformAnimator.uno
+// ------------------------------------------------------------------------------
 
 // public sealed class Rotate :269
 // {
@@ -10986,8 +10987,8 @@ Rotate* Rotate::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/TransformAnimator.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/TransformAnimator.uno
+// ------------------------------------------------------------------------------
 
 // public sealed class Scale :331
 // {
@@ -11113,8 +11114,8 @@ Scale* Scale::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Animator.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Animator.uno
+// ---------------------------------------------------------------------
 
 // internal enum SeekDirection :108
 uEnumType* SeekDirection_typeof()
@@ -11129,8 +11130,8 @@ uEnumType* SeekDirection_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/TriggerAnimation.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/TriggerAnimation.uno
+// -----------------------------------------------------------------------------
 
 // public enum TriggerAnimationState.SeekFlags :482
 uEnumType* TriggerAnimationState__SeekFlags_typeof()
@@ -11145,8 +11146,8 @@ uEnumType* TriggerAnimationState__SeekFlags_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Animator.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Animator.uno
+// ---------------------------------------------------------------------
 
 // internal enum SeekResult :115
 uEnumType* SeekResult_typeof()
@@ -11162,8 +11163,8 @@ uEnumType* SeekResult_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Easing.SinusoidalInImpl :188
 // {
@@ -11224,8 +11225,8 @@ Easing__SinusoidalInImpl* Easing__SinusoidalInImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Easing.SinusoidalInOutImpl :204
 // {
@@ -11286,8 +11287,8 @@ Easing__SinusoidalInOutImpl* Easing__SinusoidalInOutImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Easing.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Easing.uno
+// ---------------------------------------------------------------
 
 // internal sealed class Easing.SinusoidalOutImpl :196
 // {
@@ -11348,8 +11349,8 @@ Easing__SinusoidalOutImpl* Easing__SinusoidalOutImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/TransformAnimator.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/TransformAnimator.uno
+// ------------------------------------------------------------------------------
 
 // public sealed class Skew :376
 // {
@@ -11523,8 +11524,8 @@ Skew* Skew::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Spin.uno
-// ------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Spin.uno
+// -----------------------------------------------------------------
 
 // public sealed class Spin :18
 // {
@@ -11641,15 +11642,15 @@ Spin* Spin::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Spin.uno
-// ------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Spin.uno
+// -----------------------------------------------------------------
 
 // internal sealed class SpinState :47
 // {
 static void SpinState_build(uType* type)
 {
     ::STRINGS[23] = uString::Const("Invalid seek");
-    ::STRINGS[24] = uString::Const("/usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Spin.uno");
+    ::STRINGS[24] = uString::Const("/usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Spin.uno");
     ::TYPES[12] = ::g::Fuse::Animations::IMixer_typeof();
     ::TYPES[67] = ::g::Fuse::Animations::IMixerHandle_typeof()->MakeType(::g::Fuse::Transform_typeof(), NULL);
     type->SetDependencies(
@@ -11756,8 +11757,8 @@ SpinState* SpinState::New1(::g::Fuse::Animations::Spin* animator, ::g::Fuse::Ani
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/SplineTrack.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/SplineTrack.uno
+// ------------------------------------------------------------------------
 
 // internal sealed class SplineTrack :26
 // {
@@ -12066,15 +12067,15 @@ SplineTrack* SplineTrack::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Attract.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Attract.uno
+// --------------------------------------------------------------------
 
 // private sealed class Attract.Subscription :61
 // {
 static void Attract__Subscription_build(uType* type)
 {
     ::STRINGS[25] = uString::Const("Unexpected size for attract: ");
-    ::STRINGS[26] = uString::Const("/usr/local/share/uno/Packages/Fuse.Animations/1.9.0/Attract.uno");
+    ::STRINGS[26] = uString::Const("/usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/Attract.uno");
     ::STRINGS[27] = uString::Const("NeedSim");
     ::TYPES[69] = ::g::Fuse::Animations::DestinationBehavior_typeof()->MakeType(::g::Uno::Float4_typeof(), NULL);
     ::TYPES[70] = ::g::Uno::IDisposable_typeof();
@@ -12392,8 +12393,8 @@ Attract__Subscription* Attract__Subscription::New1(::g::Fuse::Animations::Attrac
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/TrackAnimator.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/TrackAnimator.uno
+// --------------------------------------------------------------------------
 
 // public abstract class TrackAnimator :48
 // {
@@ -12793,8 +12794,8 @@ void TrackAnimator::Weight(double value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/TrackAnimator.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/TrackAnimator.uno
+// --------------------------------------------------------------------------
 
 // internal abstract class TrackAnimatorState :266
 // {
@@ -12959,8 +12960,8 @@ bool TrackAnimatorState::IsBackward()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/TrackAnimator.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/TrackAnimator.uno
+// --------------------------------------------------------------------------
 
 // internal abstract interface TrackProvider :10
 // {
@@ -12974,8 +12975,8 @@ uInterfaceType* TrackProvider_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/TransformAnimator.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/TransformAnimator.uno
+// ------------------------------------------------------------------------------
 
 // public abstract class TransformAnimator<TransformType> :25
 // {
@@ -13217,15 +13218,15 @@ void TransformAnimator::Z(float value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/TransformAnimator.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/TransformAnimator.uno
+// ------------------------------------------------------------------------------
 
 // internal sealed class TransformAnimatorState<TransformType> :132
 // {
 static void TransformAnimatorState_build(uType* type)
 {
     ::STRINGS[23] = uString::Const("Invalid seek");
-    ::STRINGS[28] = uString::Const("/usr/local/share/uno/Packages/Fuse.Animations/1.9.0/TransformAnimator.uno");
+    ::STRINGS[28] = uString::Const("/usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/TransformAnimator.uno");
     ::TYPES[12] = ::g::Fuse::Animations::IMixer_typeof();
     ::TYPES[87] = ::g::Uno::Action1_typeof()->MakeType(::g::Fuse::Transform_typeof(), NULL);
     ::TYPES[88] = ::g::Fuse::Transform_typeof();
@@ -13346,8 +13347,8 @@ TransformAnimatorState* TransformAnimatorState::New1(uType* __type, ::g::Fuse::A
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/TransformAnimator.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/TransformAnimator.uno
+// ------------------------------------------------------------------------------
 
 // internal enum TransformPriority :5
 uEnumType* TransformPriority_typeof()
@@ -13364,8 +13365,8 @@ uEnumType* TransformPriority_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/TriggerAnimation.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/TriggerAnimation.uno
+// -----------------------------------------------------------------------------
 
 // public sealed class TriggerAnimation :25
 // {
@@ -13834,8 +13835,8 @@ TriggerAnimation* TriggerAnimation::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Animations/1.9.0/TriggerAnimation.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Animations/1.10.0-rc1/TriggerAnimation.uno
+// -----------------------------------------------------------------------------
 
 // internal sealed class TriggerAnimationState :241
 // {
@@ -14308,8 +14309,8 @@ TriggerAnimationState* TriggerAnimationState::New1(::g::Fuse::Animations::Trigge
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Motion/1.9.0/DestinationBehavior.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Motion/1.10.0-rc1/DestinationBehavior.uno
+// ----------------------------------------------------------------------------
 
 // public delegate void DestinationBehavior<T>.ValueHandler(T value) :17
 uDelegateType* DestinationBehavior__ValueHandler_typeof()

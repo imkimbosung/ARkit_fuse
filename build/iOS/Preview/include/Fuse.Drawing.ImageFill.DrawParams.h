@@ -1,11 +1,11 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Drawing/ImageFill.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Drawing/ImageFill.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Uno.Float2.h>
 #include <Uno.Float4.h>
 #include <Uno.Graphics.SamplerState.h>
-#include <Uno.Object.h>
+#include <Uno.ValueType.h>
 namespace g{namespace Fuse{namespace Drawing{struct ImageFill__DrawParams;}}}
 namespace g{namespace Uno{namespace Graphics{struct Texture2D;}}}
 

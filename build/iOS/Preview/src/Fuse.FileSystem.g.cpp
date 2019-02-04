@@ -61,8 +61,8 @@ namespace g{
 namespace Fuse{
 namespace FileSystem{
 
-// /usr/local/share/uno/Packages/Fuse.FileSystem/1.9.0/FileSystemOperations.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.FileSystem/1.10.0-rc1/FileSystemOperations.uno
+// ---------------------------------------------------------------------------------
 
 // private sealed class FileSystemOperations.Closure<T1, TResult> :262
 // {
@@ -112,8 +112,8 @@ void FileSystemOperations__Closure__New1_fn(uType* __type, uDelegate* del, void*
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.FileSystem/1.9.0/FileSystemOperations.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.FileSystem/1.10.0-rc1/FileSystemOperations.uno
+// ---------------------------------------------------------------------------------
 
 // private sealed class FileSystemOperations.Closure<T1, T2, TResult> :280
 // {
@@ -165,8 +165,8 @@ void FileSystemOperations__Closure1__New1_fn(uType* __type, uDelegate* del, void
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.FileSystem/1.9.0/FileSystemModule.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.FileSystem/1.10.0-rc1/FileSystemModule.uno
+// -----------------------------------------------------------------------------
 
 // public sealed class FileSystemModule :43
 // {
@@ -973,8 +973,8 @@ uObject* FileSystemModule::ToScriptingDate(::g::Fuse::Scripting::Context* contex
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.FileSystem/1.9.0/FileSystemOperations.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.FileSystem/1.10.0-rc1/FileSystemOperations.uno
+// ---------------------------------------------------------------------------------
 
 // internal sealed class FileSystemOperations :8
 // {
@@ -1552,8 +1552,8 @@ FileSystemOperations* FileSystemOperations::New2(uObject* dispatcher)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.FileSystem/1.9.0/Nothing.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.FileSystem/1.10.0-rc1/Nothing.uno
+// --------------------------------------------------------------------
 
 // internal sealed class Nothing :4
 // {
@@ -1601,8 +1601,8 @@ Nothing* Nothing::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.FileSystem/1.9.0/PathTools.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.FileSystem/1.10.0-rc1/PathTools.uno
+// ----------------------------------------------------------------------
 
 // internal static class PathTools :6
 // {

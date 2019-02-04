@@ -38,7 +38,7 @@ void ScreenPage__New5_fn(::g::Fuse::Navigation::Router* router1, ScreenPage** __
 struct ScreenPage : ::g::Fuse::Controls::Page
 {
     uStrong< ::g::Fuse::Navigation::Router*> router;
-    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb8;
+    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb9;
     uStrong< ::g::Uno::UX::NameTable*> __g_nametable1;
     static uSStrong<uArray*> __g_static_nametable1_;
     static uSStrong<uArray*>& __g_static_nametable1() { return ScreenPage_typeof()->Init(), __g_static_nametable1_; }

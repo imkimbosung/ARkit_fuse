@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/Actions/Playback.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/Actions/Playback.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

@@ -83,7 +83,7 @@ static void MainView__cctor_1_fn(uType* __type)
     ::g::Fuse::Resources::MemoryPolicy_typeof()->Init();
     ::g::Fuse::Font_typeof()->Init();
     ::g::Fuse::ScalingModes_typeof()->Init();
-    MainView::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("router"));
+    MainView::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("router"));
     ::g::Uno::UX::Resource::SetGlobalKey(::g::Fuse::Reactive::DeviceCaps::Device(), uString::Const("Device"));
     ::g::Uno::UX::Resource::SetGlobalKey(::g::Fuse::Animations::Easing::Linear(), uString::Const("Linear"));
     ::g::Uno::UX::Resource::SetGlobalKey(::g::Fuse::Animations::Easing::QuadraticIn(), uString::Const("QuadraticIn"));

@@ -1,9 +1,9 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/LayoutParams.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/LayoutParams.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Uno.Float2.h>
-#include <Uno.Object.h>
+#include <Uno.ValueType.h>
 namespace g{namespace Fuse{struct LayoutParams;}}
 namespace g{namespace Uno{struct Float4;}}
 

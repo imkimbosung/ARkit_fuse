@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Motion/1.9.0/Simulation/ElasticForce.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Motion/1.10.0-rc1/Simulation/ElasticForce.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

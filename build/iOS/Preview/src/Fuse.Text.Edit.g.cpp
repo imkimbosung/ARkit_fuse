@@ -25,8 +25,8 @@ namespace Fuse{
 namespace Text{
 namespace Edit{
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Edit.uno
-// ------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Edit.uno
+// -----------------------------------------------------------
 
 // internal struct Caret :9
 // {
@@ -45,6 +45,7 @@ uStructType* Caret_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 4;
     options.Alignment = alignof(Caret);
     options.ValueSize = sizeof(Caret);
@@ -55,9 +56,9 @@ uStructType* Caret_typeof()
 }
 
 // public Caret(int cluster, int lineIndex, int runIndex, float2 visualPos) :16
-void Caret__ctor__fn(Caret* __this, int32_t* cluster, int32_t* lineIndex, int32_t* runIndex, ::g::Uno::Float2* visualPos)
+void Caret__ctor_1_fn(Caret* __this, int32_t* cluster, int32_t* lineIndex, int32_t* runIndex, ::g::Uno::Float2* visualPos)
 {
-    __this->ctor_(*cluster, *lineIndex, *runIndex, *visualPos);
+    __this->ctor_1(*cluster, *lineIndex, *runIndex, *visualPos);
 }
 
 // public Caret New(int cluster, int lineIndex, int runIndex, float2 visualPos) :16
@@ -67,7 +68,7 @@ void Caret__New1_fn(int32_t* cluster, int32_t* lineIndex, int32_t* runIndex, ::g
 }
 
 // public Caret(int cluster, int lineIndex, int runIndex, float2 visualPos) [instance] :16
-void Caret::ctor_(int32_t cluster, int32_t lineIndex, int32_t runIndex, ::g::Uno::Float2 visualPos)
+void Caret::ctor_1(int32_t cluster, int32_t lineIndex, int32_t runIndex, ::g::Uno::Float2 visualPos)
 {
     Cluster = cluster;
     LineIndex = lineIndex;
@@ -79,13 +80,13 @@ void Caret::ctor_(int32_t cluster, int32_t lineIndex, int32_t runIndex, ::g::Uno
 Caret Caret__New1(int32_t cluster, int32_t lineIndex, int32_t runIndex, ::g::Uno::Float2 visualPos)
 {
     Caret obj1;
-    obj1.ctor_(cluster, lineIndex, runIndex, visualPos);
+    obj1.ctor_1(cluster, lineIndex, runIndex, visualPos);
     return obj1;
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Edit.uno
-// ------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Edit.uno
+// -----------------------------------------------------------
 
 // public struct CaretContext :25
 // {
@@ -124,6 +125,7 @@ uStructType* CaretContext_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 4;
     options.DependencyCount = 1;
     options.Alignment = alignof(CaretContext);
@@ -135,9 +137,9 @@ uStructType* CaretContext_typeof()
 }
 
 // public CaretContext(Uno.Collections.List<Uno.Collections.List<Fuse.Text.PositionedRun>> pruns, string source) :32
-void CaretContext__ctor__fn(CaretContext* __this, ::g::Uno::Collections::List* pruns, uString* source)
+void CaretContext__ctor_1_fn(CaretContext* __this, ::g::Uno::Collections::List* pruns, uString* source)
 {
-    __this->ctor_(pruns, source);
+    __this->ctor_1(pruns, source);
 }
 
 // public string Backspace(Fuse.Text.Edit.CaretIndex& i) :362
@@ -279,7 +281,7 @@ void CaretContext__WeightedSquaredDist_fn(::g::Uno::Float2* p, ::g::Uno::Float2*
 }
 
 // public CaretContext(Uno.Collections.List<Uno.Collections.List<Fuse.Text.PositionedRun>> pruns, string source) [instance] :32
-void CaretContext::ctor_(::g::Uno::Collections::List* pruns, uString* source)
+void CaretContext::ctor_1(::g::Uno::Collections::List* pruns, uString* source)
 {
     uStackFrame __("Fuse.Text.Edit.CaretContext", ".ctor(Uno.Collections.List<Uno.Collections.List<Fuse.Text.PositionedRun>>,string)");
     _runs = pruns;
@@ -695,7 +697,7 @@ void CaretContext__LerpClustersRTL(uString* source, int32_t cluster1, ::g::Uno::
 CaretContext CaretContext__New1(::g::Uno::Collections::List* pruns, uString* source)
 {
     CaretContext obj1;
-    obj1.ctor_(pruns, source);
+    obj1.ctor_1(pruns, source);
     return obj1;
 }
 
@@ -716,8 +718,8 @@ float CaretContext__WeightedSquaredDist(::g::Uno::Float2 p, ::g::Uno::Float2 q, 
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Edit.uno
-// ------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Edit.uno
+// -----------------------------------------------------------
 
 // public enum CaretIndex :7
 uEnumType* CaretIndex_typeof()

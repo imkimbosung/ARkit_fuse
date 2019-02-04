@@ -1,10 +1,10 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Text/1.9.0/FontFace.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/FontFace.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Text.Glyph.h>
 #include <Uno.Float2.h>
-#include <Uno.Object.h>
+#include <Uno.ValueType.h>
 namespace g{namespace Fuse{namespace Text{struct PositionedGlyph;}}}
 
 namespace g{
@@ -14,7 +14,7 @@ namespace Text{
 // public struct PositionedGlyph :22
 // {
 uStructType* PositionedGlyph_typeof();
-void PositionedGlyph__ctor__fn(PositionedGlyph* __this, ::g::Fuse::Text::Glyph* glyph, ::g::Uno::Float2* advance, ::g::Uno::Float2* offset, int32_t* cluster);
+void PositionedGlyph__ctor_1_fn(PositionedGlyph* __this, ::g::Fuse::Text::Glyph* glyph, ::g::Uno::Float2* advance, ::g::Uno::Float2* offset, int32_t* cluster);
 void PositionedGlyph__get_Advance_fn(PositionedGlyph* __this, ::g::Uno::Float2* __retval);
 void PositionedGlyph__set_Advance_fn(PositionedGlyph* __this, ::g::Uno::Float2* value);
 void PositionedGlyph__get_Glyph_fn(PositionedGlyph* __this, ::g::Fuse::Text::Glyph* __retval);
@@ -28,7 +28,7 @@ struct PositionedGlyph
     ::g::Uno::Float2 _Advance;
     ::g::Fuse::Text::Glyph _Glyph;
 
-    void ctor_(::g::Fuse::Text::Glyph glyph, ::g::Uno::Float2 advance, ::g::Uno::Float2 offset, int32_t cluster);
+    void ctor_1(::g::Fuse::Text::Glyph glyph, ::g::Uno::Float2 advance, ::g::Uno::Float2 offset, int32_t cluster);
     ::g::Uno::Float2 Advance();
     void Advance(::g::Uno::Float2 value);
     ::g::Fuse::Text::Glyph Glyph();

@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/ScrollView.ux.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/ScrollView.ux.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

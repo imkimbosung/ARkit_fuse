@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Backends/CPlusPlus/Uno/ObjectModel.cpp.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Backends/CPlusPlus/Uno/ObjectModel.cpp.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Uno/_internal.h>
@@ -21,12 +21,14 @@
 #include <Uno.ArgumentNullException.h>
 #include <Uno.ArgumentOutOfRangeException.h>
 #include <Uno.Delegate.h>
+#include <Uno.Enum.h>
 #include <Uno.IndexOutOfRangeException.h>
 #include <Uno.InvalidCastException.h>
 #include <Uno.InvalidOperationException.h>
 #include <Uno.NullReferenceException.h>
 #include <Uno.TypeInitializationException.h>
 #include <Uno.Type.h>
+#include <Uno.ValueType.h>
 
 #ifdef DEBUG_GENERICS
 #include <sstream>
@@ -194,7 +196,7 @@ static uType* uNewType(uint32_t type, const char* name, const uTypeOptions& opti
         memcpy((uint8_t*)result + offset, (uint8_t*)base + offset, base->TypeSize - offset);
         result->Base = base;
     }
-    
+
     _RuntimeTypes->push_back(result);
     return result;
 }
@@ -1198,6 +1200,9 @@ uEnumType* uEnumType::New(const char* name, uType* base, size_t literalCount)
     type->Base = base;
     type->LiteralCount = literalCount;
     type->Literals = (uEnumLiteral*)((uint8_t*)type + sizeof(uEnumType));
+    type->fp_GetHashCode = ::g::Uno::ValueType__GetHashCode_fn;
+    type->fp_Equals = ::g::Uno::ValueType__Equals_fn;
+    type->fp_ToString = ::g::Uno::Enum__ToString_fn;
 
 //#if #(REFLECTION:Defined)
     uRegisterType(type);
@@ -1319,7 +1324,7 @@ static void uStruct_GetHashCode(uObject* object, int32_t* result)
     uStructType* type = (uStructType*)object->__type;
     type->fp_GetHashCode_struct
         ? (*type->fp_GetHashCode_struct)((uint8_t*)object + sizeof(uObject), type, result)
-        : ::g::Uno::Object__GetHashCode_fn(object, result);
+        : ::g::Uno::ValueType__GetHashCode_fn(object, result);
 }
 
 static void uStruct_Equals(uObject* obj1, uObject* obj2, bool* result)
@@ -1328,7 +1333,7 @@ static void uStruct_Equals(uObject* obj1, uObject* obj2, bool* result)
     uStructType* type = (uStructType*)obj1->__type;
     type->fp_Equals_struct
         ? (*type->fp_Equals_struct)((uint8_t*)obj1 + sizeof(uObject), type, obj2, result)
-        : ::g::Uno::Object__Equals_fn(obj1, obj2, result);
+        : ::g::Uno::ValueType__Equals_fn(obj1, obj2, result);
 }
 
 static void uStruct_ToString(uObject* object, uString** result)

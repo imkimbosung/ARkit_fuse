@@ -42,7 +42,7 @@ namespace g{
 static void ARscreen__cctor_4_fn(uType* __type)
 {
     ARscreen::__g_static_nametable1_ = uArray::Init<uString*>(::TYPES[0/*string[]*/], 3, ::STRINGS[0/*"router"*/], ::STRINGS[1/*"ARView"*/], ::STRINGS[2/*"temp_eb0"*/]);
-    ARscreen::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[1/*"ARView"*/]);
+    ARscreen::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[1/*"ARView"*/]);
 }
 
 static void ARscreen_build(uType* type)
@@ -214,7 +214,6 @@ void ARscreen::InitializeUX()
     uPtr(ARView)->Name(ARscreen::__selector0_);
     uPtr(ARView)->SourceLineNumber(10);
     uPtr(ARView)->SourceFileName(::STRINGS[4/*"Pages/ARscr...*/]);
-    uPtr(ARView)->PlaneFile(::g::Uno::UX::BundleFileSource::New1(::g::AR_example_bundle::tron_grid738bfc87()));
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(ARView)->Children()), ::TYPES[1/*Uno.Collections.ICollection<Fuse.Node>*/]), temp4);
     temp4->Width(::g::Uno::UX::Size__New1(30.0f, 1));
     temp4->Height(::g::Uno::UX::Size__New1(40.0f, 1));

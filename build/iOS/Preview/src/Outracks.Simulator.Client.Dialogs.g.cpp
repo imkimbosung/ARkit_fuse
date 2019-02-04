@@ -67,7 +67,7 @@ namespace Dialogs{
 // static LoadingScreen() :38
 static void LoadingScreen__cctor_4_fn(uType* __type)
 {
-    LoadingScreen::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[0/*"Value"*/]);
+    LoadingScreen::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[0/*"Value"*/]);
 }
 
 static void LoadingScreen_build(uType* type)
@@ -321,7 +321,7 @@ void LoadingScreen::SetHeader(uString* value, uObject* origin)
     if (::g::Uno::String::op_Inequality(value, _field_Header))
     {
         _field_Header = value;
-        OnPropertyChanged1(::g::Uno::UX::Selector__op_Implicit1(::STRINGS[2/*"Header"*/]), origin);
+        OnPropertyChanged1(::g::Uno::UX::Selector__op_Implicit(::STRINGS[2/*"Header"*/]), origin);
     }
 }
 
@@ -333,7 +333,7 @@ void LoadingScreen::SetMessage(uString* value, uObject* origin)
     if (::g::Uno::String::op_Inequality(value, _field_Message))
     {
         _field_Message = value;
-        OnPropertyChanged1(::g::Uno::UX::Selector__op_Implicit1(::STRINGS[3/*"Message"*/]), origin);
+        OnPropertyChanged1(::g::Uno::UX::Selector__op_Implicit(::STRINGS[3/*"Message"*/]), origin);
     }
 }
 
@@ -354,8 +354,8 @@ LoadingScreen* LoadingScreen::New4()
 // static ModalDialog() :56
 static void ModalDialog__cctor_4_fn(uType* __type)
 {
-    ModalDialog::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[0/*"Value"*/]);
-    ModalDialog::__selector1_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[4/*"ButtonGrid"*/]);
+    ModalDialog::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[0/*"Value"*/]);
+    ModalDialog::__selector1_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[4/*"ButtonGrid"*/]);
 }
 
 static void ModalDialog_build(uType* type)
@@ -736,7 +736,7 @@ void ModalDialog::SetBody(uString* value, uObject* origin)
     if (::g::Uno::String::op_Inequality(value, _field_Body))
     {
         _field_Body = value;
-        OnPropertyChanged1(::g::Uno::UX::Selector__op_Implicit1(::STRINGS[9/*"Body"*/]), origin);
+        OnPropertyChanged1(::g::Uno::UX::Selector__op_Implicit(::STRINGS[9/*"Body"*/]), origin);
     }
 }
 
@@ -748,7 +748,7 @@ void ModalDialog::SetDetails(uString* value, uObject* origin)
     if (::g::Uno::String::op_Inequality(value, _field_Details))
     {
         _field_Details = value;
-        OnPropertyChanged1(::g::Uno::UX::Selector__op_Implicit1(::STRINGS[10/*"Details"*/]), origin);
+        OnPropertyChanged1(::g::Uno::UX::Selector__op_Implicit(::STRINGS[10/*"Details"*/]), origin);
     }
 }
 
@@ -760,7 +760,7 @@ void ModalDialog::SetHeader(uString* value, uObject* origin)
     if (::g::Uno::String::op_Inequality(value, _field_Header))
     {
         _field_Header = value;
-        OnPropertyChanged1(::g::Uno::UX::Selector__op_Implicit1(::STRINGS[2/*"Header"*/]), origin);
+        OnPropertyChanged1(::g::Uno::UX::Selector__op_Implicit(::STRINGS[2/*"Header"*/]), origin);
     }
 }
 

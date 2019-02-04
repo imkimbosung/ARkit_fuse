@@ -1,13 +1,13 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/OpenGL/GLTextureHandle.uno.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/OpenGL/GLTextureHandle.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.ValueType.h>
 
 namespace g{
 namespace OpenGL{
 
-// public extern struct GLTextureHandle :11
+// public extern struct GLTextureHandle :10
 // {
 uStructType* GLTextureHandle_typeof();
 void GLTextureHandle__Equals_fn(uint32_t* __this, uType* __type, uObject* obj, bool* __retval);

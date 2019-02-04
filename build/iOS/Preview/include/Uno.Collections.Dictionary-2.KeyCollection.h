@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Collections/Dictionary.uno.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Collections/Dictionary.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -13,7 +13,7 @@ namespace g{
 namespace Uno{
 namespace Collections{
 
-// public sealed class Dictionary<TKey, TValue>.KeyCollection :75
+// public sealed class Dictionary<TKey, TValue>.KeyCollection :74
 // {
 struct Dictionary__KeyCollection_type : uType
 {

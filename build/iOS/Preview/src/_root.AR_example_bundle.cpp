@@ -5,7 +5,7 @@
 #include <Uno.IO.Bundle.h>
 #include <Uno.IO.BundleFile.h>
 #include <Uno.String.h>
-static uString* STRINGS[9];
+static uString* STRINGS[8];
 
 namespace g{
 
@@ -22,7 +22,6 @@ static void AR_example_bundle__cctor__fn(uType* __type)
     AR_example_bundle::logo3b7e0030c_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"AR_example"*/]))->GetFile(::STRINGS[5/*"logo3-11eb0...*/]);
     AR_example_bundle::RespberryPi391ee3a9_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"AR_example"*/]))->GetFile(::STRINGS[6/*"respberrypi...*/]);
     AR_example_bundle::ScreenPagec881ae49_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"AR_example"*/]))->GetFile(::STRINGS[7/*"screenpage-...*/]);
-    AR_example_bundle::tron_grid738bfc87_ = uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[0/*"AR_example"*/]))->GetFile(::STRINGS[8/*"tron_grid-c...*/]);
 }
 
 static void AR_example_bundle_build(uType* type)
@@ -35,7 +34,6 @@ static void AR_example_bundle_build(uType* type)
     ::STRINGS[5] = uString::Const("logo3-11eb0c26.png");
     ::STRINGS[6] = uString::Const("respberrypi-90439cef.js");
     ::STRINGS[7] = uString::Const("screenpage-549f3817.js");
-    ::STRINGS[8] = uString::Const("tron_grid-ca2bbf4d.png");
     type->SetFields(0,
         ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&AR_example_bundle::ARscreen4293cf5d_, uFieldFlagsStatic,
         ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&AR_example_bundle::back19b58a4d_, uFieldFlagsStatic,
@@ -43,17 +41,15 @@ static void AR_example_bundle_build(uType* type)
         ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&AR_example_bundle::HomePageed8c17c6_, uFieldFlagsStatic,
         ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&AR_example_bundle::logo3b7e0030c_, uFieldFlagsStatic,
         ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&AR_example_bundle::RespberryPi391ee3a9_, uFieldFlagsStatic,
-        ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&AR_example_bundle::ScreenPagec881ae49_, uFieldFlagsStatic,
-        ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&AR_example_bundle::tron_grid738bfc87_, uFieldFlagsStatic);
-    type->Reflection.SetFields(8,
+        ::g::Uno::IO::BundleFile_typeof(), (uintptr_t)&AR_example_bundle::ScreenPagec881ae49_, uFieldFlagsStatic);
+    type->Reflection.SetFields(7,
         new uField("ARscreen4293cf5d", 0),
         new uField("back19b58a4d", 1),
         new uField("CounterPage608bfab1", 2),
         new uField("HomePageed8c17c6", 3),
         new uField("logo3b7e0030c", 4),
         new uField("RespberryPi391ee3a9", 5),
-        new uField("ScreenPagec881ae49", 6),
-        new uField("tron_grid738bfc87", 7));
+        new uField("ScreenPagec881ae49", 6));
 }
 
 uClassType* AR_example_bundle_typeof()
@@ -62,7 +58,7 @@ uClassType* AR_example_bundle_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.FieldCount = 8;
+    options.FieldCount = 7;
     options.TypeSize = sizeof(uClassType);
     type = uClassType::New("AR_example_bundle", options);
     type->fp_build_ = AR_example_bundle_build;
@@ -77,7 +73,6 @@ uSStrong< ::g::Uno::IO::BundleFile*> AR_example_bundle::HomePageed8c17c6_;
 uSStrong< ::g::Uno::IO::BundleFile*> AR_example_bundle::logo3b7e0030c_;
 uSStrong< ::g::Uno::IO::BundleFile*> AR_example_bundle::RespberryPi391ee3a9_;
 uSStrong< ::g::Uno::IO::BundleFile*> AR_example_bundle::ScreenPagec881ae49_;
-uSStrong< ::g::Uno::IO::BundleFile*> AR_example_bundle::tron_grid738bfc87_;
 // }
 
 } // ::g

@@ -20,7 +20,7 @@ namespace g{
 // static Template3() :84
 static void MainView__Template3__cctor__fn(uType* __type)
 {
-    MainView__Template3::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[0/*"ARscreen"*/]);
+    MainView__Template3::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[0/*"ARscreen"*/]);
 }
 
 static void MainView__Template3_build(uType* type)

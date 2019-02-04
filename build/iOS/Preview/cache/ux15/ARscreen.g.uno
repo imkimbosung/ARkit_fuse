@@ -50,7 +50,6 @@ public partial class ARscreen: Fuse.Controls.Page
         ARView.Name = __selector0;
         ARView.SourceLineNumber = 10;
         ARView.SourceFileName = "Pages/ARscreen.ux";
-        ARView.PlaneFile = new global::Uno.UX.BundleFileSource(import("../../../../../iOS/tron_grid.png"));
         ARView.Children.Add(temp4);
         temp4.Width = new Uno.UX.Size(30f, Uno.UX.Unit.Unspecified);
         temp4.Height = new Uno.UX.Size(40f, Uno.UX.Unit.Unspecified);

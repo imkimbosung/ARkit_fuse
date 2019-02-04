@@ -1,8 +1,8 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Graphics/SamplerState.uno.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Graphics/SamplerState.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.ValueType.h>
 namespace g{namespace Uno{namespace Graphics{struct SamplerState;}}}
 
 namespace g{
@@ -12,7 +12,7 @@ namespace Graphics{
 // public struct SamplerState :21
 // {
 uStructType* SamplerState_typeof();
-void SamplerState__ctor__fn(SamplerState* __this, int32_t* minFilter, int32_t* magFilter, int32_t* addressMode);
+void SamplerState__ctor_1_fn(SamplerState* __this, int32_t* minFilter, int32_t* magFilter, int32_t* addressMode);
 void SamplerState__get_LinearClamp_fn(SamplerState* __retval);
 void SamplerState__get_LinearWrap_fn(SamplerState* __retval);
 void SamplerState__get_MinFilterNoMipmap_fn(SamplerState* __this, int32_t* __retval);
@@ -28,7 +28,7 @@ struct SamplerState
     int32_t AddressV;
     int32_t AddressW;
 
-    void ctor_(int32_t minFilter, int32_t magFilter, int32_t addressMode);
+    void ctor_1(int32_t minFilter, int32_t magFilter, int32_t addressMode);
     int32_t MinFilterNoMipmap();
 };
 

@@ -9,8 +9,8 @@ namespace Fuse{
 namespace Maps{
 namespace Android{
 
-// /usr/local/share/uno/Packages/Fuse.Maps/1.9.0/Android/MapView.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Maps/1.10.0-rc1/Android/MapView.uno
+// ----------------------------------------------------------------------
 
 // internal enum TouchAction :10
 uEnumType* TouchAction_typeof()

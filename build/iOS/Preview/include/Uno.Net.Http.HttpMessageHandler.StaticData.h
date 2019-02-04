@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Uno.Net.Http/1.9.0/HttpMessageHandler.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Uno.Net.Http/1.10.0-rc1/HttpMessageHandler.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

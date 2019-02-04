@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Renderer.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Renderer.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -12,7 +12,6 @@ namespace g{namespace Fuse{namespace Text{struct GlyphAtlas;}}}
 namespace g{namespace Fuse{namespace Text{struct PositionedRun;}}}
 namespace g{namespace Fuse{namespace Text{struct Renderer;}}}
 namespace g{namespace Uno{namespace Collections{struct List;}}}
-namespace g{namespace Uno{struct Buffer;}}
 namespace g{namespace Uno{struct Float4;}}
 namespace g{namespace Uno{struct Float4x4;}}
 namespace g{namespace Uno{struct Int2;}}
@@ -30,8 +29,8 @@ struct Renderer_type : uType
 
 Renderer_type* Renderer_typeof();
 void Renderer__ctor__fn(Renderer* __this, ::g::Fuse::Text::Font* font, ::g::Uno::Collections::List* positionedRuns, int32_t* approximateGlyphCount);
-void Renderer__CreateIndexBufferData_fn(int32_t* length, ::g::Uno::Buffer** __retval);
-void Renderer__CreateVertexBufferData_fn(::g::Uno::Collections::List* quads, ::g::Uno::Int2* texSize, ::g::Uno::Buffer** __retval);
+void Renderer__CreateIndexBufferData_fn(int32_t* length, uArray** __retval);
+void Renderer__CreateVertexBufferData_fn(::g::Uno::Collections::List* quads, ::g::Uno::Int2* texSize, uArray** __retval);
 void Renderer__Dispose_fn(Renderer* __this);
 void Renderer__DisposeBatches_fn(Renderer* __this);
 void Renderer__Draw_fn(Renderer* __this, ::g::Uno::Float4* color, ::g::Uno::Float4x4* pixelToClipSpaceMatrix);
@@ -67,8 +66,8 @@ struct Renderer : uObject
     ::g::Uno::Collections::List* GetBatches();
     ::g::Uno::Collections::List* GetTexturedQuads();
     void init_DrawCalls();
-    static ::g::Uno::Buffer* CreateIndexBufferData(int32_t length);
-    static ::g::Uno::Buffer* CreateVertexBufferData(::g::Uno::Collections::List* quads, ::g::Uno::Int2 texSize);
+    static uArray* CreateIndexBufferData(int32_t length);
+    static uArray* CreateVertexBufferData(::g::Uno::Collections::List* quads, ::g::Uno::Int2 texSize);
     static Renderer* New1(::g::Fuse::Text::Font* font, ::g::Uno::Collections::List* positionedRuns, int32_t approximateGlyphCount);
     static void RecreateGlyphAtlas(int32_t version);
     static ::g::Uno::Collections::List* TexturedQuads(::g::Fuse::Text::Font* font, ::g::Uno::Collections::List* positionedRuns, int32_t approximateGlyphCount);

@@ -221,8 +221,8 @@ namespace g{
 namespace Fuse{
 namespace Navigation{
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Activated.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Activated.uno
+// ----------------------------------------------------------------------
 
 // public sealed class Activated :98
 // {
@@ -349,8 +349,8 @@ void Activated::RemoveHandler(::g::Fuse::Visual* visual, uDelegate* handler)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Activated.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Activated.uno
+// ----------------------------------------------------------------------
 
 // public delegate void ActivatedHandler(object sender, Uno.EventArgs args) :8
 uDelegateType* ActivatedHandler_typeof()
@@ -365,8 +365,8 @@ uDelegateType* ActivatedHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/NavigationAnimations.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/NavigationAnimations.uno
+// ---------------------------------------------------------------------------------
 
 // public sealed class ActivatingAnimation :254
 // {
@@ -486,8 +486,8 @@ ActivatingAnimation* ActivatingAnimation::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RoutePageProxy.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RoutePageProxy.uno
+// ---------------------------------------------------------------------------
 
 // public delegate void RoutePageProxy.ActiveChanged(bool isActive, bool isRoot) :35
 uDelegateType* RoutePageProxy__ActiveChanged_typeof()
@@ -502,8 +502,8 @@ uDelegateType* RoutePageProxy__ActiveChanged_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/INavigation.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/INavigation.uno
+// ------------------------------------------------------------------------
 
 // public delegate void ActivePageChangedHandler(object sender, Fuse.Visual active) :50
 uDelegateType* ActivePageChangedHandler_typeof()
@@ -518,8 +518,8 @@ uDelegateType* ActivePageChangedHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/SwipeNavigate.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/SwipeNavigate.uno
+// --------------------------------------------------------------------------
 
 // public enum AllowedNavigationDirections :76
 uEnumType* AllowedNavigationDirections_typeof()
@@ -535,8 +535,8 @@ uEnumType* AllowedNavigationDirections_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/ModifyRouteCommand.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/ModifyRouteCommand.uno
+// -------------------------------------------------------------------------------
 
 // protected sealed class RouteModificationCommand.ArgumentArrayAdapter :120
 // {
@@ -618,8 +618,8 @@ RouteModificationCommand__ArgumentArrayAdapter* RouteModificationCommand__Argume
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.uno
+// -------------------------------------------------------------------
 
 // public delegate void Router.BackAtRootPressedHandler(object sender, Uno.EventArgs args) :160
 uDelegateType* Router__BackAtRootPressedHandler_typeof()
@@ -634,8 +634,8 @@ uDelegateType* Router__BackAtRootPressedHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.uno
+// -------------------------------------------------------------------
 
 // public enum BackButtonAction :8
 uEnumType* BackButtonAction_typeof()
@@ -650,15 +650,15 @@ uEnumType* BackButtonAction_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/TriggerActions.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/TriggerActions.uno
+// ---------------------------------------------------------------------------
 
 // public abstract class BackForwardNavigationTriggerAction :137
 // {
 static void BackForwardNavigationTriggerAction_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("No Navigation context was found");
-    ::STRINGS[1] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/TriggerActions.uno");
+    ::STRINGS[1] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/TriggerActions.uno");
     ::STRINGS[2] = uString::Const("Perform");
     type->SetDependencies(
         ::g::Fuse::Navigation::Navigation_typeof());
@@ -743,8 +743,8 @@ void BackForwardNavigationTriggerAction::NavigationContext(uObject* value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RouterPage.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RouterPage.uno
+// -----------------------------------------------------------------------
 
 // internal delegate void ChildRouterPagesUpdated() :8
 uDelegateType* ChildRouterPagesUpdated_typeof()
@@ -757,8 +757,8 @@ uDelegateType* ChildRouterPagesUpdated_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Activated.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Activated.uno
+// ----------------------------------------------------------------------
 
 // public sealed class Deactivated :146
 // {
@@ -886,8 +886,8 @@ void Deactivated::RemoveHandler(::g::Fuse::Visual* visual, uDelegate* handler)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/NavigationAnimations.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/NavigationAnimations.uno
+// ---------------------------------------------------------------------------------
 
 // public sealed class DeactivatingAnimation :301
 // {
@@ -995,8 +995,8 @@ DeactivatingAnimation* DeactivatingAnimation::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/DynamicLinearNavigation.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/DynamicLinearNavigation.uno
+// ------------------------------------------------------------------------------------
 
 // private enum DynamicLinearNavigation.Desired :37
 uEnumType* DynamicLinearNavigation__Desired_typeof()
@@ -1012,15 +1012,15 @@ uEnumType* DynamicLinearNavigation__Desired_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/DirectNavigation.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/DirectNavigation.uno
+// -----------------------------------------------------------------------------
 
 // public sealed class DirectNavigation :16
 // {
 static void DirectNavigation_build(uType* type)
 {
     ::STRINGS[3] = uString::Const("Unexpected null page");
-    ::STRINGS[4] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/DirectNavigation.uno");
+    ::STRINGS[4] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/DirectNavigation.uno");
     ::STRINGS[5] = uString::Const("SetProgressState");
     ::TYPES[5] = ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Navigation::PageData_typeof(), NULL);
     ::TYPES[6] = ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Navigation::PageData_typeof(), NULL);
@@ -1260,16 +1260,16 @@ DirectNavigation* DirectNavigation::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/DynamicLinearNavigation.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/DynamicLinearNavigation.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class DynamicLinearNavigation :13
 // {
 // static generated DynamicLinearNavigation() :13
 static void DynamicLinearNavigation__cctor_2_fn(uType* __type)
 {
-    DynamicLinearNavigation::DesiredActiveName_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("DesiredActive"));
-    DynamicLinearNavigation::DesiredActiveIndexName_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("DesiredActiveIndex"));
+    DynamicLinearNavigation::DesiredActiveName_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("DesiredActive"));
+    DynamicLinearNavigation::DesiredActiveIndexName_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("DesiredActiveIndex"));
 }
 
 static void DynamicLinearNavigation_build(uType* type)
@@ -1579,7 +1579,7 @@ void DynamicLinearNavigation__FuseNavigationISeekableNavigationSeek_fn(DynamicLi
 
     if (__this->_region == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("Seek being called on an unrooted navigation"), __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/DynamicLinearNavigation.uno"), 466, uString::Const("Fuse.Navigation.ISeekableNavigation.Seek"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("Seek being called on an unrooted navigation"), __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/DynamicLinearNavigation.uno"), 466, uString::Const("Fuse.Navigation.ISeekableNavigation.Seek"));
         return;
     }
 
@@ -2045,7 +2045,7 @@ void DynamicLinearNavigation::GotoImpl(::g::Fuse::Visual* element, int32_t mode)
 
     if (uPtr(element)->Parent() != Parent())
     {
-        ::g::Fuse::Diagnostics::UserError(uString::Const("Attempting to navigate to element with different parent"), element, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/DynamicLinearNavigation.uno"), 171, uString::Const("GotoImpl"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("Attempting to navigate to element with different parent"), element, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/DynamicLinearNavigation.uno"), 171, uString::Const("GotoImpl"), NULL);
         return;
     }
 
@@ -2096,7 +2096,7 @@ void DynamicLinearNavigation::Motion(::g::Fuse::Motion::MotionConfig* value)
     _motion = value;
 
     if (IsRootingCompleted())
-        ::g::Fuse::Diagnostics::UserError(uString::Const("Motion should not be changed post-rooting"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/DynamicLinearNavigation.uno"), 31, uString::Const("set_Motion"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("Motion should not be changed post-rooting"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/DynamicLinearNavigation.uno"), 31, uString::Const("set_Motion"), NULL);
 }
 
 // private Fuse.Visual get_Next() [instance] :555
@@ -2115,7 +2115,7 @@ void DynamicLinearNavigation::OnUpdated()
 
     if (_region == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("Updated called without a region"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/DynamicLinearNavigation.uno"), 231, uString::Const("OnUpdated"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("Updated called without a region"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/DynamicLinearNavigation.uno"), 231, uString::Const("OnUpdated"));
         return;
     }
 
@@ -2258,8 +2258,8 @@ DynamicLinearNavigation* DynamicLinearNavigation::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/EdgeNavigation.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/EdgeNavigation.uno
+// ---------------------------------------------------------------------------
 
 // public sealed class EdgeNavigation :20
 // {
@@ -2273,7 +2273,7 @@ static void EdgeNavigation__cctor_2_fn(uType* __type)
 static void EdgeNavigation_build(uType* type)
 {
     ::STRINGS[6] = uString::Const("EdgeNavigation may not work as expected with more than one main (non-edge) page.");
-    ::STRINGS[7] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/EdgeNavigation.uno");
+    ::STRINGS[7] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/EdgeNavigation.uno");
     ::STRINGS[8] = uString::Const("CheckChildren");
     ::STRINGS[9] = uString::Const("Element");
     ::STRINGS[10] = uString::Const("OnRooted");
@@ -2941,8 +2941,8 @@ void EdgeNavigation::SetEdge(::g::Fuse::Visual* elm, int32_t edge)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/SwipeNavigate.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/SwipeNavigate.uno
+// --------------------------------------------------------------------------
 
 // internal sealed class EndSeekArgs :50
 // {
@@ -3043,8 +3043,8 @@ EndSeekArgs* EndSeekArgs::New1(int32_t snapTo, float velocity)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/NavigationAnimations.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/NavigationAnimations.uno
+// ---------------------------------------------------------------------------------
 
 // public abstract class EnterExitAnimation :134
 // {
@@ -3159,8 +3159,8 @@ bool EnterExitAnimation::IsMatch(double progress)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/NavigationAnimations.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/NavigationAnimations.uno
+// ---------------------------------------------------------------------------------
 
 // public class EnteringAnimation :226
 // {
@@ -3247,8 +3247,8 @@ EnteringAnimation* EnteringAnimation::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/NavigationAnimations.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/NavigationAnimations.uno
+// ---------------------------------------------------------------------------------
 
 // public class ExitingAnimation :191
 // {
@@ -3335,8 +3335,8 @@ ExitingAnimation* ExitingAnimation::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/ExplicitNavigation.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/ExplicitNavigation.uno
+// -------------------------------------------------------------------------------
 
 // internal sealed class ExplicitNavigation :9
 // {
@@ -3561,8 +3561,8 @@ ExplicitNavigation* ExplicitNavigation::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RouterRequest.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RouterRequest.uno
+// --------------------------------------------------------------------------
 
 // public enum RouterRequest.Fields :90
 uEnumType* RouterRequest__Fields_typeof()
@@ -3584,8 +3584,8 @@ uEnumType* RouterRequest__Fields_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/FindRouter.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/FindRouter.uno
+// -----------------------------------------------------------------------
 
 // public sealed class FindRouter :25
 // {
@@ -3655,8 +3655,8 @@ FindRouter* FindRouter::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RouterModify.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RouterModify.uno
+// -------------------------------------------------------------------------
 
 // internal enum RouterModify.Flags :98
 uEnumType* RouterModify__Flags_typeof()
@@ -3670,8 +3670,8 @@ uEnumType* RouterModify__Flags_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RouterRequest.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RouterRequest.uno
+// --------------------------------------------------------------------------
 
 // public enum RouterRequest.Flags :36
 uEnumType* RouterRequest__Flags_typeof()
@@ -3686,8 +3686,8 @@ uEnumType* RouterRequest__Flags_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.uno
+// -------------------------------------------------------------------
 
 // private sealed class Router.GetHistoryAt :773
 // {
@@ -3762,8 +3762,8 @@ Router__GetHistoryAt* Router__GetHistoryAt::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.ScriptClass.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.ScriptClass.uno
+// -------------------------------------------------------------------------------
 
 // private sealed class Router.GetRouteCallback :323
 // {
@@ -3872,8 +3872,8 @@ Router__GetRouteCallback* Router__GetRouteCallback::New1(uObject* threadWorker, 
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/TriggerActions.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/TriggerActions.uno
+// ---------------------------------------------------------------------------
 
 // public sealed class GoBack :182
 // {
@@ -3944,8 +3944,8 @@ GoBack* GoBack::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/TriggerActions.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/TriggerActions.uno
+// ---------------------------------------------------------------------------
 
 // public sealed class GoForward :217
 // {
@@ -4016,8 +4016,8 @@ GoForward* GoForward::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RouterModify.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RouterModify.uno
+// -------------------------------------------------------------------------
 
 // public sealed class GotoRoute :238
 // {
@@ -4082,8 +4082,8 @@ GotoRoute* GotoRoute::New4()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/ModifyRouteCommand.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/ModifyRouteCommand.uno
+// -------------------------------------------------------------------------------
 
 // public sealed class GotoRouteCommand :178
 // {
@@ -4153,8 +4153,8 @@ GotoRouteCommand* GotoRouteCommand::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/StructuredNavigation.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/StructuredNavigation.uno
+// ---------------------------------------------------------------------------------
 
 // public sealed class HierarchicalNavigation :515
 // {
@@ -4296,8 +4296,8 @@ HierarchicalNavigation* HierarchicalNavigation::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.uno
+// -------------------------------------------------------------------
 
 // private delegate bool Router.HistoryAction(Uno.Collections.List<Fuse.Navigation.RouterPage> stack) :815
 uDelegateType* Router__HistoryAction_typeof()
@@ -4311,8 +4311,8 @@ uDelegateType* Router__HistoryAction_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/INavigation.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/INavigation.uno
+// ------------------------------------------------------------------------
 
 // public delegate void HistoryChangedHandler(object sender) :47
 uDelegateType* HistoryChangedHandler_typeof()
@@ -4326,8 +4326,8 @@ uDelegateType* HistoryChangedHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/INavigation.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/INavigation.uno
+// ------------------------------------------------------------------------
 
 // public abstract interface IBaseNavigation :56
 // {
@@ -4348,8 +4348,8 @@ uInterfaceType* IBaseNavigation_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/INavigation.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/INavigation.uno
+// ------------------------------------------------------------------------
 
 // public abstract interface INavigation :77
 // {
@@ -4382,15 +4382,15 @@ uInterfaceType* INavigation_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/ModifyRouteCommand.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/ModifyRouteCommand.uno
+// -------------------------------------------------------------------------------
 
 // private sealed class RouteModificationCommand.InnerSubscription :68
 // {
 static void RouteModificationCommand__InnerSubscription_build(uType* type)
 {
     ::STRINGS[12] = uString::Const("could not find router");
-    ::STRINGS[13] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/ModifyRouteCommand.uno");
+    ::STRINGS[13] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/ModifyRouteCommand.uno");
     ::STRINGS[14] = uString::Const("HandleRequest");
     ::TYPES[19] = ::g::Fuse::Reactive::IContext_typeof();
     ::TYPES[20] = ::g::Uno::Action_typeof();
@@ -4509,8 +4509,8 @@ RouteModificationCommand__InnerSubscription* RouteModificationCommand__InnerSubs
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/PageBinding.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/PageBinding.uno
+// ------------------------------------------------------------------------
 
 // internal abstract interface IPagePropertyListener :323
 // {
@@ -4524,8 +4524,8 @@ uInterfaceType* IPagePropertyListener_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/PageBinding.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/PageBinding.uno
+// ------------------------------------------------------------------------
 
 // internal abstract interface IPageResourceBinding :9
 // {
@@ -4539,8 +4539,8 @@ uInterfaceType* IPageResourceBinding_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/IRouterOutlet.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/IRouterOutlet.uno
+// --------------------------------------------------------------------------
 
 // internal abstract interface IRouterOutlet :42
 // {
@@ -4554,8 +4554,8 @@ uInterfaceType* IRouterOutlet_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/INavigation.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/INavigation.uno
+// ------------------------------------------------------------------------
 
 // internal abstract interface ISeekableNavigation :102
 // {
@@ -4569,8 +4569,8 @@ uInterfaceType* ISeekableNavigation_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RoutePageProxy.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RoutePageProxy.uno
+// ---------------------------------------------------------------------------
 
 // private struct RoutePageProxy.Level :61
 // {
@@ -4587,6 +4587,7 @@ uStructType* RoutePageProxy__Level_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 2;
     options.Alignment = alignof(RoutePageProxy__Level);
     options.ValueSize = sizeof(RoutePageProxy__Level);
@@ -4597,8 +4598,8 @@ uStructType* RoutePageProxy__Level_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/StructuredNavigation.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/StructuredNavigation.uno
+// ---------------------------------------------------------------------------------
 
 // public sealed class LinearNavigation :508
 // {
@@ -4714,8 +4715,8 @@ LinearNavigation* LinearNavigation::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RouterModify.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RouterModify.uno
+// -------------------------------------------------------------------------
 
 // public sealed class ModifyRoute :224
 // {
@@ -4778,15 +4779,15 @@ ModifyRoute* ModifyRoute::New4()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/ModifyRouteCommand.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/ModifyRouteCommand.uno
+// -------------------------------------------------------------------------------
 
 // public sealed class ModifyRouteCommand :149
 // {
 static void ModifyRouteCommand_build(uType* type)
 {
     ::STRINGS[15] = uString::Const("arguments to modifyRoute must be name-value-pairs");
-    ::STRINGS[13] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/ModifyRouteCommand.uno");
+    ::STRINGS[13] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/ModifyRouteCommand.uno");
     ::STRINGS[16] = uString::Const("ProcessArguments");
     ::TYPES[21] = ::g::Fuse::NameValuePair_typeof();
     type->SetInterfaces(
@@ -4868,8 +4869,8 @@ ModifyRouteCommand* ModifyRouteCommand::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.uno
+// -------------------------------------------------------------------
 
 // public enum ModifyRouteHow :23
 uEnumType* ModifyRouteHow_typeof()
@@ -4890,8 +4891,8 @@ uEnumType* ModifyRouteHow_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/INavigation.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/INavigation.uno
+// ------------------------------------------------------------------------
 
 // public sealed class NavigatedArgs :30
 // {
@@ -4937,8 +4938,8 @@ void NavigatedArgs__FuseScriptingIScriptEventSerialize_fn(NavigatedArgs* __this,
 {
     uStackFrame __("Fuse.Navigation.NavigatedArgs", "Fuse.Scripting.IScriptEvent.Serialize(Fuse.Scripting.IEventSerializer)");
 
-    if (::g::Uno::String::op_Inequality(::g::Uno::UX::Selector__op_Implicit2(uPtr(__this->NewVisual())->Name()), NULL))
-        ::g::Fuse::Scripting::IEventSerializer::AddString(uInterface(uPtr(s), ::TYPES[22/*Fuse.Scripting.IEventSerializer*/]), ::STRINGS[17/*"name"*/], ::g::Uno::UX::Selector__op_Implicit2(uPtr(__this->NewVisual())->Name()));
+    if (::g::Uno::String::op_Inequality(::g::Uno::UX::Selector__op_Implicit1(uPtr(__this->NewVisual())->Name()), NULL))
+        ::g::Fuse::Scripting::IEventSerializer::AddString(uInterface(uPtr(s), ::TYPES[22/*Fuse.Scripting.IEventSerializer*/]), ::STRINGS[17/*"name"*/], ::g::Uno::UX::Selector__op_Implicit1(uPtr(__this->NewVisual())->Name()));
     else
         ::g::Fuse::Scripting::IEventSerializer::AddString(uInterface(uPtr(s), ::TYPES[22/*Fuse.Scripting.IEventSerializer*/]), ::STRINGS[17/*"name"*/], ::STRINGS[18/*""*/]);
 }
@@ -4989,8 +4990,8 @@ NavigatedArgs* NavigatedArgs::New2(::g::Fuse::Visual* newVisual)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/INavigation.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/INavigation.uno
+// ------------------------------------------------------------------------
 
 // public delegate void NavigatedHandler(object sender, Fuse.Navigation.NavigatedArgs args) :46
 uDelegateType* NavigatedHandler_typeof()
@@ -5005,8 +5006,8 @@ uDelegateType* NavigatedHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/TriggerActions.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/TriggerActions.uno
+// ---------------------------------------------------------------------------
 
 // public sealed class NavigateTo :52
 // {
@@ -5165,15 +5166,15 @@ NavigateTo* NavigateTo::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/TriggerActions.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/TriggerActions.uno
+// ---------------------------------------------------------------------------
 
 // public sealed class NavigateToggle :107
 // {
 static void NavigateToggle_build(uType* type)
 {
     ::STRINGS[19] = uString::Const("No Page was found");
-    ::STRINGS[1] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/TriggerActions.uno");
+    ::STRINGS[1] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/TriggerActions.uno");
     ::STRINGS[2] = uString::Const("Perform");
     ::STRINGS[20] = uString::Const("NavigateToggle.NavigationContext is no longer supported as it isn't needed");
     ::STRINGS[21] = uString::Const("set_NavigationContext");
@@ -5306,8 +5307,8 @@ NavigateToggle* NavigateToggle::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Navigation.Locators.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Navigation.Locators.uno
+// --------------------------------------------------------------------------------
 
 // public interfacemodifiers class Navigation :17
 // {
@@ -5321,7 +5322,7 @@ static void Navigation__cctor__fn(uType* __type)
 static void Navigation_build(uType* type)
 {
     ::STRINGS[22] = uString::Const("TryFindBaseNavigation requires rooting to have started");
-    ::STRINGS[23] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Navigation.Locators.uno");
+    ::STRINGS[23] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Navigation.Locators.uno");
     ::STRINGS[24] = uString::Const("TryFindBaseNavigation");
     ::STRINGS[25] = uString::Const("TryFindPage requires rooting to have started");
     ::STRINGS[26] = uString::Const("TryFindPage");
@@ -5632,8 +5633,8 @@ uObject* Navigation::TryFindBaseNavigation1(::g::Fuse::Node* node, ::g::Fuse::Vi
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/NavigationAnimations.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/NavigationAnimations.uno
+// ---------------------------------------------------------------------------------
 
 // public abstract class NavigationAnimation :37
 // {
@@ -5868,8 +5869,8 @@ void NavigationAnimation::Scale(float value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Navigation.Events.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Navigation.Events.uno
+// ------------------------------------------------------------------------------
 
 // public sealed class NavigationArgs :13
 // {
@@ -6003,8 +6004,8 @@ NavigationArgs* NavigationArgs::New2(double progress, double prevProgress, int32
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/INavigation.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/INavigation.uno
+// ------------------------------------------------------------------------
 
 // public enum NavigationDirection :8
 uEnumType* NavigationDirection_typeof()
@@ -6019,8 +6020,8 @@ uEnumType* NavigationDirection_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/EdgeNavigation.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/EdgeNavigation.uno
+// ---------------------------------------------------------------------------
 
 // public enum NavigationEdge :11
 uEnumType* NavigationEdge_typeof()
@@ -6038,8 +6039,8 @@ uEnumType* NavigationEdge_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/INavigation.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/INavigation.uno
+// ------------------------------------------------------------------------
 
 // public enum NavigationGotoMode :18
 uEnumType* NavigationGotoMode_typeof()
@@ -6055,8 +6056,8 @@ uEnumType* NavigationGotoMode_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Navigation.Events.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Navigation.Events.uno
+// ------------------------------------------------------------------------------
 
 // public delegate void NavigationHandler(object sender, Fuse.Navigation.NavigationArgs state) :28
 uDelegateType* NavigationHandler_typeof()
@@ -6071,8 +6072,8 @@ uDelegateType* NavigationHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Navigation.Events.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Navigation.Events.uno
+// ------------------------------------------------------------------------------
 
 // public enum NavigationMode :6
 uEnumType* NavigationMode_typeof()
@@ -6088,8 +6089,8 @@ uEnumType* NavigationMode_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/INavigation.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/INavigation.uno
+// ------------------------------------------------------------------------
 
 // public delegate void NavigationPageCountHandler(object sender) :48
 uDelegateType* NavigationPageCountHandler_typeof()
@@ -6103,8 +6104,8 @@ uDelegateType* NavigationPageCountHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/INavigation.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/INavigation.uno
+// ------------------------------------------------------------------------
 
 // public delegate void NavigationPageProgressHandler(object sender, double Current, double Previous) :49
 uDelegateType* NavigationPageProgressHandler_typeof()
@@ -6120,8 +6121,8 @@ uDelegateType* NavigationPageProgressHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/PageBinding.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/PageBinding.uno
+// ------------------------------------------------------------------------
 
 // public static class NavigationPageProperty :328
 // {
@@ -6351,8 +6352,8 @@ void NavigationPageProperty::UpdateListeners(::g::Fuse::Visual* node)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/NavigationPageProxy.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/NavigationPageProxy.uno
+// --------------------------------------------------------------------------------
 
 // public sealed class NavigationPageProxy :14
 // {
@@ -6513,7 +6514,7 @@ void NavigationPageProxy::ctor_1(uDelegate* ready, uDelegate* unready)
 {
     uStackFrame __("Fuse.Navigation.NavigationPageProxy", ".ctor(Uno.Action,Uno.Action)");
     NavigationPageProxy__ObsoleteWrapper* collection1;
-    ::g::Fuse::Diagnostics::Deprecated(uString::Const("NavigationPageProxy is not meant to be used directly, use specific navigation triggers"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/NavigationPageProxy.uno"), 145, ::STRINGS[34/*".ctor"*/]);
+    ::g::Fuse::Diagnostics::Deprecated(uString::Const("NavigationPageProxy is not meant to be used directly, use specific navigation triggers"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/NavigationPageProxy.uno"), 145, ::STRINGS[34/*".ctor"*/]);
     collection1 = NavigationPageProxy__ObsoleteWrapper::New1();
     uPtr(collection1)->Ready = ready;
     uPtr(collection1)->Unready = unready;
@@ -6559,7 +6560,7 @@ void NavigationPageProxy::OnPageRootingCompleted()
 
     if ((!_waitRootingCompleted || (Page() == NULL)) || (_source == NULL))
     {
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("Got an undesired ready event"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/NavigationPageProxy.uno"), 90, uString::Const("OnPageRootingCompleted"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("Got an undesired ready event"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/NavigationPageProxy.uno"), 90, uString::Const("OnPageRootingCompleted"));
         return;
     }
 
@@ -6595,7 +6596,7 @@ void NavigationPageProxy::RootImpl(::g::Fuse::Visual* source)
 
     if (_source == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("Attempting rooting to null source"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/NavigationPageProxy.uno"), 46, uString::Const("RootImpl"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("Attempting rooting to null source"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/NavigationPageProxy.uno"), 46, uString::Const("RootImpl"));
         return;
     }
 
@@ -6603,7 +6604,7 @@ void NavigationPageProxy::RootImpl(::g::Fuse::Visual* source)
 
     if (Page() == NULL)
     {
-        ::g::Fuse::Diagnostics::UserError(uString::Const("Unable to locate Page"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/NavigationPageProxy.uno"), 53, uString::Const("RootImpl"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("Unable to locate Page"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/NavigationPageProxy.uno"), 53, uString::Const("RootImpl"), NULL);
         return;
     }
 
@@ -6618,7 +6619,7 @@ void NavigationPageProxy::RootImpl(::g::Fuse::Visual* source)
 
     if (_navigation == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("Something went wrong locating a Navigator"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/NavigationPageProxy.uno"), 70, uString::Const("RootImpl"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("Something went wrong locating a Navigator"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/NavigationPageProxy.uno"), 70, uString::Const("RootImpl"));
         return;
     }
 
@@ -6678,8 +6679,8 @@ NavigationPageProxy* NavigationPageProxy::New2(uDelegate* ready, uDelegate* unre
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/INavigation.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/INavigation.uno
+// ------------------------------------------------------------------------
 
 // public struct NavigationPageState :65
 // {
@@ -6699,6 +6700,7 @@ uStructType* NavigationPageState_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 2;
     options.Alignment = alignof(NavigationPageState);
     options.ValueSize = sizeof(NavigationPageState);
@@ -6709,8 +6711,8 @@ uStructType* NavigationPageState_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Navigation.Events.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Navigation.Events.uno
+// ------------------------------------------------------------------------------
 
 // public enum NavigationState :30
 uEnumType* NavigationState_typeof()
@@ -6726,8 +6728,8 @@ uEnumType* NavigationState_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/INavigation.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/INavigation.uno
+// ------------------------------------------------------------------------
 
 // public delegate void NavigationStateChangedHandler(object sender, Uno.UX.ValueChangedArgs<Fuse.Navigation.NavigationState> args) :51
 uDelegateType* NavigationStateChangedHandler_typeof()
@@ -6742,8 +6744,8 @@ uDelegateType* NavigationStateChangedHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/StructuredNavigation.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/StructuredNavigation.uno
+// ---------------------------------------------------------------------------------
 
 // internal enum StructuredNavigation.NavigationStructure :15
 uEnumType* StructuredNavigation__NavigationStructure_typeof()
@@ -6758,8 +6760,8 @@ uEnumType* StructuredNavigation__NavigationStructure_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Activated.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Activated.uno
+// ----------------------------------------------------------------------
 
 // public abstract class NavigationTrigger :13
 // {
@@ -6918,15 +6920,15 @@ void NavigationTrigger::When(int32_t value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/TriggerActions.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/TriggerActions.uno
+// ---------------------------------------------------------------------------
 
 // public abstract class NavigationTriggerAction :8
 // {
 static void NavigationTriggerAction_build(uType* type)
 {
     ::STRINGS[28] = uString::Const("No navigation context was found");
-    ::STRINGS[1] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/TriggerActions.uno");
+    ::STRINGS[1] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/TriggerActions.uno");
     ::STRINGS[2] = uString::Const("Perform");
     type->SetDependencies(
         ::g::Fuse::Navigation::Navigation_typeof());
@@ -7014,8 +7016,8 @@ void NavigationTriggerAction::NavigationContext(uObject* value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/NavigationAnimations.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/NavigationAnimations.uno
+// ---------------------------------------------------------------------------------
 
 // internal static class NavTriggerUtil :9
 // {
@@ -7060,8 +7062,8 @@ int32_t NavTriggerUtil::Opposite(int32_t v)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/NavigationPageProxy.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/NavigationPageProxy.uno
+// --------------------------------------------------------------------------------
 
 // private sealed class NavigationPageProxy.ObsoleteWrapper :151
 // {
@@ -7139,8 +7141,8 @@ NavigationPageProxy__ObsoleteWrapper* NavigationPageProxy__ObsoleteWrapper::New1
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/ModifyRouteCommand.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/ModifyRouteCommand.uno
+// -------------------------------------------------------------------------------
 
 // private sealed class RouteModificationCommand.OuterSubscription :17
 // {
@@ -7266,8 +7268,8 @@ RouteModificationCommand__OuterSubscription* RouteModificationCommand__OuterSubs
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/IRouterOutlet.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/IRouterOutlet.uno
+// --------------------------------------------------------------------------
 
 // internal enum OutletType :17
 uEnumType* OutletType_typeof()
@@ -7282,8 +7284,8 @@ uEnumType* OutletType_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/PageData.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/PageData.uno
+// ---------------------------------------------------------------------
 
 // internal sealed class PageData :12
 // {
@@ -7297,7 +7299,7 @@ static void PageData__cctor__fn(uType* __type)
 static void PageData_build(uType* type)
 {
     ::STRINGS[29] = uString::Const("Attaching to null page");
-    ::STRINGS[30] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/PageData.uno");
+    ::STRINGS[30] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/PageData.uno");
     ::STRINGS[31] = uString::Const("AttachRouterPage");
     ::TYPES[36] = ::g::Fuse::Navigation::RouterPageChangedHandler_typeof();
     type->SetFields(0,
@@ -7546,8 +7548,8 @@ PageData* PageData::New1(::g::Fuse::Visual* visual)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/PageBinding.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/PageBinding.uno
+// ------------------------------------------------------------------------
 
 // public sealed class PageExpression :15
 // {
@@ -7643,15 +7645,15 @@ PageExpression* PageExpression::New1(uString* key)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/PageBinding.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/PageBinding.uno
+// ------------------------------------------------------------------------
 
 // public sealed class PageResourceBinding<T> :160
 // {
 static void PageResourceBinding_build(uType* type)
 {
     ::STRINGS[32] = uString::Const("PageResourceBinding has been deprecated. Use DataBinding instead");
-    ::STRINGS[33] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/PageBinding.uno");
+    ::STRINGS[33] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/PageBinding.uno");
     ::STRINGS[34] = uString::Const(".ctor");
     ::STRINGS[35] = uString::Const("target");
     ::STRINGS[36] = uString::Const("Visual");
@@ -8034,8 +8036,8 @@ PageResourceBinding* PageResourceBinding::New2(uType* __type, ::g::Uno::UX::Prop
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RouterPage.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RouterPage.uno
+// -----------------------------------------------------------------------
 
 // internal sealed class PagesMap :104
 // {
@@ -8199,8 +8201,8 @@ PagesMap* PagesMap::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RoutePageProxy.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RoutePageProxy.uno
+// ---------------------------------------------------------------------------
 
 // public delegate void RoutePageProxy.ProgressUpdated(double progress) :34
 uDelegateType* RoutePageProxy__ProgressUpdated_typeof()
@@ -8214,8 +8216,8 @@ uDelegateType* RoutePageProxy__ProgressUpdated_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RouterModify.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RouterModify.uno
+// -------------------------------------------------------------------------
 
 // public sealed class PushRoute :254
 // {
@@ -8280,8 +8282,8 @@ PushRoute* PushRoute::New4()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/ModifyRouteCommand.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/ModifyRouteCommand.uno
+// -------------------------------------------------------------------------------
 
 // public sealed class PushRouteCommand :193
 // {
@@ -8351,8 +8353,8 @@ PushRouteCommand* PushRouteCommand::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Route.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Route.uno
+// ------------------------------------------------------------------
 
 // public sealed class Route :13
 // {
@@ -8447,8 +8449,8 @@ Route* Route::New1(uString* path, uString* parameter, Route* subRoute)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/ModifyRouteCommand.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/ModifyRouteCommand.uno
+// -------------------------------------------------------------------------------
 
 // public abstract class RouteModificationCommand :8
 // {
@@ -8501,8 +8503,8 @@ void RouteModificationCommand::ctor_2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RoutePageProxy.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RoutePageProxy.uno
+// ---------------------------------------------------------------------------
 
 // public enum RoutePagePath :10
 uEnumType* RoutePagePath_typeof()
@@ -8517,8 +8519,8 @@ uEnumType* RoutePagePath_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RoutePageProxy.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RoutePageProxy.uno
+// ---------------------------------------------------------------------------
 
 // internal sealed class RoutePageProxy :32
 // {
@@ -8820,7 +8822,7 @@ int32_t RoutePageProxy::GetLevel(uObject* sender)
         if (sender == (::g::Uno::Collections::List__get_Item_fn(uPtr(_levels), uCRef<int32_t>(i), &ret7), ret7).PageProxy)
             return i;
 
-    ::g::Fuse::Diagnostics::InternalError(uString::Const("Unexpected sender"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RoutePageProxy.uno"), 119, uString::Const("GetLevel"));
+    ::g::Fuse::Diagnostics::InternalError(uString::Const("Unexpected sender"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RoutePageProxy.uno"), 119, uString::Const("GetLevel"));
     return -1;
 }
 
@@ -9082,8 +9084,8 @@ RoutePageProxy* RoutePageProxy::New2(::g::Fuse::Visual* source, uDelegate* progr
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RoutePageProxy.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RoutePageProxy.uno
+// ---------------------------------------------------------------------------
 
 // public enum RoutePageTriggerWhen :21
 uEnumType* RoutePageTriggerWhen_typeof()
@@ -9098,8 +9100,8 @@ uEnumType* RoutePageTriggerWhen_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.ScriptClass.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.ScriptClass.uno
+// -------------------------------------------------------------------------------
 
 // public partial sealed class Router :5
 // {
@@ -9672,7 +9674,7 @@ void Router::CancelNavigation()
         ClearPrepared();
     }
     else
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("No active navigation that can be cancelled"), NULL, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.uno"), 415, uString::Const("CancelNavigation"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("No active navigation that can be cancelled"), NULL, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.uno"), 415, uString::Const("CancelNavigation"));
 }
 
 // public bool get_CanGoBack() [instance] :314
@@ -9861,7 +9863,7 @@ int32_t Router::GetOutletDepth(uObject* outlet)
 
     if (!IsRootingCompleted() || !uPtr(from)->IsRootingCompleted())
     {
-        ::g::Fuse::Diagnostics::UserError(uString::Const("Cannot calculate relative node if not rooted"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.uno"), 697, uString::Const("GetRelativeRoute"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("Cannot calculate relative node if not rooted"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.uno"), 697, uString::Const("GetRelativeRoute"), NULL);
         return NULL;
     }
 
@@ -9869,7 +9871,7 @@ int32_t Router::GetOutletDepth(uObject* outlet)
 
     if (outlet == NULL)
     {
-        ::g::Fuse::Diagnostics::UserError(uString::Const("Did not find an outlet relative to the provided Node"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.uno"), 704, uString::Const("GetRelativeRoute"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("Did not find an outlet relative to the provided Node"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.uno"), 704, uString::Const("GetRelativeRoute"), NULL);
         return NULL;
     }
 
@@ -9937,7 +9939,7 @@ void Router::GoBackBehavior(int32_t value)
     _goBackBehavior = value;
 
     if (value == 1)
-        ::g::Fuse::Diagnostics::Deprecated(uString::Const("Up behavior is deprecated as it isn't well defined."), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.uno"), 284, uString::Const("set_GoBackBehavior"));
+        ::g::Fuse::Diagnostics::Deprecated(uString::Const("Up behavior is deprecated as it isn't well defined."), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.uno"), 284, uString::Const("set_GoBackBehavior"));
 }
 
 // public void Goto(Fuse.Navigation.Route route, [string operationStyle]) [instance] :202
@@ -10031,13 +10033,13 @@ void Router::Modify1(int32_t how, ::g::Fuse::Navigation::RouterPageRoute* route,
         case 4:
         {
             if (route != NULL)
-                ::g::Fuse::Diagnostics::UserWarning(uString::Const("PrepareBack does not support an explicit route"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.uno"), 242, uString::Const("Modify"));
+                ::g::Fuse::Diagnostics::UserWarning(uString::Const("PrepareBack does not support an explicit route"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.uno"), 242, uString::Const("Modify"));
 
             ::g::Fuse::Navigation::RouterPageRoute* popRoute = GetHistoryRoute(1);
 
             if (popRoute == NULL)
             {
-                ::g::Fuse::Diagnostics::UserError(uString::Const("There is no history for PrepareBack"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.uno"), 247, uString::Const("Modify"), NULL);
+                ::g::Fuse::Diagnostics::UserError(uString::Const("There is no history for PrepareBack"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.uno"), 247, uString::Const("Modify"), NULL);
                 return;
             }
 
@@ -10097,7 +10099,7 @@ void Router::Pop()
 
     if (route == NULL)
     {
-        ::g::Fuse::Diagnostics::UserError(uString::Const("Cannot pop() - history is empty"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.uno"), 342, uString::Const("Pop"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("Cannot pop() - history is empty"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.uno"), 342, uString::Const("Pop"), NULL);
         return;
     }
 
@@ -10155,7 +10157,7 @@ void Router::SetPrepareProgress(double value)
 
     if ((pc == NULL) || (pn == NULL))
     {
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("Invalid outlet depth in prepare progress"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.uno"), 396, uString::Const("SetPrepareProgress"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("Invalid outlet depth in prepare progress"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.uno"), 396, uString::Const("SetPrepareProgress"));
         return;
     }
 
@@ -10181,9 +10183,9 @@ void Router::SetPrepareProgress(double value)
         uString* msg = ::g::Uno::String::op_Addition2(uString::Const("Unable to navigate to route: "), uPtr(r)->Format());
 
         if (userRequest)
-            ::g::Fuse::Diagnostics::UserError(msg, this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.uno"), 436, uString::Const("SetRoute"), NULL);
+            ::g::Fuse::Diagnostics::UserError(msg, this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.uno"), 436, uString::Const("SetRoute"), NULL);
         else
-            ::g::Fuse::Diagnostics::InternalError(msg, this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.uno"), 438, uString::Const("SetRoute"));
+            ::g::Fuse::Diagnostics::InternalError(msg, this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.uno"), 438, uString::Const("SetRoute"));
 
         SetRouteImpl(Parent(), _rootPage, current, 1, 0, ::STRINGS[18/*""*/], &ignore, true);
     }
@@ -10202,7 +10204,7 @@ void Router::SetPrepareProgress(double value)
 
     if (outlet == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(::g::Uno::String::op_Addition1(uString::Const("No router outlet found to handle route: "), r), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.uno"), 460, uString::Const("SetRouteImpl"));
+        ::g::Fuse::Diagnostics::InternalError(::g::Uno::String::op_Addition1(uString::Const("No router outlet found to handle route: "), r), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.uno"), 460, uString::Const("SetRouteImpl"));
         return NULL;
     }
 
@@ -10288,7 +10290,7 @@ void Router::SetPrepareProgress(double value)
     {
         if (pageVisual == NULL)
         {
-            ::g::Fuse::Diagnostics::InternalError(::g::Uno::String::op_Addition1(uString::Const("SubRoute requested but outlet has no active path: "), r), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.uno"), 536, uString::Const("SetRouteImpl"));
+            ::g::Fuse::Diagnostics::InternalError(::g::Uno::String::op_Addition1(uString::Const("SubRoute requested but outlet has no active path: "), r), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.uno"), 536, uString::Const("SetRouteImpl"));
             return NULL;
         }
 
@@ -10332,7 +10334,7 @@ void Router::Bookmark(Router* r, uArray* args)
 
     if (uPtr(args)->Length() != 1)
     {
-        ::g::Fuse::Diagnostics::UserError(uString::Const("`Router.bookmark` takes one argument"), r, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.ScriptClass.uno"), 220, uString::Const("Bookmark"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("`Router.bookmark` takes one argument"), r, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.ScriptClass.uno"), 220, uString::Const("Bookmark"), NULL);
         return;
     }
 
@@ -10340,7 +10342,7 @@ void Router::Bookmark(Router* r, uArray* args)
 
     if (obj == NULL)
     {
-        ::g::Fuse::Diagnostics::UserError(uString::Const("`Router.bookmark` should be passed an object"), r, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.ScriptClass.uno"), 227, uString::Const("Bookmark"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("`Router.bookmark` should be passed an object"), r, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.ScriptClass.uno"), 227, uString::Const("Bookmark"), NULL);
         return;
     }
 
@@ -10363,7 +10365,7 @@ void Router::Bookmark(Router* r, uArray* args)
 
             if (relative == NULL)
             {
-                ::g::Fuse::Diagnostics::UserError(uString::Const("Could not find an outlet from the `relative` node"), r, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.ScriptClass.uno"), 252, uString::Const("Bookmark"), NULL);
+                ::g::Fuse::Diagnostics::UserError(uString::Const("Could not find an outlet from the `relative` node"), r, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.ScriptClass.uno"), 252, uString::Const("Bookmark"), NULL);
                 return;
             }
         }
@@ -10373,7 +10375,7 @@ void Router::Bookmark(Router* r, uArray* args)
 
             if (path == NULL)
             {
-                ::g::Fuse::Diagnostics::UserError(uString::Const("`path` should be an array"), r, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.ScriptClass.uno"), 261, uString::Const("Bookmark"), NULL);
+                ::g::Fuse::Diagnostics::UserError(uString::Const("`path` should be an array"), r, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.ScriptClass.uno"), 261, uString::Const("Bookmark"), NULL);
                 return;
             }
 
@@ -10381,7 +10383,7 @@ void Router::Bookmark(Router* r, uArray* args)
         }
         else
         {
-            ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(uString::Const("Unrecognized argument: "), p), r, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.ScriptClass.uno"), 269, uString::Const("Bookmark"), NULL);
+            ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(uString::Const("Unrecognized argument: "), p), r, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.ScriptClass.uno"), 269, uString::Const("Bookmark"), NULL);
             return;
         }
     }
@@ -10394,7 +10396,7 @@ void Router::Bookmark(Router* r, uArray* args)
 
     if (::g::Uno::String::op_Equality(name, NULL))
     {
-        ::g::Fuse::Diagnostics::UserError(uString::Const("A `name` is required for the bookmark"), r, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.ScriptClass.uno"), 282, uString::Const("Bookmark"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("A `name` is required for the bookmark"), r, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.ScriptClass.uno"), 282, uString::Const("Bookmark"), NULL);
         return;
     }
 
@@ -10421,7 +10423,7 @@ void Router::Bookmark(Router* r, uArray* args)
             if (v != NULL)
                 return v;
 
-            ::g::Fuse::Diagnostics::InternalError(uString::Const("Unexpected request for RouterOutlet page"), from, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.uno"), 610, uString::Const("FindRouterOutletPage"));
+            ::g::Fuse::Diagnostics::InternalError(uString::Const("Unexpected request for RouterOutlet page"), from, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.uno"), 610, uString::Const("FindRouterOutletPage"));
         }
 
         from = uPtr(from)->Parent();
@@ -10438,7 +10440,7 @@ void Router::Bookmark(Router* r, uArray* args)
 
     if (uPtr(args)->Length() < 1)
     {
-        ::g::Fuse::Diagnostics::UserError(uString::Const("Router.gotoRelative(): requires 1+ parameters"), r, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.ScriptClass.uno"), 96, uString::Const("GetRelative"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("Router.gotoRelative(): requires 1+ parameters"), r, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.ScriptClass.uno"), 96, uString::Const("GetRelative"), NULL);
         return NULL;
     }
 
@@ -10455,7 +10457,7 @@ uObject* Router::GetRoute(::g::Fuse::Scripting::Context* c, Router* r, uArray* a
 
     if (uPtr(args)->Length() != 1)
     {
-        ::g::Fuse::Diagnostics::UserError(uString::Const("Router.getRoute(): must provide exactly 1 argument."), r, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.ScriptClass.uno"), 309, uString::Const("GetRoute"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("Router.getRoute(): must provide exactly 1 argument."), r, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.ScriptClass.uno"), 309, uString::Const("GetRoute"), NULL);
         return NULL;
     }
 
@@ -10463,7 +10465,7 @@ uObject* Router::GetRoute(::g::Fuse::Scripting::Context* c, Router* r, uArray* a
 
     if (callback == NULL)
     {
-        ::g::Fuse::Diagnostics::UserError(uString::Const("Router.getRoute(): argument must be a function."), r, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.ScriptClass.uno"), 315, uString::Const("GetRoute"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("Router.getRoute(): argument must be a function."), r, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.ScriptClass.uno"), 315, uString::Const("GetRoute"), NULL);
         return NULL;
     }
 
@@ -10497,7 +10499,7 @@ void Router::Goto1(Router* r, uArray* args)
     if (where != NULL)
         uPtr(r)->Modify1(1, where, 0, ::STRINGS[18/*""*/]);
     else
-        ::g::Fuse::Diagnostics::UserError(uString::Const("Router.goto(): invalid route provided"), r, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.ScriptClass.uno"), 45, uString::Const("Goto"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("Router.goto(): invalid route provided"), r, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.ScriptClass.uno"), 45, uString::Const("Goto"), NULL);
 }
 
 // private static void GotoRelative(Fuse.Navigation.Router r, object[] args) [static] :70
@@ -10535,7 +10537,7 @@ void Router::Modify2(Router* r, uArray* args)
 
     if (uPtr(args)->Length() != 1)
     {
-        ::g::Fuse::Diagnostics::UserError(uString::Const("`Router.modify` takes one argument"), r, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.ScriptClass.uno"), 179, uString::Const("Modify"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("`Router.modify` takes one argument"), r, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.ScriptClass.uno"), 179, uString::Const("Modify"), NULL);
         return;
     }
 
@@ -10543,7 +10545,7 @@ void Router::Modify2(Router* r, uArray* args)
 
     if (obj == NULL)
     {
-        ::g::Fuse::Diagnostics::UserError(uString::Const("`Router.modify` should be passed an object"), r, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.ScriptClass.uno"), 186, uString::Const("Modify"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("`Router.modify` should be passed an object"), r, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.ScriptClass.uno"), 186, uString::Const("Modify"), NULL);
         return;
     }
 
@@ -10613,15 +10615,15 @@ Router* Router::TryFindRouter(::g::Fuse::Node* n)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RouterCancelNavigation.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RouterCancelNavigation.uno
+// -----------------------------------------------------------------------------------
 
 // public sealed class RouterCancelNavigation :10
 // {
 static void RouterCancelNavigation_build(uType* type)
 {
     ::STRINGS[40] = uString::Const("Router not set and none could be found");
-    ::STRINGS[41] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RouterCancelNavigation.uno");
+    ::STRINGS[41] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RouterCancelNavigation.uno");
     ::STRINGS[2] = uString::Const("Perform");
     type->SetDependencies(
         ::g::Fuse::Navigation::Router_typeof());
@@ -10725,8 +10727,8 @@ RouterCancelNavigation* RouterCancelNavigation::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/Router.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/Router.uno
+// -------------------------------------------------------------------
 
 // public enum RouterGoBackBehavior :17
 uEnumType* RouterGoBackBehavior_typeof()
@@ -10741,8 +10743,8 @@ uEnumType* RouterGoBackBehavior_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RouterModify.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RouterModify.uno
+// -------------------------------------------------------------------------
 
 // public class RouterModify :84
 // {
@@ -10993,7 +10995,7 @@ void RouterModify::ctor_2()
 {
     _request = ::g::Fuse::Navigation::RouterRequest::New1(0);
     ctor_1();
-    ::g::Fuse::Diagnostics::UserWarning(uString::Const("RouterModify is deprecated. Use one of `ModifyRoute`, `GotoRoute` or `PushRoute` instead."), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RouterModify.uno"), 94, ::STRINGS[34/*".ctor"*/]);
+    ::g::Fuse::Diagnostics::UserWarning(uString::Const("RouterModify is deprecated. Use one of `ModifyRoute`, `GotoRoute` or `PushRoute` instead."), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RouterModify.uno"), 94, ::STRINGS[34/*".ctor"*/]);
 }
 
 // internal RouterModify(Fuse.Navigation.RouterModify.Flags flags) [instance] :103
@@ -11066,7 +11068,7 @@ void RouterModify::PerformRoute(::g::Fuse::Node* n, ::g::Fuse::Navigation::Route
 
     if (useRouter == NULL)
     {
-        ::g::Fuse::Diagnostics::UserError(::STRINGS[40/*"Router not ...*/], this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RouterModify.uno"), 216, uString::Const("PerformRoute"), NULL);
+        ::g::Fuse::Diagnostics::UserError(::STRINGS[40/*"Router not ...*/], this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RouterModify.uno"), 216, uString::Const("PerformRoute"), NULL);
         return;
     }
 
@@ -11144,8 +11146,8 @@ RouterModify* RouterModify::New3(int32_t flags)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RouterPage.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RouterPage.uno
+// -----------------------------------------------------------------------
 
 // internal sealed class RouterPage :22
 // {
@@ -11297,8 +11299,6 @@ void RouterPage::remove_ChildRouterPagesUpdated(uDelegate* value)
 // public void DefaultPath(string defaultPath) [instance] :45
 void RouterPage::DefaultPath(uString* defaultPath)
 {
-    uStackFrame __("Fuse.Navigation.RouterPage", "DefaultPath(string)");
-
     if (::g::Uno::String::op_Equality(Path(), NULL) || ::g::Uno::String::op_Equality(Path(), ::STRINGS[18/*""*/]))
         Path(defaultPath);
 }
@@ -11369,8 +11369,8 @@ RouterPage* RouterPage::New1(uString* path, uString* parameter, uObject* context
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/PageData.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/PageData.uno
+// ---------------------------------------------------------------------
 
 // internal delegate void RouterPageChangedHandler(object sender, Fuse.Navigation.RouterPage newPage) :5
 uDelegateType* RouterPageChangedHandler_typeof()
@@ -11385,8 +11385,8 @@ uDelegateType* RouterPageChangedHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RouterPage.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RouterPage.uno
+// -----------------------------------------------------------------------
 
 // internal sealed class RouterPageRoute :145
 // {
@@ -11394,7 +11394,7 @@ static void RouterPageRoute_build(uType* type)
 {
     ::STRINGS[49] = uString::Const("/");
     ::STRINGS[50] = uString::Const("count can't be < 0");
-    ::STRINGS[51] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RouterPage.uno");
+    ::STRINGS[51] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RouterPage.uno");
     ::STRINGS[52] = uString::Const("SubDepth");
     type->SetFields(0,
         ::g::Fuse::Navigation::RouterPage_typeof(), offsetof(RouterPageRoute, RouterPage), 0,
@@ -11574,8 +11574,8 @@ RouterPageRoute* RouterPageRoute::New1(::g::Fuse::Navigation::RouterPage* router
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RouterRequest.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RouterRequest.uno
+// --------------------------------------------------------------------------
 
 // internal sealed class RouterRequest :12
 // {
@@ -11752,7 +11752,7 @@ bool RouterRequest::AddArgument(uString* name, uObject* value, int32_t allow)
 
         if (!(::g::Fuse::Marshal__TryToType_fn(::g::Fuse::Marshal_typeof()->MakeMethod(1/*TryToType<Fuse.Navigation.NavigationGotoMode>*/, ::g::Fuse::Navigation::NavigationGotoMode_typeof(), NULL), value, &v, &ret3), ret3))
         {
-            ::g::Fuse::Diagnostics::UserError(uString::Const("Invalid transition value"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RouterRequest.uno"), 120, uString::Const("AddArgument"), NULL);
+            ::g::Fuse::Diagnostics::UserError(uString::Const("Invalid transition value"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RouterRequest.uno"), 120, uString::Const("AddArgument"), NULL);
             return false;
         }
         else
@@ -11768,7 +11768,7 @@ bool RouterRequest::AddArgument(uString* name, uObject* value, int32_t allow)
 
         if (!(::g::Fuse::Marshal__TryToType_fn(::g::Fuse::Marshal_typeof()->MakeMethod(1/*TryToType<Fuse.Navigation.RoutingOperation>*/, ::g::Fuse::Navigation::RoutingOperation_typeof(), NULL), value, &v1, &ret6), ret6))
         {
-            ::g::Fuse::Diagnostics::UserError(uString::Const("Invalid operation value"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RouterRequest.uno"), 141, uString::Const("AddArgument"), NULL);
+            ::g::Fuse::Diagnostics::UserError(uString::Const("Invalid operation value"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RouterRequest.uno"), 141, uString::Const("AddArgument"), NULL);
             return false;
         }
         else
@@ -11776,7 +11776,7 @@ bool RouterRequest::AddArgument(uString* name, uObject* value, int32_t allow)
     }
     else
     {
-        ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(uString::Const("Unrecognized or unsupported argument: "), name), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RouterRequest.uno"), 151, uString::Const("AddArgument"), NULL);
+        ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(uString::Const("Unrecognized or unsupported argument: "), name), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RouterRequest.uno"), 151, uString::Const("AddArgument"), NULL);
         return false;
     }
 
@@ -11814,7 +11814,7 @@ bool RouterRequest::AddPath(uObject* value)
 
         if (path == NULL)
         {
-            ::g::Fuse::Diagnostics::UserError(uString::Const("`path` should be an array"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RouterRequest.uno"), 73, uString::Const("AddPath"), NULL);
+            ::g::Fuse::Diagnostics::UserError(uString::Const("`path` should be an array"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RouterRequest.uno"), 73, uString::Const("AddPath"), NULL);
             return false;
         }
 
@@ -11840,13 +11840,13 @@ bool RouterRequest::MakeRequest(::g::Fuse::Navigation::Router* router)
     {
         if (targetRoute != NULL)
         {
-            ::g::Fuse::Diagnostics::UserError(uString::Const("A path and bookmark cannot both be specified"), router, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RouterRequest.uno"), 177, uString::Const("MakeRequest"), NULL);
+            ::g::Fuse::Diagnostics::UserError(uString::Const("A path and bookmark cannot both be specified"), router, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RouterRequest.uno"), 177, uString::Const("MakeRequest"), NULL);
             return false;
         }
 
         if (!(::g::Uno::Collections::Dictionary__TryGetValue_fn(uPtr(uPtr(router)->Bookmarks), Bookmark, (void**)(&targetRoute), &ret7), ret7))
         {
-            ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(uString::Const("Unknown bookmark: "), Bookmark), router, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RouterRequest.uno"), 183, uString::Const("MakeRequest"), NULL);
+            ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(uString::Const("Unknown bookmark: "), Bookmark), router, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RouterRequest.uno"), 183, uString::Const("MakeRequest"), NULL);
             return false;
         }
     }
@@ -11964,7 +11964,7 @@ bool RouterRequest::ParseNVPComponent(uObject* value, ::g::Fuse::Navigation::Rou
         return true;
     }
 
-    ::g::Fuse::Diagnostics::UserError(uString::Const("incompatible path component"), value, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RouterRequest.uno"), 332, uString::Const("ParseNVPComponent"), NULL);
+    ::g::Fuse::Diagnostics::UserError(uString::Const("incompatible path component"), value, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RouterRequest.uno"), 332, uString::Const("ParseNVPComponent"), NULL);
     return false;
 }
 
@@ -11995,7 +11995,7 @@ bool RouterRequest::ParseObjectComponent(uObject* value, ::g::Fuse::Navigation::
 
     if (::g::Uno::String::op_Equality(path, NULL))
     {
-        ::g::Fuse::Diagnostics::UserError(uString::Const("Object does not contain a $path"), NULL, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RouterRequest.uno"), 286, uString::Const("ParseObjectComponent"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("Object does not contain a $path"), NULL, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RouterRequest.uno"), 286, uString::Const("ParseObjectComponent"), NULL);
         return false;
     }
 
@@ -12041,7 +12041,7 @@ bool RouterRequest::ValidateParameter(uObject* arg, int32_t depth)
 
     if (depth > 49)
     {
-        ::g::Fuse::Diagnostics::UserError(uString::Const("Route parameter must be serializeable, it contains reference loops or is too large"), NULL, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RouterRequest.uno"), 340, uString::Const("ValidateParameter"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("Route parameter must be serializeable, it contains reference loops or is too large"), NULL, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RouterRequest.uno"), 340, uString::Const("ValidateParameter"), NULL);
         return false;
     }
 
@@ -12070,13 +12070,13 @@ bool RouterRequest::ValidateParameter(uObject* arg, int32_t depth)
 
     if (uIs(arg, ::g::Fuse::Reactive::IEventHandler_typeof()))
     {
-        ::g::Fuse::Diagnostics::UserError(uString::Const("Route parameter must be serializeable, cannot contain functions."), NULL, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RouterRequest.uno"), 366, uString::Const("ValidateParameter"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("Route parameter must be serializeable, cannot contain functions."), NULL, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RouterRequest.uno"), 366, uString::Const("ValidateParameter"), NULL);
         return false;
     }
 
     if (uIs(arg, ::g::Fuse::Reactive::IObservable_typeof()))
     {
-        ::g::Fuse::Diagnostics::UserError(uString::Const("Route parameter must be serializeable, cannot contain Observables."), NULL, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/RouterRequest.uno"), 372, uString::Const("ValidateParameter"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("Route parameter must be serializeable, cannot contain Observables."), NULL, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/RouterRequest.uno"), 372, uString::Const("ValidateParameter"), NULL);
         return false;
     }
 
@@ -12084,8 +12084,8 @@ bool RouterRequest::ValidateParameter(uObject* arg, int32_t depth)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/IRouterOutlet.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/IRouterOutlet.uno
+// --------------------------------------------------------------------------
 
 // internal enum RoutingOperation :8
 uEnumType* RoutingOperation_typeof()
@@ -12102,8 +12102,8 @@ uEnumType* RoutingOperation_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/IRouterOutlet.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/IRouterOutlet.uno
+// --------------------------------------------------------------------------
 
 // internal enum RoutingResult :29
 uEnumType* RoutingResult_typeof()
@@ -12120,8 +12120,8 @@ uEnumType* RoutingResult_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/SwipeNavigate.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/SwipeNavigate.uno
+// --------------------------------------------------------------------------
 
 // internal enum SnapTo :43
 uEnumType* SnapTo_typeof()
@@ -12137,8 +12137,8 @@ uEnumType* SnapTo_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/NavigationPageProxy.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/NavigationPageProxy.uno
+// --------------------------------------------------------------------------------
 
 // public delegate void NavigationPageProxy.StatusChangedHandler(Fuse.Navigation.NavigationPageProxy sender) :16
 uDelegateType* NavigationPageProxy__StatusChangedHandler_typeof()
@@ -12152,8 +12152,8 @@ uDelegateType* NavigationPageProxy__StatusChangedHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/StructuredNavigation.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/StructuredNavigation.uno
+// ---------------------------------------------------------------------------------
 
 // public interfacemodifiers class StructuredNavigation :13
 // {
@@ -12437,7 +12437,7 @@ void StructuredNavigation__FuseNavigationISeekableNavigationSeek_fn(StructuredNa
 
     if (__this->_region == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("Seek being called on an unrooted navigation"), __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/StructuredNavigation.uno"), 408, uString::Const("Fuse.Navigation.ISeekableNavigation.Seek"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("Seek being called on an unrooted navigation"), __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/StructuredNavigation.uno"), 408, uString::Const("Fuse.Navigation.ISeekableNavigation.Seek"));
         return;
     }
 
@@ -12786,7 +12786,7 @@ void StructuredNavigation::Duration(double value)
 {
     uStackFrame __("Fuse.Navigation.StructuredNavigation", "set_Duration(double)");
     uPtr(Motion())->GotoDuration((float)value);
-    ::g::Fuse::Diagnostics::Deprecated(uString::Const("Use a `NavigationMotion` and the `GotoDuration` property instead of `Navigation.Duration`"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/StructuredNavigation.uno"), 310, uString::Const("set_Duration"));
+    ::g::Fuse::Diagnostics::Deprecated(uString::Const("Use a `NavigationMotion` and the `GotoDuration` property instead of `Navigation.Duration`"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/StructuredNavigation.uno"), 310, uString::Const("set_Duration"));
 }
 
 // public Fuse.Animations.Easing get_Easing() [instance] :297
@@ -12801,7 +12801,7 @@ void StructuredNavigation::Easing(::g::Fuse::Animations::Easing* value)
 {
     uStackFrame __("Fuse.Navigation.StructuredNavigation", "set_Easing(Fuse.Animations.Easing)");
     uPtr(Motion())->GotoEasing(value);
-    ::g::Fuse::Diagnostics::Deprecated(uString::Const("Use a `NavigationMotion` and the `GotoEasing` property instead of `Navigation.Easing`"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/StructuredNavigation.uno"), 301, uString::Const("set_Easing"));
+    ::g::Fuse::Diagnostics::Deprecated(uString::Const("Use a `NavigationMotion` and the `GotoEasing` property instead of `Navigation.Easing`"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/StructuredNavigation.uno"), 301, uString::Const("set_Easing"));
 }
 
 // private Fuse.Visual get_Front() [instance] :486
@@ -12819,7 +12819,7 @@ void StructuredNavigation::GotoImpl(::g::Fuse::Visual* element, int32_t mode)
 
     if ((uPtr(element)->Parent() != NULL) && (uPtr(element)->Parent() != Parent()))
     {
-        ::g::Fuse::Diagnostics::UserError(uString::Const("Attempting to navigate to element with different parent"), element, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/StructuredNavigation.uno"), 117, uString::Const("GotoImpl"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("Attempting to navigate to element with different parent"), element, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/StructuredNavigation.uno"), 117, uString::Const("GotoImpl"), NULL);
         SetActive(NULL);
         return;
     }
@@ -12886,7 +12886,7 @@ void StructuredNavigation::Motion(::g::Fuse::Motion::MotionConfig* value)
     _motion = value;
 
     if (IsRootingCompleted())
-        ::g::Fuse::Diagnostics::UserError(uString::Const("Motion should not be changed post-rooting"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/StructuredNavigation.uno"), 44, uString::Const("set_Motion"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("Motion should not be changed post-rooting"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/StructuredNavigation.uno"), 44, uString::Const("set_Motion"), NULL);
 }
 
 // private Fuse.Visual get_Next() [instance] :496
@@ -12905,7 +12905,7 @@ void StructuredNavigation::OnUpdated()
 
     if (_region == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("Updated called without a region"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/StructuredNavigation.uno"), 208, uString::Const("OnUpdated"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("Updated called without a region"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/StructuredNavigation.uno"), 208, uString::Const("OnUpdated"));
         return;
     }
 
@@ -13014,15 +13014,15 @@ bool StructuredNavigation::TransitionToChild(::g::Fuse::Visual* element, bool by
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/FindRouter.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/FindRouter.uno
+// -----------------------------------------------------------------------
 
 // private sealed class FindRouter.Subscription :37
 // {
 static void FindRouter__Subscription_build(uType* type)
 {
     ::STRINGS[53] = uString::Const("unable to find a router");
-    ::STRINGS[54] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/FindRouter.uno");
+    ::STRINGS[54] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/FindRouter.uno");
     ::STRINGS[34] = uString::Const(".ctor");
     ::TYPES[35] = ::g::Fuse::Reactive::IListener_typeof();
     type->SetDependencies(
@@ -13099,8 +13099,8 @@ FindRouter__Subscription* FindRouter__Subscription::New1(::g::Fuse::Navigation::
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/PageBinding.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/PageBinding.uno
+// ------------------------------------------------------------------------
 
 // private sealed class PageExpression.Subscription :31
 // {
@@ -13355,8 +13355,8 @@ PageExpression__Subscription* PageExpression__Subscription::New1(::g::Fuse::Navi
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/SwipeNavigate.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/SwipeNavigate.uno
+// --------------------------------------------------------------------------
 
 // public enum SwipeDirection :65
 uEnumType* SwipeDirection_typeof()
@@ -13373,8 +13373,8 @@ uEnumType* SwipeDirection_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/SwipeNavigate.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/SwipeNavigate.uno
+// --------------------------------------------------------------------------
 
 // public sealed class SwipeNavigate :89
 // {
@@ -13388,7 +13388,7 @@ static void SwipeNavigate__cctor_1_fn(uType* __type)
 static void SwipeNavigate_build(uType* type)
 {
     ::STRINGS[55] = uString::Const("SwipeNavigate: failed to find suitable Navigation object");
-    ::STRINGS[56] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/SwipeNavigate.uno");
+    ::STRINGS[56] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/SwipeNavigate.uno");
     ::STRINGS[57] = uString::Const("Fuse.Input.IGesture.OnPointerPressed");
     ::TYPES[44] = ::g::Fuse::Motion::Simulation::PointerVelocity_typeof()->MakeType(::g::Uno::Float2_typeof(), NULL);
     ::TYPES[45] = ::g::Fuse::Navigation::ISeekableNavigation_typeof();
@@ -13980,8 +13980,8 @@ SwipeNavigate* SwipeNavigate::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/SwipeNavigate.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/SwipeNavigate.uno
+// --------------------------------------------------------------------------
 
 // internal sealed class UpdateSeekArgs :12
 // {
@@ -14110,8 +14110,8 @@ UpdateSeekArgs* UpdateSeekArgs::New1(float delta, float distance, float scale, d
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/VisualNavigation.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/VisualNavigation.uno
+// -----------------------------------------------------------------------------
 
 // public interfacemodifiers class VisualNavigation :11
 // {
@@ -14119,7 +14119,7 @@ UpdateSeekArgs* UpdateSeekArgs::New1(float delta, float distance, float scale, d
 static void VisualNavigation__cctor_1_fn(uType* __type)
 {
     ::g::Fuse::Scripting::ScriptClass_typeof()->Init();
-    VisualNavigation::ActiveIndexName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[58/*"ActiveIndex"*/]);
+    VisualNavigation::ActiveIndexName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[58/*"ActiveIndex"*/]);
     ::g::Fuse::Scripting::ScriptClass::Register(__type, uArray::Init< ::g::Fuse::Scripting::ScriptMember*>(::TYPES[48/*Fuse.Scripting.ScriptMember[]*/], 1, (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New2(::TYPES[49/*Fuse.Scripting.ScriptMethod<Fuse.Navigation.VisualNavigation>*/], ::STRINGS[59/*"goto"*/], uDelegate::New(::TYPES[50/*Uno.Action<Fuse.Navigation.VisualNavigation, object[]>*/], (void*)VisualNavigation__gotoNode_fn))));
 }
 
@@ -14128,7 +14128,7 @@ static void VisualNavigation_build(uType* type)
     ::STRINGS[58] = uString::Const("ActiveIndex");
     ::STRINGS[59] = uString::Const("goto");
     ::STRINGS[60] = uString::Const("Navigation.goto() : Argument must be a node object");
-    ::STRINGS[61] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/VisualNavigation.uno");
+    ::STRINGS[61] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/VisualNavigation.uno");
     ::STRINGS[62] = uString::Const("gotoNode");
     ::TYPES[47] = ::g::Uno::Type_typeof();
     ::TYPES[48] = ::g::Fuse::Scripting::ScriptMember_typeof()->Array();
@@ -14885,8 +14885,8 @@ void VisualNavigation::gotoNode(VisualNavigation* nav, uArray* args)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/WhileNavigationTriggers.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/WhileNavigationTriggers.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class WhileActive :137
 // {
@@ -14983,8 +14983,8 @@ WhileActive* WhileActive::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/WhileCanGoBack.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/WhileCanGoBack.uno
+// ---------------------------------------------------------------------------
 
 // public sealed class WhileCanGoBack :57
 // {
@@ -15079,8 +15079,8 @@ WhileCanGoBack* WhileCanGoBack::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/WhileCanGoBack.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/WhileCanGoBack.uno
+// ---------------------------------------------------------------------------
 
 // public sealed class WhileCanGoForward :71
 // {
@@ -15175,15 +15175,15 @@ WhileCanGoForward* WhileCanGoForward::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/WhileCanGoBack.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/WhileCanGoBack.uno
+// ---------------------------------------------------------------------------
 
 // public abstract class WhileHistoryTrigger :11
 // {
 static void WhileHistoryTrigger_build(uType* type)
 {
     ::STRINGS[63] = uString::Const("WhileHistoryTrigger requires a Navigation context");
-    ::STRINGS[64] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/WhileCanGoBack.uno");
+    ::STRINGS[64] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/WhileCanGoBack.uno");
     ::STRINGS[10] = uString::Const("OnRooted");
     ::TYPES[18] = ::g::Fuse::Navigation::IBaseNavigation_typeof();
     ::TYPES[56] = ::g::Fuse::Navigation::HistoryChangedHandler_typeof();
@@ -15328,8 +15328,8 @@ void WhileHistoryTrigger::OnHistoryChanged(uObject* sender)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/WhileNavigationTriggers.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/WhileNavigationTriggers.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class WhileInactive :168
 // {
@@ -15426,8 +15426,8 @@ WhileInactive* WhileInactive::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/WhileNavigationTriggers.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/WhileNavigationTriggers.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class WhileInEnterState :194
 // {
@@ -15521,8 +15521,8 @@ WhileInEnterState* WhileInEnterState::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/WhileNavigationTriggers.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/WhileNavigationTriggers.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class WhileInExitState :181
 // {
@@ -15616,15 +15616,15 @@ WhileInExitState* WhileInExitState::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/WhileNavigating.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/WhileNavigating.uno
+// ----------------------------------------------------------------------------
 
 // public class WhileNavigating :31
 // {
 static void WhileNavigating_build(uType* type)
 {
     ::STRINGS[65] = uString::Const("WhileNavigating requires a Navigation context");
-    ::STRINGS[66] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/WhileNavigating.uno");
+    ::STRINGS[66] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/WhileNavigating.uno");
     ::STRINGS[10] = uString::Const("OnRooted");
     ::TYPES[2] = ::g::Fuse::Navigation::INavigation_typeof();
     ::TYPES[58] = ::g::Uno::UX::ValueChangedHandler_typeof()->MakeType(::g::Fuse::Navigation::NavigationState_typeof(), NULL);
@@ -15759,8 +15759,8 @@ WhileNavigating* WhileNavigating::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/WhileNavigationTriggers.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/WhileNavigationTriggers.uno
+// ------------------------------------------------------------------------------------
 
 // public abstract class WhileNavigationTrigger :22
 // {
@@ -15961,15 +15961,15 @@ void WhileNavigationTrigger::Threshold(float value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/WhilePageActive.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/WhilePageActive.uno
+// ----------------------------------------------------------------------------
 
 // public sealed class WhilePageActive :12
 // {
 static void WhilePageActive_build(uType* type)
 {
     ::STRINGS[67] = uString::Const("Must be used within a navigation context");
-    ::STRINGS[68] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.9.0/WhilePageActive.uno");
+    ::STRINGS[68] = uString::Const("/usr/local/share/uno/Packages/Fuse.Navigation/1.10.0-rc1/WhilePageActive.uno");
     ::STRINGS[10] = uString::Const("OnRooted");
     ::TYPES[2] = ::g::Fuse::Navigation::INavigation_typeof();
     ::TYPES[26] = ::g::Fuse::Navigation::NavigationHandler_typeof();
@@ -16203,7 +16203,7 @@ void WhilePageActive::Update()
         set = set && (progress <= Limit());
 
     if (::g::Uno::String::op_Inequality(NameEquals(), NULL))
-        set = set && ::g::Uno::String::op_Equality(::g::Uno::UX::Selector__op_Implicit2(uPtr(active)->Name()), NameEquals());
+        set = set && ::g::Uno::String::op_Equality(::g::Uno::UX::Selector__op_Implicit1(uPtr(active)->Name()), NameEquals());
 
     SetActive(set);
 }

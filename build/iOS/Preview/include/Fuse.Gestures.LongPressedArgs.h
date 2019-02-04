@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Gestures/1.9.0/LongPress.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Gestures/1.10.0-rc1/LongPress.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

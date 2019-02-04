@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/.uno/ux15/Fuse.Controls.TextControl.g.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/.uno/ux15/Fuse.Controls.TextControl.g.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

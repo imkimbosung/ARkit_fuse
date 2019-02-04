@@ -32,8 +32,8 @@
 #include <Fuse.Elements.Element.h>
 #include <Fuse.Visual.h>
 #include <Uno.Bool.h>
-#include <Uno.Buffer.h>
 #include <Uno.Byte.h>
+#include <Uno.ByteArrayExtensions.h>
 #include <Uno.Double.h>
 #include <Uno.Exception.h>
 #include <Uno.Float.h>
@@ -60,15 +60,15 @@
 #include <Uno.UShort.h>
 #include <Uno.Vector.h>
 static uString* STRINGS[1];
-static uType* TYPES[16];
+static uType* TYPES[17];
 
 namespace g{
 namespace Fuse{
 namespace Drawing{
 namespace Primitives{
 
-// /usr/local/share/uno/Packages/Fuse.Drawing.Primitives/1.9.0/Circle.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Drawing.Primitives/1.10.0-rc1/Circle.uno
+// ---------------------------------------------------------------------------
 
 // public sealed class Circle :20
 // {
@@ -1239,8 +1239,8 @@ Circle* Circle::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Drawing.Primitives/1.9.0/Wedge.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Drawing.Primitives/1.10.0-rc1/Wedge.uno
+// --------------------------------------------------------------------------
 
 // internal sealed class ConcaveWedgeCoverage :46
 // {
@@ -1292,8 +1292,8 @@ ConcaveWedgeCoverage* ConcaveWedgeCoverage::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Drawing.Primitives/1.9.0/Wedge.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Drawing.Primitives/1.10.0-rc1/Wedge.uno
+// --------------------------------------------------------------------------
 
 // internal sealed class ConvexWedgeCoverage :41
 // {
@@ -1345,8 +1345,8 @@ ConvexWedgeCoverage* ConvexWedgeCoverage::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Drawing.Primitives/1.9.0/Rectangle.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Drawing.Primitives/1.10.0-rc1/Rectangle.uno
+// ------------------------------------------------------------------------------
 
 // internal abstract class Coverage :36
 // {
@@ -1379,8 +1379,8 @@ void Coverage::ctor_()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Drawing.Primitives/1.9.0/Rectangle.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Drawing.Primitives/1.10.0-rc1/Rectangle.uno
+// ------------------------------------------------------------------------------
 
 // internal class Falloff :55
 // {
@@ -1428,8 +1428,8 @@ Falloff* Falloff::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Drawing.Primitives/1.9.0/Rectangle.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Drawing.Primitives/1.10.0-rc1/Rectangle.uno
+// ------------------------------------------------------------------------------
 
 // internal sealed class FillCoverage :40
 // {
@@ -1479,8 +1479,8 @@ FillCoverage* FillCoverage::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Drawing.Primitives/1.9.0/Circle.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Drawing.Primitives/1.10.0-rc1/Circle.uno
+// ---------------------------------------------------------------------------
 
 // internal abstract class LimitCoverage :11
 // {
@@ -1513,8 +1513,8 @@ void LimitCoverage::ctor_()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Drawing.Primitives/1.9.0/Circle.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Drawing.Primitives/1.10.0-rc1/Circle.uno
+// ---------------------------------------------------------------------------
 
 // internal sealed class OneLimitCoverage :15
 // {
@@ -1564,8 +1564,8 @@ OneLimitCoverage* OneLimitCoverage::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Drawing.Primitives/1.9.0/Rectangle.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Drawing.Primitives/1.10.0-rc1/Rectangle.uno
+// ------------------------------------------------------------------------------
 
 // public sealed class Rectangle :67
 // {
@@ -1591,6 +1591,7 @@ static void Rectangle_build(uType* type)
     ::TYPES[13] = ::TYPES[10/*float[]*/]->Array();
     ::TYPES[14] = ::g::Uno::Float2_typeof()->Array();
     ::TYPES[15] = ::g::Uno::Int_typeof()->Array();
+    ::TYPES[16] = ::g::Uno::Byte_typeof()->Array();
     type->SetDependencies(
         ::g::FuseDrawingPrimitives_bundle_typeof(),
         ::g::Uno::Math_typeof());
@@ -2460,35 +2461,35 @@ void Rectangle::InitBuffers()
             }
         }
 
-        uPtr(offsets)->Item< ::g::Uno::Float2>(i) = ::g::Uno::Float2__op_Implicit2(offset);
+        uPtr(offsets)->Item< ::g::Uno::Float2>(i) = ::g::Uno::Float2__op_Implicit1(offset);
     }
 
     uArray* vsr = uArray::Init<int32_t>(::TYPES[15/*int[]*/], 72, 10, 8, 11, 10, 6, 8, 10, 2, 6, 2, 3, 6, 14, 11, 8, 14, 8, 15, 8, 9, 15, 9, 12, 15, 3, 0, 6, 0, 1, 6, 6, 1, 4, 6, 4, 7, 7, 4, 5, 7, 5, 9, 9, 5, 13, 9, 13, 12, 2, 16, 3, 3, 16, 0, 1, 17, 4, 4, 17, 5, 15, 12, 19, 12, 
         13, 19, 11, 18, 10, 14, 18, 11);
     uArray* ptr = uArray::Init<int32_t>(::TYPES[15/*int[]*/], 72, 22, 8, 22, 22, 6, 8, 22, 20, 6, 20, 20, 6, 26, 26, 8, 26, 8, 27, 8, 9, 27, 9, 27, 27, 24, 24, 6, 24, 25, 6, 6, 25, 25, 6, 25, 7, 7, 21, 21, 7, 21, 9, 9, 21, 23, 9, 23, 23, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 12, 12, 12, 12, 
         12, 12, 11, 11, 11, 11, 11, 11);
-    ::g::Uno::Buffer* bufferVertex = ::g::Uno::Buffer::New4(vsr->Length() * 16);
-    ::g::Uno::Buffer* bufferEdge = ::g::Uno::Buffer::New4(vsr->Length() * 16);
+    uArray* bufferVertex = uArray::New(::TYPES[16/*byte[]*/], vsr->Length() * 16);
+    uArray* bufferEdge = uArray::New(::TYPES[16/*byte[]*/], vsr->Length() * 16);
     _vertexInfo = uDefault< ::g::Uno::Graphics::VertexAttributeInfo>();
     _vertexInfo.BufferOffset = 0;
     _vertexInfo.BufferStride = 16;
     _vertexInfo.Type = 4;
-    _vertexInfo.Buffer = ::g::Uno::Graphics::VertexBuffer::New4(0);
+    _vertexInfo.Buffer = ::g::Uno::Graphics::VertexBuffer::New8(0);
     _edgeInfo = uDefault< ::g::Uno::Graphics::VertexAttributeInfo>();
     _edgeInfo.BufferOffset = 0;
     _edgeInfo.BufferStride = 16;
     _edgeInfo.Type = 4;
-    _edgeInfo.Buffer = ::g::Uno::Graphics::VertexBuffer::New4(0);
+    _edgeInfo.Buffer = ::g::Uno::Graphics::VertexBuffer::New8(0);
 
     for (int32_t i1 = 0; i1 < vsr->Length(); ++i1)
     {
-        uPtr(bufferVertex)->Set8(i1 * _vertexInfo.BufferStride, ::g::Uno::Float4__New7(uPtr(offsets)->Item< ::g::Uno::Float2>(uPtr(vsr)->Item<int32_t>(i1) * 2), uPtr(offsets)->Item< ::g::Uno::Float2>((uPtr(vsr)->Item<int32_t>(i1) * 2) + 1)), true);
-        uPtr(bufferEdge)->Set8(i1 * _edgeInfo.BufferStride, ::g::Uno::Float4__New7(offsets->Item< ::g::Uno::Float2>(uPtr(ptr)->Item<int32_t>(i1) * 2), offsets->Item< ::g::Uno::Float2>((uPtr(ptr)->Item<int32_t>(i1) * 2) + 1)), true);
+        ::g::Uno::ByteArrayExtensions::Set8(bufferVertex, i1 * _vertexInfo.BufferStride, ::g::Uno::Float4__New7(uPtr(offsets)->Item< ::g::Uno::Float2>(uPtr(vsr)->Item<int32_t>(i1) * 2), uPtr(offsets)->Item< ::g::Uno::Float2>((uPtr(vsr)->Item<int32_t>(i1) * 2) + 1)), true);
+        ::g::Uno::ByteArrayExtensions::Set8(bufferEdge, i1 * _edgeInfo.BufferStride, ::g::Uno::Float4__New7(offsets->Item< ::g::Uno::Float2>(uPtr(ptr)->Item<int32_t>(i1) * 2), offsets->Item< ::g::Uno::Float2>((uPtr(ptr)->Item<int32_t>(i1) * 2) + 1)), true);
         uPtr(_bufferDistance)->Append1((float)(uint16_t)(1 + ((i1 < 48) ? 8 : (i1 < 54) ? 0 : (i1 < 60) ? 1 : (i1 < 66) ? 2 : 3)));
     }
 
-    uPtr(_vertexInfo.Buffer)->Update(bufferVertex->GetBytes());
-    uPtr(_edgeInfo.Buffer)->Update(bufferEdge->GetBytes());
+    uPtr(_vertexInfo.Buffer)->Update(bufferVertex);
+    uPtr(_edgeInfo.Buffer)->Update(bufferEdge);
     uPtr(_bufferDistance)->InitDeviceVertex(0);
 }
 
@@ -2544,8 +2545,8 @@ Rectangle* Rectangle::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Drawing.Primitives/1.9.0/Rectangle.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Drawing.Primitives/1.10.0-rc1/Rectangle.uno
+// ------------------------------------------------------------------------------
 
 // internal sealed class ShadowFalloff :60
 // {
@@ -2595,8 +2596,8 @@ ShadowFalloff* ShadowFalloff::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Drawing.Primitives/1.9.0/Rectangle.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Drawing.Primitives/1.10.0-rc1/Rectangle.uno
+// ------------------------------------------------------------------------------
 
 // internal sealed class StrokeCoverage :46
 // {
@@ -2652,8 +2653,8 @@ StrokeCoverage* StrokeCoverage::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Drawing.Primitives/1.9.0/Wedge.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Drawing.Primitives/1.10.0-rc1/Wedge.uno
+// --------------------------------------------------------------------------
 
 // public sealed class Wedge :51
 // {
@@ -2790,8 +2791,8 @@ Wedge* Wedge::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Drawing.Primitives/1.9.0/Wedge.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Drawing.Primitives/1.10.0-rc1/Wedge.uno
+// --------------------------------------------------------------------------
 
 // internal abstract class WedgeCoverage :10
 // {

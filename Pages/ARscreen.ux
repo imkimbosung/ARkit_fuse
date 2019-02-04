@@ -7,7 +7,7 @@
 
 		<NativeViewHost>
 			
-			<ARView ux:Name="ARView" PlaneFile="../iOS/tron_grid.png" ShowStatistics="true" Debug="true" >
+			<ARView ux:Name="ARView"  ShowStatistics="true" Debug="true" >
 					<Image File="../Images/back.png" Clicked="{back}" Alignment="TopLeft" Layer="Layout" Height="40" Width="30" Padding="0, 0, 0, 0" Margin="20, 20, 0, 0" />
 			</ARView>
 

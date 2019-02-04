@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Models/1.9.0/.uno/package.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Models/1.10.0-rc1/.uno/package.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -14,8 +14,8 @@ uClassType* FuseModels_bundle_typeof();
 
 struct FuseModels_bundle : uObject
 {
-    static uSStrong< ::g::Uno::IO::BundleFile*> zonec51ed9d2_;
-    static uSStrong< ::g::Uno::IO::BundleFile*>& zonec51ed9d2() { return FuseModels_bundle_typeof()->Init(), zonec51ed9d2_; }
+    static uSStrong< ::g::Uno::IO::BundleFile*> zone4d1cbb1d_;
+    static uSStrong< ::g::Uno::IO::BundleFile*>& zone4d1cbb1d() { return FuseModels_bundle_typeof()->Init(), zone4d1cbb1d_; }
 };
 // }
 

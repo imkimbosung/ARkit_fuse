@@ -66,8 +66,8 @@ namespace Uno{
 namespace Content{
 namespace Fonts{
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Content/Fonts/BitmapFont.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Content/Fonts/BitmapFont.uno
+// ----------------------------------------------------------------------------------------
 
 // public sealed class BitmapFont :7
 // {
@@ -156,8 +156,8 @@ BitmapFont* BitmapFont::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Content/Fonts/BitmapFont.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Content/Fonts/BitmapFont.uno
+// ----------------------------------------------------------------------------------------
 
 // public struct BitmapFont.CharPair :18
 // {
@@ -179,6 +179,7 @@ uStructType* BitmapFont__CharPair_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 2;
     options.Alignment = alignof(BitmapFont__CharPair);
     options.ValueSize = sizeof(BitmapFont__CharPair);
@@ -190,9 +191,9 @@ uStructType* BitmapFont__CharPair_typeof()
 }
 
 // public CharPair(char left, char right) :22
-void BitmapFont__CharPair__ctor__fn(BitmapFont__CharPair* __this, char16_t* left, char16_t* right)
+void BitmapFont__CharPair__ctor_1_fn(BitmapFont__CharPair* __this, char16_t* left, char16_t* right)
 {
-    __this->ctor_(*left, *right);
+    __this->ctor_1(*left, *right);
 }
 
 // public override sealed int GetHashCode() :28
@@ -211,7 +212,7 @@ void BitmapFont__CharPair__New1_fn(char16_t* left, char16_t* right, BitmapFont__
 }
 
 // public CharPair(char left, char right) [instance] :22
-void BitmapFont__CharPair::ctor_(char16_t left, char16_t right)
+void BitmapFont__CharPair::ctor_1(char16_t left, char16_t right)
 {
     Left = left;
     Right = right;
@@ -221,15 +222,15 @@ void BitmapFont__CharPair::ctor_(char16_t left, char16_t right)
 BitmapFont__CharPair BitmapFont__CharPair__New1(char16_t left, char16_t right)
 {
     BitmapFont__CharPair obj1;
-    obj1.ctor_(left, right);
+    obj1.ctor_1(left, right);
     return obj1;
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Content/Fonts/CppFontFace.uno
-// ------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Content/Fonts/CppFontFace.uno
+// -----------------------------------------------------------------------------------------
 
-// internal sealed extern class CppFontFace :19
+// internal sealed extern class CppFontFace :20
 // {
 static void CppFontFace_build(uType* type)
 {
@@ -265,19 +266,19 @@ static void CppFontFace_build(uType* type)
     return type;
 }
 
-// public CppFontFace(byte[] data, int offset, int length) :40
+// public CppFontFace(byte[] data, int offset, int length) :41
 void CppFontFace__ctor_1_fn(CppFontFace* __this, uArray* data, int32_t* offset, int32_t* length)
 {
     __this->ctor_1(data, *offset, *length);
 }
 
-// public CppFontFace(Uno.IO.BundleFile file) :35
+// public CppFontFace(Uno.IO.BundleFile file) :36
 void CppFontFace__ctor_2_fn(CppFontFace* __this, ::g::Uno::IO::BundleFile* file)
 {
     __this->ctor_2(file);
 }
 
-// public override sealed bool ContainsGlyph(float size, char glyph) :76
+// public override sealed bool ContainsGlyph(float size, char glyph) :77
 void CppFontFace__ContainsGlyph_fn(CppFontFace* __this, float* size, char16_t* glyph, bool* __retval)
 {
     float size_ = *size;
@@ -285,85 +286,83 @@ void CppFontFace__ContainsGlyph_fn(CppFontFace* __this, float* size, char16_t* g
     return *__retval = __this->_handle->ContainsGlyph(size_, glyph_), void();
 }
 
-// public override sealed void Dispose() :45
+// public override sealed void Dispose() :46
 void CppFontFace__Dispose_fn(CppFontFace* __this)
 {
     __this->_handle->Release();
     __this->_handle = 0;
 }
 
-// public override sealed string get_FamilyName() :53
+// public override sealed string get_FamilyName() :54
 void CppFontFace__get_FamilyName_fn(CppFontFace* __this, uString** __retval)
 {
     return *__retval = uStringFromXliString(__this->_handle->GetFamilyName()), void();
 }
 
-// public override sealed float GetAscender(float size) :61
+// public override sealed float GetAscender(float size) :62
 void CppFontFace__GetAscender_fn(CppFontFace* __this, float* size, float* __retval)
 {
     float size_ = *size;
     return *__retval = __this->_handle->GetAscender(size_), void();
 }
 
-// public override sealed float GetDescender(float size) :66
+// public override sealed float GetDescender(float size) :67
 void CppFontFace__GetDescender_fn(CppFontFace* __this, float* size, float* __retval)
 {
     float size_ = *size;
     return *__retval = __this->_handle->GetDescender(size_), void();
 }
 
-// public override sealed float GetLineHeight(float size) :71
+// public override sealed float GetLineHeight(float size) :72
 void CppFontFace__GetLineHeight_fn(CppFontFace* __this, float* size, float* __retval)
 {
     float size_ = *size;
     return *__retval = __this->_handle->GetLineHeight(size_), void();
 }
 
-// private static Uno.Content.Fonts.CppFontFaceHandle LoadFontFaceHandle(byte[] data, int offset, int length) :27
+// private static Uno.Content.Fonts.CppFontFaceHandle LoadFontFaceHandle(byte[] data, int offset, int length) :28
 void CppFontFace__LoadFontFaceHandle_fn(uArray* data, int32_t* offset, int32_t* length, uImage::FontFace** __retval)
 {
     *__retval = CppFontFace::LoadFontFaceHandle(data, *offset, *length);
 }
 
-// private static Uno.Content.Fonts.CppFontFaceHandle LoadFontFaceHandle(string filename) :21
+// private static Uno.Content.Fonts.CppFontFaceHandle LoadFontFaceHandle(string filename) :22
 void CppFontFace__LoadFontFaceHandle1_fn(uString* filename, uImage::FontFace** __retval)
 {
     *__retval = CppFontFace::LoadFontFaceHandle1(filename);
 }
 
-// public CppFontFace New(byte[] data, int offset, int length) :40
+// public CppFontFace New(byte[] data, int offset, int length) :41
 void CppFontFace__New1_fn(uArray* data, int32_t* offset, int32_t* length, CppFontFace** __retval)
 {
     *__retval = CppFontFace::New1(data, *offset, *length);
 }
 
-// public CppFontFace New(Uno.IO.BundleFile file) :35
+// public CppFontFace New(Uno.IO.BundleFile file) :36
 void CppFontFace__New2_fn(::g::Uno::IO::BundleFile* file, CppFontFace** __retval)
 {
     *__retval = CppFontFace::New2(file);
 }
 
-// public override sealed Uno.Content.Fonts.RenderedGlyph RenderGlyph(float size, char glyph) :86
+// public override sealed Uno.Content.Fonts.RenderedGlyph RenderGlyph(float size, char glyph) :83
 void CppFontFace__RenderGlyph_fn(CppFontFace* __this, float* size, char16_t* glyph, ::g::Uno::Content::Fonts::RenderedGlyph* __retval)
 {
     float size_ = *size;
     char16_t glyph_ = *glyph;
     uBase::Vector2 advance, bearing;
     uBase::Auto<uImage::Bitmap> bitmap = __this->_handle->RenderGlyph(size_, glyph_, uImage::FontRenderModeNormal, &advance, &bearing);
+    uArray* bytes = uArray::New(::g::Uno::Byte_typeof()->Array(), bitmap->GetSizeInBytes(), bitmap->GetPtr());
     
-    ::g::Uno::Buffer* resultBuffer = uBufferFromXliDataAccessor(bitmap);
-    ::g::Uno::Content::Images::Bitmap* resultBitmap = ::g::Uno::Content::Images::Bitmap::New1(::g::Uno::Int2__New2(bitmap->GetWidth(), bitmap->GetHeight()), 1, resultBuffer);
-    
-    return *__retval = ::g::Uno::Content::Fonts::RenderedGlyph__New1(::g::Uno::Float2__New2(advance.X, advance.Y), ::g::Uno::Float2__New2(bearing.X, bearing.Y), resultBitmap), void();
+    return *__retval = ::g::Uno::Content::Fonts::RenderedGlyph__New1(::g::Uno::Float2__New2(advance.X, advance.Y), ::g::Uno::Float2__New2(bearing.X, bearing.Y), ::g::Uno::Int2__New2(bitmap->GetWidth(), bitmap->GetHeight()), 1, bytes), void();
 }
 
-// public override sealed string get_StyleName() :58
+// public override sealed string get_StyleName() :59
 void CppFontFace__get_StyleName_fn(CppFontFace* __this, uString** __retval)
 {
     return *__retval = uStringFromXliString(__this->_handle->GetStyleName()), void();
 }
 
-// public override sealed bool TryGetKerning(float size, char left, char right, float2& result) :98
+// public override sealed bool TryGetKerning(float size, char left, char right, float2& result) :97
 void CppFontFace__TryGetKerning_fn(CppFontFace* __this, float* size, char16_t* left, char16_t* right, ::g::Uno::Float2* result, bool* __retval)
 {
     float size_ = *size;
@@ -381,14 +380,14 @@ void CppFontFace__TryGetKerning_fn(CppFontFace* __this, float* size, char16_t* l
     return *__retval = false, void();
 }
 
-// public CppFontFace(byte[] data, int offset, int length) [instance] :40
+// public CppFontFace(byte[] data, int offset, int length) [instance] :41
 void CppFontFace::ctor_1(uArray* data, int32_t offset, int32_t length)
 {
     ctor_();
     _handle = CppFontFace::LoadFontFaceHandle(data, offset, length);
 }
 
-// public CppFontFace(Uno.IO.BundleFile file) [instance] :35
+// public CppFontFace(Uno.IO.BundleFile file) [instance] :36
 void CppFontFace::ctor_2(::g::Uno::IO::BundleFile* file)
 {
     uStackFrame __("Uno.Content.Fonts.CppFontFace", ".ctor(Uno.IO.BundleFile)");
@@ -396,21 +395,21 @@ void CppFontFace::ctor_2(::g::Uno::IO::BundleFile* file)
     _handle = CppFontFace::LoadFontFaceHandle1(uPtr(file)->BundlePath());
 }
 
-// private static Uno.Content.Fonts.CppFontFaceHandle LoadFontFaceHandle(byte[] data, int offset, int length) [static] :27
+// private static Uno.Content.Fonts.CppFontFaceHandle LoadFontFaceHandle(byte[] data, int offset, int length) [static] :28
 uImage::FontFace* CppFontFace::LoadFontFaceHandle(uArray* data, int32_t offset, int32_t length)
 {
     uBase::BufferStream stream(new uBase::BufferPtr((char*)data->Ptr() + offset, length, false), true, false);
     return uImage::FontFace::Load(&stream);
 }
 
-// private static Uno.Content.Fonts.CppFontFaceHandle LoadFontFaceHandle(string filename) [static] :21
+// private static Uno.Content.Fonts.CppFontFaceHandle LoadFontFaceHandle(string filename) [static] :22
 uImage::FontFace* CppFontFace::LoadFontFaceHandle1(uString* filename)
 {
     uBase::Auto<uBase::Stream> f = uBase::Bundle->OpenFile(uStringToXliString(filename));
     return uImage::FontFace::Load(f);
 }
 
-// public CppFontFace New(byte[] data, int offset, int length) [static] :40
+// public CppFontFace New(byte[] data, int offset, int length) [static] :41
 CppFontFace* CppFontFace::New1(uArray* data, int32_t offset, int32_t length)
 {
     CppFontFace* obj2 = (CppFontFace*)uNew(CppFontFace_typeof());
@@ -418,7 +417,7 @@ CppFontFace* CppFontFace::New1(uArray* data, int32_t offset, int32_t length)
     return obj2;
 }
 
-// public CppFontFace New(Uno.IO.BundleFile file) [static] :35
+// public CppFontFace New(Uno.IO.BundleFile file) [static] :36
 CppFontFace* CppFontFace::New2(::g::Uno::IO::BundleFile* file)
 {
     CppFontFace* obj1 = (CppFontFace*)uNew(CppFontFace_typeof());
@@ -427,10 +426,10 @@ CppFontFace* CppFontFace::New2(::g::Uno::IO::BundleFile* file)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Content/Fonts/CppFontFace.uno
-// ------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Content/Fonts/CppFontFace.uno
+// -----------------------------------------------------------------------------------------
 
-// internal extern struct CppFontFaceHandle :11
+// internal extern struct CppFontFaceHandle :12
 // {
 static void CppFontFaceHandle_build(uType* type)
 {
@@ -442,6 +441,7 @@ uStructType* CppFontFaceHandle_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.Alignment = alignof(uImage::FontFace*);
     options.ValueSize = sizeof(uImage::FontFace*);
     options.TypeSize = sizeof(uStructType);
@@ -451,15 +451,15 @@ uStructType* CppFontFaceHandle_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Content/Fonts/DefaultTextTransform.uno
-// ---------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Content/Fonts/DefaultTextTransform.uno
+// --------------------------------------------------------------------------------------------------
 
 // public sealed class DefaultTextTransform :6
 // {
 static void DefaultTextTransform_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("DefaultTextTransform: Not implemented on mobile");
-    ::STRINGS[1] = uString::Const("/usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Content/Fonts/DefaultTextTransform.uno");
+    ::STRINGS[1] = uString::Const("/usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Content/Fonts/DefaultTextTransform.uno");
     type->SetDependencies(
         ::g::Uno::Diagnostics::Debug_typeof());
     type->SetFields(0,
@@ -536,8 +536,8 @@ DefaultTextTransform* DefaultTextTransform::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Content/Fonts/FontFace.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Content/Fonts/FontFace.uno
+// --------------------------------------------------------------------------------------
 
 // public abstract class FontFace :8
 // {
@@ -579,7 +579,7 @@ void FontFace__ctor__fn(FontFace* __this)
     __this->ctor_();
 }
 
-// public static Uno.Content.Fonts.FontFace Load(string name, byte[] data, int offset, int length) :24
+// public static Uno.Content.Fonts.FontFace Load(string name, byte[] data, int offset, int length) :22
 void FontFace__Load_fn(uString* name, uArray* data, int32_t* offset, int32_t* length, FontFace** __retval)
 {
     *__retval = FontFace::Load(name, data, *offset, *length);
@@ -596,7 +596,7 @@ void FontFace::ctor_()
 {
 }
 
-// public static Uno.Content.Fonts.FontFace Load(string name, byte[] data, int offset, int length) [static] :24
+// public static Uno.Content.Fonts.FontFace Load(string name, byte[] data, int offset, int length) [static] :22
 FontFace* FontFace::Load(uString* name, uArray* data, int32_t offset, int32_t length)
 {
     return ::g::Uno::Content::Fonts::CppFontFace::New1(data, offset, length);
@@ -610,8 +610,8 @@ FontFace* FontFace::Load1(::g::Uno::IO::BundleFile* file)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Content/Fonts/FontFaceHelpers.uno
-// ----------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Content/Fonts/FontFaceHelpers.uno
+// ---------------------------------------------------------------------------------------------
 
 // public static class FontFaceHelpers :15
 // {
@@ -669,10 +669,10 @@ void FontFaceHelpers__RenderSpriteFont_fn(::g::Uno::Content::Fonts::FontFace* fo
             ::g::Uno::Content::Fonts::RenderedGlyph g = uPtr(font)->RenderGlyph(size, c);
             ::g::Uno::Collections::Dictionary__Add_fn(uPtr(glyphs), uCRef<char16_t>(c), uCRef(g));
 
-            if (g.Bitmap != NULL)
+            if (g.Bitmap() != NULL)
             {
-                maxSize = ::g::Uno::Math::Max8(maxSize, uPtr(g.Bitmap)->Size().X);
-                maxSize = ::g::Uno::Math::Max8(maxSize, uPtr(g.Bitmap)->Size().Y);
+                maxSize = ::g::Uno::Math::Max8(maxSize, uPtr(g.Bitmap())->Size().X);
+                maxSize = ::g::Uno::Math::Max8(maxSize, uPtr(g.Bitmap())->Size().Y);
             }
         }
     }
@@ -705,12 +705,12 @@ void FontFaceHelpers__RenderSpriteFont_fn(::g::Uno::Content::Fonts::FontFace* fo
                     int32_t dstX = (gi % sideCount) * (sideSize / sideCount);
                     int32_t dstY = ((gi / sideCount) % sideCount) * (sideSize / sideCount);
                     gi++;
-                    ::g::Uno::Content::Images::Bitmap* src = e.Value(::TYPES[2/*Uno.Collections.KeyValuePair<char, Uno.Content.Fonts.RenderedGlyph>*/]).Bitmap;
+                    ::g::Uno::Content::Images::Bitmap* src = e.Value(::TYPES[2/*Uno.Collections.KeyValuePair<char, Uno.Content.Fonts.RenderedGlyph>*/]).Bitmap();
                     ::g::Uno::Float2 srcSize = ::g::Uno::Float2__New2(0.0f, 0.0f);
 
                     if (src != NULL)
                     {
-                        srcSize = ::g::Uno::Float2__op_Implicit2(uPtr(src)->Size());
+                        srcSize = ::g::Uno::Float2__op_Implicit1(uPtr(src)->Size());
                         int32_t bpp = ::g::Uno::Graphics::FormatHelpers::GetStrideInBytes(src->Format());
 
                         for (int32_t srcY = 0; srcY < src->Size().Y; srcY++)
@@ -771,8 +771,8 @@ void FontFaceHelpers__RenderSpriteFont_fn(::g::Uno::Content::Fonts::FontFace* fo
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Content/Fonts/BitmapFont.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Content/Fonts/BitmapFont.uno
+// ----------------------------------------------------------------------------------------
 
 // public struct BitmapFont.GlyphInfo :9
 // {
@@ -798,6 +798,7 @@ uStructType* BitmapFont__GlyphInfo_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 5;
     options.Alignment = alignof(BitmapFont__GlyphInfo);
     options.ValueSize = sizeof(BitmapFont__GlyphInfo);
@@ -808,23 +809,28 @@ uStructType* BitmapFont__GlyphInfo_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Content/Fonts/RenderedGlyph.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Content/Fonts/RenderedGlyph.uno
+// -------------------------------------------------------------------------------------------
 
-// public struct RenderedGlyph :6
+// public struct RenderedGlyph :7
 // {
 static void RenderedGlyph_build(uType* type)
 {
     type->SetFields(0,
         ::g::Uno::Float2_typeof(), offsetof(RenderedGlyph, Advance), 0,
         ::g::Uno::Float2_typeof(), offsetof(RenderedGlyph, Bearing), 0,
-        ::g::Uno::Content::Images::Bitmap_typeof(), offsetof(RenderedGlyph, Bitmap), 0);
-    type->Reflection.SetFields(3,
+        ::g::Uno::Int2_typeof(), offsetof(RenderedGlyph, Size), 0,
+        ::g::Uno::Graphics::Format_typeof(), offsetof(RenderedGlyph, Format), 0,
+        ::g::Uno::Byte_typeof()->Array(), offsetof(RenderedGlyph, Data), 0);
+    type->Reflection.SetFields(5,
         new uField("Advance", 0),
         new uField("Bearing", 1),
-        new uField("Bitmap", 2));
-    type->Reflection.SetFunctions(1,
-        new uFunction(".ctor", NULL, (void*)RenderedGlyph__New1_fn, 0, true, type, 3, ::g::Uno::Float2_typeof(), ::g::Uno::Float2_typeof(), ::g::Uno::Content::Images::Bitmap_typeof()));
+        new uField("Data", 4),
+        new uField("Format", 3),
+        new uField("Size", 2));
+    type->Reflection.SetFunctions(2,
+        new uFunction("get_Bitmap", NULL, (void*)RenderedGlyph__get_Bitmap_fn, 0, false, ::g::Uno::Content::Images::Bitmap_typeof(), 0),
+        new uFunction(".ctor", NULL, (void*)RenderedGlyph__New1_fn, 0, true, type, 5, ::g::Uno::Float2_typeof(), ::g::Uno::Float2_typeof(), ::g::Uno::Int2_typeof(), ::g::Uno::Graphics::Format_typeof(), ::g::Uno::Byte_typeof()->Array()));
 }
 
 uStructType* RenderedGlyph_typeof()
@@ -833,7 +839,8 @@ uStructType* RenderedGlyph_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
-    options.FieldCount = 3;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
+    options.FieldCount = 5;
     options.Alignment = alignof(RenderedGlyph);
     options.ValueSize = sizeof(RenderedGlyph);
     options.TypeSize = sizeof(uStructType);
@@ -842,37 +849,51 @@ uStructType* RenderedGlyph_typeof()
     return type;
 }
 
-// public RenderedGlyph(float2 advance, float2 bearing, Uno.Content.Images.Bitmap bitmap) :12
-void RenderedGlyph__ctor__fn(RenderedGlyph* __this, ::g::Uno::Float2* advance, ::g::Uno::Float2* bearing, ::g::Uno::Content::Images::Bitmap* bitmap)
+// public RenderedGlyph(float2 advance, float2 bearing, int2 size, Uno.Graphics.Format format, byte[] data) :15
+void RenderedGlyph__ctor_1_fn(RenderedGlyph* __this, ::g::Uno::Float2* advance, ::g::Uno::Float2* bearing, ::g::Uno::Int2* size, int32_t* format, uArray* data)
 {
-    __this->ctor_(*advance, *bearing, bitmap);
+    __this->ctor_1(*advance, *bearing, *size, *format, data);
 }
 
-// public RenderedGlyph New(float2 advance, float2 bearing, Uno.Content.Images.Bitmap bitmap) :12
-void RenderedGlyph__New1_fn(::g::Uno::Float2* advance, ::g::Uno::Float2* bearing, ::g::Uno::Content::Images::Bitmap* bitmap, RenderedGlyph* __retval)
+// public Uno.Content.Images.Bitmap get_Bitmap() :37
+void RenderedGlyph__get_Bitmap_fn(RenderedGlyph* __this, ::g::Uno::Content::Images::Bitmap** __retval)
 {
-    *__retval = RenderedGlyph__New1(*advance, *bearing, bitmap);
+    *__retval = __this->Bitmap();
 }
 
-// public RenderedGlyph(float2 advance, float2 bearing, Uno.Content.Images.Bitmap bitmap) [instance] :12
-void RenderedGlyph::ctor_(::g::Uno::Float2 advance, ::g::Uno::Float2 bearing, ::g::Uno::Content::Images::Bitmap* bitmap)
+// public RenderedGlyph New(float2 advance, float2 bearing, int2 size, Uno.Graphics.Format format, byte[] data) :15
+void RenderedGlyph__New1_fn(::g::Uno::Float2* advance, ::g::Uno::Float2* bearing, ::g::Uno::Int2* size, int32_t* format, uArray* data, RenderedGlyph* __retval)
+{
+    *__retval = RenderedGlyph__New1(*advance, *bearing, *size, *format, data);
+}
+
+// public RenderedGlyph(float2 advance, float2 bearing, int2 size, Uno.Graphics.Format format, byte[] data) [instance] :15
+void RenderedGlyph::ctor_1(::g::Uno::Float2 advance, ::g::Uno::Float2 bearing, ::g::Uno::Int2 size, int32_t format, uArray* data)
 {
     Advance = advance;
     Bearing = bearing;
-    Bitmap = bitmap;
+    Size = size;
+    Format = format;
+    Data = data;
 }
 
-// public RenderedGlyph New(float2 advance, float2 bearing, Uno.Content.Images.Bitmap bitmap) [static] :12
-RenderedGlyph RenderedGlyph__New1(::g::Uno::Float2 advance, ::g::Uno::Float2 bearing, ::g::Uno::Content::Images::Bitmap* bitmap)
+// public Uno.Content.Images.Bitmap get_Bitmap() [instance] :37
+::g::Uno::Content::Images::Bitmap* RenderedGlyph::Bitmap()
+{
+    return ::g::Uno::Content::Images::Bitmap::New1(Size, Format, ::g::Uno::Buffer::New1(Data));
+}
+
+// public RenderedGlyph New(float2 advance, float2 bearing, int2 size, Uno.Graphics.Format format, byte[] data) [static] :15
+RenderedGlyph RenderedGlyph__New1(::g::Uno::Float2 advance, ::g::Uno::Float2 bearing, ::g::Uno::Int2 size, int32_t format, uArray* data)
 {
     RenderedGlyph obj1;
-    obj1.ctor_(advance, bearing, bitmap);
+    obj1.ctor_1(advance, bearing, size, format, data);
     return obj1;
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Content/Fonts/SpriteFontShader.uno
-// -----------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Content/Fonts/SpriteFontShader.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class SpriteFontShader :22
 // {
@@ -963,8 +984,8 @@ SpriteFontShader* SpriteFontShader::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Content/Fonts/TextRenderer.uno
-// -------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Content/Fonts/TextRenderer.uno
+// ------------------------------------------------------------------------------------------
 
 // public sealed class TextRenderer :10
 // {
@@ -1126,7 +1147,7 @@ void TextRenderer::ctor_(int32_t maxCharCount, ::g::Uno::Content::Fonts::TextSha
     }
 
     _ibo = ::g::Uno::Graphics::IndexBuffer::New3(indexBuffer, 0);
-    _vbo = ::g::Uno::Graphics::VertexBuffer::New4(2);
+    _vbo = ::g::Uno::Graphics::VertexBuffer::New8(2);
     _buffer = ::g::Uno::Buffer::New4((maxCharCount * 4) * 16);
     _data = ::g::Uno::Content::Fonts::TextShaderData::New1(_ibo, _vbo);
     _shader = shader;
@@ -1165,7 +1186,7 @@ void TextRenderer::End()
 
     if (uPtr(_data)->CharCount > 0)
     {
-        uPtr(_vbo)->Update1(_buffer);
+        uPtr(_vbo)->Update2(_buffer);
         uPtr(_data)->FontTexture = uPtr(_font)->Texture;
         uPtr(_data)->FontSpread = uPtr(_font)->PixelSpread;
         uPtr(_data)->ClipSpaceMatrix = uPtr(_transform)->ResolveClipSpaceMatrix();
@@ -1400,8 +1421,8 @@ TextRenderer* TextRenderer::New1(int32_t maxCharCount, ::g::Uno::Content::Fonts:
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Content/Fonts/TextShader.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Content/Fonts/TextShader.uno
+// ----------------------------------------------------------------------------------------
 
 // public abstract class TextShader :52
 // {
@@ -1436,8 +1457,8 @@ void TextShader::ctor_()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Content/Fonts/TextShader.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Content/Fonts/TextShader.uno
+// ----------------------------------------------------------------------------------------
 
 // public sealed class TextShaderData :8
 // {
@@ -1526,8 +1547,8 @@ TextShaderData* TextShaderData::New1(::g::Uno::Graphics::IndexBuffer* ibo, ::g::
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Content/Fonts/TextTransform.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Content/Fonts/TextTransform.uno
+// -------------------------------------------------------------------------------------------
 
 // public abstract class TextTransform :6
 // {

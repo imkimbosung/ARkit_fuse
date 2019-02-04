@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Internal/MiniList.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Internal/MiniList.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -8,6 +8,7 @@
 #include <Uno.Collections.IEnumerator1-1.h>
 #include <Uno.IDisposable.h>
 #include <Uno.Object.h>
+#include <Uno.ValueType.h>
 namespace g{namespace Fuse{namespace Internal{struct MiniList__Enumerator;}}}
 
 namespace g{
@@ -24,7 +25,7 @@ struct MiniList__Enumerator_type : uStructType
 };
 
 MiniList__Enumerator_type* MiniList__Enumerator_typeof();
-void MiniList__Enumerator__ctor__fn(MiniList__Enumerator* __this, uType* __type, ::g::Fuse::Internal::MiniList* source, bool* versionLock);
+void MiniList__Enumerator__ctor_1_fn(MiniList__Enumerator* __this, uType* __type, ::g::Fuse::Internal::MiniList* source, bool* versionLock);
 void MiniList__Enumerator__get_Current_fn(MiniList__Enumerator* __this, uType* __type, uObject** __retval);
 void MiniList__Enumerator__Dispose_fn(MiniList__Enumerator* __this, uType* __type);
 void MiniList__Enumerator__MoveNext_fn(MiniList__Enumerator* __this, uType* __type, bool* __retval);
@@ -39,7 +40,7 @@ struct MiniList__Enumerator
     uStrong<uObject*> _value;
     int32_t _mode;
 
-    void ctor_(uType* __type, ::g::Fuse::Internal::MiniList source, bool versionLock);
+    void ctor_1(uType* __type, ::g::Fuse::Internal::MiniList source, bool versionLock);
     uObject* Current(uType* __type);
     void Dispose(uType* __type);
     bool MoveNext(uType* __type);

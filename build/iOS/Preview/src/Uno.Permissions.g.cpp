@@ -8,8 +8,8 @@ namespace g{
 namespace Uno{
 namespace Permissions{
 
-// /usr/local/share/uno/Packages/Uno.Permissions/1.9.0/Permissions.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Permissions/1.10.0-rc1/Permissions.uno
+// ------------------------------------------------------------------------
 
 // public struct PlatformPermission :9
 // {
@@ -27,6 +27,7 @@ uStructType* PlatformPermission_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 1;
     options.Alignment = alignof(PlatformPermission);
     options.ValueSize = sizeof(PlatformPermission);

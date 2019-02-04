@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Collections/Queue.uno.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Collections/Queue.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -6,6 +6,7 @@
 #include <Uno.Collections.IEnumerator1-1.h>
 #include <Uno.IDisposable.h>
 #include <Uno.Object.h>
+#include <Uno.ValueType.h>
 namespace g{namespace Uno{namespace Collections{struct Queue;}}}
 
 namespace g{
@@ -22,7 +23,7 @@ struct Queue__Enumerator_type : uStructType
 };
 
 Queue__Enumerator_type* Queue__Enumerator_typeof();
-void Queue__Enumerator__ctor__fn(uTRef __this, uType* __type, ::g::Uno::Collections::Queue* source);
+void Queue__Enumerator__ctor_1_fn(uTRef __this, uType* __type, ::g::Uno::Collections::Queue* source);
 void Queue__Enumerator__get_Current_fn(uTRef __this, uType* __type, uTRef __retval);
 void Queue__Enumerator__Dispose_fn(uTRef __this, uType* __type);
 void Queue__Enumerator__MoveNext_fn(uTRef __this, uType* __type, bool* __retval);
@@ -37,7 +38,7 @@ struct Queue__Enumerator
     int32_t _index;
     T _current;
 
-    void ctor_(uType* __type, ::g::Uno::Collections::Queue* source) { Queue__Enumerator__ctor__fn(this, __type, source); }
+    void ctor_1(uType* __type, ::g::Uno::Collections::Queue* source) { Queue__Enumerator__ctor_1_fn(this, __type, source); }
     T Current(uType* __type) { T __retval; return Queue__Enumerator__get_Current_fn(this, __type, &__retval), __retval; }
     void Dispose(uType* __type) { Queue__Enumerator__Dispose_fn(this, __type); }
     bool MoveNext(uType* __type) { bool __retval; return Queue__Enumerator__MoveNext_fn(this, __type, &__retval), __retval; }

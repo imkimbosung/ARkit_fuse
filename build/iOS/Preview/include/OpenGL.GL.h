@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/OpenGL/GL.uno.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/OpenGL/GL.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -16,7 +16,7 @@ namespace g{namespace Uno{struct Int4;}}
 namespace g{
 namespace OpenGL{
 
-// public static extern class GL :12
+// public static extern class GL :10
 // {
 uClassType* GL_typeof();
 void GL__ActiveTexture_fn(int32_t* texture);
@@ -26,10 +26,10 @@ void GL__BindFramebuffer_fn(int32_t* target, uint32_t* fb);
 void GL__BindRenderbuffer_fn(int32_t* target, uint32_t* renderbuffer);
 void GL__BindTexture_fn(int32_t* target, uint32_t* texture);
 void GL__BlendFuncSeparate_fn(int32_t* srcRGB, int32_t* dstRGB, int32_t* srcAlpha, int32_t* dstAlpha);
-void GL__BufferData_fn(int32_t* target, uArray* data, int32_t* usage);
-void GL__BufferData2_fn(int32_t* target, ::g::Uno::Buffer* data, int32_t* usage);
-void GL__BufferSubData_fn(int32_t* target, int32_t* offset, uArray* data);
-void GL__BufferSubData1_fn(int32_t* target, int32_t* offset, ::g::Uno::Buffer* data);
+void GL__BufferData2_fn(int32_t* target, int32_t* sizeInBytes, void** data, int32_t* usage);
+void GL__BufferData3_fn(int32_t* target, ::g::Uno::Buffer* data, int32_t* usage);
+void GL__BufferSubData1_fn(int32_t* target, int32_t* offset, int32_t* sizeInBytes, void** data);
+void GL__BufferSubData2_fn(int32_t* target, int32_t* offset, ::g::Uno::Buffer* data);
 void GL__CheckFramebufferStatus_fn(int32_t* target, int32_t* __retval);
 void GL__Clear_fn(int32_t* mask);
 void GL__ClearColor_fn(float* red, float* green, float* blue, float* alpha);
@@ -81,8 +81,6 @@ void GL__PixelStore_fn(int32_t* pname, int32_t* param);
 void GL__RenderbufferStorage_fn(int32_t* target, int32_t* internalFormat, int32_t* width, int32_t* height);
 void GL__Scissor_fn(int32_t* x, int32_t* y, int32_t* width, int32_t* height);
 void GL__ShaderSource_fn(uint32_t* shader, uString* source);
-void GL__TexImage2D_fn(int32_t* target, int32_t* level, int32_t* internalFormat, int32_t* width, int32_t* height, int32_t* border, int32_t* format, int32_t* type, uArray* data);
-void GL__TexImage2D1_fn(int32_t* target, int32_t* level, int32_t* internalFormat, int32_t* width, int32_t* height, int32_t* border, int32_t* format, int32_t* type, ::g::Uno::Buffer* data);
 void GL__TexImage2D2_fn(int32_t* target, int32_t* level, int32_t* internalFormat, int32_t* width, int32_t* height, int32_t* border, int32_t* format, int32_t* type, void** data);
 void GL__TexParameter_fn(int32_t* target, int32_t* pname, int32_t* param);
 void GL__Uniform1_fn(int32_t* location, float* value);
@@ -109,10 +107,10 @@ struct GL : uObject
     static void BindRenderbuffer(int32_t target, uint32_t renderbuffer);
     static void BindTexture(int32_t target, uint32_t texture);
     static void BlendFuncSeparate(int32_t srcRGB, int32_t dstRGB, int32_t srcAlpha, int32_t dstAlpha);
-    static void BufferData(int32_t target, uArray* data, int32_t usage);
-    static void BufferData2(int32_t target, ::g::Uno::Buffer* data, int32_t usage);
-    static void BufferSubData(int32_t target, int32_t offset, uArray* data);
-    static void BufferSubData1(int32_t target, int32_t offset, ::g::Uno::Buffer* data);
+    static void BufferData2(int32_t target, int32_t sizeInBytes, void* data, int32_t usage);
+    static void BufferData3(int32_t target, ::g::Uno::Buffer* data, int32_t usage);
+    static void BufferSubData1(int32_t target, int32_t offset, int32_t sizeInBytes, void* data);
+    static void BufferSubData2(int32_t target, int32_t offset, ::g::Uno::Buffer* data);
     static int32_t CheckFramebufferStatus(int32_t target);
     static void Clear(int32_t mask);
     static void ClearColor(float red, float green, float blue, float alpha);
@@ -164,8 +162,6 @@ struct GL : uObject
     static void RenderbufferStorage(int32_t target, int32_t internalFormat, int32_t width, int32_t height);
     static void Scissor(int32_t x, int32_t y, int32_t width, int32_t height);
     static void ShaderSource(uint32_t shader, uString* source);
-    static void TexImage2D(int32_t target, int32_t level, int32_t internalFormat, int32_t width, int32_t height, int32_t border, int32_t format, int32_t type, uArray* data);
-    static void TexImage2D1(int32_t target, int32_t level, int32_t internalFormat, int32_t width, int32_t height, int32_t border, int32_t format, int32_t type, ::g::Uno::Buffer* data);
     static void TexImage2D2(int32_t target, int32_t level, int32_t internalFormat, int32_t width, int32_t height, int32_t border, int32_t format, int32_t type, void* data);
     static void TexParameter(int32_t target, int32_t pname, int32_t param);
     static void Uniform1(int32_t location, float value);

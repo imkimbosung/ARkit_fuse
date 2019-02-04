@@ -336,8 +336,8 @@ static uType* TYPES[95];
 namespace g{
 namespace Fuse{
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/AlternateRoot.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/AlternateRoot.uno
+// ---------------------------------------------------------------------
 
 // public sealed class AlternateRoot :30
 // {
@@ -652,8 +652,8 @@ AlternateRoot* AlternateRoot::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/AppBase.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/AppBase.uno
+// ---------------------------------------------------------------
 
 // public abstract class AppBase :41
 // {
@@ -981,8 +981,8 @@ AppBase* AppBase::Current2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Json.Parse.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Json.Parse.uno
+// -------------------------------------------------------------------
 
 // private sealed class Json.Array :83
 // {
@@ -1064,8 +1064,8 @@ Json__Array* Json__Array::New1(uArray* array)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Behavior.uno
-// -----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Behavior.uno
+// ----------------------------------------------------------------
 
 // public abstract class Behavior :6
 // {
@@ -1129,15 +1129,15 @@ void Behavior::ctor_2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Binding.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Binding.uno
+// ---------------------------------------------------------------
 
 // public abstract class Binding :5
 // {
 static void Binding_build(uType* type)
 {
     ::STRINGS[2] = uString::Const("double Binding rooting detected");
-    ::STRINGS[3] = uString::Const("/usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Binding.uno");
+    ::STRINGS[3] = uString::Const("/usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Binding.uno");
     ::STRINGS[4] = uString::Const("Root");
     ::STRINGS[5] = uString::Const("double Binding unrooting detected");
     ::STRINGS[6] = uString::Const("Unroot");
@@ -1245,8 +1245,8 @@ void Binding::Unroot()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Marshal/1.9.0/Computer.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Marshal/1.10.0-rc1/Computer.uno
+// ------------------------------------------------------------------
 
 // internal sealed class BoolComputer :136
 // {
@@ -1326,8 +1326,8 @@ BoolComputer* BoolComputer::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Marshal/1.9.0/Computer.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Marshal/1.10.0-rc1/Computer.uno
+// ------------------------------------------------------------------
 
 // public enum Computer.BoolOp :27
 uEnumType* Computer__BoolOp_typeof()
@@ -1345,8 +1345,8 @@ uEnumType* Computer__BoolOp_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Box.uno
-// -------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Box.uno
+// ------------------------------------------------------------
 
 // public struct Box :5
 // {
@@ -1372,6 +1372,7 @@ uStructType* Box_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 2;
     options.DependencyCount = 1;
     options.Alignment = alignof(Box);
@@ -1383,9 +1384,9 @@ uStructType* Box_typeof()
 }
 
 // public Box(float3 min, float3 max) :9
-void Box__ctor__fn(Box* __this, ::g::Uno::Float3* min, ::g::Uno::Float3* max)
+void Box__ctor_1_fn(Box* __this, ::g::Uno::Float3* min, ::g::Uno::Float3* max)
 {
-    __this->ctor_(*min, *max);
+    __this->ctor_1(*min, *max);
 }
 
 // public float3 get_Center() :17
@@ -1407,7 +1408,7 @@ void Box__Transform_fn(Box* box, ::g::Uno::Float4x4* transform, Box* __retval)
 }
 
 // public Box(float3 min, float3 max) [instance] :9
-void Box::ctor_(::g::Uno::Float3 min, ::g::Uno::Float3 max)
+void Box::ctor_1(::g::Uno::Float3 min, ::g::Uno::Float3 max)
 {
     Minimum = min;
     Maximum = max;
@@ -1423,7 +1424,7 @@ void Box::ctor_(::g::Uno::Float3 min, ::g::Uno::Float3 max)
 Box Box__New1(::g::Uno::Float3 min, ::g::Uno::Float3 max)
 {
     Box obj9;
-    obj9.ctor_(min, max);
+    obj9.ctor_1(min, max);
     return obj9;
 }
 
@@ -1458,8 +1459,8 @@ Box Box__Transform(Box box, ::g::Uno::Float4x4 transform)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/CacheFramebuffer.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/CacheFramebuffer.uno
+// -------------------------------------------------------------------------
 
 // internal sealed class CacheFramebuffer :8
 // {
@@ -1768,8 +1769,8 @@ CacheFramebuffer* CacheFramebuffer::New1(int32_t width, int32_t height, int32_t 
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Visual.Interacting.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Visual.Interacting.uno
+// --------------------------------------------------------------------------
 
 // public enum Visual.CancelInteractionsType :54
 uEnumType* Visual__CancelInteractionsType_typeof()
@@ -1784,8 +1785,8 @@ uEnumType* Visual__CancelInteractionsType_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Collision.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Collision.uno
+// ------------------------------------------------------------------
 
 // public static class Collision :4
 // {
@@ -1948,8 +1949,8 @@ bool Collision::RayIntersectsBox(::g::Fuse::Ray ray, ::g::Fuse::Box box, float* 
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Marshal/1.9.0/Computer.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Marshal/1.10.0-rc1/Computer.uno
+// ------------------------------------------------------------------
 
 // public sealed class ComputeException :7
 // {
@@ -2006,8 +2007,8 @@ ComputeException* ComputeException::New4(uString* op, uObject* a, uObject* b)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Marshal/1.9.0/Computer.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Marshal/1.10.0-rc1/Computer.uno
+// ------------------------------------------------------------------
 
 // internal abstract class Computer :14
 // {
@@ -2040,8 +2041,8 @@ void Computer::ctor_()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Marshal/1.9.0/Computer.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Marshal/1.10.0-rc1/Computer.uno
+// ------------------------------------------------------------------
 
 // internal abstract class Computer<T> :38
 // {
@@ -2145,8 +2146,8 @@ void Computer1::ctor_1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/NodeGroup.uno
-// ------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/NodeGroup.uno
+// -----------------------------------------------------------------
 
 // internal enum NodeGroupBase.ConstructFlags :46
 uEnumType* NodeGroupBase__ConstructFlags_typeof()
@@ -2161,8 +2162,8 @@ uEnumType* NodeGroupBase__ConstructFlags_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Node.DataContext.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Node.DataContext.uno
+// ------------------------------------------------------------------------
 
 // public enum Node.ContextDataResult :36
 uEnumType* Node__ContextDataResult_typeof()
@@ -2178,8 +2179,8 @@ uEnumType* Node__ContextDataResult_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Node.DataContext.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Node.DataContext.uno
+// ------------------------------------------------------------------------
 
 // public enum Node.DataType :27
 uEnumType* Node__DataType_typeof()
@@ -2194,8 +2195,8 @@ uEnumType* Node__DataType_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Node.ScriptClass.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Node.ScriptClass.uno
+// ------------------------------------------------------------------------
 
 // private sealed class Node.DataWatcher :37
 // {
@@ -2323,15 +2324,15 @@ Node__DataWatcher* Node__DataWatcher::New1(::g::Fuse::Node* node, ::g::Fuse::Scr
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/Deferred.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/Deferred.uno
+// -------------------------------------------------------------------
 
 // public sealed class Deferred :129
 // {
 static void Deferred_build(uType* type)
 {
     ::STRINGS[12] = uString::Const("Duplicate call to Deferred.Perform");
-    ::STRINGS[13] = uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/Deferred.uno");
+    ::STRINGS[13] = uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/Deferred.uno");
     ::STRINGS[14] = uString::Const("Fuse.IDeferred.Perform");
     ::STRINGS[15] = uString::Const("");
     ::TYPES[9] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Node_typeof(), NULL);
@@ -2538,8 +2539,8 @@ Deferred* Deferred::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/Deferred.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/Deferred.uno
+// -------------------------------------------------------------------
 
 // internal static class DeferredManager :20
 // {
@@ -2691,8 +2692,8 @@ bool DeferredManager::HasPending()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Diagnostics.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Diagnostics.uno
+// --------------------------------------------------------------------
 
 // public sealed class Diagnostic :30
 // {
@@ -2899,8 +2900,8 @@ Diagnostic* Diagnostic::New1(int32_t type, uString* message, uObject* sourceObje
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Diagnostics.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Diagnostics.uno
+// --------------------------------------------------------------------
 
 // public delegate void DiagnosticHandler(Fuse.Diagnostic d) :151
 uDelegateType* DiagnosticHandler_typeof()
@@ -2914,8 +2915,8 @@ uDelegateType* DiagnosticHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Diagnostics.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Diagnostics.uno
+// --------------------------------------------------------------------
 
 // public static class Diagnostics :171
 // {
@@ -3235,8 +3236,8 @@ void Diagnostics::remove_DiagnosticReported(uDelegate* value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Diagnostics.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Diagnostics.uno
+// --------------------------------------------------------------------
 
 // public enum DiagnosticType :7
 uEnumType* DiagnosticType_typeof()
@@ -3256,14 +3257,14 @@ uEnumType* DiagnosticType_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/DrawContext.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/DrawContext.uno
+// -------------------------------------------------------------------
 
 // public sealed class DrawContext :28
 // {
 static void DrawContext_build(uType* type)
 {
-    ::STRINGS[27] = uString::Const("/usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/DrawContext.uno");
+    ::STRINGS[27] = uString::Const("/usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/DrawContext.uno");
     ::STRINGS[28] = uString::Const("CaptureRootbuffer");
     ::STRINGS[15] = uString::Const("");
     ::STRINGS[29] = uString::Const("Clear");
@@ -3719,7 +3720,7 @@ void DrawContext::GLViewportPixelSize(::g::Uno::Int2 value)
 ::g::Uno::Float2 DrawContext::GLViewportPointSize()
 {
     uStackFrame __("Fuse.DrawContext", "get_GLViewportPointSize()");
-    ::g::Uno::Float2 rsz = ::g::Uno::Float2__op_Implicit2(GLViewportPixelSize());
+    ::g::Uno::Float2 rsz = ::g::Uno::Float2__op_Implicit1(GLViewportPixelSize());
     return ::g::Uno::Float2__op_Division1(rsz, ViewportPixelsPerPoint());
 }
 
@@ -3962,8 +3963,8 @@ DrawContext* DrawContext::New1(uObject* viewport)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/NodeGroup.uno
-// ------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/NodeGroup.uno
+// -----------------------------------------------------------------
 
 // private sealed class NodeGroupBase.EmptyNode :151
 // {
@@ -4042,8 +4043,8 @@ NodeGroupBase__EmptyNode* NodeGroupBase__EmptyNode::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/PreviewState.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/PreviewState.uno
+// --------------------------------------------------------------------
 
 // private sealed class PreviewStateData.Entry :69
 // {
@@ -4095,8 +4096,8 @@ PreviewStateData__Entry* PreviewStateData__Entry::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Visual.Children.Enumerable.uno
-// -----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Visual.Children.Enumerable.uno
+// ----------------------------------------------------------------------------------
 
 // private sealed class Visual.Enumerator<T> :24
 // {
@@ -4232,8 +4233,8 @@ Visual__Enumerator* Visual__Enumerator::New1(uType* __type, ::g::Fuse::Visual* p
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/FastMatrix.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/FastMatrix.uno
+// -------------------------------------------------------------------
 
 // public sealed class FastMatrix :5
 // {
@@ -4769,8 +4770,8 @@ FastMatrix* FastMatrix::New2(FastMatrix* orig)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Visual.FastProperties1.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Visual.FastProperties1.uno
+// ------------------------------------------------------------------------------
 
 // internal enum FastProperty1 :4
 uEnumType* FastProperty1_typeof()
@@ -4812,8 +4813,8 @@ uEnumType* FastProperty1_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Visual.FastProperties1.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Visual.FastProperties1.uno
+// ------------------------------------------------------------------------------
 
 // internal class FastProperty1Link :46
 // {
@@ -4865,8 +4866,8 @@ FastProperty1Link* FastProperty1Link::New1(int32_t p)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Visual.FastProperties1.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Visual.FastProperties1.uno
+// ------------------------------------------------------------------------------
 
 // internal sealed class FastProperty1Link<T> :57
 // {
@@ -4910,8 +4911,8 @@ void FastProperty1Link1__New2_fn(uType* __type, int32_t* p, void* value, FastPro
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Visual.FastProperties2.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Visual.FastProperties2.uno
+// ------------------------------------------------------------------------------
 
 // internal enum FastProperty2 :4
 uEnumType* FastProperty2_typeof()
@@ -4940,8 +4941,8 @@ uEnumType* FastProperty2_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Visual.FastProperties2.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Visual.FastProperties2.uno
+// ------------------------------------------------------------------------------
 
 // internal class FastProperty2Link :26
 // {
@@ -4993,8 +4994,8 @@ FastProperty2Link* FastProperty2Link::New1(int32_t p)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Visual.FastProperties2.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Visual.FastProperties2.uno
+// ------------------------------------------------------------------------------
 
 // internal sealed class FastProperty2Link<T> :37
 // {
@@ -5038,8 +5039,8 @@ void FastProperty2Link1__New2_fn(uType* __type, int32_t* p, void* value, FastPro
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Marshal/1.9.0/FileSourceConverter.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Marshal/1.10.0-rc1/FileSourceConverter.uno
+// -----------------------------------------------------------------------------
 
 // internal sealed class FileSourceConverter :8
 // {
@@ -5178,8 +5179,8 @@ FileSourceConverter* FileSourceConverter::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/IViewport.uno
-// ------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/IViewport.uno
+// -----------------------------------------------------------------
 
 // internal sealed class FixedViewport :181
 // {
@@ -5420,8 +5421,8 @@ FixedViewport* FixedViewport::New1(::g::Uno::Int2 pixelSize, float pixelsPerPoin
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/LayoutParams.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/LayoutParams.uno
+// --------------------------------------------------------------------
 
 // private enum LayoutParams.Flags :14
 uEnumType* LayoutParams__Flags_typeof()
@@ -5446,8 +5447,8 @@ uEnumType* LayoutParams__Flags_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Marshal/1.9.0/Computer.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Marshal/1.10.0-rc1/Computer.uno
+// ------------------------------------------------------------------
 
 // internal sealed class Float2Computer :224
 // {
@@ -5555,8 +5556,8 @@ Float2Computer* Float2Computer::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Marshal/1.9.0/Computer.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Marshal/1.10.0-rc1/Computer.uno
+// ------------------------------------------------------------------
 
 // internal sealed class Float3Computer :252
 // {
@@ -5664,8 +5665,8 @@ Float3Computer* Float3Computer::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Marshal/1.9.0/Computer.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Marshal/1.10.0-rc1/Computer.uno
+// ------------------------------------------------------------------
 
 // internal sealed class Float4Computer :280
 // {
@@ -5773,8 +5774,8 @@ Float4Computer* Float4Computer::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Font.uno
-// --------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Font.uno
+// -------------------------------------------------------------
 
 // public class Font :27
 // {
@@ -5976,8 +5977,8 @@ float Font::PlatformDefaultSize()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/FramebufferPool.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/FramebufferPool.uno
+// ------------------------------------------------------------------------
 
 // public static class FramebufferPool :9
 // {
@@ -6103,8 +6104,8 @@ int32_t FramebufferPool::Frame()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/FramebufferPool.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/FramebufferPool.uno
+// ------------------------------------------------------------------------
 
 // internal sealed class FramebufferPoolImpl :60
 // {
@@ -6438,8 +6439,8 @@ FramebufferPoolImpl* FramebufferPoolImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/IViewport.uno
-// ------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/IViewport.uno
+// -----------------------------------------------------------------
 
 // internal sealed class FrustumViewport :124
 // {
@@ -6571,8 +6572,8 @@ FrustumViewport* FrustumViewport::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Translation.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Translation.uno
+// -------------------------------------------------------------------
 
 // private sealed class TranslationModes.HeightMode :136
 // {
@@ -6640,8 +6641,8 @@ TranslationModes__HeightMode* TranslationModes__HeightMode::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/HitTestContext.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/HitTestContext.uno
+// ----------------------------------------------------------------------
 
 // public delegate void HitTestCallback(Fuse.HitTestResult result) :6
 uDelegateType* HitTestCallback_typeof()
@@ -6655,8 +6656,8 @@ uDelegateType* HitTestCallback_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/HitTestContext.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/HitTestContext.uno
+// ----------------------------------------------------------------------
 
 // public sealed class HitTestContext :19
 // {
@@ -6881,8 +6882,8 @@ HitTestContext* HitTestContext::New1(::g::Uno::Float2 windowPoint, uDelegate* ca
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Visual.HitTest.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Visual.HitTest.uno
+// ----------------------------------------------------------------------
 
 // private sealed class Visual.HitTestRecord :80
 // {
@@ -6948,8 +6949,8 @@ Visual__HitTestRecord* Visual__HitTestRecord::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/HitTestContext.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/HitTestContext.uno
+// ----------------------------------------------------------------------
 
 // public sealed class HitTestResult :10
 // {
@@ -7079,8 +7080,8 @@ HitTestResult* HitTestResult::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Visual.HitTest.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Visual.HitTest.uno
+// ----------------------------------------------------------------------
 
 // internal enum Visual.HitTestTransformMode :10
 uEnumType* Visual__HitTestTransformMode_typeof()
@@ -7095,8 +7096,8 @@ uEnumType* Visual__HitTestTransformMode_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Translation.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Translation.uno
+// -------------------------------------------------------------------
 
 // public abstract interface IActualPlacement :54
 // {
@@ -7115,8 +7116,8 @@ uInterfaceType* IActualPlacement_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/IObject.uno
-// -----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/IObject.uno
+// ----------------------------------------------------------------
 
 // public abstract interface IArray :17
 // {
@@ -7133,8 +7134,8 @@ uInterfaceType* IArray_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Visual.BeginRemove.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Visual.BeginRemove.uno
+// --------------------------------------------------------------------------
 
 // public abstract interface IBeginRemoveVisualListener :56
 // {
@@ -7150,8 +7151,8 @@ uInterfaceType* IBeginRemoveVisualListener_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/IViewport.uno
-// ------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/IViewport.uno
+// -----------------------------------------------------------------
 
 // public abstract interface ICommonViewport :6
 // {
@@ -7170,8 +7171,8 @@ uInterfaceType* ICommonViewport_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Marshal/1.9.0/Marshal.Convert.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Marshal/1.10.0-rc1/Marshal.Convert.uno
+// -------------------------------------------------------------------------
 
 // public abstract interface Marshal.IConverter :9
 // {
@@ -7188,8 +7189,8 @@ uInterfaceType* Marshal__IConverter_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Node.DataContext.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Node.DataContext.uno
+// ------------------------------------------------------------------------
 
 // public abstract interface Node.IDataListener :175
 // {
@@ -7205,8 +7206,8 @@ uInterfaceType* Node__IDataListener_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/Deferred.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/Deferred.uno
+// -------------------------------------------------------------------
 
 // internal abstract interface IDeferred :10
 // {
@@ -7220,8 +7221,8 @@ uInterfaceType* IDeferred_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Scaling.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Scaling.uno
+// ---------------------------------------------------------------
 
 // private sealed class ScalingModes.IdentityMode :13
 // {
@@ -7312,8 +7313,8 @@ ScalingModes__IdentityMode* ScalingModes__IdentityMode::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/RootViewport.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/RootViewport.uno
+// --------------------------------------------------------------------
 
 // public abstract interface IFrame :12
 // {
@@ -7331,8 +7332,8 @@ uInterfaceType* IFrame_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/IFrustum.uno
-// -----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/IFrustum.uno
+// ----------------------------------------------------------------
 
 // public abstract interface IFrustum :5
 // {
@@ -7353,8 +7354,8 @@ uInterfaceType* IFrustum_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Resources/ILoading.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Resources/ILoading.uno
+// ---------------------------------------------------------------------------
 
 // internal abstract interface ILoading :9
 // {
@@ -7368,15 +7369,15 @@ uInterfaceType* ILoading_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Resources/ILoading.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Resources/ILoading.uno
+// ---------------------------------------------------------------------------
 
 // internal static class ILoadingStatic :14
 // {
 // static generated ILoadingStatic() :14
 static void ILoadingStatic__cctor__fn(uType* __type)
 {
-    ILoadingStatic::IsLoadingName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[48/*"IsLoading"*/]);
+    ILoadingStatic::IsLoadingName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[48/*"IsLoading"*/]);
 }
 
 static void ILoadingStatic_build(uType* type)
@@ -7403,8 +7404,8 @@ uClassType* ILoadingStatic_typeof()
 ::g::Uno::UX::Selector ILoadingStatic::IsLoadingName_;
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/NameRegistry.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/NameRegistry.uno
+// --------------------------------------------------------------------
 
 // public abstract interface INameListener :8
 // {
@@ -7420,8 +7421,8 @@ uInterfaceType* INameListener_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/IViewport.uno
-// ------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/IViewport.uno
+// -----------------------------------------------------------------
 
 // internal sealed class InheritViewport :229
 // {
@@ -7594,8 +7595,8 @@ InheritViewport* InheritViewport::New1(uObject* baseView, ::g::Fuse::FrustumView
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Node.Rooting.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Node.Rooting.uno
+// --------------------------------------------------------------------
 
 // internal abstract interface INotifyUnrooted :15
 // {
@@ -7609,8 +7610,8 @@ uInterfaceType* INotifyUnrooted_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Visual.Interacting.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Visual.Interacting.uno
+// --------------------------------------------------------------------------
 
 // private struct Visual.InteractionItem :8
 // {
@@ -7627,6 +7628,7 @@ uStructType* Visual__InteractionItem_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 2;
     options.Alignment = alignof(Visual__InteractionItem);
     options.ValueSize = sizeof(Visual__InteractionItem);
@@ -7637,8 +7639,8 @@ uStructType* Visual__InteractionItem_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Visual.Layout.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Visual.Layout.uno
+// ---------------------------------------------------------------------
 
 // public enum InvalidateLayoutReason :42
 uEnumType* InvalidateLayoutReason_typeof()
@@ -7654,8 +7656,8 @@ uEnumType* InvalidateLayoutReason_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/IObject.uno
-// -----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/IObject.uno
+// ----------------------------------------------------------------
 
 // public abstract interface IObject :39
 // {
@@ -7673,8 +7675,8 @@ uInterfaceType* IObject_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Visual.Children.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Visual.Children.uno
+// -----------------------------------------------------------------------
 
 // public abstract interface IParentObserver :10
 // {
@@ -7692,8 +7694,8 @@ uInterfaceType* IParentObserver_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/PreviewState.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/PreviewState.uno
+// --------------------------------------------------------------------
 
 // internal abstract interface IPreviewStateSaver :105
 // {
@@ -7707,8 +7709,8 @@ uInterfaceType* IPreviewStateSaver_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Properties.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Properties.uno
+// -------------------------------------------------------------------
 
 // public abstract interface IProperties :10
 // {
@@ -7724,8 +7726,8 @@ uInterfaceType* IProperties_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/IViewport.uno
-// ------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/IViewport.uno
+// -----------------------------------------------------------------
 
 // public abstract interface IRenderViewport :34
 // {
@@ -7744,8 +7746,8 @@ uInterfaceType* IRenderViewport_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/AppBase.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/AppBase.uno
+// ---------------------------------------------------------------
 
 // public abstract interface IRootVisualProvider :14
 // {
@@ -7761,8 +7763,8 @@ uInterfaceType* IRootVisualProvider_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Scaling.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Scaling.uno
+// ---------------------------------------------------------------
 
 // public abstract interface IScalingMode :6
 // {
@@ -7778,8 +7780,8 @@ uInterfaceType* IScalingMode_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Diagnostics.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Diagnostics.uno
+// --------------------------------------------------------------------
 
 // public abstract interface IScriptException :145
 // {
@@ -7796,8 +7798,8 @@ uInterfaceType* IScriptException_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Node.DataContext.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Node.DataContext.uno
+// ------------------------------------------------------------------------
 
 // public abstract interface Node.ISiblingDataProvider :13
 // {
@@ -7813,8 +7815,8 @@ uInterfaceType* Node__ISiblingDataProvider_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Diagnostics.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Diagnostics.uno
+// --------------------------------------------------------------------
 
 // public abstract interface ISourceLocation :19
 // {
@@ -7832,8 +7834,8 @@ uInterfaceType* ISourceLocation_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Node.DataContext.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Node.DataContext.uno
+// ------------------------------------------------------------------------
 
 // public abstract interface Node.ISubtreeDataProvider :21
 // {
@@ -7849,8 +7851,8 @@ uInterfaceType* Node__ISubtreeDataProvider_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Visual.Templates.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Visual.Templates.uno
+// ------------------------------------------------------------------------
 
 // public abstract interface ITemplateSource :9
 // {
@@ -7866,8 +7868,8 @@ uInterfaceType* ITemplateSource_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Transform.uno
-// ------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Transform.uno
+// -----------------------------------------------------------------
 
 // public abstract interface ITransformMode :295
 // {
@@ -7884,8 +7886,8 @@ uInterfaceType* ITransformMode_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Transform.uno
-// ------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Transform.uno
+// -----------------------------------------------------------------
 
 // public abstract interface ITransformRelative :285
 // {
@@ -7903,8 +7905,8 @@ uInterfaceType* ITransformRelative_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Translation.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Translation.uno
+// -------------------------------------------------------------------
 
 // public abstract interface ITranslationMode :61
 // {
@@ -7920,8 +7922,8 @@ uInterfaceType* ITranslationMode_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/UpdateManager.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/UpdateManager.uno
+// ----------------------------------------------------------------------
 
 // public abstract interface IUpdateListener :39
 // {
@@ -7937,8 +7939,8 @@ uInterfaceType* IUpdateListener_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/IViewport.uno
-// ------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/IViewport.uno
+// -----------------------------------------------------------------
 
 // public abstract interface IViewport :64
 // {
@@ -7955,8 +7957,8 @@ uInterfaceType* IViewport_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Marshal/1.9.0/FileSourceConverter.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Marshal/1.10.0-rc1/FileSourceConverter.uno
+// -----------------------------------------------------------------------------
 
 // internal sealed class JSFileSource :31
 // {
@@ -8018,8 +8020,8 @@ JSFileSource* JSFileSource::New1(uString* path)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Json.Parse.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Json.Parse.uno
+// -------------------------------------------------------------------
 
 // public partial static class Json :7
 // {
@@ -8307,8 +8309,8 @@ void Json::ToLiteral3(uString* s, ::g::Uno::Text::StringBuilder* sb)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/KeyboardBootstrapper.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/KeyboardBootstrapper.uno
+// ----------------------------------------------------------------------------
 
 // internal sealed class KeyboardBootstrapper :10
 // {
@@ -8440,8 +8442,8 @@ void KeyboardBootstrapper::OnTextInput(uObject* sender, ::g::Uno::Platform::Text
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Visual.Layout.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Visual.Layout.uno
+// ---------------------------------------------------------------------
 
 // public enum Layer :8
 uEnumType* Layer_typeof()
@@ -8458,8 +8460,8 @@ uEnumType* Layer_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Visual.Layout.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Visual.Layout.uno
+// ---------------------------------------------------------------------
 
 // public enum LayoutDependent :50
 uEnumType* LayoutDependent_typeof()
@@ -8477,8 +8479,8 @@ uEnumType* LayoutDependent_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/LayoutParams.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/LayoutParams.uno
+// --------------------------------------------------------------------
 
 // public struct LayoutParams :12
 // {
@@ -8557,6 +8559,7 @@ uStructType* LayoutParams_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 7;
     options.DependencyCount = 1;
     options.Alignment = alignof(LayoutParams);
@@ -9023,7 +9026,7 @@ LayoutParams LayoutParams::DeriveClone()
 
     if (!LayoutParams::_warnDeriveClone_)
     {
-        ::g::Fuse::Diagnostics::Deprecated(uString::Const("Use CloneAndDerive instead of DeriveClone"), uBox(LayoutParams_typeof(), *this), uString::Const("/usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/LayoutParams.uno"), 127, uString::Const("DeriveClone"));
+        ::g::Fuse::Diagnostics::Deprecated(uString::Const("Use CloneAndDerive instead of DeriveClone"), uBox(LayoutParams_typeof(), *this), uString::Const("/usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/LayoutParams.uno"), 127, uString::Const("DeriveClone"));
         LayoutParams::_warnDeriveClone_ = true;
     }
 
@@ -9390,7 +9393,7 @@ LayoutParams LayoutParams::TrueClone()
 
     if (!LayoutParams::_warnTrueClone_)
     {
-        ::g::Fuse::Diagnostics::Deprecated(uString::Const("Use Clone instead of TrueClone"), uBox(LayoutParams_typeof(), *this), uString::Const("/usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/LayoutParams.uno"), 98, uString::Const("TrueClone"));
+        ::g::Fuse::Diagnostics::Deprecated(uString::Const("Use Clone instead of TrueClone"), uBox(LayoutParams_typeof(), *this), uString::Const("/usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/LayoutParams.uno"), 98, uString::Const("TrueClone"));
         LayoutParams::_warnTrueClone_ = true;
     }
 
@@ -9448,8 +9451,8 @@ LayoutParams LayoutParams__CreateXY(::g::Uno::Float2 size, bool hasX, bool hasY)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/UpdateManager.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/UpdateManager.uno
+// ----------------------------------------------------------------------
 
 // public enum LayoutPriority :22
 uEnumType* LayoutPriority_typeof()
@@ -9468,8 +9471,8 @@ uEnumType* LayoutPriority_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Visual.Layout.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Visual.Layout.uno
+// ---------------------------------------------------------------------
 
 // public enum LayoutRole :30
 uEnumType* LayoutRole_typeof()
@@ -9486,8 +9489,8 @@ uEnumType* LayoutRole_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Translation.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Translation.uno
+// -------------------------------------------------------------------
 
 // private sealed class TranslationModes.LocalMode :68
 // {
@@ -9578,8 +9581,8 @@ TranslationModes__LocalMode* TranslationModes__LocalMode::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Visual.Layout.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Visual.Layout.uno
+// ---------------------------------------------------------------------
 
 // internal sealed class LostMarginBoxArgs :85
 // {
@@ -9656,8 +9659,8 @@ LostMarginBoxArgs* LostMarginBoxArgs::New2(::g::Fuse::Visual* elm)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Visual.Layout.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Visual.Layout.uno
+// ---------------------------------------------------------------------
 
 // internal delegate void LostMarginBoxHandler(object sender, Fuse.LostMarginBoxArgs args) :94
 uDelegateType* LostMarginBoxHandler_typeof()
@@ -9672,8 +9675,8 @@ uDelegateType* LostMarginBoxHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Visual.Layout.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Visual.Layout.uno
+// ---------------------------------------------------------------------
 
 // public enum MarginBoxDependent :62
 uEnumType* MarginBoxDependent_typeof()
@@ -9689,8 +9692,8 @@ uEnumType* MarginBoxDependent_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Marshal/1.9.0/Marshal.Cast.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Marshal/1.10.0-rc1/Marshal.Cast.uno
+// ----------------------------------------------------------------------
 
 // public partial static class Marshal :12
 // {
@@ -10832,7 +10835,7 @@ bool Marshal::TryConvertTo(uType* t, uObject* o, uObject** res, uObject* diagnos
                 }
                 else if (::g::Uno::Type::op_Equality(t, ::g::Uno::UX::Selector_typeof()))
                 {
-                    *res = uBox(::g::Uno::UX::Selector_typeof(), ::g::Uno::UX::Selector__op_Implicit1(::g::Uno::Object::ToString(uPtr(o))));
+                    *res = uBox(::g::Uno::UX::Selector_typeof(), ::g::Uno::UX::Selector__op_Implicit(::g::Uno::Object::ToString(uPtr(o))));
                     return true;
                 }
                 else if (::g::Uno::Type::op_Equality(t, ::g::Uno::Float_typeof()))
@@ -10924,7 +10927,7 @@ bool Marshal::TryConvertTo(uType* t, uObject* o, uObject** res, uObject* diagnos
     }
 
     if (diagnosticSource != NULL)
-        ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(::STRINGS[49/*"Cannot conv...*/], o), uString::Const("' to target type '")), t), ::STRINGS[11/*"'"*/]), diagnosticSource, uString::Const("/usr/local/share/uno/Packages/Fuse.Marshal/1.9.0/Marshal.Convert.uno"), 103, uString::Const("TryConvertTo"), NULL);
+        ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(::STRINGS[49/*"Cannot conv...*/], o), uString::Const("' to target type '")), t), ::STRINGS[11/*"'"*/]), diagnosticSource, uString::Const("/usr/local/share/uno/Packages/Fuse.Marshal/1.10.0-rc1/Marshal.Convert.uno"), 103, uString::Const("TryConvertTo"), NULL);
 
     *res = NULL;
     return false;
@@ -11341,9 +11344,9 @@ bool Marshal::TryToSize21(uObject* o, ::g::Uno::UX::Size2* result, int32_t* coun
         return false;
 
     if (vc == 1)
-        *result = ::g::Uno::UX::Size2__New1(::g::Uno::UX::Size__op_Implicit1(v.X), ::g::Uno::UX::Size__op_Implicit1(v.X));
+        *result = ::g::Uno::UX::Size2__New1(::g::Uno::UX::Size__op_Implicit(v.X), ::g::Uno::UX::Size__op_Implicit(v.X));
     else
-        *result = ::g::Uno::UX::Size2__New1(::g::Uno::UX::Size__op_Implicit1(v.X), ::g::Uno::UX::Size__op_Implicit1(v.Y));
+        *result = ::g::Uno::UX::Size2__New1(::g::Uno::UX::Size__op_Implicit(v.X), ::g::Uno::UX::Size__op_Implicit(v.Y));
 
     *count = vc;
     return true;
@@ -11422,8 +11425,8 @@ bool Marshal::TryToZeroFloat4(uObject* o, ::g::Uno::Float4* value, int32_t* size
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Marshal/1.9.0/Marshal.Cast.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Marshal/1.10.0-rc1/Marshal.Cast.uno
+// ----------------------------------------------------------------------
 
 // public sealed class MarshalException :7
 // {
@@ -11479,8 +11482,8 @@ MarshalException* MarshalException::New4(uObject* v, uType* t)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/MobileBootstrapping.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/MobileBootstrapping.uno
+// ---------------------------------------------------------------------------
 
 // internal sealed extern class MobileBootstrapping :6
 // {
@@ -11633,8 +11636,8 @@ void MobileBootstrapping::OnTerminating(int32_t state)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/NameRegistry.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/NameRegistry.uno
+// --------------------------------------------------------------------
 
 // public static class NameRegistry :14
 // {
@@ -11914,8 +11917,8 @@ void NameRegistry::SetName(::g::Fuse::Node* obj, ::g::Uno::UX::Selector name)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/NameValuePair.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/NameValuePair.uno
+// ----------------------------------------------------------------------
 
 // public sealed class NameValuePair :17
 // {
@@ -11969,7 +11972,6 @@ void NameValuePair__ctor__fn(NameValuePair* __this, uString* name, uObject* valu
 // private bool Fuse.IObject.ContainsKey(string key) :33
 void NameValuePair__FuseIObjectContainsKey_fn(NameValuePair* __this, uString* key, bool* __retval)
 {
-    uStackFrame __("Fuse.NameValuePair", "Fuse.IObject.ContainsKey(string)");
     return *__retval = ::g::Uno::String::op_Equality(__this->Name(), key), void();
 }
 
@@ -12093,8 +12095,8 @@ uObject* NameValuePair::ObjectFromArray(uObject* list)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Node.Bindings.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Node.Bindings.uno
+// ---------------------------------------------------------------------
 
 // public interfacemodifiers class Node :10
 // {
@@ -12983,7 +12985,7 @@ bool Node::CheckDataKey(uString* key)
 
     if (::g::Uno::String::op_Equality(key, NULL))
     {
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("null provided as DataContext key"), NULL, uString::Const("/usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Node.DataContext.uno"), 187, uString::Const("CheckDataKey"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("null provided as DataContext key"), NULL, uString::Const("/usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Node.DataContext.uno"), 187, uString::Const("CheckDataKey"));
         return false;
     }
 
@@ -13438,7 +13440,7 @@ void Node::RootInternalImpl(::g::Fuse::Visual* parent)
     uStackFrame __("Fuse.Node", "RootInternalImpl(Fuse.Visual)");
 
     if (_rootStage != 0)
-        U_THROW(::g::Uno::Exception::New2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(uString::Const("Incomplete or duplicate rooting: "), this), uString::Const("/")), ::g::Uno::UX::Selector__op_Implicit2(Name()))));
+        U_THROW(::g::Uno::Exception::New2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(uString::Const("Incomplete or duplicate rooting: "), this), uString::Const("/")), ::g::Uno::UX::Selector__op_Implicit1(Name()))));
 
     if (_parent != NULL)
     {
@@ -13451,7 +13453,7 @@ void Node::RootInternalImpl(::g::Fuse::Visual* parent)
     _rootStage = 1;
     _parent = parent;
 
-    if (::g::Uno::String::op_Inequality(::g::Uno::UX::Selector__op_Implicit2(Name()), NULL))
+    if (::g::Uno::String::op_Inequality(::g::Uno::UX::Selector__op_Implicit1(Name()), NULL))
         ::g::Fuse::NameRegistry::SetName(this, Name());
 
     OnRooted();
@@ -13461,7 +13463,7 @@ void Node::RootInternalImpl(::g::Fuse::Visual* parent)
         uPtr(RootingCompleted1)->InvokeVoid();
 
     if (_rootStage != 2)
-        U_THROW(::g::Uno::Exception::New2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(uString::Const("Invalid RootStage post rooting: "), this), uString::Const("/")), ::g::Uno::UX::Selector__op_Implicit2(Name()))));
+        U_THROW(::g::Uno::Exception::New2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(uString::Const("Invalid RootStage post rooting: "), this), uString::Const("/")), ::g::Uno::UX::Selector__op_Implicit1(Name()))));
 }
 
 // public generated string get_SourceFileName() [instance] :183
@@ -13494,10 +13496,10 @@ Node__NodeDataSubscription* Node::SubscribeData(uString* key, uObject* listener)
     uStackFrame __("Fuse.Node", "SubscribeData(string,Fuse.Node.IDataListener)");
 
     if (!IsRootingStarted())
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("SubscribeData called prior to rooting"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Node.DataContext.uno"), 246, uString::Const("SubscribeData"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("SubscribeData called prior to rooting"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Node.DataContext.uno"), 246, uString::Const("SubscribeData"));
 
     if (::g::Uno::String::op_Equality(key, ::STRINGS[15/*""*/]))
-        ::g::Fuse::Diagnostics::UserError(uString::Const("Binding to an empty key, `{}`, is deprecated due to ambiguity. Use the `data()` expression instead."), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Node.DataContext.uno"), 253, uString::Const("SubscribeData"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("Binding to an empty key, `{}`, is deprecated due to ambiguity. Use the `data()` expression instead."), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Node.DataContext.uno"), 253, uString::Const("SubscribeData"), NULL);
 
     Node__NodeDataSubscription* dw = Node__NodeDataSubscription::New1(this, 0, key, listener);
     return dw;
@@ -13509,7 +13511,7 @@ Node__NodeDataSubscription* Node::SubscribePrimeDataContext(uObject* listener)
     uStackFrame __("Fuse.Node", "SubscribePrimeDataContext(Fuse.Node.IDataListener)");
 
     if (!IsRootingStarted())
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("SubscribeData called prior to rooting"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Node.DataContext.uno"), 264, uString::Const("SubscribePrimeDataContext"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("SubscribeData called prior to rooting"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Node.DataContext.uno"), 264, uString::Const("SubscribePrimeDataContext"));
 
     Node__NodeDataSubscription* dw = Node__NodeDataSubscription::New1(this, 1, NULL, listener);
     return dw;
@@ -13535,7 +13537,7 @@ bool Node::TryFindData(int32_t type, uString* key, uObject** result, uObject** p
     {
         if (::g::Uno::String::op_Inequality(key, NULL))
         {
-            ::g::Fuse::Diagnostics::InternalError(uString::Const("Invalid key for DataType.Prime"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Node.DataContext.uno"), 85, uString::Const("TryFindData"));
+            ::g::Fuse::Diagnostics::InternalError(uString::Const("Invalid key for DataType.Prime"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Node.DataContext.uno"), 85, uString::Const("TryFindData"));
             return false;
         }
     }
@@ -13656,7 +13658,7 @@ void Node::UnrootInternal()
         return;
 
     if (_rootStage != 2)
-        U_THROW(::g::Uno::Exception::New2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(uString::Const("Incomplete or duplicate unrooting: "), this), uString::Const("/")), ::g::Uno::UX::Selector__op_Implicit2(Name()))));
+        U_THROW(::g::Uno::Exception::New2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(uString::Const("Incomplete or duplicate unrooting: "), this), uString::Const("/")), ::g::Uno::UX::Selector__op_Implicit1(Name()))));
 
     _rootStage = 3;
     OnUnrooted();
@@ -13664,7 +13666,7 @@ void Node::UnrootInternal()
     if (::g::Uno::Delegate::op_Inequality(Unrooted1, NULL))
         uPtr(Unrooted1)->InvokeVoid();
 
-    if (::g::Uno::String::op_Inequality(::g::Uno::UX::Selector__op_Implicit2(Name()), NULL))
+    if (::g::Uno::String::op_Inequality(::g::Uno::UX::Selector__op_Implicit1(Name()), NULL))
         ::g::Fuse::NameRegistry::ClearName(this);
 
     OverrideContextParent = NULL;
@@ -13784,8 +13786,8 @@ int32_t Node::RootCaptureIndex()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Node.DataContext.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Node.DataContext.uno
+// ------------------------------------------------------------------------
 
 // internal sealed class Node.NodeDataSubscription :277
 // {
@@ -13928,8 +13930,8 @@ Node__NodeDataSubscription* Node__NodeDataSubscription::New1(::g::Fuse::Node* or
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/NodeGroup.uno
-// ------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/NodeGroup.uno
+// -----------------------------------------------------------------
 
 // public sealed class NodeGroup :290
 // {
@@ -14039,8 +14041,8 @@ NodeGroup* NodeGroup::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/NodeGroup.uno
-// ------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/NodeGroup.uno
+// -----------------------------------------------------------------
 
 // public abstract class NodeGroupBase :16
 // {
@@ -14245,7 +14247,7 @@ void NodeGroupBase::AddContent()
 
     if (Parent() == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("AddContent called prior to having a Parent"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/NodeGroup.uno"), 161, uString::Const("AddContent"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("AddContent called prior to having a Parent"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/NodeGroup.uno"), 161, uString::Const("AddContent"));
         return;
     }
 
@@ -14276,7 +14278,7 @@ void NodeGroupBase::AddContent()
 
             if (n1 == NULL)
             {
-                ::g::Fuse::Diagnostics::InternalError(uString::Const("Template contains a non-Node"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/NodeGroup.uno"), 194, uString::Const("AddContent"));
+                ::g::Fuse::Diagnostics::InternalError(uString::Const("Template contains a non-Node"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/NodeGroup.uno"), 194, uString::Const("AddContent"));
                 n1 = NodeGroupBase__EmptyNode::New2();
             }
 
@@ -14441,8 +14443,8 @@ void NodeGroupBase::UseContent(bool value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Marshal/1.9.0/Computer.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Marshal/1.10.0-rc1/Computer.uno
+// ------------------------------------------------------------------
 
 // internal sealed class NumberComputer :102
 // {
@@ -14583,8 +14585,8 @@ NumberComputer* NumberComputer::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Json.Parse.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Json.Parse.uno
+// -------------------------------------------------------------------
 
 // internal sealed class Json.Object :55
 // {
@@ -14683,8 +14685,8 @@ Json__Object* Json__Object::New1(::g::Uno::Collections::Dictionary* dict)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/OrthographicFrustum.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/OrthographicFrustum.uno
+// ---------------------------------------------------------------------------
 
 // public sealed class OrthographicFrustum :7
 // {
@@ -14938,8 +14940,8 @@ OrthographicFrustum* OrthographicFrustum::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/iOSDevice.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/iOSDevice.uno
+// ------------------------------------------------------------------
 
 // public sealed extern class OSVersion :8
 // {
@@ -15009,15 +15011,15 @@ OSVersion* OSVersion::New1(int32_t major, int32_t minor, int32_t patch)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Visual.ScriptClass.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Visual.ScriptClass.uno
+// --------------------------------------------------------------------------
 
 // private sealed class Visual.ParameterProperty :19
 // {
 // static generated ParameterProperty() :19
 static void Visual__ParameterProperty__cctor__fn(uType* __type)
 {
-    Visual__ParameterProperty::_name1_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[54/*"Parameter"*/]);
+    Visual__ParameterProperty::_name1_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[54/*"Parameter"*/]);
 }
 
 static void Visual__ParameterProperty_build(uType* type)
@@ -15105,8 +15107,8 @@ Visual__ParameterProperty* Visual__ParameterProperty::New1(::g::Fuse::Visual* vi
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Translation.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Translation.uno
+// -------------------------------------------------------------------
 
 // private sealed class TranslationModes.ParentSizeMode :91
 // {
@@ -15213,8 +15215,8 @@ TranslationModes__ParentSizeMode* TranslationModes__ParentSizeMode::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Version.uno
-// -----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Version.uno
+// ----------------------------------------------------------------
 
 // internal sealed class Version.Parser :10
 // {
@@ -15375,8 +15377,8 @@ Version__Parser* Version__Parser::New1(::g::Uno::IO::TextReader* textReader)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Visual.BeginRemove.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Visual.BeginRemove.uno
+// --------------------------------------------------------------------------
 
 // public sealed class PendingRemoveVisual :5
 // {
@@ -15560,8 +15562,8 @@ PendingRemoveVisual* PendingRemoveVisual::New1(::g::Fuse::Visual* child, ::g::Fu
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/PerspectiveFrustum.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/PerspectiveFrustum.uno
+// --------------------------------------------------------------------------
 
 // public sealed class PerspectiveFrustum :8
 // {
@@ -15733,8 +15735,8 @@ PerspectiveFrustum* PerspectiveFrustum::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Translation.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Translation.uno
+// -------------------------------------------------------------------
 
 // public sealed class PlacedArgs :21
 // {
@@ -15960,8 +15962,8 @@ PlacedArgs* PlacedArgs::New2(bool hasPrev, ::g::Uno::Float2 prevPosition, ::g::U
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Translation.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Translation.uno
+// -------------------------------------------------------------------
 
 // public delegate void PlacedHandler(object sender, Fuse.PlacedArgs args) :52
 uDelegateType* PlacedHandler_typeof()
@@ -15976,15 +15978,15 @@ uDelegateType* PlacedHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/PreviewState.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/PreviewState.uno
+// --------------------------------------------------------------------
 
 // internal sealed class PreviewState :8
 // {
 static void PreviewState_build(uType* type)
 {
     ::STRINGS[60] = uString::Const("Attempting to restore an already consumed state");
-    ::STRINGS[61] = uString::Const("/usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/PreviewState.uno");
+    ::STRINGS[61] = uString::Const("/usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/PreviewState.uno");
     ::STRINGS[62] = uString::Const("SetState");
     ::TYPES[58] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::IPreviewStateSaver_typeof(), NULL);
     ::TYPES[59] = ::g::Fuse::RootViewport_typeof();
@@ -16142,8 +16144,8 @@ PreviewState* PreviewState::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/PreviewState.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/PreviewState.uno
+// --------------------------------------------------------------------
 
 // internal sealed class PreviewStateData :64
 // {
@@ -16251,8 +16253,8 @@ PreviewStateData* PreviewStateData::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Properties.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Properties.uno
+// -------------------------------------------------------------------
 
 // public sealed class Properties :15
 // {
@@ -16635,8 +16637,8 @@ Properties* Properties::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Properties.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Properties.uno
+// -------------------------------------------------------------------
 
 // public sealed class PropertyHandle :5
 // {
@@ -16684,8 +16686,8 @@ PropertyHandle* PropertyHandle::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Ray.uno
-// -------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Ray.uno
+// ------------------------------------------------------------
 
 // public struct Ray :5
 // {
@@ -16709,6 +16711,7 @@ uStructType* Ray_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 2;
     options.Alignment = alignof(Ray);
     options.ValueSize = sizeof(Ray);
@@ -16719,9 +16722,9 @@ uStructType* Ray_typeof()
 }
 
 // public Ray(float3 pos, float3 dir) :10
-void Ray__ctor__fn(Ray* __this, ::g::Uno::Float3* pos, ::g::Uno::Float3* dir)
+void Ray__ctor_1_fn(Ray* __this, ::g::Uno::Float3* pos, ::g::Uno::Float3* dir)
 {
-    __this->ctor_(*pos, *dir);
+    __this->ctor_1(*pos, *dir);
 }
 
 // public Ray New(float3 pos, float3 dir) :10
@@ -16743,7 +16746,7 @@ void Ray__Transform_fn(Ray* ray, ::g::Uno::Float4x4* transform, Ray* __retval)
 }
 
 // public Ray(float3 pos, float3 dir) [instance] :10
-void Ray::ctor_(::g::Uno::Float3 pos, ::g::Uno::Float3 dir)
+void Ray::ctor_1(::g::Uno::Float3 pos, ::g::Uno::Float3 dir)
 {
     Position = pos;
     Direction = dir;
@@ -16753,7 +16756,7 @@ void Ray::ctor_(::g::Uno::Float3 pos, ::g::Uno::Float3 dir)
 Ray Ray__New1(::g::Uno::Float3 pos, ::g::Uno::Float3 dir)
 {
     Ray obj2;
-    obj2.ctor_(pos, dir);
+    obj2.ctor_1(pos, dir);
     return obj2;
 }
 
@@ -16771,8 +16774,8 @@ Ray Ray__Transform(Ray ray, ::g::Uno::Float4x4 transform)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Transform.uno
-// ------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Transform.uno
+// -----------------------------------------------------------------
 
 // public abstract class RelativeTransform<TransformMode> :325
 // {
@@ -17030,8 +17033,8 @@ void RelativeTransform::RelativeTo(uObject* value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/DrawContext.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/DrawContext.uno
+// -------------------------------------------------------------------
 
 // internal sealed class RenderTargetEntry :11
 // {
@@ -17088,8 +17091,8 @@ RenderTargetEntry* RenderTargetEntry::New1(::g::Uno::Graphics::RenderTarget* rt,
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Visual.Layout.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Visual.Layout.uno
+// ---------------------------------------------------------------------
 
 // public sealed class RequestBringIntoViewArgs :74
 // {
@@ -17169,8 +17172,8 @@ RequestBringIntoViewArgs* RequestBringIntoViewArgs::New2(::g::Fuse::Visual* elm)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Visual.Layout.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Visual.Layout.uno
+// ---------------------------------------------------------------------
 
 // public delegate void RequestBringIntoViewHandler(object sender, Fuse.RequestBringIntoViewArgs args) :83
 uDelegateType* RequestBringIntoViewHandler_typeof()
@@ -17185,8 +17188,8 @@ uDelegateType* RequestBringIntoViewHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Visual.uno
-// ---------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Visual.uno
+// --------------------------------------------------------------
 
 // public sealed class RequiresRootedException :7
 // {
@@ -17240,8 +17243,8 @@ RequiresRootedException* RequiresRootedException::New4()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Desktop/1.9.0/DesktopApp.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Desktop/1.10.0-rc1/DesktopApp.uno
+// --------------------------------------------------------------------
 
 // internal sealed class RootPanel :10
 // {
@@ -17366,8 +17369,8 @@ RootPanel* RootPanel::New4()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Node.Rooting.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Node.Rooting.uno
+// --------------------------------------------------------------------
 
 // internal enum RootStage :7
 uEnumType* RootStage_typeof()
@@ -17384,8 +17387,8 @@ uEnumType* RootStage_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.iOS/1.9.0/iOSApp.uno
-// -------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.iOS/1.10.0-rc1/iOSApp.uno
+// ------------------------------------------------------------
 
 // private sealed class App.RootViewHost :15
 // {
@@ -17455,15 +17458,15 @@ App__RootViewHost* App__RootViewHost::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/RootViewport.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/RootViewport.uno
+// --------------------------------------------------------------------
 
 // public class RootViewport :33
 // {
 static void RootViewport_build(uType* type)
 {
     ::STRINGS[63] = uString::Const("Incorrect state type for PreviewSetState");
-    ::STRINGS[64] = uString::Const("/usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/RootViewport.uno");
+    ::STRINGS[64] = uString::Const("/usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/RootViewport.uno");
     ::STRINGS[65] = uString::Const("RestorePreviewState");
     ::TYPES[63] = ::g::Fuse::IFrame_typeof();
     ::TYPES[27] = ::g::Uno::EventHandler_typeof();
@@ -18007,8 +18010,8 @@ RootViewport* RootViewport::New3(uObject* frame)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Transform.uno
-// ------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Transform.uno
+// -----------------------------------------------------------------
 
 // public sealed class Rotation :59
 // {
@@ -18427,8 +18430,8 @@ Rotation* Rotation::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Visual.Children.SafeIterator.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Visual.Children.SafeIterator.uno
+// ------------------------------------------------------------------------------------
 
 // private sealed class Visual.SafeIterator :53
 // {
@@ -18672,8 +18675,8 @@ Visual__SafeIterator* Visual__SafeIterator::New1(::g::Fuse::Visual* v)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Scaling.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Scaling.uno
+// ---------------------------------------------------------------
 
 // public sealed class Scaling :43
 // {
@@ -18967,8 +18970,8 @@ Scaling* Scaling::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Scaling.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Scaling.uno
+// ---------------------------------------------------------------
 
 // public static class ScalingModes :11
 // {
@@ -19003,8 +19006,8 @@ uClassType* ScalingModes_typeof()
 uSStrong<uObject*> ScalingModes::Identity_;
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/iOSDevice.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/iOSDevice.uno
+// ------------------------------------------------------------------
 
 // public enum iOSDevice.ScreenOrientation :28
 uEnumType* iOSDevice__ScreenOrientation_typeof()
@@ -19019,8 +19022,8 @@ uEnumType* iOSDevice__ScreenOrientation_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Transform.uno
-// ------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Transform.uno
+// -----------------------------------------------------------------
 
 // public sealed class Shear :209
 // {
@@ -19255,8 +19258,8 @@ Shear* Shear::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Marshal/1.9.0/Marshal.Convert.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Marshal/1.10.0-rc1/Marshal.Convert.uno
+// -------------------------------------------------------------------------
 
 // private sealed class Marshal.SingleArray :15
 // {
@@ -19341,8 +19344,8 @@ Marshal__SingleArray* Marshal__SingleArray::New1(uObject* obj)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Marshal/1.9.0/Computer.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Marshal/1.10.0-rc1/Computer.uno
+// ------------------------------------------------------------------
 
 // internal sealed class Size2Computer :196
 // {
@@ -19450,8 +19453,8 @@ Size2Computer* Size2Computer::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Marshal/1.9.0/Computer.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Marshal/1.10.0-rc1/Computer.uno
+// ------------------------------------------------------------------
 
 // internal sealed class SizeComputer :158
 // {
@@ -19592,8 +19595,8 @@ SizeComputer* SizeComputer::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Translation.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Translation.uno
+// -------------------------------------------------------------------
 
 // private class TranslationModes.SizeMode :75
 // {
@@ -19693,8 +19696,8 @@ TranslationModes__SizeMode* TranslationModes__SizeMode::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/UpdateManager.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/UpdateManager.uno
+// ----------------------------------------------------------------------
 
 // internal sealed class Stage :81
 // {
@@ -19822,8 +19825,8 @@ Stage* Stage::New1(int32_t _updateStage)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Marshal/1.9.0/Computer.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Marshal/1.10.0-rc1/Computer.uno
+// ------------------------------------------------------------------
 
 // internal sealed class StringComputer :77
 // {
@@ -19864,7 +19867,6 @@ void StringComputer__New1_fn(StringComputer** __retval)
 // protected override sealed bool TryOpImpl(Fuse.Computer.BoolOp op, string a, string b, bool& result) :90
 void StringComputer__TryOpImpl_fn(StringComputer* __this, int32_t* op, uString* a, uString* b, bool* result, bool* __retval)
 {
-    uStackFrame __("Fuse.StringComputer", "TryOpImpl(Fuse.Computer.BoolOp,string,string,bool&)");
     int32_t op_ = *op;
 
     switch (op_)
@@ -19883,7 +19885,6 @@ void StringComputer__TryOpImpl_fn(StringComputer* __this, int32_t* op, uString* 
 // protected override sealed bool TryOpImpl(Fuse.Computer.TypeOp op, string a, string b, string& result) :79
 void StringComputer__TryOpImpl1_fn(StringComputer* __this, int32_t* op, uString* a, uString* b, uString** result, bool* __retval)
 {
-    uStackFrame __("Fuse.StringComputer", "TryOpImpl(Fuse.Computer.TypeOp,string,string,string&)");
     int32_t op_ = *op;
 
     switch (op_)
@@ -19914,8 +19915,8 @@ StringComputer* StringComputer::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/SystemFont.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/SystemFont.uno
+// -------------------------------------------------------------------
 
 // public enum SystemFont.Style :51
 uEnumType* SystemFont__Style_typeof()
@@ -19930,8 +19931,8 @@ uEnumType* SystemFont__Style_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/SystemFont.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/SystemFont.uno
+// -------------------------------------------------------------------
 
 // public sealed class SystemFont :36
 // {
@@ -19985,8 +19986,8 @@ SystemFont* SystemFont::New3(uString* family, int32_t style, int32_t weight)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/RootViewport.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/RootViewport.uno
+// --------------------------------------------------------------------
 
 // internal sealed extern class SystemUIFrame :19
 // {
@@ -20081,8 +20082,8 @@ SystemUIFrame* SystemUIFrame::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Visual.Templates.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Visual.Templates.uno
+// ------------------------------------------------------------------------
 
 // internal struct TemplateSourceImpl :14
 // {
@@ -20099,6 +20100,7 @@ uStructType* TemplateSourceImpl_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 1;
     options.Alignment = alignof(TemplateSourceImpl);
     options.ValueSize = sizeof(TemplateSourceImpl);
@@ -20174,8 +20176,8 @@ int32_t TemplateSourceImpl::Count()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Diagnostics.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Diagnostics.uno
+// --------------------------------------------------------------------
 
 // private sealed class Diagnostics.Temporal :192
 // {
@@ -20243,8 +20245,8 @@ Diagnostics__Temporal* Diagnostics__Temporal::New1(::g::Fuse::Diagnostic* diag)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/Deferred.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/Deferred.uno
+// -------------------------------------------------------------------
 
 // internal static class TestDeferredManager :96
 // {
@@ -20281,8 +20283,8 @@ bool TestDeferredManager::HasPending()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Time.uno
-// --------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Time.uno
+// -------------------------------------------------------------
 
 // public static class Time :6
 // {
@@ -20404,8 +20406,8 @@ double Time::FrameTimeBase()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Timer.uno
-// ---------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Timer.uno
+// --------------------------------------------------------------
 
 // public sealed class Timer :7
 // {
@@ -20536,8 +20538,8 @@ void Timer::Wait(double duration, uDelegate* callback)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Toast.uno
-// --------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Toast.uno
+// -------------------------------------------------------------
 
 // public sealed class Toast :5
 // {
@@ -20707,8 +20709,8 @@ Toast* Toast::Post(::g::Fuse::Visual* visual, double duration)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Transform.uno
-// ------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Transform.uno
+// -----------------------------------------------------------------
 
 // public abstract class Transform :25
 // {
@@ -20819,8 +20821,8 @@ void Transform::OnMatrixChanged(uObject* igoreSender, uObject* ignoreArgs)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Translation.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Translation.uno
+// -------------------------------------------------------------------
 
 // public sealed class Translation :149
 // {
@@ -21104,8 +21106,8 @@ Translation* Translation::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Translation.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Translation.uno
+// -------------------------------------------------------------------
 
 // public static class TranslationModes :66
 // {
@@ -21175,8 +21177,8 @@ uSStrong<uObject*> TranslationModes::Height_;
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/VisualBounds.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/VisualBounds.uno
+// --------------------------------------------------------------------
 
 // internal enum VisualBounds.Type :324
 uEnumType* VisualBounds__Type_typeof()
@@ -21191,8 +21193,8 @@ uEnumType* VisualBounds__Type_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Marshal/1.9.0/Computer.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Marshal/1.10.0-rc1/Computer.uno
+// ------------------------------------------------------------------
 
 // public enum Computer.TypeOp :16
 uEnumType* Computer__TypeOp_typeof()
@@ -21211,8 +21213,8 @@ uEnumType* Computer__TypeOp_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/AppBase.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/AppBase.uno
+// ---------------------------------------------------------------
 
 // public sealed class UnhandledExceptionArgs :20
 // {
@@ -21319,8 +21321,8 @@ UnhandledExceptionArgs* UnhandledExceptionArgs::New2(::g::Uno::Exception* e)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/AppBase.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/AppBase.uno
+// ---------------------------------------------------------------
 
 // public delegate void UnhandledExceptionHandler(object sender, Fuse.UnhandledExceptionArgs args) :32
 uDelegateType* UnhandledExceptionHandler_typeof()
@@ -21335,8 +21337,8 @@ uDelegateType* UnhandledExceptionHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/UpdateManager.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/UpdateManager.uno
+// ----------------------------------------------------------------------
 
 // internal sealed class UpdateAction :66
 // {
@@ -21407,8 +21409,8 @@ UpdateAction* UpdateAction::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/UpdateManager.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/UpdateManager.uno
+// ----------------------------------------------------------------------
 
 // internal sealed class UpdateDispatcher :137
 // {
@@ -21476,8 +21478,8 @@ UpdateDispatcher* UpdateDispatcher::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/UpdateManager.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/UpdateManager.uno
+// ----------------------------------------------------------------------
 
 // internal sealed class UpdateListener :44
 // {
@@ -21554,8 +21556,8 @@ UpdateListener* UpdateListener::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/UpdateManager.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/UpdateManager.uno
+// ----------------------------------------------------------------------
 
 // public static class UpdateManager :145
 // {
@@ -22222,8 +22224,8 @@ int32_t UpdateManager::FrameIndex()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/UpdateManager.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/UpdateManager.uno
+// ----------------------------------------------------------------------
 
 // public enum UpdateStage :7
 uEnumType* UpdateStage_typeof()
@@ -22240,8 +22242,8 @@ uEnumType* UpdateStage_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.UserEvents/1.9.0/UserEvent.ScriptClass.uno
-// -----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.UserEvents/1.10.0-rc1/UserEvent.ScriptClass.uno
+// ----------------------------------------------------------------------------------
 
 // public partial sealed class UserEvent :9
 // {
@@ -22256,10 +22258,10 @@ static void UserEvent_build(uType* type)
 {
     ::STRINGS[68] = uString::Const("raise");
     ::STRINGS[69] = uString::Const("UserEvent requires a Name");
-    ::STRINGS[70] = uString::Const("/usr/local/share/uno/Packages/Fuse.UserEvents/1.9.0/UserEvent.uno");
+    ::STRINGS[70] = uString::Const("/usr/local/share/uno/Packages/Fuse.UserEvents/1.10.0-rc1/UserEvent.uno");
     ::STRINGS[71] = uString::Const("OnRooted");
     ::STRINGS[72] = uString::Const("Raise must be called with zero arguments, or one argument defining the arguments to the event");
-    ::STRINGS[73] = uString::Const("/usr/local/share/uno/Packages/Fuse.UserEvents/1.9.0/UserEvent.ScriptClass.uno");
+    ::STRINGS[73] = uString::Const("/usr/local/share/uno/Packages/Fuse.UserEvents/1.10.0-rc1/UserEvent.ScriptClass.uno");
     ::STRINGS[74] = uString::Const("Raise must be called with a JavaScript object to define name/value pairs");
     ::STRINGS[75] = uString::Const("Trying to Raise on unrooted UserEvent");
     ::STRINGS[76] = uString::Const("Raise");
@@ -22349,7 +22351,7 @@ void UserEvent__OnRooted_fn(UserEvent* __this)
     uStackFrame __("Fuse.UserEvent", "OnRooted()");
     ::g::Fuse::Node__OnRooted_fn(__this);
 
-    if (::g::Uno::String::op_Equality(::g::Uno::UX::Selector__op_Implicit2(__this->Name()), NULL))
+    if (::g::Uno::String::op_Equality(::g::Uno::UX::Selector__op_Implicit1(__this->Name()), NULL))
     {
         ::g::Fuse::Diagnostics::UserError(::STRINGS[69/*"UserEvent r...*/], __this, ::STRINGS[70/*"/usr/local/...*/], 206, ::STRINGS[71/*"OnRooted"*/], NULL);
         return;
@@ -22466,7 +22468,7 @@ void UserEvent::RaiseEvent(::g::Fuse::Visual* from, ::g::Uno::UX::Selector name,
 
     if (ev == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(::g::Uno::String::op_Addition2(::STRINGS[77/*"Unknown eve...*/], ::g::Uno::UX::Selector__op_Implicit2(name)), NULL, ::STRINGS[70/*"/usr/local/...*/], 265, ::STRINGS[78/*"RaiseEvent"*/]);
+        ::g::Fuse::Diagnostics::InternalError(::g::Uno::String::op_Addition2(::STRINGS[77/*"Unknown eve...*/], ::g::Uno::UX::Selector__op_Implicit1(name)), NULL, ::STRINGS[70/*"/usr/local/...*/], 265, ::STRINGS[78/*"RaiseEvent"*/]);
         return;
     }
 
@@ -22500,8 +22502,8 @@ UserEvent* UserEvent::ScanTree(::g::Fuse::Node* at, ::g::Uno::UX::Selector name,
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.UserEvents/1.9.0/UserEvent.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.UserEvents/1.10.0-rc1/UserEvent.uno
+// ----------------------------------------------------------------------
 
 // public sealed class UserEventArgs :9
 // {
@@ -22575,7 +22577,7 @@ void UserEventArgs__FuseScriptingIScriptEventSerialize_fn(UserEventArgs* __this,
 {
     uStackFrame __("Fuse.UserEventArgs", "Fuse.Scripting.IScriptEvent.Serialize(Fuse.Scripting.IEventSerializer)");
     ::g::Uno::Collections::Dictionary__Enumerator<uStrong<uString*>, uStrong<uObject*> > ret3;
-    ::g::Fuse::Scripting::IEventSerializer::AddString(uInterface(uPtr(s), ::TYPES[57/*Fuse.Scripting.IEventSerializer*/]), ::STRINGS[79/*"name"*/], ::g::Uno::UX::Selector__op_Implicit2(uPtr(__this->Dispatch())->Name()));
+    ::g::Fuse::Scripting::IEventSerializer::AddString(uInterface(uPtr(s), ::TYPES[57/*Fuse.Scripting.IEventSerializer*/]), ::STRINGS[79/*"name"*/], ::g::Uno::UX::Selector__op_Implicit1(uPtr(__this->Dispatch())->Name()));
 
     if (__this->Args() != NULL)
     {
@@ -22708,8 +22710,8 @@ UserEventArgs* UserEventArgs::New2(::g::Fuse::UserEventDispatch* dispatch, ::g::
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.UserEvents/1.9.0/UserEvent.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.UserEvents/1.10.0-rc1/UserEvent.uno
+// ----------------------------------------------------------------------
 
 // internal sealed class UserEventDispatch :48
 // {
@@ -22893,8 +22895,8 @@ UserEventDispatch* UserEventDispatch::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.UserEvents/1.9.0/UserEvent.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.UserEvents/1.10.0-rc1/UserEvent.uno
+// ----------------------------------------------------------------------
 
 // public delegate void UserEventHandler(object sender, Fuse.UserEventArgs args) :46
 uDelegateType* UserEventHandler_typeof()
@@ -22909,15 +22911,15 @@ uDelegateType* UserEventHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Version.uno
-// -----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Version.uno
+// ----------------------------------------------------------------
 
 // public static class Version :8
 // {
 // static Version() :74
 static void Version__cctor__fn(uType* __type)
 {
-    uString* versionString = uString::Const("1.9.0");
+    uString* versionString = uString::Const("1.10.0-rc1");
     Version::String_ = versionString;
 
     try
@@ -22933,7 +22935,7 @@ static void Version__cctor__fn(uType* __type)
     catch (const uThrowable& __t)
     {
         ::g::Uno::Exception* e = __t.Exception;
-        ::g::Fuse::Diagnostics::InternalError(::g::Uno::String::Format(uString::Const("Failed to parse version-string: \"{0}\""), uArray::Init<uObject*>(::TYPES[8/*object[]*/], 1, versionString)), NULL, uString::Const("/usr/local/share/uno/Packages/Fuse.Common/1.9.0/Version.uno"), 89, uString::Const(".cctor"));
+        ::g::Fuse::Diagnostics::InternalError(::g::Uno::String::Format(uString::Const("Failed to parse version-string: \"{0}\""), uArray::Init<uObject*>(::TYPES[8/*object[]*/], 1, versionString)), NULL, uString::Const("/usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Version.uno"), 89, uString::Const(".cctor"));
     }
 }
 
@@ -22971,8 +22973,8 @@ int32_t Version::Patch_;
 uSStrong<uString*> Version::String_;
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/IViewport.uno
-// ------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/IViewport.uno
+// -----------------------------------------------------------------
 
 // public static class ViewportHelpers :81
 // {
@@ -23049,8 +23051,8 @@ void ViewportHelpers__WorldToLocalRay_fn(uObject* viewport, uObject* world, ::g:
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Visual.BeginRemove.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Visual.BeginRemove.uno
+// --------------------------------------------------------------------------
 
 // public interfacemodifiers class Visual :61
 // {
@@ -23060,12 +23062,12 @@ static void Visual__cctor_1_fn(uType* __type)
     ::g::Fuse::Properties_typeof()->Init();
     ::g::Fuse::Scripting::ScriptClass_typeof()->Init();
     Visual::_isContextEnabledChangedHandle_ = ::g::Fuse::Properties::CreateHandle();
-    Visual::_isEnabledName_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("IsEnabled"));
+    Visual::_isEnabledName_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("IsEnabled"));
     Visual::_isVisibleChangedHandle_ = ::g::Fuse::Properties::CreateHandle();
     Visual::_layerProperty_ = ::g::Fuse::Properties::CreateHandle();
     Visual::_layoutRoleProperty_ = ::g::Fuse::Properties::CreateHandle();
     Visual::_parameterChangedHandle_ = ::g::Fuse::Properties::CreateHandle();
-    Visual::ParameterName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[54/*"Parameter"*/]);
+    Visual::ParameterName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[54/*"Parameter"*/]);
     Visual::_resourcesHandle_ = ::g::Fuse::Properties::CreateHandle();
     Visual::_emptyVisuals_ = uArray::New(__type->Array(), 0);
     ::g::Fuse::Scripting::ScriptClass::Register(__type, uArray::Init< ::g::Fuse::Scripting::ScriptMember*>(::TYPES[82/*Fuse.Scripting.ScriptMember[]*/], 3, (::g::Fuse::Scripting::ScriptProperty1*)::g::Fuse::Scripting::ScriptProperty1::New1(::g::Fuse::Scripting::ScriptProperty1_typeof()->MakeType(__type, ::TYPES[30/*string*/], NULL), ::STRINGS[54/*"Parameter"*/], uDelegate::New(::g::Uno::Func1_typeof()->MakeType(__type, ::g::Uno::UX::Property1_typeof()->MakeType(::TYPES[30/*string*/], NULL), NULL), (void*)Visual__getParameterProperty_fn), uString::Const(".notNull().parseJson()")), (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New2(::g::Fuse::Scripting::ScriptMethod1_typeof()->MakeType(__type, NULL), uString::Const("onParameterChanged"), uDelegate::New(::g::Uno::Action2_typeof()->MakeType(__type, ::TYPES[8/*object[]*/], NULL), (void*)Visual__onParameterChanged_fn)), (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New3(::g::Fuse::Scripting::ScriptMethod1_typeof()->MakeType(__type, NULL), uString::Const("bringIntoView"), uDelegate::New(::g::Uno::Action1_typeof()->MakeType(__type, NULL), (void*)Visual__bringIntoView_fn))));
@@ -25711,7 +25713,7 @@ void Visual::Children_Add(::g::Fuse::Node* n)
     else
     {
         uPtr(_lastChild)->_nextSibling = n;
-        uPtr(n)->_previousSibling = ::g::Fuse::Internal::RawPointer::op_Implicit1(::g::Fuse::Internal::RawPointer_typeof()->MakeType(::TYPES[11/*Fuse.Node*/], NULL), _lastChild);
+        uPtr(n)->_previousSibling = ::g::Fuse::Internal::RawPointer::op_Implicit(::g::Fuse::Internal::RawPointer_typeof()->MakeType(::TYPES[11/*Fuse.Node*/], NULL), _lastChild);
         _lastChild = n;
     }
 
@@ -25733,7 +25735,7 @@ void Visual::Children_Clear()
         Children_MakeOrphan(c);
         nextSibling = uPtr(c)->_nextSibling;
         c->_nextSibling = NULL;
-        c->_previousSibling = ::g::Fuse::Internal::RawPointer::op_Implicit1(::g::Fuse::Internal::RawPointer_typeof()->MakeType(::TYPES[11/*Fuse.Node*/], NULL), NULL);
+        c->_previousSibling = ::g::Fuse::Internal::RawPointer::op_Implicit(::g::Fuse::Internal::RawPointer_typeof()->MakeType(::TYPES[11/*Fuse.Node*/], NULL), NULL);
     }
 
     _firstChild = NULL;
@@ -25804,7 +25806,7 @@ void Visual::Children_InsertAfter(::g::Fuse::Node* preceeder, ::g::Fuse::Node* n
         {
             Children_MakeParent(this, newNode);
             uPtr(newNode)->_nextSibling = _firstChild;
-            uPtr(_firstChild)->_previousSibling = ::g::Fuse::Internal::RawPointer::op_Implicit1(::g::Fuse::Internal::RawPointer_typeof()->MakeType(::TYPES[11/*Fuse.Node*/], NULL), newNode);
+            uPtr(_firstChild)->_previousSibling = ::g::Fuse::Internal::RawPointer::op_Implicit(::g::Fuse::Internal::RawPointer_typeof()->MakeType(::TYPES[11/*Fuse.Node*/], NULL), newNode);
             _firstChild = newNode;
             _childCount++;
 
@@ -25819,9 +25821,9 @@ void Visual::Children_InsertAfter(::g::Fuse::Node* preceeder, ::g::Fuse::Node* n
         else
         {
             Children_MakeParent(this, newNode);
-            uPtr(newNode)->_previousSibling = ::g::Fuse::Internal::RawPointer::op_Implicit1(::g::Fuse::Internal::RawPointer_typeof()->MakeType(::TYPES[11/*Fuse.Node*/], NULL), preceeder);
+            uPtr(newNode)->_previousSibling = ::g::Fuse::Internal::RawPointer::op_Implicit(::g::Fuse::Internal::RawPointer_typeof()->MakeType(::TYPES[11/*Fuse.Node*/], NULL), preceeder);
             newNode->_nextSibling = uPtr(preceeder)->_nextSibling;
-            uPtr(preceeder->_nextSibling)->_previousSibling = ::g::Fuse::Internal::RawPointer::op_Implicit1(::g::Fuse::Internal::RawPointer_typeof()->MakeType(::TYPES[11/*Fuse.Node*/], NULL), newNode);
+            uPtr(preceeder->_nextSibling)->_previousSibling = ::g::Fuse::Internal::RawPointer::op_Implicit(::g::Fuse::Internal::RawPointer_typeof()->MakeType(::TYPES[11/*Fuse.Node*/], NULL), newNode);
             preceeder->_nextSibling = newNode;
             _childCount++;
 
@@ -25896,7 +25898,7 @@ bool Visual::Children_Remove(::g::Fuse::Node* n)
         _firstChild = uPtr(n)->_nextSibling;
 
         if (_firstChild != NULL)
-            uPtr(_firstChild)->_previousSibling = ::g::Fuse::Internal::RawPointer::op_Implicit1(::g::Fuse::Internal::RawPointer_typeof()->MakeType(::TYPES[11/*Fuse.Node*/], NULL), NULL);
+            uPtr(_firstChild)->_previousSibling = ::g::Fuse::Internal::RawPointer::op_Implicit(::g::Fuse::Internal::RawPointer_typeof()->MakeType(::TYPES[11/*Fuse.Node*/], NULL), NULL);
 
         if (_lastChild == n)
             _lastChild = NULL;
@@ -25911,11 +25913,11 @@ bool Visual::Children_Remove(::g::Fuse::Node* n)
     else
     {
         uPtr((::g::Fuse::Node*)::g::Fuse::Internal::RawPointer::op_Explicit1(::g::Fuse::Internal::RawPointer_typeof()->MakeType(::TYPES[11/*Fuse.Node*/], NULL), uPtr(n)->_previousSibling))->_nextSibling = uPtr(n)->_nextSibling;
-        uPtr(n->_nextSibling)->_previousSibling = ::g::Fuse::Internal::RawPointer::op_Implicit1(::g::Fuse::Internal::RawPointer_typeof()->MakeType(::TYPES[11/*Fuse.Node*/], NULL), (::g::Fuse::Node*)::g::Fuse::Internal::RawPointer::op_Explicit1(::g::Fuse::Internal::RawPointer_typeof()->MakeType(::TYPES[11/*Fuse.Node*/], NULL), n->_previousSibling));
+        uPtr(n->_nextSibling)->_previousSibling = ::g::Fuse::Internal::RawPointer::op_Implicit(::g::Fuse::Internal::RawPointer_typeof()->MakeType(::TYPES[11/*Fuse.Node*/], NULL), (::g::Fuse::Node*)::g::Fuse::Internal::RawPointer::op_Explicit1(::g::Fuse::Internal::RawPointer_typeof()->MakeType(::TYPES[11/*Fuse.Node*/], NULL), n->_previousSibling));
     }
 
     uPtr(n)->_nextSibling = NULL;
-    n->_previousSibling = ::g::Fuse::Internal::RawPointer::op_Implicit1(::g::Fuse::Internal::RawPointer_typeof()->MakeType(::TYPES[11/*Fuse.Node*/], NULL), NULL);
+    n->_previousSibling = ::g::Fuse::Internal::RawPointer::op_Implicit(::g::Fuse::Internal::RawPointer_typeof()->MakeType(::TYPES[11/*Fuse.Node*/], NULL), NULL);
     _childCount--;
 
     if (uIs(n, Visual_typeof()))
@@ -27927,8 +27929,8 @@ int32_t Visual::ZOrderComparator(Visual* a, Visual* b)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Visual.EventStorage.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Visual.EventStorage.uno
+// ---------------------------------------------------------------------------
 
 // private enum Visual.VisualBits :13
 uEnumType* Visual__VisualBits_typeof()
@@ -27953,8 +27955,8 @@ uEnumType* Visual__VisualBits_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/VisualBounds.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/VisualBounds.uno
+// --------------------------------------------------------------------
 
 // public sealed class VisualBounds :12
 // {
@@ -28181,9 +28183,9 @@ void VisualBounds__New1_fn(VisualBounds** __retval)
 }
 
 // public static implicit operator Fuse.Box(Fuse.VisualBounds vb) :46
-void VisualBounds__op_Implicit1_fn(VisualBounds* vb, ::g::Fuse::Box* __retval)
+void VisualBounds__op_Implicit_fn(VisualBounds* vb, ::g::Fuse::Box* __retval)
 {
-    *__retval = VisualBounds::op_Implicit1(vb);
+    *__retval = VisualBounds::op_Implicit(vb);
 }
 
 // public static Fuse.VisualBounds Point(float3 pt) :38
@@ -28582,7 +28584,7 @@ VisualBounds* VisualBounds::Merge1(uObject* visuals, int32_t bt)
                         return __uno_retval;
                     }
 
-                    ::g::Fuse::Box b = VisualBounds::BoxTransform1(VisualBounds::op_Implicit1(lrb), elm->InternLocalTransformInternal());
+                    ::g::Fuse::Box b = VisualBounds::BoxTransform1(VisualBounds::op_Implicit(lrb), elm->InternLocalTransformInternal());
 
                     if (!hasAnyBounds)
                     {
@@ -28673,7 +28675,7 @@ VisualBounds* VisualBounds::New1()
 }
 
 // public static implicit operator Fuse.Box(Fuse.VisualBounds vb) [static] :46
-::g::Fuse::Box VisualBounds::op_Implicit1(VisualBounds* vb)
+::g::Fuse::Box VisualBounds::op_Implicit(VisualBounds* vb)
 {
     uStackFrame __("Fuse.VisualBounds", "op_Implicit(Fuse.VisualBounds)~Fuse.Box");
     VisualBounds_typeof()->Init();
@@ -28722,8 +28724,8 @@ VisualBounds* VisualBounds::Infinite()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Visual.uno
-// ---------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Visual.uno
+// --------------------------------------------------------------
 
 // public enum VisualContext :9
 uEnumType* VisualContext_typeof()
@@ -28739,15 +28741,15 @@ uEnumType* VisualContext_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Event.uno
-// --------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Event.uno
+// -------------------------------------------------------------
 
 // public abstract class VisualEvent<THandler, TArgs> :43
 // {
 static void VisualEvent_build(uType* type)
 {
     ::STRINGS[80] = uString::Const("Invalid RaiseType for event");
-    ::STRINGS[81] = uString::Const("/usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Event.uno");
+    ::STRINGS[81] = uString::Const("/usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Event.uno");
     ::TYPES[91] = ::g::Uno::Collections::List_typeof();
     ::TYPES[42] = ::g::Uno::Exception_typeof();
     ::TYPES[28] = ::g::Fuse::Visual_typeof();
@@ -29007,8 +29009,8 @@ void VisualEvent::RaiseWithoutBubble(::g::Fuse::VisualEventArgs* args, int32_t t
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Event.uno
-// --------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Event.uno
+// -------------------------------------------------------------
 
 // public class VisualEventArgs :161
 // {
@@ -29138,8 +29140,8 @@ VisualEventArgs* VisualEventArgs::New2(::g::Fuse::Visual* visual)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Event.uno
-// --------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Event.uno
+// -------------------------------------------------------------
 
 // public delegate void VisualEventHandler(object sender, Fuse.VisualEventArgs args) :185
 uDelegateType* VisualEventHandler_typeof()
@@ -29154,8 +29156,8 @@ uDelegateType* VisualEventHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Event.uno
-// --------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Event.uno
+// -------------------------------------------------------------
 
 // public enum VisualEventMode :8
 uEnumType* VisualEventMode_typeof()
@@ -29171,8 +29173,8 @@ uEnumType* VisualEventMode_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Event.uno
-// --------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Event.uno
+// -------------------------------------------------------------
 
 // internal static class VisualListCache :21
 // {
@@ -29245,8 +29247,8 @@ void VisualListCache::Release(::g::Uno::Collections::List* list)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/SystemFont.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/SystemFont.uno
+// -------------------------------------------------------------------
 
 // public enum SystemFont.Weight :38
 uEnumType* SystemFont__Weight_typeof()
@@ -29268,8 +29270,8 @@ uEnumType* SystemFont__Weight_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/Translation.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/Translation.uno
+// -------------------------------------------------------------------
 
 // private sealed class TranslationModes.WidthMode :128
 // {
@@ -29337,8 +29339,8 @@ TranslationModes__WidthMode* TranslationModes__WidthMode::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/WrapException.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/WrapException.uno
+// ----------------------------------------------------------------------
 
 // internal sealed class WrapException :12
 // {

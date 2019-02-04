@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Diagnostics/EnterEvent.uno.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Diagnostics/EnterEvent.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{
 namespace Uno{
 namespace Diagnostics{
 
-// public sealed class EnterEvent :3
+// public sealed class EnterEvent :4
 // {
 ::g::Uno::Diagnostics::ProfileEvent_type* EnterEvent_typeof();
 void EnterEvent__get_Type_fn(EnterEvent* __this, int32_t* __retval);

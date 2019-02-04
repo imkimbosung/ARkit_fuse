@@ -55,8 +55,8 @@ namespace g{
 namespace Fuse{
 namespace Testing{
 
-// /usr/local/share/uno/Packages/Fuse.Testing/1.9.0/JavaScriptTest.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Testing/1.10.0-rc1/JavaScriptTest.uno
+// ------------------------------------------------------------------------
 
 // public sealed class JavaScriptTest :51
 // {
@@ -158,8 +158,8 @@ JavaScriptTest* JavaScriptTest::New3(::g::Uno::UX::NameTable* nameTable)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Testing/1.9.0/TestRootPanel.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Testing/1.10.0-rc1/TestRootPanel.uno
+// -----------------------------------------------------------------------
 
 // private enum TestRootPanel.StepFlags :142
 uEnumType* TestRootPanel__StepFlags_typeof()
@@ -175,8 +175,8 @@ uEnumType* TestRootPanel__StepFlags_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Testing/1.9.0/JavaScriptTest.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Testing/1.10.0-rc1/JavaScriptTest.uno
+// ------------------------------------------------------------------------
 
 // internal sealed class TestFailedException :9
 // {
@@ -227,8 +227,8 @@ TestFailedException* TestFailedException::New4(uString* message)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Testing/1.9.0/JavaScriptTest.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Testing/1.10.0-rc1/JavaScriptTest.uno
+// ------------------------------------------------------------------------
 
 // private sealed class UnoTestingHelper.TestFailure :29
 // {
@@ -292,8 +292,8 @@ UnoTestingHelper__TestFailure* UnoTestingHelper__TestFailure::New1(uString* mess
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Testing/1.9.0/TestRootPanel.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Testing/1.10.0-rc1/TestRootPanel.uno
+// -----------------------------------------------------------------------
 
 // public sealed class TestRootPanel :54
 // {
@@ -560,8 +560,8 @@ void TestRootPanel::RunTest()
         {
             {
                 ::g::Fuse::Diagnostics::add_DiagnosticReported(uDelegate::New(::g::Fuse::DiagnosticHandler_typeof(), (void*)TestRootPanel__OnDiagnostic_fn, this));
-                uPtr(_rootViewport)->Resize(::g::Uno::Float2__op_Implicit2(::g::Uno::Int2__New2(800, 600)));
-                PerformLayout1(::g::Uno::Float2__op_Implicit2(::g::Uno::Int2__New2(800, 600)));
+                uPtr(_rootViewport)->Resize(::g::Uno::Float2__op_Implicit1(::g::Uno::Int2__New2(800, 600)));
+                PerformLayout1(::g::Uno::Float2__op_Implicit1(::g::Uno::Int2__New2(800, 600)));
 
                 try
                 {
@@ -576,7 +576,7 @@ void TestRootPanel::RunTest()
                     ::g::Fuse::Testing::TestFailedException* testFailedException = FindTestFailedException(e);
 
                     if (testFailedException != NULL)
-                        ::g::Uno::Testing::Assert::Fail(uPtr(testFailedException)->Message(), uString::Const("/usr/local/share/uno/Packages/Fuse.Testing/1.9.0/TestRootPanel.uno"), 115, uString::Const("RunTest"));
+                        ::g::Uno::Testing::Assert::Fail(uPtr(testFailedException)->Message(), uString::Const("/usr/local/share/uno/Packages/Fuse.Testing/1.10.0-rc1/TestRootPanel.uno"), 115, uString::Const("RunTest"));
                     else
                         throw __t;
                 }
@@ -607,7 +607,7 @@ void TestRootPanel::RunTest()
                 while (enum2.MoveNext(::g::Uno::Collections::List__Enumerator_typeof()->MakeType(::g::Fuse::Diagnostic_typeof(), NULL)))
                 {
                     ::g::Fuse::Diagnostic* e1 = enum2.Current(::g::Uno::Collections::List__Enumerator_typeof()->MakeType(::g::Fuse::Diagnostic_typeof(), NULL));
-                    ::g::Uno::Testing::Assert::Fail(uPtr(e1)->ToString(), uString::Const("/usr/local/share/uno/Packages/Fuse.Testing/1.9.0/TestRootPanel.uno"), 127, uString::Const("RunTest"));
+                    ::g::Uno::Testing::Assert::Fail(uPtr(e1)->ToString(), uString::Const("/usr/local/share/uno/Packages/Fuse.Testing/1.10.0-rc1/TestRootPanel.uno"), 127, uString::Const("RunTest"));
                 }
             }
         }
@@ -653,8 +653,8 @@ TestRootPanel* TestRootPanel::New4()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Testing/1.9.0/TestRootPanel.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Testing/1.10.0-rc1/TestRootPanel.uno
+// -----------------------------------------------------------------------
 
 // internal sealed class TestRootSingletonsGuard :343
 // {
@@ -719,8 +719,8 @@ TestRootSingletonsGuard* TestRootSingletonsGuard::New1(::g::Fuse::Testing::TestR
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Testing/1.9.0/TestRootPanel.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Testing/1.10.0-rc1/TestRootPanel.uno
+// -----------------------------------------------------------------------
 
 // internal sealed class TestRootViewport :23
 // {
@@ -847,8 +847,8 @@ TestRootViewport* TestRootViewport::New4(::g::Uno::Platform::Window* window, flo
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Testing/1.9.0/JavaScriptTest.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Testing/1.10.0-rc1/JavaScriptTest.uno
+// ------------------------------------------------------------------------
 
 // public sealed class UnoTestingHelper :17
 // {

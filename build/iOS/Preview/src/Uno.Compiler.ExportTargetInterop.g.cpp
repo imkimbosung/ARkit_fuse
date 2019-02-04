@@ -14,10 +14,10 @@ namespace Uno{
 namespace Compiler{
 namespace ExportTargetInterop{
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Compiler/ExportTargetInterop/DontCopyStructAttribute.uno
-// ---------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Compiler/ExportTargetInterop/DontCopyStructAttribute.uno
+// --------------------------------------------------------------------------------------------------------------------
 
-// public sealed class DontCopyStructAttribute :4
+// public sealed class DontCopyStructAttribute :5
 // {
 static void DontCopyStructAttribute_build(uType* type)
 {
@@ -40,25 +40,25 @@ uType* DontCopyStructAttribute_typeof()
     return type;
 }
 
-// public generated DontCopyStructAttribute() :4
+// public generated DontCopyStructAttribute() :5
 void DontCopyStructAttribute__ctor_1_fn(DontCopyStructAttribute* __this)
 {
     __this->ctor_1();
 }
 
-// public generated DontCopyStructAttribute New() :4
+// public generated DontCopyStructAttribute New() :5
 void DontCopyStructAttribute__New1_fn(DontCopyStructAttribute** __retval)
 {
     *__retval = DontCopyStructAttribute::New1();
 }
 
-// public generated DontCopyStructAttribute() [instance] :4
+// public generated DontCopyStructAttribute() [instance] :5
 void DontCopyStructAttribute::ctor_1()
 {
     ctor_();
 }
 
-// public generated DontCopyStructAttribute New() [static] :4
+// public generated DontCopyStructAttribute New() [static] :5
 DontCopyStructAttribute* DontCopyStructAttribute::New1()
 {
     DontCopyStructAttribute* obj1 = (DontCopyStructAttribute*)uNew(DontCopyStructAttribute_typeof());
@@ -67,8 +67,8 @@ DontCopyStructAttribute* DontCopyStructAttribute::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Compiler/ExportTargetInterop/DontExportAttribute.uno
-// -----------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Compiler/ExportTargetInterop/DontExportAttribute.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // public sealed class DontExportAttribute :4
 // {
@@ -120,8 +120,8 @@ DontExportAttribute* DontExportAttribute::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Compiler/ExportTargetInterop/DotNetTypeAttribute.uno
-// -----------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Compiler/ExportTargetInterop/DotNetTypeAttribute.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // public sealed class DotNetOverrideAttribute :13
 // {
@@ -173,8 +173,8 @@ DotNetOverrideAttribute* DotNetOverrideAttribute::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Compiler/ExportTargetInterop/OptionalAttribute.uno
-// ---------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Compiler/ExportTargetInterop/OptionalAttribute.uno
+// --------------------------------------------------------------------------------------------------------------
 
 // public sealed class OptionalAttribute :4
 // {
@@ -226,8 +226,8 @@ OptionalAttribute* OptionalAttribute::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Compiler/ExportTargetInterop/StaticAttribute.uno
-// -------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Compiler/ExportTargetInterop/StaticAttribute.uno
+// ------------------------------------------------------------------------------------------------------------
 
 // public sealed class StaticAttribute :4
 // {
@@ -279,8 +279,8 @@ StaticAttribute* StaticAttribute::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Compiler/ExportTargetInterop/TargetSpecificImplementationAttribute.uno
-// -----------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Compiler/ExportTargetInterop/TargetSpecificImplementationAttribute.uno
+// ----------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class TargetSpecificImplementationAttribute :5
 // {
@@ -332,8 +332,8 @@ TargetSpecificImplementationAttribute* TargetSpecificImplementationAttribute::Ne
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Compiler/ExportTargetInterop/TargetSpecificTypeAttribute.uno
-// -------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Compiler/ExportTargetInterop/TargetSpecificTypeAttribute.uno
+// ------------------------------------------------------------------------------------------------------------------------
 
 // public sealed class TargetSpecificTypeAttribute :5
 // {

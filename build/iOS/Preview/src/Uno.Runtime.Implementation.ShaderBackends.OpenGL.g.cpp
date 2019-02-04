@@ -79,6 +79,8 @@
 #include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLHelpers.h>
 #include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLInterop.h>
 #include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLProgram.h>
+#include <Uno.Runtime.InteropServices.GCHandle.h>
+#include <Uno.Runtime.InteropServices.GCHandleType.h>
 #include <Uno.String.h>
 static uString* STRINGS[28];
 static uType* TYPES[5];
@@ -90,8 +92,8 @@ namespace Implementation{
 namespace ShaderBackends{
 namespace OpenGL{
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Runtime/Implementation/ShaderBackends/OpenGL/GLCompiledProgram.uno
-// -------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Runtime/Implementation/ShaderBackends/OpenGL/GLCompiledProgram.uno
+// ------------------------------------------------------------------------------------------------------------------------------
 
 // public sealed extern class GLCompiledProgram :6
 // {
@@ -221,8 +223,8 @@ GLCompiledProgram* GLCompiledProgram::New1(uString* vsSource, uString* fsSource,
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Runtime/Implementation/ShaderBackends/OpenGL/GLDrawCall.uno
-// ------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Runtime/Implementation/ShaderBackends/OpenGL/GLDrawCall.uno
+// -----------------------------------------------------------------------------------------------------------------------
 
 // public extern struct GLDrawCall :8
 // {
@@ -331,6 +333,7 @@ uStructType* GLDrawCall_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 25;
     options.Alignment = alignof(GLDrawCall);
     options.ValueSize = sizeof(GLDrawCall);
@@ -341,9 +344,9 @@ uStructType* GLDrawCall_typeof()
 }
 
 // public GLDrawCall(Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLProgram program) :153
-void GLDrawCall__ctor__fn(GLDrawCall* __this, ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram* program)
+void GLDrawCall__ctor_1_fn(GLDrawCall* __this, ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram* program)
 {
-    __this->ctor_(program);
+    __this->ctor_1(program);
 }
 
 // public void Attrib(int index, int componentCount, OpenGL.GLDataType componentType, bool normalized, Uno.Graphics.VertexBuffer buf, int stride, int offset) :208
@@ -746,7 +749,7 @@ uSStrong< ::g::Uno::Collections::List*> GLDrawCall::_boundAttributes_;
 int32_t GLDrawCall::_currentTextureUnit_;
 
 // public GLDrawCall(Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLProgram program) [instance] :153
-void GLDrawCall::ctor_(::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram* program)
+void GLDrawCall::ctor_1(::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram* program)
 {
     uStackFrame __("Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLDrawCall", ".ctor(Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLProgram)");
     int32_t ind1;
@@ -1330,13 +1333,13 @@ void GLDrawCall::WriteRed(bool value)
 GLDrawCall GLDrawCall__New1(::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLProgram* program)
 {
     GLDrawCall obj7;
-    obj7.ctor_(program);
+    obj7.ctor_1(program);
     return obj7;
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Runtime/Implementation/ShaderBackends/OpenGL/GLException.uno
-// -------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Runtime/Implementation/ShaderBackends/OpenGL/GLException.uno
+// ------------------------------------------------------------------------------------------------------------------------
 
 // public sealed extern class GLException :5
 // {
@@ -1389,10 +1392,10 @@ GLException* GLException::New4(uString* message)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Runtime/Implementation/ShaderBackends/OpenGL/GLHelpers.uno
-// -----------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Runtime/Implementation/ShaderBackends/OpenGL/GLHelpers.uno
+// ----------------------------------------------------------------------------------------------------------------------
 
-// public static extern class GLHelpers :8
+// public static extern class GLHelpers :9
 // {
 static void GLHelpers_build(uType* type)
 {
@@ -1441,67 +1444,67 @@ uClassType* GLHelpers_typeof()
     return type;
 }
 
-// public static void CheckError() :10
+// public static void CheckError() :11
 void GLHelpers__CheckError_fn()
 {
     GLHelpers::CheckError();
 }
 
-// public static void CheckFramebufferStatus() :18
+// public static void CheckFramebufferStatus() :19
 void GLHelpers__CheckFramebufferStatus_fn()
 {
     GLHelpers::CheckFramebufferStatus();
 }
 
-// public static OpenGL.GLShaderHandle CompileShader(OpenGL.GLShaderType type, string source) :175
+// public static OpenGL.GLShaderHandle CompileShader(OpenGL.GLShaderType type, string source) :139
 void GLHelpers__CompileShader_fn(int32_t* type, uString* source, uint32_t* __retval)
 {
     *__retval = GLHelpers::CompileShader(*type, source);
 }
 
-// public static OpenGL.GLRenderbufferHandle CreateDepthBuffer(int2 size) :161
+// public static OpenGL.GLRenderbufferHandle CreateDepthBuffer(int2 size) :125
 void GLHelpers__CreateDepthBuffer_fn(::g::Uno::Int2* size, uint32_t* __retval)
 {
     *__retval = GLHelpers::CreateDepthBuffer(*size);
 }
 
-// public static Uno.Graphics.RenderTarget CreateRenderTarget(OpenGL.GLTextureTarget colorTarget, OpenGL.GLTextureHandle colorBuffer, int mip, int2 size, bool depth) :126
+// public static Uno.Graphics.RenderTarget CreateRenderTarget(OpenGL.GLTextureTarget colorTarget, OpenGL.GLTextureHandle colorBuffer, int mip, int2 size, bool depth) :90
 void GLHelpers__CreateRenderTarget_fn(int32_t* colorTarget, uint32_t* colorBuffer, int32_t* mip, ::g::Uno::Int2* size, bool* depth, ::g::Uno::Graphics::RenderTarget** __retval)
 {
     *__retval = GLHelpers::CreateRenderTarget(*colorTarget, *colorBuffer, *mip, *size, *depth);
 }
 
-// public static Uno.Graphics.RenderTarget CreateRenderTarget(OpenGL.GLTextureTarget colorTarget, OpenGL.GLTextureHandle colorBuffer, int mip, int2 size, OpenGL.GLRenderbufferHandle depthBuffer, bool ownsDepthBuffer) :131
+// public static Uno.Graphics.RenderTarget CreateRenderTarget(OpenGL.GLTextureTarget colorTarget, OpenGL.GLTextureHandle colorBuffer, int mip, int2 size, OpenGL.GLRenderbufferHandle depthBuffer, bool ownsDepthBuffer) :95
 void GLHelpers__CreateRenderTarget1_fn(int32_t* colorTarget, uint32_t* colorBuffer, int32_t* mip, ::g::Uno::Int2* size, uint32_t* depthBuffer, bool* ownsDepthBuffer, ::g::Uno::Graphics::RenderTarget** __retval)
 {
     *__retval = GLHelpers::CreateRenderTarget1(*colorTarget, *colorBuffer, *mip, *size, *depthBuffer, *ownsDepthBuffer);
 }
 
-// public static OpenGL.GLProgramHandle LinkProgram(OpenGL.GLShaderHandle vertexShader, OpenGL.GLShaderHandle fragmentShader) :193
+// public static OpenGL.GLProgramHandle LinkProgram(OpenGL.GLShaderHandle vertexShader, OpenGL.GLShaderHandle fragmentShader) :157
 void GLHelpers__LinkProgram_fn(uint32_t* vertexShader, uint32_t* fragmentShader, uint32_t* __retval)
 {
     *__retval = GLHelpers::LinkProgram(*vertexShader, *fragmentShader);
 }
 
-// public static void TexImage2DFromBuffer(OpenGL.GLTextureTarget target, int w, int h, int mip, Uno.Graphics.Format format, Uno.Buffer data) :60
+// public static void TexImage2DFromBuffer(OpenGL.GLTextureTarget target, int w, int h, int mip, Uno.Graphics.Format format, Uno.Buffer data) :42
 void GLHelpers__TexImage2DFromBuffer_fn(int32_t* target, int32_t* w, int32_t* h, int32_t* mip, int32_t* format, ::g::Uno::Buffer* data)
 {
     GLHelpers::TexImage2DFromBuffer(*target, *w, *h, *mip, *format, data);
 }
 
-// public static void TexImage2DFromBytes(OpenGL.GLTextureTarget target, int w, int h, int mip, Uno.Graphics.Format format, byte[] data) :26
+// public static void TexImage2DFromBytes(OpenGL.GLTextureTarget target, int w, int h, int mip, Uno.Graphics.Format format, byte[] data) :27
 void GLHelpers__TexImage2DFromBytes_fn(int32_t* target, int32_t* w, int32_t* h, int32_t* mip, int32_t* format, uArray* data)
 {
     GLHelpers::TexImage2DFromBytes(*target, *w, *h, *mip, *format, data);
 }
 
-// public static void TexImage2DFromIntPtr(OpenGL.GLTextureTarget target, int w, int h, int mip, Uno.Graphics.Format format, Uno.IntPtr data) :93
+// public static void TexImage2DFromIntPtr(OpenGL.GLTextureTarget target, int w, int h, int mip, Uno.Graphics.Format format, Uno.IntPtr data) :57
 void GLHelpers__TexImage2DFromIntPtr_fn(int32_t* target, int32_t* w, int32_t* h, int32_t* mip, int32_t* format, void** data)
 {
     GLHelpers::TexImage2DFromIntPtr(*target, *w, *h, *mip, *format, *data);
 }
 
-// public static void CheckError() [static] :10
+// public static void CheckError() [static] :11
 void GLHelpers::CheckError()
 {
     uStackFrame __("Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLHelpers", "CheckError()");
@@ -1511,7 +1514,7 @@ void GLHelpers::CheckError()
         ::g::Uno::Diagnostics::Debug::Log2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[3/*"GL error ("*/], ::g::Uno::Int::ToString(err, ::TYPES[3/*int*/])), ::STRINGS[4/*")"*/]), 3);
 }
 
-// public static void CheckFramebufferStatus() [static] :18
+// public static void CheckFramebufferStatus() [static] :19
 void GLHelpers::CheckFramebufferStatus()
 {
     uStackFrame __("Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLHelpers", "CheckFramebufferStatus()");
@@ -1521,7 +1524,7 @@ void GLHelpers::CheckFramebufferStatus()
         ::g::Uno::Diagnostics::Debug::Log2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(::STRINGS[5/*"Incomplete ...*/], uBox<int32_t>(::g::OpenGL::GLFramebufferStatus_typeof(), status)), ::STRINGS[4/*")"*/]), 3);
 }
 
-// public static OpenGL.GLShaderHandle CompileShader(OpenGL.GLShaderType type, string source) [static] :175
+// public static OpenGL.GLShaderHandle CompileShader(OpenGL.GLShaderType type, string source) [static] :139
 uint32_t GLHelpers::CompileShader(int32_t type, uString* source)
 {
     uStackFrame __("Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLHelpers", "CompileShader(OpenGL.GLShaderType,string)");
@@ -1540,7 +1543,7 @@ uint32_t GLHelpers::CompileShader(int32_t type, uString* source)
     return handle;
 }
 
-// public static OpenGL.GLRenderbufferHandle CreateDepthBuffer(int2 size) [static] :161
+// public static OpenGL.GLRenderbufferHandle CreateDepthBuffer(int2 size) [static] :125
 uint32_t GLHelpers::CreateDepthBuffer(::g::Uno::Int2 size)
 {
     uint32_t prevHandle = ::g::OpenGL::GL::GetRenderbufferBinding();
@@ -1551,14 +1554,14 @@ uint32_t GLHelpers::CreateDepthBuffer(::g::Uno::Int2 size)
     return handle;
 }
 
-// public static Uno.Graphics.RenderTarget CreateRenderTarget(OpenGL.GLTextureTarget colorTarget, OpenGL.GLTextureHandle colorBuffer, int mip, int2 size, bool depth) [static] :126
+// public static Uno.Graphics.RenderTarget CreateRenderTarget(OpenGL.GLTextureTarget colorTarget, OpenGL.GLTextureHandle colorBuffer, int mip, int2 size, bool depth) [static] :90
 ::g::Uno::Graphics::RenderTarget* GLHelpers::CreateRenderTarget(int32_t colorTarget, uint32_t colorBuffer, int32_t mip, ::g::Uno::Int2 size, bool depth)
 {
     uStackFrame __("Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLHelpers", "CreateRenderTarget(OpenGL.GLTextureTarget,OpenGL.GLTextureHandle,int,int2,bool)");
     return GLHelpers::CreateRenderTarget1(colorTarget, colorBuffer, mip, size, depth ? GLHelpers::CreateDepthBuffer(size) : ::g::OpenGL::GLRenderbufferHandle::Zero_, true);
 }
 
-// public static Uno.Graphics.RenderTarget CreateRenderTarget(OpenGL.GLTextureTarget colorTarget, OpenGL.GLTextureHandle colorBuffer, int mip, int2 size, OpenGL.GLRenderbufferHandle depthBuffer, bool ownsDepthBuffer) [static] :131
+// public static Uno.Graphics.RenderTarget CreateRenderTarget(OpenGL.GLTextureTarget colorTarget, OpenGL.GLTextureHandle colorBuffer, int mip, int2 size, OpenGL.GLRenderbufferHandle depthBuffer, bool ownsDepthBuffer) [static] :95
 ::g::Uno::Graphics::RenderTarget* GLHelpers::CreateRenderTarget1(int32_t colorTarget, uint32_t colorBuffer, int32_t mip, ::g::Uno::Int2 size, uint32_t depthBuffer, bool ownsDepthBuffer)
 {
     uStackFrame __("Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLHelpers", "CreateRenderTarget(OpenGL.GLTextureTarget,OpenGL.GLTextureHandle,int,int2,OpenGL.GLRenderbufferHandle,bool)");
@@ -1585,7 +1588,7 @@ uint32_t GLHelpers::CreateDepthBuffer(::g::Uno::Int2 size)
     return result;
 }
 
-// public static OpenGL.GLProgramHandle LinkProgram(OpenGL.GLShaderHandle vertexShader, OpenGL.GLShaderHandle fragmentShader) [static] :193
+// public static OpenGL.GLProgramHandle LinkProgram(OpenGL.GLShaderHandle vertexShader, OpenGL.GLShaderHandle fragmentShader) [static] :157
 uint32_t GLHelpers::LinkProgram(uint32_t vertexShader, uint32_t fragmentShader)
 {
     uStackFrame __("Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLHelpers", "LinkProgram(OpenGL.GLShaderHandle,OpenGL.GLShaderHandle)");
@@ -1605,91 +1608,68 @@ uint32_t GLHelpers::LinkProgram(uint32_t vertexShader, uint32_t fragmentShader)
     return handle;
 }
 
-// public static void TexImage2DFromBuffer(OpenGL.GLTextureTarget target, int w, int h, int mip, Uno.Graphics.Format format, Uno.Buffer data) [static] :60
+// public static void TexImage2DFromBuffer(OpenGL.GLTextureTarget target, int w, int h, int mip, Uno.Graphics.Format format, Uno.Buffer data) [static] :42
 void GLHelpers::TexImage2DFromBuffer(int32_t target, int32_t w, int32_t h, int32_t mip, int32_t format, ::g::Uno::Buffer* data)
 {
     uStackFrame __("Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLHelpers", "TexImage2DFromBuffer(OpenGL.GLTextureTarget,int,int,int,Uno.Graphics.Format,Uno.Buffer)");
+    ::g::Uno::Runtime::InteropServices::GCHandle pin;
+    void* addr = uPtr(data)->PinPtr(&pin);
 
-    switch (format)
     {
-        case 1:
+        try
         {
-            ::g::OpenGL::GL::TexImage2D1(target, mip, 6409, w, h, 0, 6409, 5121, data);
-            break;
+            {
+                GLHelpers::TexImage2DFromIntPtr(target, w, h, mip, format, addr);
+            }
         }
-        case 2:
+
+        catch (const uThrowable& __t)
         {
-            ::g::OpenGL::GL::TexImage2D1(target, mip, 6410, w, h, 0, 6410, 5121, data);
-            break;
+            {
+                pin.Free();
+            }
+                        throw __t;
+            goto __after_finally_0;
         }
-        case 3:
+
         {
-            ::g::OpenGL::GL::TexImage2D1(target, mip, 6408, w, h, 0, 6408, 5121, data);
-            break;
+            pin.Free();
         }
-        case 4:
-        {
-            ::g::OpenGL::GL::TexImage2D1(target, mip, 6408, w, h, 0, 6408, 32819, data);
-            break;
-        }
-        case 5:
-        {
-            ::g::OpenGL::GL::TexImage2D1(target, mip, 6408, w, h, 0, 6408, 32820, data);
-            break;
-        }
-        case 6:
-        {
-            ::g::OpenGL::GL::TexImage2D1(target, mip, 6407, w, h, 0, 6407, 33635, data);
-            break;
-        }
-        default:
-            U_THROW(::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLException::New4(::STRINGS[10/*"Unsupported...*/]));
+        __after_finally_0:;
     }
 }
 
-// public static void TexImage2DFromBytes(OpenGL.GLTextureTarget target, int w, int h, int mip, Uno.Graphics.Format format, byte[] data) [static] :26
+// public static void TexImage2DFromBytes(OpenGL.GLTextureTarget target, int w, int h, int mip, Uno.Graphics.Format format, byte[] data) [static] :27
 void GLHelpers::TexImage2DFromBytes(int32_t target, int32_t w, int32_t h, int32_t mip, int32_t format, uArray* data)
 {
     uStackFrame __("Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLHelpers", "TexImage2DFromBytes(OpenGL.GLTextureTarget,int,int,int,Uno.Graphics.Format,byte[])");
+    ::g::Uno::Runtime::InteropServices::GCHandle pin = ::g::Uno::Runtime::InteropServices::GCHandle__Alloc1(data, 3);
 
-    switch (format)
     {
-        case 1:
+        try
         {
-            ::g::OpenGL::GL::TexImage2D(target, mip, 6409, w, h, 0, 6409, 5121, data);
-            break;
+            {
+                GLHelpers::TexImage2DFromIntPtr(target, w, h, mip, format, pin.AddrOfPinnedObject());
+            }
         }
-        case 2:
+
+        catch (const uThrowable& __t)
         {
-            ::g::OpenGL::GL::TexImage2D(target, mip, 6410, w, h, 0, 6410, 5121, data);
-            break;
+            {
+                pin.Free();
+            }
+                        throw __t;
+            goto __after_finally_1;
         }
-        case 3:
+
         {
-            ::g::OpenGL::GL::TexImage2D(target, mip, 6408, w, h, 0, 6408, 5121, data);
-            break;
+            pin.Free();
         }
-        case 4:
-        {
-            ::g::OpenGL::GL::TexImage2D(target, mip, 6408, w, h, 0, 6408, 32819, data);
-            break;
-        }
-        case 5:
-        {
-            ::g::OpenGL::GL::TexImage2D(target, mip, 6408, w, h, 0, 6408, 32820, data);
-            break;
-        }
-        case 6:
-        {
-            ::g::OpenGL::GL::TexImage2D(target, mip, 6407, w, h, 0, 6407, 33635, data);
-            break;
-        }
-        default:
-            U_THROW(::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLException::New4(::STRINGS[10/*"Unsupported...*/]));
+        __after_finally_1:;
     }
 }
 
-// public static void TexImage2DFromIntPtr(OpenGL.GLTextureTarget target, int w, int h, int mip, Uno.Graphics.Format format, Uno.IntPtr data) [static] :93
+// public static void TexImage2DFromIntPtr(OpenGL.GLTextureTarget target, int w, int h, int mip, Uno.Graphics.Format format, Uno.IntPtr data) [static] :57
 void GLHelpers::TexImage2DFromIntPtr(int32_t target, int32_t w, int32_t h, int32_t mip, int32_t format, void* data)
 {
     uStackFrame __("Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLHelpers", "TexImage2DFromIntPtr(OpenGL.GLTextureTarget,int,int,int,Uno.Graphics.Format,Uno.IntPtr)");
@@ -1732,8 +1712,8 @@ void GLHelpers::TexImage2DFromIntPtr(int32_t target, int32_t w, int32_t h, int32
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Runtime/Implementation/ShaderBackends/OpenGL/GLInterop.uno
-// -----------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Runtime/Implementation/ShaderBackends/OpenGL/GLInterop.uno
+// ----------------------------------------------------------------------------------------------------------------------
 
 // public static extern class GLInterop :7
 // {
@@ -2327,8 +2307,8 @@ int32_t GLInterop::ToUnoGraphicsPrimitiveType(int32_t x)
 }
 // }
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Runtime/Implementation/ShaderBackends/OpenGL/GLProgram.uno
-// -----------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Runtime/Implementation/ShaderBackends/OpenGL/GLProgram.uno
+// ----------------------------------------------------------------------------------------------------------------------
 
 // public sealed extern class GLProgram :7
 // {

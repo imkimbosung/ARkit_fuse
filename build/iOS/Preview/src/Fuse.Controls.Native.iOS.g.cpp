@@ -37,8 +37,8 @@ namespace Controls{
 namespace Native{
 namespace iOS{
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/iOS/Focus.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/iOS/Focus.uno
+// ---------------------------------------------------------------------------
 
 // internal abstract extern interface INativeFocusListener :8
 // {
@@ -52,8 +52,8 @@ uInterfaceType* INativeFocusListener_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/iOS/LeafView.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/iOS/LeafView.uno
+// ------------------------------------------------------------------------------
 
 // public abstract extern class LeafView :6
 // {
@@ -96,8 +96,8 @@ void LeafView::ctor_4(::g::ObjC::Object* handle)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/iOS/Focus.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/iOS/Focus.uno
+// ---------------------------------------------------------------------------
 
 // internal static extern class NativeFocus :14
 // {
@@ -197,8 +197,8 @@ void NativeFocus::RemoveListener(::g::ObjC::Object* handle)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/iOS/iOSDevice.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/iOS/iOSDevice.uno
+// -------------------------------------------------------------------------------
 
 // public sealed extern class OSVersion :8
 // {
@@ -268,8 +268,8 @@ OSVersion* OSVersion::New1(int32_t major, int32_t minor, int32_t patch)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/iOS/Focus.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/iOS/Focus.uno
+// ---------------------------------------------------------------------------
 
 // private sealed class FocusHelpers.PerformBecomeFirstResponder :127
 // {
@@ -335,8 +335,8 @@ FocusHelpers__PerformBecomeFirstResponder* FocusHelpers__PerformBecomeFirstRespo
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/iOS/PointerCaptureAdapter.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/iOS/PointerCaptureAdapter.uno
+// -------------------------------------------------------------------------------------------
 
 // internal sealed extern class PointerCaptureAdapter :9
 // {
@@ -489,8 +489,8 @@ PointerCaptureAdapter* PointerCaptureAdapter::New1(::g::Fuse::Visual* visual, ::
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/iOS/InputDispatch.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/iOS/InputDispatch.uno
+// -----------------------------------------------------------------------------------
 
 // private struct InputDispatch.RootInfo :84
 // {
@@ -507,6 +507,7 @@ uStructType* InputDispatch__RootInfo_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 2;
     options.Alignment = alignof(InputDispatch__RootInfo);
     options.ValueSize = sizeof(InputDispatch__RootInfo);
@@ -517,9 +518,9 @@ uStructType* InputDispatch__RootInfo_typeof()
 }
 
 // public RootInfo(Fuse.Visual rootVisual, ObjC.Object rootView) :89
-void InputDispatch__RootInfo__ctor__fn(InputDispatch__RootInfo* __this, ::g::Fuse::Visual* rootVisual, ::g::ObjC::Object* rootView)
+void InputDispatch__RootInfo__ctor_1_fn(InputDispatch__RootInfo* __this, ::g::Fuse::Visual* rootVisual, ::g::ObjC::Object* rootView)
 {
-    __this->ctor_(rootVisual, rootView);
+    __this->ctor_1(rootVisual, rootView);
 }
 
 // public RootInfo New(Fuse.Visual rootVisual, ObjC.Object rootView) :89
@@ -529,7 +530,7 @@ void InputDispatch__RootInfo__New1_fn(::g::Fuse::Visual* rootVisual, ::g::ObjC::
 }
 
 // public RootInfo(Fuse.Visual rootVisual, ObjC.Object rootView) [instance] :89
-void InputDispatch__RootInfo::ctor_(::g::Fuse::Visual* rootVisual, ::g::ObjC::Object* rootView)
+void InputDispatch__RootInfo::ctor_1(::g::Fuse::Visual* rootVisual, ::g::ObjC::Object* rootView)
 {
     RootVisual = rootVisual;
     RootView = rootView;
@@ -539,13 +540,13 @@ void InputDispatch__RootInfo::ctor_(::g::Fuse::Visual* rootVisual, ::g::ObjC::Ob
 InputDispatch__RootInfo InputDispatch__RootInfo__New1(::g::Fuse::Visual* rootVisual, ::g::ObjC::Object* rootView)
 {
     InputDispatch__RootInfo obj1;
-    obj1.ctor_(rootVisual, rootView);
+    obj1.ctor_1(rootVisual, rootView);
     return obj1;
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/iOS/iOSDevice.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/iOS/iOSDevice.uno
+// -------------------------------------------------------------------------------
 
 // public enum iOSDevice.ScreenOrientation :28
 uEnumType* iOSDevice__ScreenOrientation_typeof()
@@ -560,8 +561,8 @@ uEnumType* iOSDevice__ScreenOrientation_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/iOS/PointerCaptureAdapter.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/iOS/PointerCaptureAdapter.uno
+// -------------------------------------------------------------------------------------------
 
 // internal enum TouchPhase :71
 uEnumType* TouchPhase_typeof()

@@ -1,8 +1,8 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Time/Instant.uno.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Time/Instant.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.ValueType.h>
 namespace g{namespace Uno{namespace Time{struct Duration;}}}
 namespace g{namespace Uno{namespace Time{struct Instant;}}}
 namespace g{namespace Uno{namespace Time{struct Offset;}}}
@@ -14,7 +14,7 @@ namespace Time{
 // public struct Instant :5
 // {
 uStructType* Instant_typeof();
-void Instant__ctor__fn(Instant* __this, int64_t* ticks);
+void Instant__ctor_1_fn(Instant* __this, int64_t* ticks);
 void Instant__Equals_fn(Instant* __this, uType* __type, uObject* obj, bool* __retval);
 void Instant__Equals2_fn(Instant* __this, Instant* other, bool* __retval);
 void Instant__FromUtc_fn(int32_t* year, int32_t* monthOfYear, int32_t* dayOfMonth, int32_t* hourOfDay, int32_t* minuteOfHour, Instant* __retval);
@@ -34,7 +34,7 @@ struct Instant
 {
     int64_t _ticks;
 
-    void ctor_(int64_t ticks);
+    void ctor_1(int64_t ticks);
     bool Equals(uType* __type, uObject* obj) { bool __retval; return Instant__Equals_fn(this, __type, obj, &__retval), __retval; }
     bool Equals2(Instant other);
     int32_t GetHashCode(uType* __type) { int32_t __retval; return Instant__GetHashCode_fn(this, __type, &__retval), __retval; }

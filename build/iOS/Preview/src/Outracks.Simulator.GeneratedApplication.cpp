@@ -11,7 +11,7 @@
 #include <Uno.Net.IPAddress.h>
 #include <Uno.Net.IPEndPoint.h>
 #include <Uno.String.h>
-static uString* STRINGS[7];
+static uString* STRINGS[6];
 static uType* TYPES[2];
 
 namespace g{
@@ -23,12 +23,11 @@ namespace Simulator{
 static void GeneratedApplication_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("127.0.0.1");
-    ::STRINGS[1] = uString::Const("169.254.8.25");
-    ::STRINGS[2] = uString::Const("10.37.129.2");
-    ::STRINGS[3] = uString::Const("10.211.55.2");
-    ::STRINGS[4] = uString::Const("10.1.49.76");
-    ::STRINGS[5] = uString::Const("/Users/kbs/Fuse/AR_example/AR_example.unoproj");
-    ::STRINGS[6] = uString::Const("AR_example");
+    ::STRINGS[1] = uString::Const("10.37.129.2");
+    ::STRINGS[2] = uString::Const("10.211.55.2");
+    ::STRINGS[3] = uString::Const("192.168.219.108");
+    ::STRINGS[4] = uString::Const("/Users/kbs/Fuse/AR_example/AR_example.unoproj");
+    ::STRINGS[5] = uString::Const("AR_example");
     ::TYPES[0] = ::g::Uno::Net::IPEndPoint_typeof()->Array();
     ::TYPES[1] = ::g::Uno::String_typeof()->Array();
     type->SetDependencies(
@@ -82,8 +81,8 @@ void GeneratedApplication__New3_fn(GeneratedApplication** __retval)
 void GeneratedApplication::ctor_5()
 {
     uStackFrame __("Outracks.Simulator.GeneratedApplication", ".ctor()");
-    ctor_4(uArray::Init< ::g::Uno::Net::IPEndPoint*>(::TYPES[0/*Uno.Net.IPEndPoint[]*/], 5, (::g::Uno::Net::IPEndPoint*)::g::Uno::Net::IPEndPoint::New1(::g::Uno::Net::IPAddress::Parse(::STRINGS[0/*"127.0.0.1"*/]), 12124), (::g::Uno::Net::IPEndPoint*)::g::Uno::Net::IPEndPoint::New1(::g::Uno::Net::IPAddress::Parse(::STRINGS[1/*"169.254.8.25"*/]), 12124), (::g::Uno::Net::IPEndPoint*)::g::Uno::Net::IPEndPoint::New1(::g::Uno::Net::IPAddress::Parse(::STRINGS[2/*"10.37.129.2"*/]), 12124), (::g::Uno::Net::IPEndPoint*)::g::Uno::Net::IPEndPoint::New1(::g::Uno::Net::IPAddress::Parse(::STRINGS[3/*"10.211.55.2"*/]), 12124), (::g::Uno::Net::IPEndPoint*)::g::Uno::Net::IPEndPoint::New1(::g::Uno::Net::IPAddress::Parse(::STRINGS[4/*"10.1.49.76"*/]), 12124)), ::STRINGS[5/*"/Users/kbs/...*/], uArray::Init<uString*>(::TYPES[1/*string[]*/], 0));
-    ::g::Outracks::Simulator::Runtime::Bundle::Initialize(::STRINGS[6/*"AR_example"*/]);
+    ctor_4(uArray::Init< ::g::Uno::Net::IPEndPoint*>(::TYPES[0/*Uno.Net.IPEndPoint[]*/], 4, (::g::Uno::Net::IPEndPoint*)::g::Uno::Net::IPEndPoint::New1(::g::Uno::Net::IPAddress::Parse(::STRINGS[0/*"127.0.0.1"*/]), 12124), (::g::Uno::Net::IPEndPoint*)::g::Uno::Net::IPEndPoint::New1(::g::Uno::Net::IPAddress::Parse(::STRINGS[1/*"10.37.129.2"*/]), 12124), (::g::Uno::Net::IPEndPoint*)::g::Uno::Net::IPEndPoint::New1(::g::Uno::Net::IPAddress::Parse(::STRINGS[2/*"10.211.55.2"*/]), 12124), (::g::Uno::Net::IPEndPoint*)::g::Uno::Net::IPEndPoint::New1(::g::Uno::Net::IPAddress::Parse(::STRINGS[3/*"192.168.219...*/]), 12124)), ::STRINGS[4/*"/Users/kbs/...*/], uArray::Init<uString*>(::TYPES[1/*string[]*/], 0));
+    ::g::Outracks::Simulator::Runtime::Bundle::Initialize(::STRINGS[5/*"AR_example"*/]);
     Reflection((uObject*)::g::Outracks::Simulator::Client::NativeReflection::New1((uObject*)::g::Outracks::Simulator::Client::SimpleTypeMap::New1()));
 }
 

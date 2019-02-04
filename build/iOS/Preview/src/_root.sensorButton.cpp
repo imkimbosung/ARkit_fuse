@@ -39,7 +39,7 @@ namespace g{
 // static sensorButton() :20
 static void sensorButton__cctor_4_fn(uType* __type)
 {
-    sensorButton::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[0/*"Value"*/]);
+    sensorButton::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[0/*"Value"*/]);
 }
 
 static void sensorButton_build(uType* type)
@@ -202,17 +202,17 @@ void sensorButton::InitializeUX()
     Height(::g::Uno::UX::Size__New1(50.0f, 1));
     Alignment(14);
     Margin(::g::Uno::Float4__New2(4.0f, 4.0f, 4.0f, 4.0f));
-    SourceLineNumber(12);
+    SourceLineNumber(28);
     SourceFileName(::STRINGS[1/*"Pages/Respb...*/]);
     temp->Color(::g::Uno::Float4__New2(1.0f, 1.0f, 1.0f, 1.0f));
     temp->Alignment(10);
     temp->Margin(::g::Uno::Float4__New2(30.0f, 15.0f, 30.0f, 15.0f));
-    temp->SourceLineNumber(14);
+    temp->SourceLineNumber(30);
     temp->SourceFileName(::STRINGS[1/*"Pages/Respb...*/]);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Bindings()), ::TYPES[0/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp3);
-    temp2->SourceLineNumber(14);
+    temp2->SourceLineNumber(30);
     temp2->SourceFileName(::STRINGS[1/*"Pages/Respb...*/]);
-    temp1->SourceLineNumber(14);
+    temp1->SourceLineNumber(30);
     temp1->SourceFileName(::STRINGS[1/*"Pages/Respb...*/]);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(Children()), ::TYPES[1/*Uno.Collections.ICollection<Fuse.Node>*/]), temp);
 }
@@ -225,7 +225,7 @@ void sensorButton::SetText(uString* value, uObject* origin)
     if (::g::Uno::String::op_Inequality(value, _field_Text))
     {
         _field_Text = value;
-        OnPropertyChanged1(::g::Uno::UX::Selector__op_Implicit1(::STRINGS[2/*"Text"*/]), origin);
+        OnPropertyChanged1(::g::Uno::UX::Selector__op_Implicit(::STRINGS[2/*"Text"*/]), origin);
     }
 }
 

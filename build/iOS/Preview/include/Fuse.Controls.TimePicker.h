@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.TimePicker/1.9.0/TimePicker.Docs.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Controls.TimePicker/1.10.0-rc1/TimePicker.Docs.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

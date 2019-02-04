@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Collections/LinkedList.uno.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Collections/LinkedList.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -6,6 +6,7 @@
 #include <Uno.Collections.IEnumerator1-1.h>
 #include <Uno.IDisposable.h>
 #include <Uno.Object.h>
+#include <Uno.ValueType.h>
 namespace g{namespace Uno{namespace Collections{struct LinkedList;}}}
 namespace g{namespace Uno{namespace Collections{struct LinkedList__Enumerator;}}}
 namespace g{namespace Uno{namespace Collections{struct LinkedListNode;}}}
@@ -24,7 +25,7 @@ struct LinkedList__Enumerator_type : uStructType
 };
 
 LinkedList__Enumerator_type* LinkedList__Enumerator_typeof();
-void LinkedList__Enumerator__ctor__fn(LinkedList__Enumerator* __this, uType* __type, ::g::Uno::Collections::LinkedList* list);
+void LinkedList__Enumerator__ctor_1_fn(LinkedList__Enumerator* __this, uType* __type, ::g::Uno::Collections::LinkedList* list);
 void LinkedList__Enumerator__get_Current_fn(LinkedList__Enumerator* __this, uType* __type, uTRef __retval);
 void LinkedList__Enumerator__Dispose_fn(LinkedList__Enumerator* __this, uType* __type);
 void LinkedList__Enumerator__MoveNext_fn(LinkedList__Enumerator* __this, uType* __type, bool* __retval);
@@ -37,7 +38,7 @@ struct LinkedList__Enumerator
     uStrong< ::g::Uno::Collections::LinkedListNode*> _current;
     uStrong< ::g::Uno::Collections::LinkedListNode*> _next;
 
-    void ctor_(uType* __type, ::g::Uno::Collections::LinkedList* list);
+    void ctor_1(uType* __type, ::g::Uno::Collections::LinkedList* list);
     template<class T>
     T Current(uType* __type) { T __retval; return LinkedList__Enumerator__get_Current_fn(this, __type, &__retval), __retval; }
     void Dispose(uType* __type);

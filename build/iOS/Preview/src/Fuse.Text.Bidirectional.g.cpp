@@ -24,8 +24,8 @@ namespace Fuse{
 namespace Text{
 namespace Bidirectional{
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Bidirectional.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Bidirectional.uno
+// --------------------------------------------------------------------
 
 // private sealed class Runs.Range :153
 // {
@@ -80,8 +80,8 @@ Runs__Range* Runs__Range::New1(int32_t level, ::g::Fuse::Text::SinglyLinkedList*
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Bidirectional.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Bidirectional.uno
+// --------------------------------------------------------------------
 
 // public struct Run :6
 // {
@@ -106,6 +106,7 @@ uStructType* Run_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 2;
     options.Alignment = alignof(Run);
     options.ValueSize = sizeof(Run);
@@ -116,9 +117,9 @@ uStructType* Run_typeof()
 }
 
 // public Run(Fuse.Text.Substring str, int level) :11
-void Run__ctor__fn(Run* __this, ::g::Fuse::Text::Substring* str, int32_t* level)
+void Run__ctor_1_fn(Run* __this, ::g::Fuse::Text::Substring* str, int32_t* level)
 {
-    __this->ctor_(str, *level);
+    __this->ctor_1(str, *level);
 }
 
 // public Fuse.Text.TextDirection get_Direction() :19
@@ -170,7 +171,7 @@ void Run__get_VisualRight_fn(Run* __this, int32_t* __retval)
 }
 
 // public Run(Fuse.Text.Substring str, int level) [instance] :11
-void Run::ctor_(::g::Fuse::Text::Substring* str, int32_t level)
+void Run::ctor_1(::g::Fuse::Text::Substring* str, int32_t level)
 {
     String = str;
     Level = level;
@@ -226,13 +227,13 @@ int32_t Run::VisualRight()
 Run Run__New1(::g::Fuse::Text::Substring* str, int32_t level)
 {
     Run obj1;
-    obj1.ctor_(str, level);
+    obj1.ctor_1(str, level);
     return obj1;
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Bidirectional.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Bidirectional.uno
+// --------------------------------------------------------------------
 
 // public static class Runs :28
 // {
@@ -356,7 +357,7 @@ void Runs__TryMergeRangeWithPrevious_fn(::g::Uno::Collections::Stack* ranges, in
     }
 
     assert4 = ranges->Count();
-    ::g::Uno::Diagnostics::Debug::Assert(assert4 >= 1, uString::Const("ranges.Count >= 1"), uString::Const("/usr/local/share/uno/Packages/Fuse.Text/1.9.0/Bidirectional.uno"), 98, uArray::Init<uObject*>(uObject_typeof()->Array(), 2, uBox<int32_t>(::g::Uno::Int_typeof(), assert4), uBox<int32_t>(::g::Uno::Int_typeof(), 1)));
+    ::g::Uno::Diagnostics::Debug::Assert(assert4 >= 1, uString::Const("ranges.Count >= 1"), uString::Const("/usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Bidirectional.uno"), 98, uArray::Init<uObject*>(uObject_typeof()->Array(), 2, uBox<int32_t>(::g::Uno::Int_typeof(), assert4), uBox<int32_t>(::g::Uno::Int_typeof(), 1)));
 
     while (ranges->Count() >= 2)
     {
@@ -383,7 +384,7 @@ void Runs__TryMergeRangeWithPrevious_fn(::g::Uno::Collections::Stack* ranges, in
 
     assert1 = result->Count();
     assert2 = uPtr(runs)->Count();
-    ::g::Uno::Diagnostics::Debug::Assert(assert1 == assert2, uString::Const("result.Count == runs.Count"), uString::Const("/usr/local/share/uno/Packages/Fuse.Text/1.9.0/Bidirectional.uno"), 45, uArray::Init<uObject*>(uObject_typeof()->Array(), 2, uBox<int32_t>(::g::Uno::Int_typeof(), assert1), uBox<int32_t>(::g::Uno::Int_typeof(), assert2)));
+    ::g::Uno::Diagnostics::Debug::Assert(assert1 == assert2, uString::Const("result.Count == runs.Count"), uString::Const("/usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Bidirectional.uno"), 45, uArray::Init<uObject*>(uObject_typeof()->Array(), 2, uBox<int32_t>(::g::Uno::Int_typeof(), assert1), uBox<int32_t>(::g::Uno::Int_typeof(), assert2)));
     return result;
 }
 
@@ -438,9 +439,9 @@ void Runs::MergeRange(::g::Uno::Collections::Stack* ranges, Runs__Range* range)
     int32_t assert5;
     Runs__Range* ret12;
     assert5 = uPtr(ranges)->Count();
-    ::g::Uno::Diagnostics::Debug::Assert(assert5 >= 1, uString::Const("ranges.Count >= 1"), uString::Const("/usr/local/share/uno/Packages/Fuse.Text/1.9.0/Bidirectional.uno"), 118, uArray::Init<uObject*>(uObject_typeof()->Array(), 2, uBox<int32_t>(::g::Uno::Int_typeof(), assert5), uBox<int32_t>(::g::Uno::Int_typeof(), 1)));
+    ::g::Uno::Diagnostics::Debug::Assert(assert5 >= 1, uString::Const("ranges.Count >= 1"), uString::Const("/usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Bidirectional.uno"), 118, uArray::Init<uObject*>(uObject_typeof()->Array(), 2, uBox<int32_t>(::g::Uno::Int_typeof(), assert5), uBox<int32_t>(::g::Uno::Int_typeof(), 1)));
     Runs__Range* previous = (::g::Uno::Collections::Stack__Peek_fn(ranges, &ret12), ret12);
-    ::g::Uno::Diagnostics::Debug::Assert(uPtr(previous)->Level < uPtr(range)->Level, uString::Const("previous.Level < range.Level"), uString::Const("/usr/local/share/uno/Packages/Fuse.Text/1.9.0/Bidirectional.uno"), 122, uArray::Init<uObject*>(uObject_typeof()->Array(), 2, uBox<int32_t>(::g::Uno::Int_typeof(), uPtr(previous)->Level), uBox<int32_t>(::g::Uno::Int_typeof(), uPtr(range)->Level)));
+    ::g::Uno::Diagnostics::Debug::Assert(uPtr(previous)->Level < uPtr(range)->Level, uString::Const("previous.Level < range.Level"), uString::Const("/usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Bidirectional.uno"), 122, uArray::Init<uObject*>(uObject_typeof()->Array(), 2, uBox<int32_t>(::g::Uno::Int_typeof(), uPtr(previous)->Level), uBox<int32_t>(::g::Uno::Int_typeof(), uPtr(range)->Level)));
 
     if (Runs::IsRightToLeft(previous->Level))
     {

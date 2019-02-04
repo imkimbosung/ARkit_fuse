@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Content/Fonts/CppFontFace.uno.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Content/Fonts/CppFontFace.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -15,7 +15,7 @@ namespace Uno{
 namespace Content{
 namespace Fonts{
 
-// internal sealed extern class CppFontFace :19
+// internal sealed extern class CppFontFace :20
 // {
 ::g::Uno::Content::Fonts::FontFace_type* CppFontFace_typeof();
 void CppFontFace__ctor_1_fn(CppFontFace* __this, uArray* data, int32_t* offset, int32_t* length);

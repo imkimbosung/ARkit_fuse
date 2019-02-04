@@ -39,10 +39,10 @@
 #include <Uno.Float.h>
 #include <Uno.IDisposable.h>
 #include <Uno.Int.h>
-#include <Uno.IntPtr.h>
 #include <Uno.Object.h>
 #include <Uno.String.h>
 #include <Uno.UX.Selector.h>
+#include <Uno.ValueType.h>
 static uString* STRINGS[10];
 static uType* TYPES[10];
 
@@ -51,8 +51,8 @@ namespace Fuse{
 namespace Scripting{
 namespace JavaScriptCore{
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/JavaScriptCore/Array.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/JavaScriptCore/Array.uno
+// -------------------------------------------------------------------------------------------
 
 // internal sealed extern class Array :7
 // {
@@ -113,7 +113,7 @@ void Array__Equals2_fn(Array* __this, ::g::Fuse::Scripting::Array* a, bool* __re
     uStackFrame __("Fuse.Scripting.JavaScriptCore.Array", "Equals(Fuse.Scripting.Array)");
     ::JSObjectRef ind6;
     Array* jsa = uCast<Array*>(a, __this->__type);
-    return *__retval = ::g::Uno::Object::Equals(uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), (ind6 = __this->_value, ind6), U_ALLOCA(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof()->ObjectSize)), uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), uPtr(jsa)->_value)), void();
+    return *__retval = uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), (ind6 = __this->_value, ind6), U_ALLOCA(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof()->ObjectSize))->Equals(uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), uPtr(jsa)->_value)), void();
 }
 
 // public override sealed int GetHashCode() :72
@@ -121,7 +121,7 @@ void Array__GetHashCode_fn(Array* __this, int32_t* __retval)
 {
     uStackFrame __("Fuse.Scripting.JavaScriptCore.Array", "GetHashCode()");
     ::JSObjectRef ind7;
-    return *__retval = ::g::Uno::Object::GetHashCode(uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), (ind7 = __this->_value, ind7), U_ALLOCA(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof()->ObjectSize))), void();
+    return *__retval = uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), (ind7 = __this->_value, ind7), U_ALLOCA(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof()->ObjectSize))->GetHashCode(), void();
 }
 
 // public override sealed object get_Item(int index) :27
@@ -255,8 +255,8 @@ Array* Array::New1(::g::Fuse::Scripting::JavaScriptCore::Context* context, ::JSO
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/JavaScriptCore/Context.uno
-// ----------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/JavaScriptCore/Context.uno
+// ---------------------------------------------------------------------------------------------
 
 // private sealed extern class Context.CallbackWrapper :335
 // {
@@ -347,8 +347,8 @@ Context__CallbackWrapper* Context__CallbackWrapper::New1(::g::Fuse::Scripting::J
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/JavaScriptCore/Context.uno
-// ----------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/JavaScriptCore/Context.uno
+// ---------------------------------------------------------------------------------------------
 
 // public sealed extern class Context :14
 // {
@@ -660,7 +660,7 @@ void Context::ThrowPendingException()
         return ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::MakeString1(_context, uCast<uString*>(obj, ::g::Uno::String_typeof()));
 
     if (uIs(obj, ::g::Uno::UX::Selector_typeof()))
-        return ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::MakeString1(_context, ::g::Uno::UX::Selector__op_Implicit2(uUnbox< ::g::Uno::UX::Selector>(::g::Uno::UX::Selector_typeof(), obj)));
+        return ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::MakeString1(_context, ::g::Uno::UX::Selector__op_Implicit1(uUnbox< ::g::Uno::UX::Selector>(::g::Uno::UX::Selector_typeof(), obj)));
 
     if (uIs(obj, ::g::Uno::Bool_typeof()))
         return ::g::Fuse::Scripting::JavaScriptCore::JSValueRef::MakeBoolean(_context, uUnbox<bool>(::g::Uno::Bool_typeof(), obj));
@@ -828,8 +828,8 @@ void Context::OnSetupErrorError(::JSValueRef exception)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/JavaScriptCore/Context.uno
-// ----------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/JavaScriptCore/Context.uno
+// ---------------------------------------------------------------------------------------------
 
 // internal struct Context.EnterVM :86
 // {
@@ -853,6 +853,7 @@ Context__EnterVM_type* Context__EnterVM_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 1;
     options.InterfaceCount = 1;
     options.Alignment = alignof(Context__EnterVM);
@@ -865,9 +866,9 @@ Context__EnterVM_type* Context__EnterVM_typeof()
 }
 
 // public EnterVM(Fuse.Scripting.JavaScriptCore.Context context) :89
-void Context__EnterVM__ctor__fn(Context__EnterVM* __this, ::g::Fuse::Scripting::JavaScriptCore::Context* context)
+void Context__EnterVM__ctor_1_fn(Context__EnterVM* __this, ::g::Fuse::Scripting::JavaScriptCore::Context* context)
 {
-    __this->ctor_(context);
+    __this->ctor_1(context);
 }
 
 // public void Dispose() :95
@@ -883,7 +884,7 @@ void Context__EnterVM__New1_fn(::g::Fuse::Scripting::JavaScriptCore::Context* co
 }
 
 // public EnterVM(Fuse.Scripting.JavaScriptCore.Context context) [instance] :89
-void Context__EnterVM::ctor_(::g::Fuse::Scripting::JavaScriptCore::Context* context)
+void Context__EnterVM::ctor_1(::g::Fuse::Scripting::JavaScriptCore::Context* context)
 {
     uStackFrame __("Fuse.Scripting.JavaScriptCore.Context.EnterVM", ".ctor(Fuse.Scripting.JavaScriptCore.Context)");
     _context = context;
@@ -902,13 +903,13 @@ void Context__EnterVM::Dispose()
 Context__EnterVM Context__EnterVM__New1(::g::Fuse::Scripting::JavaScriptCore::Context* context)
 {
     Context__EnterVM obj1;
-    obj1.ctor_(context);
+    obj1.ctor_1(context);
     return obj1;
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/JavaScriptCore/Function.uno
-// -----------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/JavaScriptCore/Function.uno
+// ----------------------------------------------------------------------------------------------
 
 // internal sealed extern class Function :7
 // {
@@ -1058,7 +1059,7 @@ void Function__Equals2_fn(Function* __this, ::g::Fuse::Scripting::Function* f, b
 {
     uStackFrame __("Fuse.Scripting.JavaScriptCore.Function", "Equals(Fuse.Scripting.Function)");
     ::JSObjectRef ind5;
-    return *__retval = uIs(f, __this->__type) && ::g::Uno::Object::Equals(uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), (ind5 = __this->_value, ind5), U_ALLOCA(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof()->ObjectSize)), uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), uPtr(uCast<Function*>(f, __this->__type))->_value)), void();
+    return *__retval = uIs(f, __this->__type) && uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), (ind5 = __this->_value, ind5), U_ALLOCA(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof()->ObjectSize))->Equals(uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), uPtr(uCast<Function*>(f, __this->__type))->_value)), void();
 }
 
 // public override sealed int GetHashCode() :75
@@ -1066,7 +1067,7 @@ void Function__GetHashCode_fn(Function* __this, int32_t* __retval)
 {
     uStackFrame __("Fuse.Scripting.JavaScriptCore.Function", "GetHashCode()");
     ::JSObjectRef ind6;
-    return *__retval = ::g::Uno::Object::GetHashCode(uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), (ind6 = __this->_value, ind6), U_ALLOCA(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof()->ObjectSize))), void();
+    return *__retval = uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), (ind6 = __this->_value, ind6), U_ALLOCA(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof()->ObjectSize))->GetHashCode(), void();
 }
 
 // internal Function New(Fuse.Scripting.JavaScriptCore.Context context, Fuse.Scripting.JavaScriptCore.JSObjectRef function) :12
@@ -1095,12 +1096,12 @@ Function* Function::New1(::g::Fuse::Scripting::JavaScriptCore::Context* context,
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/JavaScriptCore/JavaScriptCore.uno
-// -----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/JavaScriptCore/JavaScriptCore.uno
+// ----------------------------------------------------------------------------------------------------
 
-// internal extern struct JSClassRef :419
+// internal extern struct JSClassRef :409
 // {
-// public void Dispose() [adapter] :493
+// public void Dispose() [adapter] :481
 static void JSClassRef__Dispose_ex(uObject* __this)
 {
     JSClassRef__Dispose_fn((::JSClassRef*)((uint8_t*)__this + sizeof(uObject)));
@@ -1118,6 +1119,7 @@ JSClassRef_type* JSClassRef_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.InterfaceCount = 1;
     options.Alignment = alignof(::JSClassRef);
     options.ValueSize = sizeof(::JSClassRef);
@@ -1128,31 +1130,31 @@ JSClassRef_type* JSClassRef_typeof()
     return type;
 }
 
-// public static Fuse.Scripting.JavaScriptCore.JSClassRef CreateUnoCallback() :437
+// public static Fuse.Scripting.JavaScriptCore.JSClassRef CreateUnoCallback() :425
 void JSClassRef__CreateUnoCallback_fn(::JSClassRef* __retval)
 {
     *__retval = JSClassRef::CreateUnoCallback();
 }
 
-// public static Fuse.Scripting.JavaScriptCore.JSClassRef CreateUnoFinalizer() :423
+// public static Fuse.Scripting.JavaScriptCore.JSClassRef CreateUnoFinalizer() :411
 void JSClassRef__CreateUnoFinalizer_fn(::JSClassRef* __retval)
 {
     *__retval = JSClassRef::CreateUnoFinalizer();
 }
 
-// public void Dispose() :493
+// public void Dispose() :481
 void JSClassRef__Dispose_fn(::JSClassRef* __this)
 {
     JSClassRef::Dispose(*__this);
 }
 
-// public void Dispose() [instance] :493
+// public void Dispose() [instance] :481
 void JSClassRef::Dispose(::JSClassRef __this)
 {
     ::JSClassRelease(*&__this);
 }
 
-// public static Fuse.Scripting.JavaScriptCore.JSClassRef CreateUnoCallback() [static] :437
+// public static Fuse.Scripting.JavaScriptCore.JSClassRef CreateUnoCallback() [static] :425
 ::JSClassRef JSClassRef::CreateUnoCallback()
 {
     ::JSClassDefinition classDef = kJSClassDefinitionEmpty;
@@ -1209,7 +1211,7 @@ void JSClassRef::Dispose(::JSClassRef __this)
     return ::JSClassCreate(&classDef);
 }
 
-// public static Fuse.Scripting.JavaScriptCore.JSClassRef CreateUnoFinalizer() [static] :423
+// public static Fuse.Scripting.JavaScriptCore.JSClassRef CreateUnoFinalizer() [static] :411
 ::JSClassRef JSClassRef::CreateUnoFinalizer()
 {
     ::JSClassDefinition classDef = kJSClassDefinitionEmpty;
@@ -1223,12 +1225,12 @@ void JSClassRef::Dispose(::JSClassRef __this)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/JavaScriptCore/JavaScriptCore.uno
-// -----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/JavaScriptCore/JavaScriptCore.uno
+// ----------------------------------------------------------------------------------------------------
 
-// internal extern struct JSContextRef :357
+// internal extern struct JSContextRef :349
 // {
-// public void Dispose() [adapter] :366
+// public void Dispose() [adapter] :356
 static void JSContextRef__Dispose_ex(uObject* __this)
 {
     JSContextRef__Dispose_fn((::JSContextRef*)((uint8_t*)__this + sizeof(uObject)));
@@ -1249,6 +1251,7 @@ JSContextRef_type* JSContextRef_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.InterfaceCount = 1;
     options.Alignment = alignof(::JSContextRef);
     options.ValueSize = sizeof(::JSContextRef);
@@ -1259,49 +1262,49 @@ JSContextRef_type* JSContextRef_typeof()
     return type;
 }
 
-// public static Fuse.Scripting.JavaScriptCore.JSContextRef Create() :361
+// public static Fuse.Scripting.JavaScriptCore.JSContextRef Create() :351
 void JSContextRef__Create_fn(::JSContextRef* __retval)
 {
     *__retval = JSContextRef::Create();
 }
 
-// public void Dispose() :366
+// public void Dispose() :356
 void JSContextRef__Dispose_fn(::JSContextRef* __this)
 {
     JSContextRef::Dispose(*__this);
 }
 
-// private Fuse.Scripting.JavaScriptCore.JSValueRef EvaluateScript(Fuse.Scripting.JavaScriptCore.JSStringRef script, Fuse.Scripting.JavaScriptCore.JSObjectRef thisObject, Fuse.Scripting.JavaScriptCore.JSStringRef sourceURL, int startingLineNumber, Fuse.Scripting.JavaScriptCore.JSValueRef& exception) :379
+// private Fuse.Scripting.JavaScriptCore.JSValueRef EvaluateScript(Fuse.Scripting.JavaScriptCore.JSStringRef script, Fuse.Scripting.JavaScriptCore.JSObjectRef thisObject, Fuse.Scripting.JavaScriptCore.JSStringRef sourceURL, int startingLineNumber, Fuse.Scripting.JavaScriptCore.JSValueRef& exception) :369
 void JSContextRef__EvaluateScript_fn(::JSContextRef* __this, ::JSStringRef* script, ::JSObjectRef* thisObject, ::JSStringRef* sourceURL, int32_t* startingLineNumber, ::JSValueRef* exception, ::JSValueRef* __retval)
 {
     *__retval = JSContextRef::EvaluateScript(*__this, *script, *thisObject, *sourceURL, *startingLineNumber, exception);
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSValueRef EvaluateScript(string script, Fuse.Scripting.JavaScriptCore.JSObjectRef thisObject, string sourceURL, int startingLineNumber, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :389
+// public Fuse.Scripting.JavaScriptCore.JSValueRef EvaluateScript(string script, Fuse.Scripting.JavaScriptCore.JSObjectRef thisObject, string sourceURL, int startingLineNumber, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :379
 void JSContextRef__EvaluateScript1_fn(::JSContextRef* __this, uString* script, ::JSObjectRef* thisObject, uString* sourceURL, int32_t* startingLineNumber, uDelegate* onException, ::JSValueRef* __retval)
 {
     *__retval = JSContextRef::EvaluateScript1(*__this, script, *thisObject, sourceURL, *startingLineNumber, onException);
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSObjectRef get_GlobalObject() :373
+// public Fuse.Scripting.JavaScriptCore.JSObjectRef get_GlobalObject() :363
 void JSContextRef__get_GlobalObject_fn(::JSContextRef* __this, ::JSObjectRef* __retval)
 {
     *__retval = JSContextRef::GlobalObject(*__this);
 }
 
-// public void Dispose() [instance] :366
+// public void Dispose() [instance] :356
 void JSContextRef::Dispose(::JSContextRef __this)
 {
     ::JSGlobalContextRelease((::JSGlobalContextRef)*&__this);
 }
 
-// private Fuse.Scripting.JavaScriptCore.JSValueRef EvaluateScript(Fuse.Scripting.JavaScriptCore.JSStringRef script, Fuse.Scripting.JavaScriptCore.JSObjectRef thisObject, Fuse.Scripting.JavaScriptCore.JSStringRef sourceURL, int startingLineNumber, Fuse.Scripting.JavaScriptCore.JSValueRef& exception) [instance] :379
+// private Fuse.Scripting.JavaScriptCore.JSValueRef EvaluateScript(Fuse.Scripting.JavaScriptCore.JSStringRef script, Fuse.Scripting.JavaScriptCore.JSObjectRef thisObject, Fuse.Scripting.JavaScriptCore.JSStringRef sourceURL, int startingLineNumber, Fuse.Scripting.JavaScriptCore.JSValueRef& exception) [instance] :369
 ::JSValueRef JSContextRef::EvaluateScript(::JSContextRef __this, ::JSStringRef script, ::JSObjectRef thisObject, ::JSStringRef sourceURL, int32_t startingLineNumber, ::JSValueRef* exception)
 {
     return ::JSEvaluateScript(*&__this, script, thisObject, sourceURL, startingLineNumber, exception);
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSValueRef EvaluateScript(string script, Fuse.Scripting.JavaScriptCore.JSObjectRef thisObject, string sourceURL, int startingLineNumber, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [instance] :389
+// public Fuse.Scripting.JavaScriptCore.JSValueRef EvaluateScript(string script, Fuse.Scripting.JavaScriptCore.JSObjectRef thisObject, string sourceURL, int startingLineNumber, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [instance] :379
 ::JSValueRef JSContextRef::EvaluateScript1(::JSContextRef __this, uString* script, ::JSObjectRef thisObject, uString* sourceURL, int32_t startingLineNumber, uDelegate* onException)
 {
     uStackFrame __("Fuse.Scripting.JavaScriptCore.JSContextRef", "EvaluateScript(string,Fuse.Scripting.JavaScriptCore.JSObjectRef,string,int,Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef>)");
@@ -1372,23 +1375,23 @@ void JSContextRef::Dispose(::JSContextRef __this)
     return NULL;
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSObjectRef get_GlobalObject() [instance] :373
+// public Fuse.Scripting.JavaScriptCore.JSObjectRef get_GlobalObject() [instance] :363
 ::JSObjectRef JSContextRef::GlobalObject(::JSContextRef __this)
 {
     return ::JSContextGetGlobalObject(*&__this);
 }
 
-// public static Fuse.Scripting.JavaScriptCore.JSContextRef Create() [static] :361
+// public static Fuse.Scripting.JavaScriptCore.JSContextRef Create() [static] :351
 ::JSContextRef JSContextRef::Create()
 {
     return (::JSContextRef)::JSGlobalContextCreate(NULL);
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/JavaScriptCore/JavaScriptCore.uno
-// -----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/JavaScriptCore/JavaScriptCore.uno
+// ----------------------------------------------------------------------------------------------------
 
-// internal extern struct JSObjectRef :176
+// internal extern struct JSObjectRef :172
 // {
 static void JSObjectRef_build(uType* type)
 {
@@ -1402,6 +1405,7 @@ uStructType* JSObjectRef_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.Alignment = alignof(::JSObjectRef);
     options.ValueSize = sizeof(::JSObjectRef);
     options.TypeSize = sizeof(uStructType);
@@ -1410,127 +1414,127 @@ uStructType* JSObjectRef_typeof()
     return type;
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSObjectRef CallAsConstructor(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSValueRef[] arguments, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :309
+// public Fuse.Scripting.JavaScriptCore.JSObjectRef CallAsConstructor(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSValueRef[] arguments, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :303
 void JSObjectRef__CallAsConstructor_fn(::JSObjectRef* __this, ::JSContextRef* ctx, uArray* arguments, uDelegate* onException, ::JSObjectRef* __retval)
 {
     *__retval = JSObjectRef::CallAsConstructor(*__this, *ctx, arguments, onException);
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSValueRef CallAsFunction(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSObjectRef thisObject, Fuse.Scripting.JavaScriptCore.JSValueRef[] arguments, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :290
+// public Fuse.Scripting.JavaScriptCore.JSValueRef CallAsFunction(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSObjectRef thisObject, Fuse.Scripting.JavaScriptCore.JSValueRef[] arguments, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :284
 void JSObjectRef__CallAsFunction_fn(::JSObjectRef* __this, ::JSContextRef* ctx, ::JSObjectRef* thisObject, uArray* arguments, uDelegate* onException, ::JSValueRef* __retval)
 {
     *__retval = JSObjectRef::CallAsFunction(*__this, *ctx, *thisObject, arguments, onException);
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSPropertyNameArray CopyPropertyNames(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) :279
+// public Fuse.Scripting.JavaScriptCore.JSPropertyNameArray CopyPropertyNames(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) :273
 void JSObjectRef__CopyPropertyNames_fn(::JSObjectRef* __this, ::JSContextRef* ctx, ::JSPropertyNameArrayRef* __retval)
 {
     *__retval = JSObjectRef::CopyPropertyNames(*__this, *ctx);
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSValueRef GetJSValueRef() :259
+// public Fuse.Scripting.JavaScriptCore.JSValueRef GetJSValueRef() :253
 void JSObjectRef__GetJSValueRef_fn(::JSObjectRef* __this, ::JSValueRef* __retval)
 {
     *__retval = JSObjectRef::GetJSValueRef(*__this);
 }
 
-// public object GetPrivate() :264
+// public object GetPrivate() :258
 void JSObjectRef__GetPrivate_fn(::JSObjectRef* __this, uObject** __retval)
 {
     *__retval = JSObjectRef::GetPrivate(*__this);
 }
 
-// private Fuse.Scripting.JavaScriptCore.JSValueRef GetProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSStringRef propertyName, Fuse.Scripting.JavaScriptCore.JSValueRef& exception) :183
+// private Fuse.Scripting.JavaScriptCore.JSValueRef GetProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSStringRef propertyName, Fuse.Scripting.JavaScriptCore.JSValueRef& exception) :177
 void JSObjectRef__GetProperty_fn(::JSObjectRef* __this, ::JSContextRef* ctx, ::JSStringRef* propertyName, ::JSValueRef* exception, ::JSValueRef* __retval)
 {
     *__retval = JSObjectRef::GetProperty(*__this, *ctx, *propertyName, exception);
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSValueRef GetProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, string propertyName, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :188
+// public Fuse.Scripting.JavaScriptCore.JSValueRef GetProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, string propertyName, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :182
 void JSObjectRef__GetProperty1_fn(::JSObjectRef* __this, ::JSContextRef* ctx, uString* propertyName, uDelegate* onException, ::JSValueRef* __retval)
 {
     *__retval = JSObjectRef::GetProperty1(*__this, *ctx, propertyName, onException);
 }
 
-// private Fuse.Scripting.JavaScriptCore.JSValueRef GetPropertyAtIndex(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, int index, Fuse.Scripting.JavaScriptCore.JSValueRef& exception) :218
+// private Fuse.Scripting.JavaScriptCore.JSValueRef GetPropertyAtIndex(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, int index, Fuse.Scripting.JavaScriptCore.JSValueRef& exception) :212
 void JSObjectRef__GetPropertyAtIndex_fn(::JSObjectRef* __this, ::JSContextRef* ctx, int32_t* index, ::JSValueRef* exception, ::JSValueRef* __retval)
 {
     *__retval = JSObjectRef::GetPropertyAtIndex(*__this, *ctx, *index, exception);
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSValueRef GetPropertyAtIndex(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, int index, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :223
+// public Fuse.Scripting.JavaScriptCore.JSValueRef GetPropertyAtIndex(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, int index, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :217
 void JSObjectRef__GetPropertyAtIndex1_fn(::JSObjectRef* __this, ::JSContextRef* ctx, int32_t* index, uDelegate* onException, ::JSValueRef* __retval)
 {
     *__retval = JSObjectRef::GetPropertyAtIndex1(*__this, *ctx, *index, onException);
 }
 
-// public bool HasProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSStringRef propertyName) :245
+// public bool HasProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSStringRef propertyName) :239
 void JSObjectRef__HasProperty_fn(::JSObjectRef* __this, ::JSContextRef* ctx, ::JSStringRef* propertyName, bool* __retval)
 {
     *__retval = JSObjectRef::HasProperty(*__this, *ctx, *propertyName);
 }
 
-// public bool HasProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, string propertyName) :250
+// public bool HasProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, string propertyName) :244
 void JSObjectRef__HasProperty1_fn(::JSObjectRef* __this, ::JSContextRef* ctx, uString* propertyName, bool* __retval)
 {
     *__retval = JSObjectRef::HasProperty1(*__this, *ctx, propertyName);
 }
 
-// public static Fuse.Scripting.JavaScriptCore.JSObjectRef Make(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, [Fuse.Scripting.JavaScriptCore.JSClassRef classRef], [object data]) :284
+// public static Fuse.Scripting.JavaScriptCore.JSObjectRef Make(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, [Fuse.Scripting.JavaScriptCore.JSClassRef classRef], [object data]) :278
 void JSObjectRef__Make_fn(::JSContextRef* ctx, ::JSClassRef* classRef, uObject* data, ::JSObjectRef* __retval)
 {
     *__retval = JSObjectRef::Make(*ctx, *classRef, data);
 }
 
-// public static operator ==(Fuse.Scripting.JavaScriptCore.JSObjectRef o1, Fuse.Scripting.JavaScriptCore.JSObjectRef o2) :180
+// public static operator ==(Fuse.Scripting.JavaScriptCore.JSObjectRef o1, Fuse.Scripting.JavaScriptCore.JSObjectRef o2) :174
 void JSObjectRef__op_Equality_fn(::JSObjectRef* o1, ::JSObjectRef* o2, bool* __retval)
 {
     *__retval = JSObjectRef::op_Equality(*o1, *o2);
 }
 
-// public static operator !=(Fuse.Scripting.JavaScriptCore.JSObjectRef o1, Fuse.Scripting.JavaScriptCore.JSObjectRef o2) :181
+// public static operator !=(Fuse.Scripting.JavaScriptCore.JSObjectRef o1, Fuse.Scripting.JavaScriptCore.JSObjectRef o2) :175
 void JSObjectRef__op_Inequality_fn(::JSObjectRef* o1, ::JSObjectRef* o2, bool* __retval)
 {
     *__retval = JSObjectRef::op_Inequality(*o1, *o2);
 }
 
-// public bool SetPrivate(object data) :269
+// public bool SetPrivate(object data) :263
 void JSObjectRef__SetPrivate_fn(::JSObjectRef* __this, uObject* data, bool* __retval)
 {
     *__retval = JSObjectRef::SetPrivate(*__this, data);
 }
 
-// private void SetProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSStringRef propertyName, Fuse.Scripting.JavaScriptCore.JSValueRef value, Fuse.Scripting.JavaScriptCore.JSValueRef& exception) :201
+// private void SetProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSStringRef propertyName, Fuse.Scripting.JavaScriptCore.JSValueRef value, Fuse.Scripting.JavaScriptCore.JSValueRef& exception) :195
 void JSObjectRef__SetProperty_fn(::JSObjectRef* __this, ::JSContextRef* ctx, ::JSStringRef* propertyName, ::JSValueRef* value, ::JSValueRef* exception)
 {
     JSObjectRef::SetProperty(*__this, *ctx, *propertyName, *value, exception);
 }
 
-// public void SetProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, string propertyName, Fuse.Scripting.JavaScriptCore.JSValueRef value, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :206
+// public void SetProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, string propertyName, Fuse.Scripting.JavaScriptCore.JSValueRef value, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :200
 void JSObjectRef__SetProperty1_fn(::JSObjectRef* __this, ::JSContextRef* ctx, uString* propertyName, ::JSValueRef* value, uDelegate* onException)
 {
     JSObjectRef::SetProperty1(*__this, *ctx, propertyName, *value, onException);
 }
 
-// private void SetPropertyAtIndex(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, int index, Fuse.Scripting.JavaScriptCore.JSValueRef value, Fuse.Scripting.JavaScriptCore.JSValueRef& exception) :232
+// private void SetPropertyAtIndex(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, int index, Fuse.Scripting.JavaScriptCore.JSValueRef value, Fuse.Scripting.JavaScriptCore.JSValueRef& exception) :226
 void JSObjectRef__SetPropertyAtIndex_fn(::JSObjectRef* __this, ::JSContextRef* ctx, int32_t* index, ::JSValueRef* value, ::JSValueRef* exception)
 {
     JSObjectRef::SetPropertyAtIndex(*__this, *ctx, *index, *value, exception);
 }
 
-// public void SetPropertyAtIndex(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, int index, Fuse.Scripting.JavaScriptCore.JSValueRef value, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :237
+// public void SetPropertyAtIndex(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, int index, Fuse.Scripting.JavaScriptCore.JSValueRef value, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :231
 void JSObjectRef__SetPropertyAtIndex1_fn(::JSObjectRef* __this, ::JSContextRef* ctx, int32_t* index, ::JSValueRef* value, uDelegate* onException)
 {
     JSObjectRef::SetPropertyAtIndex1(*__this, *ctx, *index, *value, onException);
 }
 
-// public void SetPrototype(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSValueRef value) :274
+// public void SetPrototype(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSValueRef value) :268
 void JSObjectRef__SetPrototype_fn(::JSObjectRef* __this, ::JSContextRef* ctx, ::JSValueRef* value)
 {
     JSObjectRef::SetPrototype(*__this, *ctx, *value);
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSObjectRef CallAsConstructor(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSValueRef[] arguments, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [instance] :309
+// public Fuse.Scripting.JavaScriptCore.JSObjectRef CallAsConstructor(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSValueRef[] arguments, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [instance] :303
 ::JSObjectRef JSObjectRef::CallAsConstructor(::JSObjectRef __this, ::JSContextRef ctx, uArray* arguments, uDelegate* onException)
 {
     ::JSValueRef exception = NULL;
@@ -1545,7 +1549,7 @@ void JSObjectRef__SetPrototype_fn(::JSObjectRef* __this, ::JSContextRef* ctx, ::
     return result;
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSValueRef CallAsFunction(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSObjectRef thisObject, Fuse.Scripting.JavaScriptCore.JSValueRef[] arguments, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [instance] :290
+// public Fuse.Scripting.JavaScriptCore.JSValueRef CallAsFunction(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSObjectRef thisObject, Fuse.Scripting.JavaScriptCore.JSValueRef[] arguments, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [instance] :284
 ::JSValueRef JSObjectRef::CallAsFunction(::JSObjectRef __this, ::JSContextRef ctx, ::JSObjectRef thisObject, uArray* arguments, uDelegate* onException)
 {
     ::JSValueRef exception = NULL;
@@ -1561,31 +1565,31 @@ void JSObjectRef__SetPrototype_fn(::JSObjectRef* __this, ::JSContextRef* ctx, ::
     return result;
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSPropertyNameArray CopyPropertyNames(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) [instance] :279
+// public Fuse.Scripting.JavaScriptCore.JSPropertyNameArray CopyPropertyNames(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) [instance] :273
 ::JSPropertyNameArrayRef JSObjectRef::CopyPropertyNames(::JSObjectRef __this, ::JSContextRef ctx)
 {
     return ::JSObjectCopyPropertyNames(ctx, *&__this);
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSValueRef GetJSValueRef() [instance] :259
+// public Fuse.Scripting.JavaScriptCore.JSValueRef GetJSValueRef() [instance] :253
 ::JSValueRef JSObjectRef::GetJSValueRef(::JSObjectRef __this)
 {
     return (::JSValueRef)*&__this;
 }
 
-// public object GetPrivate() [instance] :264
+// public object GetPrivate() [instance] :258
 uObject* JSObjectRef::GetPrivate(::JSObjectRef __this)
 {
     return (uObject*)::JSObjectGetPrivate(*&__this);
 }
 
-// private Fuse.Scripting.JavaScriptCore.JSValueRef GetProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSStringRef propertyName, Fuse.Scripting.JavaScriptCore.JSValueRef& exception) [instance] :183
+// private Fuse.Scripting.JavaScriptCore.JSValueRef GetProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSStringRef propertyName, Fuse.Scripting.JavaScriptCore.JSValueRef& exception) [instance] :177
 ::JSValueRef JSObjectRef::GetProperty(::JSObjectRef __this, ::JSContextRef ctx, ::JSStringRef propertyName, ::JSValueRef* exception)
 {
     return ::JSObjectGetProperty(ctx, *&__this, propertyName, exception);
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSValueRef GetProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, string propertyName, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [instance] :188
+// public Fuse.Scripting.JavaScriptCore.JSValueRef GetProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, string propertyName, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [instance] :182
 ::JSValueRef JSObjectRef::GetProperty1(::JSObjectRef __this, ::JSContextRef ctx, uString* propertyName, uDelegate* onException)
 {
     uStackFrame __("Fuse.Scripting.JavaScriptCore.JSObjectRef", "GetProperty(Fuse.Scripting.JavaScriptCore.JSContextRef,string,Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef>)");
@@ -1627,13 +1631,13 @@ uObject* JSObjectRef::GetPrivate(::JSObjectRef __this)
     }
 }
 
-// private Fuse.Scripting.JavaScriptCore.JSValueRef GetPropertyAtIndex(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, int index, Fuse.Scripting.JavaScriptCore.JSValueRef& exception) [instance] :218
+// private Fuse.Scripting.JavaScriptCore.JSValueRef GetPropertyAtIndex(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, int index, Fuse.Scripting.JavaScriptCore.JSValueRef& exception) [instance] :212
 ::JSValueRef JSObjectRef::GetPropertyAtIndex(::JSObjectRef __this, ::JSContextRef ctx, int32_t index, ::JSValueRef* exception)
 {
     return ::JSObjectGetPropertyAtIndex(ctx, *&__this, (unsigned)index, exception);
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSValueRef GetPropertyAtIndex(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, int index, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [instance] :223
+// public Fuse.Scripting.JavaScriptCore.JSValueRef GetPropertyAtIndex(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, int index, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [instance] :217
 ::JSValueRef JSObjectRef::GetPropertyAtIndex1(::JSObjectRef __this, ::JSContextRef ctx, int32_t index, uDelegate* onException)
 {
     uStackFrame __("Fuse.Scripting.JavaScriptCore.JSObjectRef", "GetPropertyAtIndex(Fuse.Scripting.JavaScriptCore.JSContextRef,int,Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef>)");
@@ -1646,13 +1650,13 @@ uObject* JSObjectRef::GetPrivate(::JSObjectRef __this)
     return result;
 }
 
-// public bool HasProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSStringRef propertyName) [instance] :245
+// public bool HasProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSStringRef propertyName) [instance] :239
 bool JSObjectRef::HasProperty(::JSObjectRef __this, ::JSContextRef ctx, ::JSStringRef propertyName)
 {
     return ::JSObjectHasProperty(ctx, *&__this, propertyName);
 }
 
-// public bool HasProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, string propertyName) [instance] :250
+// public bool HasProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, string propertyName) [instance] :244
 bool JSObjectRef::HasProperty1(::JSObjectRef __this, ::JSContextRef ctx, uString* propertyName)
 {
     uStackFrame __("Fuse.Scripting.JavaScriptCore.JSObjectRef", "HasProperty(Fuse.Scripting.JavaScriptCore.JSContextRef,string)");
@@ -1688,19 +1692,19 @@ bool JSObjectRef::HasProperty1(::JSObjectRef __this, ::JSContextRef ctx, uString
     }
 }
 
-// public bool SetPrivate(object data) [instance] :269
+// public bool SetPrivate(object data) [instance] :263
 bool JSObjectRef::SetPrivate(::JSObjectRef __this, uObject* data)
 {
     return ::JSObjectSetPrivate(*&__this, data);
 }
 
-// private void SetProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSStringRef propertyName, Fuse.Scripting.JavaScriptCore.JSValueRef value, Fuse.Scripting.JavaScriptCore.JSValueRef& exception) [instance] :201
+// private void SetProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSStringRef propertyName, Fuse.Scripting.JavaScriptCore.JSValueRef value, Fuse.Scripting.JavaScriptCore.JSValueRef& exception) [instance] :195
 void JSObjectRef::SetProperty(::JSObjectRef __this, ::JSContextRef ctx, ::JSStringRef propertyName, ::JSValueRef value, ::JSValueRef* exception)
 {
     ::JSObjectSetProperty(ctx, *&__this, propertyName, value, ::kJSPropertyAttributeNone, exception);
 }
 
-// public void SetProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, string propertyName, Fuse.Scripting.JavaScriptCore.JSValueRef value, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [instance] :206
+// public void SetProperty(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, string propertyName, Fuse.Scripting.JavaScriptCore.JSValueRef value, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [instance] :200
 void JSObjectRef::SetProperty1(::JSObjectRef __this, ::JSContextRef ctx, uString* propertyName, ::JSValueRef value, uDelegate* onException)
 {
     uStackFrame __("Fuse.Scripting.JavaScriptCore.JSObjectRef", "SetProperty(Fuse.Scripting.JavaScriptCore.JSContextRef,string,Fuse.Scripting.JavaScriptCore.JSValueRef,Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef>)");
@@ -1738,13 +1742,13 @@ void JSObjectRef::SetProperty1(::JSObjectRef __this, ::JSContextRef ctx, uString
     }
 }
 
-// private void SetPropertyAtIndex(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, int index, Fuse.Scripting.JavaScriptCore.JSValueRef value, Fuse.Scripting.JavaScriptCore.JSValueRef& exception) [instance] :232
+// private void SetPropertyAtIndex(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, int index, Fuse.Scripting.JavaScriptCore.JSValueRef value, Fuse.Scripting.JavaScriptCore.JSValueRef& exception) [instance] :226
 void JSObjectRef::SetPropertyAtIndex(::JSObjectRef __this, ::JSContextRef ctx, int32_t index, ::JSValueRef value, ::JSValueRef* exception)
 {
     ::JSObjectSetPropertyAtIndex(ctx, *&__this, (unsigned)index, value, exception);
 }
 
-// public void SetPropertyAtIndex(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, int index, Fuse.Scripting.JavaScriptCore.JSValueRef value, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [instance] :237
+// public void SetPropertyAtIndex(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, int index, Fuse.Scripting.JavaScriptCore.JSValueRef value, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [instance] :231
 void JSObjectRef::SetPropertyAtIndex1(::JSObjectRef __this, ::JSContextRef ctx, int32_t index, ::JSValueRef value, uDelegate* onException)
 {
     uStackFrame __("Fuse.Scripting.JavaScriptCore.JSObjectRef", "SetPropertyAtIndex(Fuse.Scripting.JavaScriptCore.JSContextRef,int,Fuse.Scripting.JavaScriptCore.JSValueRef,Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef>)");
@@ -1755,38 +1759,38 @@ void JSObjectRef::SetPropertyAtIndex1(::JSObjectRef __this, ::JSContextRef ctx, 
         uPtr(onException)->InvokeVoid(uCRef(exception));
 }
 
-// public void SetPrototype(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSValueRef value) [instance] :274
+// public void SetPrototype(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSValueRef value) [instance] :268
 void JSObjectRef::SetPrototype(::JSObjectRef __this, ::JSContextRef ctx, ::JSValueRef value)
 {
     ::JSObjectSetPrototype(ctx, *&__this, value);
 }
 
-// public static Fuse.Scripting.JavaScriptCore.JSObjectRef Make(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, [Fuse.Scripting.JavaScriptCore.JSClassRef classRef], [object data]) [static] :284
+// public static Fuse.Scripting.JavaScriptCore.JSObjectRef Make(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, [Fuse.Scripting.JavaScriptCore.JSClassRef classRef], [object data]) [static] :278
 ::JSObjectRef JSObjectRef::Make(::JSContextRef ctx, ::JSClassRef classRef, uObject* data)
 {
     ::uRetain(data);
     return ::JSObjectMake(ctx, classRef, data);
 }
 
-// public static operator ==(Fuse.Scripting.JavaScriptCore.JSObjectRef o1, Fuse.Scripting.JavaScriptCore.JSObjectRef o2) [static] :180
+// public static operator ==(Fuse.Scripting.JavaScriptCore.JSObjectRef o1, Fuse.Scripting.JavaScriptCore.JSObjectRef o2) [static] :174
 bool JSObjectRef::op_Equality(::JSObjectRef o1, ::JSObjectRef o2)
 {
     return o1 == o2;
 }
 
-// public static operator !=(Fuse.Scripting.JavaScriptCore.JSObjectRef o1, Fuse.Scripting.JavaScriptCore.JSObjectRef o2) [static] :181
+// public static operator !=(Fuse.Scripting.JavaScriptCore.JSObjectRef o1, Fuse.Scripting.JavaScriptCore.JSObjectRef o2) [static] :175
 bool JSObjectRef::op_Inequality(::JSObjectRef o1, ::JSObjectRef o2)
 {
     return o1 != o2;
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/JavaScriptCore/JavaScriptCore.uno
-// -----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/JavaScriptCore/JavaScriptCore.uno
+// ----------------------------------------------------------------------------------------------------
 
-// internal extern struct JSPropertyNameArray :330
+// internal extern struct JSPropertyNameArray :324
 // {
-// public void Dispose() [adapter] :347
+// public void Dispose() [adapter] :339
 static void JSPropertyNameArray__Dispose_ex(uObject* __this)
 {
     JSPropertyNameArray__Dispose_fn((::JSPropertyNameArrayRef*)((uint8_t*)__this + sizeof(uObject)));
@@ -1804,6 +1808,7 @@ JSPropertyNameArray_type* JSPropertyNameArray_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.InterfaceCount = 1;
     options.Alignment = alignof(::JSPropertyNameArrayRef);
     options.ValueSize = sizeof(::JSPropertyNameArrayRef);
@@ -1814,49 +1819,49 @@ JSPropertyNameArray_type* JSPropertyNameArray_typeof()
     return type;
 }
 
-// public void Dispose() :347
+// public void Dispose() :339
 void JSPropertyNameArray__Dispose_fn(::JSPropertyNameArrayRef* __this)
 {
     JSPropertyNameArray::Dispose(*__this);
 }
 
-// public int GetCount() :334
+// public int GetCount() :326
 void JSPropertyNameArray__GetCount_fn(::JSPropertyNameArrayRef* __this, int32_t* __retval)
 {
     *__retval = JSPropertyNameArray::GetCount(*__this);
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSStringRef get_Item(int index) :341
+// public Fuse.Scripting.JavaScriptCore.JSStringRef get_Item(int index) :333
 void JSPropertyNameArray__get_Item_fn(::JSPropertyNameArrayRef* __this, int32_t* index, ::JSStringRef* __retval)
 {
     *__retval = JSPropertyNameArray::Item(*__this, *index);
 }
 
-// public void Dispose() [instance] :347
+// public void Dispose() [instance] :339
 void JSPropertyNameArray::Dispose(::JSPropertyNameArrayRef __this)
 {
     ::JSPropertyNameArrayRelease(*&__this);
 }
 
-// public int GetCount() [instance] :334
+// public int GetCount() [instance] :326
 int32_t JSPropertyNameArray::GetCount(::JSPropertyNameArrayRef __this)
 {
     return (int32_t)::JSPropertyNameArrayGetCount(*&__this);
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSStringRef get_Item(int index) [instance] :341
+// public Fuse.Scripting.JavaScriptCore.JSStringRef get_Item(int index) [instance] :333
 ::JSStringRef JSPropertyNameArray::Item(::JSPropertyNameArrayRef __this, int32_t index)
 {
     return ::JSPropertyNameArrayGetNameAtIndex(*&__this, (size_t)index);
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/JavaScriptCore/JavaScriptCore.uno
-// -----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/JavaScriptCore/JavaScriptCore.uno
+// ----------------------------------------------------------------------------------------------------
 
-// internal extern struct JSStringRef :150
+// internal extern struct JSStringRef :148
 // {
-// public void Dispose() [adapter] :159
+// public void Dispose() [adapter] :155
 static void JSStringRef__Dispose_ex(uObject* __this)
 {
     JSStringRef__Dispose_fn((::JSStringRef*)((uint8_t*)__this + sizeof(uObject)));
@@ -1874,6 +1879,7 @@ JSStringRef_type* JSStringRef_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.InterfaceCount = 1;
     options.Alignment = alignof(::JSStringRef);
     options.ValueSize = sizeof(::JSStringRef);
@@ -1885,19 +1891,19 @@ JSStringRef_type* JSStringRef_typeof()
     return type;
 }
 
-// public static Fuse.Scripting.JavaScriptCore.JSStringRef Create(string str) :154
+// public static Fuse.Scripting.JavaScriptCore.JSStringRef Create(string str) :150
 void JSStringRef__Create_fn(uString* str, ::JSStringRef* __retval)
 {
     *__retval = JSStringRef::Create(str);
 }
 
-// public void Dispose() :159
+// public void Dispose() :155
 void JSStringRef__Dispose_fn(::JSStringRef* __this)
 {
     JSStringRef::Dispose(*__this);
 }
 
-// public override sealed string ToString() :164
+// public override sealed string ToString() :160
 void JSStringRef__ToString_fn(::JSStringRef* __this, uType* __type, uString** __retval)
 {
     size_t len = ::JSStringGetLength(*__this);
@@ -1906,23 +1912,23 @@ void JSStringRef__ToString_fn(::JSStringRef* __this, uType* __type, uString** __
     return *__retval = result, void();
 }
 
-// public void Dispose() [instance] :159
+// public void Dispose() [instance] :155
 void JSStringRef::Dispose(::JSStringRef __this)
 {
     ::JSStringRelease(*&__this);
 }
 
-// public static Fuse.Scripting.JavaScriptCore.JSStringRef Create(string str) [static] :154
+// public static Fuse.Scripting.JavaScriptCore.JSStringRef Create(string str) [static] :150
 ::JSStringRef JSStringRef::Create(uString* str)
 {
     return ::JSStringCreateWithCharacters((const JSChar*)str->Ptr(), str->Length());
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/JavaScriptCore/JavaScriptCore.uno
-// -----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/JavaScriptCore/JavaScriptCore.uno
+// ----------------------------------------------------------------------------------------------------
 
-// internal extern enum JSType :136
+// internal extern enum JSType :134
 uEnumType* JSType_typeof()
 {
     static uSStrong<uEnumType*> type;
@@ -1940,10 +1946,10 @@ uEnumType* JSType_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/JavaScriptCore/JavaScriptCore.uno
-// -----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/JavaScriptCore/JavaScriptCore.uno
+// ----------------------------------------------------------------------------------------------------
 
-// internal static extern class JSTypedArray :500
+// internal static extern class JSTypedArray :488
 // {
 static void JSTypedArray_build(uType* type)
 {
@@ -1961,19 +1967,19 @@ uClassType* JSTypedArray_typeof()
     return type;
 }
 
-// public static byte[] TryCopyArrayBufferBytes(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSObjectRef obj, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :529
+// public static byte[] TryCopyArrayBufferBytes(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSObjectRef obj, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :517
 void JSTypedArray__TryCopyArrayBufferBytes_fn(::JSContextRef* ctx, ::JSObjectRef* obj, uDelegate* onException, uArray** __retval)
 {
     *__retval = JSTypedArray::TryCopyArrayBufferBytes(*ctx, *obj, onException);
 }
 
-// public static Fuse.Scripting.JavaScriptCore.JSObjectRef TryMakeArrayBufferWithBytes(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, byte[] bytes, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :502
+// public static Fuse.Scripting.JavaScriptCore.JSObjectRef TryMakeArrayBufferWithBytes(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, byte[] bytes, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :490
 void JSTypedArray__TryMakeArrayBufferWithBytes_fn(::JSContextRef* ctx, uArray* bytes, uDelegate* onException, ::JSObjectRef* __retval)
 {
     *__retval = JSTypedArray::TryMakeArrayBufferWithBytes(*ctx, bytes, onException);
 }
 
-// public static byte[] TryCopyArrayBufferBytes(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSObjectRef obj, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [static] :529
+// public static byte[] TryCopyArrayBufferBytes(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSObjectRef obj, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [static] :517
 uArray* JSTypedArray::TryCopyArrayBufferBytes(::JSContextRef ctx, ::JSObjectRef obj, uDelegate* onException)
 {
     #ifdef JAVASCRIPTCORE_ARRAYBUFFER_SUPPORT
@@ -1995,7 +2001,7 @@ uArray* JSTypedArray::TryCopyArrayBufferBytes(::JSContextRef ctx, ::JSObjectRef 
     return NULL;
 }
 
-// public static Fuse.Scripting.JavaScriptCore.JSObjectRef TryMakeArrayBufferWithBytes(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, byte[] bytes, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [static] :502
+// public static Fuse.Scripting.JavaScriptCore.JSObjectRef TryMakeArrayBufferWithBytes(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, byte[] bytes, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [static] :490
 ::JSObjectRef JSTypedArray::TryMakeArrayBufferWithBytes(::JSContextRef ctx, uArray* bytes, uDelegate* onException)
 {
     // Check for sufficient base SDK version
@@ -2024,15 +2030,15 @@ uArray* JSTypedArray::TryCopyArrayBufferBytes(::JSContextRef ctx, ::JSObjectRef 
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/JavaScriptCore/JavaScriptCore.uno
-// -----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/JavaScriptCore/JavaScriptCore.uno
+// ----------------------------------------------------------------------------------------------------
 
 // internal extern struct JSValueRef :9
 // {
 static void JSValueRef_build(uType* type)
 {
     ::STRINGS[6] = uString::Const("(&this).IsObject(ctx)");
-    ::STRINGS[7] = uString::Const("/usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/JavaScriptCore/JavaScriptCore.uno");
+    ::STRINGS[7] = uString::Const("/usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/JavaScriptCore/JavaScriptCore.uno");
     ::STRINGS[8] = uString::Const("str");
     ::TYPES[4] = ::g::Uno::Action1_typeof()->MakeType(::g::Fuse::Scripting::Context_typeof(), NULL);
     ::TYPES[5] = ::g::Fuse::Scripting::JavaScriptCore::Context_typeof();
@@ -2049,6 +2055,7 @@ uStructType* JSValueRef_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.DependencyCount = 1;
     options.Alignment = alignof(::JSValueRef);
     options.ValueSize = sizeof(::JSValueRef);
@@ -2058,128 +2065,128 @@ uStructType* JSValueRef_typeof()
     return type;
 }
 
-// public void DeferedUnprotect() :28
+// public void DeferedUnprotect() :26
 void JSValueRef__DeferedUnprotect_fn(::JSValueRef* __this)
 {
     JSValueRef::DeferedUnprotect(*__this);
 }
 
-// private void DeferedUnprotectInner(Fuse.Scripting.Context ctx) :33
+// private void DeferedUnprotectInner(Fuse.Scripting.Context ctx) :31
 void JSValueRef__DeferedUnprotectInner_fn(::JSValueRef* __this, ::g::Fuse::Scripting::Context* ctx)
 {
     JSValueRef::DeferedUnprotectInner(*__this, ctx);
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSObjectRef GetJSObjectRef(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) :39
+// public Fuse.Scripting.JavaScriptCore.JSObjectRef GetJSObjectRef(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) :37
 void JSValueRef__GetJSObjectRef_fn(::JSValueRef* __this, ::JSContextRef* ctx, ::JSObjectRef* __retval)
 {
     *__retval = JSValueRef::GetJSObjectRef(*__this, *ctx);
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSType GetType(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) :47
+// public Fuse.Scripting.JavaScriptCore.JSType GetType(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) :45
 void JSValueRef__GetType1_fn(::JSValueRef* __this, ::JSContextRef* ctx, int32_t* __retval)
 {
     *__retval = JSValueRef::GetType1(*__this, *ctx);
 }
 
-// public bool IsInstanceOfConstructor(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSObjectRef constructor, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :83
+// public bool IsInstanceOfConstructor(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSObjectRef constructor, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :81
 void JSValueRef__IsInstanceOfConstructor_fn(::JSValueRef* __this, ::JSContextRef* ctx, ::JSObjectRef* constructor, uDelegate* onException, bool* __retval)
 {
     *__retval = JSValueRef::IsInstanceOfConstructor(*__this, *ctx, *constructor, onException);
 }
 
-// public bool IsObject(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) :78
+// public bool IsObject(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) :76
 void JSValueRef__IsObject_fn(::JSValueRef* __this, ::JSContextRef* ctx, bool* __retval)
 {
     *__retval = JSValueRef::IsObject(*__this, *ctx);
 }
 
-// public static Fuse.Scripting.JavaScriptCore.JSValueRef MakeBoolean(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, bool boolean) :116
+// public static Fuse.Scripting.JavaScriptCore.JSValueRef MakeBoolean(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, bool boolean) :114
 void JSValueRef__MakeBoolean_fn(::JSContextRef* ctx, bool* boolean, ::JSValueRef* __retval)
 {
     *__retval = JSValueRef::MakeBoolean(*ctx, *boolean);
 }
 
-// public static Fuse.Scripting.JavaScriptCore.JSValueRef MakeNull(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) :106
+// public static Fuse.Scripting.JavaScriptCore.JSValueRef MakeNull(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) :104
 void JSValueRef__MakeNull_fn(::JSContextRef* ctx, ::JSValueRef* __retval)
 {
     *__retval = JSValueRef::MakeNull(*ctx);
 }
 
-// public static Fuse.Scripting.JavaScriptCore.JSValueRef MakeNumber(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, double number) :111
+// public static Fuse.Scripting.JavaScriptCore.JSValueRef MakeNumber(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, double number) :109
 void JSValueRef__MakeNumber_fn(::JSContextRef* ctx, double* number, ::JSValueRef* __retval)
 {
     *__retval = JSValueRef::MakeNumber(*ctx, *number);
 }
 
-// private static Fuse.Scripting.JavaScriptCore.JSValueRef MakeString(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSStringRef str) :92
+// private static Fuse.Scripting.JavaScriptCore.JSValueRef MakeString(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSStringRef str) :90
 void JSValueRef__MakeString_fn(::JSContextRef* ctx, ::JSStringRef* str, ::JSValueRef* __retval)
 {
     *__retval = JSValueRef::MakeString(*ctx, *str);
 }
 
-// public static Fuse.Scripting.JavaScriptCore.JSValueRef MakeString(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, string str) :97
+// public static Fuse.Scripting.JavaScriptCore.JSValueRef MakeString(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, string str) :95
 void JSValueRef__MakeString1_fn(::JSContextRef* ctx, uString* str, ::JSValueRef* __retval)
 {
     *__retval = JSValueRef::MakeString1(*ctx, str);
 }
 
-// public static operator ==(Fuse.Scripting.JavaScriptCore.JSValueRef v1, Fuse.Scripting.JavaScriptCore.JSValueRef v2) :13
+// public static operator ==(Fuse.Scripting.JavaScriptCore.JSValueRef v1, Fuse.Scripting.JavaScriptCore.JSValueRef v2) :11
 void JSValueRef__op_Equality_fn(::JSValueRef* v1, ::JSValueRef* v2, bool* __retval)
 {
     *__retval = JSValueRef::op_Equality(*v1, *v2);
 }
 
-// public static operator !=(Fuse.Scripting.JavaScriptCore.JSValueRef v1, Fuse.Scripting.JavaScriptCore.JSValueRef v2) :14
+// public static operator !=(Fuse.Scripting.JavaScriptCore.JSValueRef v1, Fuse.Scripting.JavaScriptCore.JSValueRef v2) :12
 void JSValueRef__op_Inequality_fn(::JSValueRef* v1, ::JSValueRef* v2, bool* __retval)
 {
     *__retval = JSValueRef::op_Inequality(*v1, *v2);
 }
 
-// public void Protect(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) :17
+// public void Protect(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) :15
 void JSValueRef__Protect_fn(::JSValueRef* __this, ::JSContextRef* ctx)
 {
     JSValueRef::Protect(*__this, *ctx);
 }
 
-// public bool ToBoolean(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) :121
+// public bool ToBoolean(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) :119
 void JSValueRef__ToBoolean_fn(::JSValueRef* __this, ::JSContextRef* ctx, bool* __retval)
 {
     *__retval = JSValueRef::ToBoolean(*__this, *ctx);
 }
 
-// public double ToNumber(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :126
+// public double ToNumber(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :124
 void JSValueRef__ToNumber_fn(::JSValueRef* __this, ::JSContextRef* ctx, uDelegate* onException, double* __retval)
 {
     *__retval = JSValueRef::ToNumber(*__this, *ctx, onException);
 }
 
-// public string ToString(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :67
+// public string ToString(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) :65
 void JSValueRef__ToString1_fn(::JSValueRef* __this, ::JSContextRef* ctx, uDelegate* onException, uString** __retval)
 {
     *__retval = JSValueRef::ToString1(*__this, *ctx, onException);
 }
 
-// private Fuse.Scripting.JavaScriptCore.JSStringRef ToStringCopy(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSValueRef& exception) :62
+// private Fuse.Scripting.JavaScriptCore.JSStringRef ToStringCopy(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSValueRef& exception) :60
 void JSValueRef__ToStringCopy_fn(::JSValueRef* __this, ::JSContextRef* ctx, ::JSValueRef* exception, ::JSStringRef* __retval)
 {
     *__retval = JSValueRef::ToStringCopy(*__this, *ctx, exception);
 }
 
-// public void Unprotect(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) :23
+// public void Unprotect(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) :21
 void JSValueRef__Unprotect_fn(::JSValueRef* __this, ::JSContextRef* ctx)
 {
     JSValueRef::Unprotect(*__this, *ctx);
 }
 
-// public void DeferedUnprotect() [instance] :28
+// public void DeferedUnprotect() [instance] :26
 void JSValueRef::DeferedUnprotect(::JSValueRef __this)
 {
     uStackFrame __("Fuse.Scripting.JavaScriptCore.JSValueRef", "DeferedUnprotect()");
     uPtr(::g::Fuse::Reactive::JavaScript::Worker_)->Invoke1(uDelegate::New(::TYPES[4/*Uno.Action<Fuse.Scripting.Context>*/], (void*)JSValueRef__DeferedUnprotectInner_fn, uBox(JSValueRef_typeof(), __this)));
 }
 
-// private void DeferedUnprotectInner(Fuse.Scripting.Context ctx) [instance] :33
+// private void DeferedUnprotectInner(Fuse.Scripting.Context ctx) [instance] :31
 void JSValueRef::DeferedUnprotectInner(::JSValueRef __this, ::g::Fuse::Scripting::Context* ctx)
 {
     uStackFrame __("Fuse.Scripting.JavaScriptCore.JSValueRef", "DeferedUnprotectInner(Fuse.Scripting.Context)");
@@ -2187,15 +2194,15 @@ void JSValueRef::DeferedUnprotectInner(::JSValueRef __this, ::g::Fuse::Scripting
     JSValueRef::Unprotect(__this, ctxRef);
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSObjectRef GetJSObjectRef(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) [instance] :39
+// public Fuse.Scripting.JavaScriptCore.JSObjectRef GetJSObjectRef(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) [instance] :37
 ::JSObjectRef JSValueRef::GetJSObjectRef(::JSValueRef __this, ::JSContextRef ctx)
 {
     uStackFrame __("Fuse.Scripting.JavaScriptCore.JSValueRef", "GetJSObjectRef(Fuse.Scripting.JavaScriptCore.JSContextRef)");
-    ::g::Uno::Diagnostics::Debug::Assert(JSValueRef::IsObject(__this, ctx), ::STRINGS[6/*"(&this).IsO...*/], ::STRINGS[7/*"/usr/local/...*/], 41, uArray::Init<uObject*>(::TYPES[6/*object[]*/], 1, uBox(::g::Fuse::Scripting::JavaScriptCore::JSContextRef_typeof(), ctx)));
+    ::g::Uno::Diagnostics::Debug::Assert(JSValueRef::IsObject(__this, ctx), ::STRINGS[6/*"(&this).IsO...*/], ::STRINGS[7/*"/usr/local/...*/], 39, uArray::Init<uObject*>(::TYPES[6/*object[]*/], 1, uBox(::g::Fuse::Scripting::JavaScriptCore::JSContextRef_typeof(), ctx)));
     return (::JSObjectRef)*&__this;
 }
 
-// public Fuse.Scripting.JavaScriptCore.JSType GetType(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) [instance] :47
+// public Fuse.Scripting.JavaScriptCore.JSType GetType(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) [instance] :45
 int32_t JSValueRef::GetType1(::JSValueRef __this, ::JSContextRef ctx)
 {
     ::JSType type = ::JSValueGetType(ctx, *&__this);
@@ -2211,7 +2218,7 @@ int32_t JSValueRef::GetType1(::JSValueRef __this, ::JSContextRef ctx)
     }
 }
 
-// public bool IsInstanceOfConstructor(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSObjectRef constructor, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [instance] :83
+// public bool IsInstanceOfConstructor(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSObjectRef constructor, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [instance] :81
 bool JSValueRef::IsInstanceOfConstructor(::JSValueRef __this, ::JSContextRef ctx, ::JSObjectRef constructor, uDelegate* onException)
 {
     ::JSValueRef exception = NULL;
@@ -2221,25 +2228,25 @@ bool JSValueRef::IsInstanceOfConstructor(::JSValueRef __this, ::JSContextRef ctx
     return result;
 }
 
-// public bool IsObject(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) [instance] :78
+// public bool IsObject(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) [instance] :76
 bool JSValueRef::IsObject(::JSValueRef __this, ::JSContextRef ctx)
 {
     return ::JSValueIsObject(ctx, *&__this);
 }
 
-// public void Protect(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) [instance] :17
+// public void Protect(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) [instance] :15
 void JSValueRef::Protect(::JSValueRef __this, ::JSContextRef ctx)
 {
     ::JSValueProtect(ctx, *&__this);
 }
 
-// public bool ToBoolean(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) [instance] :121
+// public bool ToBoolean(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) [instance] :119
 bool JSValueRef::ToBoolean(::JSValueRef __this, ::JSContextRef ctx)
 {
     return ::JSValueToBoolean(ctx, *&__this);
 }
 
-// public double ToNumber(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [instance] :126
+// public double ToNumber(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [instance] :124
 double JSValueRef::ToNumber(::JSValueRef __this, ::JSContextRef ctx, uDelegate* onException)
 {
     ::JSValueRef exception = NULL;
@@ -2249,7 +2256,7 @@ double JSValueRef::ToNumber(::JSValueRef __this, ::JSContextRef ctx, uDelegate* 
     return result;
 }
 
-// public string ToString(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [instance] :67
+// public string ToString(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef> onException) [instance] :65
 uString* JSValueRef::ToString1(::JSValueRef __this, ::JSContextRef ctx, uDelegate* onException)
 {
     uStackFrame __("Fuse.Scripting.JavaScriptCore.JSValueRef", "ToString(Fuse.Scripting.JavaScriptCore.JSContextRef,Uno.Action<Fuse.Scripting.JavaScriptCore.JSValueRef>)");
@@ -2285,43 +2292,43 @@ uString* JSValueRef::ToString1(::JSValueRef __this, ::JSContextRef ctx, uDelegat
     }
 }
 
-// private Fuse.Scripting.JavaScriptCore.JSStringRef ToStringCopy(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSValueRef& exception) [instance] :62
+// private Fuse.Scripting.JavaScriptCore.JSStringRef ToStringCopy(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSValueRef& exception) [instance] :60
 ::JSStringRef JSValueRef::ToStringCopy(::JSValueRef __this, ::JSContextRef ctx, ::JSValueRef* exception)
 {
     return ::JSValueToStringCopy(ctx, *&__this, exception);
 }
 
-// public void Unprotect(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) [instance] :23
+// public void Unprotect(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) [instance] :21
 void JSValueRef::Unprotect(::JSValueRef __this, ::JSContextRef ctx)
 {
     ::JSValueUnprotect(ctx, *&__this);
 }
 
-// public static Fuse.Scripting.JavaScriptCore.JSValueRef MakeBoolean(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, bool boolean) [static] :116
+// public static Fuse.Scripting.JavaScriptCore.JSValueRef MakeBoolean(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, bool boolean) [static] :114
 ::JSValueRef JSValueRef::MakeBoolean(::JSContextRef ctx, bool boolean)
 {
     return ::JSValueMakeBoolean(ctx, boolean);
 }
 
-// public static Fuse.Scripting.JavaScriptCore.JSValueRef MakeNull(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) [static] :106
+// public static Fuse.Scripting.JavaScriptCore.JSValueRef MakeNull(Fuse.Scripting.JavaScriptCore.JSContextRef ctx) [static] :104
 ::JSValueRef JSValueRef::MakeNull(::JSContextRef ctx)
 {
     return ::JSValueMakeNull(ctx);
 }
 
-// public static Fuse.Scripting.JavaScriptCore.JSValueRef MakeNumber(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, double number) [static] :111
+// public static Fuse.Scripting.JavaScriptCore.JSValueRef MakeNumber(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, double number) [static] :109
 ::JSValueRef JSValueRef::MakeNumber(::JSContextRef ctx, double number)
 {
     return ::JSValueMakeNumber(ctx, number);
 }
 
-// private static Fuse.Scripting.JavaScriptCore.JSValueRef MakeString(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSStringRef str) [static] :92
+// private static Fuse.Scripting.JavaScriptCore.JSValueRef MakeString(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, Fuse.Scripting.JavaScriptCore.JSStringRef str) [static] :90
 ::JSValueRef JSValueRef::MakeString(::JSContextRef ctx, ::JSStringRef str)
 {
     return ::JSValueMakeString(ctx, str);
 }
 
-// public static Fuse.Scripting.JavaScriptCore.JSValueRef MakeString(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, string str) [static] :97
+// public static Fuse.Scripting.JavaScriptCore.JSValueRef MakeString(Fuse.Scripting.JavaScriptCore.JSContextRef ctx, string str) [static] :95
 ::JSValueRef JSValueRef::MakeString1(::JSContextRef ctx, uString* str)
 {
     uStackFrame __("Fuse.Scripting.JavaScriptCore.JSValueRef", "MakeString(Fuse.Scripting.JavaScriptCore.JSContextRef,string)");
@@ -2357,21 +2364,21 @@ void JSValueRef::Unprotect(::JSValueRef __this, ::JSContextRef ctx)
     }
 }
 
-// public static operator ==(Fuse.Scripting.JavaScriptCore.JSValueRef v1, Fuse.Scripting.JavaScriptCore.JSValueRef v2) [static] :13
+// public static operator ==(Fuse.Scripting.JavaScriptCore.JSValueRef v1, Fuse.Scripting.JavaScriptCore.JSValueRef v2) [static] :11
 bool JSValueRef::op_Equality(::JSValueRef v1, ::JSValueRef v2)
 {
     return v1 == v2;
 }
 
-// public static operator !=(Fuse.Scripting.JavaScriptCore.JSValueRef v1, Fuse.Scripting.JavaScriptCore.JSValueRef v2) [static] :14
+// public static operator !=(Fuse.Scripting.JavaScriptCore.JSValueRef v1, Fuse.Scripting.JavaScriptCore.JSValueRef v2) [static] :12
 bool JSValueRef::op_Inequality(::JSValueRef v1, ::JSValueRef v2)
 {
     return v1 != v2;
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/JavaScriptCore/Object.uno
-// ---------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/JavaScriptCore/Object.uno
+// --------------------------------------------------------------------------------------------
 
 // internal sealed extern class Object :8
 // {
@@ -2527,7 +2534,7 @@ void Object__Equals2_fn(Object* __this, ::g::Fuse::Scripting::Object* o, bool* _
 {
     uStackFrame __("Fuse.Scripting.JavaScriptCore.Object", "Equals(Fuse.Scripting.Object)");
     ::JSObjectRef ind9;
-    return *__retval = uIs(o, __this->__type) && ::g::Uno::Object::Equals(uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), (ind9 = __this->_value, ind9), U_ALLOCA(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof()->ObjectSize)), uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), uPtr(uCast<Object*>(o, __this->__type))->_value)), void();
+    return *__retval = uIs(o, __this->__type) && uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), (ind9 = __this->_value, ind9), U_ALLOCA(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof()->ObjectSize))->Equals(uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), uPtr(uCast<Object*>(o, __this->__type))->_value)), void();
 }
 
 // public override sealed int GetHashCode() :130
@@ -2535,7 +2542,7 @@ void Object__GetHashCode_fn(Object* __this, int32_t* __retval)
 {
     uStackFrame __("Fuse.Scripting.JavaScriptCore.Object", "GetHashCode()");
     ::JSObjectRef ind10;
-    return *__retval = ::g::Uno::Object::GetHashCode(uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), (ind10 = __this->_value, ind10), U_ALLOCA(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof()->ObjectSize))), void();
+    return *__retval = uBox(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof(), (ind10 = __this->_value, ind10), U_ALLOCA(::g::Fuse::Scripting::JavaScriptCore::JSObjectRef_typeof()->ObjectSize))->GetHashCode(), void();
 }
 
 // public override sealed bool InstanceOf(Fuse.Scripting.Context context, Fuse.Scripting.Function type) :68
@@ -2690,10 +2697,10 @@ Object* Object::New1(::g::Fuse::Scripting::JavaScriptCore::Context* context, ::J
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/JavaScriptCore/JavaScriptCore.uno
-// -----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/JavaScriptCore/JavaScriptCore.uno
+// ----------------------------------------------------------------------------------------------------
 
-// public delegate Fuse.Scripting.JavaScriptCore.JSValueRef JSClassRef.RawCallback(Fuse.Scripting.JavaScriptCore.JSValueRef[] args, Fuse.Scripting.JavaScriptCore.JSValueRef& exception) :435
+// public delegate Fuse.Scripting.JavaScriptCore.JSValueRef JSClassRef.RawCallback(Fuse.Scripting.JavaScriptCore.JSValueRef[] args, Fuse.Scripting.JavaScriptCore.JSValueRef& exception) :423
 uDelegateType* JSClassRef__RawCallback_typeof()
 {
     static uSStrong<uDelegateType*> type;

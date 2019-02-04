@@ -17,8 +17,8 @@ namespace g{
 namespace Uno{
 namespace Testing{
 
-// /usr/local/share/uno/Packages/Uno.Testing/1.9.0/Assert.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Testing/1.10.0-rc1/Assert.uno
+// ---------------------------------------------------------------
 
 // public partial static class Assert :8
 // {
@@ -82,8 +82,8 @@ void Assert::ReportFailure(uString* filePath, int32_t lineNumber, uString* membe
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Testing/1.9.0/Exceptions/AssertionFailedException.uno
-// ---------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Testing/1.10.0-rc1/Exceptions/AssertionFailedException.uno
+// --------------------------------------------------------------------------------------------
 
 // internal sealed class AssertionFailedException :3
 // {
@@ -144,8 +144,8 @@ AssertionFailedException* AssertionFailedException::New4(uString* fileName, int3
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Testing/1.9.0/NamedTestMethod.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Testing/1.10.0-rc1/NamedTestMethod.uno
+// ------------------------------------------------------------------------
 
 // internal sealed class NamedTestMethod :3
 // {
@@ -167,8 +167,8 @@ uType* NamedTestMethod_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Testing/1.9.0/Registry.uno
-// ------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Testing/1.10.0-rc1/Registry.uno
+// -----------------------------------------------------------------
 
 // public sealed class Registry :5
 // {
@@ -223,8 +223,8 @@ Registry* Registry::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Testing/1.9.0/Attributes/TestAttribute.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Testing/1.10.0-rc1/Attributes/TestAttribute.uno
+// ---------------------------------------------------------------------------------
 
 // public sealed class TestAttribute :4
 // {

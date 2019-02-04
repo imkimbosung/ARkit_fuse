@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Threading/MainThreadAttribute.uno.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Threading/MainThreadAttribute.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -9,7 +9,7 @@ namespace g{
 namespace Uno{
 namespace Threading{
 
-// public sealed class MainThreadAttribute :5
+// public sealed class MainThreadAttribute :6
 // {
 uType* MainThreadAttribute_typeof();
 void MainThreadAttribute__ctor_1_fn(MainThreadAttribute* __this);

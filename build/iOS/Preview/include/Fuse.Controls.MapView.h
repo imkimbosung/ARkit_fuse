@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Maps/1.9.0/MapView.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Maps/1.10.0-rc1/MapView.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

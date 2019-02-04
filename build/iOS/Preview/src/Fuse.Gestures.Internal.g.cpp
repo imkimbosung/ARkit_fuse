@@ -78,8 +78,8 @@ namespace Fuse{
 namespace Gestures{
 namespace Internal{
 
-// /usr/local/share/uno/Packages/Fuse.Gestures/1.9.0/Internal/Swiper.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Gestures/1.10.0-rc1/Internal/Swiper.uno
+// --------------------------------------------------------------------------
 
 // private sealed class SwipeRegion.DoSwiped :156
 // {
@@ -147,8 +147,8 @@ SwipeRegion__DoSwiped* SwipeRegion__DoSwiped::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Gestures/1.9.0/Internal/EdgeSwiper.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Gestures/1.10.0-rc1/Internal/EdgeSwiper.uno
+// ------------------------------------------------------------------------------
 
 // internal sealed class EdgeSwiper :10
 // {
@@ -751,8 +751,8 @@ EdgeSwiper* EdgeSwiper::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Gestures/1.9.0/Internal/TwoFinger.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Gestures/1.10.0-rc1/Internal/TwoFinger.uno
+// -----------------------------------------------------------------------------
 
 // private sealed class TwoFinger.Point :90
 // {
@@ -807,8 +807,8 @@ TwoFinger__Point* TwoFinger__Point::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Gestures/1.9.0/Internal/Swiper.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Gestures/1.10.0-rc1/Internal/Swiper.uno
+// --------------------------------------------------------------------------
 
 // public enum SwipeRegion.ProgressFlags :51
 uEnumType* SwipeRegion__ProgressFlags_typeof()
@@ -824,8 +824,8 @@ uEnumType* SwipeRegion__ProgressFlags_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Gestures/1.9.0/Internal/Swiper.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Gestures/1.10.0-rc1/Internal/Swiper.uno
+// --------------------------------------------------------------------------
 
 // internal sealed class Swiper :287
 // {
@@ -839,7 +839,7 @@ static void Swiper__cctor__fn(uType* __type)
 static void Swiper_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("incomplete swipe detected");
-    ::STRINGS[1] = uString::Const("/usr/local/share/uno/Packages/Fuse.Gestures/1.9.0/Internal/Swiper.uno");
+    ::STRINGS[1] = uString::Const("/usr/local/share/uno/Packages/Fuse.Gestures/1.10.0-rc1/Internal/Swiper.uno");
     ::STRINGS[2] = uString::Const("CheckNeedUpdated");
     ::STRINGS[3] = uString::Const("invalid OnCapture");
     ::STRINGS[4] = uString::Const("Fuse.Input.IGesture.OnCaptureChanged");
@@ -1375,17 +1375,17 @@ Swiper* Swiper::New1(::g::Fuse::Elements::Element* elm)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Gestures/1.9.0/Internal/Swiper.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Gestures/1.10.0-rc1/Internal/Swiper.uno
+// --------------------------------------------------------------------------
 
 // internal sealed class SwipeRegion :19
 // {
 // static generated SwipeRegion() :19
 static void SwipeRegion__cctor__fn(uType* __type)
 {
-    SwipeRegion::InProgressName_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("InProgress"));
-    SwipeRegion::ProgressName_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("Progress"));
-    SwipeRegion::_isActiveName_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("IsActive"));
+    SwipeRegion::InProgressName_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("InProgress"));
+    SwipeRegion::ProgressName_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("Progress"));
+    SwipeRegion::_isActiveName_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("IsActive"));
 }
 
 static void SwipeRegion_build(uType* type)
@@ -1880,8 +1880,8 @@ SwipeRegion* SwipeRegion::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Gestures/1.9.0/Internal/Swiper.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Gestures/1.10.0-rc1/Internal/Swiper.uno
+// --------------------------------------------------------------------------
 
 // internal enum SwipeRegionArea :13
 uEnumType* SwipeRegionArea_typeof()
@@ -1896,8 +1896,8 @@ uEnumType* SwipeRegionArea_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Gestures/1.9.0/Internal/TwoFinger.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Gestures/1.10.0-rc1/Internal/TwoFinger.uno
+// -----------------------------------------------------------------------------
 
 // internal sealed class TwoFinger :17
 // {
@@ -2375,8 +2375,8 @@ TwoFinger* TwoFinger::New1(::g::Fuse::Visual* n)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Gestures/1.9.0/Internal/TwoFinger.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Gestures/1.10.0-rc1/Internal/TwoFinger.uno
+// -----------------------------------------------------------------------------
 
 // internal delegate void TwoFingerEventHandler() :12
 uDelegateType* TwoFingerEventHandler_typeof()
@@ -2389,8 +2389,8 @@ uDelegateType* TwoFingerEventHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Gestures/1.9.0/Internal/TwoFinger.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Gestures/1.10.0-rc1/Internal/TwoFinger.uno
+// -----------------------------------------------------------------------------
 
 // internal delegate void TwoFingerRotateHandler(float angle) :14
 uDelegateType* TwoFingerRotateHandler_typeof()
@@ -2404,8 +2404,8 @@ uDelegateType* TwoFingerRotateHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Gestures/1.9.0/Internal/TwoFinger.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Gestures/1.10.0-rc1/Internal/TwoFinger.uno
+// -----------------------------------------------------------------------------
 
 // internal delegate void TwoFingerTranslateHandler(float2 amount) :15
 uDelegateType* TwoFingerTranslateHandler_typeof()
@@ -2419,8 +2419,8 @@ uDelegateType* TwoFingerTranslateHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Gestures/1.9.0/Internal/TwoFinger.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Gestures/1.10.0-rc1/Internal/TwoFinger.uno
+// -----------------------------------------------------------------------------
 
 // internal delegate void TwoFingerZoomHandler(float factor) :13
 uDelegateType* TwoFingerZoomHandler_typeof()

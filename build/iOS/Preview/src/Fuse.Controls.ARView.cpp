@@ -2,7 +2,6 @@
 // WARNING: Changes might be lost if you edit this file directly.
 
 #include <Fuse.AR.iOS.ARView.h>
-#include <Fuse.Controls.Abox.h>
 #include <Fuse.Controls.ARConfig.h>
 #include <Fuse.Controls.ARNodes.h>
 #include <Fuse.Controls.ARView.h>
@@ -13,14 +12,12 @@
 #include <Uno.Action.h>
 #include <Uno.Action1-1.h>
 #include <Uno.Bool.h>
-#include <Uno.Byte.h>
 #include <Uno.Collections.ObservableList-1.h>
 #include <Uno.Int.h>
 #include <Uno.String.h>
-#include <Uno.UX.FileSource.h>
 #include <Uno.UX.PropertyObject.h>
-static uString* STRINGS[2];
-static uType* TYPES[6];
+static uString* STRINGS[1];
+static uType* TYPES[4];
 
 namespace g{
 namespace Fuse{
@@ -30,14 +27,11 @@ namespace Controls{
 // {
 static void ARView_build(uType* type)
 {
-    ::STRINGS[0] = uString::Const("Plane");
-    ::STRINGS[1] = uString::Const("Statistics");
+    ::STRINGS[0] = uString::Const("Statistics");
     ::TYPES[0] = ::g::Fuse::Controls::IARView_typeof();
     ::TYPES[1] = ::g::Uno::Action_typeof();
-    ::TYPES[2] = ::g::Uno::Collections::ObservableList_typeof()->MakeType(::g::Fuse::Controls::Abox_typeof(), NULL);
-    ::TYPES[3] = ::g::Uno::Action1_typeof()->MakeType(::g::Fuse::Controls::Abox_typeof(), NULL);
-    ::TYPES[4] = ::g::Uno::Collections::ObservableList_typeof()->MakeType(::g::Fuse::Controls::ARNodes_typeof(), NULL);
-    ::TYPES[5] = ::g::Uno::Action1_typeof()->MakeType(::g::Fuse::Controls::ARNodes_typeof(), NULL);
+    ::TYPES[2] = ::g::Uno::Collections::ObservableList_typeof()->MakeType(::g::Fuse::Controls::ARNodes_typeof(), NULL);
+    ::TYPES[3] = ::g::Uno::Action1_typeof()->MakeType(::g::Fuse::Controls::ARNodes_typeof(), NULL);
     type->SetDependencies(
         ::g::Fuse::UpdateManager_typeof());
     type->SetInterfaces(
@@ -63,28 +57,18 @@ static void ARView_build(uType* type)
     type->SetFields(120,
         ::g::Fuse::Controls::ARConfig_typeof(), offsetof(ARView, _arConfig), 0,
         ::TYPES[0/*Fuse.Controls.IARView*/], offsetof(ARView, _arViewClient), 0,
-        ::TYPES[2/*Uno.Collections.ObservableList<Fuse.Controls.Abox>*/], offsetof(ARView, _aboxs), 0,
-        ::TYPES[4/*Uno.Collections.ObservableList<Fuse.Controls.ARNodes>*/], offsetof(ARView, _arnodes), 0,
+        ::TYPES[2/*Uno.Collections.ObservableList<Fuse.Controls.ARNodes>*/], offsetof(ARView, _arnodes), 0,
         ::g::Uno::Bool_typeof(), offsetof(ARView, _willUpdateNodesNextFrame), 0,
         ::g::Uno::Bool_typeof(), offsetof(ARView, _arReady), 0,
         ::g::Uno::Bool_typeof(), offsetof(ARView, _willUpdateARNextFrame), 0,
-        ::g::Uno::UX::Selector_typeof(), offsetof(ARView, _showPlaneName), 0,
         ::g::Uno::UX::Selector_typeof(), offsetof(ARView, _showStatisticsName), 0);
-    type->Reflection.SetFunctions(18,
-        new uFunction("get_Aboxs", NULL, (void*)ARView__get_Aboxs_fn, 0, false, ::TYPES[2/*Uno.Collections.ObservableList<Fuse.Controls.Abox>*/], 0),
-        new uFunction("get_ARNodes", NULL, (void*)ARView__get_ARNodes_fn, 0, false, ::TYPES[4/*Uno.Collections.ObservableList<Fuse.Controls.ARNodes>*/], 0),
+    type->Reflection.SetFunctions(10,
+        new uFunction("get_ARNodes", NULL, (void*)ARView__get_ARNodes_fn, 0, false, ::TYPES[2/*Uno.Collections.ObservableList<Fuse.Controls.ARNodes>*/], 0),
         new uFunction("get_Debug", NULL, (void*)ARView__get_Debug_fn, 0, false, ::g::Uno::Bool_typeof(), 0),
         new uFunction("set_Debug", NULL, (void*)ARView__set_Debug_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Bool_typeof()),
         new uFunction(".ctor", NULL, (void*)ARView__New4_fn, 0, true, type, 0),
-        new uFunction("get_Plane", NULL, (void*)ARView__get_Plane_fn, 0, false, ::g::Uno::Bool_typeof(), 0),
-        new uFunction("set_Plane", NULL, (void*)ARView__set_Plane_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Bool_typeof()),
-        new uFunction("get_PlaneFile", NULL, (void*)ARView__get_PlaneFile_fn, 0, false, ::g::Uno::UX::FileSource_typeof(), 0),
-        new uFunction("set_PlaneFile", NULL, (void*)ARView__set_PlaneFile_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::UX::FileSource_typeof()),
         new uFunction("SetAR", NULL, (void*)ARView__SetAR_fn, 0, false, uVoid_typeof(), 3, ::g::Uno::Bool_typeof(), ::g::Uno::Bool_typeof(), ::g::Uno::Bool_typeof()),
-        new uFunction("SetPlane", NULL, (void*)ARView__SetPlane_fn, 0, false, uVoid_typeof(), 2, ::g::Uno::Bool_typeof(), ::g::Uno::UX::IPropertyListener_typeof()),
         new uFunction("SetStatistics", NULL, (void*)ARView__SetStatistics_fn, 0, false, uVoid_typeof(), 2, ::g::Uno::Bool_typeof(), ::g::Uno::UX::IPropertyListener_typeof()),
-        new uFunction("get_ShowPlane", NULL, (void*)ARView__get_ShowPlane_fn, 0, false, ::g::Uno::Bool_typeof(), 0),
-        new uFunction("set_ShowPlane", NULL, (void*)ARView__set_ShowPlane_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Bool_typeof()),
         new uFunction("get_ShowStatistics", NULL, (void*)ARView__get_ShowStatistics_fn, 0, false, ::g::Uno::Bool_typeof(), 0),
         new uFunction("set_ShowStatistics", NULL, (void*)ARView__set_ShowStatistics_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Bool_typeof()),
         new uFunction("get_Statistics", NULL, (void*)ARView__get_Statistics_fn, 0, false, ::g::Uno::Bool_typeof(), 0),
@@ -98,7 +82,7 @@ static void ARView_build(uType* type)
 
     uTypeOptions options;
     options.BaseDefinition = ::g::Fuse::Controls::Panel_typeof();
-    options.FieldCount = 129;
+    options.FieldCount = 127;
     options.InterfaceCount = 19;
     options.DependencyCount = 1;
     options.ObjectSize = sizeof(ARView);
@@ -151,16 +135,10 @@ static void ARView_build(uType* type)
     return type;
 }
 
-// public ARView() :96
+// public ARView() :95
 void ARView__ctor_7_fn(ARView* __this)
 {
     __this->ctor_7();
-}
-
-// public Uno.Collections.ObservableList<Fuse.Controls.Abox> get_Aboxs() :153
-void ARView__get_Aboxs_fn(ARView* __this, ::g::Uno::Collections::ObservableList** __retval)
-{
-    *__retval = __this->Aboxs();
 }
 
 // internal void AddNodes(Fuse.Controls.ARNodes a) :170
@@ -169,7 +147,7 @@ void ARView__AddNodes_fn(ARView* __this, ::g::Fuse::Controls::ARNodes* a)
     __this->AddNodes(a);
 }
 
-// private void ApplyARState() :298
+// private void ApplyARState() :299
 void ARView__ApplyARState_fn(ARView* __this)
 {
     __this->ApplyARState();
@@ -187,19 +165,19 @@ void ARView__get_ARNodes_fn(ARView* __this, ::g::Uno::Collections::ObservableLis
     *__retval = __this->ARNodes();
 }
 
-// internal Fuse.Controls.IARView get_ARViewClient() :133
+// internal Fuse.Controls.IARView get_ARViewClient() :132
 void ARView__get_ARViewClient_fn(ARView* __this, uObject** __retval)
 {
     *__retval = __this->ARViewClient();
 }
 
-// internal void set_ARViewClient(Fuse.Controls.IARView value) :134
+// internal void set_ARViewClient(Fuse.Controls.IARView value) :133
 void ARView__set_ARViewClient_fn(ARView* __this, uObject* value)
 {
     __this->ARViewClient(value);
 }
 
-// protected override sealed Fuse.Controls.Native.IView CreateNativeView() :111
+// protected override sealed Fuse.Controls.Native.IView CreateNativeView() :110
 void ARView__CreateNativeView_fn(ARView* __this, uObject** __retval)
 {
     uStackFrame __("Fuse.Controls.ARView", "CreateNativeView()");
@@ -224,22 +202,10 @@ void ARView__DeferredNodesUpdate_fn(ARView* __this)
     __this->DeferredNodesUpdate();
 }
 
-// public ARView New() :96
+// public ARView New() :95
 void ARView__New4_fn(ARView** __retval)
 {
     *__retval = ARView::New4();
-}
-
-// private void OnAboxsAdded(Fuse.Controls.Abox abox) :181
-void ARView__OnAboxsAdded_fn(ARView* __this, ::g::Fuse::Controls::Abox* abox)
-{
-    __this->OnAboxsAdded(abox);
-}
-
-// private void OnAboxsRemoved(Fuse.Controls.Abox abox) :186
-void ARView__OnAboxsRemoved_fn(ARView* __this, ::g::Fuse::Controls::Abox* abox)
-{
-    __this->OnAboxsRemoved(abox);
 }
 
 // private void OnARReady() :223
@@ -260,30 +226,6 @@ void ARView__OnNodesRemoved_fn(ARView* __this, ::g::Fuse::Controls::ARNodes* mar
     __this->OnNodesRemoved(marker);
 }
 
-// public bool get_Plane() :318
-void ARView__get_Plane_fn(ARView* __this, bool* __retval)
-{
-    *__retval = __this->Plane();
-}
-
-// public void set_Plane(bool value) :319
-void ARView__set_Plane_fn(ARView* __this, bool* value)
-{
-    __this->Plane(*value);
-}
-
-// public Uno.UX.FileSource get_PlaneFile() :272
-void ARView__get_PlaneFile_fn(ARView* __this, ::g::Uno::UX::FileSource** __retval)
-{
-    *__retval = __this->PlaneFile();
-}
-
-// public void set_PlaneFile(Uno.UX.FileSource value) :273
-void ARView__set_PlaneFile_fn(ARView* __this, ::g::Uno::UX::FileSource* value)
-{
-    __this->PlaneFile(value);
-}
-
 // internal void RemoveNodes(Fuse.Controls.ARNodes a) :176
 void ARView__RemoveNodes_fn(ARView* __this, ::g::Fuse::Controls::ARNodes* a)
 {
@@ -296,28 +238,10 @@ void ARView__SetAR_fn(ARView* __this, bool* showPlane, bool* showStatistics, boo
     __this->SetAR(*showPlane, *showStatistics, *debug);
 }
 
-// public void SetPlane(bool value, Uno.UX.IPropertyListener origin) :322
-void ARView__SetPlane_fn(ARView* __this, bool* value, uObject* origin)
-{
-    __this->SetPlane(*value, origin);
-}
-
-// public void SetStatistics(bool value, Uno.UX.IPropertyListener origin) :340
+// public void SetStatistics(bool value, Uno.UX.IPropertyListener origin) :341
 void ARView__SetStatistics_fn(ARView* __this, bool* value, uObject* origin)
 {
     __this->SetStatistics(*value, origin);
-}
-
-// public bool get_ShowPlane() :249
-void ARView__get_ShowPlane_fn(ARView* __this, bool* __retval)
-{
-    *__retval = __this->ShowPlane();
-}
-
-// public void set_ShowPlane(bool value) :250
-void ARView__set_ShowPlane_fn(ARView* __this, bool* value)
-{
-    __this->ShowPlane(*value);
 }
 
 // public bool get_ShowStatistics() :257
@@ -332,19 +256,19 @@ void ARView__set_ShowStatistics_fn(ARView* __this, bool* value)
     __this->ShowStatistics(*value);
 }
 
-// public bool get_Statistics() :336
+// public bool get_Statistics() :337
 void ARView__get_Statistics_fn(ARView* __this, bool* __retval)
 {
     *__retval = __this->Statistics();
 }
 
-// public void set_Statistics(bool value) :337
+// public void set_Statistics(bool value) :338
 void ARView__set_Statistics_fn(ARView* __this, bool* value)
 {
     __this->Statistics(*value);
 }
 
-// internal void UpdateCameraNextFrame() :291
+// internal void UpdateCameraNextFrame() :292
 void ARView__UpdateCameraNextFrame_fn(ARView* __this)
 {
     __this->UpdateCameraNextFrame();
@@ -362,25 +286,13 @@ void ARView__UpdateNodesNextFrame_fn(ARView* __this)
     __this->UpdateNodesNextFrame();
 }
 
-// public ARView() [instance] :96
+// public ARView() [instance] :95
 void ARView::ctor_7()
 {
     uStackFrame __("Fuse.Controls.ARView", ".ctor()");
-    _showPlaneName = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[0/*"Plane"*/]);
-    _showStatisticsName = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[1/*"Statistics"*/]);
+    _showStatisticsName = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[0/*"Statistics"*/]);
     ctor_6();
     _arConfig = ::g::Fuse::Controls::ARConfig::New1();
-}
-
-// public Uno.Collections.ObservableList<Fuse.Controls.Abox> get_Aboxs() [instance] :153
-::g::Uno::Collections::ObservableList* ARView::Aboxs()
-{
-    uStackFrame __("Fuse.Controls.ARView", "get_Aboxs()");
-
-    if (_aboxs == NULL)
-        _aboxs = ((::g::Uno::Collections::ObservableList*)::g::Uno::Collections::ObservableList::New1(::TYPES[2/*Uno.Collections.ObservableList<Fuse.Controls.Abox>*/], uDelegate::New(::TYPES[3/*Uno.Action<Fuse.Controls.Abox>*/], (void*)ARView__OnAboxsAdded_fn, this), uDelegate::New(::TYPES[3/*Uno.Action<Fuse.Controls.Abox>*/], (void*)ARView__OnAboxsRemoved_fn, this)));
-
-    return _aboxs;
 }
 
 // internal void AddNodes(Fuse.Controls.ARNodes a) [instance] :170
@@ -395,14 +307,13 @@ void ARView::AddNodes(::g::Fuse::Controls::ARNodes* a)
     ::g::Uno::Collections::ObservableList__Add_fn(uPtr(ARNodes()), a);
 }
 
-// private void ApplyARState() [instance] :298
+// private void ApplyARState() [instance] :299
 void ARView::ApplyARState()
 {
-    uStackFrame __("Fuse.Controls.ARView", "ApplyARState()");
     _willUpdateARNextFrame = false;
 
     if (ARIsReady())
-        ::g::Fuse::Controls::IARView::ApplyTo(uInterface(uPtr(ARViewClient()), ::TYPES[0/*Fuse.Controls.IARView*/]), ShowPlane(), ShowStatistics(), Debug(), uPtr(PlaneFile())->ReadAllBytes());
+        ;
 }
 
 // private bool get_ARIsReady() [instance] :243
@@ -417,18 +328,18 @@ bool ARView::ARIsReady()
     uStackFrame __("Fuse.Controls.ARView", "get_ARNodes()");
 
     if (_arnodes == NULL)
-        _arnodes = ((::g::Uno::Collections::ObservableList*)::g::Uno::Collections::ObservableList::New1(::TYPES[4/*Uno.Collections.ObservableList<Fuse.Controls.ARNodes>*/], uDelegate::New(::TYPES[5/*Uno.Action<Fuse.Controls.ARNodes>*/], (void*)ARView__OnNodesAdded_fn, this), uDelegate::New(::TYPES[5/*Uno.Action<Fuse.Controls.ARNodes>*/], (void*)ARView__OnNodesRemoved_fn, this)));
+        _arnodes = ((::g::Uno::Collections::ObservableList*)::g::Uno::Collections::ObservableList::New1(::TYPES[2/*Uno.Collections.ObservableList<Fuse.Controls.ARNodes>*/], uDelegate::New(::TYPES[3/*Uno.Action<Fuse.Controls.ARNodes>*/], (void*)ARView__OnNodesAdded_fn, this), uDelegate::New(::TYPES[3/*Uno.Action<Fuse.Controls.ARNodes>*/], (void*)ARView__OnNodesRemoved_fn, this)));
 
     return _arnodes;
 }
 
-// internal Fuse.Controls.IARView get_ARViewClient() [instance] :133
+// internal Fuse.Controls.IARView get_ARViewClient() [instance] :132
 uObject* ARView::ARViewClient()
 {
     return _arViewClient;
 }
 
-// internal void set_ARViewClient(Fuse.Controls.IARView value) [instance] :134
+// internal void set_ARViewClient(Fuse.Controls.IARView value) [instance] :133
 void ARView::ARViewClient(uObject* value)
 {
     uStackFrame __("Fuse.Controls.ARView", "set_ARViewClient(Fuse.Controls.IARView)");
@@ -466,18 +377,6 @@ void ARView::DeferredNodesUpdate()
     UpdateNodes();
 }
 
-// private void OnAboxsAdded(Fuse.Controls.Abox abox) [instance] :181
-void ARView::OnAboxsAdded(::g::Fuse::Controls::Abox* abox)
-{
-    UpdateNodesNextFrame();
-}
-
-// private void OnAboxsRemoved(Fuse.Controls.Abox abox) [instance] :186
-void ARView::OnAboxsRemoved(::g::Fuse::Controls::Abox* abox)
-{
-    UpdateNodesNextFrame();
-}
-
 // private void OnARReady() [instance] :223
 void ARView::OnARReady()
 {
@@ -503,34 +402,6 @@ void ARView::OnNodesRemoved(::g::Fuse::Controls::ARNodes* marker)
     UpdateNodesNextFrame();
 }
 
-// public bool get_Plane() [instance] :318
-bool ARView::Plane()
-{
-    uStackFrame __("Fuse.Controls.ARView", "get_Plane()");
-    return uPtr(_arConfig)->ShowPlane();
-}
-
-// public void set_Plane(bool value) [instance] :319
-void ARView::Plane(bool value)
-{
-    uStackFrame __("Fuse.Controls.ARView", "set_Plane(bool)");
-    SetPlane(value, (uObject*)this);
-}
-
-// public Uno.UX.FileSource get_PlaneFile() [instance] :272
-::g::Uno::UX::FileSource* ARView::PlaneFile()
-{
-    uStackFrame __("Fuse.Controls.ARView", "get_PlaneFile()");
-    return uPtr(_arConfig)->PlaneFile();
-}
-
-// public void set_PlaneFile(Uno.UX.FileSource value) [instance] :273
-void ARView::PlaneFile(::g::Uno::UX::FileSource* value)
-{
-    uStackFrame __("Fuse.Controls.ARView", "set_PlaneFile(Uno.UX.FileSource)");
-    uPtr(_arConfig)->PlaneFile(value);
-}
-
 // internal void RemoveNodes(Fuse.Controls.ARNodes a) [instance] :176
 void ARView::RemoveNodes(::g::Fuse::Controls::ARNodes* a)
 {
@@ -543,41 +414,17 @@ void ARView::RemoveNodes(::g::Fuse::Controls::ARNodes* a)
 void ARView::SetAR(bool showPlane, bool showStatistics, bool debug)
 {
     uStackFrame __("Fuse.Controls.ARView", "SetAR(bool,bool,bool)");
-    ShowPlane(showPlane);
     ShowStatistics(showStatistics);
     Debug(debug);
 }
 
-// public void SetPlane(bool value, Uno.UX.IPropertyListener origin) [instance] :322
-void ARView::SetPlane(bool value, uObject* origin)
-{
-    uStackFrame __("Fuse.Controls.ARView", "SetPlane(bool,Uno.UX.IPropertyListener)");
-    uPtr(_arConfig)->ShowPlane(value);
-    UpdateCameraNextFrame();
-    OnPropertyChanged1(_showPlaneName, origin);
-}
-
-// public void SetStatistics(bool value, Uno.UX.IPropertyListener origin) [instance] :340
+// public void SetStatistics(bool value, Uno.UX.IPropertyListener origin) [instance] :341
 void ARView::SetStatistics(bool value, uObject* origin)
 {
     uStackFrame __("Fuse.Controls.ARView", "SetStatistics(bool,Uno.UX.IPropertyListener)");
     uPtr(_arConfig)->ShowStatistics(value);
     UpdateCameraNextFrame();
     OnPropertyChanged1(_showStatisticsName, origin);
-}
-
-// public bool get_ShowPlane() [instance] :249
-bool ARView::ShowPlane()
-{
-    uStackFrame __("Fuse.Controls.ARView", "get_ShowPlane()");
-    return uPtr(_arConfig)->ShowPlane();
-}
-
-// public void set_ShowPlane(bool value) [instance] :250
-void ARView::ShowPlane(bool value)
-{
-    uStackFrame __("Fuse.Controls.ARView", "set_ShowPlane(bool)");
-    uPtr(_arConfig)->ShowPlane(value);
 }
 
 // public bool get_ShowStatistics() [instance] :257
@@ -594,21 +441,21 @@ void ARView::ShowStatistics(bool value)
     uPtr(_arConfig)->ShowStatistics(value);
 }
 
-// public bool get_Statistics() [instance] :336
+// public bool get_Statistics() [instance] :337
 bool ARView::Statistics()
 {
     uStackFrame __("Fuse.Controls.ARView", "get_Statistics()");
     return uPtr(_arConfig)->ShowStatistics();
 }
 
-// public void set_Statistics(bool value) [instance] :337
+// public void set_Statistics(bool value) [instance] :338
 void ARView::Statistics(bool value)
 {
     uStackFrame __("Fuse.Controls.ARView", "set_Statistics(bool)");
     SetStatistics(value, (uObject*)this);
 }
 
-// internal void UpdateCameraNextFrame() [instance] :291
+// internal void UpdateCameraNextFrame() [instance] :292
 void ARView::UpdateCameraNextFrame()
 {
     uStackFrame __("Fuse.Controls.ARView", "UpdateCameraNextFrame()");
@@ -641,7 +488,7 @@ void ARView::UpdateNodesNextFrame()
     _willUpdateNodesNextFrame = true;
 }
 
-// public ARView New() [static] :96
+// public ARView New() [static] :95
 ARView* ARView::New4()
 {
     ARView* obj1 = (ARView*)uNew(ARView_typeof());

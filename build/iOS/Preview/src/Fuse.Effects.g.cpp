@@ -27,8 +27,6 @@
 #include <Fuse.VisualBounds.h>
 #include <Uno.Action1-1.h>
 #include <Uno.Bool.h>
-#include <Uno.Buffer.h>
-#include <Uno.Byte.h>
 #include <Uno.Delegate.h>
 #include <Uno.Double.h>
 #include <Uno.Exception.h>
@@ -54,7 +52,6 @@
 #include <Uno.Math.h>
 #include <Uno.Matrix.h>
 #include <Uno.Rect.h>
-#include <Uno.Runtime.Implementation.Internal.BufferConverters.h>
 #include <Uno.Runtime.Implementation.ShaderBackends.OpenGL.GLProgram.h>
 #include <Uno.String.h>
 #include <Uno.UShort.h>
@@ -66,8 +63,8 @@ namespace g{
 namespace Fuse{
 namespace Effects{
 
-// /usr/local/share/uno/Packages/Fuse.Effects/1.9.0/BasicEffect.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Effects/1.10.0-rc1/BasicEffect.uno
+// ---------------------------------------------------------------------
 
 // public abstract class BasicEffect :7
 // {
@@ -171,8 +168,8 @@ void BasicEffect::ctor_3(int32_t effectType)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Effects/1.9.0/DropShadow.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Effects/1.10.0-rc1/DropShadow.uno
+// --------------------------------------------------------------------
 
 // private sealed class DropShadow.Blitter :172
 // {
@@ -241,7 +238,6 @@ uSStrong<DropShadow__Blitter*> DropShadow__Blitter::_instance_;
 // public generated Blitter() [instance] :172
 void DropShadow__Blitter::ctor_()
 {
-    uStackFrame __("Fuse.Effects.DropShadow.Blitter", ".ctor()");
     init_DrawCalls();
 }
 
@@ -271,7 +267,7 @@ void DropShadow__Blitter::Blit(::g::Fuse::DrawContext* dc, ::g::Fuse::Elements::
 void DropShadow__Blitter::init_DrawCalls()
 {
     uStackFrame __("Fuse.Effects.DropShadow.Blitter", "init_DrawCalls()");
-    Blit_VertexData_969193be_7_2_1 = ::g::Uno::Graphics::VertexBuffer::New1(uPtr(::g::Uno::Runtime::Implementation::Internal::BufferConverters::ToBuffer3(uArray::Init< ::g::Uno::Float2>(::TYPES[1/*float2[]*/], 6, ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(0.0f, 1.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(1.0f, 0.0f))))->GetBytes(), 0);
+    Blit_VertexData_969193be_7_2_1 = ::g::Uno::Graphics::VertexBuffer::New3(uArray::Init< ::g::Uno::Float2>(::TYPES[1/*float2[]*/], 6, ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(0.0f, 1.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(1.0f, 0.0f)), 0);
     Blit_LocalTransform_969193be_4_9_2 = ::g::Uno::Matrix::Translation(-::g::Uno::Float2__New1(0.0f).X, -::g::Uno::Float2__New1(0.0f).Y, 0.0f);
     Blit_LocalTransform_969193be_4_9_3 = ::g::Uno::Matrix::RotationZ(0.0f);
     _draw_969193be = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New1(::g::FuseEffects_bundle::Blitter6e650d31());
@@ -288,15 +284,14 @@ DropShadow__Blitter* DropShadow__Blitter::New1()
 // public static Fuse.Effects.DropShadow.Blitter get_Instance() [static] :177
 DropShadow__Blitter* DropShadow__Blitter::Instance()
 {
-    uStackFrame __("Fuse.Effects.DropShadow.Blitter", "get_Instance()");
     DropShadow__Blitter* ind1;
     ind1 = DropShadow__Blitter::_instance_;
     return (ind1 != NULL) ? ind1 : (DropShadow__Blitter*)(DropShadow__Blitter::_instance_ = DropShadow__Blitter::New1());
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Effects/1.9.0/Blur.uno
-// ---------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Effects/1.10.0-rc1/Blur.uno
+// --------------------------------------------------------------
 
 // public sealed class Blur :14
 // {
@@ -391,7 +386,7 @@ void Blur__OnRender_fn(Blur* __this, ::g::Fuse::DrawContext* dc, ::g::Uno::Rect*
     uStackFrame __("Fuse.Effects.Blur", "OnRender(Fuse.DrawContext,Uno.Rect)");
     ::g::Uno::Rect elementRect_ = *elementRect;
     ::g::Uno::Rect paddedRect = ::g::Uno::Rect__Inflate(elementRect_, __this->Padding());
-    ::g::Uno::Graphics::Framebuffer* original = uPtr(__this->Element())->CaptureRegion(dc, paddedRect, ::g::Uno::Float2__op_Implicit2(::g::Uno::Int2__New1(0)));
+    ::g::Uno::Graphics::Framebuffer* original = uPtr(__this->Element())->CaptureRegion(dc, paddedRect, ::g::Uno::Float2__op_Implicit1(::g::Uno::Int2__New1(0)));
 
     if (original == NULL)
         return;
@@ -474,8 +469,8 @@ Blur* Blur::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Effects/1.9.0/Desaturate.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Effects/1.10.0-rc1/Desaturate.uno
+// --------------------------------------------------------------------
 
 // public sealed class Desaturate :11
 // {
@@ -577,7 +572,7 @@ void Desaturate__OnRender_fn(Desaturate* __this, ::g::Fuse::DrawContext* dc, ::g
 {
     uStackFrame __("Fuse.Effects.Desaturate", "OnRender(Fuse.DrawContext,Uno.Rect)");
     ::g::Uno::Rect elementRect_ = *elementRect;
-    ::g::Uno::Graphics::Framebuffer* original = uPtr(__this->Element())->CaptureRegion(dc, elementRect_, ::g::Uno::Float2__op_Implicit2(::g::Uno::Int2__New1(0)));
+    ::g::Uno::Graphics::Framebuffer* original = uPtr(__this->Element())->CaptureRegion(dc, elementRect_, ::g::Uno::Float2__op_Implicit1(::g::Uno::Int2__New1(0)));
 
     if (original == NULL)
         return;
@@ -602,7 +597,6 @@ void Desaturate__OnRender_fn(Desaturate* __this, ::g::Fuse::DrawContext* dc, ::g
 // public Desaturate() [instance] :13
 void Desaturate::ctor_4()
 {
-    uStackFrame __("Fuse.Effects.Desaturate", ".ctor()");
     _amount = 1.0f;
     ctor_3(1);
     init_DrawCalls();
@@ -630,7 +624,7 @@ void Desaturate::Amount(float value)
 void Desaturate::init_DrawCalls()
 {
     uStackFrame __("Fuse.Effects.Desaturate", "init_DrawCalls()");
-    OnRender_VertexData_bd5b5311_7_2_1 = ::g::Uno::Graphics::VertexBuffer::New1(uPtr(::g::Uno::Runtime::Implementation::Internal::BufferConverters::ToBuffer3(uArray::Init< ::g::Uno::Float2>(::TYPES[1/*float2[]*/], 6, ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(0.0f, 1.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(1.0f, 0.0f))))->GetBytes(), 0);
+    OnRender_VertexData_bd5b5311_7_2_1 = ::g::Uno::Graphics::VertexBuffer::New3(uArray::Init< ::g::Uno::Float2>(::TYPES[1/*float2[]*/], 6, ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(0.0f, 1.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(1.0f, 0.0f)), 0);
     OnRender_LocalTransform_bd5b5311_4_9_2 = ::g::Uno::Matrix::Translation(-::g::Uno::Float2__New1(0.0f).X, -::g::Uno::Float2__New1(0.0f).Y, 0.0f);
     OnRender_LocalTransform_bd5b5311_4_9_3 = ::g::Uno::Matrix::RotationZ(0.0f);
     _draw_bd5b5311 = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New1(::g::FuseEffects_bundle::Desaturate88bb7f94());
@@ -645,8 +639,8 @@ Desaturate* Desaturate::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Effects/1.9.0/DropShadow.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Effects/1.10.0-rc1/DropShadow.uno
+// --------------------------------------------------------------------
 
 // public sealed class DropShadow :11
 // {
@@ -1005,8 +999,8 @@ DropShadow* DropShadow::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Effects/1.9.0/Duotone.uno
-// ------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Effects/1.10.0-rc1/Duotone.uno
+// -----------------------------------------------------------------
 
 // public sealed class Duotone :13
 // {
@@ -1126,7 +1120,7 @@ void Duotone__OnRender_fn(Duotone* __this, ::g::Fuse::DrawContext* dc, ::g::Uno:
 {
     uStackFrame __("Fuse.Effects.Duotone", "OnRender(Fuse.DrawContext,Uno.Rect)");
     ::g::Uno::Rect elementRect_ = *elementRect;
-    ::g::Uno::Graphics::Framebuffer* original = uPtr(__this->Element())->CaptureRegion(dc, elementRect_, ::g::Uno::Float2__op_Implicit2(::g::Uno::Int2__New1(0)));
+    ::g::Uno::Graphics::Framebuffer* original = uPtr(__this->Element())->CaptureRegion(dc, elementRect_, ::g::Uno::Float2__op_Implicit1(::g::Uno::Int2__New1(0)));
 
     if (original == NULL)
         return;
@@ -1165,7 +1159,6 @@ void Duotone__set_Shadow_fn(Duotone* __this, ::g::Uno::Float3* value)
 // public Duotone() [instance] :15
 void Duotone::ctor_4()
 {
-    uStackFrame __("Fuse.Effects.Duotone", ".ctor()");
     _amount = 1.0f;
     _light = ::g::Uno::Float3__New2(1.0f, 1.0f, 1.0f);
     _shadow = ::g::Uno::Float3__New2(0.0f, 0.0f, 0.0f);
@@ -1195,7 +1188,7 @@ void Duotone::Amount(float value)
 void Duotone::init_DrawCalls()
 {
     uStackFrame __("Fuse.Effects.Duotone", "init_DrawCalls()");
-    OnRender_VertexData_80b7f54b_7_2_1 = ::g::Uno::Graphics::VertexBuffer::New1(uPtr(::g::Uno::Runtime::Implementation::Internal::BufferConverters::ToBuffer3(uArray::Init< ::g::Uno::Float2>(::TYPES[1/*float2[]*/], 6, ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(0.0f, 1.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(1.0f, 0.0f))))->GetBytes(), 0);
+    OnRender_VertexData_80b7f54b_7_2_1 = ::g::Uno::Graphics::VertexBuffer::New3(uArray::Init< ::g::Uno::Float2>(::TYPES[1/*float2[]*/], 6, ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(0.0f, 1.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(1.0f, 0.0f)), 0);
     OnRender_LocalTransform_80b7f54b_4_9_2 = ::g::Uno::Matrix::Translation(-::g::Uno::Float2__New1(0.0f).X, -::g::Uno::Float2__New1(0.0f).Y, 0.0f);
     OnRender_LocalTransform_80b7f54b_4_9_3 = ::g::Uno::Matrix::RotationZ(0.0f);
     _draw_80b7f54b = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New1(::g::FuseEffects_bundle::Duotone26eb7e3c());
@@ -1246,8 +1239,8 @@ Duotone* Duotone::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Effects/Effect.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Effects/Effect.uno
+// -------------------------------------------------------------------------
 
 // public abstract class Effect :15
 // {
@@ -1486,8 +1479,8 @@ int32_t Effect::Type()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Effects/1.9.0/EffectHelpers.Blur.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Effects/1.10.0-rc1/EffectHelpers.Blur.uno
+// ----------------------------------------------------------------------------
 
 // internal partial sealed class EffectHelpers :9
 // {
@@ -1590,7 +1583,6 @@ uSStrong<EffectHelpers*> EffectHelpers::_instance_;
 // public generated EffectHelpers() [instance] :9
 void EffectHelpers::ctor_()
 {
-    uStackFrame __("Fuse.Effects.EffectHelpers", ".ctor()");
     init_DrawCalls();
 }
 
@@ -1612,7 +1604,7 @@ void EffectHelpers::ctor_()
             ::g::Fuse::FramebufferPool::Release(fb);
 
         sigmas = ::g::Uno::Math::Sqrt2(::g::Uno::Float2__op_Subtraction1(::g::Uno::Float2__op_Multiply2(sigmas, sigmas), 1.0f));
-        sigmas = ::g::Uno::Float2__op_Multiply2(sigmas, ::g::Uno::Float2__op_Division2(::g::Uno::Float2__New2((float)newSize.X, (float)newSize.Y), ::g::Uno::Float2__op_Implicit2(src->Size())));
+        sigmas = ::g::Uno::Float2__op_Multiply2(sigmas, ::g::Uno::Float2__op_Division2(::g::Uno::Float2__New2((float)newSize.X, (float)newSize.Y), ::g::Uno::Float2__op_Implicit1(src->Size())));
         fb = newFb;
         src = uPtr(newFb)->ColorBuffer();
         maxSamples = maxSamples * 2;
@@ -1697,14 +1689,14 @@ void EffectHelpers::init_DrawCalls()
     uStackFrame __("Fuse.Effects.EffectHelpers", "init_DrawCalls()");
     uArray* Vertices_44444bad_2_2_0 = uArray::Init< ::g::Uno::Float2>(::TYPES[1/*float2[]*/], 4, ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(1.0f, 0.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(0.0f, 1.0f));
     uArray* Indices_44444bad_2_3_1 = uArray::Init<int32_t>(::TYPES[5/*ushort[]*/], 6, 0, 1, 2, 2, 3, 0);
-    ResampleBilinear_VertexData_44444bad_2_5_2 = ::g::Uno::Graphics::IndexBuffer::New1(uPtr(::g::Uno::Runtime::Implementation::Internal::BufferConverters::ToBuffer9(Indices_44444bad_2_3_1))->GetBytes(), 0);
-    ResampleBilinear_VertexData_44444bad_2_5_3 = ::g::Uno::Graphics::VertexBuffer::New1(uPtr(::g::Uno::Runtime::Implementation::Internal::BufferConverters::ToBuffer3(Vertices_44444bad_2_2_0))->GetBytes(), 0);
-    ResampleGaussian5tap_VertexData_8e4c5d82_2_5_2 = ::g::Uno::Graphics::IndexBuffer::New1(uPtr(::g::Uno::Runtime::Implementation::Internal::BufferConverters::ToBuffer9(Indices_44444bad_2_3_1))->GetBytes(), 0);
-    ResampleGaussian5tap_VertexData_8e4c5d82_2_5_3 = ::g::Uno::Graphics::VertexBuffer::New1(uPtr(::g::Uno::Runtime::Implementation::Internal::BufferConverters::ToBuffer3(Vertices_44444bad_2_2_0))->GetBytes(), 0);
-    ResampleGaussian9tap_VertexData_6379debe_2_5_2 = ::g::Uno::Graphics::IndexBuffer::New1(uPtr(::g::Uno::Runtime::Implementation::Internal::BufferConverters::ToBuffer9(Indices_44444bad_2_3_1))->GetBytes(), 0);
-    ResampleGaussian9tap_VertexData_6379debe_2_5_3 = ::g::Uno::Graphics::VertexBuffer::New1(uPtr(::g::Uno::Runtime::Implementation::Internal::BufferConverters::ToBuffer3(Vertices_44444bad_2_2_0))->GetBytes(), 0);
-    GaussianBlurSeparable_VertexData_2aabda0d_2_5_2 = ::g::Uno::Graphics::IndexBuffer::New1(uPtr(::g::Uno::Runtime::Implementation::Internal::BufferConverters::ToBuffer9(Indices_44444bad_2_3_1))->GetBytes(), 0);
-    GaussianBlurSeparable_VertexData_2aabda0d_2_5_3 = ::g::Uno::Graphics::VertexBuffer::New1(uPtr(::g::Uno::Runtime::Implementation::Internal::BufferConverters::ToBuffer3(Vertices_44444bad_2_2_0))->GetBytes(), 0);
+    ResampleBilinear_VertexData_44444bad_2_5_2 = ::g::Uno::Graphics::IndexBuffer::New5(Indices_44444bad_2_3_1, 0);
+    ResampleBilinear_VertexData_44444bad_2_5_3 = ::g::Uno::Graphics::VertexBuffer::New3(Vertices_44444bad_2_2_0, 0);
+    ResampleGaussian5tap_VertexData_8e4c5d82_2_5_2 = ::g::Uno::Graphics::IndexBuffer::New5(Indices_44444bad_2_3_1, 0);
+    ResampleGaussian5tap_VertexData_8e4c5d82_2_5_3 = ::g::Uno::Graphics::VertexBuffer::New3(Vertices_44444bad_2_2_0, 0);
+    ResampleGaussian9tap_VertexData_6379debe_2_5_2 = ::g::Uno::Graphics::IndexBuffer::New5(Indices_44444bad_2_3_1, 0);
+    ResampleGaussian9tap_VertexData_6379debe_2_5_3 = ::g::Uno::Graphics::VertexBuffer::New3(Vertices_44444bad_2_2_0, 0);
+    GaussianBlurSeparable_VertexData_2aabda0d_2_5_2 = ::g::Uno::Graphics::IndexBuffer::New5(Indices_44444bad_2_3_1, 0);
+    GaussianBlurSeparable_VertexData_2aabda0d_2_5_3 = ::g::Uno::Graphics::VertexBuffer::New3(Vertices_44444bad_2_2_0, 0);
     _draw_44444bad = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New1(::g::FuseEffects_bundle::EffectHelpers9b892494());
     _draw_8e4c5d82 = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New1(::g::FuseEffects_bundle::EffectHelperse7e608d1());
     _draw_6379debe = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New1(::g::FuseEffects_bundle::EffectHelpersd8c2e3e5());
@@ -1730,11 +1722,11 @@ void EffectHelpers::init_DrawCalls()
     _draw_8e4c5d82.Use();
     _draw_8e4c5d82.Attrib1(0, 2, ResampleGaussian5tap_VertexData_8e4c5d82_2_5_3, 8, 0);
     _draw_8e4c5d82.Uniform(1, centerWeight);
-    _draw_8e4c5d82.Uniform2(2, ::g::Uno::Float2__op_Division2((ind1 = ::g::Uno::Float4__New7(::g::Uno::Float2__op_UnaryNegation(diagonalOffsets), diagonalOffsets), ::g::Uno::Float2__New2(ind1.X, ind1.Y)), ::g::Uno::Float2__op_Implicit2(texSize)));
+    _draw_8e4c5d82.Uniform2(2, ::g::Uno::Float2__op_Division2((ind1 = ::g::Uno::Float4__New7(::g::Uno::Float2__op_UnaryNegation(diagonalOffsets), diagonalOffsets), ::g::Uno::Float2__New2(ind1.X, ind1.Y)), ::g::Uno::Float2__op_Implicit1(texSize)));
     _draw_8e4c5d82.Uniform(3, diagonalWeight);
-    _draw_8e4c5d82.Uniform2(4, ::g::Uno::Float2__op_Division2((ind2 = ::g::Uno::Float4__New7(::g::Uno::Float2__op_UnaryNegation(diagonalOffsets), diagonalOffsets), ::g::Uno::Float2__New2(ind2.W, ind2.X)), ::g::Uno::Float2__op_Implicit2(texSize)));
-    _draw_8e4c5d82.Uniform2(5, ::g::Uno::Float2__op_Division2((ind3 = ::g::Uno::Float4__New7(::g::Uno::Float2__op_UnaryNegation(diagonalOffsets), diagonalOffsets), ::g::Uno::Float2__New2(ind3.Z, ind3.W)), ::g::Uno::Float2__op_Implicit2(texSize)));
-    _draw_8e4c5d82.Uniform2(6, ::g::Uno::Float2__op_Division2((ind4 = ::g::Uno::Float4__New7(::g::Uno::Float2__op_UnaryNegation(diagonalOffsets), diagonalOffsets), ::g::Uno::Float2__New2(ind4.Y, ind4.Z)), ::g::Uno::Float2__op_Implicit2(texSize)));
+    _draw_8e4c5d82.Uniform2(4, ::g::Uno::Float2__op_Division2((ind2 = ::g::Uno::Float4__New7(::g::Uno::Float2__op_UnaryNegation(diagonalOffsets), diagonalOffsets), ::g::Uno::Float2__New2(ind2.W, ind2.X)), ::g::Uno::Float2__op_Implicit1(texSize)));
+    _draw_8e4c5d82.Uniform2(5, ::g::Uno::Float2__op_Division2((ind3 = ::g::Uno::Float4__New7(::g::Uno::Float2__op_UnaryNegation(diagonalOffsets), diagonalOffsets), ::g::Uno::Float2__New2(ind3.Z, ind3.W)), ::g::Uno::Float2__op_Implicit1(texSize)));
+    _draw_8e4c5d82.Uniform2(6, ::g::Uno::Float2__op_Division2((ind4 = ::g::Uno::Float4__New7(::g::Uno::Float2__op_UnaryNegation(diagonalOffsets), diagonalOffsets), ::g::Uno::Float2__New2(ind4.Y, ind4.Z)), ::g::Uno::Float2__op_Implicit1(texSize)));
     _draw_8e4c5d82.Sampler3(7, tex, ::g::Uno::Graphics::SamplerState__LinearClamp());
     _draw_8e4c5d82.Draw(6, 2, ResampleGaussian5tap_VertexData_8e4c5d82_2_5_2);
     dc->PopRenderTarget();
@@ -1752,15 +1744,14 @@ EffectHelpers* EffectHelpers::New1()
 // public static Fuse.Effects.EffectHelpers get_Instance() [static] :14
 EffectHelpers* EffectHelpers::Instance()
 {
-    uStackFrame __("Fuse.Effects.EffectHelpers", "get_Instance()");
     EffectHelpers* ind11;
     ind11 = EffectHelpers::_instance_;
     return (ind11 != NULL) ? ind11 : (EffectHelpers*)(EffectHelpers::_instance_ = EffectHelpers::New1());
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Effects/Effect.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Effects/Effect.uno
+// -------------------------------------------------------------------------
 
 // public enum EffectType :8
 uEnumType* EffectType_typeof()
@@ -1776,8 +1767,8 @@ uEnumType* EffectType_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Effects/1.9.0/Halftone.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Effects/1.10.0-rc1/Halftone.uno
+// ------------------------------------------------------------------
 
 // public sealed class Halftone :12
 // {
@@ -1904,7 +1895,7 @@ void Halftone__OnRender_fn(Halftone* __this, ::g::Fuse::DrawContext* dc, ::g::Un
 {
     uStackFrame __("Fuse.Effects.Halftone", "OnRender(Fuse.DrawContext,Uno.Rect)");
     ::g::Uno::Rect elementRect_ = *elementRect;
-    ::g::Uno::Graphics::Framebuffer* original = uPtr(__this->Element())->CaptureRegion(dc, elementRect_, ::g::Uno::Float2__op_Implicit2(::g::Uno::Int2__New1(0)));
+    ::g::Uno::Graphics::Framebuffer* original = uPtr(__this->Element())->CaptureRegion(dc, elementRect_, ::g::Uno::Float2__op_Implicit1(::g::Uno::Int2__New1(0)));
 
     if (original == NULL)
         return;
@@ -1978,7 +1969,6 @@ void Halftone__set_Spacing_fn(Halftone* __this, float* value)
 // public Halftone() [instance] :14
 void Halftone::ctor_4()
 {
-    uStackFrame __("Fuse.Effects.Halftone", ".ctor()");
     _spacing = 5.0f;
     _intensity = 1.0f;
     _smoothness = 2.0f;
@@ -2010,7 +2000,7 @@ void Halftone::DotTint(float value)
 void Halftone::init_DrawCalls()
 {
     uStackFrame __("Fuse.Effects.Halftone", "init_DrawCalls()");
-    OnRender_VertexData_4b464452_7_2_1 = ::g::Uno::Graphics::VertexBuffer::New1(uPtr(::g::Uno::Runtime::Implementation::Internal::BufferConverters::ToBuffer3(uArray::Init< ::g::Uno::Float2>(::TYPES[1/*float2[]*/], 6, ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(0.0f, 1.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(1.0f, 0.0f))))->GetBytes(), 0);
+    OnRender_VertexData_4b464452_7_2_1 = ::g::Uno::Graphics::VertexBuffer::New3(uArray::Init< ::g::Uno::Float2>(::TYPES[1/*float2[]*/], 6, ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(0.0f, 1.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(1.0f, 0.0f)), 0);
     OnRender_LocalTransform_4b464452_4_9_2 = ::g::Uno::Matrix::Translation(-::g::Uno::Float2__New1(0.0f).X, -::g::Uno::Float2__New1(0.0f).Y, 0.0f);
     OnRender_LocalTransform_4b464452_4_9_3 = ::g::Uno::Matrix::RotationZ(0.0f);
     _draw_4b464452 = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New1(::g::FuseEffects_bundle::Halftone3c4c510c());
@@ -2097,8 +2087,8 @@ Halftone* Halftone::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Effects/1.9.0/Mask.uno
-// ---------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Effects/1.10.0-rc1/Mask.uno
+// --------------------------------------------------------------
 
 // public sealed class Mask :13
 // {
@@ -2391,11 +2381,11 @@ void Mask::init_DrawCalls()
 {
     uStackFrame __("Fuse.Effects.Mask", "init_DrawCalls()");
     uArray* Vertices_e56a2f35_7_1_0 = uArray::Init< ::g::Uno::Float2>(::TYPES[1/*float2[]*/], 6, ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(0.0f, 1.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(0.0f, 0.0f), ::g::Uno::Float2__New2(1.0f, 1.0f), ::g::Uno::Float2__New2(1.0f, 0.0f));
-    OnRender_VertexData_e56a2f35_7_2_1 = ::g::Uno::Graphics::VertexBuffer::New1(uPtr(::g::Uno::Runtime::Implementation::Internal::BufferConverters::ToBuffer3(Vertices_e56a2f35_7_1_0))->GetBytes(), 0);
+    OnRender_VertexData_e56a2f35_7_2_1 = ::g::Uno::Graphics::VertexBuffer::New3(Vertices_e56a2f35_7_1_0, 0);
     OnRender_LocalTransform_e56a2f35_4_9_2 = ::g::Uno::Matrix::Translation(-::g::Uno::Float2__New1(0.0f).X, -::g::Uno::Float2__New1(0.0f).Y, 0.0f);
     OnRender_LocalTransform_e56a2f35_4_9_3 = ::g::Uno::Matrix::RotationZ(0.0f);
-    OnRender_VertexData_97b14dfa_7_2_1 = ::g::Uno::Graphics::VertexBuffer::New1(uPtr(::g::Uno::Runtime::Implementation::Internal::BufferConverters::ToBuffer3(Vertices_e56a2f35_7_1_0))->GetBytes(), 0);
-    OnRender_VertexData_f63e1f3f_7_2_1 = ::g::Uno::Graphics::VertexBuffer::New1(uPtr(::g::Uno::Runtime::Implementation::Internal::BufferConverters::ToBuffer3(Vertices_e56a2f35_7_1_0))->GetBytes(), 0);
+    OnRender_VertexData_97b14dfa_7_2_1 = ::g::Uno::Graphics::VertexBuffer::New3(Vertices_e56a2f35_7_1_0, 0);
+    OnRender_VertexData_f63e1f3f_7_2_1 = ::g::Uno::Graphics::VertexBuffer::New3(Vertices_e56a2f35_7_1_0, 0);
     _draw_e56a2f35 = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New1(::g::FuseEffects_bundle::Maskb04eaf92());
     _draw_97b14dfa = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New1(::g::FuseEffects_bundle::Mask0da73af7());
     _draw_f63e1f3f = ::g::Uno::Runtime::Implementation::ShaderBackends::OpenGL::GLDrawCall__New1(::g::FuseEffects_bundle::Mask6affc65c());
@@ -2442,8 +2432,8 @@ Mask* Mask::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Effects/1.9.0/Mask.uno
-// ---------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Effects/1.10.0-rc1/Mask.uno
+// --------------------------------------------------------------
 
 // public enum Mask.MaskMode :52
 uEnumType* Mask__MaskMode_typeof()

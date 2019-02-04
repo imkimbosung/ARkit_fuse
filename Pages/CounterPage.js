@@ -10,7 +10,7 @@ function back(){
 function counter(){
     //console.log('UPID'); //Sign_in 함수가 호출되었는지 확인
     count = count + 1;
-	fetch('http://58df6b50.ngrok.io/test',{method: 'POST', headers: { "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"}, body:"data="+count }).then(function(res){
+	fetch('http://0030605e.ngrok.io/test',{method: 'POST', headers: { "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"}, body:"data="+count }).then(function(res){
 		status=res.status;
 		response_ok = res.ok;
 	    return res.json();

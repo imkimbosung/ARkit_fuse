@@ -1,13 +1,13 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Byte.uno.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Byte.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
-#include <Uno.Object.h>
+#include <Uno.ValueType.h>
 
 namespace g{
 namespace Uno{
 
-// public intrinsic struct Byte :12
+// public intrinsic struct Byte :10
 // {
 uStructType* Byte_typeof();
 void Byte__Equals_fn(uint8_t* __this, uType* __type, uObject* o, bool* __retval);

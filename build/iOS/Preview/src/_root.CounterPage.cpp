@@ -47,7 +47,7 @@ namespace g{
 static void CounterPage__cctor_4_fn(uType* __type)
 {
     CounterPage::__g_static_nametable1_ = uArray::Init<uString*>(::TYPES[0/*string[]*/], 3, ::STRINGS[0/*"router"*/], ::STRINGS[1/*"temp_eb1"*/], ::STRINGS[2/*"temp_eb2"*/]);
-    CounterPage::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[3/*"Value"*/]);
+    CounterPage::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[3/*"Value"*/]);
 }
 
 static void CounterPage_build(uType* type)

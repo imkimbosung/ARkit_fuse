@@ -46,8 +46,8 @@ namespace g{
 namespace Fuse{
 namespace Designer{
 
-// /usr/local/share/uno/Packages/Fuse.Designer/1.9.0/Attributes.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Designer/1.10.0-rc1/Attributes.uno
+// ---------------------------------------------------------------------
 
 // public sealed class AdvancedAttribute :57
 // {
@@ -99,8 +99,8 @@ AdvancedAttribute* AdvancedAttribute::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Designer/1.9.0/Attributes.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Designer/1.10.0-rc1/Attributes.uno
+// ---------------------------------------------------------------------
 
 // public sealed class ChildExtensionAttribute :12
 // {
@@ -152,8 +152,8 @@ ChildExtensionAttribute* ChildExtensionAttribute::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Designer/1.9.0/Attributes.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Designer/1.10.0-rc1/Attributes.uno
+// ---------------------------------------------------------------------
 
 // public sealed class ColorAttribute :111
 // {
@@ -205,8 +205,8 @@ ColorAttribute* ColorAttribute::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Designer/1.9.0/Attributes.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Designer/1.10.0-rc1/Attributes.uno
+// ---------------------------------------------------------------------
 
 // public sealed class ComponentOfAttribute :93
 // {
@@ -263,8 +263,8 @@ ComponentOfAttribute* ComponentOfAttribute::New1(uString* entityClass)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Designer/1.9.0/Attributes.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Designer/1.10.0-rc1/Attributes.uno
+// ---------------------------------------------------------------------
 
 // public sealed class DefaultComponentAttribute :99
 // {
@@ -321,8 +321,8 @@ DefaultComponentAttribute* DefaultComponentAttribute::New1(uString* componentCla
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Designer/1.9.0/Attributes.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Designer/1.10.0-rc1/Attributes.uno
+// ---------------------------------------------------------------------
 
 // public sealed class DefaultInstanceAttribute :14
 // {
@@ -382,8 +382,8 @@ DefaultInstanceAttribute* DefaultInstanceAttribute::New1(uString* targetProperty
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Designer/1.9.0/Attributes.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Designer/1.10.0-rc1/Attributes.uno
+// ---------------------------------------------------------------------
 
 // public sealed class DesignerNameAttribute :87
 // {
@@ -440,8 +440,8 @@ DesignerNameAttribute* DesignerNameAttribute::New1(uString* name)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Designer/1.9.0/Attributes.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Designer/1.10.0-rc1/Attributes.uno
+// ---------------------------------------------------------------------
 
 // public sealed class DragDropPriorityAttribute :85
 // {
@@ -493,8 +493,8 @@ DragDropPriorityAttribute* DragDropPriorityAttribute::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Designer/1.9.0/Attributes.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Designer/1.10.0-rc1/Attributes.uno
+// ---------------------------------------------------------------------
 
 // public sealed class ExtensionAttribute :11
 // {
@@ -546,8 +546,8 @@ ExtensionAttribute* ExtensionAttribute::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Designer/1.9.0/Attributes.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Designer/1.10.0-rc1/Attributes.uno
+// ---------------------------------------------------------------------
 
 // public sealed class GroupAttribute :44
 // {
@@ -607,8 +607,8 @@ GroupAttribute* GroupAttribute::New1(uString* name, int32_t priority)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Designer/1.9.0/Attributes.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Designer/1.10.0-rc1/Attributes.uno
+// ---------------------------------------------------------------------
 
 // public sealed class HideAttribute :6
 // {
@@ -660,8 +660,8 @@ HideAttribute* HideAttribute::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Designer/1.9.0/Attributes.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Designer/1.10.0-rc1/Attributes.uno
+// ---------------------------------------------------------------------
 
 // public sealed class HidesAttribute :51
 // {
@@ -718,8 +718,8 @@ HidesAttribute* HidesAttribute::New1(uString* targetProperty)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Designer/1.9.0/Attributes.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Designer/1.10.0-rc1/Attributes.uno
+// ---------------------------------------------------------------------
 
 // public sealed class IconAttribute :26
 // {
@@ -776,8 +776,8 @@ IconAttribute* IconAttribute::New1(uString* path)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Designer/1.9.0/Attributes.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Designer/1.10.0-rc1/Attributes.uno
+// ---------------------------------------------------------------------
 
 // public sealed class InlineAttribute :9
 // {
@@ -829,8 +829,8 @@ InlineAttribute* InlineAttribute::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Designer/1.9.0/Attributes.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Designer/1.10.0-rc1/Attributes.uno
+// ---------------------------------------------------------------------
 
 // public sealed class IntervalAttribute :123
 // {
@@ -887,8 +887,8 @@ IntervalAttribute* IntervalAttribute::New1(float interval)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Designer/1.9.0/Attributes.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Designer/1.10.0-rc1/Attributes.uno
+// ---------------------------------------------------------------------
 
 // public sealed class OptionalHideAttribute :7
 // {
@@ -940,8 +940,8 @@ OptionalHideAttribute* OptionalHideAttribute::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Designer/1.9.0/Attributes.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Designer/1.10.0-rc1/Attributes.uno
+// ---------------------------------------------------------------------
 
 // public sealed class PriorityAttribute :35
 // {
@@ -998,8 +998,8 @@ PriorityAttribute* PriorityAttribute::New1(int32_t Priority1)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Designer/1.9.0/Attributes.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Designer/1.10.0-rc1/Attributes.uno
+// ---------------------------------------------------------------------
 
 // public sealed class RangeAttribute :114
 // {
@@ -1093,8 +1093,8 @@ RangeAttribute* RangeAttribute::New2(float min, float max, float exponent)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Designer/1.9.0/Attributes.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Designer/1.10.0-rc1/Attributes.uno
+// ---------------------------------------------------------------------
 
 // public sealed class RecursionSafeAttribute :129
 // {
@@ -1146,8 +1146,8 @@ RecursionSafeAttribute* RecursionSafeAttribute::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Designer/1.9.0/Attributes.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Designer/1.10.0-rc1/Attributes.uno
+// ---------------------------------------------------------------------
 
 // public sealed class RequiredComponentAttribute :105
 // {
@@ -1204,8 +1204,8 @@ RequiredComponentAttribute* RequiredComponentAttribute::New1(uString* componentC
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Designer/1.9.0/Attributes.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Designer/1.10.0-rc1/Attributes.uno
+// ---------------------------------------------------------------------
 
 // public sealed class SpawnableAttribute :59
 // {
@@ -1257,8 +1257,8 @@ SpawnableAttribute* SpawnableAttribute::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Designer/1.9.0/Attributes.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Designer/1.10.0-rc1/Attributes.uno
+// ---------------------------------------------------------------------
 
 // public sealed class SpawnsAttribute :61
 // {
@@ -1318,8 +1318,8 @@ SpawnsAttribute* SpawnsAttribute::New1(uString* sourceType, uString* targetPrope
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Designer/1.9.0/Attributes.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Designer/1.10.0-rc1/Attributes.uno
+// ---------------------------------------------------------------------
 
 // public sealed class ThicknessAttribute :112
 // {
@@ -1371,8 +1371,8 @@ ThicknessAttribute* ThicknessAttribute::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Designer/1.9.0/Attributes.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Designer/1.10.0-rc1/Attributes.uno
+// ---------------------------------------------------------------------
 
 // public sealed class TransitionAttribute :72
 // {
@@ -1435,8 +1435,8 @@ TransitionAttribute* TransitionAttribute::New1(uString* incomingType, uString* t
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Designer/1.9.0/UnoHostInterface.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Designer/1.10.0-rc1/UnoHostInterface.uno
+// ---------------------------------------------------------------------------
 
 // public static extern class UnoHostInterface :6
 // {

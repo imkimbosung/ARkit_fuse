@@ -64,8 +64,8 @@ namespace g{
 namespace Fuse{
 namespace Layouts{
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Layouts/CircleLayout.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Layouts/CircleLayout.uno
+// --------------------------------------------------------------------------------------
 
 // public sealed class CircleLayout :32
 // {
@@ -298,8 +298,8 @@ CircleLayout* CircleLayout::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Layouts/GridLayout.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Layouts/GridLayout.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Column :213
 // {
@@ -458,8 +458,8 @@ Column* Column::New4(Column* copy, int32_t creation)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Layouts/ColumnLayout.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Layouts/ColumnLayout.uno
+// --------------------------------------------------------------------------------------
 
 // public sealed class ColumnLayout :28
 // {
@@ -892,8 +892,8 @@ ColumnLayout* ColumnLayout::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Layouts/ColumnLayout.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Layouts/ColumnLayout.uno
+// --------------------------------------------------------------------------------------
 
 // public enum ColumnLayoutSizing :8
 uEnumType* ColumnLayoutSizing_typeof()
@@ -908,8 +908,8 @@ uEnumType* ColumnLayoutSizing_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Layouts/GridLayout.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Layouts/GridLayout.uno
+// ------------------------------------------------------------------------------------
 
 // internal enum DefinitionBase.CreationType :57
 uEnumType* DefinitionBase__CreationType_typeof()
@@ -926,8 +926,8 @@ uEnumType* DefinitionBase__CreationType_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Layouts/DefaultLayout.uno
-// ----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Layouts/DefaultLayout.uno
+// ---------------------------------------------------------------------------------------
 
 // public sealed class DefaultLayout :12
 // {
@@ -1047,8 +1047,8 @@ DefaultLayout* DefaultLayout::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Layouts/GridLayout.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Layouts/GridLayout.uno
+// ------------------------------------------------------------------------------------
 
 // public abstract class DefinitionBase :21
 // {
@@ -1442,8 +1442,8 @@ uString* DefinitionBase::Serialize1(uType* __type, uObject* columns)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Layouts/DockLayout.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Layouts/DockLayout.uno
+// ------------------------------------------------------------------------------------
 
 // public enum Dock :12
 uEnumType* Dock_typeof()
@@ -1461,8 +1461,8 @@ uEnumType* Dock_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Layouts/DockLayout.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Layouts/DockLayout.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class DockLayout :17
 // {
@@ -1746,8 +1746,8 @@ void DockLayout::SetDock(::g::Fuse::Visual* elm, int32_t dock)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Layouts/WrapLayout.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Layouts/WrapLayout.uno
+// ------------------------------------------------------------------------------------
 
 // public enum FlowDirection :12
 uEnumType* FlowDirection_typeof()
@@ -1762,8 +1762,8 @@ uEnumType* FlowDirection_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Layouts/GridLayout.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Layouts/GridLayout.uno
+// ------------------------------------------------------------------------------------
 
 // public enum GridChildOrder :263
 uEnumType* GridChildOrder_typeof()
@@ -1778,8 +1778,8 @@ uEnumType* GridChildOrder_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Layouts/GridLayout.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Layouts/GridLayout.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class GridLayout :269
 // {
@@ -1802,7 +1802,7 @@ static void GridLayout__cctor_1_fn(uType* __type)
 static void GridLayout_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("A grid is using incompatible layout parameters which may result in incorrect layout. A grid using `Default` row or column sizing must have only one row or column, or have a known size. Add a `DefaultRow` or `DefaultColumn` to get the desired sizing.");
-    ::STRINGS[1] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Layouts/GridLayout.uno");
+    ::STRINGS[1] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Layouts/GridLayout.uno");
     ::STRINGS[2] = uString::Const("CheckMeasureSettings");
     ::STRINGS[3] = uString::Const("RowCount and ColumnCount must be >= 1");
     ::STRINGS[4] = uString::Const("ModifyCount");
@@ -3411,8 +3411,8 @@ void GridLayout::SetRowSpan(::g::Fuse::Visual* elm, int32_t span)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Layouts/Layout.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Layouts/Layout.uno
+// --------------------------------------------------------------------------------
 
 // public abstract class Layout :11
 // {
@@ -3893,8 +3893,8 @@ float Layout::SimpleOff(float sz, ::g::Uno::Float2 range, int32_t align)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Layouts/Layout.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Layouts/Layout.uno
+// --------------------------------------------------------------------------------
 
 // public static class Layouts :245
 // {
@@ -3929,8 +3929,8 @@ uClassType* Layouts_typeof()
 uSStrong< ::g::Fuse::Layouts::Layout*> Layouts::Default_;
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Layouts/GridLayout.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Layouts/GridLayout.uno
+// ------------------------------------------------------------------------------------
 
 // public enum Metric :189
 uEnumType* Metric_typeof()
@@ -3947,8 +3947,8 @@ uEnumType* Metric_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Layouts/StackLayout.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Layouts/StackLayout.uno
+// -------------------------------------------------------------------------------------
 
 // public enum Orientation :12
 uEnumType* Orientation_typeof()
@@ -3963,8 +3963,8 @@ uEnumType* Orientation_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Layouts/GridLayout.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Layouts/GridLayout.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Row :238
 // {
@@ -4126,8 +4126,8 @@ Row* Row::New4(Row* copy, int32_t creation)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Layouts/StackLayout.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Layouts/StackLayout.uno
+// -------------------------------------------------------------------------------------
 
 // public sealed class StackLayout :24
 // {
@@ -4522,8 +4522,8 @@ StackLayout* StackLayout::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Layouts/StackLayout.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Layouts/StackLayout.uno
+// -------------------------------------------------------------------------------------
 
 // public enum StackLayoutMode :18
 uEnumType* StackLayoutMode_typeof()
@@ -4538,8 +4538,8 @@ uEnumType* StackLayoutMode_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Layouts/WrapLayout.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Layouts/WrapLayout.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class WrapLayout :17
 // {

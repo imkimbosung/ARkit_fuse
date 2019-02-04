@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/LayoutMasterBoxSizing.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/LayoutMasterBoxSizing.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

@@ -25,8 +25,8 @@ namespace Controls{
 namespace Native{
 namespace Android{
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Android/Button.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Android/Button.uno
+// --------------------------------------------------------------------------------
 
 // public sealed extern class Button :6
 // {
@@ -76,8 +76,8 @@ Button* Button::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.DatePicker/1.9.0/Android/DatePicker.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.DatePicker/1.10.0-rc1/Android/DatePicker.uno
+// ----------------------------------------------------------------------------------------
 
 // internal sealed extern class DatePickerView :11
 // {
@@ -124,8 +124,8 @@ DatePickerView* DatePickerView::New1(::g::Fuse::Controls::DatePicker* host)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Android/GraphicsView.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Android/GraphicsView.uno
+// --------------------------------------------------------------------------------------
 
 // public abstract extern class GraphicsViewBase :8
 // {
@@ -158,8 +158,8 @@ void GraphicsViewBase::ctor_()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Android/ScrollView.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Android/ScrollView.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed extern class ScrollView :7
 // {
@@ -208,8 +208,8 @@ ScrollView* ScrollView::New1(uObject* host)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Android/Slider.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Android/Slider.uno
+// --------------------------------------------------------------------------------
 
 // public sealed extern class Slider :7
 // {
@@ -274,8 +274,8 @@ Slider* Slider::New1(uObject* host)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Android/SurfaceView.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Android/SurfaceView.uno
+// -------------------------------------------------------------------------------------
 
 // public sealed extern class SurfaceView :7
 // {
@@ -327,8 +327,8 @@ SurfaceView* SurfaceView::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Android/Switch.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Android/Switch.uno
+// --------------------------------------------------------------------------------
 
 // public sealed extern class Switch :8
 // {
@@ -405,8 +405,8 @@ Switch* Switch::New1(uObject* host)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Android/TextureView.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Android/TextureView.uno
+// -------------------------------------------------------------------------------------
 
 // public sealed extern class TextureView :6
 // {
@@ -458,8 +458,8 @@ TextureView* TextureView::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.9.0/Android/TextView.uno
-// -----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Native/1.10.0-rc1/Android/TextView.uno
+// ----------------------------------------------------------------------------------
 
 // public sealed extern class TextView :7
 // {
@@ -509,8 +509,8 @@ TextView* TextView::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.TimePicker/1.9.0/Android/TimePicker.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.TimePicker/1.10.0-rc1/Android/TimePicker.uno
+// ----------------------------------------------------------------------------------------
 
 // internal sealed extern class TimePickerView :11
 // {

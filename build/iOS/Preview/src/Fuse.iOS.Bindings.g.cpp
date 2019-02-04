@@ -11,8 +11,8 @@ namespace Fuse{
 namespace iOS{
 namespace Bindings{
 
-// /usr/local/share/uno/Packages/Fuse.iOS.TextRenderer/1.9.0/TextRenderer.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.iOS.TextRenderer/1.10.0-rc1/TextRenderer.uno
+// -------------------------------------------------------------------------------
 
 // internal extern struct CGColorSpaceRef :186
 // {
@@ -26,6 +26,7 @@ uStructType* CGColorSpaceRef_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.Alignment = alignof(::CGColorSpaceRef);
     options.ValueSize = sizeof(::CGColorSpaceRef);
     options.TypeSize = sizeof(uStructType);
@@ -35,8 +36,8 @@ uStructType* CGColorSpaceRef_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.iOS.TextRenderer/1.9.0/TextRenderer.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.iOS.TextRenderer/1.10.0-rc1/TextRenderer.uno
+// -------------------------------------------------------------------------------
 
 // internal extern struct CGContextRef :190
 // {
@@ -50,6 +51,7 @@ uStructType* CGContextRef_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.Alignment = alignof(::CGContextRef);
     options.ValueSize = sizeof(::CGContextRef);
     options.TypeSize = sizeof(uStructType);

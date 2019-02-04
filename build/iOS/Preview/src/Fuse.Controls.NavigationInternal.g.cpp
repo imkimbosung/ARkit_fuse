@@ -47,15 +47,15 @@ namespace Fuse{
 namespace Controls{
 namespace NavigationInternal{
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/.uno/ux15/Fuse.Controls.NavigationInternal.BlockInputWhileNavigating.g.uno
-// ---------------------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/.uno/ux15/Fuse.Controls.NavigationInternal.BlockInputWhileNavigating.g.uno
+// --------------------------------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class BlockInputWhileNavigating :4
 // {
 // static BlockInputWhileNavigating() :8
 static void BlockInputWhileNavigating__cctor_2_fn(uType* __type)
 {
-    BlockInputWhileNavigating::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[0/*"HitTestMode"*/]);
+    BlockInputWhileNavigating::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[0/*"HitTestMode"*/]);
 }
 
 static void BlockInputWhileNavigating_build(uType* type)
@@ -170,8 +170,8 @@ BlockInputWhileNavigating* BlockInputWhileNavigating::New3(::g::Fuse::Controls::
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/NavigationInternal/EnterHorizontal.uno
-// ---------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/NavigationInternal/EnterHorizontal.uno
+// --------------------------------------------------------------------------------------------------------
 
 // public partial sealed class EnterHorizontal :9
 // {
@@ -288,8 +288,8 @@ EnterHorizontal* EnterHorizontal::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/NavigationInternal/EnterVertical.uno
-// -------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/NavigationInternal/EnterVertical.uno
+// ------------------------------------------------------------------------------------------------------
 
 // public partial sealed class EnterVertical :9
 // {
@@ -406,8 +406,8 @@ EnterVertical* EnterVertical::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/NavigationInternal/ExitHorizontal.uno
-// --------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/NavigationInternal/ExitHorizontal.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public partial sealed class ExitHorizontal :8
 // {
@@ -524,8 +524,8 @@ ExitHorizontal* ExitHorizontal::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/NavigationInternal/ExitVertical.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/NavigationInternal/ExitVertical.uno
+// -----------------------------------------------------------------------------------------------------
 
 // public partial sealed class ExitVertical :9
 // {
@@ -642,8 +642,8 @@ ExitVertical* ExitVertical::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/.uno/ux15/Fuse.Controls.NavigationInternal.NavEnterHorizontal.g.uno
-// --------------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/.uno/ux15/Fuse.Controls.NavigationInternal.NavEnterHorizontal.g.uno
+// -------------------------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class NavEnterHorizontal :4
 // {
@@ -770,8 +770,8 @@ NavEnterHorizontal* NavEnterHorizontal::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/.uno/ux15/Fuse.Controls.NavigationInternal.NavExitHorizontal.g.uno
-// -------------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/.uno/ux15/Fuse.Controls.NavigationInternal.NavExitHorizontal.g.uno
+// ------------------------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class NavExitHorizontal :4
 // {
@@ -898,8 +898,8 @@ NavExitHorizontal* NavExitHorizontal::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/.uno/ux15/Fuse.Controls.NavigationInternal.NavRemoveHorizontal.g.uno
-// ---------------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/.uno/ux15/Fuse.Controls.NavigationInternal.NavRemoveHorizontal.g.uno
+// --------------------------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class NavRemoveHorizontal :4
 // {
@@ -1015,15 +1015,15 @@ NavRemoveHorizontal* NavRemoveHorizontal::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/.uno/ux15/Fuse.Controls.NavigationInternal.PageWhileNavigatingFreeze.g.uno
-// ---------------------------------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/.uno/ux15/Fuse.Controls.NavigationInternal.PageWhileNavigatingFreeze.g.uno
+// --------------------------------------------------------------------------------------------------------------------------------------------
 
 // public partial sealed class PageWhileNavigatingFreeze :4
 // {
 // static PageWhileNavigatingFreeze() :8
 static void PageWhileNavigatingFreeze__cctor_2_fn(uType* __type)
 {
-    PageWhileNavigatingFreeze::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[9/*"IsFrozen"*/]);
+    PageWhileNavigatingFreeze::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[9/*"IsFrozen"*/]);
 }
 
 static void PageWhileNavigatingFreeze_build(uType* type)

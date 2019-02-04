@@ -1,9 +1,9 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Edit.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Edit.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Fuse.Text.Edit.Caret.h>
-#include <Uno.Object.h>
+#include <Uno.ValueType.h>
 namespace g{namespace Fuse{namespace Text{namespace Edit{struct CaretContext;}}}}
 namespace g{namespace Fuse{namespace Text{struct PositionedRun;}}}
 namespace g{namespace Uno{namespace Collections{struct List;}}}
@@ -18,7 +18,7 @@ namespace Edit{
 // public struct CaretContext :25
 // {
 uStructType* CaretContext_typeof();
-void CaretContext__ctor__fn(CaretContext* __this, ::g::Uno::Collections::List* pruns, uString* source);
+void CaretContext__ctor_1_fn(CaretContext* __this, ::g::Uno::Collections::List* pruns, uString* source);
 void CaretContext__Backspace_fn(CaretContext* __this, int32_t* i, uString** __retval);
 void CaretContext__Clamp_fn(CaretContext* __this, int32_t* i, int32_t* __retval);
 void CaretContext__ClosestCaretOnLine_fn(CaretContext* __this, ::g::Uno::Float2* pos, int32_t* desiredLine, int32_t* def, int32_t* __retval);
@@ -50,7 +50,7 @@ struct CaretContext
     uStrong< ::g::Uno::Collections::List*> _carets;
     uStrong<uArray*> _runIndices;
 
-    void ctor_(::g::Uno::Collections::List* pruns, uString* source);
+    void ctor_1(::g::Uno::Collections::List* pruns, uString* source);
     uString* Backspace(int32_t* i);
     int32_t Clamp(int32_t i);
     int32_t ClosestCaretOnLine(::g::Uno::Float2 pos, int32_t desiredLine, int32_t def);

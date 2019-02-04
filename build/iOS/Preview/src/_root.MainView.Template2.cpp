@@ -20,7 +20,7 @@ namespace g{
 // static Template2() :61
 static void MainView__Template2__cctor__fn(uType* __type)
 {
-    MainView__Template2::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[0/*"CounterPage"*/]);
+    MainView__Template2::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[0/*"CounterPage"*/]);
 }
 
 static void MainView__Template2_build(uType* type)

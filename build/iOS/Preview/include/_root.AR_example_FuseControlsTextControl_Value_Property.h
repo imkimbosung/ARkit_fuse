@@ -11,7 +11,7 @@ namespace g{struct AR_example_FuseControlsTextControl_Value_Property;}
 
 namespace g{
 
-// internal sealed class AR_example_FuseControlsTextControl_Value_Property :11
+// internal sealed class AR_example_FuseControlsTextControl_Value_Property :30
 // {
 ::g::Uno::UX::Property1_type* AR_example_FuseControlsTextControl_Value_Property_typeof();
 void AR_example_FuseControlsTextControl_Value_Property__ctor_3_fn(AR_example_FuseControlsTextControl_Value_Property* __this, ::g::Fuse::Controls::TextControl* obj, ::g::Uno::UX::Selector* name);

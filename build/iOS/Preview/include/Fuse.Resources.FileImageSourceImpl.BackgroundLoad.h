@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Resources/FileImageSource.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Resources/FileImageSource.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -16,7 +16,6 @@ namespace Resources{
 // {
 uType* FileImageSourceImpl__BackgroundLoad_typeof();
 void FileImageSourceImpl__BackgroundLoad__ctor__fn(FileImageSourceImpl__BackgroundLoad* __this, ::g::Uno::UX::FileSource* file, uDelegate* done, uDelegate* fail);
-void FileImageSourceImpl__BackgroundLoad__GWDoneCallback_fn(FileImageSourceImpl__BackgroundLoad* __this, ::g::Uno::Graphics::Texture2D* tex);
 void FileImageSourceImpl__BackgroundLoad__New1_fn(::g::Uno::UX::FileSource* file, uDelegate* done, uDelegate* fail, FileImageSourceImpl__BackgroundLoad** __retval);
 void FileImageSourceImpl__BackgroundLoad__Run_fn(FileImageSourceImpl__BackgroundLoad* __this);
 void FileImageSourceImpl__BackgroundLoad__UIDoneCallback_fn(FileImageSourceImpl__BackgroundLoad* __this);
@@ -32,7 +31,6 @@ struct FileImageSourceImpl__BackgroundLoad : uObject
     uStrong< ::g::Uno::Graphics::Texture2D*> _tex;
 
     void ctor_(::g::Uno::UX::FileSource* file, uDelegate* done, uDelegate* fail);
-    void GWDoneCallback(::g::Uno::Graphics::Texture2D* tex);
     void Run();
     void UIDoneCallback();
     void UIFailCallback();

@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/VisualBounds.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/VisualBounds.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -45,7 +45,7 @@ void VisualBounds__Merge1_fn(uObject* visuals, int32_t* bt, VisualBounds** __ret
 void VisualBounds__MergeChild_fn(VisualBounds* __this, ::g::Fuse::Visual* child, VisualBounds* nb, VisualBounds** __retval);
 void VisualBounds__Min8_fn(float* a, float* b, float* c, float* d, float* e, float* f, float* g, float* h, float* __retval);
 void VisualBounds__New1_fn(VisualBounds** __retval);
-void VisualBounds__op_Implicit1_fn(VisualBounds* vb, ::g::Fuse::Box* __retval);
+void VisualBounds__op_Implicit_fn(VisualBounds* vb, ::g::Fuse::Box* __retval);
 void VisualBounds__Point_fn(::g::Uno::Float3* pt, VisualBounds** __retval);
 void VisualBounds__Rect_fn(::g::Uno::Float2* a, ::g::Uno::Float2* b, VisualBounds** __retval);
 void VisualBounds__Rect1_fn(::g::Uno::Float3* a, ::g::Uno::Float3* b, VisualBounds** __retval);
@@ -96,7 +96,7 @@ struct VisualBounds : uObject
     static VisualBounds* Merge1(uObject* visuals, int32_t bt);
     static float Min8(float a, float b, float c, float d, float e, float f, float g, float h);
     static VisualBounds* New1();
-    static ::g::Fuse::Box op_Implicit1(VisualBounds* vb);
+    static ::g::Fuse::Box op_Implicit(VisualBounds* vb);
     static VisualBounds* Point(::g::Uno::Float3 pt);
     static VisualBounds* Rect(::g::Uno::Float2 a, ::g::Uno::Float2 b);
     static VisualBounds* Rect1(::g::Uno::Float3 a, ::g::Uno::Float3 b);

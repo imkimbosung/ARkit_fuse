@@ -313,8 +313,8 @@ namespace g{
 namespace Fuse{
 namespace Reactive{
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Abs :287
 // {
@@ -377,8 +377,8 @@ Abs* Abs::New1(::g::Fuse::Reactive::Expression* operand)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Acos :231
 // {
@@ -441,8 +441,8 @@ Acos* Acos::New1(::g::Fuse::Reactive::Expression* operand)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Operators.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Operators.uno
+// --------------------------------------------------------------------------------
 
 // public sealed class Add :49
 // {
@@ -518,8 +518,8 @@ Add* Add::New1(::g::Fuse::Reactive::Expression* left, ::g::Fuse::Reactive::Expre
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Color.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Color.uno
+// ----------------------------------------------------------------------------
 
 // public sealed class AdjustHueFunction :268
 // {
@@ -596,8 +596,8 @@ AdjustHueFunction* AdjustHueFunction::New1(::g::Fuse::Reactive::Expression* colo
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Alternate :98
 // {
@@ -684,8 +684,8 @@ Alternate* Alternate::New1(::g::Fuse::Reactive::Expression* left, ::g::Fuse::Rea
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Expression.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Expression.uno
+// ---------------------------------------------------------------------------------
 
 // public sealed class Expression.Argument :14
 // {
@@ -813,8 +813,8 @@ Expression__Argument* Expression__Argument::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/VectorFunctions.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/VectorFunctions.uno
+// --------------------------------------------------------------------------------------
 
 // internal class Array :24
 // {
@@ -913,8 +913,8 @@ Array* Array::New1(uArray* args)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Object.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Object.uno
+// -----------------------------------------------------------------------------
 
 // internal sealed class ArrayObject :24
 // {
@@ -1011,8 +1011,8 @@ ArrayObject* ArrayObject::New2(uArray* args)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Asin :222
 // {
@@ -1075,8 +1075,8 @@ Asin* Asin::New1(::g::Fuse::Reactive::Expression* operand)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Atan :240
 // {
@@ -1139,8 +1139,8 @@ Atan* Atan::New1(::g::Fuse::Reactive::Expression* operand)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Atan2 :253
 // {
@@ -1203,8 +1203,8 @@ Atan2* Atan2::New1(::g::Fuse::Reactive::Expression* left, ::g::Fuse::Reactive::E
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class AtanVector :266
 // {
@@ -1286,8 +1286,8 @@ AtanVector* AtanVector::New1(::g::Fuse::Reactive::Expression* operand)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Color.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Color.uno
+// ----------------------------------------------------------------------------
 
 // public abstract class BinaryColorFunction :100
 // {
@@ -1353,8 +1353,8 @@ void BinaryColorFunction::ctor_4(::g::Fuse::Reactive::Expression* color, ::g::Fu
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public abstract class BinaryFloatOperator :169
 // {
@@ -1420,15 +1420,15 @@ void BinaryFloatOperator::ctor_4(::g::Fuse::Reactive::Expression* left, ::g::Fus
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/BinaryOperator.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/BinaryOperator.uno
+// -------------------------------------------------------------------------------------
 
 // public abstract class BinaryOperator :8
 // {
 static void BinaryOperator_build(uType* type)
 {
     ::STRINGS[12] = uString::Const(" No `TryCompute`, or a deprecated form, overriden. Migrate your code to override the one with `bool` return. ");
-    ::STRINGS[13] = uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/BinaryOperator.uno");
+    ::STRINGS[13] = uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/BinaryOperator.uno");
     ::STRINGS[14] = uString::Const("TryCompute");
     ::TYPES[10] = ::g::Fuse::Reactive::Expression_typeof()->Array();
     type->SetInterfaces(
@@ -1574,8 +1574,8 @@ bool BinaryOperator::IsRightOptional()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/DataBinding.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/DataBinding.uno
+// -------------------------------------------------------------------------------
 
 // public enum BindingMode :8
 uEnumType* BindingMode_typeof()
@@ -1596,8 +1596,8 @@ uEnumType* BindingMode_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Device.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Device.uno
+// -----------------------------------------------------------------------------
 
 // public class CapsObject :7
 // {
@@ -1710,7 +1710,7 @@ void CapsObject::ctor_1()
 void CapsObject::ChangeProperty(::g::Uno::UX::Selector name, uObject* value)
 {
     uStackFrame __("Fuse.Reactive.CapsObject", "ChangeProperty(Uno.UX.Selector,object)");
-    ::g::Uno::Collections::Dictionary__set_Item_fn(uPtr(_props), ::g::Uno::UX::Selector__op_Implicit2(name), value);
+    ::g::Uno::Collections::Dictionary__set_Item_fn(uPtr(_props), ::g::Uno::UX::Selector__op_Implicit1(name), value);
     OnPropertyChanged1(name, (uObject*)this);
 }
 
@@ -1764,8 +1764,8 @@ CapsObject* CapsObject::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/MatchCase.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/MatchCase.uno
+// -----------------------------------------------------------------------------
 
 // public sealed class Case :274
 // {
@@ -2065,8 +2065,8 @@ Case* Case::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Ceil :303
 // {
@@ -2129,8 +2129,8 @@ Ceil* Ceil::New1(::g::Fuse::Reactive::Expression* operand)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Clamp :480
 // {
@@ -2236,8 +2236,8 @@ Clamp* Clamp::New1(::g::Fuse::Reactive::Expression* first, ::g::Fuse::Reactive::
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Closure.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Closure.uno
+// ---------------------------------------------------------------------------
 
 // public sealed class Closure :43
 // {
@@ -2377,8 +2377,8 @@ Closure* Closure::New2(::g::Uno::UX::NameTable* nameTable)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Closure.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Closure.uno
+// ---------------------------------------------------------------------------
 
 // public sealed class ClosureArgs :11
 // {
@@ -2467,8 +2467,8 @@ ClosureArgs* ClosureArgs::New2(::g::Uno::UX::NameTable* names)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Closure.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Closure.uno
+// ---------------------------------------------------------------------------
 
 // public delegate void ClosureHandler(object sender, Fuse.Reactive.ClosureArgs args) :38
 uDelegateType* ClosureHandler_typeof()
@@ -2483,8 +2483,8 @@ uDelegateType* ClosureHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Color.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Color.uno
+// ----------------------------------------------------------------------------
 
 // internal static class ColorModel :7
 // {
@@ -2615,8 +2615,8 @@ float ColorModel::Hue_2_RGB(float v1, float v2, float vH)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/ExpressionListener.uno
-// ------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/ExpressionListener.uno
+// -----------------------------------------------------------------------------------------
 
 // public abstract class ComputeExpression :223
 // {
@@ -2754,8 +2754,8 @@ uString* ComputeExpression::Name()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Operators.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Operators.uno
+// --------------------------------------------------------------------------------
 
 // public sealed class Concat :26
 // {
@@ -2847,8 +2847,8 @@ bool Concat::TryComputeImpl(uObject* left, uObject* right, uObject** result)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Operators.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Operators.uno
+// --------------------------------------------------------------------------------
 
 // public sealed class Conditional :98
 // {
@@ -2938,14 +2938,14 @@ Conditional* Conditional::New1(::g::Fuse::Reactive::Expression* condition, ::g::
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/FuseJS/DebugLog.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/FuseJS/DebugLog.uno
+// --------------------------------------------------------------------------------------
 
 // internal static class Console :24
 // {
 static void Console_build(uType* type)
 {
-    ::STRINGS[22] = uString::Const("/usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/FuseJS/DebugLog.uno");
+    ::STRINGS[22] = uString::Const("/usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/FuseJS/DebugLog.uno");
     ::STRINGS[23] = uString::Const("null");
     ::STRINGS[24] = uString::Const("\"");
     ::STRINGS[25] = uString::Const("function");
@@ -3238,8 +3238,8 @@ uObject* Console::Warn(::g::Fuse::Scripting::Context* context, uArray* args)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Expression.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Expression.uno
+// ---------------------------------------------------------------------------------
 
 // public sealed class Constant :61
 // {
@@ -3343,8 +3343,8 @@ Constant* Constant::New1(uObject* value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Expression.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Expression.uno
+// ---------------------------------------------------------------------------------
 
 // public abstract class ConstantExpression :50
 // {
@@ -3401,8 +3401,8 @@ void ConstantExpression::ctor_1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Cos :204
 // {
@@ -3465,8 +3465,8 @@ Cos* Cos::New1(::g::Fuse::Reactive::Expression* operand)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Color.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Color.uno
+// ----------------------------------------------------------------------------
 
 // public sealed class DarkenFunction :130
 // {
@@ -3540,8 +3540,8 @@ DarkenFunction* DarkenFunction::New1(::g::Fuse::Reactive::Expression* color, ::g
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Expression.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Expression.uno
+// ---------------------------------------------------------------------------------
 
 // public sealed class Data :74
 // {
@@ -3616,7 +3616,6 @@ void Data__Subscribe_fn(Data* __this, uObject* context, uObject* listener, uObje
 // public override sealed string ToString() :85
 void Data__ToString_fn(Data* __this, uString** __retval)
 {
-    uStackFrame __("Fuse.Reactive.Data", "ToString()");
     return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::STRINGS[44/*"{"*/], __this->Key()), ::STRINGS[45/*"}"*/]), void();
 }
 
@@ -3648,8 +3647,8 @@ Data* Data::New1(uString* key)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/DataBinding.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/DataBinding.uno
+// -------------------------------------------------------------------------------
 
 // public class DataBinding :45
 // {
@@ -3660,7 +3659,7 @@ static void DataBinding_build(uType* type)
     ::STRINGS[47] = uString::Const("' to property '");
     ::STRINGS[48] = uString::Const("'. The observable must contain exactly one ");
     ::STRINGS[49] = uString::Const(".");
-    ::STRINGS[50] = uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/DataBinding.uno");
+    ::STRINGS[50] = uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/DataBinding.uno");
     ::STRINGS[51] = uString::Const("InvalidListOperation");
     ::STRINGS[52] = uString::Const("TryPushAsMarshalledValue");
     ::STRINGS[53] = uString::Const("number");
@@ -4071,7 +4070,7 @@ void DataBinding::ClearValue()
 void DataBinding::InvalidListOperation()
 {
     uStackFrame __("Fuse.Reactive.DataBinding", "InvalidListOperation()");
-    ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(::STRINGS[46/*"Cannot bind '"*/], Key()), ::STRINGS[47/*"' to proper...*/]), ::g::Uno::UX::Selector__op_Implicit2(uPtr(Target())->Name())), ::STRINGS[48/*"'. The obse...*/]), DataBinding::TypeToJSName(uPtr(Target())->PropertyType())), ::STRINGS[49/*"."*/]), this, ::STRINGS[50/*"/usr/local/...*/], 90, ::STRINGS[51/*"InvalidList...*/], NULL);
+    ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition1(::STRINGS[46/*"Cannot bind '"*/], Key()), ::STRINGS[47/*"' to proper...*/]), ::g::Uno::UX::Selector__op_Implicit1(uPtr(Target())->Name())), ::STRINGS[48/*"'. The obse...*/]), DataBinding::TypeToJSName(uPtr(Target())->PropertyType())), ::STRINGS[49/*"."*/]), this, ::STRINGS[50/*"/usr/local/...*/], 90, ::STRINGS[51/*"InvalidList...*/], NULL);
 }
 
 // private void MarkFailed(string message) [instance] :133
@@ -4161,8 +4160,8 @@ bool DataBinding::TryPushAsName(uObject* newValue)
     if (!name.IsNull())
     {
         UnlistenNameRegistry();
-        _registryName = ::g::Uno::UX::Selector__op_Implicit2(name);
-        ::g::Fuse::NameRegistry::AddListener(::g::Uno::UX::Selector__op_Implicit1(_registryName), (uObject*)this);
+        _registryName = ::g::Uno::UX::Selector__op_Implicit1(name);
+        ::g::Fuse::NameRegistry::AddListener(::g::Uno::UX::Selector__op_Implicit(_registryName), (uObject*)this);
         ::g::Fuse::Node* k = uPtr(Parent())->FindNodeByName(name, uDelegate::New(::TYPES[33/*Uno.Predicate<Fuse.Node>*/], (void*)DataBinding__Acceptor_fn, this));
 
         if (k != NULL)
@@ -4200,7 +4199,7 @@ void DataBinding::UnlistenNameRegistry()
 
     if (::g::Uno::String::op_Inequality(_registryName, NULL))
     {
-        ::g::Fuse::NameRegistry::RemoveListener1(::g::Uno::UX::Selector__op_Implicit1(_registryName), (uObject*)this);
+        ::g::Fuse::NameRegistry::RemoveListener1(::g::Uno::UX::Selector__op_Implicit(_registryName), (uObject*)this);
         _registryName = NULL;
     }
 }
@@ -4241,8 +4240,8 @@ uString* DataBinding::TypeToJSName(uType* t)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/DataFunction.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/DataFunction.uno
+// --------------------------------------------------------------------------------
 
 // public sealed class DataFunction :21
 // {
@@ -4321,8 +4320,8 @@ DataFunction* DataFunction::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Subscription/DataSubscription.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Subscription/DataSubscription.uno
+// -------------------------------------------------------------------------------------------------
 
 // internal sealed class DataSubscription :6
 // {
@@ -4561,8 +4560,8 @@ DataSubscription* DataSubscription::New1(uObject* source, ::g::Fuse::Node* origi
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/DataToResource.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/DataToResource.uno
+// -------------------------------------------------------------------------------------
 
 // public sealed class DataToResource :33
 // {
@@ -4635,8 +4634,8 @@ DataToResource* DataToResource::New1(::g::Fuse::Reactive::Expression* data)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/DataToResource.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/DataToResource.uno
+// -------------------------------------------------------------------------------------
 
 // private sealed class DataToResource.DataToResourceSubscription :49
 // {
@@ -4773,8 +4772,8 @@ DataToResource__DataToResourceSubscription* DataToResource__DataToResourceSubscr
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/FuseJS/DebugLog.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/FuseJS/DebugLog.uno
+// --------------------------------------------------------------------------------------
 
 // internal static class DebugLog :6
 // {
@@ -4782,7 +4781,7 @@ static void DebugLog_build(uType* type)
 {
     ::STRINGS[57] = uString::Const("debug_log");
     ::STRINGS[23] = uString::Const("null");
-    ::STRINGS[22] = uString::Const("/usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/FuseJS/DebugLog.uno");
+    ::STRINGS[22] = uString::Const("/usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/FuseJS/DebugLog.uno");
     ::TYPES[25] = ::g::Fuse::Scripting::Callback_typeof();
     type->SetDependencies(
         ::g::Uno::Diagnostics::Debug_typeof());
@@ -4832,8 +4831,8 @@ uObject* DebugLog::Log(::g::Fuse::Scripting::Context* context, uArray* args)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class DegreesToRadians :319
 // {
@@ -4896,8 +4895,8 @@ DegreesToRadians* DegreesToRadians::New1(::g::Fuse::Reactive::Expression* operan
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/JavaScript.Dependencies.uno
-// -----------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/JavaScript.Dependencies.uno
+// ----------------------------------------------------------------------------------------------
 
 // public sealed class JavaScript.Dependency :12
 // {
@@ -5066,8 +5065,8 @@ JavaScript__Dependency* JavaScript__Dependency::New1(uString* name, uObject* exp
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Color.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Color.uno
+// ----------------------------------------------------------------------------
 
 // public sealed class DesaturateFunction :176
 // {
@@ -5141,21 +5140,21 @@ DesaturateFunction* DesaturateFunction::New1(::g::Fuse::Reactive::Expression* co
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Device.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Device.uno
+// -----------------------------------------------------------------------------
 
 // public sealed class DeviceCaps :114
 // {
 // static generated DeviceCaps() :114
 static void DeviceCaps__cctor__fn(uType* __type)
 {
-    DeviceCaps::NameIsAndroid_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[60/*"isAndroid"*/]);
-    DeviceCaps::NameIsIOS_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[61/*"isIOS"*/]);
-    DeviceCaps::NameIsMac_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[62/*"isMac"*/]);
-    DeviceCaps::NameIsWindows_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[63/*"isWindows"*/]);
-    DeviceCaps::NameIsPreview_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[64/*"isPreview"*/]);
-    DeviceCaps::NameOSVersion_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[65/*"osVersion"*/]);
-    DeviceCaps::NameAPILevel_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[66/*"apiLevel"*/]);
+    DeviceCaps::NameIsAndroid_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[60/*"isAndroid"*/]);
+    DeviceCaps::NameIsIOS_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[61/*"isIOS"*/]);
+    DeviceCaps::NameIsMac_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[62/*"isMac"*/]);
+    DeviceCaps::NameIsWindows_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[63/*"isWindows"*/]);
+    DeviceCaps::NameIsPreview_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[64/*"isPreview"*/]);
+    DeviceCaps::NameOSVersion_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[65/*"osVersion"*/]);
+    DeviceCaps::NameAPILevel_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[66/*"apiLevel"*/]);
     DeviceCaps::Device_ = DeviceCaps::New3();
 }
 
@@ -5244,12 +5243,12 @@ void DeviceCaps::ctor_2()
 {
     uStackFrame __("Fuse.Reactive.DeviceCaps", ".ctor()");
     ctor_1();
-    ::g::Uno::Collections::Dictionary__set_Item_fn(uPtr(Props()), ::g::Uno::UX::Selector__op_Implicit2(DeviceCaps::NameIsAndroid_), uBox(::TYPES[12/*bool*/], false));
-    ::g::Uno::Collections::Dictionary__set_Item_fn(uPtr(Props()), ::g::Uno::UX::Selector__op_Implicit2(DeviceCaps::NameIsIOS_), uBox(::TYPES[12/*bool*/], true));
-    ::g::Uno::Collections::Dictionary__set_Item_fn(uPtr(Props()), ::g::Uno::UX::Selector__op_Implicit2(DeviceCaps::NameIsMac_), uBox(::TYPES[12/*bool*/], false));
-    ::g::Uno::Collections::Dictionary__set_Item_fn(uPtr(Props()), ::g::Uno::UX::Selector__op_Implicit2(DeviceCaps::NameIsWindows_), uBox(::TYPES[12/*bool*/], false));
-    ::g::Uno::Collections::Dictionary__set_Item_fn(uPtr(Props()), ::g::Uno::UX::Selector__op_Implicit2(DeviceCaps::NameIsPreview_), uBox(::TYPES[12/*bool*/], true));
-    ::g::Uno::Collections::Dictionary__set_Item_fn(uPtr(Props()), ::g::Uno::UX::Selector__op_Implicit2(DeviceCaps::NameOSVersion_), uBox(::g::Uno::Int3_typeof(), ::g::Fuse::Platform::SystemUI::OSVersion()));
+    ::g::Uno::Collections::Dictionary__set_Item_fn(uPtr(Props()), ::g::Uno::UX::Selector__op_Implicit1(DeviceCaps::NameIsAndroid_), uBox(::TYPES[12/*bool*/], false));
+    ::g::Uno::Collections::Dictionary__set_Item_fn(uPtr(Props()), ::g::Uno::UX::Selector__op_Implicit1(DeviceCaps::NameIsIOS_), uBox(::TYPES[12/*bool*/], true));
+    ::g::Uno::Collections::Dictionary__set_Item_fn(uPtr(Props()), ::g::Uno::UX::Selector__op_Implicit1(DeviceCaps::NameIsMac_), uBox(::TYPES[12/*bool*/], false));
+    ::g::Uno::Collections::Dictionary__set_Item_fn(uPtr(Props()), ::g::Uno::UX::Selector__op_Implicit1(DeviceCaps::NameIsWindows_), uBox(::TYPES[12/*bool*/], false));
+    ::g::Uno::Collections::Dictionary__set_Item_fn(uPtr(Props()), ::g::Uno::UX::Selector__op_Implicit1(DeviceCaps::NameIsPreview_), uBox(::TYPES[12/*bool*/], true));
+    ::g::Uno::Collections::Dictionary__set_Item_fn(uPtr(Props()), ::g::Uno::UX::Selector__op_Implicit1(DeviceCaps::NameOSVersion_), uBox(::g::Uno::Int3_typeof(), ::g::Fuse::Platform::SystemUI::OSVersion()));
 }
 
 // private DeviceCaps New() [static] :127
@@ -5261,8 +5260,8 @@ DeviceCaps* DeviceCaps::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Operators.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Operators.uno
+// --------------------------------------------------------------------------------
 
 // public sealed class Divide :87
 // {
@@ -5334,8 +5333,8 @@ Divide* Divide::New1(::g::Fuse::Reactive::Expression* left, ::g::Fuse::Reactive:
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Each.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Each.uno
+// ------------------------------------------------------------------------
 
 // public sealed class Each :94
 // {
@@ -5676,8 +5675,8 @@ void Each::SetMatchKey(::g::Fuse::Visual* container, uString* key)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Operators.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Operators.uno
+// --------------------------------------------------------------------------------
 
 // public sealed class Equal :174
 // {
@@ -5752,8 +5751,8 @@ Equal* Equal::New1(::g::Fuse::Reactive::Expression* left, ::g::Fuse::Reactive::E
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Even :48
 // {
@@ -5836,8 +5835,8 @@ Even* Even::New1(::g::Fuse::Reactive::Expression* operand)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/EventBinding.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/EventBinding.uno
+// --------------------------------------------------------------------------------
 
 // public sealed class EventBinding :26
 // {
@@ -5981,8 +5980,8 @@ EventBinding* EventBinding::New1(uObject* key)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/EventRecord.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/EventRecord.uno
+// -------------------------------------------------------------------------------
 
 // internal sealed class EventRecord :9
 // {
@@ -6115,7 +6114,7 @@ void EventRecord::ctor_(uObject* args, uObject* sender)
     {
         uPtr(_node)->TryGetPrimeDataContext(&_data);
 
-        if (::g::Uno::String::op_Inequality(::g::Uno::UX::Selector__op_Implicit2(uPtr(_node)->Name()), NULL))
+        if (::g::Uno::String::op_Inequality(::g::Uno::UX::Selector__op_Implicit1(uPtr(_node)->Name()), NULL))
             _sender = uPtr(_node)->Name();
     }
 
@@ -6168,8 +6167,8 @@ EventRecord* EventRecord::New1(uObject* args, uObject* sender)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Exp :335
 // {
@@ -6232,8 +6231,8 @@ Exp* Exp::New1(::g::Fuse::Reactive::Expression* operand)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Exp2 :343
 // {
@@ -6296,8 +6295,8 @@ Exp2* Exp2::New1(::g::Fuse::Reactive::Expression* operand)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Expression.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Expression.uno
+// ---------------------------------------------------------------------------------
 
 // public abstract class Expression :7
 // {
@@ -6402,8 +6401,8 @@ void Expression::SourceLineNumber(int32_t value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/ExpressionBinding.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/ExpressionBinding.uno
+// -------------------------------------------------------------------------------------
 
 // public abstract class ExpressionBinding :6
 // {
@@ -6567,8 +6566,8 @@ void ExpressionBinding::WriteBack(uObject* value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/ExpressionListener.uno
-// ------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/ExpressionListener.uno
+// -----------------------------------------------------------------------------------------
 
 // public abstract class ExpressionListener :152
 // {
@@ -6706,8 +6705,8 @@ void ExpressionListener::SetData(uObject* value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/ExpressionListener.uno
-// ------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/ExpressionListener.uno
+// -----------------------------------------------------------------------------------------
 
 // public abstract class ExpressionSubscriber :14
 // {
@@ -6901,8 +6900,8 @@ void ExpressionSubscriber::UpdateOperands()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/ExpressionListener.uno
-// ------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/ExpressionListener.uno
+// -----------------------------------------------------------------------------------------
 
 // public enum ComputeExpression.Flags :226
 uEnumType* ComputeExpression__Flags_typeof()
@@ -6924,8 +6923,8 @@ uEnumType* ComputeExpression__Flags_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/ExpressionListener.uno
-// ------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/ExpressionListener.uno
+// -----------------------------------------------------------------------------------------
 
 // public enum ExpressionSubscriber.Flags :17
 uEnumType* ExpressionSubscriber__Flags_typeof()
@@ -6944,8 +6943,8 @@ uEnumType* ExpressionSubscriber__Flags_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // internal delegate double UnaryFloatOperator.FloatOp(double value) :131
 uDelegateType* UnaryFloatOperator__FloatOp_typeof()
@@ -6959,8 +6958,8 @@ uDelegateType* UnaryFloatOperator__FloatOp_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // internal delegate double BinaryFloatOperator.FloatOp(double a, double b) :171
 uDelegateType* BinaryFloatOperator__FloatOp_typeof()
@@ -6975,8 +6974,8 @@ uDelegateType* BinaryFloatOperator__FloatOp_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Floor :311
 // {
@@ -7039,8 +7038,8 @@ Floor* Floor::New1(::g::Fuse::Reactive::Expression* operand)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Fract :351
 // {
@@ -7103,8 +7102,8 @@ Fract* Fract::New1(::g::Fuse::Reactive::Expression* operand)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Operators.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Operators.uno
+// --------------------------------------------------------------------------------
 
 // public sealed class GreaterOrEqual :146
 // {
@@ -7179,8 +7178,8 @@ GreaterOrEqual* GreaterOrEqual::New1(::g::Fuse::Reactive::Expression* left, ::g:
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Operators.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Operators.uno
+// --------------------------------------------------------------------------------
 
 // public sealed class GreaterThan :132
 // {
@@ -7255,8 +7254,8 @@ GreaterThan* GreaterThan::New1(::g::Fuse::Reactive::Expression* left, ::g::Fuse:
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Color.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Color.uno
+// ----------------------------------------------------------------------------
 
 // public sealed class HslaToRgbaFunction :318
 // {
@@ -7336,8 +7335,8 @@ HslaToRgbaFunction* HslaToRgbaFunction::New1(::g::Fuse::Reactive::Expression* co
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive/1.9.0/IExpression.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive/1.10.0-rc1/IExpression.uno
+// ----------------------------------------------------------------------
 
 // public abstract interface IContext :20
 // {
@@ -7355,8 +7354,8 @@ uInterfaceType* IContext_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/WindowList.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/WindowList.uno
+// ------------------------------------------------------------------------------
 
 // public abstract interface WindowListItem.IDataWatcher :13
 // {
@@ -7372,8 +7371,8 @@ uInterfaceType* WindowListItem__IDataWatcher_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive/1.9.0/IEventHandler.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive/1.10.0-rc1/IEventHandler.uno
+// ------------------------------------------------------------------------
 
 // public abstract interface IEventHandler :16
 // {
@@ -7389,8 +7388,8 @@ uInterfaceType* IEventHandler_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive/1.9.0/IEventHandler.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive/1.10.0-rc1/IEventHandler.uno
+// ------------------------------------------------------------------------
 
 // public abstract interface IEventRecord :8
 // {
@@ -7409,8 +7408,8 @@ uInterfaceType* IEventRecord_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive/1.9.0/IExpression.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive/1.10.0-rc1/IExpression.uno
+// ----------------------------------------------------------------------
 
 // public abstract interface IExpression :45
 // {
@@ -7426,8 +7425,8 @@ uInterfaceType* IExpression_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/ItemsWindowList.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/ItemsWindowList.uno
+// -----------------------------------------------------------------------------------
 
 // public abstract interface ItemsWindowList<T>.IListener :15
 // {
@@ -7447,8 +7446,8 @@ uInterfaceType* ItemsWindowList__IListener_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive/1.9.0/IExpression.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive/1.10.0-rc1/IExpression.uno
+// ----------------------------------------------------------------------
 
 // public abstract interface IListener :8
 // {
@@ -7465,8 +7464,8 @@ uInterfaceType* IListener_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/InstantiatorFunction.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/InstantiatorFunction.uno
+// ----------------------------------------------------------------------------------------
 
 // public sealed class IndexFunction :171
 // {
@@ -7531,8 +7530,8 @@ IndexFunction* IndexFunction::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Operators.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Operators.uno
+// --------------------------------------------------------------------------------
 
 // public abstract class InfixOperator :7
 // {
@@ -7618,8 +7617,8 @@ uString* InfixOperator::Symbol()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Subscription.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Subscription.uno
+// -----------------------------------------------------------------------------------
 
 // public abstract class InnerListener :19
 // {
@@ -7777,8 +7776,8 @@ void InnerListener::SetDiagnostic(uString* message, uObject* source)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Instance.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Instance.uno
+// ----------------------------------------------------------------------------
 
 // public sealed class Instance :12
 // {
@@ -7956,8 +7955,8 @@ Instance* Instance::New4()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Instantiator.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Instantiator.uno
+// --------------------------------------------------------------------------------
 
 // public enum InstanceDefaults :58
 uEnumType* InstanceDefaults_typeof()
@@ -7973,8 +7972,8 @@ uEnumType* InstanceDefaults_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Instantiator.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Instantiator.uno
+// --------------------------------------------------------------------------------
 
 // public enum InstanceDefer :15
 uEnumType* InstanceDefer_typeof()
@@ -7990,8 +7989,8 @@ uEnumType* InstanceDefer_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Instantiator.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Instantiator.uno
+// --------------------------------------------------------------------------------
 
 // public enum InstanceIdentity :43
 uEnumType* InstanceIdentity_typeof()
@@ -8007,8 +8006,8 @@ uEnumType* InstanceIdentity_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Instantiator.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Instantiator.uno
+// --------------------------------------------------------------------------------
 
 // public enum InstanceReuse :30
 uEnumType* InstanceReuse_typeof()
@@ -8023,8 +8022,8 @@ uEnumType* InstanceReuse_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Instantiator.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Instantiator.uno
+// --------------------------------------------------------------------------------
 
 // public partial class Instantiator :116
 // {
@@ -8301,7 +8300,7 @@ void Instantiator__FuseReactiveItemsWindowListFuseReactiveWindowItemIListenerOnC
 
         if (index == -1)
         {
-            ::g::Fuse::Diagnostics::InternalError(uString::Const("Invalid WindowItem updated"), __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Instantiator.uno"), 903, uString::Const("Fuse.Reactive.ItemsWindowList<Fuse.Reactive.WindowItem>.IListener.OnCurrentDataChanged"));
+            ::g::Fuse::Diagnostics::InternalError(uString::Const("Invalid WindowItem updated"), __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Instantiator.uno"), 903, uString::Const("Fuse.Reactive.ItemsWindowList<Fuse.Reactive.WindowItem>.IListener.OnCurrentDataChanged"));
             return;
         }
 
@@ -8706,7 +8705,7 @@ void Instantiator::AddTemplate(::g::Fuse::Reactive::WindowItem* item, ::g::Uno::
 
     if (elm == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("Template contains a non-Node"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Instantiator.uno"), 741, uString::Const("AddTemplate"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("Template contains a non-Node"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Instantiator.uno"), 741, uString::Const("AddTemplate"));
         return;
     }
 
@@ -8760,7 +8759,7 @@ void Instantiator::CompleteWindowItem(::g::Fuse::Reactive::WindowItem* wi, int32
     bool reuse = AddMatchingTemplates(wi, match);
 
     if ((wi->Template.All && (::g::Uno::Collections::ICollection::Count(uInterface(uPtr(Templates()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Uno::UX::Template_typeof(), NULL))) != uPtr(wi->Nodes)->Count())) || ((wi->Template.Template != NULL) && (uPtr(wi->Nodes)->Count() != 1)))
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("inconsistent instance state"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Instantiator.uno"), 672, uString::Const("CompleteWindowItem"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("inconsistent instance state"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Instantiator.uno"), 672, uString::Const("CompleteWindowItem"));
 
     ::g::Fuse::Node* lastNode = GetLastNodeFromIndex(windowIndex - 1);
 
@@ -9388,16 +9387,16 @@ Instantiator* Instantiator::New3(uObject* templates)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/InstantiatorFunction.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/InstantiatorFunction.uno
+// ----------------------------------------------------------------------------------------
 
 // public abstract class InstantiatorFunction :12
 // {
 // static generated InstantiatorFunction() :12
 static void InstantiatorFunction__cctor__fn(uType* __type)
 {
-    InstantiatorFunction::DataIndexName_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("index"));
-    InstantiatorFunction::OffsetIndexName_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("offsetIndex"));
+    InstantiatorFunction::DataIndexName_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("index"));
+    InstantiatorFunction::OffsetIndexName_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("offsetIndex"));
 }
 
 static void InstantiatorFunction_build(uType* type)
@@ -9448,7 +9447,7 @@ void InstantiatorFunction__Subscribe_fn(InstantiatorFunction* __this, uObject* c
 
     if (::g::Uno::Collections::ICollection::Count(uInterface(uPtr(__this->Arguments()), ::g::Uno::Collections::ICollection_typeof()->MakeType(::g::Fuse::Reactive::Expression_typeof(), NULL))) > 1)
     {
-        ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(uString::Const("too many parameters for "), ::g::Uno::UX::Selector__op_Implicit2(__this->_item)), __this, ::STRINGS[81/*"/usr/local/...*/], 34, uString::Const("Subscribe"), NULL);
+        ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(uString::Const("too many parameters for "), ::g::Uno::UX::Selector__op_Implicit1(__this->_item)), __this, ::STRINGS[81/*"/usr/local/...*/], 34, uString::Const("Subscribe"), NULL);
         return *__retval = NULL, void();
     }
 
@@ -9462,7 +9461,7 @@ void InstantiatorFunction__Subscribe_fn(InstantiatorFunction* __this, uObject* c
 void InstantiatorFunction__ToString_fn(InstantiatorFunction* __this, uString** __retval)
 {
     uStackFrame __("Fuse.Reactive.InstantiatorFunction", "ToString()");
-    return *__retval = __this->FormatString(::g::Uno::UX::Selector__op_Implicit2(__this->_item)), void();
+    return *__retval = __this->FormatString(::g::Uno::UX::Selector__op_Implicit1(__this->_item)), void();
 }
 
 ::g::Uno::UX::Selector InstantiatorFunction::DataIndexName_;
@@ -9476,15 +9475,15 @@ void InstantiatorFunction::ctor_2(::g::Uno::UX::Selector item)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/InstantiatorFunction.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/InstantiatorFunction.uno
+// ----------------------------------------------------------------------------------------
 
 // private sealed class InstantiatorFunction.InstantiatorSubscription :44
 // {
 static void InstantiatorFunction__InstantiatorSubscription_build(uType* type)
 {
     ::STRINGS[80] = uString::Const("invalid search node for InstantiatorFunction");
-    ::STRINGS[81] = uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/InstantiatorFunction.uno");
+    ::STRINGS[81] = uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/InstantiatorFunction.uno");
     ::STRINGS[82] = uString::Const("OnNewNode");
     ::STRINGS[83] = uString::Const("Could not find an Instantiator");
     ::STRINGS[84] = uString::Const("Unable to resolve Instantiator node");
@@ -9715,8 +9714,8 @@ InstantiatorFunction__InstantiatorSubscription* InstantiatorFunction__Instantiat
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive/1.9.0/IObservable.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive/1.10.0-rc1/IObservable.uno
+// ----------------------------------------------------------------------
 
 // internal abstract interface IObservable :125
 // {
@@ -9730,8 +9729,8 @@ uInterfaceType* IObservable_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive/1.9.0/IObservable.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive/1.10.0-rc1/IObservable.uno
+// ----------------------------------------------------------------------
 
 // internal abstract interface IObservableArray :54
 // {
@@ -9745,8 +9744,8 @@ uInterfaceType* IObservableArray_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive/1.9.0/IObservable.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive/1.10.0-rc1/IObservable.uno
+// ----------------------------------------------------------------------
 
 // internal abstract interface IObservableObject :16
 // {
@@ -9760,8 +9759,8 @@ uInterfaceType* IObservableObject_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive/1.9.0/IObservable.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive/1.10.0-rc1/IObservable.uno
+// ----------------------------------------------------------------------
 
 // internal abstract interface IObserver :142
 // {
@@ -9775,8 +9774,8 @@ uInterfaceType* IObserver_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive/1.9.0/IObservable.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive/1.10.0-rc1/IObservable.uno
+// ----------------------------------------------------------------------
 
 // internal abstract interface IPropertyObserver :28
 // {
@@ -9790,8 +9789,8 @@ uInterfaceType* IPropertyObserver_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive/1.9.0/IObservable.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive/1.10.0-rc1/IObservable.uno
+// ----------------------------------------------------------------------
 
 // internal abstract interface IPropertySubscription :22
 // {
@@ -9805,8 +9804,8 @@ uInterfaceType* IPropertySubscription_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/PlatformFunctions.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/PlatformFunctions.uno
+// ----------------------------------------------------------------------------------------
 
 // public sealed class IsAndroidFunction :77
 // {
@@ -9876,8 +9875,8 @@ IsAndroidFunction* IsAndroidFunction::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/IsDefined.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/IsDefined.uno
+// --------------------------------------------------------------------------------
 
 // public sealed class IsDefined :17
 // {
@@ -9963,8 +9962,8 @@ IsDefined* IsDefined::New1(::g::Fuse::Reactive::Expression* operand)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/PlatformFunctions.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/PlatformFunctions.uno
+// ----------------------------------------------------------------------------------------
 
 // public sealed class IsDesktopFunction :68
 // {
@@ -10034,8 +10033,8 @@ IsDesktopFunction* IsDesktopFunction::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/PlatformFunctions.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/PlatformFunctions.uno
+// ----------------------------------------------------------------------------------------
 
 // public sealed class IsIOSFunction :59
 // {
@@ -10105,8 +10104,8 @@ IsIOSFunction* IsIOSFunction::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/PlatformFunctions.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/PlatformFunctions.uno
+// ----------------------------------------------------------------------------------------
 
 // public sealed class IsMobileFunction :86
 // {
@@ -10176,8 +10175,8 @@ IsMobileFunction* IsMobileFunction::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/IsDefined.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/IsDefined.uno
+// --------------------------------------------------------------------------------
 
 // public sealed class IsNull :44
 // {
@@ -10247,8 +10246,8 @@ IsNull* IsNull::New1(::g::Fuse::Reactive::Expression* operand)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/PlatformFunctions.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/PlatformFunctions.uno
+// ----------------------------------------------------------------------------------------
 
 // public sealed class IsOSXFunction :95
 // {
@@ -10318,8 +10317,8 @@ IsOSXFunction* IsOSXFunction::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive/1.9.0/IObservable.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive/1.10.0-rc1/IObservable.uno
+// ----------------------------------------------------------------------
 
 // internal abstract interface ISubscription :131
 // {
@@ -10333,8 +10332,8 @@ uInterfaceType* ISubscription_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/PlatformFunctions.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/PlatformFunctions.uno
+// ----------------------------------------------------------------------------------------
 
 // public sealed class IsWindowsFunction :104
 // {
@@ -10404,8 +10403,8 @@ IsWindowsFunction* IsWindowsFunction::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/ItemsWindowList.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/ItemsWindowList.uno
+// -----------------------------------------------------------------------------------
 
 // internal partial sealed class ItemsWindowList<T> :12
 // {
@@ -10575,7 +10574,7 @@ void ItemsWindowList__FuseReactiveWindowListItemIDataWatcherOnCurrentDataChanged
 
     if (wi == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("Invalid item in WindowList"), __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/ItemsWindowList.uno"), 171, uString::Const("Fuse.Reactive.WindowListItem.IDataWatcher.OnCurrentDataChanged"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("Invalid item in WindowList"), __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/ItemsWindowList.uno"), 171, uString::Const("Fuse.Reactive.WindowListItem.IDataWatcher.OnCurrentDataChanged"));
         return;
     }
 
@@ -10975,8 +10974,8 @@ ItemsWindowList* ItemsWindowList::New1(uType* __type, uObject* listener)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive/1.9.0/ValueObserver.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive/1.10.0-rc1/ValueObserver.uno
+// ------------------------------------------------------------------------
 
 // public abstract interface ValueForwarder.IValueListener :108
 // {
@@ -10993,8 +10992,8 @@ uInterfaceType* ValueForwarder__IValueListener_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive/1.9.0/IExpression.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive/1.10.0-rc1/IExpression.uno
+// ----------------------------------------------------------------------
 
 // public abstract interface IWriteable :37
 // {
@@ -11010,8 +11009,8 @@ uInterfaceType* IWriteable_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.9.0/JavaScript.Dependencies.uno
-// -----------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Scripting.JavaScript/1.10.0-rc1/JavaScript.Dependencies.uno
+// ----------------------------------------------------------------------------------------------
 
 // public partial class JavaScript :10
 // {
@@ -11586,8 +11585,8 @@ JavaScript* JavaScript::New2(::g::Uno::UX::NameTable* nameTable)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Lerp :423
 // {
@@ -11707,8 +11706,8 @@ Lerp* Lerp::New1(::g::Fuse::Reactive::Expression* first, ::g::Fuse::Reactive::Ex
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Operators.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Operators.uno
+// --------------------------------------------------------------------------------
 
 // public sealed class LessOrEqual :160
 // {
@@ -11784,8 +11783,8 @@ LessOrEqual* LessOrEqual::New1(::g::Fuse::Reactive::Expression* left, ::g::Fuse:
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Operators.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Operators.uno
+// --------------------------------------------------------------------------------
 
 // public sealed class LessThan :118
 // {
@@ -11861,8 +11860,8 @@ LessThan* LessThan::New1(::g::Fuse::Reactive::Expression* left, ::g::Fuse::React
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Let.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Let.uno
+// -----------------------------------------------------------------------
 
 // public sealed class Let :261
 // {
@@ -12093,22 +12092,22 @@ Let* Let::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Let.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Let.uno
+// -----------------------------------------------------------------------
 
 // public abstract class LetBase :11
 // {
 // static generated LetBase() :11
 static void LetBase__cctor_1_fn(uType* __type)
 {
-    LetBase::ValueName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[95/*"Value"*/]);
+    LetBase::ValueName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[95/*"Value"*/]);
 }
 
 static void LetBase_build(uType* type)
 {
     ::STRINGS[95] = uString::Const("Value");
     ::STRINGS[96] = uString::Const("Missing a `Name` for Let");
-    ::STRINGS[97] = uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Let.uno");
+    ::STRINGS[97] = uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Let.uno");
     ::STRINGS[98] = uString::Const("DataChanged");
     ::TYPES[46] = ::g::Fuse::Reactive::IObservable_typeof();
     ::TYPES[47] = ::g::Uno::String_typeof()->Array();
@@ -12198,7 +12197,7 @@ void LetBase__DataChanged_fn(LetBase* __this, uObject* newValue)
 void LetBase__FuseIObjectContainsKey_fn(LetBase* __this, uString* key, bool* __retval)
 {
     uStackFrame __("Fuse.Reactive.LetBase", "Fuse.IObject.ContainsKey(string)");
-    return *__retval = ::g::Uno::String::op_Equality(::g::Uno::UX::Selector__op_Implicit2(__this->Name()), key), void();
+    return *__retval = ::g::Uno::String::op_Equality(::g::Uno::UX::Selector__op_Implicit1(__this->Name()), key), void();
 }
 
 // private object Fuse.IObject.get_Item(string key) :129
@@ -12206,7 +12205,7 @@ void LetBase__FuseIObjectget_Item_fn(LetBase* __this, uString* key, uObject** __
 {
     uStackFrame __("Fuse.Reactive.LetBase", "Fuse.IObject.get_Item(string)");
 
-    if (::g::Uno::String::op_Equality(::g::Uno::UX::Selector__op_Implicit2(__this->Name()), key))
+    if (::g::Uno::String::op_Equality(::g::Uno::UX::Selector__op_Implicit1(__this->Name()), key))
         return *__retval = __this->ContextValue(), void();
 
     return *__retval = NULL, void();
@@ -12216,7 +12215,7 @@ void LetBase__FuseIObjectget_Item_fn(LetBase* __this, uString* key, uObject** __
 void LetBase__FuseIObjectget_Keys_fn(LetBase* __this, uArray** __retval)
 {
     uStackFrame __("Fuse.Reactive.LetBase", "Fuse.IObject.get_Keys()");
-    return *__retval = uArray::Init<uString*>(::TYPES[47/*string[]*/], 1, (uString*)::g::Uno::UX::Selector__op_Implicit2(__this->Name())), void();
+    return *__retval = uArray::Init<uString*>(::TYPES[47/*string[]*/], 1, (uString*)::g::Uno::UX::Selector__op_Implicit1(__this->Name())), void();
 }
 
 // private Fuse.Node.ContextDataResult Fuse.Node.ISiblingDataProvider.TryGetDataProvider(Fuse.Node.DataType type, object& provider) :117
@@ -12311,7 +12310,7 @@ void LetBase::DataChanged(uObject* newValue)
 {
     uStackFrame __("Fuse.Reactive.LetBase", "DataChanged(object)");
 
-    if (::g::Uno::String::op_Equality(::g::Uno::UX::Selector__op_Implicit2(Name()), NULL))
+    if (::g::Uno::String::op_Equality(::g::Uno::UX::Selector__op_Implicit1(Name()), NULL))
     {
         if (IsRootingStarted())
             ::g::Fuse::Diagnostics::UserWarning(::STRINGS[96/*"Missing a `...*/], this, ::STRINGS[97/*"/usr/local/...*/], 74, ::STRINGS[98/*"DataChanged"*/]);
@@ -12319,7 +12318,7 @@ void LetBase::DataChanged(uObject* newValue)
         return;
     }
 
-    OnDataChanged(::g::Uno::UX::Selector__op_Implicit2(Name()), newValue);
+    OnDataChanged(::g::Uno::UX::Selector__op_Implicit1(Name()), newValue);
 }
 
 // internal bool get_HasValue() [instance] :26
@@ -12383,8 +12382,8 @@ void LetBase::UpdateValue(uObject* origin)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Let.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Let.uno
+// -----------------------------------------------------------------------
 
 // public sealed class LetBool :381
 // {
@@ -12474,8 +12473,8 @@ LetBool* LetBool::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Let.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Let.uno
+// -----------------------------------------------------------------------
 
 // public sealed class LetFloat :371
 // {
@@ -12565,8 +12564,8 @@ LetFloat* LetFloat::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Let.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Let.uno
+// -----------------------------------------------------------------------
 
 // public sealed class LetFloat2 :373
 // {
@@ -12656,8 +12655,8 @@ LetFloat2* LetFloat2::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Let.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Let.uno
+// -----------------------------------------------------------------------
 
 // public sealed class LetFloat3 :375
 // {
@@ -12747,8 +12746,8 @@ LetFloat3* LetFloat3::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Let.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Let.uno
+// -----------------------------------------------------------------------
 
 // public sealed class LetFloat4 :377
 // {
@@ -12838,8 +12837,8 @@ LetFloat4* LetFloat4::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Let.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Let.uno
+// -----------------------------------------------------------------------
 
 // internal sealed class LetObservable :146
 // {
@@ -12996,8 +12995,8 @@ LetObservable* LetObservable::New1(::g::Fuse::Reactive::LetBase* let)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Let.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Let.uno
+// -----------------------------------------------------------------------
 
 // public sealed class LetSize :383
 // {
@@ -13087,8 +13086,8 @@ LetSize* LetSize::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Let.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Let.uno
+// -----------------------------------------------------------------------
 
 // public sealed class LetSize2 :385
 // {
@@ -13178,8 +13177,8 @@ LetSize2* LetSize2::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Let.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Let.uno
+// -----------------------------------------------------------------------
 
 // public sealed class LetString :379
 // {
@@ -13269,8 +13268,8 @@ LetString* LetString::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Let.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Let.uno
+// -----------------------------------------------------------------------
 
 // public abstract class LetType<T> :348
 // {
@@ -13382,8 +13381,8 @@ void LetType::ctor_4()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Color.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Color.uno
+// ----------------------------------------------------------------------------
 
 // public sealed class LightenFunction :153
 // {
@@ -13457,8 +13456,8 @@ LightenFunction* LightenFunction::New1(::g::Fuse::Reactive::Expression* color, :
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Log :359
 // {
@@ -13521,8 +13520,8 @@ Log* Log::New1(::g::Fuse::Reactive::Expression* operand)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Log2 :367
 // {
@@ -13585,8 +13584,8 @@ Log2* Log2::New1(::g::Fuse::Reactive::Expression* operand)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Operators.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Operators.uno
+// --------------------------------------------------------------------------------
 
 // public sealed class LogicalAnd :206
 // {
@@ -13666,8 +13665,8 @@ LogicalAnd* LogicalAnd::New1(::g::Fuse::Reactive::Expression* left, ::g::Fuse::R
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/UnaryOperator.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/UnaryOperator.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class LogicalNot :81
 // {
@@ -13747,8 +13746,8 @@ LogicalNot* LogicalNot::New1(::g::Fuse::Reactive::Expression* operand)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Operators.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Operators.uno
+// --------------------------------------------------------------------------------
 
 // public sealed class LogicalOr :220
 // {
@@ -13828,8 +13827,8 @@ LogicalOr* LogicalOr::New1(::g::Fuse::Reactive::Expression* left, ::g::Fuse::Rea
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/LookUp.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/LookUp.uno
+// -----------------------------------------------------------------------------
 
 // public sealed class LookUp :17
 // {
@@ -13952,8 +13951,8 @@ LookUp* LookUp::New1(::g::Fuse::Reactive::Expression* collection, ::g::Fuse::Rea
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/LookUp.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/LookUp.uno
+// -----------------------------------------------------------------------------
 
 // private sealed class LookUp.LookUpSubscription :34
 // {
@@ -14418,8 +14417,8 @@ LookUp__LookUpSubscription* LookUp__LookUpSubscription::New1(::g::Fuse::Reactive
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/MatchCase.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/MatchCase.uno
+// -----------------------------------------------------------------------------
 
 // public sealed class Match :29
 // {
@@ -15041,8 +15040,8 @@ Match* Match::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Max :20
 // {
@@ -15115,8 +15114,8 @@ Max* Max::New1(::g::Fuse::Reactive::Expression* left, ::g::Fuse::Reactive::Expre
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Member.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Member.uno
+// -----------------------------------------------------------------------------
 
 // public sealed class Member :8
 // {
@@ -15246,8 +15245,8 @@ Member* Member::New1(::g::Fuse::Reactive::Expression* obj, uString* name)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Min :7
 // {
@@ -15320,8 +15319,8 @@ Min* Min::New1(::g::Fuse::Reactive::Expression* left, ::g::Fuse::Reactive::Expre
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Mod :33
 // {
@@ -15397,8 +15396,8 @@ Mod* Mod::New1(::g::Fuse::Reactive::Expression* left, ::g::Fuse::Reactive::Expre
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Operators.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Operators.uno
+// --------------------------------------------------------------------------------
 
 // public sealed class Multiply :76
 // {
@@ -15471,8 +15470,8 @@ Multiply* Multiply::New1(::g::Fuse::Reactive::Expression* left, ::g::Fuse::React
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/VarArgFunction.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/VarArgFunction.uno
+// -------------------------------------------------------------------------------------
 
 // public sealed class NamedFunctionCall :176
 // {
@@ -15560,8 +15559,8 @@ NamedFunctionCall* NamedFunctionCall::New1(uString* name)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/NameValuePair.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/NameValuePair.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class NameValuePair :6
 // {
@@ -15632,8 +15631,8 @@ NameValuePair* NameValuePair::New1(::g::Fuse::Reactive::Expression* name, ::g::F
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/UnaryOperator.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/UnaryOperator.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Negate :71
 // {
@@ -15704,8 +15703,8 @@ Negate* Negate::New1(::g::Fuse::Reactive::Expression* operand)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Instantiator.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Instantiator.uno
+// --------------------------------------------------------------------------------
 
 // internal sealed class Instantiator.NoContextItem :399
 // {
@@ -15753,8 +15752,8 @@ Instantiator__NoContextItem* Instantiator__NoContextItem::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/NodeExpressionBinding.uno
-// ------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/NodeExpressionBinding.uno
+// -----------------------------------------------------------------------------------------
 
 // internal sealed class NodeExpressionBinding :9
 // {
@@ -15894,8 +15893,8 @@ NodeExpressionBinding* NodeExpressionBinding::New1(uObject* expr, ::g::Fuse::Nod
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/IsDefined.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/IsDefined.uno
+// --------------------------------------------------------------------------------
 
 // public sealed class NonNull :63
 // {
@@ -15981,8 +15980,8 @@ NonNull* NonNull::New1(::g::Fuse::Reactive::Expression* operand)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Operators.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Operators.uno
+// --------------------------------------------------------------------------------
 
 // public sealed class NotEqual :188
 // {
@@ -16064,8 +16063,8 @@ NotEqual* NotEqual::New1(::g::Fuse::Reactive::Expression* left, ::g::Fuse::React
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/NullCoalesce.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/NullCoalesce.uno
+// -----------------------------------------------------------------------------------
 
 // public sealed class NullCoalesce :6
 // {
@@ -16150,8 +16149,8 @@ NullCoalesce* NullCoalesce::New1(::g::Fuse::Reactive::Expression* left, ::g::Fus
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Object.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Object.uno
+// -----------------------------------------------------------------------------
 
 // public sealed class Object :16
 // {
@@ -16222,8 +16221,8 @@ Object* Object::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Subscription.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Subscription.uno
+// -----------------------------------------------------------------------------------
 
 // private sealed class InnerListener.ObservableSubscription :82
 // {
@@ -16318,15 +16317,15 @@ InnerListener__ObservableSubscription* InnerListener__ObservableSubscription::Ne
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive/1.9.0/ObserverMap.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive/1.10.0-rc1/ObserverMap.uno
+// ----------------------------------------------------------------------
 
 // internal abstract class ObserverMap<T> :23
 // {
 static void ObserverMap_build(uType* type)
 {
     ::STRINGS[118] = uString::Const("An observable with write-back is expected");
-    ::STRINGS[119] = uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive/1.9.0/ObserverMap.uno");
+    ::STRINGS[119] = uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive/1.10.0-rc1/ObserverMap.uno");
     ::STRINGS[120] = uString::Const("Attach");
     ::TYPES[60] = ::g::Uno::Collections::List_typeof();
     ::TYPES[30] = ::g::Fuse::Reactive::IObservableArray_typeof();
@@ -16705,8 +16704,8 @@ uObject* ObserverMap::UVUnmap(uObject* mv)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Odd :67
 // {
@@ -16789,8 +16788,8 @@ Odd* Odd::New1(::g::Fuse::Reactive::Expression* operand)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/InstantiatorFunction.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/InstantiatorFunction.uno
+// ----------------------------------------------------------------------------------------
 
 // public sealed class OffsetIndexFunction :181
 // {
@@ -16855,8 +16854,8 @@ OffsetIndexFunction* OffsetIndexFunction::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Parameter.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Parameter.uno
+// --------------------------------------------------------------------------------
 
 // public sealed class Parameter :16
 // {
@@ -16927,8 +16926,8 @@ Parameter* Parameter::New1(::g::Fuse::Reactive::Expression* visual)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/PlatformFunctions.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/PlatformFunctions.uno
+// ----------------------------------------------------------------------------------------
 
 // public abstract class PlatformFunction :11
 // {
@@ -16981,7 +16980,6 @@ void PlatformFunction__Subscribe_fn(PlatformFunction* __this, uObject* context, 
 // public override sealed string ToString() :19
 void PlatformFunction__ToString_fn(PlatformFunction* __this, uString** __retval)
 {
-    uStackFrame __("Fuse.Reactive.PlatformFunction", "ToString()");
     return *__retval = ::g::Uno::String::op_Addition2(::g::Uno::String::op_Addition2(uString::Const("is"), __this->_name), uString::Const("()")), void();
 }
 
@@ -16993,8 +16991,8 @@ void PlatformFunction::ctor_1(uString* name)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Pow :383
 // {
@@ -17057,8 +17055,8 @@ Pow* Pow::New1(::g::Fuse::Reactive::Expression* left, ::g::Fuse::Reactive::Expre
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Property.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Property.uno
+// -------------------------------------------------------------------------------
 
 // public sealed class Property :8
 // {
@@ -17182,8 +17180,8 @@ Property* Property::New1(::g::Fuse::Reactive::ConstantExpression* obj, ::g::Uno:
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/DataBinding.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/DataBinding.uno
+// -------------------------------------------------------------------------------
 
 // public sealed class PropertyBinding :333
 // {
@@ -17259,8 +17257,8 @@ PropertyBinding* PropertyBinding::New2(::g::Uno::UX::Property* target, ::g::Uno:
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Device.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Device.uno
+// -----------------------------------------------------------------------------
 
 // private sealed class CapsObject.PropertySubscription :54
 // {
@@ -17373,15 +17371,15 @@ CapsObject__PropertySubscription* CapsObject__PropertySubscription::New1(::g::Fu
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/QuaternaryOperator.uno
-// ------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/QuaternaryOperator.uno
+// -----------------------------------------------------------------------------------------
 
 // public abstract class QuaternaryOperator :8
 // {
 static void QuaternaryOperator_build(uType* type)
 {
     ::STRINGS[12] = uString::Const(" No `TryCompute`, or a deprecated form, overriden. Migrate your code to override the one with `bool` return. ");
-    ::STRINGS[123] = uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/QuaternaryOperator.uno");
+    ::STRINGS[123] = uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/QuaternaryOperator.uno");
     ::STRINGS[14] = uString::Const("TryCompute");
     ::TYPES[10] = ::g::Fuse::Reactive::Expression_typeof()->Array();
     type->SetInterfaces(
@@ -17571,8 +17569,8 @@ bool QuaternaryOperator::TryCompute1(uObject* first, uObject* second, uObject* t
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class RadiansToDegrees :327
 // {
@@ -17635,8 +17633,8 @@ RadiansToDegrees* RadiansToDegrees::New1(::g::Fuse::Reactive::Expression* operan
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/WhileCount.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/WhileCount.uno
+// ------------------------------------------------------------------------------
 
 // private enum WhileCount.Range :145
 uEnumType* WhileCount__Range_typeof()
@@ -17652,8 +17650,8 @@ uEnumType* WhileCount__Range_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Resource.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Resource.uno
+// -------------------------------------------------------------------------------
 
 // public sealed class Resource :8
 // {
@@ -17750,8 +17748,8 @@ Resource* Resource::New1(uString* key)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/DataBinding.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/DataBinding.uno
+// -------------------------------------------------------------------------------
 
 // public sealed class ResourceBinding :340
 // {
@@ -17827,8 +17825,8 @@ ResourceBinding* ResourceBinding::New2(::g::Uno::UX::Property* target, uString* 
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Subscription/ResourceSubscription.uno
-// ------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Subscription/ResourceSubscription.uno
+// -----------------------------------------------------------------------------------------------------
 
 // internal sealed class ResourceSubscription :7
 // {
@@ -17971,8 +17969,8 @@ ResourceSubscription* ResourceSubscription::New1(uObject* source, ::g::Fuse::Nod
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Color.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Color.uno
+// ----------------------------------------------------------------------------
 
 // public sealed class RgbaToHslaFunction :293
 // {
@@ -18052,8 +18050,8 @@ RgbaToHslaFunction* RgbaToHslaFunction::New1(::g::Fuse::Reactive::Expression* co
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Round :391
 // {
@@ -18116,8 +18114,8 @@ Round* Round::New1(::g::Fuse::Reactive::Expression* operand)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Color.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Color.uno
+// ----------------------------------------------------------------------------
 
 // public sealed class SaturateFunction :199
 // {
@@ -18191,8 +18189,8 @@ SaturateFunction* SaturateFunction::New1(::g::Fuse::Reactive::Expression* color,
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Color.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Color.uno
+// ----------------------------------------------------------------------------
 
 // public sealed class ScaleLightnessFunction :247
 // {
@@ -18269,8 +18267,8 @@ ScaleLightnessFunction* ScaleLightnessFunction::New1(::g::Fuse::Reactive::Expres
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Color.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Color.uno
+// ----------------------------------------------------------------------------
 
 // public sealed class ScaleSaturationFunction :223
 // {
@@ -18347,15 +18345,15 @@ ScaleSaturationFunction* ScaleSaturationFunction::New1(::g::Fuse::Reactive::Expr
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/With.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/With.uno
+// ------------------------------------------------------------------------
 
 // public sealed class Select :101
 // {
 static void Select_build(uType* type)
 {
     ::STRINGS[131] = uString::Const("'Select' is deprecated, use 'With' instead (works the same way). ");
-    ::STRINGS[132] = uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/With.uno");
+    ::STRINGS[132] = uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/With.uno");
     ::STRINGS[133] = uString::Const(".ctor");
     type->SetInterfaces(
         ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Reactive::With_type, interface0),
@@ -18443,8 +18441,8 @@ Select* Select::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Sign :375
 // {
@@ -18507,8 +18505,8 @@ Sign* Sign::New1(::g::Fuse::Reactive::Expression* operand)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/VarArgFunction.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/VarArgFunction.uno
+// -------------------------------------------------------------------------------------
 
 // private sealed class SimpleVarArgFunction.SimpleSubscription :145
 // {
@@ -18596,8 +18594,8 @@ SimpleVarArgFunction__SimpleSubscription* SimpleVarArgFunction__SimpleSubscripti
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/VarArgFunction.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/VarArgFunction.uno
+// -------------------------------------------------------------------------------------
 
 // public abstract class SimpleVarArgFunction :106
 // {
@@ -18669,8 +18667,8 @@ void SimpleVarArgFunction::OnNewPartialArguments(uArray* args, uObject* listener
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Sin :195
 // {
@@ -18733,8 +18731,8 @@ Sin* Sin::New1(::g::Fuse::Reactive::Expression* operand)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Snapshot.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Snapshot.uno
+// -------------------------------------------------------------------------------
 
 // public sealed class Snapshot :8
 // {
@@ -18830,8 +18828,8 @@ Snapshot* Snapshot::New1(::g::Fuse::Reactive::Expression* source)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Sqrt :295
 // {
@@ -18894,15 +18892,15 @@ Sqrt* Sqrt::New1(::g::Fuse::Reactive::Expression* operand)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Window.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Window.uno
+// ------------------------------------------------------------------------
 
 // private sealed class WindowFunction.Subscription :43
 // {
 static void WindowFunction__Subscription_build(uType* type)
 {
     ::STRINGS[137] = uString::Const("No RootViewport found in this context");
-    ::STRINGS[138] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Window.uno");
+    ::STRINGS[138] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Window.uno");
     ::STRINGS[133] = uString::Const(".ctor");
     ::TYPES[26] = ::g::Fuse::Reactive::IListener_typeof();
     type->SetDependencies(
@@ -19005,15 +19003,15 @@ WindowFunction__Subscription* WindowFunction__Subscription::New1(::g::Fuse::Reac
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/VarArgFunction.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/VarArgFunction.uno
+// -------------------------------------------------------------------------------------
 
 // protected abstract class VarArgFunction.Subscription :32
 // {
 static void VarArgFunction__Subscription_build(uType* type)
 {
     ::STRINGS[139] = uString::Const("VarArgFunction.Subscription.ClearData() should be implemented");
-    ::STRINGS[140] = uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/VarArgFunction.uno");
+    ::STRINGS[140] = uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/VarArgFunction.uno");
     ::STRINGS[141] = uString::Const("ClearData");
     ::TYPES[64] = ::g::Uno::Collections::EnumerableExtensions_typeof()->MakeMethod(9/*ToArray<Fuse.Reactive.Expression>*/, ::g::Fuse::Reactive::Expression_typeof(), NULL);
     type->SetInterfaces(
@@ -19120,8 +19118,8 @@ void VarArgFunction__Subscription::ClearData()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/PlatformFunctions.uno
-// -----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/PlatformFunctions.uno
+// ----------------------------------------------------------------------------------------
 
 // private sealed class PlatformFunction.Subscription :33
 // {
@@ -19205,8 +19203,8 @@ PlatformFunction__Subscription* PlatformFunction__Subscription::New1(::g::Fuse::
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Parameter.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Parameter.uno
+// --------------------------------------------------------------------------------
 
 // private sealed class Parameter.Subscription :31
 // {
@@ -19387,8 +19385,8 @@ Parameter__Subscription* Parameter__Subscription::New1(::g::Fuse::Reactive::Para
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/ExpressionListener.uno
-// ------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/ExpressionListener.uno
+// -----------------------------------------------------------------------------------------
 
 // private sealed class ComputeExpression.Subscription :329
 // {
@@ -19397,7 +19395,7 @@ static void ComputeExpression__Subscription_build(uType* type)
     ::STRINGS[144] = uString::Const("Failed to compute value for (");
     ::STRINGS[18] = uString::Const(",");
     ::STRINGS[145] = uString::Const("undefined");
-    ::STRINGS[146] = uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/ExpressionListener.uno");
+    ::STRINGS[146] = uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/ExpressionListener.uno");
     ::STRINGS[147] = uString::Const("OnArguments");
     ::TYPES[67] = ::g::Fuse::Reactive::UnaryOperator_typeof();
     type->SetInterfaces(
@@ -19507,15 +19505,15 @@ ComputeExpression__Subscription* ComputeExpression__Subscription::New1(::g::Fuse
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Let.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Let.uno
+// -----------------------------------------------------------------------
 
 // private sealed class LetObservable.Subscription :209
 // {
 static void LetObservable__Subscription_build(uType* type)
 {
     ::STRINGS[148] = uString::Const("Unsupported");
-    ::STRINGS[97] = uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Let.uno");
+    ::STRINGS[97] = uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Let.uno");
     ::STRINGS[149] = uString::Const("ClearExclusive");
     ::STRINGS[150] = uString::Const("ReplaceAllExclusive");
     type->SetInterfaces(
@@ -19622,8 +19620,8 @@ LetObservable__Subscription* LetObservable__Subscription::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Property.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Property.uno
+// -------------------------------------------------------------------------------
 
 // private sealed class Property.Subscription :25
 // {
@@ -19755,8 +19753,8 @@ Property__Subscription* Property__Subscription::New1(::g::Fuse::Reactive::Proper
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Member.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Member.uno
+// -----------------------------------------------------------------------------
 
 // private sealed class Member.Subscription :30
 // {
@@ -19925,8 +19923,8 @@ Member__Subscription* Member__Subscription::New1(::g::Fuse::Reactive::Member* me
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Snapshot.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Snapshot.uno
+// -------------------------------------------------------------------------------
 
 // private sealed class Snapshot.Subscription :23
 // {
@@ -20026,8 +20024,8 @@ Snapshot__Subscription* Snapshot__Subscription::New1(::g::Fuse::Reactive::Snapsh
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/DataFunction.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/DataFunction.uno
+// --------------------------------------------------------------------------------
 
 // private sealed class DataFunction.Subscription :40
 // {
@@ -20153,8 +20151,8 @@ DataFunction__Subscription* DataFunction__Subscription::New1(::g::Fuse::Reactive
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/Operators.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/Operators.uno
+// --------------------------------------------------------------------------------
 
 // public sealed class Subtract :65
 // {
@@ -20227,8 +20225,8 @@ Subtract* Subtract::New1(::g::Fuse::Reactive::Expression* left, ::g::Fuse::React
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Tan :213
 // {
@@ -20291,8 +20289,8 @@ Tan* Tan::New1(::g::Fuse::Reactive::Expression* operand)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Instantiator.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Instantiator.uno
+// --------------------------------------------------------------------------------
 
 // internal struct TemplateMatch :82
 // {
@@ -20309,6 +20307,7 @@ uStructType* TemplateMatch_typeof()
     if (type != NULL) return type;
 
     uTypeOptions options;
+    options.BaseDefinition = ::g::Uno::ValueType_typeof();
     options.FieldCount = 2;
     options.Alignment = alignof(TemplateMatch);
     options.ValueSize = sizeof(TemplateMatch);
@@ -20334,15 +20333,15 @@ bool TemplateMatch::Matches(TemplateMatch b)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/TernaryOperator.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/TernaryOperator.uno
+// --------------------------------------------------------------------------------------
 
 // public abstract class TernaryOperator :8
 // {
 static void TernaryOperator_build(uType* type)
 {
     ::STRINGS[12] = uString::Const(" No `TryCompute`, or a deprecated form, overriden. Migrate your code to override the one with `bool` return. ");
-    ::STRINGS[154] = uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/TernaryOperator.uno");
+    ::STRINGS[154] = uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/TernaryOperator.uno");
     ::STRINGS[14] = uString::Const("TryCompute");
     ::TYPES[10] = ::g::Fuse::Reactive::Expression_typeof()->Array();
     type->SetInterfaces(
@@ -20501,8 +20500,8 @@ bool TernaryOperator::IsThirdOptional()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/ConversionFunctions.uno
-// -------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/ConversionFunctions.uno
+// ------------------------------------------------------------------------------------------
 
 // public sealed class ToFloat :8
 // {
@@ -20577,8 +20576,8 @@ double ToFloat::Op(double v)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/StringFunctions.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/StringFunctions.uno
+// --------------------------------------------------------------------------------------
 
 // public sealed class ToLower :21
 // {
@@ -20654,8 +20653,8 @@ ToLower* ToLower::New1(::g::Fuse::Reactive::Expression* value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/ConversionFunctions.uno
-// -------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/ConversionFunctions.uno
+// ------------------------------------------------------------------------------------------
 
 // public sealed class ToSize :51
 // {
@@ -20744,8 +20743,8 @@ ToSize* ToSize::New1(::g::Fuse::Reactive::Expression* operand)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/ConversionFunctions.uno
-// -------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/ConversionFunctions.uno
+// ------------------------------------------------------------------------------------------
 
 // public sealed class ToString :22
 // {
@@ -20821,8 +20820,8 @@ ToString* ToString::New1(::g::Fuse::Reactive::Expression* operand)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/StringFunctions.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/StringFunctions.uno
+// --------------------------------------------------------------------------------------
 
 // public sealed class ToUpper :6
 // {
@@ -20898,8 +20897,8 @@ ToUpper* ToUpper::New1(::g::Fuse::Reactive::Expression* value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class Trunc :400
 // {
@@ -20977,8 +20976,8 @@ double Trunc::Op(double v)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/MathFunctions.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/MathFunctions.uno
+// ------------------------------------------------------------------------------------
 
 // public abstract class UnaryFloatOperator :129
 // {
@@ -21076,15 +21075,15 @@ void UnaryFloatOperator::ctor_4(::g::Fuse::Reactive::Expression* operand, uStrin
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/UnaryOperator.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/UnaryOperator.uno
+// ------------------------------------------------------------------------------------
 
 // public abstract class UnaryOperator :8
 // {
 static void UnaryOperator_build(uType* type)
 {
     ::STRINGS[160] = uString::Const("Failed to compute value: ");
-    ::STRINGS[161] = uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/UnaryOperator.uno");
+    ::STRINGS[161] = uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/UnaryOperator.uno");
     ::STRINGS[162] = uString::Const("OnNewOperand");
     ::STRINGS[12] = uString::Const(" No `TryCompute`, or a deprecated form, overriden. Migrate your code to override the one with `bool` return. ");
     ::STRINGS[14] = uString::Const("TryCompute");
@@ -21267,8 +21266,8 @@ void UnaryOperator::OnNewOperand(uObject* listener, uObject* operand)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive/1.9.0/ObserverMap.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive/1.10.0-rc1/ObserverMap.uno
+// ----------------------------------------------------------------------
 
 // internal sealed class UnmappedView<T> :8
 // {
@@ -21352,8 +21351,8 @@ UnmappedView* UnmappedView::New1(uType* __type, ::g::Fuse::Reactive::ObserverMap
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive/1.9.0/ValueObserver.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive/1.10.0-rc1/ValueObserver.uno
+// ------------------------------------------------------------------------
 
 // internal sealed class ValueForwarder :106
 // {
@@ -21437,8 +21436,8 @@ ValueForwarder* ValueForwarder::New1(uObject* obs, uObject* listener)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive/1.9.0/ValueObserver.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive/1.10.0-rc1/ValueObserver.uno
+// ------------------------------------------------------------------------
 
 // internal abstract class ValueObserver :11
 // {
@@ -21645,8 +21644,8 @@ uObject* ValueObserver::Value()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/VarArgFunction.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/VarArgFunction.uno
+// -------------------------------------------------------------------------------------
 
 // public abstract class VarArgFunction :11
 // {
@@ -21732,8 +21731,8 @@ uString* VarArgFunction::FormatString(uString* funcName)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/VectorFunctions.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/VectorFunctions.uno
+// --------------------------------------------------------------------------------------
 
 // public sealed class Vector :11
 // {
@@ -21813,8 +21812,8 @@ Vector* Vector::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/VectorFunctions.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/VectorFunctions.uno
+// --------------------------------------------------------------------------------------
 
 // public sealed class VectorW :76
 // {
@@ -21896,8 +21895,8 @@ VectorW* VectorW::New1(::g::Fuse::Reactive::Expression* operand)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.9.0/VectorFunctions.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Expressions/1.10.0-rc1/VectorFunctions.uno
+// --------------------------------------------------------------------------------------
 
 // public sealed class VectorZ :54
 // {
@@ -21979,8 +21978,8 @@ VectorZ* VectorZ::New1(::g::Fuse::Reactive::Expression* operand)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/WhileCount.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/WhileCount.uno
+// ------------------------------------------------------------------------------
 
 // public class WhileCount :44
 // {
@@ -22434,8 +22433,8 @@ WhileCount* WhileCount::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/WhileEmpty.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/WhileEmpty.uno
+// ------------------------------------------------------------------------------
 
 // public sealed class WhileEmpty :29
 // {
@@ -22532,8 +22531,8 @@ WhileEmpty* WhileEmpty::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/WhileEmpty.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/WhileEmpty.uno
+// ------------------------------------------------------------------------------
 
 // public sealed class WhileNotEmpty :57
 // {
@@ -22630,22 +22629,22 @@ WhileNotEmpty* WhileNotEmpty::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Window.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Window.uno
+// ------------------------------------------------------------------------
 
 // internal sealed class WindowCaps :83
 // {
 // static generated WindowCaps() :83
 static void WindowCaps__cctor__fn(uType* __type)
 {
-    WindowCaps::NameWidth_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[165/*"width"*/]);
-    WindowCaps::NameHeight_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[166/*"height"*/]);
-    WindowCaps::NameSize_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[157/*"size"*/]);
-    WindowCaps::NamePixelsPerPoint_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[167/*"pixelsPerPo...*/]);
-    WindowCaps::NamePixelsPerOSPoint_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[168/*"pixelsPerOS...*/]);
-    WindowCaps::NameSafeMargins_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[169/*"safeMargins"*/]);
-    WindowCaps::NameDeviceMargins_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[170/*"deviceMargins"*/]);
-    WindowCaps::NameStaticMargins_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[171/*"staticMargins"*/]);
+    WindowCaps::NameWidth_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[165/*"width"*/]);
+    WindowCaps::NameHeight_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[166/*"height"*/]);
+    WindowCaps::NameSize_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[157/*"size"*/]);
+    WindowCaps::NamePixelsPerPoint_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[167/*"pixelsPerPo...*/]);
+    WindowCaps::NamePixelsPerOSPoint_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[168/*"pixelsPerOS...*/]);
+    WindowCaps::NameSafeMargins_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[169/*"safeMargins"*/]);
+    WindowCaps::NameDeviceMargins_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[170/*"deviceMargins"*/]);
+    WindowCaps::NameStaticMargins_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[171/*"staticMargins"*/]);
 }
 
 static void WindowCaps_build(uType* type)
@@ -22880,8 +22879,8 @@ WindowCaps* WindowCaps::New3(::g::Fuse::RootViewport* rv)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/Window.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/Window.uno
+// ------------------------------------------------------------------------
 
 // public sealed class WindowFunction :25
 // {
@@ -22961,8 +22960,8 @@ WindowFunction* WindowFunction::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/Instantiator.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/Instantiator.uno
+// --------------------------------------------------------------------------------
 
 // internal sealed class WindowItem :73
 // {
@@ -23029,15 +23028,15 @@ WindowItem* WindowItem::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/WindowList.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/WindowList.uno
+// ------------------------------------------------------------------------------
 
 // internal abstract class WindowList<T> :95
 // {
 static void WindowList_build(uType* type)
 {
     ::STRINGS[173] = uString::Const("Item insertion order invalid");
-    ::STRINGS[174] = uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/WindowList.uno");
+    ::STRINGS[174] = uString::Const("/usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/WindowList.uno");
     ::STRINGS[175] = uString::Const("InsertedDataAt");
     ::STRINGS[36] = uString::Const("error");
     ::STRINGS[176] = uString::Const("Limit cannot be less than 0");
@@ -23432,8 +23431,8 @@ int32_t WindowList::WindowItemCount()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/WindowList.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/WindowList.uno
+// ------------------------------------------------------------------------------
 
 // internal abstract class WindowListItem :10
 // {
@@ -23612,8 +23611,8 @@ WindowListItem* WindowListItem::Create(uType* __type, uObject* owner, uObject* i
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.9.0/With.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Reactive.Bindings/1.10.0-rc1/With.uno
+// ------------------------------------------------------------------------
 
 // public class With :28
 // {

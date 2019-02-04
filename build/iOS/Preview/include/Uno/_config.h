@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Backends/CPlusPlus/Uno/_config.h.
+// This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Backends/CPlusPlus/Uno/_config.h.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -26,7 +26,7 @@ const float FLT_NAN = (float)DBL_NAN;
 // Source info
 #define U_STR1(STR) #STR
 #define U_STR2(STR) U_STR1(STR)
-#define U_SOURCE __FILE__ ":" U_STR2(__LINE__)
+#define U_SOURCE __FILE__ "(" U_STR2(__LINE__) ")"
 
 // Logging
 enum uLogLevel {
@@ -38,11 +38,12 @@ enum uLogLevel {
 };
 void uLog(int level, const char* format, ...);
 void uLogv(int level, const char* format, va_list args);
-#define U_LOG(...) uLog(0, __VA_ARGS__)
+#define U_LOG(...) uLog(uLogLevelDebug, __VA_ARGS__)
+#define U_ERROR(...) uLog(uLogLevelError, __VA_ARGS__)
 
 // Kill switch
 U_NORETURN void uFatal(const char* src = NULL, const char* msg = NULL);
-#define U_FATAL() uFatal(U_SOURCE)
+#define U_FATAL(...) uFatal(U_SOURCE, "" __VA_ARGS__)
 
 // Asserts
 #ifdef DEBUG_UNSAFE
@@ -69,7 +70,6 @@ T uAssertPtr(T ptr, const char* src, const char* msg) {
 // C++11 compatibility
 #ifdef _MSC_VER
 #define alignof __alignof
-#define snprintf _snprintf
 #endif
 
 // Deprecation

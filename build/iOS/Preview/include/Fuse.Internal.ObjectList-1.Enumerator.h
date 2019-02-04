@@ -1,9 +1,9 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Internal/ObjectList.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Internal/ObjectList.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Uno.IDisposable.h>
-#include <Uno.Object.h>
+#include <Uno.ValueType.h>
 namespace g{namespace Fuse{namespace Internal{struct ObjectList;}}}
 namespace g{namespace Fuse{namespace Internal{struct ObjectList__Enumerator;}}}
 
@@ -19,7 +19,7 @@ struct ObjectList__Enumerator_type : uStructType
 };
 
 ObjectList__Enumerator_type* ObjectList__Enumerator_typeof();
-void ObjectList__Enumerator__ctor__fn(ObjectList__Enumerator* __this, uType* __type, ::g::Fuse::Internal::ObjectList* source, bool* versionLock);
+void ObjectList__Enumerator__ctor_1_fn(ObjectList__Enumerator* __this, uType* __type, ::g::Fuse::Internal::ObjectList* source, bool* versionLock);
 void ObjectList__Enumerator__get_Current_fn(ObjectList__Enumerator* __this, uType* __type, uObject** __retval);
 void ObjectList__Enumerator__Dispose_fn(ObjectList__Enumerator* __this, uType* __type);
 void ObjectList__Enumerator__get_Done_fn(ObjectList__Enumerator* __this, uType* __type, bool* __retval);
@@ -37,7 +37,7 @@ struct ObjectList__Enumerator
     int32_t _at;
     int8_t _locked;
 
-    void ctor_(uType* __type, ::g::Fuse::Internal::ObjectList* source, bool versionLock);
+    void ctor_1(uType* __type, ::g::Fuse::Internal::ObjectList* source, bool versionLock);
     uObject* Current(uType* __type);
     void Dispose(uType* __type);
     bool Done(uType* __type);

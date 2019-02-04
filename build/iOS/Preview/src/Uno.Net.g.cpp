@@ -34,8 +34,8 @@ namespace g{
 namespace Uno{
 namespace Net{
 
-// /usr/local/share/uno/Packages/Uno.Net.Sockets/1.9.0/Dns.uno
-// -----------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Sockets/1.10.0-rc1/Dns.uno
+// ----------------------------------------------------------------
 
 // public sealed class Dns :16
 // {
@@ -153,7 +153,7 @@ uArray* Dns::GetHostAddressesImpl(uString* hostNameOrAddress)
     }
     freeaddrinfo(addr);
     
-    return uArray::New(::g::Uno::Net::IPAddress_typeof()->Array(), addresses.size(), &addresses[0]);
+    return uArray::New(::g::Uno::Net::IPAddress_typeof()->Array(), (int32_t)addresses.size(), &addresses[0]);
 }
 
 // private static extern Uno.Net.IPAddress[] GetLocalAddresses() [static] :18
@@ -197,8 +197,8 @@ Dns* Dns::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Net.Sockets/1.9.0/IPAddress.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Sockets/1.10.0-rc1/IPAddress.uno
+// ----------------------------------------------------------------------
 
 // public abstract class EndPoint :9
 // {
@@ -261,8 +261,8 @@ void EndPoint::AddressFamily(int32_t value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Net.Sockets/1.9.0/IPAddress.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Sockets/1.10.0-rc1/IPAddress.uno
+// ----------------------------------------------------------------------
 
 // public sealed class IPAddress :47
 // {
@@ -644,8 +644,8 @@ uArray* IPAddress::ParseIPv6Address(uString* address)
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Net.Sockets/1.9.0/IPAddress.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Sockets/1.10.0-rc1/IPAddress.uno
+// ----------------------------------------------------------------------
 
 // public sealed class IPEndPoint :24
 // {
@@ -762,8 +762,8 @@ IPEndPoint* IPEndPoint::New1(::g::Uno::Net::IPAddress* address, int32_t port)
 }
 // }
 
-// /usr/local/share/uno/Packages/Uno.Net.Sockets/1.9.0/NetworkHelpers.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Uno.Net.Sockets/1.10.0-rc1/NetworkHelpers.uno
+// ---------------------------------------------------------------------------
 
 // internal sealed extern class NetworkHelpers :8
 // {

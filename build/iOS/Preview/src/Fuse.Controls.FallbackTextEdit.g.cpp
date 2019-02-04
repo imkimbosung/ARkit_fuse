@@ -42,8 +42,8 @@ namespace Fuse{
 namespace Controls{
 namespace FallbackTextEdit{
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/TextControls/FallbackTextEdit/Helpers.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/TextControls/FallbackTextEdit/Helpers.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // internal sealed class DegreeSpan :16
 // {
@@ -125,8 +125,8 @@ DegreeSpan* DegreeSpan::New1(float a, float b)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/TextControls/FallbackTextEdit/LineCache.uno
-// --------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/TextControls/FallbackTextEdit/LineCache.uno
+// -------------------------------------------------------------------------------------------------------------
 
 // internal sealed class LineCache :10
 // {
@@ -986,8 +986,8 @@ LineCache* LineCache::New1(uDelegate* onTextChanged, uDelegate* invalideLayout, 
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/TextControls/FallbackTextEdit/LineCacheLine.uno
-// ------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/TextControls/FallbackTextEdit/LineCacheLine.uno
+// -----------------------------------------------------------------------------------------------------------------
 
 // internal sealed class LineCacheLine :9
 // {
@@ -1269,8 +1269,6 @@ uString* LineCacheLine::Text()
 // public void set_Text(string value) [instance] :15
 void LineCacheLine::Text(uString* value)
 {
-    uStackFrame __("Fuse.Controls.FallbackTextEdit.LineCacheLine", "set_Text(string)");
-
     if (::g::Uno::String::op_Equality(value, _text))
         return;
 
@@ -1311,8 +1309,8 @@ LineCacheLine* LineCacheLine::New1(uString* text, uObject* transform)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/TextControls/FallbackTextEdit/LineCacheTransform.uno
-// -----------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/TextControls/FallbackTextEdit/LineCacheTransform.uno
+// ----------------------------------------------------------------------------------------------------------------------
 
 // internal sealed class LineCachePasswordTransform :14
 // {
@@ -1409,8 +1407,8 @@ LineCachePasswordTransform* LineCachePasswordTransform::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/TextControls/FallbackTextEdit/LineCacheTransform.uno
-// -----------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/TextControls/FallbackTextEdit/LineCacheTransform.uno
+// ----------------------------------------------------------------------------------------------------------------------
 
 // internal abstract interface LineCacheTransform :9
 // {
@@ -1424,8 +1422,8 @@ uInterfaceType* LineCacheTransform_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/TextControls/FallbackTextEdit/Helpers.uno
-// ------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/TextControls/FallbackTextEdit/Helpers.uno
+// -----------------------------------------------------------------------------------------------------------
 
 // internal sealed class SwipeGestureHelper :40
 // {
@@ -1505,8 +1503,8 @@ SwipeGestureHelper* SwipeGestureHelper::New1(float lengthThreshold, uArray* span
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/TextControls/FallbackTextEdit/TextPosition.uno
-// -----------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/TextControls/FallbackTextEdit/TextPosition.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // internal sealed class TextPosition :6
 // {
@@ -1738,8 +1736,8 @@ bool TextPosition::op_LessThanOrEqual(TextPosition* a, TextPosition* b)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/TextControls/FallbackTextEdit/TextPosition.uno
-// -----------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/TextControls/FallbackTextEdit/TextPosition.uno
+// ----------------------------------------------------------------------------------------------------------------
 
 // internal sealed class TextSpan :108
 // {
@@ -1892,8 +1890,8 @@ bool TextSpan::op_Inequality(TextSpan* a, TextSpan* b)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/TextControls/FallbackTextEdit/TextWindow.uno
-// ---------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/TextControls/FallbackTextEdit/TextWindow.uno
+// --------------------------------------------------------------------------------------------------------------
 
 // internal sealed class TextWindow :9
 // {

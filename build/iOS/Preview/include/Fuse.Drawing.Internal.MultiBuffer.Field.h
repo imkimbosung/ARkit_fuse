@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Drawing/1.9.0/Internal/BufferCollections.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Drawing/1.10.0-rc1/Internal/BufferCollections.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
@@ -11,7 +11,7 @@ namespace Fuse{
 namespace Drawing{
 namespace Internal{
 
-// public sealed class MultiBuffer.Field :193
+// public sealed class MultiBuffer.Field :197
 // {
 uType* MultiBuffer__Field_typeof();
 void MultiBuffer__Field__ctor__fn(MultiBuffer__Field* __this);

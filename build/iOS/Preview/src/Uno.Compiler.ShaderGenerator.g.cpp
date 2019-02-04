@@ -8,8 +8,8 @@ namespace Uno{
 namespace Compiler{
 namespace ShaderGenerator{
 
-// /usr/local/share/uno/Packages/UnoCore/1.9.0/Source/Uno/Compiler/ShaderGenerator/ShaderStageInlineAttribute.uno
-// --------------------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Source/Uno/Compiler/ShaderGenerator/ShaderStageInlineAttribute.uno
+// -------------------------------------------------------------------------------------------------------------------
 
 // public sealed class ShaderStageInlineAttribute :4
 // {

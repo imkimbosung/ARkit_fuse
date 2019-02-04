@@ -61,7 +61,6 @@
 #include <Uno.Action2-2.h>
 #include <Uno.ArgumentNullException.h>
 #include <Uno.Bool.h>
-#include <Uno.Buffer.h>
 #include <Uno.Byte.h>
 #include <Uno.Collections.Dictionary-2.h>
 #include <Uno.Collections.IEnumerator.h>
@@ -91,14 +90,14 @@
 #include <Uno.UX.FileSource.h>
 #include <Uno.WeakReference-1.h>
 static uString* STRINGS[6];
-static uType* TYPES[27];
+static uType* TYPES[26];
 
 namespace g{
 namespace Fuse{
 namespace Resources{
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Resources/HttpImageSource.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Resources/HttpImageSource.uno
+// ------------------------------------------------------------------------------------
 
 // private sealed class HttpImageSourceImpl.BackgroundLoad :160
 // {
@@ -106,14 +105,13 @@ static void HttpImageSourceImpl__BackgroundLoad_build(uType* type)
 {
     ::TYPES[0] = ::g::Uno::Action_typeof();
     ::TYPES[1] = ::g::Uno::Exception_typeof();
-    ::TYPES[2] = ::g::Uno::Action1_typeof()->MakeType(::g::Uno::Graphics::Texture2D_typeof(), NULL);
     type->SetDependencies(
         ::g::Fuse::GraphicsWorker_typeof(),
         ::g::Fuse::UpdateManager_typeof());
     type->SetFields(0,
         ::g::Uno::Byte_typeof()->Array(), offsetof(HttpImageSourceImpl__BackgroundLoad, _data), 0,
         ::g::Uno::String_typeof(), offsetof(HttpImageSourceImpl__BackgroundLoad, _contentType), 0,
-        ::TYPES[2/*Uno.Action<texture2D>*/], offsetof(HttpImageSourceImpl__BackgroundLoad, _done), 0,
+        ::g::Uno::Action1_typeof()->MakeType(::g::Uno::Graphics::Texture2D_typeof(), NULL), offsetof(HttpImageSourceImpl__BackgroundLoad, _done), 0,
         ::g::Uno::Action1_typeof()->MakeType(::TYPES[1/*Uno.Exception*/], NULL), offsetof(HttpImageSourceImpl__BackgroundLoad, _fail), 0,
         ::TYPES[1/*Uno.Exception*/], offsetof(HttpImageSourceImpl__BackgroundLoad, _exception), 0,
         ::g::Uno::Graphics::Texture2D_typeof(), offsetof(HttpImageSourceImpl__BackgroundLoad, _tex), 0);
@@ -134,43 +132,37 @@ uType* HttpImageSourceImpl__BackgroundLoad_typeof()
     return type;
 }
 
-// public BackgroundLoad(byte[] data, string contentType, Uno.Action<texture2D> done, Uno.Action<Uno.Exception> fail) :167
+// public BackgroundLoad(byte[] data, string contentType, Uno.Action<texture2D> done, Uno.Action<Uno.Exception> fail) :168
 void HttpImageSourceImpl__BackgroundLoad__ctor__fn(HttpImageSourceImpl__BackgroundLoad* __this, uArray* data, uString* contentType, uDelegate* done, uDelegate* fail)
 {
     __this->ctor_(data, contentType, done, fail);
 }
 
-// private void GWDoneCallback(texture2D tex) :190
-void HttpImageSourceImpl__BackgroundLoad__GWDoneCallback_fn(HttpImageSourceImpl__BackgroundLoad* __this, ::g::Uno::Graphics::Texture2D* tex)
-{
-    __this->GWDoneCallback(tex);
-}
-
-// public BackgroundLoad New(byte[] data, string contentType, Uno.Action<texture2D> done, Uno.Action<Uno.Exception> fail) :167
+// public BackgroundLoad New(byte[] data, string contentType, Uno.Action<texture2D> done, Uno.Action<Uno.Exception> fail) :168
 void HttpImageSourceImpl__BackgroundLoad__New1_fn(uArray* data, uString* contentType, uDelegate* done, uDelegate* fail, HttpImageSourceImpl__BackgroundLoad** __retval)
 {
     *__retval = HttpImageSourceImpl__BackgroundLoad::New1(data, contentType, done, fail);
 }
 
-// public void Run() :176
+// public void Run() :177
 void HttpImageSourceImpl__BackgroundLoad__Run_fn(HttpImageSourceImpl__BackgroundLoad* __this)
 {
     __this->Run();
 }
 
-// private void UIDoneCallback() :199
+// private void UIDoneCallback() :195
 void HttpImageSourceImpl__BackgroundLoad__UIDoneCallback_fn(HttpImageSourceImpl__BackgroundLoad* __this)
 {
     __this->UIDoneCallback();
 }
 
-// private void UIFailCallback() :204
+// private void UIFailCallback() :200
 void HttpImageSourceImpl__BackgroundLoad__UIFailCallback_fn(HttpImageSourceImpl__BackgroundLoad* __this)
 {
     __this->UIFailCallback();
 }
 
-// public BackgroundLoad(byte[] data, string contentType, Uno.Action<texture2D> done, Uno.Action<Uno.Exception> fail) [instance] :167
+// public BackgroundLoad(byte[] data, string contentType, Uno.Action<texture2D> done, Uno.Action<Uno.Exception> fail) [instance] :168
 void HttpImageSourceImpl__BackgroundLoad::ctor_(uArray* data, uString* contentType, uDelegate* done, uDelegate* fail)
 {
     uStackFrame __("Fuse.Resources.HttpImageSourceImpl.BackgroundLoad", ".ctor(byte[],string,Uno.Action<texture2D>,Uno.Action<Uno.Exception>)");
@@ -181,16 +173,7 @@ void HttpImageSourceImpl__BackgroundLoad::ctor_(uArray* data, uString* contentTy
     ::g::Fuse::GraphicsWorker::Dispatch(uDelegate::New(::TYPES[0/*Uno.Action*/], (void*)HttpImageSourceImpl__BackgroundLoad__Run_fn, this));
 }
 
-// private void GWDoneCallback(texture2D tex) [instance] :190
-void HttpImageSourceImpl__BackgroundLoad::GWDoneCallback(::g::Uno::Graphics::Texture2D* tex)
-{
-    uStackFrame __("Fuse.Resources.HttpImageSourceImpl.BackgroundLoad", "GWDoneCallback(texture2D)");
-    ::g::OpenGL::GL::Finish();
-    _tex = tex;
-    ::g::Fuse::UpdateManager::AddOnceAction(uDelegate::New(::TYPES[0/*Uno.Action*/], (void*)HttpImageSourceImpl__BackgroundLoad__UIDoneCallback_fn, this), 0);
-}
-
-// public void Run() [instance] :176
+// public void Run() [instance] :177
 void HttpImageSourceImpl__BackgroundLoad::Run()
 {
     uStackFrame __("Fuse.Resources.HttpImageSourceImpl.BackgroundLoad", "Run()");
@@ -198,7 +181,9 @@ void HttpImageSourceImpl__BackgroundLoad::Run()
     try
     {
         {
-            ::g::Experimental::TextureLoader::TextureLoader::ByteArrayToTexture2DContentType(::g::Uno::Buffer::New1(_data), _contentType, uDelegate::New(::TYPES[2/*Uno.Action<texture2D>*/], (void*)HttpImageSourceImpl__BackgroundLoad__GWDoneCallback_fn, this));
+            _tex = ::g::Experimental::TextureLoader::TextureLoader::ByteArrayToTexture2DContentType(_data, _contentType);
+            ::g::OpenGL::GL::Finish();
+            ::g::Fuse::UpdateManager::AddOnceAction(uDelegate::New(::TYPES[0/*Uno.Action*/], (void*)HttpImageSourceImpl__BackgroundLoad__UIDoneCallback_fn, this), 0);
         }
     }
 
@@ -210,14 +195,14 @@ void HttpImageSourceImpl__BackgroundLoad::Run()
     }
 }
 
-// private void UIDoneCallback() [instance] :199
+// private void UIDoneCallback() [instance] :195
 void HttpImageSourceImpl__BackgroundLoad::UIDoneCallback()
 {
     uStackFrame __("Fuse.Resources.HttpImageSourceImpl.BackgroundLoad", "UIDoneCallback()");
     uPtr(_done)->InvokeVoid(_tex);
 }
 
-// private void UIFailCallback() [instance] :204
+// private void UIFailCallback() [instance] :200
 void HttpImageSourceImpl__BackgroundLoad::UIFailCallback()
 {
     uStackFrame __("Fuse.Resources.HttpImageSourceImpl.BackgroundLoad", "UIFailCallback()");
@@ -226,7 +211,7 @@ void HttpImageSourceImpl__BackgroundLoad::UIFailCallback()
     uPtr(_fail)->InvokeVoid(e);
 }
 
-// public BackgroundLoad New(byte[] data, string contentType, Uno.Action<texture2D> done, Uno.Action<Uno.Exception> fail) [static] :167
+// public BackgroundLoad New(byte[] data, string contentType, Uno.Action<texture2D> done, Uno.Action<Uno.Exception> fail) [static] :168
 HttpImageSourceImpl__BackgroundLoad* HttpImageSourceImpl__BackgroundLoad::New1(uArray* data, uString* contentType, uDelegate* done, uDelegate* fail)
 {
     HttpImageSourceImpl__BackgroundLoad* obj1 = (HttpImageSourceImpl__BackgroundLoad*)uNew(HttpImageSourceImpl__BackgroundLoad_typeof());
@@ -235,8 +220,8 @@ HttpImageSourceImpl__BackgroundLoad* HttpImageSourceImpl__BackgroundLoad::New1(u
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Resources/FileImageSource.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Resources/FileImageSource.uno
+// ------------------------------------------------------------------------------------
 
 // private sealed class FileImageSourceImpl.BackgroundLoad :243
 // {
@@ -244,7 +229,6 @@ static void FileImageSourceImpl__BackgroundLoad_build(uType* type)
 {
     ::TYPES[0] = ::g::Uno::Action_typeof();
     ::TYPES[1] = ::g::Uno::Exception_typeof();
-    ::TYPES[2] = ::g::Uno::Action1_typeof()->MakeType(::g::Uno::Graphics::Texture2D_typeof(), NULL);
     type->SetDependencies(
         ::g::Fuse::GraphicsWorker_typeof(),
         ::g::Fuse::UpdateManager_typeof());
@@ -272,43 +256,37 @@ uType* FileImageSourceImpl__BackgroundLoad_typeof()
     return type;
 }
 
-// public BackgroundLoad(Uno.UX.FileSource file, Uno.Action<texture2D, Fuse.Resources.Exif.ImageOrientation> done, Uno.Action<Uno.Exception> fail) :251
+// public BackgroundLoad(Uno.UX.FileSource file, Uno.Action<texture2D, Fuse.Resources.Exif.ImageOrientation> done, Uno.Action<Uno.Exception> fail) :252
 void FileImageSourceImpl__BackgroundLoad__ctor__fn(FileImageSourceImpl__BackgroundLoad* __this, ::g::Uno::UX::FileSource* file, uDelegate* done, uDelegate* fail)
 {
     __this->ctor_(file, done, fail);
 }
 
-// private void GWDoneCallback(texture2D tex) :275
-void FileImageSourceImpl__BackgroundLoad__GWDoneCallback_fn(FileImageSourceImpl__BackgroundLoad* __this, ::g::Uno::Graphics::Texture2D* tex)
-{
-    __this->GWDoneCallback(tex);
-}
-
-// public BackgroundLoad New(Uno.UX.FileSource file, Uno.Action<texture2D, Fuse.Resources.Exif.ImageOrientation> done, Uno.Action<Uno.Exception> fail) :251
+// public BackgroundLoad New(Uno.UX.FileSource file, Uno.Action<texture2D, Fuse.Resources.Exif.ImageOrientation> done, Uno.Action<Uno.Exception> fail) :252
 void FileImageSourceImpl__BackgroundLoad__New1_fn(::g::Uno::UX::FileSource* file, uDelegate* done, uDelegate* fail, FileImageSourceImpl__BackgroundLoad** __retval)
 {
     *__retval = FileImageSourceImpl__BackgroundLoad::New1(file, done, fail);
 }
 
-// public void Run() :259
+// public void Run() :260
 void FileImageSourceImpl__BackgroundLoad__Run_fn(FileImageSourceImpl__BackgroundLoad* __this)
 {
     __this->Run();
 }
 
-// private void UIDoneCallback() :284
+// private void UIDoneCallback() :280
 void FileImageSourceImpl__BackgroundLoad__UIDoneCallback_fn(FileImageSourceImpl__BackgroundLoad* __this)
 {
     __this->UIDoneCallback();
 }
 
-// private void UIFailCallback() :289
+// private void UIFailCallback() :285
 void FileImageSourceImpl__BackgroundLoad__UIFailCallback_fn(FileImageSourceImpl__BackgroundLoad* __this)
 {
     __this->UIFailCallback();
 }
 
-// public BackgroundLoad(Uno.UX.FileSource file, Uno.Action<texture2D, Fuse.Resources.Exif.ImageOrientation> done, Uno.Action<Uno.Exception> fail) [instance] :251
+// public BackgroundLoad(Uno.UX.FileSource file, Uno.Action<texture2D, Fuse.Resources.Exif.ImageOrientation> done, Uno.Action<Uno.Exception> fail) [instance] :252
 void FileImageSourceImpl__BackgroundLoad::ctor_(::g::Uno::UX::FileSource* file, uDelegate* done, uDelegate* fail)
 {
     uStackFrame __("Fuse.Resources.FileImageSourceImpl.BackgroundLoad", ".ctor(Uno.UX.FileSource,Uno.Action<texture2D, Fuse.Resources.Exif.ImageOrientation>,Uno.Action<Uno.Exception>)");
@@ -318,16 +296,7 @@ void FileImageSourceImpl__BackgroundLoad::ctor_(::g::Uno::UX::FileSource* file, 
     ::g::Fuse::GraphicsWorker::Dispatch(uDelegate::New(::TYPES[0/*Uno.Action*/], (void*)FileImageSourceImpl__BackgroundLoad__Run_fn, this));
 }
 
-// private void GWDoneCallback(texture2D tex) [instance] :275
-void FileImageSourceImpl__BackgroundLoad::GWDoneCallback(::g::Uno::Graphics::Texture2D* tex)
-{
-    uStackFrame __("Fuse.Resources.FileImageSourceImpl.BackgroundLoad", "GWDoneCallback(texture2D)");
-    ::g::OpenGL::GL::Finish();
-    _tex = tex;
-    ::g::Fuse::UpdateManager::PostAction(uDelegate::New(::TYPES[0/*Uno.Action*/], (void*)FileImageSourceImpl__BackgroundLoad__UIDoneCallback_fn, this));
-}
-
-// public void Run() [instance] :259
+// public void Run() [instance] :260
 void FileImageSourceImpl__BackgroundLoad::Run()
 {
     uStackFrame __("Fuse.Resources.FileImageSourceImpl.BackgroundLoad", "Run()");
@@ -337,7 +306,9 @@ void FileImageSourceImpl__BackgroundLoad::Run()
         {
             uArray* data = uPtr(_file)->ReadAllBytes();
             _orientation = ::g::Fuse::Resources::Exif::ExifData__FromByteArray(data).Orientation;
-            ::g::Experimental::TextureLoader::TextureLoader::ByteArrayToTexture2DFilename(::g::Uno::Buffer::New1(data), uPtr(_file)->Name, uDelegate::New(::TYPES[2/*Uno.Action<texture2D>*/], (void*)FileImageSourceImpl__BackgroundLoad__GWDoneCallback_fn, this));
+            _tex = ::g::Experimental::TextureLoader::TextureLoader::ByteArrayToTexture2DFilename(data, uPtr(_file)->Name);
+            ::g::OpenGL::GL::Finish();
+            ::g::Fuse::UpdateManager::PostAction(uDelegate::New(::TYPES[0/*Uno.Action*/], (void*)FileImageSourceImpl__BackgroundLoad__UIDoneCallback_fn, this));
         }
     }
 
@@ -349,14 +320,14 @@ void FileImageSourceImpl__BackgroundLoad::Run()
     }
 }
 
-// private void UIDoneCallback() [instance] :284
+// private void UIDoneCallback() [instance] :280
 void FileImageSourceImpl__BackgroundLoad::UIDoneCallback()
 {
     uStackFrame __("Fuse.Resources.FileImageSourceImpl.BackgroundLoad", "UIDoneCallback()");
     uPtr(_done)->Invoke(2, (::g::Uno::Graphics::Texture2D*)_tex, uCRef<int32_t>(_orientation));
 }
 
-// private void UIFailCallback() [instance] :289
+// private void UIFailCallback() [instance] :285
 void FileImageSourceImpl__BackgroundLoad::UIFailCallback()
 {
     uStackFrame __("Fuse.Resources.FileImageSourceImpl.BackgroundLoad", "UIFailCallback()");
@@ -365,7 +336,7 @@ void FileImageSourceImpl__BackgroundLoad::UIFailCallback()
     uPtr(_fail)->InvokeVoid(e);
 }
 
-// public BackgroundLoad New(Uno.UX.FileSource file, Uno.Action<texture2D, Fuse.Resources.Exif.ImageOrientation> done, Uno.Action<Uno.Exception> fail) [static] :251
+// public BackgroundLoad New(Uno.UX.FileSource file, Uno.Action<texture2D, Fuse.Resources.Exif.ImageOrientation> done, Uno.Action<Uno.Exception> fail) [static] :252
 FileImageSourceImpl__BackgroundLoad* FileImageSourceImpl__BackgroundLoad::New1(::g::Uno::UX::FileSource* file, uDelegate* done, uDelegate* fail)
 {
     FileImageSourceImpl__BackgroundLoad* obj1 = (FileImageSourceImpl__BackgroundLoad*)uNew(FileImageSourceImpl__BackgroundLoad_typeof());
@@ -374,8 +345,8 @@ FileImageSourceImpl__BackgroundLoad* FileImageSourceImpl__BackgroundLoad::New1(:
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Resources/LoadingImageSource.uno
-// ----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Resources/LoadingImageSource.uno
+// ---------------------------------------------------------------------------------------
 
 // protected enum LoadingImageSource.CleanupReason :10
 uEnumType* LoadingImageSource__CleanupReason_typeof()
@@ -391,32 +362,32 @@ uEnumType* LoadingImageSource__CleanupReason_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Resources/DisposalManager.uno
-// -----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Resources/DisposalManager.uno
+// ----------------------------------------------------------------------------------
 
 // internal static class DisposalManager :7
 // {
 // static generated DisposalManager() :7
 static void DisposalManager__cctor__fn(uType* __type)
 {
-    DisposalManager::_items_ = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[3/*Uno.Collections.List<Fuse.Resources.IMemoryResource>*/]));
-    DisposalManager::_softDisposables_ = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[4/*Uno.Collections.List<Fuse.Resources.ISoftDisposable>*/]));
+    DisposalManager::_items_ = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[2/*Uno.Collections.List<Fuse.Resources.IMemoryResource>*/]));
+    DisposalManager::_softDisposables_ = ((::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[3/*Uno.Collections.List<Fuse.Resources.ISoftDisposable>*/]));
 }
 
 static void DisposalManager_build(uType* type)
 {
-    ::TYPES[3] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Resources::IMemoryResource_typeof(), NULL);
-    ::TYPES[4] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Resources::ISoftDisposable_typeof(), NULL);
-    ::TYPES[5] = ::g::Fuse::Resources::IMemoryResource_typeof();
-    ::TYPES[6] = ::g::Fuse::Resources::ISoftDisposable_typeof();
+    ::TYPES[2] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Resources::IMemoryResource_typeof(), NULL);
+    ::TYPES[3] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Fuse::Resources::ISoftDisposable_typeof(), NULL);
+    ::TYPES[4] = ::g::Fuse::Resources::IMemoryResource_typeof();
+    ::TYPES[5] = ::g::Fuse::Resources::ISoftDisposable_typeof();
     ::TYPES[0] = ::g::Uno::Action_typeof();
     type->SetDependencies(
         ::g::Fuse::UpdateManager_typeof());
     type->SetFields(0,
-        ::TYPES[3/*Uno.Collections.List<Fuse.Resources.IMemoryResource>*/], (uintptr_t)&DisposalManager::_items_, uFieldFlagsStatic,
+        ::TYPES[2/*Uno.Collections.List<Fuse.Resources.IMemoryResource>*/], (uintptr_t)&DisposalManager::_items_, uFieldFlagsStatic,
         ::g::Uno::Bool_typeof(), (uintptr_t)&DisposalManager::_actionAdded_, uFieldFlagsStatic,
         ::g::Uno::Int_typeof(), (uintptr_t)&DisposalManager::_disposeAt_, uFieldFlagsStatic,
-        ::TYPES[4/*Uno.Collections.List<Fuse.Resources.ISoftDisposable>*/], (uintptr_t)&DisposalManager::_softDisposables_, uFieldFlagsStatic);
+        ::TYPES[3/*Uno.Collections.List<Fuse.Resources.ISoftDisposable>*/], (uintptr_t)&DisposalManager::_softDisposables_, uFieldFlagsStatic);
 }
 
 uClassType* DisposalManager_typeof()
@@ -513,17 +484,17 @@ void DisposalManager::Clean(int32_t dr)
 
         uObject* item = (::g::Uno::Collections::List__get_Item_fn(uPtr(DisposalManager::_items_), uCRef<int32_t>(i), &ret1), ret1);
 
-        if (!uPtr(::g::Fuse::Resources::IMemoryResource::MemoryPolicy(uInterface(uPtr(item), ::TYPES[5/*Fuse.Resources.IMemoryResource*/])))->ShouldSoftDispose(dr, item))
+        if (!uPtr(::g::Fuse::Resources::IMemoryResource::MemoryPolicy(uInterface(uPtr(item), ::TYPES[4/*Fuse.Resources.IMemoryResource*/])))->ShouldSoftDispose(dr, item))
             continue;
 
         uPtr(DisposalManager::_items_)->RemoveAt(i);
-        ::g::Fuse::Resources::IMemoryResource::SoftDispose(uInterface(uPtr(item), ::TYPES[5/*Fuse.Resources.IMemoryResource*/]));
+        ::g::Fuse::Resources::IMemoryResource::SoftDispose(uInterface(uPtr(item), ::TYPES[4/*Fuse.Resources.IMemoryResource*/]));
     }
 
     if ((dr == 1) || (dr == 2))
 
         for (int32_t i1 = 0; i1 < uPtr(DisposalManager::_softDisposables_)->Count(); ++i1)
-            ::g::Fuse::Resources::ISoftDisposable::SoftDispose(uInterface(uPtr((::g::Uno::Collections::List__get_Item_fn(uPtr(DisposalManager::_softDisposables_), uCRef<int32_t>(i1), &ret2), ret2)), ::TYPES[6/*Fuse.Resources.ISoftDisposable*/]));
+            ::g::Fuse::Resources::ISoftDisposable::SoftDispose(uInterface(uPtr((::g::Uno::Collections::List__get_Item_fn(uPtr(DisposalManager::_softDisposables_), uCRef<int32_t>(i1), &ret2), ret2)), ::TYPES[5/*Fuse.Resources.ISoftDisposable*/]));
 }
 
 // public static void Remove(Fuse.Resources.IMemoryResource item) [static] :29
@@ -565,11 +536,11 @@ void DisposalManager::Update()
 
         uObject* item = (::g::Uno::Collections::List__get_Item_fn(uPtr(DisposalManager::_items_), uCRef<int32_t>(DisposalManager::_disposeAt_), &ret5), ret5);
 
-        if (!uPtr(::g::Fuse::Resources::IMemoryResource::MemoryPolicy(uInterface(uPtr(item), ::TYPES[5/*Fuse.Resources.IMemoryResource*/])))->ShouldSoftDispose(0, item))
+        if (!uPtr(::g::Fuse::Resources::IMemoryResource::MemoryPolicy(uInterface(uPtr(item), ::TYPES[4/*Fuse.Resources.IMemoryResource*/])))->ShouldSoftDispose(0, item))
             continue;
 
         uPtr(DisposalManager::_items_)->RemoveAt(DisposalManager::_disposeAt_);
-        ::g::Fuse::Resources::IMemoryResource::SoftDispose(uInterface(uPtr(item), ::TYPES[5/*Fuse.Resources.IMemoryResource*/]));
+        ::g::Fuse::Resources::IMemoryResource::SoftDispose(uInterface(uPtr(item), ::TYPES[4/*Fuse.Resources.IMemoryResource*/]));
     }
 }
 
@@ -592,8 +563,8 @@ void DisposalManager::VerifyAttach()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Resources/DisposalPolicy.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Resources/DisposalPolicy.uno
+// ---------------------------------------------------------------------------------
 
 // internal abstract class DisposalPolicy :7
 // {
@@ -626,8 +597,8 @@ void DisposalPolicy::ctor_()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Resources/IDeferredDisposable.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Resources/IDeferredDisposable.uno
+// --------------------------------------------------------------------------------------
 
 // public enum DisposalRequest :6
 uEnumType* DisposalRequest_typeof()
@@ -643,8 +614,8 @@ uEnumType* DisposalRequest_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Resources/DisposalPolicy.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Resources/DisposalPolicy.uno
+// ---------------------------------------------------------------------------------
 
 // internal sealed class ExpirationDisposalPolicy :14
 // {
@@ -756,15 +727,15 @@ ExpirationDisposalPolicy* ExpirationDisposalPolicy::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Resources/FileImageSource.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Resources/FileImageSource.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class FileImageSource :67
 // {
 static void FileImageSource_build(uType* type)
 {
-    ::TYPES[7] = ::g::Uno::UX::FileSource_typeof();
-    ::TYPES[8] = ::g::Fuse::Resources::FileImageSourceImpl_typeof();
+    ::TYPES[6] = ::g::Uno::UX::FileSource_typeof();
+    ::TYPES[7] = ::g::Fuse::Resources::FileImageSourceImpl_typeof();
     type->SetDependencies(
         ::g::Fuse::Resources::FileImageSourceCache_typeof());
     type->SetFields(5,
@@ -773,10 +744,10 @@ static void FileImageSource_build(uType* type)
         new uFunction("set_DefaultPolicy", NULL, (void*)FileImageSource__set_DefaultPolicy_fn, 0, false, uVoid_typeof(), 1, ::g::Fuse::Resources::MemoryPolicy_typeof()),
         new uFunction("get_Density", NULL, (void*)FileImageSource__get_Density_fn, 0, false, ::g::Uno::Float_typeof(), 0),
         new uFunction("set_Density", NULL, (void*)FileImageSource__set_Density_fn, 0, false, uVoid_typeof(), 1, ::g::Uno::Float_typeof()),
-        new uFunction("get_File", NULL, (void*)FileImageSource__get_File_fn, 0, false, ::TYPES[7/*Uno.UX.FileSource*/], 0),
-        new uFunction("set_File", NULL, (void*)FileImageSource__set_File_fn, 0, false, uVoid_typeof(), 1, ::TYPES[7/*Uno.UX.FileSource*/]),
+        new uFunction("get_File", NULL, (void*)FileImageSource__get_File_fn, 0, false, ::TYPES[6/*Uno.UX.FileSource*/], 0),
+        new uFunction("set_File", NULL, (void*)FileImageSource__set_File_fn, 0, false, uVoid_typeof(), 1, ::TYPES[6/*Uno.UX.FileSource*/]),
         new uFunction(".ctor", NULL, (void*)FileImageSource__New2_fn, 0, true, type, 0),
-        new uFunction(".ctor", NULL, (void*)FileImageSource__New3_fn, 0, true, type, 1, ::TYPES[7/*Uno.UX.FileSource*/]),
+        new uFunction(".ctor", NULL, (void*)FileImageSource__New3_fn, 0, true, type, 1, ::TYPES[6/*Uno.UX.FileSource*/]),
         new uFunction("get_Policy", NULL, (void*)FileImageSource__get_Policy_fn, 0, false, ::g::Fuse::Resources::MemoryPolicy_typeof(), 0),
         new uFunction("set_Policy", NULL, (void*)FileImageSource__set_Policy_fn, 0, false, uVoid_typeof(), 1, ::g::Fuse::Resources::MemoryPolicy_typeof()));
 }
@@ -969,7 +940,7 @@ void FileImageSource::Density(float value)
 ::g::Uno::UX::FileSource* FileImageSource::File()
 {
     uStackFrame __("Fuse.Resources.FileImageSource", "get_File()");
-    return (uPtr(_proxy)->Impl() == NULL) ? uCast< ::g::Uno::UX::FileSource*>(NULL, ::TYPES[7/*Uno.UX.FileSource*/]) : (::g::Uno::UX::FileSource*)uPtr(uAs< ::g::Fuse::Resources::FileImageSourceImpl*>(uPtr(_proxy)->Impl(), ::TYPES[8/*Fuse.Resources.FileImageSourceImpl*/]))->File();
+    return (uPtr(_proxy)->Impl() == NULL) ? uCast< ::g::Uno::UX::FileSource*>(NULL, ::TYPES[6/*Uno.UX.FileSource*/]) : (::g::Uno::UX::FileSource*)uPtr(uAs< ::g::Fuse::Resources::FileImageSourceImpl*>(uPtr(_proxy)->Impl(), ::TYPES[7/*Fuse.Resources.FileImageSourceImpl*/]))->File();
 }
 
 // public void set_File(Uno.UX.FileSource value) [instance] :77
@@ -1016,23 +987,23 @@ FileImageSource* FileImageSource::New3(::g::Uno::UX::FileSource* file)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Resources/FileImageSource.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Resources/FileImageSource.uno
+// ------------------------------------------------------------------------------------
 
 // internal static class FileImageSourceCache :11
 // {
 // static generated FileImageSourceCache() :11
 static void FileImageSourceCache__cctor__fn(uType* __type)
 {
-    FileImageSourceCache::_cache_ = ((::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[9/*Uno.Collections.Dictionary<Uno.UX.FileSource, Uno.WeakReference<Fuse.Resources.FileImageSourceImpl>>*/]));
+    FileImageSourceCache::_cache_ = ((::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[8/*Uno.Collections.Dictionary<Uno.UX.FileSource, Uno.WeakReference<Fuse.Resources.FileImageSourceImpl>>*/]));
 }
 
 static void FileImageSourceCache_build(uType* type)
 {
-    ::TYPES[9] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Uno::UX::FileSource_typeof(), ::g::Uno::WeakReference_typeof()->MakeType(::g::Fuse::Resources::FileImageSourceImpl_typeof(), NULL), NULL);
-    ::TYPES[10] = ::g::Uno::WeakReference_typeof()->MakeType(::g::Fuse::Resources::FileImageSourceImpl_typeof(), NULL);
+    ::TYPES[8] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Uno::UX::FileSource_typeof(), ::g::Uno::WeakReference_typeof()->MakeType(::g::Fuse::Resources::FileImageSourceImpl_typeof(), NULL), NULL);
+    ::TYPES[9] = ::g::Uno::WeakReference_typeof()->MakeType(::g::Fuse::Resources::FileImageSourceImpl_typeof(), NULL);
     type->SetFields(0,
-        ::TYPES[9/*Uno.Collections.Dictionary<Uno.UX.FileSource, Uno.WeakReference<Fuse.Resources.FileImageSourceImpl>>*/], (uintptr_t)&FileImageSourceCache::_cache_, uFieldFlagsStatic);
+        ::TYPES[8/*Uno.Collections.Dictionary<Uno.UX.FileSource, Uno.WeakReference<Fuse.Resources.FileImageSourceImpl>>*/], (uintptr_t)&FileImageSourceCache::_cache_, uFieldFlagsStatic);
 }
 
 uClassType* FileImageSourceCache_typeof()
@@ -1077,13 +1048,13 @@ uSStrong< ::g::Uno::Collections::Dictionary*> FileImageSourceCache::_cache_;
     }
 
     ::g::Fuse::Resources::FileImageSourceImpl* nv = ::g::Fuse::Resources::FileImageSourceImpl::New2(file);
-    ::g::Uno::Collections::Dictionary__Add_fn(uPtr(FileImageSourceCache::_cache_), file, (::g::Uno::WeakReference*)::g::Uno::WeakReference::New1(::TYPES[10/*Uno.WeakReference<Fuse.Resources.FileImageSourceImpl>*/], nv));
+    ::g::Uno::Collections::Dictionary__Add_fn(uPtr(FileImageSourceCache::_cache_), file, (::g::Uno::WeakReference*)::g::Uno::WeakReference::New1(::TYPES[9/*Uno.WeakReference<Fuse.Resources.FileImageSourceImpl>*/], nv));
     return nv;
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Resources/FileImageSource.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Resources/FileImageSource.uno
+// ------------------------------------------------------------------------------------
 
 // internal sealed class FileImageSourceImpl :142
 // {
@@ -1144,7 +1115,7 @@ void FileImageSourceImpl__AttemptLoad_fn(FileImageSourceImpl* __this)
     }
 
     __this->_loading = true;
-    FileImageSourceImpl__BackgroundLoad::New1(__this->_file, uDelegate::New(::g::Uno::Action2_typeof()->MakeType(::TYPES[23/*texture2D*/], ::g::Fuse::Resources::Exif::ImageOrientation_typeof(), NULL), (void*)FileImageSourceImpl__SuccessCallback_fn, __this), uDelegate::New(::g::Uno::Action1_typeof()->MakeType(::TYPES[1/*Uno.Exception*/], NULL), (void*)FileImageSourceImpl__FailureCallback_fn, __this));
+    FileImageSourceImpl__BackgroundLoad::New1(__this->_file, uDelegate::New(::g::Uno::Action2_typeof()->MakeType(::TYPES[22/*texture2D*/], ::g::Fuse::Resources::Exif::ImageOrientation_typeof(), NULL), (void*)FileImageSourceImpl__SuccessCallback_fn, __this), uDelegate::New(::g::Uno::Action1_typeof()->MakeType(::TYPES[1/*Uno.Exception*/], NULL), (void*)FileImageSourceImpl__FailureCallback_fn, __this));
     __this->OnChanged();
 }
 
@@ -1250,7 +1221,7 @@ void FileImageSourceImpl::SyncLoad()
         {
             uArray* data = uPtr(_file)->ReadAllBytes();
             _orientation = ::g::Fuse::Resources::Exif::ExifData__FromByteArray(data).Orientation;
-            ::g::Experimental::TextureLoader::TextureLoader::ByteArrayToTexture2DFilename(::g::Uno::Buffer::New1(data), uPtr(_file)->Name, uDelegate::New(::TYPES[2/*Uno.Action<texture2D>*/], (void*)::g::Fuse::Resources::LoadingImageSource__SetTexture_fn, this));
+            SetTexture(::g::Experimental::TextureLoader::TextureLoader::ByteArrayToTexture2DFilename(data, uPtr(_file)->Name));
             OnChanged();
         }
     }
@@ -1272,8 +1243,8 @@ FileImageSourceImpl* FileImageSourceImpl::New2(::g::Uno::UX::FileSource* file)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Resources/FileResource.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Resources/FileResource.uno
+// -------------------------------------------------------------------------------
 
 // public sealed class FileResource :7
 // {
@@ -1337,15 +1308,15 @@ FileResource* FileResource::New1(::g::Uno::UX::FileSource* file)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Resources/HttpImageSource.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Resources/HttpImageSource.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class HttpImageSource :24
 // {
 static void HttpImageSource_build(uType* type)
 {
     ::STRINGS[0] = uString::Const("");
-    ::TYPES[11] = ::g::Fuse::Resources::HttpImageSourceImpl_typeof();
+    ::TYPES[10] = ::g::Fuse::Resources::HttpImageSourceImpl_typeof();
     type->SetDependencies(
         ::g::Fuse::Resources::HttpImageSourceCache_typeof());
     type->SetFields(5,
@@ -1564,7 +1535,7 @@ void HttpImageSource::Policy(::g::Fuse::Resources::MemoryPolicy* value)
 uString* HttpImageSource::Url()
 {
     uStackFrame __("Fuse.Resources.HttpImageSource", "get_Url()");
-    return (uPtr(_proxy)->Impl() == NULL) ? ::STRINGS[0/*""*/] : (uString*)uPtr(uAs< ::g::Fuse::Resources::HttpImageSourceImpl*>(uPtr(_proxy)->Impl(), ::TYPES[11/*Fuse.Resources.HttpImageSourceImpl*/]))->Url();
+    return (uPtr(_proxy)->Impl() == NULL) ? ::STRINGS[0/*""*/] : (uString*)uPtr(uAs< ::g::Fuse::Resources::HttpImageSourceImpl*>(uPtr(_proxy)->Impl(), ::TYPES[10/*Fuse.Resources.HttpImageSourceImpl*/]))->Url();
 }
 
 // public void set_Url(string value) [instance] :31
@@ -1596,23 +1567,23 @@ HttpImageSource* HttpImageSource::New3(uString* url)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Resources/HttpImageSource.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Resources/HttpImageSource.uno
+// ------------------------------------------------------------------------------------
 
 // internal static class HttpImageSourceCache :73
 // {
 // static generated HttpImageSourceCache() :73
 static void HttpImageSourceCache__cctor__fn(uType* __type)
 {
-    HttpImageSourceCache::_cache_ = ((::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[12/*Uno.Collections.Dictionary<string, Uno.WeakReference<Fuse.Resources.HttpImageSourceImpl>>*/]));
+    HttpImageSourceCache::_cache_ = ((::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[11/*Uno.Collections.Dictionary<string, Uno.WeakReference<Fuse.Resources.HttpImageSourceImpl>>*/]));
 }
 
 static void HttpImageSourceCache_build(uType* type)
 {
-    ::TYPES[12] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Uno::String_typeof(), ::g::Uno::WeakReference_typeof()->MakeType(::g::Fuse::Resources::HttpImageSourceImpl_typeof(), NULL), NULL);
-    ::TYPES[13] = ::g::Uno::WeakReference_typeof()->MakeType(::g::Fuse::Resources::HttpImageSourceImpl_typeof(), NULL);
+    ::TYPES[11] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Uno::String_typeof(), ::g::Uno::WeakReference_typeof()->MakeType(::g::Fuse::Resources::HttpImageSourceImpl_typeof(), NULL), NULL);
+    ::TYPES[12] = ::g::Uno::WeakReference_typeof()->MakeType(::g::Fuse::Resources::HttpImageSourceImpl_typeof(), NULL);
     type->SetFields(0,
-        ::TYPES[12/*Uno.Collections.Dictionary<string, Uno.WeakReference<Fuse.Resources.HttpImageSourceImpl>>*/], (uintptr_t)&HttpImageSourceCache::_cache_, uFieldFlagsStatic);
+        ::TYPES[11/*Uno.Collections.Dictionary<string, Uno.WeakReference<Fuse.Resources.HttpImageSourceImpl>>*/], (uintptr_t)&HttpImageSourceCache::_cache_, uFieldFlagsStatic);
 }
 
 uClassType* HttpImageSourceCache_typeof()
@@ -1662,13 +1633,13 @@ uSStrong< ::g::Uno::Collections::Dictionary*> HttpImageSourceCache::_cache_;
     }
 
     ::g::Fuse::Resources::HttpImageSourceImpl* nv = ::g::Fuse::Resources::HttpImageSourceImpl::New2(url);
-    ::g::Uno::Collections::Dictionary__Add_fn(uPtr(HttpImageSourceCache::_cache_), url, (::g::Uno::WeakReference*)::g::Uno::WeakReference::New1(::TYPES[13/*Uno.WeakReference<Fuse.Resources.HttpImageSourceImpl>*/], nv));
+    ::g::Uno::Collections::Dictionary__Add_fn(uPtr(HttpImageSourceCache::_cache_), url, (::g::Uno::WeakReference*)::g::Uno::WeakReference::New1(::TYPES[12/*Uno.WeakReference<Fuse.Resources.HttpImageSourceImpl>*/], nv));
     return nv;
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Resources/HttpImageSource.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Resources/HttpImageSource.uno
+// ------------------------------------------------------------------------------------
 
 // internal sealed class HttpImageSourceImpl :97
 // {
@@ -1731,7 +1702,7 @@ void HttpImageSourceImpl__AttemptLoad_fn(HttpImageSourceImpl* __this)
     }
 }
 
-// private void Fail(string msg, [Uno.Exception e]) :217
+// private void Fail(string msg, [Uno.Exception e]) :213
 void HttpImageSourceImpl__Fail_fn(HttpImageSourceImpl* __this, uString* msg, ::g::Uno::Exception* e)
 {
     __this->Fail(msg, e);
@@ -1749,7 +1720,7 @@ void HttpImageSourceImpl__HttpCallback_fn(HttpImageSourceImpl* __this, ::g::Expe
     __this->HttpCallback(response, data);
 }
 
-// private void LoadFailed(string reason) :212
+// private void LoadFailed(string reason) :208
 void HttpImageSourceImpl__LoadFailed_fn(HttpImageSourceImpl* __this, uString* reason)
 {
     __this->LoadFailed(reason);
@@ -1786,7 +1757,7 @@ void HttpImageSourceImpl::ctor_3(uString* url)
     _url = url;
 }
 
-// private void Fail(string msg, [Uno.Exception e]) [instance] :217
+// private void Fail(string msg, [Uno.Exception e]) [instance] :213
 void HttpImageSourceImpl::Fail(uString* msg, ::g::Uno::Exception* e)
 {
     uStackFrame __("Fuse.Resources.HttpImageSourceImpl", "Fail(string,[Uno.Exception])");
@@ -1822,10 +1793,10 @@ void HttpImageSourceImpl::HttpCallback(::g::Experimental::Http::HttpResponseHead
         _contentType = ct;
 
     _orientation = ::g::Fuse::Resources::Exif::ExifData__FromByteArray(data).Orientation;
-    HttpImageSourceImpl__BackgroundLoad::New1(data, _contentType, uDelegate::New(::TYPES[2/*Uno.Action<texture2D>*/], (void*)HttpImageSourceImpl__SuccessCallback_fn, this), uDelegate::New(::g::Uno::Action1_typeof()->MakeType(::TYPES[1/*Uno.Exception*/], NULL), (void*)HttpImageSourceImpl__FailureCallback_fn, this));
+    HttpImageSourceImpl__BackgroundLoad::New1(data, _contentType, uDelegate::New(::g::Uno::Action1_typeof()->MakeType(::TYPES[22/*texture2D*/], NULL), (void*)HttpImageSourceImpl__SuccessCallback_fn, this), uDelegate::New(::g::Uno::Action1_typeof()->MakeType(::TYPES[1/*Uno.Exception*/], NULL), (void*)HttpImageSourceImpl__FailureCallback_fn, this));
 }
 
-// private void LoadFailed(string reason) [instance] :212
+// private void LoadFailed(string reason) [instance] :208
 void HttpImageSourceImpl::LoadFailed(uString* reason)
 {
     uStackFrame __("Fuse.Resources.HttpImageSourceImpl", "LoadFailed(string)");
@@ -1855,8 +1826,8 @@ HttpImageSourceImpl* HttpImageSourceImpl::New2(uString* url)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Resources/IDeferredDisposable.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Resources/IDeferredDisposable.uno
+// --------------------------------------------------------------------------------------
 
 // internal abstract interface IDeferredDisposable :13
 // {
@@ -1870,8 +1841,8 @@ uInterfaceType* IDeferredDisposable_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Resources/ImageSource.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Resources/ImageSource.uno
+// --------------------------------------------------------------------------------
 
 // public abstract class ImageSource :87
 // {
@@ -1879,22 +1850,22 @@ static void ImageSource_build(uType* type)
 {
     ::STRINGS[1] = uString::Const("ImageSource error: '");
     ::STRINGS[2] = uString::Const("'");
-    ::STRINGS[3] = uString::Const("/usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Resources/ImageSource.uno");
+    ::STRINGS[3] = uString::Const("/usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Resources/ImageSource.uno");
     ::STRINGS[4] = uString::Const("OnError");
     ::TYPES[0] = ::g::Uno::Action_typeof();
-    ::TYPES[14] = ::g::Uno::EventHandler_typeof();
-    ::TYPES[15] = ::g::Fuse::Resources::ImageSourceErrorHandler_typeof();
+    ::TYPES[13] = ::g::Uno::EventHandler_typeof();
+    ::TYPES[14] = ::g::Fuse::Resources::ImageSourceErrorHandler_typeof();
     type->SetDependencies(
         ::g::Fuse::UpdateManager_typeof());
     type->SetFields(2,
         ::g::Uno::Int_typeof(), offsetof(ImageSource, _pinCount), 0,
-        ::TYPES[14/*Uno.EventHandler*/], offsetof(ImageSource, Changed1), 0,
-        ::TYPES[15/*Fuse.Resources.ImageSourceErrorHandler*/], offsetof(ImageSource, Error1), 0);
+        ::TYPES[13/*Uno.EventHandler*/], offsetof(ImageSource, Changed1), 0,
+        ::TYPES[14/*Fuse.Resources.ImageSourceErrorHandler*/], offsetof(ImageSource, Error1), 0);
     type->Reflection.SetFunctions(14,
-        new uFunction("add_Changed", NULL, (void*)ImageSource__add_Changed_fn, 0, false, uVoid_typeof(), 1, ::TYPES[14/*Uno.EventHandler*/]),
-        new uFunction("remove_Changed", NULL, (void*)ImageSource__remove_Changed_fn, 0, false, uVoid_typeof(), 1, ::TYPES[14/*Uno.EventHandler*/]),
-        new uFunction("add_Error", NULL, (void*)ImageSource__add_Error_fn, 0, false, uVoid_typeof(), 1, ::TYPES[15/*Fuse.Resources.ImageSourceErrorHandler*/]),
-        new uFunction("remove_Error", NULL, (void*)ImageSource__remove_Error_fn, 0, false, uVoid_typeof(), 1, ::TYPES[15/*Fuse.Resources.ImageSourceErrorHandler*/]),
+        new uFunction("add_Changed", NULL, (void*)ImageSource__add_Changed_fn, 0, false, uVoid_typeof(), 1, ::TYPES[13/*Uno.EventHandler*/]),
+        new uFunction("remove_Changed", NULL, (void*)ImageSource__remove_Changed_fn, 0, false, uVoid_typeof(), 1, ::TYPES[13/*Uno.EventHandler*/]),
+        new uFunction("add_Error", NULL, (void*)ImageSource__add_Error_fn, 0, false, uVoid_typeof(), 1, ::TYPES[14/*Fuse.Resources.ImageSourceErrorHandler*/]),
+        new uFunction("remove_Error", NULL, (void*)ImageSource__remove_Error_fn, 0, false, uVoid_typeof(), 1, ::TYPES[14/*Fuse.Resources.ImageSourceErrorHandler*/]),
         new uFunction("GetTexture", NULL, NULL, offsetof(ImageSource_type, fp_GetTexture), false, ::g::Uno::Graphics::Texture2D_typeof(), 0),
         new uFunction("get_IsPinned", NULL, (void*)ImageSource__get_IsPinned_fn, 0, false, ::g::Uno::Bool_typeof(), 0),
         new uFunction("get_Orientation", NULL, NULL, offsetof(ImageSource_type, fp_get_Orientation), false, ::g::Fuse::Resources::Exif::ImageOrientation_typeof(), 0),
@@ -2029,28 +2000,28 @@ void ImageSource::ctor_1()
 void ImageSource::add_Changed(uDelegate* value)
 {
     uStackFrame __("Fuse.Resources.ImageSource", "add_Changed(Uno.EventHandler)");
-    Changed1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(Changed1, value), ::TYPES[14/*Uno.EventHandler*/]);
+    Changed1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(Changed1, value), ::TYPES[13/*Uno.EventHandler*/]);
 }
 
 // public generated void remove_Changed(Uno.EventHandler value) [instance] :89
 void ImageSource::remove_Changed(uDelegate* value)
 {
     uStackFrame __("Fuse.Resources.ImageSource", "remove_Changed(Uno.EventHandler)");
-    Changed1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(Changed1, value), ::TYPES[14/*Uno.EventHandler*/]);
+    Changed1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(Changed1, value), ::TYPES[13/*Uno.EventHandler*/]);
 }
 
 // public generated void add_Error(Fuse.Resources.ImageSourceErrorHandler value) [instance] :109
 void ImageSource::add_Error(uDelegate* value)
 {
     uStackFrame __("Fuse.Resources.ImageSource", "add_Error(Fuse.Resources.ImageSourceErrorHandler)");
-    Error1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(Error1, value), ::TYPES[15/*Fuse.Resources.ImageSourceErrorHandler*/]);
+    Error1 = uCast<uDelegate*>(::g::Uno::Delegate::Combine(Error1, value), ::TYPES[14/*Fuse.Resources.ImageSourceErrorHandler*/]);
 }
 
 // public generated void remove_Error(Fuse.Resources.ImageSourceErrorHandler value) [instance] :109
 void ImageSource::remove_Error(uDelegate* value)
 {
     uStackFrame __("Fuse.Resources.ImageSource", "remove_Error(Fuse.Resources.ImageSourceErrorHandler)");
-    Error1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(Error1, value), ::TYPES[15/*Fuse.Resources.ImageSourceErrorHandler*/]);
+    Error1 = uCast<uDelegate*>(::g::Uno::Delegate::Remove(Error1, value), ::TYPES[14/*Fuse.Resources.ImageSourceErrorHandler*/]);
 }
 
 // internal void FireChanged(Fuse.Resources.ImageSourceChangedArgs args) [instance] :103
@@ -2140,8 +2111,8 @@ void ImageSource::Unpin()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Resources/ImageSource.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Resources/ImageSource.uno
+// --------------------------------------------------------------------------------
 
 // internal sealed class ImageSourceChangedArgs :52
 // {
@@ -2207,15 +2178,15 @@ ImageSourceChangedArgs* ImageSourceChangedArgs::New2(::g::Fuse::Resources::Image
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Resources/ImageSource.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Resources/ImageSource.uno
+// --------------------------------------------------------------------------------
 
 // public sealed class ImageSourceErrorArgs :26
 // {
 static void ImageSourceErrorArgs_build(uType* type)
 {
     ::STRINGS[5] = uString::Const("reason");
-    ::TYPES[16] = ::g::Fuse::Scripting::IEventSerializer_typeof();
+    ::TYPES[15] = ::g::Fuse::Scripting::IEventSerializer_typeof();
     type->SetInterfaces(
         ::g::Fuse::Scripting::IScriptEvent_typeof(), offsetof(ImageSourceErrorArgs_type, interface0));
     type->SetFields(0,
@@ -2254,7 +2225,7 @@ void ImageSourceErrorArgs__ctor_1_fn(ImageSourceErrorArgs* __this, ::g::Fuse::Re
 void ImageSourceErrorArgs__FuseScriptingIScriptEventSerialize_fn(ImageSourceErrorArgs* __this, uObject* s)
 {
     uStackFrame __("Fuse.Resources.ImageSourceErrorArgs", "Fuse.Scripting.IScriptEvent.Serialize(Fuse.Scripting.IEventSerializer)");
-    ::g::Fuse::Scripting::IEventSerializer::AddString(uInterface(uPtr(s), ::TYPES[16/*Fuse.Scripting.IEventSerializer*/]), ::STRINGS[5/*"reason"*/], __this->Reason);
+    ::g::Fuse::Scripting::IEventSerializer::AddString(uInterface(uPtr(s), ::TYPES[15/*Fuse.Scripting.IEventSerializer*/]), ::STRINGS[5/*"reason"*/], __this->Reason);
 }
 
 // internal ImageSourceErrorArgs New(Fuse.Resources.ImageSource imageSource) :39
@@ -2292,8 +2263,8 @@ ImageSourceErrorArgs* ImageSourceErrorArgs::New2(::g::Fuse::Resources::ImageSour
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Resources/ImageSource.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Resources/ImageSource.uno
+// --------------------------------------------------------------------------------
 
 // public delegate void ImageSourceErrorHandler(object sender, Fuse.Resources.ImageSourceErrorArgs args) :50
 uDelegateType* ImageSourceErrorHandler_typeof()
@@ -2308,8 +2279,8 @@ uDelegateType* ImageSourceErrorHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Resources/ImageSource.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Resources/ImageSource.uno
+// --------------------------------------------------------------------------------
 
 // public enum ImageSourceState :14
 uEnumType* ImageSourceState_typeof()
@@ -2326,8 +2297,8 @@ uEnumType* ImageSourceState_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Resources/MemoryPolicy.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Resources/MemoryPolicy.uno
+// -------------------------------------------------------------------------------
 
 // internal abstract interface IMemoryResource :86
 // {
@@ -2341,8 +2312,8 @@ uInterfaceType* IMemoryResource_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Resources/ISoftDisposable.uno
-// -----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Resources/ISoftDisposable.uno
+// ----------------------------------------------------------------------------------
 
 // internal abstract interface ISoftDisposable :5
 // {
@@ -2356,8 +2327,8 @@ uInterfaceType* ISoftDisposable_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Resources/LoadingImageSource.uno
-// ----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Resources/LoadingImageSource.uno
+// ---------------------------------------------------------------------------------------
 
 // internal abstract class LoadingImageSource :8
 // {
@@ -2641,8 +2612,8 @@ void LoadingImageSource::SetTexture(::g::Uno::Graphics::Texture2D* texture)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Resources/MemoryPolicy.uno
-// --------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Resources/MemoryPolicy.uno
+// -------------------------------------------------------------------------------
 
 // public sealed class MemoryPolicy :10
 // {
@@ -2661,7 +2632,7 @@ static void MemoryPolicy__cctor__fn(uType* __type)
 
 static void MemoryPolicy_build(uType* type)
 {
-    ::TYPES[5] = ::g::Fuse::Resources::IMemoryResource_typeof();
+    ::TYPES[4] = ::g::Fuse::Resources::IMemoryResource_typeof();
     type->SetFields(0,
         ::g::Uno::Bool_typeof(), offsetof(MemoryPolicy, _AllowPinnedFree), 0,
         ::g::Uno::Bool_typeof(), offsetof(MemoryPolicy, _BundlePreload), 0,
@@ -2827,12 +2798,12 @@ bool MemoryPolicy::ShouldSoftDispose(int32_t dr, uObject* resource)
     if ((dr == 1) && UnloadInBackground())
         return true;
 
-    if ((dr == 2) && (!::g::Fuse::Resources::IMemoryResource::IsPinned(uInterface(uPtr(resource), ::TYPES[5/*Fuse.Resources.IMemoryResource*/])) || AllowPinnedFree()))
+    if ((dr == 2) && (!::g::Fuse::Resources::IMemoryResource::IsPinned(uInterface(uPtr(resource), ::TYPES[4/*Fuse.Resources.IMemoryResource*/])) || AllowPinnedFree()))
         return true;
 
-    if ((AllowPinnedFree() || !::g::Fuse::Resources::IMemoryResource::IsPinned(uInterface(uPtr(resource), ::TYPES[5/*Fuse.Resources.IMemoryResource*/]))) && (UnusedTimeout() > 0.0))
+    if ((AllowPinnedFree() || !::g::Fuse::Resources::IMemoryResource::IsPinned(uInterface(uPtr(resource), ::TYPES[4/*Fuse.Resources.IMemoryResource*/]))) && (UnusedTimeout() > 0.0))
     {
-        double elapsed = ::g::Fuse::Time::FrameTime() - ::g::Fuse::Resources::IMemoryResource::LastUsed(uInterface(uPtr(resource), ::TYPES[5/*Fuse.Resources.IMemoryResource*/]));
+        double elapsed = ::g::Fuse::Time::FrameTime() - ::g::Fuse::Resources::IMemoryResource::LastUsed(uInterface(uPtr(resource), ::TYPES[4/*Fuse.Resources.IMemoryResource*/]));
 
         if (elapsed > UnusedTimeout())
             return true;
@@ -2886,23 +2857,23 @@ MemoryPolicy* MemoryPolicy::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Resources/MultiDensityImageSource.uno
-// ---------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Resources/MultiDensityImageSource.uno
+// --------------------------------------------------------------------------------------------
 
 // public sealed class MultiDensityImageSource :28
 // {
 static void MultiDensityImageSource_build(uType* type)
 {
-    ::TYPES[17] = ::g::Uno::Collections::ObservableList_typeof()->MakeType(::g::Fuse::Resources::ImageSource_typeof(), NULL);
-    ::TYPES[18] = ::g::Uno::Action1_typeof()->MakeType(::g::Fuse::Resources::ImageSource_typeof(), NULL);
-    ::TYPES[19] = ::g::Uno::Collections::IEnumerator_typeof();
-    ::TYPES[20] = ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(::g::Fuse::Resources::ImageSource_typeof(), NULL);
-    ::TYPES[21] = ::g::Uno::IDisposable_typeof();
+    ::TYPES[16] = ::g::Uno::Collections::ObservableList_typeof()->MakeType(::g::Fuse::Resources::ImageSource_typeof(), NULL);
+    ::TYPES[17] = ::g::Uno::Action1_typeof()->MakeType(::g::Fuse::Resources::ImageSource_typeof(), NULL);
+    ::TYPES[18] = ::g::Uno::Collections::IEnumerator_typeof();
+    ::TYPES[19] = ::g::Uno::Collections::IEnumerator1_typeof()->MakeType(::g::Fuse::Resources::ImageSource_typeof(), NULL);
+    ::TYPES[20] = ::g::Uno::IDisposable_typeof();
     ::TYPES[0] = ::g::Uno::Action_typeof();
     type->SetDependencies(
         ::g::Uno::Math_typeof());
     type->SetFields(5,
-        ::TYPES[17/*Uno.Collections.ObservableList<Fuse.Resources.ImageSource>*/], offsetof(MultiDensityImageSource, _sources), 0,
+        ::TYPES[16/*Uno.Collections.ObservableList<Fuse.Resources.ImageSource>*/], offsetof(MultiDensityImageSource, _sources), 0,
         ::g::Fuse::Resources::ProxyImageSource_typeof(), offsetof(MultiDensityImageSource, _proxy), 0,
         ::g::Uno::Float_typeof(), offsetof(MultiDensityImageSource, _matchDensity), 0,
         ::g::Uno::Bool_typeof(), offsetof(MultiDensityImageSource, _hasMatchDensity), 0,
@@ -3080,7 +3051,7 @@ void MultiDensityImageSource::ctor_2()
 {
     uStackFrame __("Fuse.Resources.MultiDensityImageSource", ".ctor()");
     ctor_1();
-    _sources = ((::g::Uno::Collections::ObservableList*)::g::Uno::Collections::ObservableList::New1(::TYPES[17/*Uno.Collections.ObservableList<Fuse.Resources.ImageSource>*/], uDelegate::New(::TYPES[18/*Uno.Action<Fuse.Resources.ImageSource>*/], (void*)MultiDensityImageSource__OnImageAdded_fn, this), uDelegate::New(::TYPES[18/*Uno.Action<Fuse.Resources.ImageSource>*/], (void*)MultiDensityImageSource__OnImageRemoved_fn, this)));
+    _sources = ((::g::Uno::Collections::ObservableList*)::g::Uno::Collections::ObservableList::New1(::TYPES[16/*Uno.Collections.ObservableList<Fuse.Resources.ImageSource>*/], uDelegate::New(::TYPES[17/*Uno.Action<Fuse.Resources.ImageSource>*/], (void*)MultiDensityImageSource__OnImageAdded_fn, this), uDelegate::New(::TYPES[17/*Uno.Action<Fuse.Resources.ImageSource>*/], (void*)MultiDensityImageSource__OnImageRemoved_fn, this)));
     _proxy = ::g::Fuse::Resources::ProxyImageSource::New1(this);
 }
 
@@ -3165,9 +3136,9 @@ void MultiDensityImageSource::SelectActive()
         try
         {
             {
-                while (::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(enum1), ::TYPES[19/*Uno.Collections.IEnumerator*/])))
+                while (::g::Uno::Collections::IEnumerator::MoveNext(uInterface(uPtr(enum1), ::TYPES[18/*Uno.Collections.IEnumerator*/])))
                 {
-                    ::g::Fuse::Resources::ImageSource* source = (::g::Uno::Collections::IEnumerator1::get_Current_ex(uInterface(uPtr(enum1), ::TYPES[20/*Uno.Collections.IEnumerator<Fuse.Resources.ImageSource>*/]), &ret3), ret3);
+                    ::g::Fuse::Resources::ImageSource* source = (::g::Uno::Collections::IEnumerator1::get_Current_ex(uInterface(uPtr(enum1), ::TYPES[19/*Uno.Collections.IEnumerator<Fuse.Resources.ImageSource>*/]), &ret3), ret3);
                     float d = ::g::Uno::Math::Abs1(uPtr(source)->SizeDensity() - screen);
 
                     if (d < diff)
@@ -3182,14 +3153,14 @@ void MultiDensityImageSource::SelectActive()
         catch (const uThrowable& __t)
         {
             {
-                ::g::Uno::IDisposable::Dispose(uInterface(uPtr(enum1), ::TYPES[21/*Uno.IDisposable*/]));
+                ::g::Uno::IDisposable::Dispose(uInterface(uPtr(enum1), ::TYPES[20/*Uno.IDisposable*/]));
             }
                         throw __t;
             goto __after_finally_0;
         }
 
         {
-            ::g::Uno::IDisposable::Dispose(uInterface(uPtr(enum1), ::TYPES[21/*Uno.IDisposable*/]));
+            ::g::Uno::IDisposable::Dispose(uInterface(uPtr(enum1), ::TYPES[20/*Uno.IDisposable*/]));
         }
         __after_finally_0:;
     }
@@ -3232,8 +3203,8 @@ MultiDensityImageSource* MultiDensityImageSource::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Resources/IDeferredDisposable.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Resources/IDeferredDisposable.uno
+// --------------------------------------------------------------------------------------
 
 // internal abstract class PolicyDeferredDisposable :20
 // {
@@ -3319,17 +3290,17 @@ void PolicyDeferredDisposable::MarkUsed()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Resources/ProxyImageSource.uno
-// --------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Resources/ProxyImageSource.uno
+// -------------------------------------------------------------------------------------
 
 // internal sealed class ProxyImageSource :7
 // {
 static void ProxyImageSource_build(uType* type)
 {
-    ::TYPES[14] = ::g::Uno::EventHandler_typeof();
-    ::TYPES[15] = ::g::Fuse::Resources::ImageSourceErrorHandler_typeof();
-    ::TYPES[22] = ::g::Fuse::Resources::LoadingImageSource_typeof();
-    ::TYPES[23] = ::g::Uno::Graphics::Texture2D_typeof();
+    ::TYPES[13] = ::g::Uno::EventHandler_typeof();
+    ::TYPES[14] = ::g::Fuse::Resources::ImageSourceErrorHandler_typeof();
+    ::TYPES[21] = ::g::Fuse::Resources::LoadingImageSource_typeof();
+    ::TYPES[22] = ::g::Uno::Graphics::Texture2D_typeof();
     type->SetDependencies(
         ::g::Fuse::Resources::MemoryPolicy_typeof());
     type->SetFields(0,
@@ -3490,13 +3461,13 @@ void ProxyImageSource::Attach(::g::Fuse::Resources::ImageSource* impl)
 {
     uStackFrame __("Fuse.Resources.ProxyImageSource", "Attach(Fuse.Resources.ImageSource)");
     _impl = impl;
-    uPtr(_impl)->add_Changed(uDelegate::New(::TYPES[14/*Uno.EventHandler*/], (void*)ProxyImageSource__ProxyOnChanged_fn, this));
-    uPtr(_impl)->add_Error(uDelegate::New(::TYPES[15/*Fuse.Resources.ImageSourceErrorHandler*/], (void*)ProxyImageSource__ProxyOnError_fn, this));
+    uPtr(_impl)->add_Changed(uDelegate::New(::TYPES[13/*Uno.EventHandler*/], (void*)ProxyImageSource__ProxyOnChanged_fn, this));
+    uPtr(_impl)->add_Error(uDelegate::New(::TYPES[14/*Fuse.Resources.ImageSourceErrorHandler*/], (void*)ProxyImageSource__ProxyOnError_fn, this));
 
     if (uPtr(_outer)->IsPinned())
         uPtr(_impl)->Pin();
 
-    ::g::Fuse::Resources::LoadingImageSource* loading = uAs< ::g::Fuse::Resources::LoadingImageSource*>(impl, ::TYPES[22/*Fuse.Resources.LoadingImageSource*/]);
+    ::g::Fuse::Resources::LoadingImageSource* loading = uAs< ::g::Fuse::Resources::LoadingImageSource*>(impl, ::TYPES[21/*Fuse.Resources.LoadingImageSource*/]);
 
     if (loading != NULL)
         uPtr(loading)->Policy(_policy);
@@ -3538,7 +3509,7 @@ void ProxyImageSource::Density(float value)
 ::g::Uno::Graphics::Texture2D* ProxyImageSource::GetTexture()
 {
     uStackFrame __("Fuse.Resources.ProxyImageSource", "GetTexture()");
-    return (_impl == NULL) ? uCast< ::g::Uno::Graphics::Texture2D*>(NULL, ::TYPES[23/*texture2D*/]) : (::g::Uno::Graphics::Texture2D*)uPtr(_impl)->GetTexture();
+    return (_impl == NULL) ? uCast< ::g::Uno::Graphics::Texture2D*>(NULL, ::TYPES[22/*texture2D*/]) : (::g::Uno::Graphics::Texture2D*)uPtr(_impl)->GetTexture();
 }
 
 // public Fuse.Resources.ImageSource get_Impl() [instance] :16
@@ -3622,8 +3593,8 @@ void ProxyImageSource::Release()
         if (uPtr(_outer)->IsPinned())
             uPtr(_impl)->Unpin();
 
-        uPtr(_impl)->remove_Changed(uDelegate::New(::TYPES[14/*Uno.EventHandler*/], (void*)ProxyImageSource__ProxyOnChanged_fn, this));
-        uPtr(_impl)->remove_Error(uDelegate::New(::TYPES[15/*Fuse.Resources.ImageSourceErrorHandler*/], (void*)ProxyImageSource__ProxyOnError_fn, this));
+        uPtr(_impl)->remove_Changed(uDelegate::New(::TYPES[13/*Uno.EventHandler*/], (void*)ProxyImageSource__ProxyOnChanged_fn, this));
+        uPtr(_impl)->remove_Error(uDelegate::New(::TYPES[14/*Fuse.Resources.ImageSourceErrorHandler*/], (void*)ProxyImageSource__ProxyOnError_fn, this));
         _impl = NULL;
     }
 }
@@ -3660,7 +3631,7 @@ int32_t ProxyImageSource::State()
 void ProxyImageSource::UpdatePolicy()
 {
     uStackFrame __("Fuse.Resources.ProxyImageSource", "UpdatePolicy()");
-    ::g::Fuse::Resources::LoadingImageSource* loading = uAs< ::g::Fuse::Resources::LoadingImageSource*>(_impl, ::TYPES[22/*Fuse.Resources.LoadingImageSource*/]);
+    ::g::Fuse::Resources::LoadingImageSource* loading = uAs< ::g::Fuse::Resources::LoadingImageSource*>(_impl, ::TYPES[21/*Fuse.Resources.LoadingImageSource*/]);
 
     if (loading != NULL)
         uPtr(loading)->Policy(_policy);
@@ -3675,8 +3646,8 @@ ProxyImageSource* ProxyImageSource::New1(::g::Fuse::Resources::ImageSource* oute
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/ResourceSetter.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/ResourceSetter.uno
+// ----------------------------------------------------------------------
 
 // public sealed class ResourceBool :70
 // {
@@ -3758,8 +3729,8 @@ ResourceBool* ResourceBool::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/ResourceSetter.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/ResourceSetter.uno
+// ----------------------------------------------------------------------
 
 // public sealed class ResourceFloat :71
 // {
@@ -3841,8 +3812,8 @@ ResourceFloat* ResourceFloat::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/ResourceSetter.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/ResourceSetter.uno
+// ----------------------------------------------------------------------
 
 // public sealed class ResourceFloat2 :72
 // {
@@ -3924,8 +3895,8 @@ ResourceFloat2* ResourceFloat2::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/ResourceSetter.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/ResourceSetter.uno
+// ----------------------------------------------------------------------
 
 // public sealed class ResourceFloat3 :73
 // {
@@ -4007,8 +3978,8 @@ ResourceFloat3* ResourceFloat3::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/ResourceSetter.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/ResourceSetter.uno
+// ----------------------------------------------------------------------
 
 // public sealed class ResourceFloat4 :74
 // {
@@ -4090,8 +4061,8 @@ ResourceFloat4* ResourceFloat4::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/ResourceSetter.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/ResourceSetter.uno
+// ----------------------------------------------------------------------
 
 // public sealed class ResourceObject :69
 // {
@@ -4173,24 +4144,24 @@ ResourceObject* ResourceObject::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Resources/ResourceRegistry.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Resources/ResourceRegistry.uno
+// -----------------------------------------------------------------------------------
 
 // public static class ResourceRegistry :8
 // {
 // static generated ResourceRegistry() :8
 static void ResourceRegistry__cctor__fn(uType* __type)
 {
-    ResourceRegistry::_handlers_ = ((::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[24/*Uno.Collections.Dictionary<string, Uno.Collections.List<Uno.Action>>*/]));
+    ResourceRegistry::_handlers_ = ((::g::Uno::Collections::Dictionary*)::g::Uno::Collections::Dictionary::New1(::TYPES[23/*Uno.Collections.Dictionary<string, Uno.Collections.List<Uno.Action>>*/]));
 }
 
 static void ResourceRegistry_build(uType* type)
 {
-    ::TYPES[24] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Uno::String_typeof(), ::g::Uno::Collections::List_typeof()->MakeType(::g::Uno::Action_typeof(), NULL), NULL);
-    ::TYPES[25] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Uno::Action_typeof(), NULL);
-    ::TYPES[26] = ::g::Uno::Collections::List__Enumerator_typeof()->MakeType(::g::Uno::Action_typeof(), NULL);
+    ::TYPES[23] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Uno::String_typeof(), ::g::Uno::Collections::List_typeof()->MakeType(::g::Uno::Action_typeof(), NULL), NULL);
+    ::TYPES[24] = ::g::Uno::Collections::List_typeof()->MakeType(::g::Uno::Action_typeof(), NULL);
+    ::TYPES[25] = ::g::Uno::Collections::List__Enumerator_typeof()->MakeType(::g::Uno::Action_typeof(), NULL);
     type->SetFields(0,
-        ::TYPES[24/*Uno.Collections.Dictionary<string, Uno.Collections.List<Uno.Action>>*/], (uintptr_t)&ResourceRegistry::_handlers_, uFieldFlagsStatic);
+        ::TYPES[23/*Uno.Collections.Dictionary<string, Uno.Collections.List<Uno.Action>>*/], (uintptr_t)&ResourceRegistry::_handlers_, uFieldFlagsStatic);
     type->Reflection.SetFunctions(3,
         new uFunction("AddResourceChangedHandler", NULL, (void*)ResourceRegistry__AddResourceChangedHandler_fn, 0, true, uVoid_typeof(), 2, ::g::Uno::String_typeof(), ::g::Uno::Action_typeof()),
         new uFunction("NotifyResourceChanged", NULL, (void*)ResourceRegistry__NotifyResourceChanged_fn, 0, true, uVoid_typeof(), 1, ::g::Uno::String_typeof()),
@@ -4240,7 +4211,7 @@ void ResourceRegistry::AddResourceChangedHandler(uString* key, uDelegate* handle
     ::g::Uno::Collections::List* ret3;
 
     if (!(::g::Uno::Collections::Dictionary__ContainsKey_fn(uPtr(ResourceRegistry::_handlers_), key, &ret2), ret2))
-        ::g::Uno::Collections::Dictionary__Add_fn(uPtr(ResourceRegistry::_handlers_), key, (::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[25/*Uno.Collections.List<Uno.Action>*/]));
+        ::g::Uno::Collections::Dictionary__Add_fn(uPtr(ResourceRegistry::_handlers_), key, (::g::Uno::Collections::List*)::g::Uno::Collections::List::New1(::TYPES[24/*Uno.Collections.List<Uno.Action>*/]));
 
     ::g::Uno::Collections::List__Add_fn(uPtr((::g::Uno::Collections::Dictionary__get_Item_fn(uPtr(ResourceRegistry::_handlers_), key, &ret3), ret3)), handler);
 }
@@ -4262,9 +4233,9 @@ void ResourceRegistry::NotifyResourceChanged(uString* key)
             try
             {
                 {
-                    while (enum1.MoveNext(::TYPES[26/*Uno.Collections.List<Uno.Action>.Enumerator*/]))
+                    while (enum1.MoveNext(::TYPES[25/*Uno.Collections.List<Uno.Action>.Enumerator*/]))
                     {
-                        uDelegate* h = enum1.Current(::TYPES[26/*Uno.Collections.List<Uno.Action>.Enumerator*/]);
+                        uDelegate* h = enum1.Current(::TYPES[25/*Uno.Collections.List<Uno.Action>.Enumerator*/]);
                         uPtr(h)->InvokeVoid();
                     }
                 }
@@ -4273,14 +4244,14 @@ void ResourceRegistry::NotifyResourceChanged(uString* key)
             catch (const uThrowable& __t)
             {
                 {
-                    enum1.Dispose(::TYPES[26/*Uno.Collections.List<Uno.Action>.Enumerator*/]);
+                    enum1.Dispose(::TYPES[25/*Uno.Collections.List<Uno.Action>.Enumerator*/]);
                 }
                                 throw __t;
                 goto __after_finally_1;
             }
 
             {
-                enum1.Dispose(::TYPES[26/*Uno.Collections.List<Uno.Action>.Enumerator*/]);
+                enum1.Dispose(::TYPES[25/*Uno.Collections.List<Uno.Action>.Enumerator*/]);
             }
             __after_finally_1:;
         }
@@ -4303,8 +4274,8 @@ void ResourceRegistry::RemoveResourceChangedHandler(uString* key, uDelegate* han
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/ResourceSetter.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/ResourceSetter.uno
+// ----------------------------------------------------------------------
 
 // public abstract class ResourceSetter<T> :26
 // {
@@ -4444,8 +4415,8 @@ void ResourceSetter::OnChanged()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Nodes/1.9.0/ResourceSetter.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Nodes/1.10.0-rc1/ResourceSetter.uno
+// ----------------------------------------------------------------------
 
 // public sealed class ResourceString :68
 // {
@@ -4527,8 +4498,8 @@ ResourceString* ResourceString::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Resources/DisposalPolicy.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Resources/DisposalPolicy.uno
+// ---------------------------------------------------------------------------------
 
 // internal sealed class RetainDisposalPolicy :47
 // {
@@ -4598,8 +4569,8 @@ RetainDisposalPolicy* RetainDisposalPolicy::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Common/1.9.0/Resources/SystemFileSource.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Common/1.10.0-rc1/Resources/SystemFileSource.uno
+// -----------------------------------------------------------------------------------
 
 // internal sealed class SystemFileSource :6
 // {
@@ -4659,8 +4630,8 @@ SystemFileSource* SystemFileSource::New1(uString* file)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Resources/TextureImageSource.uno
-// ----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Resources/TextureImageSource.uno
+// ---------------------------------------------------------------------------------------
 
 // public sealed class TextureImageSource :17
 // {

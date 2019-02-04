@@ -22,8 +22,8 @@ namespace Text{
 namespace Bidirectional{
 namespace Implementation{
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Implementation/UBidi.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Implementation/UBidi.uno
+// ---------------------------------------------------------------------------
 
 // internal static extern class UBidiRuns :11
 // {

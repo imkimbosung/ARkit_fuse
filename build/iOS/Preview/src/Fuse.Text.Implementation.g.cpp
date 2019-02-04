@@ -58,8 +58,8 @@ namespace Fuse{
 namespace Text{
 namespace Implementation{
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Implementation/BitArray.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Implementation/BitArray.uno
+// ------------------------------------------------------------------------------
 
 // internal sealed class BitArray :3
 // {
@@ -166,8 +166,8 @@ BitArray* BitArray::New1(int32_t length)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Implementation/Util.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Implementation/Util.uno
+// --------------------------------------------------------------------------
 
 // internal static extern class CString :19
 // {
@@ -216,8 +216,8 @@ uString* CString::ToString(void* cstr)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Implementation/ICU.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Implementation/ICU.uno
+// -------------------------------------------------------------------------
 
 // public enum ICU.ErrorCode :25
 uEnumType* ICU__ErrorCode_typeof()
@@ -229,8 +229,8 @@ uEnumType* ICU__ErrorCode_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Implementation/FreeType.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Implementation/FreeType.uno
+// ------------------------------------------------------------------------------
 
 // internal static extern class FreeType :45
 // {
@@ -812,8 +812,8 @@ void* FreeType::Library()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Implementation/FreeTypeFontFace.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Implementation/FreeTypeFontFace.uno
+// --------------------------------------------------------------------------------------
 
 // internal sealed extern class FreeTypeFont :129
 // {
@@ -1052,7 +1052,7 @@ void FreeTypeFont__Render_fn(FreeTypeFont* __this, ::g::Fuse::Text::Glyph* glyph
     ::g::Fuse::Text::Implementation::FreeType::Activate_Size(__this->_ftSize);
     ::g::Fuse::Text::Implementation::FreeType::Load_Render_Glyph(__this->_ftFace, glyph_.Index);
     ::g::Uno::Content::Images::Bitmap* bitmap = ::g::Fuse::Text::Implementation::FreeType::Current_Glyph_Bitmap(__this->_ftFace);
-    ::g::Uno::Float2 offset = ::g::Uno::Float2__op_Multiply1(::g::Uno::Float2__op_Implicit2(::g::Fuse::Text::Implementation::FreeType::Current_Glyph_Bitmap_Offset(__this->_ftFace)), __this->Scale());
+    ::g::Uno::Float2 offset = ::g::Uno::Float2__op_Multiply1(::g::Uno::Float2__op_Implicit1(::g::Fuse::Text::Implementation::FreeType::Current_Glyph_Bitmap_Offset(__this->_ftFace)), __this->Scale());
     return *__retval = ::g::Fuse::Text::RenderedGlyph__New1(bitmap, ::g::Uno::Float2__New2(offset.X, (((::g::Fuse::Text::Implementation::HarfbuzzFont__get_LineHeight_fn(__this, &ret2), ret2) - (::g::Fuse::Text::Implementation::HarfbuzzFont__get_Ascender_fn(__this, &ret3), ret3)) - (::g::Fuse::Text::Implementation::HarfbuzzFont__get_Descender_fn(__this, &ret4), ret4)) - offset.Y), __this->Scale()), void();
 }
 
@@ -1120,8 +1120,8 @@ FreeTypeFont* FreeTypeFont::New1(void* ftFace, void* ftSize, int32_t pixelSize, 
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Implementation/FreeTypeFontFace.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Implementation/FreeTypeFontFace.uno
+// --------------------------------------------------------------------------------------
 
 // internal sealed extern class FreeTypeFontFace :11
 // {
@@ -1474,8 +1474,8 @@ FreeTypeFontFace* FreeTypeFontFace::New2(uString* fileName, int32_t index, uDele
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Implementation/FreeType.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Implementation/FreeType.uno
+// ------------------------------------------------------------------------------
 
 // internal static extern class FT_Error :11
 // {
@@ -1540,8 +1540,8 @@ uString* FT_Error::ErrorString(int32_t err)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Implementation/Harfbuzz.uno
-// -------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Implementation/Harfbuzz.uno
+// ------------------------------------------------------------------------------
 
 // internal static extern class Harfbuzz :22
 // {
@@ -1757,7 +1757,7 @@ void Harfbuzz::get_shape_data(void* font, void* buffer, uArray* output)
         	float x_offset; float y_offset;
         } current;
         
-        for (int i = 0; i < glyphCount; ++i)
+        for (unsigned int i = 0; i < glyphCount; ++i)
         {
         	hb_glyph_info_t info = glyphInfo[i];
         	hb_glyph_position_t pos = glyphPos[i];
@@ -1775,8 +1775,8 @@ void Harfbuzz::get_shape_data(void* font, void* buffer, uArray* output)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Implementation/HarfbuzzFont.uno
-// -----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Implementation/HarfbuzzFont.uno
+// ----------------------------------------------------------------------------------
 
 // internal abstract extern class HarfbuzzFont :6
 // {
@@ -1913,8 +1913,8 @@ void HarfbuzzFont::ctor_1(void* hbFont)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Implementation/ICU.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Implementation/ICU.uno
+// -------------------------------------------------------------------------
 
 // internal static extern class ICU :23
 // {
@@ -1974,8 +1974,8 @@ int32_t ICU::IsFailure(int32_t errorCode)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Implementation/Util.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Implementation/Util.uno
+// --------------------------------------------------------------------------
 
 // internal static extern class Memory :9
 // {
@@ -2011,8 +2011,8 @@ void Memory::Copy(uArray* dst, void* src, int32_t len)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Implementation/UBrk.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Implementation/UBrk.uno
+// --------------------------------------------------------------------------
 
 // internal static extern class UBrk :9
 // {

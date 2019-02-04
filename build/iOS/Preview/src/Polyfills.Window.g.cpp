@@ -16,8 +16,8 @@ namespace g{
 namespace Polyfills{
 namespace Window{
 
-// /usr/local/share/uno/Packages/Polyfills.Window/1.9.0/WindowModule.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Polyfills.Window/1.10.0-rc1/WindowModule.uno
+// --------------------------------------------------------------------------
 
 // public sealed class WindowModule :10
 // {
@@ -109,7 +109,7 @@ void WindowModule::ctor_3()
     uStackFrame __("Polyfills.Window.WindowModule", "GetWindow()");
 
     if (WindowModule::_fileSourceInstance_ == NULL)
-        WindowModule::_fileSourceInstance_ = ::g::Uno::UX::FileSource::op_Implicit1(uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[1/*"Polyfills.W...*/]))->GetFile(::STRINGS[2/*"js/Window.js"*/]));
+        WindowModule::_fileSourceInstance_ = ::g::Uno::UX::FileSource::op_Implicit(uPtr(::g::Uno::IO::Bundle::Get(::STRINGS[1/*"Polyfills.W...*/]))->GetFile(::STRINGS[2/*"js/Window.js"*/]));
 
     return WindowModule::_fileSourceInstance_;
 }

@@ -1,5 +1,5 @@
 #!/bin/sh
-# This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.9.0/Targets/iOS/run.sh.
+# This file was generated based on /usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/Targets/iOS/run.sh.
 # WARNING: Changes might be lost if you edit this file directly.
 set -e
 cd "`dirname "$0"`"
@@ -18,7 +18,7 @@ debug)
     ;;
 uninstall)
     echo "Uninstalling com.apps.ar-example"
-    "/usr/local/share/uno/Packages/UnoCore/1.9.0/prebuilt/iOS/bin/ios-deploy" -9 -1 "com.apps.ar-example"
+    "/usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/prebuilt/iOS/bin/ios-deploy" -9 -1 "com.apps.ar-example"
     exit $?
     ;;
 esac
@@ -27,5 +27,5 @@ esac
 #pod install
 #"#(Base.Directory)/bin/ios-deploy" --noninteractive --debug --bundle "build/Build/Products/#(Pbxproj.Configuration)-iphoneos/#(Project.Name).app" "$#"
 ##else
-"/usr/local/share/uno/Packages/UnoCore/1.9.0/prebuilt/iOS/bin/ios-deploy" --noninteractive --debug --bundle "build/Release-iphoneos/AR_example.app" "$@"
+"/usr/local/share/uno/Packages/UnoCore/1.10.0-rc1/prebuilt/iOS/bin/ios-deploy" --noninteractive --debug --bundle "build/Release-iphoneos/AR_example.app" "$@"
 ##endif

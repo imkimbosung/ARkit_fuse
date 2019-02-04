@@ -243,8 +243,8 @@ namespace g{
 namespace Fuse{
 namespace Triggers{
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/AddingAnimation.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/AddingAnimation.uno
+// --------------------------------------------------------------------------
 
 // public sealed class AddingAnimation :44
 // {
@@ -376,8 +376,8 @@ AddingAnimation* AddingAnimation::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/Platforms.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/Platforms.uno
+// --------------------------------------------------------------------
 
 // public sealed class Android :55
 // {
@@ -477,8 +477,8 @@ Android* Android::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/Busy.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/Busy.uno
+// ---------------------------------------------------------------
 
 // public partial sealed class Busy :66
 // {
@@ -495,7 +495,7 @@ static void Busy_build(uType* type)
     ::STRINGS[1] = uString::Const("deactivate");
     ::STRINGS[2] = uString::Const("");
     ::STRINGS[3] = uString::Const("On='ParameterChanged' requires a Visual parent");
-    ::STRINGS[4] = uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/Busy.uno");
+    ::STRINGS[4] = uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/Busy.uno");
     ::STRINGS[5] = uString::Const("UpdateState");
     ::TYPES[1] = ::g::Uno::Type_typeof();
     ::TYPES[2] = ::g::Fuse::Scripting::ScriptMember_typeof()->Array();
@@ -772,8 +772,8 @@ Busy* Busy::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/Busy.uno
-// ----------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/Busy.uno
+// ---------------------------------------------------------------
 
 // public enum BusyOn :6
 uEnumType* BusyOn_typeof()
@@ -788,8 +788,8 @@ uEnumType* BusyOn_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/BusyTask.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/BusyTask.uno
+// -------------------------------------------------------------------
 
 // public sealed class BusyTask :50
 // {
@@ -1149,8 +1149,8 @@ void BusyTask::SetBusy(::g::Fuse::Node* n, BusyTask** bt, int32_t act, uString* 
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/BusyTask.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/BusyTask.uno
+// -------------------------------------------------------------------
 
 // public enum BusyTaskActivity :8
 uEnumType* BusyTaskActivity_typeof()
@@ -1173,8 +1173,8 @@ uEnumType* BusyTaskActivity_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/BusyTask.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/BusyTask.uno
+// -------------------------------------------------------------------
 
 // public enum BusyTaskMatch :35
 uEnumType* BusyTaskMatch_typeof()
@@ -1190,8 +1190,8 @@ uEnumType* BusyTaskMatch_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/BusyTaskModule.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/BusyTaskModule.uno
+// -------------------------------------------------------------------------
 
 // public sealed class BusyTaskModule :12
 // {
@@ -1271,8 +1271,8 @@ BusyTaskModule* BusyTaskModule::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/Completed.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/Completed.uno
+// --------------------------------------------------------------------
 
 // public partial sealed class Completed :38
 // {
@@ -1639,8 +1639,8 @@ void Completed::reset(Completed* cp)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/Completed.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/Completed.uno
+// --------------------------------------------------------------------
 
 // public enum CompletedActivation :8
 uEnumType* CompletedActivation_typeof()
@@ -1655,8 +1655,8 @@ uEnumType* CompletedActivation_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/Completed.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/Completed.uno
+// --------------------------------------------------------------------
 
 // public sealed class CompletedEventArgs :6
 // {
@@ -1708,15 +1708,15 @@ CompletedEventArgs* CompletedEventArgs::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/BusyTaskModule.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/BusyTaskModule.uno
+// -------------------------------------------------------------------------
 
 // private sealed class BusyTaskModule.ConstructorClosure :25
 // {
 static void BusyTaskModule__ConstructorClosure_build(uType* type)
 {
     ::STRINGS[7] = uString::Const("Use the `Busy` behavior instead of FuseJS/BusyTask");
-    ::STRINGS[8] = uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/BusyTaskModule.uno");
+    ::STRINGS[8] = uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/BusyTaskModule.uno");
     ::STRINGS[9] = uString::Const("Construct");
     ::STRINGS[10] = uString::Const("new BusyTask() - must provide 1 or 2 arguments");
     ::STRINGS[11] = uString::Const("new BusyTask() - argument must be an UX node");
@@ -1805,15 +1805,15 @@ BusyTaskModule__ConstructorClosure* BusyTaskModule__ConstructorClosure::New1(::g
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Triggers/ContainsText.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Triggers/ContainsText.uno
+// -------------------------------------------------------------------------------------------
 
 // public sealed class ContainingText :73
 // {
 static void ContainingText_build(uType* type)
 {
     ::STRINGS[12] = uString::Const("Use the trigger WhileContainsText instead");
-    ::STRINGS[13] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Triggers/ContainsText.uno");
+    ::STRINGS[13] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Triggers/ContainsText.uno");
     ::STRINGS[14] = uString::Const(".ctor");
     type->SetInterfaces(
         ::g::Uno::Collections::IList_typeof()->MakeType(::g::Fuse::Binding_typeof(), NULL), offsetof(::g::Fuse::Triggers::Trigger_type, interface0),
@@ -1896,8 +1896,8 @@ ContainingText* ContainingText::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/Triggers/ScrollRegion.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/Triggers/ScrollRegion.uno
+// -------------------------------------------------------------------------------------------
 
 // private sealed class IScrolledLengths.ContentSizeLength :39
 // {
@@ -1962,8 +1962,8 @@ IScrolledLengths__ContentSizeLength* IScrolledLengths__ContentSizeLength::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/Trigger.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/Trigger.uno
+// ------------------------------------------------------------------
 
 // private sealed class Trigger.DeferredItem :275
 // {
@@ -2028,8 +2028,8 @@ Trigger__DeferredItem* Trigger__DeferredItem::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/StateGroup.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/StateGroup.uno
+// ---------------------------------------------------------------------
 
 // private sealed class StateGroup.GotoImpl :117
 // {
@@ -2170,8 +2170,8 @@ StateGroup__GotoImpl* StateGroup__GotoImpl::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/BusyTask.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/BusyTask.uno
+// -------------------------------------------------------------------
 
 // public abstract interface IBusyHandler :45
 // {
@@ -2187,8 +2187,8 @@ uInterfaceType* IBusyHandler_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/Actions/Playback.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/Actions/Playback.uno
+// ---------------------------------------------------------------------------
 
 // public abstract interface IMediaPlayback :30
 // {
@@ -2208,8 +2208,8 @@ uInterfaceType* IMediaPlayback_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls/1.9.0/Triggers/WhileInteracting.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls/1.10.0-rc1/Triggers/WhileInteracting.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class InteractionCompleted :81
 // {
@@ -2368,8 +2368,8 @@ InteractionCompleted* InteractionCompleted::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/Platforms.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/Platforms.uno
+// --------------------------------------------------------------------
 
 // public sealed class iOS :19
 // {
@@ -2471,8 +2471,8 @@ iOS* iOS::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/Actions/Playback.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/Actions/Playback.uno
+// ---------------------------------------------------------------------------
 
 // public abstract interface IPlayback :5
 // {
@@ -2497,8 +2497,8 @@ uInterfaceType* IPlayback_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/ProgressAnimation.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/ProgressAnimation.uno
+// ----------------------------------------------------------------------------
 
 // public abstract interface IProgress :8
 // {
@@ -2516,8 +2516,8 @@ uInterfaceType* IProgress_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/Timeline.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/Timeline.uno
+// -------------------------------------------------------------------
 
 // public abstract interface IPulseTrigger :11
 // {
@@ -2533,8 +2533,8 @@ uInterfaceType* IPulseTrigger_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/Triggers/ScrollRegion.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/Triggers/ScrollRegion.uno
+// -------------------------------------------------------------------------------------------
 
 // public abstract interface IScrolledLength :8
 // {
@@ -2550,8 +2550,8 @@ uInterfaceType* IScrolledLength_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/Triggers/ScrollRegion.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/Triggers/ScrollRegion.uno
+// -------------------------------------------------------------------------------------------
 
 // public static class IScrolledLengths :13
 // {
@@ -2598,8 +2598,8 @@ uSStrong<uObject*> IScrolledLengths::ContentSize_;
 uSStrong<uObject*> IScrolledLengths::ScrollViewSize_;
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/IValue.uno
-// ------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/IValue.uno
+// -----------------------------------------------------------------
 
 // public abstract interface IValue<T> :5
 // {
@@ -2618,8 +2618,8 @@ uInterfaceType* IValue_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/AddingAnimation.uno
-// ---------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/AddingAnimation.uno
+// --------------------------------------------------------------------------
 
 // internal abstract interface IVisibility :9
 // {
@@ -2633,8 +2633,8 @@ uInterfaceType* IVisibility_typeof()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/OnKeyPress.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/OnKeyPress.uno
+// ---------------------------------------------------------------------
 
 // public delegate void KeyPressHandler(object sender, Fuse.Input.KeyEventArgs args) :10
 uDelegateType* KeyPressHandler_typeof()
@@ -2649,15 +2649,15 @@ uDelegateType* KeyPressHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Triggers/LayoutAnimation.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Triggers/LayoutAnimation.uno
+// -----------------------------------------------------------------------------------
 
 // public sealed class LayoutAnimation :211
 // {
 static void LayoutAnimation_build(uType* type)
 {
     ::STRINGS[15] = uString::Const("LayoutAnimation can only be used on an Element");
-    ::STRINGS[16] = uString::Const("/usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Triggers/LayoutAnimation.uno");
+    ::STRINGS[16] = uString::Const("/usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Triggers/LayoutAnimation.uno");
     ::STRINGS[17] = uString::Const("OnRooted");
     ::TYPES[15] = ::g::Fuse::Elements::Element_typeof();
     ::TYPES[16] = ::g::Fuse::PlacedHandler_typeof();
@@ -2898,8 +2898,8 @@ LayoutAnimation* LayoutAnimation::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Triggers/LayoutAnimation.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Triggers/LayoutAnimation.uno
+// -----------------------------------------------------------------------------------
 
 // public enum LayoutAnimationType :159
 uEnumType* LayoutAnimationType_typeof()
@@ -2915,8 +2915,8 @@ uEnumType* LayoutAnimationType_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Triggers/LayoutAnimation.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Triggers/LayoutAnimation.uno
+// -----------------------------------------------------------------------------------
 
 // public static class LayoutTransition :24
 // {
@@ -3106,8 +3106,8 @@ void LayoutTransition::SetWorldPositionChange(::g::Fuse::Node* n, ::g::Uno::Floa
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Triggers/LayoutAnimation.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Triggers/LayoutAnimation.uno
+// -----------------------------------------------------------------------------------
 
 // internal sealed class LayoutTransitioned :15
 // {
@@ -3168,8 +3168,8 @@ LayoutTransitioned* LayoutTransitioned::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Triggers/LayoutAnimation.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Triggers/LayoutAnimation.uno
+// -----------------------------------------------------------------------------------
 
 // internal sealed class LayoutTransitionedArgs :8
 // {
@@ -3225,8 +3225,8 @@ LayoutTransitionedArgs* LayoutTransitionedArgs::New3(::g::Fuse::Visual* node)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Triggers/LayoutAnimation.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Triggers/LayoutAnimation.uno
+// -----------------------------------------------------------------------------------
 
 // internal delegate void LayoutTransitionedHandler(object sender, Fuse.Triggers.LayoutTransitionedArgs args) :14
 uDelegateType* LayoutTransitionedHandler_typeof()
@@ -3241,8 +3241,8 @@ uDelegateType* LayoutTransitionedHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/OnKeyPress.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/OnKeyPress.uno
+// ---------------------------------------------------------------------
 
 // public sealed class OnBackButton :98
 // {
@@ -3337,8 +3337,8 @@ OnBackButton* OnBackButton::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/OnKeyPress.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/OnKeyPress.uno
+// ---------------------------------------------------------------------
 
 // public class OnKeyPress :31
 // {
@@ -3523,15 +3523,15 @@ OnKeyPress* OnKeyPress::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.UserEvents/1.9.0/OnUserEvent.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.UserEvents/1.10.0-rc1/OnUserEvent.uno
+// ------------------------------------------------------------------------
 
 // public sealed class OnUserEvent :69
 // {
 static void OnUserEvent_build(uType* type)
 {
     ::STRINGS[18] = uString::Const("OnUserEvent requires a `EventName`");
-    ::STRINGS[19] = uString::Const("/usr/local/share/uno/Packages/Fuse.UserEvents/1.9.0/OnUserEvent.uno");
+    ::STRINGS[19] = uString::Const("/usr/local/share/uno/Packages/Fuse.UserEvents/1.10.0-rc1/OnUserEvent.uno");
     ::STRINGS[17] = uString::Const("OnRooted");
     ::TYPES[21] = ::g::Fuse::UserEventHandler_typeof();
     type->SetDependencies(
@@ -3664,7 +3664,7 @@ void OnUserEvent__OnRooted_fn(OnUserEvent* __this)
     uStackFrame __("Fuse.Triggers.OnUserEvent", "OnRooted()");
     ::g::Fuse::Triggers::Trigger__OnRooted_fn(__this);
 
-    if (::g::Uno::String::op_Equality(::g::Uno::UX::Selector__op_Implicit2(__this->EventName()), NULL))
+    if (::g::Uno::String::op_Equality(::g::Uno::UX::Selector__op_Implicit1(__this->EventName()), NULL))
         ::g::Fuse::Diagnostics::UserError(::STRINGS[18/*"OnUserEvent...*/], __this, ::STRINGS[19/*"/usr/local/...*/], 97, ::STRINGS[17/*"OnRooted"*/], NULL);
     else
     {
@@ -3766,8 +3766,8 @@ OnUserEvent* OnUserEvent::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.UserEvents/1.9.0/OnUserEvent.uno
-// -------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.UserEvents/1.10.0-rc1/OnUserEvent.uno
+// ------------------------------------------------------------------------
 
 // public enum OnUserEventFilter :5
 uEnumType* OnUserEventFilter_typeof()
@@ -3782,15 +3782,15 @@ uEnumType* OnUserEventFilter_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.9.0/PageBeginLoading.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.10.0-rc1/PageBeginLoading.uno
+// -----------------------------------------------------------------------------------
 
 // public sealed class PageBeginLoading :22
 // {
 static void PageBeginLoading_build(uType* type)
 {
     ::STRINGS[20] = uString::Const("WebView");
-    ::STRINGS[21] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.WebView/1.9.0/PageBeginLoading.uno");
+    ::STRINGS[21] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.WebView/1.10.0-rc1/PageBeginLoading.uno");
     ::STRINGS[17] = uString::Const("OnRooted");
     ::TYPES[22] = ::g::Fuse::Controls::IWebView_typeof();
     ::TYPES[6] = ::g::Uno::EventHandler_typeof();
@@ -3918,15 +3918,15 @@ PageBeginLoading* PageBeginLoading::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.9.0/PageLoaded.uno
-// ------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.10.0-rc1/PageLoaded.uno
+// -----------------------------------------------------------------------------
 
 // public sealed class PageLoaded :22
 // {
 static void PageLoaded_build(uType* type)
 {
     ::STRINGS[20] = uString::Const("WebView");
-    ::STRINGS[22] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.WebView/1.9.0/PageLoaded.uno");
+    ::STRINGS[22] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.WebView/1.10.0-rc1/PageLoaded.uno");
     ::STRINGS[17] = uString::Const("OnRooted");
     ::TYPES[22] = ::g::Fuse::Controls::IWebView_typeof();
     ::TYPES[6] = ::g::Uno::EventHandler_typeof();
@@ -4054,8 +4054,8 @@ PageLoaded* PageLoaded::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/Triggers/ScrollRegion.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/Triggers/ScrollRegion.uno
+// -------------------------------------------------------------------------------------------
 
 // private sealed class IScrolledLengths.PixelsLength :27
 // {
@@ -4120,8 +4120,8 @@ IScrolledLengths__PixelsLength* IScrolledLengths__PixelsLength::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/Triggers/ScrollRegion.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/Triggers/ScrollRegion.uno
+// -------------------------------------------------------------------------------------------
 
 // private sealed class IScrolledLengths.PointsLength :15
 // {
@@ -4185,8 +4185,8 @@ IScrolledLengths__PointsLength* IScrolledLengths__PointsLength::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Triggers/LayoutAnimation.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Triggers/LayoutAnimation.uno
+// -----------------------------------------------------------------------------------
 
 // private sealed class LayoutTransition.PositionChangeMode :59
 // {
@@ -4285,8 +4285,8 @@ LayoutTransition__PositionChangeMode* LayoutTransition__PositionChangeMode::New1
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/ProgressAnimation.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/ProgressAnimation.uno
+// ----------------------------------------------------------------------------
 
 // public sealed class ProgressAnimation :42
 // {
@@ -4497,8 +4497,8 @@ ProgressAnimation* ProgressAnimation::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/Triggers/PullToReload.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/Triggers/PullToReload.uno
+// -------------------------------------------------------------------------------------------
 
 // public partial sealed class PullToReload :62
 // {
@@ -4970,8 +4970,8 @@ PullToReload* PullToReload::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/PulseTrigger.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/PulseTrigger.uno
+// -----------------------------------------------------------------------
 
 // public delegate void PulseTrigger<ArgsT>.PulseHandler(object sender, ArgsT args) :13
 uDelegateType* PulseTrigger__PulseHandler_typeof()
@@ -4986,8 +4986,8 @@ uDelegateType* PulseTrigger__PulseHandler_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/PulseTrigger.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/PulseTrigger.uno
+// -----------------------------------------------------------------------
 
 // public abstract class PulseTrigger<ArgsT> :10
 // {
@@ -5162,8 +5162,8 @@ void PulseTrigger::RemoveHandlerImpl(uType* __type, ::g::Fuse::Visual* visual, u
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/WhileFloat.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/WhileFloat.uno
+// ---------------------------------------------------------------------
 
 // private enum WhileFloat.Range :16
 uEnumType* WhileFloat__Range_typeof()
@@ -5179,8 +5179,8 @@ uEnumType* WhileFloat__Range_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/RangeAnimation.uno
-// --------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/RangeAnimation.uno
+// -------------------------------------------------------------------------
 
 // public sealed class RangeAnimation :29
 // {
@@ -5381,15 +5381,15 @@ RangeAnimation* RangeAnimation::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/WhileKeyboardVisible.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/WhileKeyboardVisible.uno
+// --------------------------------------------------------------------------------------
 
 // private sealed class WhileKeyboardVisible.RelativeToKeyboardMode :63
 // {
 static void WhileKeyboardVisible__RelativeToKeyboardMode_build(uType* type)
 {
     ::STRINGS[24] = uString::Const("`Keyboard` RelativeTo has been deprecated. Use `window()` margins instead");
-    ::STRINGS[25] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/WhileKeyboardVisible.uno");
+    ::STRINGS[25] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/WhileKeyboardVisible.uno");
     ::STRINGS[26] = uString::Const("GetAbsVector");
     type->SetDependencies(
         ::g::Fuse::Platform::SystemUI_typeof());
@@ -5490,15 +5490,15 @@ WhileKeyboardVisible__RelativeToKeyboardMode* WhileKeyboardVisible__RelativeToKe
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/RemovingAnimation.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/RemovingAnimation.uno
+// ----------------------------------------------------------------------------
 
 // public class RemovingAnimation :41
 // {
 static void RemovingAnimation_build(uType* type)
 {
     ::STRINGS[27] = uString::Const("Double removal of Visual");
-    ::STRINGS[28] = uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/RemovingAnimation.uno");
+    ::STRINGS[28] = uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/RemovingAnimation.uno");
     ::STRINGS[29] = uString::Const("Fuse.IBeginRemoveVisualListener.OnBeginRemoveVisual");
     ::STRINGS[30] = uString::Const("Unexpected done");
     ::STRINGS[31] = uString::Const("OnDone");
@@ -5637,8 +5637,8 @@ RemovingAnimation* RemovingAnimation::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Triggers/LayoutAnimation.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Triggers/LayoutAnimation.uno
+// -----------------------------------------------------------------------------------
 
 // private sealed class LayoutTransition.ResizeChangeMode :93
 // {
@@ -5710,8 +5710,8 @@ LayoutTransition__ResizeChangeMode* LayoutTransition__ResizeChangeMode::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Triggers/LayoutAnimation.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Triggers/LayoutAnimation.uno
+// -----------------------------------------------------------------------------------
 
 // private sealed class LayoutTransition.ScaleChangeMode :107
 // {
@@ -5813,8 +5813,8 @@ LayoutTransition__ScaleChangeMode* LayoutTransition__ScaleChangeMode::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/Triggers/Scrolled.ScriptClass.uno
-// ----------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/Triggers/Scrolled.ScriptClass.uno
+// ---------------------------------------------------------------------------------------------------
 
 // public partial sealed class Scrolled :8
 // {
@@ -5829,7 +5829,7 @@ static void Scrolled_build(uType* type)
 {
     ::STRINGS[32] = uString::Const("check");
     ::STRINGS[33] = uString::Const("Scrolled could not find a Scrollable control.");
-    ::STRINGS[34] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/Triggers/Scrolled.uno");
+    ::STRINGS[34] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/Triggers/Scrolled.uno");
     ::STRINGS[17] = uString::Const("OnRooted");
     ::TYPES[1] = ::g::Uno::Type_typeof();
     ::TYPES[2] = ::g::Fuse::Scripting::ScriptMember_typeof()->Array();
@@ -6115,8 +6115,8 @@ Scrolled* Scrolled::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/Triggers/Scrolled.uno
-// ----------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/Triggers/Scrolled.uno
+// ---------------------------------------------------------------------------------------
 
 // public sealed class ScrolledArgs :8
 // {
@@ -6168,8 +6168,8 @@ ScrolledArgs* ScrolledArgs::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/Triggers/ScrollRegion.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/Triggers/ScrollRegion.uno
+// -------------------------------------------------------------------------------------------
 
 // public enum ScrolledWhere :66
 uEnumType* ScrolledWhere_typeof()
@@ -6185,15 +6185,15 @@ uEnumType* ScrolledWhere_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/Triggers/ScrollingAnimation.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/Triggers/ScrollingAnimation.uno
+// -------------------------------------------------------------------------------------------------
 
 // public class ScrollingAnimation :47
 // {
 // static generated ScrollingAnimation() :47
 static void ScrollingAnimation__cctor_2_fn(uType* __type)
 {
-    ScrollingAnimation::_scrollPositionName_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[35/*"ScrollPosit...*/]);
+    ScrollingAnimation::_scrollPositionName_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[35/*"ScrollPosit...*/]);
 }
 
 static void ScrollingAnimation_build(uType* type)
@@ -6538,8 +6538,8 @@ ScrollingAnimation* ScrollingAnimation::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/Triggers/ScrollingAnimation.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/Triggers/ScrollingAnimation.uno
+// -------------------------------------------------------------------------------------------------
 
 // public enum ScrollingAnimationRange :12
 uEnumType* ScrollingAnimationRange_typeof()
@@ -6558,8 +6558,8 @@ uEnumType* ScrollingAnimationRange_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/Triggers/ScrollRegion.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/Triggers/ScrollRegion.uno
+// -------------------------------------------------------------------------------------------
 
 // internal sealed class ScrollRegion :76
 // {
@@ -6711,8 +6711,8 @@ ScrollRegion* ScrollRegion::New1()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/Triggers/ScrollRegion.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/Triggers/ScrollRegion.uno
+// -------------------------------------------------------------------------------------------
 
 // private sealed class IScrolledLengths.ScrollViewSizeLength :52
 // {
@@ -6777,8 +6777,8 @@ IScrolledLengths__ScrollViewSizeLength* IScrolledLengths__ScrollViewSizeLength::
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/Timeline.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/Timeline.uno
+// -------------------------------------------------------------------
 
 // private enum Timeline.State :91
 uEnumType* Timeline__State_typeof()
@@ -6793,8 +6793,8 @@ uEnumType* Timeline__State_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/State.ScriptClass.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/State.ScriptClass.uno
+// ----------------------------------------------------------------------------
 
 // public partial sealed class State :8
 // {
@@ -6809,7 +6809,7 @@ static void State_build(uType* type)
 {
     ::STRINGS[36] = uString::Const("goto");
     ::STRINGS[37] = uString::Const("Cannot call `Goto` on an unrooted `State`");
-    ::STRINGS[38] = uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/State.uno");
+    ::STRINGS[38] = uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/State.uno");
     ::STRINGS[39] = uString::Const("Goto");
     ::TYPES[1] = ::g::Uno::Type_typeof();
     ::TYPES[2] = ::g::Fuse::Scripting::ScriptMember_typeof()->Array();
@@ -7028,8 +7028,8 @@ State* State::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/StateGroup.ScriptClass.uno
-// ----------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/StateGroup.ScriptClass.uno
+// ---------------------------------------------------------------------------------
 
 // public partial sealed class StateGroup :8
 // {
@@ -7509,7 +7509,7 @@ void StateGroup::goto_(StateGroup* n, uArray* args)
 
     if (uPtr(args)->Length() != 1)
     {
-        ::g::Fuse::Diagnostics::UserError(uString::Const("StateGroup.goto requires 1 argument"), n, uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/StateGroup.ScriptClass.uno"), 48, uString::Const("goto_"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("StateGroup.goto requires 1 argument"), n, uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/StateGroup.ScriptClass.uno"), 48, uString::Const("goto_"), NULL);
         return;
     }
 
@@ -7524,11 +7524,11 @@ void StateGroup::gotoName(StateGroup* n, uString* name)
 {
     uStackFrame __("Fuse.Triggers.StateGroup", "gotoName(Fuse.Triggers.StateGroup,string)");
     StateGroup_typeof()->Init();
-    ::g::Fuse::Triggers::State* state = uAs< ::g::Fuse::Triggers::State*>(uPtr(n)->FindObjectByName(::g::Uno::UX::Selector__op_Implicit1(name), uDelegate::New(::g::Uno::Predicate_typeof()->MakeType(uObject_typeof(), NULL), (void*)StateGroup__StateAcceptor_fn)), ::g::Fuse::Triggers::State_typeof());
+    ::g::Fuse::Triggers::State* state = uAs< ::g::Fuse::Triggers::State*>(uPtr(n)->FindObjectByName(::g::Uno::UX::Selector__op_Implicit(name), uDelegate::New(::g::Uno::Predicate_typeof()->MakeType(uObject_typeof(), NULL), (void*)StateGroup__StateAcceptor_fn)), ::g::Fuse::Triggers::State_typeof());
 
     if (state == NULL)
     {
-        ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(uString::Const("Unable to find State with Name: "), name), n, uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/StateGroup.ScriptClass.uno"), 28, uString::Const("gotoName"), NULL);
+        ::g::Fuse::Diagnostics::UserError(::g::Uno::String::op_Addition2(uString::Const("Unable to find State with Name: "), name), n, uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/StateGroup.ScriptClass.uno"), 28, uString::Const("gotoName"), NULL);
         return;
     }
 
@@ -7559,8 +7559,8 @@ bool StateGroup::StateAcceptor(uObject* o)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/StateGroup.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/StateGroup.uno
+// ---------------------------------------------------------------------
 
 // public enum StateTransition :8
 uEnumType* StateTransition_typeof()
@@ -7575,15 +7575,15 @@ uEnumType* StateTransition_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Triggers/TextInputActionTriggered.uno
-// --------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Triggers/TextInputActionTriggered.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public sealed class TextInputActionTriggered :20
 // {
 static void TextInputActionTriggered_build(uType* type)
 {
     ::STRINGS[40] = uString::Const("TextInputActionTriggered must be a child of an ITextEdit");
-    ::STRINGS[41] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Triggers/TextInputActionTriggered.uno");
+    ::STRINGS[41] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Triggers/TextInputActionTriggered.uno");
     ::STRINGS[17] = uString::Const("OnRooted");
     ::TYPES[38] = ::g::Fuse::Controls::ITextEditControl_typeof();
     ::TYPES[39] = ::g::Fuse::Controls::TextInputActionHandler_typeof();
@@ -7741,8 +7741,8 @@ TextInputActionTriggered* TextInputActionTriggered::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/Timeline.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/Timeline.uno
+// -------------------------------------------------------------------
 
 // public partial sealed class Timeline :76
 // {
@@ -7750,7 +7750,7 @@ TextInputActionTriggered* TextInputActionTriggered::New2()
 static void Timeline__cctor_2_fn(uType* __type)
 {
     ::g::Fuse::Scripting::ScriptClass_typeof()->Init();
-    Timeline::_progressName_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("Progress"));
+    Timeline::_progressName_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("Progress"));
     ::g::Fuse::Scripting::ScriptClass::Register(__type, uArray::Init< ::g::Fuse::Scripting::ScriptMember*>(::TYPES[2/*Fuse.Scripting.ScriptMember[]*/], 9, (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New3(::g::Fuse::Scripting::ScriptMethod1_typeof()->MakeType(__type, NULL), uString::Const("pause"), uDelegate::New(::g::Uno::Action1_typeof()->MakeType(__type, NULL), (void*)Timeline__pause_fn)), (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New3(::g::Fuse::Scripting::ScriptMethod1_typeof()->MakeType(__type, NULL), uString::Const("pulse"), uDelegate::New(::g::Uno::Action1_typeof()->MakeType(__type, NULL), (void*)Timeline__pulse_fn)), (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New3(::g::Fuse::Scripting::ScriptMethod1_typeof()->MakeType(__type, NULL), uString::Const("pulseBackward"), uDelegate::New(::g::Uno::Action1_typeof()->MakeType(__type, NULL), (void*)Timeline__pulseBackward_fn)), (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New3(::g::Fuse::Scripting::ScriptMethod1_typeof()->MakeType(__type, NULL), uString::Const("pulseForward"), uDelegate::New(::g::Uno::Action1_typeof()->MakeType(__type, NULL), (void*)Timeline__pulseForward_fn)), (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New3(::g::Fuse::Scripting::ScriptMethod1_typeof()->MakeType(__type, NULL), uString::Const("play"), uDelegate::New(::g::Uno::Action1_typeof()->MakeType(__type, NULL), (void*)Timeline__resume_fn)), (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New2(::g::Fuse::Scripting::ScriptMethod1_typeof()->MakeType(__type, NULL), uString::Const("playTo"), uDelegate::New(::g::Uno::Action2_typeof()->MakeType(__type, uObject_typeof()->Array(), NULL), (void*)Timeline__playTo_fn)), (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New3(::g::Fuse::Scripting::ScriptMethod1_typeof()->MakeType(__type, NULL), uString::Const("resume"), uDelegate::New(::g::Uno::Action1_typeof()->MakeType(__type, NULL), (void*)Timeline__resume_fn)), (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New2(::g::Fuse::Scripting::ScriptMethod1_typeof()->MakeType(__type, NULL), uString::Const("seek"), uDelegate::New(::g::Uno::Action2_typeof()->MakeType(__type, uObject_typeof()->Array(), NULL), (void*)Timeline__seek_fn)), (::g::Fuse::Scripting::ScriptMethod1*)::g::Fuse::Scripting::ScriptMethod1::New3(::g::Fuse::Scripting::ScriptMethod1_typeof()->MakeType(__type, NULL), uString::Const("stop"), uDelegate::New(::g::Uno::Action1_typeof()->MakeType(__type, NULL), (void*)Timeline__stop_fn))));
 }
 
@@ -8375,7 +8375,7 @@ void Timeline::playTo(Timeline* n, uArray* args)
 
     if (uPtr(args)->Length() != 1)
     {
-        ::g::Fuse::Diagnostics::UserError(uString::Const("Timeline.playTo requires 1 argument"), n, uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/Timeline.ScriptClass.uno"), 67, uString::Const("playTo"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("Timeline.playTo requires 1 argument"), n, uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/Timeline.ScriptClass.uno"), 67, uString::Const("playTo"), NULL);
         return;
     }
 
@@ -8422,7 +8422,7 @@ void Timeline::seek(Timeline* n, uArray* args)
 
     if (uPtr(args)->Length() != 1)
     {
-        ::g::Fuse::Diagnostics::UserError(uString::Const("Timeline.seek requires 1 argument"), n, uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/Timeline.ScriptClass.uno"), 116, uString::Const("seek"), NULL);
+        ::g::Fuse::Diagnostics::UserError(uString::Const("Timeline.seek requires 1 argument"), n, uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/Timeline.ScriptClass.uno"), 116, uString::Const("seek"), NULL);
         return;
     }
 
@@ -8438,8 +8438,8 @@ void Timeline::stop(Timeline* n)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/Transition.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/Transition.uno
+// --------------------------------------------------------------------------------
 
 // public class Transition :200
 // {
@@ -9037,8 +9037,8 @@ void Transition::Parse(::g::Fuse::Internal::MiniList* list, uString* src)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/Transition.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/Transition.uno
+// --------------------------------------------------------------------------------
 
 // public enum TransitionDirection :146
 uEnumType* TransitionDirection_typeof()
@@ -9060,8 +9060,8 @@ uEnumType* TransitionDirection_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/Transition.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/Transition.uno
+// --------------------------------------------------------------------------------
 
 // internal sealed class TransitionGroup :11
 // {
@@ -9074,7 +9074,7 @@ static void TransitionGroup__cctor__fn(uType* __type)
 static void TransitionGroup_build(uType* type)
 {
     ::STRINGS[43] = uString::Const("Transition must have a Navigator ancestor");
-    ::STRINGS[44] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/Transition.uno");
+    ::STRINGS[44] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/Transition.uno");
     ::STRINGS[45] = uString::Const("Root");
     ::STRINGS[46] = uString::Const("Transition must have a Visual parent");
     ::TYPES[44] = ::g::Uno::Collections::Dictionary_typeof()->MakeType(::g::Fuse::Node_typeof(), type, NULL);
@@ -9338,8 +9338,8 @@ TransitionGroup* TransitionGroup::Root(::g::Fuse::Triggers::Transition* t)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.9.0/Transition.uno
-// ---------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Navigation/1.10.0-rc1/Transition.uno
+// --------------------------------------------------------------------------------
 
 // public enum TransitionMode :181
 uEnumType* TransitionMode_typeof()
@@ -9355,15 +9355,15 @@ uEnumType* TransitionMode_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/Trigger.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/Trigger.uno
+// ------------------------------------------------------------------
 
 // public abstract class Trigger :77
 // {
 // static generated Trigger() :77
 static void Trigger__cctor_1_fn(uType* __type)
 {
-    Trigger::ProgressName_ = ::g::Uno::UX::Selector__op_Implicit1(uString::Const("Progress"));
+    Trigger::ProgressName_ = ::g::Uno::UX::Selector__op_Implicit(uString::Const("Progress"));
 }
 
 static void Trigger_build(uType* type)
@@ -9622,7 +9622,7 @@ void Trigger__FuseAnimationsIBasePlayerFeedbackOnPlaybackDone_fn(Trigger* __this
 
     if (__this->_animState == NULL)
     {
-        ::g::Fuse::Diagnostics::InternalError(uString::Const("Trigger.OnPlaybackdone called with _animState == null"), __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/Trigger.uno"), 303, uString::Const("Fuse.Animations.IBasePlayerFeedback.OnPlaybackDone"));
+        ::g::Fuse::Diagnostics::InternalError(uString::Const("Trigger.OnPlaybackdone called with _animState == null"), __this, uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/Trigger.uno"), 303, uString::Const("Fuse.Animations.IBasePlayerFeedback.OnPlaybackDone"));
         return;
     }
 
@@ -9999,7 +9999,7 @@ void Trigger::Bypass(int32_t value)
 
     if ((value == 3) && !Trigger::_warnBypass_)
     {
-        ::g::Fuse::Diagnostics::Deprecated(uString::Const("ExceptLayout mode indicates a problem in trigger expecations and should no tbe used"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/Trigger.uno"), 110, uString::Const("set_Bypass"));
+        ::g::Fuse::Diagnostics::Deprecated(uString::Const("ExceptLayout mode indicates a problem in trigger expecations and should no tbe used"), this, uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/Trigger.uno"), 110, uString::Const("set_Bypass"));
         Trigger::_warnBypass_ = true;
     }
 }
@@ -10476,8 +10476,8 @@ int32_t Trigger::WhatDirection(double diff, bool animating)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/Trigger.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/Trigger.uno
+// ------------------------------------------------------------------
 
 // public enum TriggerBypassMode :11
 uEnumType* TriggerBypassMode_typeof()
@@ -10494,8 +10494,8 @@ uEnumType* TriggerBypassMode_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/Trigger.uno
-// -------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/Trigger.uno
+// ------------------------------------------------------------------
 
 // public enum TriggerPlayState :26
 uEnumType* TriggerPlayState_typeof()
@@ -10513,8 +10513,8 @@ uEnumType* TriggerPlayState_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/BusyTask.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/BusyTask.uno
+// -------------------------------------------------------------------
 
 // internal enum BusyTask.Type :56
 uEnumType* BusyTask__Type_typeof()
@@ -10529,8 +10529,8 @@ uEnumType* BusyTask__Type_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/WhileBool.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/WhileBool.uno
+// --------------------------------------------------------------------
 
 // public abstract class WhileBool :8
 // {
@@ -10646,8 +10646,8 @@ void WhileBool::Value1(bool value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/WhileBusy.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/WhileBusy.uno
+// --------------------------------------------------------------------
 
 // public class WhileBusy :41
 // {
@@ -10872,8 +10872,8 @@ WhileBusy* WhileBusy::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/WhilePlaying.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/WhilePlaying.uno
+// -----------------------------------------------------------------------
 
 // public sealed class WhileCompleted :87
 // {
@@ -11025,15 +11025,15 @@ void WhileCompleted::SetState(::g::Fuse::Visual* n, bool paused)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Triggers/ContainsText.uno
-// --------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Triggers/ContainsText.uno
+// -------------------------------------------------------------------------------------------
 
 // public class WhileContainsText :24
 // {
 static void WhileContainsText_build(uType* type)
 {
     ::STRINGS[47] = uString::Const("No TextInput or Source found for string");
-    ::STRINGS[13] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.9.0/Triggers/ContainsText.uno");
+    ::STRINGS[13] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.Primitives/1.10.0-rc1/Triggers/ContainsText.uno");
     ::STRINGS[17] = uString::Const("OnRooted");
     ::TYPES[52] = ::g::Fuse::Triggers::IValue_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
     ::TYPES[53] = ::g::Uno::UX::ValueChangedHandler_typeof()->MakeType(::g::Uno::String_typeof(), NULL);
@@ -11196,8 +11196,8 @@ WhileContainsText* WhileContainsText::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/Disabled.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/Disabled.uno
+// -------------------------------------------------------------------
 
 // public sealed class WhileDisabled :39
 // {
@@ -11291,8 +11291,8 @@ WhileDisabled* WhileDisabled::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/Disabled.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/Disabled.uno
+// -------------------------------------------------------------------
 
 // public sealed class WhileEnabled :64
 // {
@@ -11386,8 +11386,8 @@ WhileEnabled* WhileEnabled::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/Disabled.uno
-// --------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/Disabled.uno
+// -------------------------------------------------------------------
 
 // public abstract class WhileEnabledDisabledTrigger :8
 // {
@@ -11488,8 +11488,8 @@ void WhileEnabledDisabledTrigger::OnIsContextEnabledChanged(uObject* sender, ::g
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/WhileFailed.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/WhileFailed.uno
+// ----------------------------------------------------------------------
 
 // public sealed class WhileFailed :17
 // {
@@ -11580,8 +11580,8 @@ WhileFailed* WhileFailed::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/WhileBool.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/WhileBool.uno
+// --------------------------------------------------------------------
 
 // public sealed class WhileFalse :102
 // {
@@ -11679,8 +11679,8 @@ WhileFalse* WhileFalse::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/WhileFloat.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/WhileFloat.uno
+// ---------------------------------------------------------------------
 
 // public sealed class WhileFloat :7
 // {
@@ -11931,8 +11931,8 @@ WhileFloat* WhileFloat::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/WhileFocused.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/WhileFocused.uno
+// -----------------------------------------------------------------------
 
 // public sealed class WhileFocused :9
 // {
@@ -12068,8 +12068,8 @@ WhileFocused* WhileFocused::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/WhileFocusWithin.uno
-// ----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/WhileFocusWithin.uno
+// ---------------------------------------------------------------------------
 
 // public sealed class WhileFocusWithin :13
 // {
@@ -12206,8 +12206,8 @@ WhileFocusWithin* WhileFocusWithin::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls/1.9.0/Triggers/WhileInteracting.uno
-// -------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls/1.10.0-rc1/Triggers/WhileInteracting.uno
+// ------------------------------------------------------------------------------------
 
 // public sealed class WhileInteracting :26
 // {
@@ -12357,8 +12357,8 @@ WhileInteracting* WhileInteracting::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.9.0/WhileKeyboardVisible.uno
-// ---------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.Panels/1.10.0-rc1/WhileKeyboardVisible.uno
+// --------------------------------------------------------------------------------------
 
 // public sealed class WhileKeyboardVisible :12
 // {
@@ -12507,7 +12507,7 @@ void WhileKeyboardVisible::CheckActivation()
     ::g::Uno::Float4 safe = ::g::Uno::Float4__New1(0.0f);
     ::g::Uno::Float4 stat = ::g::Uno::Float4__New1(0.0f);
 
-    if (!(::g::Fuse::Marshal__TryToType_fn(::g::Fuse::Marshal_typeof()->MakeMethod(1/*TryToType<float4>*/, ::g::Uno::Float4_typeof(), NULL), uPtr(_caps)->Item(::g::Uno::UX::Selector__op_Implicit2(::g::Fuse::Reactive::WindowCaps::NameSafeMargins())), &safe, &ret2), ret2) || !(::g::Fuse::Marshal__TryToType_fn(::g::Fuse::Marshal_typeof()->MakeMethod(1/*TryToType<float4>*/, ::g::Uno::Float4_typeof(), NULL), uPtr(_caps)->Item(::g::Uno::UX::Selector__op_Implicit2(::g::Fuse::Reactive::WindowCaps::NameStaticMargins())), &stat, &ret3), ret3))
+    if (!(::g::Fuse::Marshal__TryToType_fn(::g::Fuse::Marshal_typeof()->MakeMethod(1/*TryToType<float4>*/, ::g::Uno::Float4_typeof(), NULL), uPtr(_caps)->Item(::g::Uno::UX::Selector__op_Implicit1(::g::Fuse::Reactive::WindowCaps::NameSafeMargins())), &safe, &ret2), ret2) || !(::g::Fuse::Marshal__TryToType_fn(::g::Fuse::Marshal_typeof()->MakeMethod(1/*TryToType<float4>*/, ::g::Uno::Float4_typeof(), NULL), uPtr(_caps)->Item(::g::Uno::UX::Selector__op_Implicit1(::g::Fuse::Reactive::WindowCaps::NameStaticMargins())), &stat, &ret3), ret3))
     {
         ::g::Fuse::Diagnostics::InternalError(uString::Const("Invalid margin values"), this, ::STRINGS[25/*"/usr/local/...*/], 54, uString::Const("CheckActivation"));
         Deactivate();
@@ -12532,8 +12532,8 @@ WhileKeyboardVisible* WhileKeyboardVisible::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/WhileLoading.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/WhileLoading.uno
+// -----------------------------------------------------------------------
 
 // public sealed class WhileLoading :32
 // {
@@ -12623,8 +12623,8 @@ WhileLoading* WhileLoading::New3()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/WhileFocused.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/WhileFocused.uno
+// -----------------------------------------------------------------------
 
 // public sealed class WhileNotFocused :42
 // {
@@ -12760,15 +12760,15 @@ WhileNotFocused* WhileNotFocused::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.9.0/WhilePageLoading.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.WebView/1.10.0-rc1/WhilePageLoading.uno
+// -----------------------------------------------------------------------------------
 
 // public sealed class WhilePageLoading :24
 // {
 static void WhilePageLoading_build(uType* type)
 {
     ::STRINGS[20] = uString::Const("WebView");
-    ::STRINGS[48] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.WebView/1.9.0/WhilePageLoading.uno");
+    ::STRINGS[48] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.WebView/1.10.0-rc1/WhilePageLoading.uno");
     ::STRINGS[17] = uString::Const("OnRooted");
     ::TYPES[22] = ::g::Fuse::Controls::IWebView_typeof();
     ::TYPES[56] = ::g::Fuse::Controls::WebView_typeof();
@@ -12899,8 +12899,8 @@ WhilePageLoading* WhilePageLoading::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/WhilePlaying.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/WhilePlaying.uno
+// -----------------------------------------------------------------------
 
 // public sealed class WhilePaused :51
 // {
@@ -13051,8 +13051,8 @@ void WhilePaused::SetState(::g::Fuse::Visual* n, bool paused)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/WhilePlaying.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/WhilePlaying.uno
+// -----------------------------------------------------------------------
 
 // public sealed class WhilePlaying :15
 // {
@@ -13203,8 +13203,8 @@ void WhilePlaying::SetState(::g::Fuse::Visual* n, bool playing)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/Triggers/ScrollingAnimation.uno
-// --------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/Triggers/ScrollingAnimation.uno
+// -------------------------------------------------------------------------------------------------
 
 // public sealed class WhileScrollable :210
 // {
@@ -13407,15 +13407,15 @@ WhileScrollable* WhileScrollable::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/Triggers/WhileScrolled.uno
-// ---------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/Triggers/WhileScrolled.uno
+// --------------------------------------------------------------------------------------------
 
 // public sealed class WhileScrolled :13
 // {
 static void WhileScrolled_build(uType* type)
 {
     ::STRINGS[33] = uString::Const("Scrolled could not find a Scrollable control.");
-    ::STRINGS[49] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/Triggers/WhileScrolled.uno");
+    ::STRINGS[49] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/Triggers/WhileScrolled.uno");
     ::STRINGS[17] = uString::Const("OnRooted");
     ::TYPES[32] = ::g::Fuse::Node_typeof()->MakeMethod(1/*FindByType<Fuse.Controls.ScrollViewBase>*/, ::g::Fuse::Controls::ScrollViewBase_typeof(), NULL);
     ::TYPES[33] = ::g::Fuse::Controls::ScrollPositionChangedHandler_typeof();
@@ -13653,8 +13653,8 @@ WhileScrolled* WhileScrolled::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/WhileString.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/WhileString.uno
+// ----------------------------------------------------------------------
 
 // public sealed class WhileString :21
 // {
@@ -13928,8 +13928,6 @@ uString* WhileString::Compare()
 // public void set_Compare(string value) [instance] :46
 void WhileString::Compare(uString* value)
 {
-    uStackFrame __("Fuse.Triggers.WhileString", "set_Compare(string)");
-
     if (::g::Uno::String::op_Inequality(_compare, value))
     {
         _compare = value;
@@ -13946,7 +13944,6 @@ uString* WhileString::Contains1()
 // public void set_Contains(string value) [instance] :90
 void WhileString::Contains1(uString* value)
 {
-    uStackFrame __("Fuse.Triggers.WhileString", "set_Contains(string)");
     Compare(value);
     Test(4);
 }
@@ -13960,7 +13957,6 @@ uString* WhileString::Equals2()
 // public new void set_Equals(string value) [instance] :79
 void WhileString::Equals2(uString* value)
 {
-    uStackFrame __("Fuse.Triggers.WhileString", "set_Equals(string)");
     Compare(value);
     Test(3);
 }
@@ -14024,8 +14020,8 @@ WhileString* WhileString::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/WhileString.uno
-// -----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/WhileString.uno
+// ----------------------------------------------------------------------
 
 // public enum WhileStringTest :6
 uEnumType* WhileStringTest_typeof()
@@ -14043,8 +14039,8 @@ uEnumType* WhileStringTest_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/WhileTrigger.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/WhileTrigger.uno
+// -----------------------------------------------------------------------
 
 // public abstract class WhileTrigger :10
 // {
@@ -14171,8 +14167,8 @@ void WhileTrigger::SetActive(bool on)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/WhileBool.uno
-// ---------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/WhileBool.uno
+// --------------------------------------------------------------------
 
 // public class WhileTrue :89
 // {
@@ -14270,15 +14266,15 @@ WhileTrue* WhileTrue::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/WhileValue.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/WhileValue.uno
+// ---------------------------------------------------------------------
 
 // public abstract class WhileValue<T> :11
 // {
 static void WhileValue_build(uType* type)
 {
     ::STRINGS[50] = uString::Const("`Pulse` on a `WhileValue` will be removed, create a `Timeline` instead.");
-    ::STRINGS[51] = uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/WhileValue.uno");
+    ::STRINGS[51] = uString::Const("/usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/WhileValue.uno");
     ::STRINGS[52] = uString::Const("Pulse");
     ::TYPES[62] = ::g::Fuse::Triggers::IValue_typeof();
     ::TYPES[63] = ::g::Uno::UX::ValueChangedHandler_typeof();
@@ -14567,8 +14563,8 @@ uObject* WhileValue::FindValueNode(uType* __type, ::g::Fuse::Node* n)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/WhileValue.uno
-// ----------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/WhileValue.uno
+// ---------------------------------------------------------------------
 
 // internal static class WhileValueStatic :6
 // {
@@ -14594,8 +14590,8 @@ uClassType* WhileValueStatic_typeof()
 bool WhileValueStatic::_deprecatedNote_;
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/WhileVisible.uno
-// ------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/WhileVisible.uno
+// -----------------------------------------------------------------------
 
 // public sealed class WhileVisible :9
 // {
@@ -14714,15 +14710,15 @@ WhileVisible* WhileVisible::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/Triggers/WhileVisibleInScrollView.uno
-// --------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/Triggers/WhileVisibleInScrollView.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public sealed class WhileVisibleInScrollView :52
 // {
 static void WhileVisibleInScrollView_build(uType* type)
 {
     ::STRINGS[53] = uString::Const("Could not find a ScrollView control.");
-    ::STRINGS[54] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/Triggers/WhileVisibleInScrollView.uno");
+    ::STRINGS[54] = uString::Const("/usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/Triggers/WhileVisibleInScrollView.uno");
     ::STRINGS[17] = uString::Const("OnRooted");
     ::STRINGS[55] = uString::Const("Parent must be an Element");
     ::STRINGS[56] = uString::Const("Must have an Element path to the ScrollView");
@@ -15024,8 +15020,8 @@ WhileVisibleInScrollView* WhileVisibleInScrollView::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.9.0/Triggers/WhileVisibleInScrollView.uno
-// --------------------------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Controls.ScrollView/1.10.0-rc1/Triggers/WhileVisibleInScrollView.uno
+// -------------------------------------------------------------------------------------------------------
 
 // public enum WhileVisibleInScrollViewMode :11
 uEnumType* WhileVisibleInScrollViewMode_typeof()
@@ -15040,8 +15036,8 @@ uEnumType* WhileVisibleInScrollViewMode_typeof()
     return type;
 }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/WhileWindowAspect.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/WhileWindowAspect.uno
+// ----------------------------------------------------------------------------
 
 // public abstract class WhileWindowAspect :125
 // {
@@ -15129,8 +15125,8 @@ float WhileWindowAspect::Aspect()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/WhileWindowAspect.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/WhileWindowAspect.uno
+// ----------------------------------------------------------------------------
 
 // public sealed class WhileWindowLandscape :150
 // {
@@ -15224,8 +15220,8 @@ WhileWindowLandscape* WhileWindowLandscape::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/WhileWindowAspect.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/WhileWindowAspect.uno
+// ----------------------------------------------------------------------------
 
 // public sealed class WhileWindowPortrait :166
 // {
@@ -15319,8 +15315,8 @@ WhileWindowPortrait* WhileWindowPortrait::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/WhileWindowAspect.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/WhileWindowAspect.uno
+// ----------------------------------------------------------------------------
 
 // public sealed class WhileWindowSize :85
 // {
@@ -15520,8 +15516,8 @@ WhileWindowSize* WhileWindowSize::New2()
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Triggers/1.9.0/WhileWindowAspect.uno
-// -----------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Triggers/1.10.0-rc1/WhileWindowAspect.uno
+// ----------------------------------------------------------------------------
 
 // public abstract class WindowSizeTrigger :5
 // {
@@ -15656,8 +15652,8 @@ void WindowSizeTrigger::Viewport(uObject* value)
 }
 // }
 
-// /usr/local/share/uno/Packages/Fuse.Elements/1.9.0/Triggers/LayoutAnimation.uno
-// ------------------------------------------------------------------------------
+// /usr/local/share/uno/Packages/Fuse.Elements/1.10.0-rc1/Triggers/LayoutAnimation.uno
+// -----------------------------------------------------------------------------------
 
 // private sealed class LayoutTransition.WorldPositionChangeMode :30
 // {

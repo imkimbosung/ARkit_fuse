@@ -20,7 +20,7 @@ namespace g{
 // static Template4() :107
 static void MainView__Template4__cctor__fn(uType* __type)
 {
-    MainView__Template4::__selector0_ = ::g::Uno::UX::Selector__op_Implicit1(::STRINGS[0/*"RespberryPi"*/]);
+    MainView__Template4::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[0/*"RespberryPi"*/]);
 }
 
 static void MainView__Template4_build(uType* type)

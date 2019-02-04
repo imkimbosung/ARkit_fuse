@@ -1,4 +1,4 @@
-// This file was generated based on /usr/local/share/uno/Packages/Fuse.Text/1.9.0/Implementation/HarfbuzzFont.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Fuse.Text/1.10.0-rc1/Implementation/HarfbuzzFont.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once

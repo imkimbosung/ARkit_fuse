@@ -1,30 +1,29 @@
-// This file was generated based on /usr/local/share/uno/Packages/Experimental.TextureLoader/1.9.0/TextureLoader.uno.
+// This file was generated based on /usr/local/share/uno/Packages/Experimental.TextureLoader/1.10.0-rc1/TextureLoader.uno.
 // WARNING: Changes might be lost if you edit this file directly.
 
 #pragma once
 #include <Uno.h>
 namespace g{namespace Experimental{namespace TextureLoader{struct TextureLoader;}}}
 namespace g{namespace Uno{namespace Graphics{struct Texture2D;}}}
-namespace g{namespace Uno{struct Buffer;}}
 
 namespace g{
 namespace Experimental{
 namespace TextureLoader{
 
-// public static class TextureLoader :30
+// public static class TextureLoader :13
 // {
 uClassType* TextureLoader_typeof();
-void TextureLoader__ByteArrayToTexture2DContentType_fn(::g::Uno::Buffer* arr, uString* contentType, uDelegate* callback);
-void TextureLoader__ByteArrayToTexture2DFilename_fn(::g::Uno::Buffer* arr, uString* filename, uDelegate* callback);
-void TextureLoader__JpegByteArrayToTexture2D_fn(::g::Uno::Buffer* arr, uDelegate* callback);
-void TextureLoader__PngByteArrayToTexture2D_fn(::g::Uno::Buffer* arr, uDelegate* callback);
+void TextureLoader__ByteArrayToTexture2DContentType_fn(uArray* arr, uString* contentType, ::g::Uno::Graphics::Texture2D** __retval);
+void TextureLoader__ByteArrayToTexture2DFilename_fn(uArray* arr, uString* filename, ::g::Uno::Graphics::Texture2D** __retval);
+void TextureLoader__JpegByteArrayToTexture2D_fn(uArray* arr, ::g::Uno::Graphics::Texture2D** __retval);
+void TextureLoader__PngByteArrayToTexture2D_fn(uArray* arr, ::g::Uno::Graphics::Texture2D** __retval);
 
 struct TextureLoader : uObject
 {
-    static void ByteArrayToTexture2DContentType(::g::Uno::Buffer* arr, uString* contentType, uDelegate* callback);
-    static void ByteArrayToTexture2DFilename(::g::Uno::Buffer* arr, uString* filename, uDelegate* callback);
-    static void JpegByteArrayToTexture2D(::g::Uno::Buffer* arr, uDelegate* callback);
-    static void PngByteArrayToTexture2D(::g::Uno::Buffer* arr, uDelegate* callback);
+    static ::g::Uno::Graphics::Texture2D* ByteArrayToTexture2DContentType(uArray* arr, uString* contentType);
+    static ::g::Uno::Graphics::Texture2D* ByteArrayToTexture2DFilename(uArray* arr, uString* filename);
+    static ::g::Uno::Graphics::Texture2D* JpegByteArrayToTexture2D(uArray* arr);
+    static ::g::Uno::Graphics::Texture2D* PngByteArrayToTexture2D(uArray* arr);
 };
 // }
 
